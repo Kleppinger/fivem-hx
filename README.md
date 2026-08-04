@@ -46,3 +46,24 @@ haxe test-shared.hxml
 haxe test-server.hxml
 haxe test-client.hxml
 ```
+
+## Example
+
+See [examples/basic-resource](examples/basic-resource) for a small FiveM
+resource (client + server) built against this library and compiled to Lua.
+
+## Publishing to haxelib
+
+1. Bump `"version"` in `haxelib.json` (haxelib rejects re-submitting a
+   version that's already published) and update `"releasenote"`.
+2. First time only: `haxelib register <username>` to create a haxelib.org
+   account.
+3. Package the release — haxelib wants a zip with `haxelib.json` at its
+   root:
+   ```
+   git archive --format=zip -o fivem-hx.zip HEAD haxelib.json README.md LICENSE src
+   ```
+4. `haxelib submit fivem-hx.zip`, then enter your haxelib.org credentials
+   when prompted. This uploads and publishes the version.
+5. Verify with `haxelib info fivem-hx`, and install it elsewhere with
+   `haxelib install fivem-hx`.

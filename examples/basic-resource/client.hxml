@@ -1,0 +1,4 @@
+-p ../../src
+-p src
+-main ClientMain
+-lua dist/client/client.lua

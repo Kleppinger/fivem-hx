@@ -5,3 +5,6 @@ export/
 *.n
 *.log
 .vscode/
+
+# compiled example output - build with the .hxml files instead of committing lua
+examples/**/dist/
