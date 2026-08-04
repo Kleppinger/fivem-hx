@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Haxe
+        uses: krdlab/setup-haxe@v1
+        with:
+          haxe-version: 4.3.7
+
+      - name: Type-check fivem.shared
+        run: haxe test-shared.hxml
+
+      - name: Type-check fivem.server
+        run: haxe test-server.hxml
+
+      - name: Type-check fivem.client
+        run: haxe test-client.hxml
+
+      - name: Build example resource (client)
+        working-directory: examples/basic-resource
+        run: haxe client.hxml
+
+      - name: Build example resource (server)
+        working-directory: examples/basic-resource
+        run: haxe server.hxml

@@ -1,5 +1,6 @@
 # fivem-hx
 
+[![CI](https://github.com/Kleppinger/fivem-hx/actions/workflows/ci.yml/badge.svg)](https://github.com/Kleppinger/fivem-hx/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Haxe](https://img.shields.io/badge/haxe-%3E%3D4.3-orange.svg)](https://haxe.org)
 [![FiveM](https://img.shields.io/badge/FiveM-natives-5c8ae6.svg)](https://docs.fivem.net/natives/)
@@ -78,8 +79,11 @@ fivem-hx/
 ├── examples/
 │   └── basic-resource/  a working client+server FiveM resource
 ├── docs/                 in-depth guides (see below)
+├── .github/workflows/    CI (typecheck + build example) and tag-triggered releases
 ├── generate.py           regenerates src/fivem/*/natives from FiveM's docs
 ├── test-*.hxml           type-check-only builds for each package
+├── CONTRIBUTING.md
+├── CHANGELOG.md
 └── haxelib.json
 ```
 
@@ -98,8 +102,11 @@ client/server rather than left as a separate package.
 | [Haxe + FiveM Tips](docs/haxe-fivem-tips.md) | Lua runtime versions, debugging, structuring client/server/shared code |
 | [Dev Experience](docs/dev-experience.md) | Editor setup, fast builds, watch loops, debugging without source maps |
 | [Regenerating Natives](docs/regenerating-natives.md) | How `generate.py` works, its known limitations, how to extend it |
-| [Publishing](docs/publishing.md) | Cutting and submitting a haxelib release |
+| [Versioning](docs/versioning.md) | What's PATCH/MINOR/MAJOR when most of the API is generated |
+| [Publishing](docs/publishing.md) | The release checklist, tag-triggered packaging, and `haxelib submit` |
 | [Troubleshooting](docs/troubleshooting.md) | Common compiler and runtime errors, explained |
+
+See also [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## Regenerating natives
 
@@ -136,13 +143,26 @@ compiled to Lua and verified to run.
 
 Issues and PRs welcome at
 [github.com/Kleppinger/fivem-hx](https://github.com/Kleppinger/fivem-hx).
-If you're changing generation logic, run the three `test-*.hxml` checks
-before opening a PR (see [docs/regenerating-natives.md](docs/regenerating-natives.md#extending-it)).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup, the PR checklist, and
+where a given fix actually belongs (generator vs. generated output vs.
+hand-written externs) — that last part matters more here than in a typical
+repo. Every push and PR runs [CI](.github/workflows/ci.yml) (type-check +
+build the example resource).
 
-## Publishing
+## Versioning & releases
 
-Maintainers cutting a release: see [docs/publishing.md](docs/publishing.md)
-for the full `haxelib submit` workflow.
+Follows [SemVer](https://semver.org/), scoped for a mostly-generated
+externs library in [docs/versioning.md](docs/versioning.md) — notably, a
+native's signature changing upstream is a MAJOR change even when it just
+comes from re-running the generator. See [CHANGELOG.md](CHANGELOG.md) for
+release history.
+
+Maintainers cutting a release: see [docs/publishing.md](docs/publishing.md).
+Pushing a `vX.Y.Z` tag runs [the release workflow](.github/workflows/release.yml),
+which verifies the tag matches `haxelib.json`, type-checks, and attaches a
+release zip to the GitHub Release — `haxelib submit` itself is a manual
+last step (haxelib's CLI has no non-interactive auth flow to script
+around).
 
 ## License
 

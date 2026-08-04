@@ -1,0 +1,61 @@
+name: Release
+
+# Triggered by pushing a tag like v0.1.0. See docs/publishing.md for the
+# full release checklist (this workflow covers the "package it" half —
+# `haxelib submit` itself is a manual, interactive step; haxelib's CLI has
+# no documented non-interactive/CI auth flow, so we don't try to fake one
+# here).
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Haxe
+        uses: krdlab/setup-haxe@v1
+        with:
+          haxe-version: 4.3.7
+
+      - name: Verify tag matches haxelib.json version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          JSON_VERSION=$(python3 -c "import json; print(json.load(open('haxelib.json'))['version'])")
+          if [ "$TAG_VERSION" != "$JSON_VERSION" ]; then
+            echo "::error ::Tag ${GITHUB_REF_NAME} does not match haxelib.json version ${JSON_VERSION}"
+            exit 1
+          fi
+
+      - name: Type-check
+        run: |
+          haxe test-shared.hxml
+          haxe test-server.hxml
+          haxe test-client.hxml
+
+      - name: Build example resource
+        working-directory: examples/basic-resource
+        run: |
+          haxe client.hxml
+          haxe server.hxml
+
+      - name: Package release zip
+        run: git archive --format=zip -o fivem-hx-${{ github.ref_name }}.zip HEAD haxelib.json README.md LICENSE src
+
+      - name: Create/update GitHub Release with the zip attached
+        uses: softprops/action-gh-release@v2
+        with:
+          files: fivem-hx-${{ github.ref_name }}.zip
+          generate_release_notes: true
+
+      - name: Publishing reminder
+        run: |
+          echo "::notice ::Release zip built and attached to the GitHub Release."
+          echo "::notice ::Run 'haxelib submit fivem-hx-${{ github.ref_name }}.zip' locally to publish to haxelib.org — see docs/publishing.md."
