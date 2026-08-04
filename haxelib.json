@@ -1,0 +1,12 @@
+{
+	"name": "fivem-hx",
+	"url": "https://github.com/eklep/fivem-hx",
+	"license": "MIT",
+	"tags": ["fivem", "gta", "redm", "lua", "externs", "natives"],
+	"description": "Haxe externs for FiveM/RedM natives, split into client/server/shared packages.",
+	"version": "0.1.0",
+	"releasenote": "Restructure into a single-classpath monorepo (src/fivem/{client,server,shared}).",
+	"contributors": ["eklep"],
+	"dependencies": {},
+	"classPath": "src/"
+}

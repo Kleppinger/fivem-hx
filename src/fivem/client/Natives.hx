@@ -1,0 +1,48 @@
+package fivem.client;
+
+class Natives {
+	public static var app = fivem.client.natives.App;
+	public static var audio = fivem.client.natives.Audio;
+	public static var brain = fivem.client.natives.Brain;
+	public static var cam = fivem.client.natives.Cam;
+	public static var cfx = fivem.client.natives.Cfx;
+	public static var clock = fivem.client.natives.Clock;
+	public static var cutscene = fivem.client.natives.Cutscene;
+	public static var datafile = fivem.client.natives.Datafile;
+	public static var decorator = fivem.client.natives.Decorator;
+	public static var dlc = fivem.client.natives.Dlc;
+	public static var entity = fivem.client.natives.Entity;
+	public static var event = fivem.client.natives.Event;
+	public static var files = fivem.client.natives.Files;
+	public static var fire = fivem.client.natives.Fire;
+	public static var graphics = fivem.client.natives.Graphics;
+	public static var hud = fivem.client.natives.Hud;
+	public static var interior = fivem.client.natives.Interior;
+	public static var itemset = fivem.client.natives.Itemset;
+	public static var loadingscreen = fivem.client.natives.Loadingscreen;
+	public static var localization = fivem.client.natives.Localization;
+	public static var misc = fivem.client.natives.Misc;
+	public static var mobile = fivem.client.natives.Mobile;
+	public static var money = fivem.client.natives.Money;
+	public static var netshopping = fivem.client.natives.Netshopping;
+	public static var network = fivem.client.natives.Network;
+	public static var object = fivem.client.natives.Object;
+	public static var pad = fivem.client.natives.Pad;
+	public static var pathfind = fivem.client.natives.Pathfind;
+	public static var ped = fivem.client.natives.Ped;
+	public static var physics = fivem.client.natives.Physics;
+	public static var player = fivem.client.natives.Player;
+	public static var recording = fivem.client.natives.Recording;
+	public static var replay = fivem.client.natives.Replay;
+	public static var script = fivem.client.natives.Script;
+	public static var shapetest = fivem.client.natives.Shapetest;
+	public static var socialclub = fivem.client.natives.Socialclub;
+	public static var stats = fivem.client.natives.Stats;
+	public static var streaming = fivem.client.natives.Streaming;
+	public static var system = fivem.client.natives.System;
+	public static var task = fivem.client.natives.Task;
+	public static var vehicle = fivem.client.natives.Vehicle;
+	public static var water = fivem.client.natives.Water;
+	public static var weapon = fivem.client.natives.Weapon;
+	public static var zone = fivem.client.natives.Zone;
+}

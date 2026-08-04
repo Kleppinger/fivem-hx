@@ -1,0 +1,3 @@
+-p src
+--no-output
+--macro include('fivem.server')

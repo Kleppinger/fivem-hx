@@ -1,0 +1,7 @@
+bin/
+dump/
+export/
+.haxelib/
+*.n
+*.log
+.vscode/
