@@ -1,4 +1,8 @@
 -lib fivem-hx
+-p ../../src
 -p src
+-p src/Server
+-p src/Shared
 -main ServerMain
 -lua dist/server/server.lua
+--cmd powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\patch-lua-utf8.ps1 -Path dist/server/server.lua
