@@ -55,6 +55,51 @@ Usually one of:
 
 ## Runtime
 
+### `Error parsing script ... 'end' expected ... near '('`
+
+The resource fails to load at all, before a line of your code runs, and the
+offending Lua looks like this:
+
+```lua
+onEnter = function(_, ...) return function(_, player)
+  ...
+end(...) end
+```
+
+Calling a function *literal* without parentheses around it — `function ...
+end(...)` — is a syntax error in Lua; it needs `(function ... end)(...)`.
+
+You get there by assigning a closure to a **function-typed field of an
+anonymous structure**:
+
+```haxe
+typedef Options = { var ?onEnter:(player:Player) -> Void; }
+
+doSomething({onEnter: player -> trace(player.name)});   // emits broken Lua
+```
+
+Haxe's Lua target treats a function-typed field of an anonymous structure as
+a *method*: it calls it with colon syntax (`opts:onEnter(...)`) and therefore
+wraps the assigned closure in a self-stripping adapter — and it emits that
+adapter without the parentheses Lua requires.
+
+Declare the options type as a `@:structInit` class instead. The call site
+keeps its object-literal syntax, but the literal compiles to an ordinary
+constructor call and the field to an ordinary variable:
+
+```haxe
+@:structInit class Options {
+    public var onEnter:(player:Player) -> Void = null;
+}
+```
+
+Fields with a default value are optional, so `{onEnter: ...}` still works
+with the others omitted. This is why `fivem.client.core.Zones.ZoneOptions`
+and its server counterpart are classes rather than typedefs.
+
+Note that a structure whose fields are all *data* is unaffected — this only
+applies to fields holding functions.
+
 ### `attempt to call a nil value (global 'bit')`
 
 Lua version mismatch between how Haxe compiled bitwise operators and what

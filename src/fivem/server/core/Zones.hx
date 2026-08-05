@@ -10,16 +10,24 @@ import fivem.shared.util.Vector3;
 
 /**
 	What to run as players move through a server zone.
+
+	A `@:structInit` class rather than a typedef, for the same reason as its
+	client counterpart: Haxe's Lua target treats a function-typed field of an
+	anonymous structure as a method and wraps the assigned closure in an
+	adapter emitted as `function(_, ...) return function(...) ... end(...) end`
+	— and calling a function literal without parentheses around it is a Lua
+	syntax error, so the script fails to load. The object-literal call site is
+	unchanged.
 **/
-typedef ZoneOptions = {
+@:structInit class ZoneOptions {
 	/** Runs when a player crosses in. **/
-	var ?onEnter:(zone:Zone, player:Player) -> Void;
+	public var onEnter:(zone:Zone, player:Player) -> Void = null;
 
 	/** Runs when a player crosses back out, or disconnects while inside. **/
-	var ?onExit:(zone:Zone, player:Player) -> Void;
+	public var onExit:(zone:Zone, player:Player) -> Void = null;
 
 	/** Anything you want to read back inside the handlers. **/
-	var ?data:Dynamic;
+	public var data:Dynamic = null;
 }
 
 /**

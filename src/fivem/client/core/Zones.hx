@@ -13,26 +13,37 @@ import fivem.shared.util.Vector3;
 
 /**
 	What to run as the local player moves through a zone.
+
+	Written as a `@:structInit` class rather than a typedef, so it is still
+	constructed from an object literal but generates valid Lua. Haxe's Lua
+	target treats a function-typed field of an *anonymous structure* as a
+	method: it calls it with colon syntax and therefore wraps the assigned
+	closure in a self-stripping adapter. That adapter is emitted as
+	`function(_, ...) return function(...) ... end(...) end`, and calling a
+	function literal without wrapping it in parentheses is a syntax error in
+	Lua, so the whole script fails to parse. A `@:structInit` class compiles
+	the same literal to an ordinary constructor call and the field to an
+	ordinary variable.
 **/
-typedef ZoneOptions = {
+@:structInit class ZoneOptions {
 	/** Runs once, when the player crosses in. **/
-	var ?onEnter:(zone:Zone) -> Void;
+	public var onEnter:(zone:Zone) -> Void = null;
 
 	/** Runs once, when the player crosses back out. **/
-	var ?onExit:(zone:Zone) -> Void;
+	public var onExit:(zone:Zone) -> Void = null;
 
 	/**
 		Runs repeatedly while the player is inside, at `insideIntervalMs`.
-		Set that to 0 for once per frame — needed for drawing, wasteful for
+		Leave that at 0 for once per frame — needed for drawing, wasteful for
 		anything else.
 	**/
-	var ?onInside:(zone:Zone) -> Void;
+	public var onInside:(zone:Zone) -> Void = null;
 
-	/** How often `onInside` runs, in milliseconds. Defaults to 0 (every frame). **/
-	var ?insideIntervalMs:Int;
+	/** How often `onInside` runs, in milliseconds. 0 means every frame. **/
+	public var insideIntervalMs:Int = 0;
 
 	/** Anything you want to read back inside the handlers. **/
-	var ?data:Dynamic;
+	public var data:Dynamic = null;
 }
 
 /**
@@ -212,7 +223,7 @@ class Zones {
 		for (zone in zones) {
 			if (!zone.isInside || zone.options.onInside == null) continue;
 
-			var interval = zone.options.insideIntervalMs != null ? zone.options.insideIntervalMs : 0;
+			var interval = zone.options.insideIntervalMs;
 			if (now >= zone.nextInsideAt) {
 				zone.nextInsideAt = now + interval;
 				zone.options.onInside(zone);
