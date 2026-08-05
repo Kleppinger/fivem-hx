@@ -14,6 +14,10 @@ All notable changes to this project are documented here. Format follows
   of [oxmysql](https://overextended.dev/oxmysql) (`OxMysqlConnection`,
   `OxMysqlResultSet`), plus `OxMysql` for direct typed queries without an
   ORM. Server-side only. See [docs/database.md](docs/database.md).
+- Published API reference at <https://kleppinger.github.io/fivem-hx/>,
+  generated with Dox and served from the `docs` branch, plus
+  `scripts/Publish-Docs.ps1` to rebuild and push it and
+  [docs/api-reference.md](docs/api-reference.md) documenting the process.
 
 ### Changed
 - `test-server.hxml` now typechecks against the real `-lua` target instead

@@ -1,5 +1,9 @@
 # fivem-hx documentation
 
+**[API reference →](https://kleppinger.github.io/fivem-hx/)** — generated
+class/method docs for every package in the library. Look there for *what* a
+native's signature is; look below for *how* to use the library.
+
 - [Getting Started](getting-started.md) — install the lib, wire up your first resource
 - [Architecture](architecture.md) — why the repo is laid out the way it is, and how `generate.py` works
 - [API Guide](api-guide.md) — how to call natives and events from Haxe, with patterns and gotchas
@@ -9,6 +13,7 @@
 - [Versioning](versioning.md) — what counts as PATCH/MINOR/MAJOR for a mostly-generated externs library
 - [Publishing to haxelib](publishing.md) — the release checklist, tag-triggered CI packaging, and `haxelib submit`
 - [Troubleshooting](troubleshooting.md) — common compiler and runtime errors, explained
+- [API Reference](api-reference.md) — how the published Dox site is generated and updated
 
 See also [CONTRIBUTING.md](../CONTRIBUTING.md) and [CHANGELOG.md](../CHANGELOG.md)
 at the repo root.
