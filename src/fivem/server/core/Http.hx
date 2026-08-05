@@ -17,7 +17,7 @@ typedef HttpResponse = {
 	Outbound HTTP from the server — webhooks, external APIs, licence checks.
 
 	```haxe
-	var response = Http.post(webhookUrl, haxe.Json.stringify({content: "server started"}), ["Content-Type" => "application/json"]);
+	var response = Http.post(webhookUrl, Json.encode({content: "server started"}), ["Content-Type" => "application/json"]);
 	if (response.status >= 300) Logger.warn("webhook", response.body);
 	```
 

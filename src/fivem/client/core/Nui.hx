@@ -3,6 +3,7 @@ package fivem.client.core;
 import fivem.client.natives.Cfx;
 import fivem.shared.CoreEvents;
 import fivem.shared.core.Resource;
+import fivem.shared.util.Json;
 
 /**
 	The bridge to a resource's NUI layer — the embedded browser used for HTML
@@ -36,7 +37,7 @@ class Nui {
 		arrays, numbers and strings.
 	**/
 	public static inline function send(payload:Dynamic):Void {
-		Cfx.sendNuiMessage(haxe.Json.stringify(payload));
+		Cfx.sendNuiMessage(Json.encode(payload));
 	}
 
 	/**

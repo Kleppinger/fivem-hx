@@ -1,6 +1,7 @@
 package fivem.shared.core;
 
 import fivem.shared.natives.Cfx;
+import fivem.shared.util.Json;
 
 /**
 	The resource key/value store — FiveM's built-in persistence.
@@ -39,7 +40,7 @@ class Kvp {
 
 	/** Stores a structure or array as JSON. **/
 	public static inline function setJson(key:String, value:Dynamic, sync:Bool = true):Void {
-		setString(key, haxe.Json.stringify(value), sync);
+		setString(key, Json.encode(value), sync);
 	}
 
 	public static inline function setBool(key:String, value:Bool, sync:Bool = true):Void {
@@ -68,11 +69,22 @@ class Kvp {
 		return exists(key) ? Cfx.getResourceKvpInt(key) != 0 : fallback;
 	}
 
-	/** Reads and parses a value written with `setJson`. Returns `null` if unset or malformed. **/
+	/**
+		Reads and parses a value written with `setJson`. Returns `null` if the
+		key is unset or the stored text is malformed.
+
+		The result comes back as FiveM's decoded Lua tables, so object fields
+		read fine with dot access but a stored *array* arrives 1-based — see
+		`Json.decode`. Use `getJsonArray` for lists.
+	**/
 	public static function getJson<T>(key:String):Null<T> {
+		return Json.decode(Cfx.getResourceKvpString(key));
+	}
+
+	/** Reads a value written with `setJson` that holds an array. **/
+	public static function getJsonArray<T>(key:String):Array<T> {
 		var raw = Cfx.getResourceKvpString(key);
-		if (raw == null) return null;
-		return try haxe.Json.parse(raw) catch (_:Dynamic) null;
+		return raw == null ? [] : Json.decodeArray(raw);
 	}
 
 	/**

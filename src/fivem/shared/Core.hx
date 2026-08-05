@@ -53,6 +53,7 @@ typedef Quaternion = fivem.shared.util.Quaternion;
 typedef Rgba = fivem.shared.util.Rgba;
 typedef Hash = fivem.shared.util.Hash;
 typedef MathUtil = fivem.shared.util.MathUtil;
+typedef Json = fivem.shared.util.Json;
 typedef LuaTables = fivem.shared.util.LuaTables;
 typedef Logger = fivem.shared.util.Logger;
 typedef LogLevel = fivem.shared.util.Logger.LogLevel;

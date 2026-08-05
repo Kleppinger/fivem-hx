@@ -71,6 +71,6 @@ class Logger {
 		if (value == null) return "null";
 		if (Std.isOfType(value, String)) return value;
 		// Structures and arrays are far more useful as JSON than as "[object]".
-		return try haxe.Json.stringify(value) catch (_:Dynamic) Std.string(value);
+		return try Json.encode(value) catch (_:Dynamic) Std.string(value);
 	}
 }

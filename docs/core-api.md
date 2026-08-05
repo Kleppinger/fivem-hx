@@ -19,7 +19,7 @@ src/fivem/
 │   ├── core/               Thread, Events, Commands, StateBag, Kvp, Resource,
 │   │                       Exports, Deferred, CallbackProtocol
 │   ├── util/               Vector2/3/4, Quaternion, Rgba, Hash, MathUtil,
-│   │                       Signal, Logger, Timing, LuaTables
+│   │                       Signal, Logger, Timing, Json, LuaTables
 │   └── colshape/           ColShape, Sphere, Circle, Box, Poly
 ├── client/
 │   ├── NativeOutputs.hx    multi-return natives the generator can't express
@@ -300,6 +300,7 @@ network message.
 | `Stopwatch` | Elapsed time against the game clock |
 | `MathUtil` | `clamp`, `lerp`, `map`, `deltaDegrees`, `randomInt`, `smoothStep` |
 | `Rgba` | 8-bit colour, so drawing natives take one argument instead of four |
+| `Json` | JSON encode/decode that works on FXServer — use this, never `haxe.Json` |
 | `LuaTables` | Conversions between raw Lua tables and Haxe arrays and maps |
 | `Deferred<T>` | A typed promise, for turning callback APIs into blocking calls |
 

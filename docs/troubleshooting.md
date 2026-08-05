@@ -100,6 +100,38 @@ and its server counterpart are classes rather than typedefs.
 Note that a structure whose fields are all *data* is unaffected — this only
 applies to fields holding functions.
 
+### `module 'hxsimdjson' not found`
+
+```
+SCRIPT ERROR: @your-resource/dist/server/server.lua:264:
+  module 'hxsimdjson' not found
+```
+
+You used `haxe.Json` somewhere. **Don't** — not on FiveM.
+
+Haxe's Lua target overrides `haxe.format.JsonParser` with a binding to
+`hxsimdjson`, a native Lua module FXServer does not ship. The `require` for
+it is emitted unconditionally at the top of the compiled file, so merely
+*referencing* `haxe.Json` anywhere in the resource stops it loading — even
+if the code path never runs.
+
+Use [`fivem.shared.util.Json`](../src/fivem/shared/util/Json.hx) instead. It
+encodes with `haxe.format.JsonPrinter` (plain cross-platform Haxe, no native
+binding) and decodes with FiveM's own always-present `json` global:
+
+```haxe
+var text = Json.encode({action: "open", items: items});
+var back = Json.decode(text);
+```
+
+One asymmetry to know about: `decode` returns FiveM's raw Lua tables, so
+object fields read fine with dot access but arrays come back 1-based rather
+than as Haxe arrays. Use `Json.decodeArray` for lists.
+
+The same trap applies to any Haxe std API with a native Lua binding behind
+it. CI allowlists the modules the generated Lua is allowed to `require`, so
+a new one shows up as a build failure rather than a dead server.
+
 ### `attempt to call a nil value (global 'bit')`
 
 Lua version mismatch between how Haxe compiled bitwise operators and what
