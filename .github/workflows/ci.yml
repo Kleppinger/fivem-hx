@@ -76,3 +76,19 @@ jobs:
             exit 1
           fi
           echo "only expected modules are required"
+
+      # Haxe compiles bitwise operators to a _hx_bit shim that requires the
+      # bit32 or bit module. Lua 5.3/5.4 has native bitwise operators and so
+      # ships neither, and the shim runs at load time — so a single `|` or a
+      # call to StringTools.hex takes the whole resource down. No compiler
+      # define avoids it; fivem.shared.util.Bits emits Lua's operators
+      # directly instead. See docs/haxe-fivem-tips.md.
+      - name: Check for the bit32 shim
+        run: |
+          set -e
+          if grep -l "Failed to load bit or bit32" test-*-check.lua examples/*/dist/*/*.lua; then
+            echo "::error::generated Lua contains the _hx_bit shim; use fivem.shared.util.Bits instead of Haxe bitwise operators"
+            exit 1
+          fi
+          echo "no bit shim in generated output"
+          echo "only expected modules are required"
