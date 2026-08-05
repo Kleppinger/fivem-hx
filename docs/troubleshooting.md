@@ -132,6 +132,26 @@ The same trap applies to any Haxe std API with a native Lua binding behind
 it. CI allowlists the modules the generated Lua is allowed to `require`, so
 a new one shows up as a build failure rather than a dead server.
 
+### `attempt to index a nil value (field 'os')`
+
+FiveM's **client** sandbox does not expose Lua's `os` library. Two Haxe std
+APIs reach for it:
+
+- `Math.random()` and `Std.random()` make the compiler emit
+  `_G.math.randomseed(_G.os.time())` at *file scope*. That runs at load
+  time, so the resource dies before any of your code does — even if you
+  never call the random function. Use
+  [`MathUtil.random`](../src/fivem/shared/util/MathUtil.hx),
+  `MathUtil.randomInt` and `MathUtil.randomFloat`, which call Lua's
+  `math.random` directly.
+- `Date` calls `os.time`/`os.date` inside its own methods. Those only run
+  when you actually construct or read a `Date`, so the class is harmless to
+  reference — but calling it client-side fails. Server-side it works, since
+  the server runtime keeps `os`. For elapsed time in either environment use
+  `Runtime.getGameTimer()` or `fivem.shared.util.Timing.Stopwatch`.
+
+CI fails on any load-time `os`/`io` access in the generated output.
+
 ### `Failed to load bit or bit32`, or `attempt to call a nil value (global 'bit')`
 
 You used a Haxe bitwise operator (`|`, `&`, `^`, `~`, `<<`, `>>`, `>>>`) on

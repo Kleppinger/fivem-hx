@@ -55,19 +55,42 @@ class MathUtil {
 		return delta > 180 ? delta - 360 : delta;
 	}
 
+	/**
+		A random float in `[0, 1)`.
+
+		Calls Lua's `math.random` directly instead of Haxe's `Math.random`.
+		Haxe's version makes the generated file seed the RNG at load time with
+
+		```lua
+		_G.math.randomseed(_G.os.time());
+		```
+
+		and FiveM's client sandbox does not expose `os` at all, so that line
+		takes the resource down before a line of your code runs:
+
+		```
+		SCRIPT ERROR: attempt to index a nil value (field 'os')
+		```
+
+		Lua 5.4 seeds itself at startup, so nothing is lost by skipping it.
+	**/
+	public static inline function random():Float {
+		return untyped __lua__("_G.math.random()");
+	}
+
 	/** A random float in `[min, max)`. **/
 	public static inline function randomFloat(min:Float, max:Float):Float {
-		return min + Math.random() * (max - min);
+		return min + random() * (max - min);
 	}
 
 	/** A random integer in `[min, max]`, both ends included. **/
 	public static inline function randomInt(min:Int, max:Int):Int {
-		return min + Math.floor(Math.random() * (max - min + 1));
+		return untyped __lua__("_G.math.random({0}, {1})", min, max);
 	}
 
 	/** Picks a uniformly random element, or `null` for an empty array. **/
 	public static inline function pick<T>(values:Array<T>):T {
-		return values.length == 0 ? null : values[Math.floor(Math.random() * values.length)];
+		return values.length == 0 ? null : values[randomInt(0, values.length - 1)];
 	}
 
 	public static inline function nearlyEquals(a:Float, b:Float, epsilon:Float = EPSILON):Bool {

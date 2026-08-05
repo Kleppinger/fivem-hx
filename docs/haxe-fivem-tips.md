@@ -34,6 +34,20 @@ lua54 'yes'   -- Lua 5.4 (recommended for new resources)
 
 Both are Lua 5.3 or newer, which matters for one thing in particular.
 
+### The client sandbox has no `os` library
+
+`Math.random()` and `Std.random()` make Haxe emit
+`_G.math.randomseed(_G.os.time())` at *file scope*. It runs at load time, so
+the resource dies before reaching any of its own code — even if the random
+call is never made. Use `MathUtil.random`, `MathUtil.randomInt` and
+`MathUtil.randomFloat`, which call Lua's `math.random` directly.
+
+`Date` reaches for `os.time`/`os.date` too, but from inside its own methods,
+so referencing the class is harmless and only actually *using* it fails
+client-side. The server runtime keeps `os`, so `Date` is fine there. For
+elapsed time in either environment, `Runtime.getGameTimer()` and
+`Timing.Stopwatch` need nothing from `os`.
+
 ### Never use Haxe's bitwise operators
 
 `|`, `&`, `^`, `~`, `<<`, `>>` and `>>>` on `Int` do **not** compile to Lua's
