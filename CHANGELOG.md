@@ -10,6 +10,15 @@ All notable changes to this project are documented here. Format follows
 ### Added
 - `fivem.shared.CoreEvents.triggerServerEvent` — was missing alongside the
   existing `triggerClientEvent`; neither is in FiveM's natives database.
+- `fivem.server.db` — a `sys.db.Connection`/`sys.db.ResultSet` driver on top
+  of [oxmysql](https://overextended.dev/oxmysql) (`OxMysqlConnection`,
+  `OxMysqlResultSet`), plus `OxMysql` for direct typed queries without an
+  ORM. Server-side only. See [docs/database.md](docs/database.md).
+
+### Changed
+- `test-server.hxml` now typechecks against the real `-lua` target instead
+  of the platform-less "cross" target, since `fivem.server.db` uses
+  `lua.Table` from the lua-target std, which "cross" can't see.
 
 ### Fixed
 - `examples/basic-resource` now depends on the library via `-lib fivem-hx`

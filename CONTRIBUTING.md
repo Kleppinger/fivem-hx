@@ -48,6 +48,7 @@ have its fix silently reverted the next time someone runs
 |---|---|
 | A generated native's signature, docs, or naming | `generate.py` (the generation logic), then regenerate |
 | `CoreEvents.hx` | `CoreEvents.hx` directly — it's hand-written and the generator never touches it |
+| `src/fivem/server/db/` (the oxmysql driver) | The file itself — hand-written runtime code, not generated |
 | The `Natives.hx` directory structure, the apiset-merge logic | `generate.py` |
 | Everything else (`examples/`, `docs/`, hxml files, workflows) | The file itself |
 
@@ -103,8 +104,10 @@ should land on commits that each make sense on their own.
 
 ## Reporting a security issue
 
-This library is externs-only (no runtime logic of its own beyond
-`CoreEvents.hx`), so the realistic surface is limited, but if you find
-something that looks like a security issue rather than a normal bug, open
-an issue and say so explicitly rather than a silent PR — it gives
-maintainers a chance to look before the details are public.
+Most of this library is externs-only (no runtime logic of its own beyond
+`CoreEvents.hx`); `src/fivem/server/db/` is the exception, with real
+runtime code (SQL escaping, query dispatch) that's a legitimate security
+surface. If you find something that looks like a security issue rather
+than a normal bug, open an issue and say so explicitly rather than a
+silent PR — it gives maintainers a chance to look before the details are
+public.

@@ -25,6 +25,10 @@ writing raw Lua.
   three separate client/server/shared packages.
 - **A real example resource** — [`examples/basic-resource`](examples/basic-resource)
   compiles and runs, not just a code snippet.
+- **Database driver** — `fivem.server.db` wraps
+  [oxmysql](https://overextended.dev/oxmysql) as a `sys.db.Connection`,
+  usable directly or with the `record-macros` haxelib's ORM (see
+  [docs/database.md](docs/database.md)).
 
 ## Requirements
 
@@ -75,6 +79,7 @@ fivem-hx/
 ├── src/fivem/
 │   ├── client/          package fivem.client — client-only + shared natives
 │   ├── server/          package fivem.server — server-only + shared natives
+│   │   └── db/           oxmysql-backed sys.db.Connection driver
 │   └── shared/          package fivem.shared — shared natives + CoreEvents.hx
 ├── examples/
 │   └── basic-resource/  a working client+server FiveM resource
@@ -99,6 +104,7 @@ client/server rather than left as a separate package.
 | [Getting Started](docs/getting-started.md) | Install, wire up your first resource |
 | [Architecture](docs/architecture.md) | Repo layout rationale, apiset merging, how externs compile to zero-cost calls |
 | [API Guide](docs/api-guide.md) | Calling conventions, player source types, vectors, multi-return natives |
+| [Database (oxmysql)](docs/database.md) | The `sys.db.Connection` driver, direct queries, wiring up the `record-macros` ORM |
 | [Haxe + FiveM Tips](docs/haxe-fivem-tips.md) | Lua runtime versions, debugging, structuring client/server/shared code |
 | [Dev Experience](docs/dev-experience.md) | Editor setup, fast builds, watch loops, debugging without source maps |
 | [Regenerating Natives](docs/regenerating-natives.md) | How `generate.py` works, its known limitations, how to extend it |

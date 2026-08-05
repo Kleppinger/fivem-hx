@@ -97,6 +97,12 @@ repo's own `test-*.hxml` files do exactly this for the library's three
 packages; the same pattern works for your own resource code as a fast "did
 I break the build" check, or wired into CI.
 
+`test-server.hxml` additionally passes `-lua <file>` alongside
+`--no-output` (`-lua` picks the target/std to typecheck against; `--no-output`
+still suppresses writing that file) — `fivem.server.db` uses `lua.Table`
+from Haxe's lua-target std, which isn't reachable when typechecking against
+the platform-less "cross" target the other two files use.
+
 ## Multiple resources in one workspace
 
 If you're maintaining several resources against a `haxelib dev`-linked copy
