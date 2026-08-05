@@ -35,3 +35,13 @@ jobs:
       - name: Build example resource (server)
         working-directory: examples/basic-resource
         run: haxe server.hxml
+
+      # The core-demo example is the only place the object-oriented layer is
+      # exercised end to end, so a break there is a real regression.
+      - name: Build core-demo example (client)
+        working-directory: examples/core-demo
+        run: haxe client.hxml
+
+      - name: Build core-demo example (server)
+        working-directory: examples/core-demo
+        run: haxe server.hxml
