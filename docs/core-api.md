@@ -19,7 +19,7 @@ src/fivem/
 │   ├── core/               Thread, Events, Commands, StateBag, Kvp, Resource,
 │   │                       Exports, Deferred, CallbackProtocol
 │   ├── util/               Vector2/3/4, Quaternion, Rgba, Hash, MathUtil,
-│   │                       Signal, Logger, Timing, Json, LuaTables
+│   │                       Signal, Logger, Timing, Json, Bits, LuaTables
 │   └── colshape/           ColShape, Sphere, Circle, Box, Poly
 ├── client/
 │   ├── NativeOutputs.hx    multi-return natives the generator can't express
@@ -301,6 +301,7 @@ network message.
 | `MathUtil` | `clamp`, `lerp`, `map`, `deltaDegrees`, `randomInt`, `smoothStep` |
 | `Rgba` | 8-bit colour, so drawing natives take one argument instead of four |
 | `Json` | JSON encode/decode that works on FXServer — use this, never `haxe.Json` |
+| `Bits` | Bitwise ops that work on FXServer — use this, never Haxe's `\|`, `&`, `<<` |
 | `LuaTables` | Conversions between raw Lua tables and Haxe arrays and maps |
 | `Deferred<T>` | A typed promise, for turning callback APIs into blocking calls |
 

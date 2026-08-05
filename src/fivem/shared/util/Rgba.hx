@@ -46,15 +46,40 @@ abstract Rgba(RgbaData) from RgbaData to RgbaData {
 		var value = Std.parseInt("0x" + text.substr(0, 6));
 		if (value == null) return white(alpha);
 		var parsedAlpha = text.length >= 8 ? Std.parseInt("0x" + text.substr(6, 2)) : null;
-		return new Rgba(value >> 16 & 0xFF, value >> 8 & 0xFF, value & 0xFF, parsedAlpha == null ? alpha : parsedAlpha);
+
+		// Arithmetic rather than shifts and masks: Haxe's Lua target routes
+		// every bitwise operator through a shim that requires the `bit32`
+		// module, which FiveM's Lua 5.3/5.4 does not ship, and the shim fails
+		// at load time. For non-overlapping byte fields the two are exactly
+		// equivalent. See fivem.shared.util.Bits for the general case.
+		return new Rgba(Std.int(value / 65536) % 256, Std.int(value / 256) % 256, value % 256, parsedAlpha == null ? alpha : parsedAlpha);
 	}
 
-	/** Packs into a single `0xRRGGBBAA` integer. **/
+	/**
+		Packs into a single `0xRRGGBBAA` integer.
+
+		Built with multiplication instead of shifts for the reason described in
+		`fromHex` — the components are non-overlapping bytes, so the result is
+		identical.
+	**/
 	public inline function toInt():Int
-		return (this.r << 24) | (this.g << 16) | (this.b << 8) | this.a;
+		return this.r * 16777216 + this.g * 65536 + this.b * 256 + this.a;
 
 	public inline function toHex():String {
-		return "#" + StringTools.hex(this.r, 2) + StringTools.hex(this.g, 2) + StringTools.hex(this.b, 2);
+		return "#" + byteToHex(this.r) + byteToHex(this.g) + byteToHex(this.b);
+	}
+
+	/**
+		Two uppercase hex digits for one byte.
+
+		Hand-rolled rather than using `StringTools.hex`, which is implemented
+		with bitwise operators and so drags in the `_hx_bit` shim that fails to
+		load on FXServer — see `fivem.shared.util.Bits`.
+	**/
+	static function byteToHex(value:Int):String {
+		var clamped = value < 0 ? 0 : (value > 255 ? 255 : value);
+		var digits = "0123456789ABCDEF";
+		return digits.charAt(Std.int(clamped / 16)) + digits.charAt(clamped % 16);
 	}
 
 	/** A copy with a different alpha, leaving the hue untouched. **/

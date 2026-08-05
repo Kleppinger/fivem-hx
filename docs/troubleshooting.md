@@ -132,11 +132,27 @@ The same trap applies to any Haxe std API with a native Lua binding behind
 it. CI allowlists the modules the generated Lua is allowed to `require`, so
 a new one shows up as a build failure rather than a dead server.
 
-### `attempt to call a nil value (global 'bit')`
+### `Failed to load bit or bit32`, or `attempt to call a nil value (global 'bit')`
 
-Lua version mismatch between how Haxe compiled bitwise operators and what
-FiveM's runtime actually provides. See
-[haxe-fivem-tips.md](haxe-fivem-tips.md#fivems-lua-runtimes-and-why-it-matters-to-haxe).
+You used a Haxe bitwise operator (`|`, `&`, `^`, `~`, `<<`, `>>`, `>>>`) on
+an `Int`, or called a std function that uses one internally — `StringTools.hex`
+is a common culprit.
+
+Haxe's Lua target does not compile those to Lua's native operators. It
+inlines a `_hx_bit` shim that requires the `bit32` or `bit` module, and Lua
+5.3/5.4 ships neither, because it has native bitwise operators instead. The
+shim runs at load time, so the whole resource fails to start.
+
+No compiler define avoids it. Use
+[`fivem.shared.util.Bits`](../src/fivem/shared/util/Bits.hx), which emits
+Lua's operators directly:
+
+```haxe
+var flags = Bits.bor(RaycastFlags.WorldGeometry, RaycastFlags.Vehicles);
+```
+
+Full detail in
+[haxe-fivem-tips.md](haxe-fivem-tips.md#never-use-haxes-bitwise-operators).
 
 ### A native "does nothing" or silently returns the wrong thing
 

@@ -7,8 +7,12 @@ import fivem.shared.util.MathUtil;
 import fivem.shared.util.Vector3;
 
 /**
-	What a shape test is allowed to hit. These are bit flags — combine them
-	with `|`.
+	What a shape test is allowed to hit.
+
+	These are bit flags, but combine them with `Bits.bor`, not Haxe's `|` —
+	that operator compiles to a shim requiring a Lua module FXServer does not
+	have, and takes the whole resource down at load time. See
+	`fivem.shared.util.Bits`.
 **/
 enum abstract RaycastFlags(Int) from Int to Int {
 	/** Static map geometry: terrain, buildings, props baked into the map. **/

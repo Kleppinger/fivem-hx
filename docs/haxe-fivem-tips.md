@@ -32,21 +32,49 @@ lua54 'yes'   -- Lua 5.4 (recommended for new resources)
 -- or omit it for the legacy Lua runtime (closer to 5.3/LuaJIT-ish behavior)
 ```
 
-Haxe's `-lua` target generates code for a specific Lua dialect and can be
-steered with compiler defines:
+Both are Lua 5.3 or newer, which matters for one thing in particular.
 
-- `-D lua_ver=5.1` / `5.2` / `5.3` — pick which Lua version's stdlib shims
-  to emit (affects things like bitwise operators, which aren't native
-  syntax before Lua 5.3).
-- `-D lua-vanilla` — avoid LuaJIT-specific assumptions.
+### Never use Haxe's bitwise operators
 
-If your compiled script throws something like `attempt to call a nil value
-(global 'bit')`, that's a version mismatch between what Haxe assumed and
-what FiveM's runtime actually provides — check the `lua54` setting in your
-`fxmanifest.lua` against the `-D lua_ver` you're compiling with, and adjust
-one side or the other. When in doubt, `lua54 'yes'` + no `lua_ver` override
-is the modern, native-bitwise-operator combination and the one to reach for
-first.
+`|`, `&`, `^`, `~`, `<<`, `>>` and `>>>` on `Int` do **not** compile to Lua's
+native operators. Haxe's Lua target routes them through a `_hx_bit` shim it
+inlines into the output, and that shim opens with:
+
+```lua
+local hasBit32, bit32 = pcall(require, 'bit32')
+...
+  error("Failed to load bit or bit32")
+```
+
+Lua 5.3 and 5.4 have native bitwise operators and therefore ship neither
+`bit32` nor `bit`. The shim runs at load time, so one bitwise operation
+anywhere in the resource stops it starting:
+
+```
+SCRIPT ERROR: @your-resource/dist/server/server.lua:5705:
+  Failed to load bit or bit32
+```
+
+No compiler define avoids this. `-D lua_ver=5.3`, `-D lua_ver=5.4`,
+`-D lua-vanilla` and `-D luajit` were each tested against Haxe 4.3.7 and all
+still emit the shim — it is a fixed asset the generator inlines whenever it
+sees a bitwise operation, independent of the target dialect.
+
+Use [`fivem.shared.util.Bits`](../src/fivem/shared/util/Bits.hx) instead,
+which emits Lua's own operators directly:
+
+```haxe
+var flags = Bits.bor(WorldGeometry, Vehicles);
+if (Bits.hasFlag(flags, Vehicles)) { ... }
+```
+
+Watch out for std functions that use bitwise operators internally and drag
+the shim in without you writing a single `|` — `StringTools.hex` is the one
+this library tripped over. CI checks that no generated output contains the
+shim.
+
+`fivem-hx` itself is free of Haxe bitwise operators, so the library alone
+will never trigger this.
 
 ## Debugging
 
