@@ -60,3 +60,19 @@ jobs:
             echo "parsing $file"
             luac5.4 -p "$file"
           done
+
+      # Parsing is not enough: Haxe's Lua target emits top-level require()
+      # calls for native modules FXServer does not ship (hxsimdjson, pulled in
+      # by haxe.Json, is the one that bit us). Those load-time failures kill
+      # the whole resource, so the set of required modules is allowlisted.
+      # lua-utf8/utf8 and luv are the two the example patch script handles.
+      - name: Check for unshippable Lua module requires
+        run: |
+          set -e
+          grep -ho 'require("[A-Za-z0-9_.-]*")' test-*-check.lua examples/*/dist/*/*.lua | sort -u > /tmp/requires.txt
+          cat /tmp/requires.txt
+          if grep -vE 'require\("(lua-utf8|utf8|luv)"\)' /tmp/requires.txt; then
+            echo "::error::generated Lua requires a module FXServer does not ship (see above)"
+            exit 1
+          fi
+          echo "only expected modules are required"
