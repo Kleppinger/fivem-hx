@@ -12,24 +12,34 @@ package fivem.server.db;
 	file's source. `__hx_oxmysql_await` mirrors its `.await()` helper: wrap
 	the callback in a promise and block the current Citizen coroutine on it,
 	which is what lets DB calls read as synchronous Haxe code.
+
+	Every runtime global referenced below (`exports`, `promise`, `Citizen`,
+	natives) is prefixed with `_G.`, matching exactly how every native call
+	generated elsewhere in this library compiles (`@:native("_G")` +
+	`@:native("NATIVE_NAME")` → `_G.NATIVE_NAME(...)`). FXServer loads each
+	resource's chunk with its own sandboxed `_ENV`, distinct from the real
+	`_G` where natives and runtime globals actually live — a bare
+	(un-prefixed) reference to any of them resolves through that empty
+	sandboxed `_ENV` and comes back `nil`, even though the exact same name
+	resolves fine through `_G`.
 **/
 class OxMysqlBridge {
 	static function __init__():Void {
 		untyped __lua__("
 function __hx_oxmysql_call(method, query, parameters, cb)
-	return exports.oxmysql[method](nil, query, parameters, cb, GET_CURRENT_RESOURCE_NAME(), false)
+	return _G.exports.oxmysql[method](nil, query, parameters, cb, _G.GET_CURRENT_RESOURCE_NAME(), false)
 end
 
 function __hx_oxmysql_await(method, query, parameters)
-	local p = promise.new()
-	exports.oxmysql[method](nil, query, parameters, function(result, error)
+	local p = _G.promise.new()
+	_G.exports.oxmysql[method](nil, query, parameters, function(result, error)
 		if error then
 			p:reject(error)
 		else
 			p:resolve(result)
 		end
-	end, GET_CURRENT_RESOURCE_NAME(), true)
-	return Citizen.Await(p)
+	end, _G.GET_CURRENT_RESOURCE_NAME(), true)
+	return _G.Citizen.Await(p)
 end
 ");
 	}

@@ -21,6 +21,14 @@ All notable changes to this project are documented here. Format follows
   `lua.Table` from the lua-target std, which "cross" can't see.
 
 ### Fixed
+- `fivem.server.db.OxMysqlBridge`'s raw Lua glue referenced `exports`,
+  `promise`, `Citizen`, and the current-resource-name native as bare
+  globals, which resolve `nil` at runtime — FXServer loads each resource's
+  chunk with its own sandboxed `_ENV`, distinct from the real `_G` where
+  those actually live (confirmed against a live FXServer + oxmysql:
+  `attempt to call a nil value (global 'GET_CURRENT_RESOURCE_NAME')`). Now
+  prefixed with `_G.`, matching how every other native call in this library
+  already compiles.
 - `examples/basic-resource` now depends on the library via `-lib fivem-hx`
   instead of a monorepo-relative `-p ../../src`. The old hxml only worked
   while the resource stayed nested inside this repo two directories deep —
