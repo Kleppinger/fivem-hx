@@ -9,6 +9,10 @@ export/
 # type-check output from test-*.hxml
 test-*-check.lua
 
+# scratch output from native-name analysis against a local FXServer
+lua_names.txt
+leading_us.txt
+
 # compiled example output - build with the .hxml files instead of committing lua
 examples/**/dist/
 
