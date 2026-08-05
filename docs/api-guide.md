@@ -123,8 +123,10 @@ color natives). The generator has no way to detect this from the JSON
 schema alone, so those show up as ordinary typed parameters/returns that
 won't behave like you expect if you call them like a normal function.
 
-If you hit one of these, model it explicitly with a
-[`@:multiReturn`](https://haxe.org/manual/target-lua-multireturn.html)
+The ones the core API needs are already declared this way in
+[`fivem.client.NativeOutputs`](../src/fivem/client/NativeOutputs.hx) — check
+there before writing your own. If you hit one that isn't, model it explicitly
+with a [`@:multiReturn`](https://haxe.org/manual/target-lua-multireturn.html)
 extern instead of trusting the generated signature:
 
 ```haxe

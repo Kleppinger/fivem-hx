@@ -109,17 +109,50 @@ Two things stack here:
   native directly, with zero wrapper overhead. You can check this yourself
   in any compiled `dist/*.lua` output.
 
-## `CoreEvents.hx` — the one hand-written file
+## The hand-written files
 
-`RegisterCommand`, `RegisterNetEvent`, `AddEventHandler`, and
-`TriggerClientEvent` aren't in FiveM's natives database — they're Lua
-globals FiveM injects directly, documented separately from the native
-reference. `generate.py` has nothing to generate them from, so they're
-hand-written in `src/fivem/shared/CoreEvents.hx`, deliberately kept out of
-`natives/` so re-running the generator never touches or overwrites it.
+Four things `generate.py` can't produce live alongside the generated tree,
+deliberately outside `natives/` so re-running the generator never touches
+them:
 
-If you find other hand-documented (non-native) FiveM globals you need,
-that's the file to extend.
+- **`shared/CoreEvents.hx`** — `RegisterCommand`, `RegisterNetEvent`,
+  `AddEventHandler`, `TriggerEvent` and the `Trigger*Event` family. These
+  aren't in FiveM's natives database at all; they're Lua globals the runtime
+  injects, documented separately from the native reference.
+- **`shared/Citizen.hx`** — the `Citizen` scheduler table (`CreateThread`,
+  `Wait`, `SetTimeout`, `Await`) and the `promise` table, same story.
+- **`shared/Runtime.hx`** — `GET_GAME_TIMER` and `GET_HASH_KEY`. Both exist
+  in *both* apisets, so the generator files them under `fivem.client.natives`
+  and `fivem.server.natives` separately and never under `fivem.shared`. Code
+  in `fivem.shared` can't reach either copy without breaking the split, so
+  they're re-declared once here.
+- **`client/NativeOutputs.hx`** — natives whose Lua binding returns multiple
+  values. The database describes their output parameters as ordinary
+  arguments, so the generated signature type-checks while discarding the
+  result; these re-declare them with `@:multiReturn`.
+
+If you find other hand-documented (non-native) FiveM globals you need, those
+are the files to extend.
+
+## The core layer
+
+`src/fivem/{client,server,shared}/core/`, `shared/util/` and
+`shared/colshape/` hold the object-oriented API — `Entity`/`Ped`/`Vehicle`,
+`Player`, `Vector3`, `Zones`, `Callbacks` and so on. It is ordinary
+hand-written Haxe layered on top of the externs, described in
+[core-api.md](core-api.md).
+
+It lives under the same three packages rather than in a separate library for
+the same reason the natives do: one classpath, one version, one thing to
+install. It is also strictly additive — nothing in `natives/` depends on it,
+so a resource that only ever calls natives directly generates none of it (see
+"Externs are free" above, and note that Haxe's dead code elimination applies
+to the core classes too).
+
+`shared/Core.hx`, `client/Core.hx` and `server/Core.hx` are alias-only
+modules. Importing a Haxe module imports every type it declares, so a single
+`import fivem.client.Core;` brings the whole layer into scope; because every
+entry is a `typedef`, this costs nothing at runtime.
 
 ## Multi-target by construction
 

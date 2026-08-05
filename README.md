@@ -86,11 +86,17 @@ Full walkthrough, including `fxmanifest.lua` and the server side, in
 fivem-hx/
 ├── src/fivem/
 │   ├── client/          package fivem.client — client-only + shared natives
+│   │   └── core/         Entity, Ped, Vehicle, Player, Zones, Ui, Raycast, ...
 │   ├── server/          package fivem.server — server-only + shared natives
+│   │   ├── core/         Entity, Ped, Vehicle, Player, Players, Zones, Http, ...
 │   │   └── db/           oxmysql-backed sys.db.Connection driver
-│   └── shared/          package fivem.shared — shared natives + CoreEvents.hx
+│   └── shared/          package fivem.shared — shared natives + hand-written externs
+│       ├── core/         Thread, Events, Commands, StateBag, Kvp, Resource, ...
+│       ├── util/         Vector2/3/4, Quaternion, Rgba, Hash, MathUtil, Logger, ...
+│       └── colshape/     Sphere, Circle, Box, Poly
 ├── examples/
 │   ├── basic-resource/  a working client+server FiveM resource
+│   ├── core-demo/       the object-oriented core API end to end
 │   └── mysql-example/   a server resource demoing the oxmysql driver
 ├── docs/                 in-depth guides (see below)
 ├── scripts/
@@ -120,6 +126,7 @@ covers the *what* — every class and method signature under `fivem.client`,
 | [Getting Started](docs/getting-started.md) | Install, wire up your first resource |
 | [Architecture](docs/architecture.md) | Repo layout rationale, apiset merging, how externs compile to zero-cost calls |
 | [API Guide](docs/api-guide.md) | Calling conventions, player source types, vectors, multi-return natives |
+| [Core API](docs/core-api.md) | The OOP layer: entities, players, vehicles, zones, vectors, callbacks, state bags |
 | [Database (oxmysql)](docs/database.md) | The `sys.db.Connection` driver, direct queries, wiring up the `record-macros` ORM |
 | [Haxe + FiveM Tips](docs/haxe-fivem-tips.md) | Lua runtime versions, debugging, structuring client/server/shared code |
 | [Dev Experience](docs/dev-experience.md) | Editor setup, fast builds, watch loops, debugging without source maps |
