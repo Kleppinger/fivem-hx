@@ -106,3 +106,18 @@ jobs:
             exit 1
           fi
           echo "all @:native names use the runtime spelling"
+
+      # FiveM's client sandbox does not expose the `os` library. Haxe emits
+      # `_G.math.randomseed(_G.os.time())` at file scope as soon as anything
+      # uses Math.random or Std.random, and that runs at load time — so the
+      # resource dies before any of its own code does. Anything at column 0
+      # runs on load, so that is what is checked; os/io *inside* a function
+      # body (haxe.Date) is fine as long as it is never called client-side.
+      - name: Check for load-time os/io access
+        run: |
+          set -e
+          if grep -nE "^[^[:space:]].*_G\.(os|io)\." test-*-check.lua examples/*/dist/*/*.lua; then
+            echo "::error::generated Lua touches os/io at load time; FiveM's client sandbox has neither (use MathUtil.random instead of Math.random)"
+            exit 1
+          fi
+          echo "no load-time os/io access"
