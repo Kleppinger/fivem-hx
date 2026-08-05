@@ -27,10 +27,12 @@ class OxMysqlBridge {
 	static function __init__():Void {
 		untyped __lua__("
 function __hx_oxmysql_call(method, query, parameters, cb)
-	return _G.exports.oxmysql[method](nil, query, parameters, cb, _G.GET_CURRENT_RESOURCE_NAME(), false)
+	local resourceName = _G.GetCurrentResourceName and _G.GetCurrentResourceName() or (_G.GET_CURRENT_RESOURCE_NAME and _G.GET_CURRENT_RESOURCE_NAME() or 'hx-resource')
+	return _G.exports.oxmysql[method](nil, query, parameters, cb, resourceName, false)
 end
 
 function __hx_oxmysql_await(method, query, parameters)
+	local resourceName = _G.GetCurrentResourceName and _G.GetCurrentResourceName() or (_G.GET_CURRENT_RESOURCE_NAME and _G.GET_CURRENT_RESOURCE_NAME() or 'hx-resource')
 	local p = _G.promise.new()
 	_G.exports.oxmysql[method](nil, query, parameters, function(result, error)
 		if error then
@@ -38,7 +40,7 @@ function __hx_oxmysql_await(method, query, parameters)
 		else
 			p:resolve(result)
 		end
-	end, _G.GET_CURRENT_RESOURCE_NAME(), true)
+	end, resourceName, true)
 	return _G.Citizen.Await(p)
 end
 ");
