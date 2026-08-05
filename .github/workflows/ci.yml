@@ -45,3 +45,18 @@ jobs:
       - name: Build core-demo example (server)
         working-directory: examples/core-demo
         run: haxe server.hxml
+
+      # Haxe compiling cleanly does not mean the Lua it emitted parses: the
+      # Lua target can generate syntactically invalid output (see
+      # docs/troubleshooting.md), and FXServer only finds out at load time.
+      # luac -p parses without executing, so no runtime deps are needed.
+      - name: Install Lua for syntax checking
+        run: sudo apt-get update && sudo apt-get install -y lua5.4
+
+      - name: Check that generated Lua parses
+        run: |
+          set -e
+          for file in test-*-check.lua examples/*/dist/*/*.lua; do
+            echo "parsing $file"
+            luac5.4 -p "$file"
+          done

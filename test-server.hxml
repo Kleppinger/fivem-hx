@@ -1,4 +1,3 @@
 -p src
 -lua test-server-check.lua
---no-output
 --macro include('fivem.server')
