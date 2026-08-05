@@ -8,15 +8,18 @@ All notable changes to this project are documented here. Format follows
 ## [Unreleased]
 
 ### Added
-- `CONTRIBUTING.md` with dev setup, PR checklist, and guidance on where
-  fixes belong (generator vs. generated output vs. hand-written externs).
-- `docs/versioning.md` documenting what counts as a PATCH/MINOR/MAJOR
-  change for a mostly-generated externs library.
-- `.github/workflows/ci.yml` — type-checks all three packages and builds
-  the example resource on every push and PR.
-- `.github/workflows/release.yml` — verifies the git tag matches
-  `haxelib.json`'s version, type-checks, packages the release zip, and
-  attaches it to the GitHub Release.
+- `fivem.shared.CoreEvents.triggerServerEvent` — was missing alongside the
+  existing `triggerClientEvent`; neither is in FiveM's natives database.
+
+### Fixed
+- `examples/basic-resource` now depends on the library via `-lib fivem-hx`
+  instead of a monorepo-relative `-p ../../src`. The old hxml only worked
+  while the resource stayed nested inside this repo two directories deep —
+  copying it out as a starting point for a real project (the intended use)
+  produced `Type not found` errors for every `fivem.*` import. CI and the
+  release workflow now `haxelib dev fivem-hx .` before building the example
+  so it's still validated against the checked-out source, not a stale
+  published version.
 
 ## [0.1.0] - 2026-08-04
 
@@ -31,9 +34,16 @@ All notable changes to this project are documented here. Format follows
 - `examples/basic-resource` — a working client+server FiveM resource built
   against the library and compiled to Lua.
 - `docs/` — getting started, architecture, API guide, Haxe+FiveM tips, dev
-  experience, native regeneration, and publishing guides.
+  experience, native regeneration, versioning, and publishing guides.
 - `haxelib.json`, `LICENSE` (MIT), and `test-{shared,server,client}.hxml`
   type-check-only builds.
+- `CONTRIBUTING.md` with dev setup, PR checklist, and guidance on where
+  fixes belong (generator vs. generated output vs. hand-written externs).
+- `.github/workflows/ci.yml` — type-checks all three packages and builds
+  the example resource on every push and PR.
+- `.github/workflows/release.yml` — verifies the git tag matches
+  `haxelib.json`'s version, type-checks, packages the release zip, and
+  attaches it to the GitHub Release.
 
 ### Fixed
 - Shared natives (e.g. the `CFX` namespace) are now merged into each env's

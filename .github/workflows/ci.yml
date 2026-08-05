@@ -25,6 +25,9 @@ jobs:
       - name: Type-check fivem.client
         run: haxe test-client.hxml
 
+      - name: Link fivem-hx to this checkout
+        run: haxelib dev fivem-hx .
+
       - name: Build example resource (client)
         working-directory: examples/basic-resource
         run: haxe client.hxml

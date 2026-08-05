@@ -37,4 +37,11 @@ extern class CoreEvents {
 	**/
 	@:native("TriggerClientEvent")
 	static function triggerClientEvent(eventName:String, targetSource:Int, arg1:Dynamic, ?arg2:Dynamic):Void;
+
+	/**
+		Triggers a server event from the client.
+		@param eventName The name of the event to trigger.
+	**/
+	@:native("TriggerServerEvent")
+	static function triggerServerEvent(eventName:String, ?arg1:Dynamic, ?arg2:Dynamic):Void;
 }

@@ -1,4 +1,4 @@
--p ../../src
+-lib fivem-hx
 -p src
 -main ServerMain
 -lua dist/server/server.lua

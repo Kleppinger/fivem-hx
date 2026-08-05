@@ -40,6 +40,9 @@ jobs:
           haxe test-server.hxml
           haxe test-client.hxml
 
+      - name: Link fivem-hx to this checkout
+        run: haxelib dev fivem-hx .
+
       - name: Build example resource
         working-directory: examples/basic-resource
         run: |

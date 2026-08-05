@@ -8,3 +8,6 @@ export/
 
 # compiled example output - build with the .hxml files instead of committing lua
 examples/**/dist/
+
+# release packaging output (see docs/publishing.md)
+/fivem-hx*.zip
