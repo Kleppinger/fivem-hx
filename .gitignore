@@ -11,3 +11,8 @@ examples/**/dist/
 
 # release packaging output (see docs/publishing.md)
 /fivem-hx*.zip
+
+# generated API docs (see docs/api-reference.md) — hxdoc.xml is compiler
+# output, hxdocs/ is a worktree checkout of the `docs` branch
+/docs/hxdoc.xml
+/docs/hxdocs/

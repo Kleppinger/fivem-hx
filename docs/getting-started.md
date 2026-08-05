@@ -116,3 +116,6 @@ the network boundary), see [examples/basic-resource](../examples/basic-resource)
 - [Haxe + FiveM Tips](haxe-fivem-tips.md) covers things that only bite you
   once you're past "hello world" — Lua version quirks, vectors, multi-return
   natives, debugging compiled output.
+- The [API reference](https://kleppinger.github.io/fivem-hx/) is the
+  searchable index of every class and method in the library — handy when
+  you know the native's name but not which namespace it landed in.

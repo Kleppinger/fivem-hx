@@ -1,5 +1,10 @@
 # API Guide
 
+This page covers the calling conventions and the gotchas. For the exhaustive
+list of what's actually available — every class, method, and signature —
+browse the generated [API reference](https://kleppinger.github.io/fivem-hx/)
+(see [api-reference.md](api-reference.md) for how it's built).
+
 ## Calling natives
 
 Every native is reachable two ways. Pick whichever reads better at the call

@@ -34,6 +34,13 @@ with later.
 6. **Commit and push** the version/changelog bump to `main` first — the
    tag in the next step should point at a commit that's already on `main`,
    not a dangling one.
+7. **Republish the API reference** if any public signature changed:
+   ```powershell
+   ./scripts/Publish-Docs.ps1
+   ```
+   <https://kleppinger.github.io/fivem-hx/> is a snapshot of `src/` at the
+   last publish, not something CI keeps current — see
+   [api-reference.md](api-reference.md).
 
 ## Tagging triggers the release workflow
 

@@ -15,7 +15,10 @@ back-and-forth on PRs.
 - **Add a hand-written extern** — FiveM globals that aren't in the natives
   database (like `RegisterCommand`) go in `src/fivem/shared/CoreEvents.hx`.
 - **Improve the docs** — `docs/` is a normal part of the codebase; treat
-  doc-only PRs the same as code PRs.
+  doc-only PRs the same as code PRs. The [API reference](https://kleppinger.github.io/fivem-hx/)
+  is generated from source doc-comments rather than written by hand, so fix
+  those at the source (usually `generate.py`) — see
+  [docs/api-reference.md](docs/api-reference.md).
 - **Extend the example resource** — `examples/basic-resource` should stay
   small and readable; if you want to demonstrate something more involved,
   propose a new `examples/<name>` directory instead of growing the existing

@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Haxe](https://img.shields.io/badge/haxe-%3E%3D4.3-orange.svg)](https://haxe.org)
 [![FiveM](https://img.shields.io/badge/FiveM-natives-5c8ae6.svg)](https://docs.fivem.net/natives/)
+[![API docs](https://img.shields.io/badge/API%20docs-kleppinger.github.io%2Ffivem--hx-blue.svg)](https://kleppinger.github.io/fivem-hx/)
 
 Typed Haxe externs for the full FiveM/RedM native API, generated straight
 from CitizenFX's own native databases and organized into `client`, `server`,
@@ -11,6 +12,11 @@ and `shared` packages — write FiveM resources in Haxe with real
 autocomplete, compile-time argument checking, and code shared across the
 client/server boundary, instead of hand-rolling `@:native` declarations or
 writing raw Lua.
+
+**📖 [API reference](https://kleppinger.github.io/fivem-hx/)** — every
+package, class, and native signature in the library, browsable and
+searchable (generated with [Dox](https://github.com/HaxeFoundation/dox) from
+the same source the compiler sees).
 
 ## Features
 
@@ -87,6 +93,8 @@ fivem-hx/
 │   ├── basic-resource/  a working client+server FiveM resource
 │   └── mysql-example/   a server resource demoing the oxmysql driver
 ├── docs/                 in-depth guides (see below)
+├── scripts/
+│   └── Publish-Docs.ps1  builds the Dox API site and pushes it to the docs branch
 ├── .github/workflows/    CI (typecheck + build example) and tag-triggered releases
 ├── generate.py           regenerates src/fivem/*/natives from FiveM's docs
 ├── test-*.hxml           type-check-only builds for each package
@@ -102,8 +110,13 @@ client/server rather than left as a separate package.
 
 ## Documentation
 
+The generated **[API reference](https://kleppinger.github.io/fivem-hx/)**
+covers the *what* — every class and method signature under `fivem.client`,
+`fivem.server`, and `fivem.shared`. The guides below cover the *how*.
+
 | Guide | What's in it |
 |---|---|
+| [API Reference](https://kleppinger.github.io/fivem-hx/) | Generated class/method docs for the whole library (see [docs/api-reference.md](docs/api-reference.md) for how it's built) |
 | [Getting Started](docs/getting-started.md) | Install, wire up your first resource |
 | [Architecture](docs/architecture.md) | Repo layout rationale, apiset merging, how externs compile to zero-cost calls |
 | [API Guide](docs/api-guide.md) | Calling conventions, player source types, vectors, multi-return natives |
