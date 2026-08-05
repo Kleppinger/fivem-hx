@@ -6,6 +6,9 @@ export/
 *.log
 .vscode/
 
+# type-check output from test-*.hxml
+test-*-check.lua
+
 # compiled example output - build with the .hxml files instead of committing lua
 examples/**/dist/
 
