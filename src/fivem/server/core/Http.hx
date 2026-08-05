@@ -74,9 +74,16 @@ end
 			?onResponse:(response:HttpResponse) -> Void):Void {
 		var headerTable = headers == null ? null : lua.Table.fromMap(headers);
 
-		untyped __lua__("__hx_http_request({0}, {1}, {2}, {3}, {4})", url, method, body == null ? "" : body, headerTable,
-			function(status:Int, responseBody:String, responseHeaders:Dynamic) {
-				if (onResponse != null) onResponse({status: status, body: responseBody, headers: responseHeaders});
-			});
+		// Every argument is hoisted into a local first. `__lua__` substitutes
+		// the *compiled form* of each expression textually, and Lua has no
+		// ternary operator — so passing `body == null ? "" : body` inline
+		// pastes an `if` statement into an expression slot and the emitted
+		// script stops parsing. A local is always compiled as a value.
+		var payload = body == null ? "" : body;
+		var callback = function(status:Int, responseBody:String, responseHeaders:Dynamic) {
+			if (onResponse != null) onResponse({status: status, body: responseBody, headers: responseHeaders});
+		};
+
+		untyped __lua__("__hx_http_request({0}, {1}, {2}, {3}, {4})", url, method, payload, headerTable, callback);
 	}
 }
