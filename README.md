@@ -23,12 +23,14 @@ writing raw Lua.
   directly onto FiveM's Lua globals; you only pay for what you call.
 - **One classpath, one package** — `haxelib install` and go; no juggling
   three separate client/server/shared packages.
-- **A real example resource** — [`examples/basic-resource`](examples/basic-resource)
-  compiles and runs, not just a code snippet.
+- **Real example resources** — [`examples/basic-resource`](examples/basic-resource)
+  and [`examples/mysql-example`](examples/mysql-example) compile and run,
+  not just code snippets.
 - **Database driver** — `fivem.server.db` wraps
   [oxmysql](https://overextended.dev/oxmysql) as a `sys.db.Connection`,
   usable directly or with the `record-macros` haxelib's ORM (see
-  [docs/database.md](docs/database.md)).
+  [docs/database.md](docs/database.md), demoed in
+  [examples/mysql-example](examples/mysql-example)).
 
 ## Requirements
 
@@ -82,7 +84,8 @@ fivem-hx/
 │   │   └── db/           oxmysql-backed sys.db.Connection driver
 │   └── shared/          package fivem.shared — shared natives + CoreEvents.hx
 ├── examples/
-│   └── basic-resource/  a working client+server FiveM resource
+│   ├── basic-resource/  a working client+server FiveM resource
+│   └── mysql-example/   a server resource demoing the oxmysql driver
 ├── docs/                 in-depth guides (see below)
 ├── .github/workflows/    CI (typecheck + build example) and tag-triggered releases
 ├── generate.py           regenerates src/fivem/*/natives from FiveM's docs
@@ -138,12 +141,16 @@ fastest way to confirm a change to `generate.py` (or a manual edit under
 `src/`) doesn't break the package. See
 [docs/dev-experience.md](docs/dev-experience.md#keeping-the-compiler-honest-type-check-only-builds).
 
-## Example
+## Examples
 
 [examples/basic-resource](examples/basic-resource) is a small but complete
 client+server FiveM resource built against this library: native calls,
 command registration, and an event fired across the client/server boundary,
 compiled to Lua and verified to run.
+
+[examples/mysql-example](examples/mysql-example) is a server-only resource
+showing the `fivem.server.db` oxmysql driver: schema creation, and loading
+and saving a row through a plain Haxe model class, with no ORM involved.
 
 ## Contributing
 
