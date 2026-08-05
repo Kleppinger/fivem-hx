@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"tags": ["fivem", "gta", "redm", "lua", "externs", "natives"],
 	"description": "Haxe externs for FiveM/RedM natives, split into client/server/shared packages.",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"releasenote": "Restructure into a single-classpath monorepo (src/fivem/{client,server,shared}).",
 	"contributors": ["Kleppinger"],
 	"dependencies": {},
