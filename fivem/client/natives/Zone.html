@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><!-- use theme color or fallback -->
+<!--use textcolor from settings, otherwise create a contrasting color to theme color-->
+<head><meta charset="utf-8"/><link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/><link href="../../../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/><link href="../../../bootstrap/css/bootstrap-select.min.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,600italic,400" rel="stylesheet" type="text/css"/><link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css"/><script src="../../../jquery-1.9.1.min.js"></script><script src="../../../bootstrap/js/bootstrap.min.js"></script><script src="../../../bootstrap/js/bootstrap-select.min.js"></script><link href="../../../styles.css" rel="stylesheet"/><link href="../../../extra-styles.css" rel="stylesheet"/><link href="../../../haxe-nav.css" rel="stylesheet"/><link href="../../../dark-mode.css" rel="stylesheet"/><script>var dox = {rootPath: "../../../",platforms: ["hxdoc"]};</script><script src="../../../nav.js"></script><script src="../../../index.js"></script><link rel="icon" href="../../../favicon.ico" type="image/x-icon"/><title>fivem.client.natives.Zone</title></head><body><script>/* Here to prevent flash of unstyled content */let systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;if ((!localStorage.theme && systemDarkMode) || localStorage.theme == "dark") {document.body.style.backgroundColor = "#111";document.body.style.opacity = "0";document.addEventListener("DOMContentLoaded", function(event) {toggleTheme();document.body.style.backgroundColor = "";document.body.style.opacity = "";});}</script><style>
+.navbar .brand {
+	display: inline-block;
+	float: none;
+	text-shadow: 0 0 0 transparent;
+}
+</style><nav class="nav"><div class="navbar"><div class="navbar-inner" style="background:#FAFAFA; border-bottom:1px solid rgba(0,0,0,.09)"><div class="container"><a class="brand" style="color:#000000" href="../../../">API Documentation</a><a href="#" id="theme-toggle" class="brand" style="color:#000000" onclick="toggleTheme()" title="Toggle Dark Mode"><i class="fa fa-moon-o"></i></a></div></div></div></nav><div class="container main-content"><div class="row-fluid"><div class="span3"><div class="well sidebar-nav"><form class="form-search" id="searchForm"><div class="input-prepend input-block-level"><span class="add-on"><i class="fa fa-search"></i></span><input id="search" type="text" placeholder="Filter (Ctrl+P)" autocomplete="off"/></div></form></div><div class="well sidebar-nav" id="explorer"><div id="nav"></div></div></div><div class="span9"><div class="page-header"><h1><small>class</small> Zone</h1><h4><small>package <a href="../../../fivem/client/natives/index.html">fivem.client.natives</a></small></h4>    <span class="label label-meta label-meta-directlyUsed" title="Marks types that are directly referenced by non-extern code.">@:directlyUsed</span><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;_G&quot;)</span></div><div class="body"><div class="doc doc-main"><p></p></div><h3 class="section">Static methods</h3><div class="fields"><div class="field "><a name="clearPopscheduleOverrideVehicleModel"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;CLEAR_POPSCHEDULE_OVERRIDE_VEHICLE_MODEL&quot;)</span><span class="label label-static">static</span><a href="#clearPopscheduleOverrideVehicleModel"><span class="identifier">clearPopscheduleOverrideVehicleModel</span></a>(<span style="white-space:nowrap">scheduleId:<span class="type">Int</span></span>):<span class="type">Dynamic</span></code></h3><div class="doc"><pre><code>Only used once in the decompiled scripts. Seems to be related to scripted vehicle generators.  
+Modified example from "am_imp_exp.c4", line 6418:  
+/ * popSchedules[0] = ZONE::GET_ZONE_POPSCHEDULE(ZONE::GET_ZONE_AT_COORDS(891.3, 807.9, 188.1));  
+etc.  
+* /  
+STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(vehicleHash);  
+ZONE::CLEAR_POPSCHEDULE_OVERRIDE_VEHICLE_MODEL(popSchedules[index]);  </code></pre></div></div><div class="field "><a name="getHashOfMapAreaAtCoords"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_HASH_OF_MAP_AREA_AT_COORDS&quot;)</span><span class="label label-static">static</span><a href="#getHashOfMapAreaAtCoords"><span class="identifier">getHashOfMapAreaAtCoords</span></a>(<span style="white-space:nowrap">x:<span class="type">Float</span>,</span> <span style="white-space:nowrap">y:<span class="type">Float</span>,</span> <span style="white-space:nowrap">z:<span class="type">Float</span></span>):<span class="type">Int</span></code></h3><div class="doc"><pre><code>Returns a hash representing which part of the map the given coords are located.  
+Possible return values:  
+(Hash of) city -&gt; -289320599  
+(Hash of) countryside -&gt; 2072609373  
+C# Example :  
+Ped player = Game.Player.Character;  
+Hash h = Function.Call&lt;Hash&gt;(Hash.GET_HASH_OF_MAP_AREA_AT_COORDS, player.Position.X, player.Position.Y, player.Position.Z);  </code></pre></div></div><div class="field "><a name="getNameOfZone"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_NAME_OF_ZONE&quot;)</span><span class="label label-static">static</span><a href="#getNameOfZone"><span class="identifier">getNameOfZone</span></a>(<span style="white-space:nowrap">x:<span class="type">Float</span>,</span> <span style="white-space:nowrap">y:<span class="type">Float</span>,</span> <span style="white-space:nowrap">z:<span class="type">Float</span></span>):<span class="type">String</span></code></h3><div class="doc"><pre><code>AIRP = Los Santos International Airport  
+ALAMO = Alamo Sea  
+ALTA = Alta  
+ARMYB = Fort Zancudo  
+BANHAMC = Banham Canyon Dr  
+BANNING = Banning  
+BEACH = Vespucci Beach  
+BHAMCA = Banham Canyon  
+BRADP = Braddock Pass  
+BRADT = Braddock Tunnel  
+BURTON = Burton  
+CALAFB = Calafia Bridge  
+CANNY = Raton Canyon  
+CCREAK = Cassidy Creek  
+CHAMH = Chamberlain Hills  
+CHIL = Vinewood Hills  
+CHU = Chumash  
+CMSW = Chiliad Mountain State Wilderness  
+CYPRE = Cypress Flats  
+DAVIS = Davis  
+DELBE = Del Perro Beach  
+DELPE = Del Perro  
+DELSOL = La Puerta  
+DESRT = Grand Senora Desert  
+DOWNT = Downtown  
+DTVINE = Downtown Vinewood  
+EAST_V = East Vinewood  
+EBURO = El Burro Heights  
+ELGORL = El Gordo Lighthouse  
+ELYSIAN = Elysian Island  
+GALFISH = Galilee  
+GOLF = GWC and Golfing Society  
+GRAPES = Grapeseed  
+GREATC = Great Chaparral  
+HARMO = Harmony  
+HAWICK = Hawick  
+HORS = Vinewood Racetrack  
+HUMLAB = Humane Labs and Research  
+JAIL = Bolingbroke Penitentiary  
+KOREAT = Little Seoul  
+LACT = Land Act Reservoir  
+LAGO = Lago Zancudo  
+LDAM = Land Act Dam  
+LEGSQU = Legion Square  
+LMESA = La Mesa  
+LOSPUER = La Puerta  
+MIRR = Mirror Park  
+MORN = Morningwood  
+MOVIE = Richards Majestic  
+MTCHIL = Mount Chiliad  
+MTGORDO = Mount Gordo  
+MTJOSE = Mount Josiah  
+MURRI = Murrieta Heights  
+NCHU = North Chumash  
+NOOSE = N.O.O.S.E  
+OCEANA = Pacific Ocean  
+PALCOV = Paleto Cove  
+PALETO = Paleto Bay  
+PALFOR = Paleto Forest  
+PALHIGH = Palomino Highlands  
+PALMPOW = Palmer-Taylor Power Station  
+PBLUFF = Pacific Bluffs  
+PBOX = Pillbox Hill  
+PROCOB = Procopio Beach  
+RANCHO = Rancho  
+RGLEN = Richman Glen  
+RICHM = Richman  
+ROCKF = Rockford Hills  
+RTRAK = Redwood Lights Track  
+SANAND = San Andreas  
+SANCHIA = San Chianski Mountain Range  
+SANDY = Sandy Shores  
+SKID = Mission Row  
+SLAB = Stab City  
+STAD = Maze Bank Arena  
+STRAW = Strawberry  
+TATAMO = Tataviam Mountains  
+TERMINA = Terminal  
+TEXTI = Textile City  
+TONGVAH = Tongva Hills  
+TONGVAV = Tongva Valley  
+VCANA = Vespucci Canals  
+VESP = Vespucci  
+VINE = Vinewood  
+WINDF = Ron Alternates Wind Farm  
+WVINE = West Vinewood  
+ZANCUDO = Zancudo River  
+ZP_ORT = Port of South Los Santos  
+ZQ_UAR = Davis Quartz  
+PROL = Prologue / North Yankton
+ISHeist = Cayo Perico Island</code></pre></div></div><div class="field "><a name="getZoneAtCoords"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_ZONE_AT_COORDS&quot;)</span><span class="label label-static">static</span><a href="#getZoneAtCoords"><span class="identifier">getZoneAtCoords</span></a>(<span style="white-space:nowrap">x:<span class="type">Float</span>,</span> <span style="white-space:nowrap">y:<span class="type">Float</span>,</span> <span style="white-space:nowrap">z:<span class="type">Float</span></span>):<span class="type">Int</span></code></h3><div class="doc"></div></div><div class="field "><a name="getZoneFromNameId"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_ZONE_FROM_NAME_ID&quot;)</span><span class="label label-static">static</span><a href="#getZoneFromNameId"><span class="identifier">getZoneFromNameId</span></a>(<span style="white-space:nowrap">zoneName:<span class="type">String</span></span>):<span class="type">Int</span></code></h3><div class="doc"><pre><code>'zoneName' corresponds to an entry in 'popzone.ipl'.  
+AIRP = Los Santos International Airport  
+ALAMO = Alamo Sea  
+ALTA = Alta  
+ARMYB = Fort Zancudo  
+BANHAMC = Banham Canyon Dr  
+BANNING = Banning  
+BEACH = Vespucci Beach  
+BHAMCA = Banham Canyon  
+BRADP = Braddock Pass  
+BRADT = Braddock Tunnel  
+BURTON = Burton  
+CALAFB = Calafia Bridge  
+CANNY = Raton Canyon  
+CCREAK = Cassidy Creek  
+CHAMH = Chamberlain Hills  
+CHIL = Vinewood Hills  
+CHU = Chumash  
+CMSW = Chiliad Mountain State Wilderness  
+CYPRE = Cypress Flats  
+DAVIS = Davis  
+DELBE = Del Perro Beach  
+DELPE = Del Perro  
+DELSOL = La Puerta  
+DESRT = Grand Senora Desert  
+DOWNT = Downtown  
+DTVINE = Downtown Vinewood  
+EAST_V = East Vinewood  
+EBURO = El Burro Heights  
+ELGORL = El Gordo Lighthouse  
+ELYSIAN = Elysian Island  
+GALFISH = Galilee  
+GOLF = GWC and Golfing Society  
+GRAPES = Grapeseed  
+GREATC = Great Chaparral  
+HARMO = Harmony  
+HAWICK = Hawick  
+HORS = Vinewood Racetrack  
+HUMLAB = Humane Labs and Research  
+JAIL = Bolingbroke Penitentiary  
+KOREAT = Little Seoul  
+LACT = Land Act Reservoir  
+LAGO = Lago Zancudo  
+LDAM = Land Act Dam  
+LEGSQU = Legion Square  
+LMESA = La Mesa  
+LOSPUER = La Puerta  
+MIRR = Mirror Park  
+MORN = Morningwood  
+MOVIE = Richards Majestic  
+MTCHIL = Mount Chiliad  
+MTGORDO = Mount Gordo  
+MTJOSE = Mount Josiah  
+MURRI = Murrieta Heights  
+NCHU = North Chumash  
+NOOSE = N.O.O.S.E  
+OCEANA = Pacific Ocean  
+PALCOV = Paleto Cove  
+PALETO = Paleto Bay  
+PALFOR = Paleto Forest  
+PALHIGH = Palomino Highlands  
+PALMPOW = Palmer-Taylor Power Station  
+PBLUFF = Pacific Bluffs  
+PBOX = Pillbox Hill  
+PROCOB = Procopio Beach  
+RANCHO = Rancho  
+RGLEN = Richman Glen  
+RICHM = Richman  
+ROCKF = Rockford Hills  
+RTRAK = Redwood Lights Track  
+SANAND = San Andreas  
+SANCHIA = San Chianski Mountain Range  
+SANDY = Sandy Shores  
+SKID = Mission Row  
+SLAB = Stab City  
+STAD = Maze Bank Arena  
+STRAW = Strawberry  
+TATAMO = Tataviam Mountains  
+TERMINA = Terminal  
+TEXTI = Textile City  
+TONGVAH = Tongva Hills  
+TONGVAV = Tongva Valley  
+VCANA = Vespucci Canals  
+VESP = Vespucci  
+VINE = Vinewood  
+WINDF = Ron Alternates Wind Farm  
+WVINE = West Vinewood  
+ZANCUDO = Zancudo River  
+ZP_ORT = Port of South Los Santos  
+ZQ_UAR = Davis Quartz  </code></pre></div></div><div class="field "><a name="getZonePopschedule"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_ZONE_POPSCHEDULE&quot;)</span><span class="label label-static">static</span><a href="#getZonePopschedule"><span class="identifier">getZonePopschedule</span></a>(<span style="white-space:nowrap">zoneId:<span class="type">Int</span></span>):<span class="type">Int</span></code></h3><div class="doc"></div></div><div class="field "><a name="getZoneScumminess"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;GET_ZONE_SCUMMINESS&quot;)</span><span class="label label-static">static</span><a href="#getZoneScumminess"><span class="identifier">getZoneScumminess</span></a>(<span style="white-space:nowrap">zoneId:<span class="type">Int</span></span>):<span class="type">Int</span></code></h3><div class="doc"><p>Gets the zone scumminess level, used to calculate the cellphone signal strength.</p>
+<pre><code class="prettyprint cpp">enum eZoneScumminess
+{
+    SCUMMINESS_POSH = 0,
+    SCUMMINESS_NICE = 1,
+    SCUMMINESS_ABOVE_AVERAGE = 2,
+    SCUMMINESS_BELOW_AVERAGE = 3,
+    SCUMMINESS_CRAP = 4,
+    SCUMMINESS_SCUM = 5
+}</code></pre></div></div><div class="field "><a name="overridePopscheduleVehicleModel"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;OVERRIDE_POPSCHEDULE_VEHICLE_MODEL&quot;)</span><span class="label label-static">static</span><a href="#overridePopscheduleVehicleModel"><span class="identifier">overridePopscheduleVehicleModel</span></a>(<span style="white-space:nowrap">scheduleId:<span class="type">Int</span>,</span> <span style="white-space:nowrap">vehicleHash:<span class="type">Int</span></span>):<span class="type">Dynamic</span></code></h3><div class="doc"><pre><code>Only used once in the decompiled scripts. Seems to be related to scripted vehicle generators.  
+Modified example from "am_imp_exp.c4", line 6406:  
+/ * popSchedules[0] = ZONE::GET_ZONE_POPSCHEDULE(ZONE::GET_ZONE_AT_COORDS(891.3, 807.9, 188.1));  
+etc.  
+* /  
+ZONE::OVERRIDE_POPSCHEDULE_VEHICLE_MODEL(popSchedules[index], vehicleHash);  
+STREAMING::REQUEST_MODEL(vehicleHash);  </code></pre></div></div><div class="field "><a name="setZoneEnabled"></a><h3 class="anchor"><code><span class="label label-meta label-meta-native" title="Rewrites the path of a type or class field during generation.">@:native(&quot;SET_ZONE_ENABLED&quot;)</span><span class="label label-static">static</span><a href="#setZoneEnabled"><span class="identifier">setZoneEnabled</span></a>(<span style="white-space:nowrap">zoneId:<span class="type">Int</span>,</span> <span style="white-space:nowrap">toggle:<span class="type">Bool</span></span>):<span class="type">Dynamic</span></code></h3><div class="doc"></div></div></div></div></div></div></div><footer class="section site-footer" style="background:#FAFAFA"><div class="container"><div class="copyright"><p style="color:#000000">&copy; 2026 &nbsp;</p></div></div></footer><script src="../../..//highlighter.js"></script><link href="../../../highlighter.css" rel="stylesheet"/></body></html>
