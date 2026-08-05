@@ -5,55 +5,55 @@ extern class Streaming {
 	/**
 	 * 
 	 */
-	@:native("ADD_MODEL_TO_CREATOR_BUDGET")
+	@:native("AddModelToCreatorBudget")
 	static function addModelToCreatorBudget(modelHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_SRL")
+	@:native("BeginSrl")
 	static function beginSrl():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_PLAYER_SWITCH_PAN")
+	@:native("AllowPlayerSwitchPan")
 	static function allowPlayerSwitchPan():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_FOCUS")
+	@:native("ClearFocus")
 	static function clearFocus():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_PLAYER_SWITCH_DESCENT")
+	@:native("AllowPlayerSwitchDescent")
 	static function allowPlayerSwitchDescent():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_PLAYER_SWITCH_ASCENT")
+	@:native("AllowPlayerSwitchAscent")
 	static function allowPlayerSwitchAscent():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_ANIM_DICT_EXIST")
+	@:native("DoesAnimDictExist")
 	static function doesAnimDictExist(animDict:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_HD_AREA")
+	@:native("ClearHdArea")
 	static function clearHdArea():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_PLAYER_SWITCH_OUTRO")
+	@:native("AllowPlayerSwitchOutro")
 	static function allowPlayerSwitchOutro():Dynamic;
 
 	/**
@@ -62,7 +62,7 @@ extern class Streaming {
 	 * x2, y2, z2 -- Coords of the ped you want to switch to  
 	 * ```
 	 */
-	@:native("GET_IDEAL_PLAYER_SWITCH_TYPE")
+	@:native("GetIdealPlayerSwitchType")
 	static function getIdealPlayerSwitchType(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Int;
 
 	/**
@@ -70,85 +70,85 @@ extern class Streaming {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_GET_GLOBAL_WATER_TYPE")
+	@:native("GetGlobalWaterType")
 	static function GetGlobalWaterType():Int;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_SWITCH_OUTRO_FX")
+	@:native("DisableSwitchOutroFx")
 	static function disableSwitchOutroFx():Dynamic;
 
 	/**
 	 * Clear the current srl and stop rendering the area selected by PREFETCH_SRL and started with BEGIN_SRL.
 	 */
-	@:native("END_SRL")
+	@:native("EndSrl")
 	static function endSrl():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SHORT_SWITCH_STATE")
+	@:native("GetPlayerShortSwitchState")
 	static function getPlayerShortSwitchState():Int;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_SWITCH_PAUSE_BEFORE_DESCENT")
+	@:native("EnableSwitchPauseBeforeDescent")
 	static function enableSwitchPauseBeforeDescent():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SWITCH_INTERP_OUT_DURATION")
+	@:native("GetPlayerSwitchInterpOutDuration")
 	static function getPlayerSwitchInterpOutDuration():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LODSCALE")
+	@:native("GetLodscale")
 	static function getLodscale():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SWITCH_JUMP_CUT_INDEX")
+	@:native("GetPlayerSwitchJumpCutIndex")
 	static function getPlayerSwitchJumpCutIndex():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SWITCH_STATE")
+	@:native("GetPlayerSwitchState")
 	static function getPlayerSwitchState():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_STREAMING_REQUESTS")
+	@:native("GetNumberOfStreamingRequests")
 	static function getNumberOfStreamingRequests():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SWITCH_TYPE")
+	@:native("GetPlayerSwitchType")
 	static function getPlayerSwitchType():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SWITCH_INTERP_OUT_CURRENT_TIME")
+	@:native("GetPlayerSwitchInterpOutCurrentTime")
 	static function getPlayerSwitchInterpOutCurrentTime():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_COLLISION_FOR_MODEL_LOADED")
+	@:native("HasCollisionForModelLoaded")
 	static function hasCollisionForModelLoaded(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ANIM_DICT_LOADED")
+	@:native("HasAnimDictLoaded")
 	static function hasAnimDictLoaded(animDict:String):Bool;
 
 	/**
@@ -156,13 +156,13 @@ extern class Streaming {
 	 * Alias for HAS_ANIM_SET_LOADED.  
 	 * ```
 	 */
-	@:native("HAS_CLIP_SET_LOADED")
+	@:native("HasClipSetLoaded")
 	static function hasClipSetLoaded(clipSet:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_NAMED_PTFX_ASSET_LOADED")
+	@:native("HasNamedPtfxAssetLoaded")
 	static function hasNamedPtfxAssetLoaded(fxName:String):Bool;
 
 	/**
@@ -175,19 +175,19 @@ extern class Streaming {
 	 * GET_*
 	 * ```
 	 */
-	@:native("_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE")
+	@:native("GetUsedCreatorModelMemoryPercentage")
 	static function GetUsedCreatorModelMemoryPercentage():Float;
 
 	/**
 	 * 
 	 */
-	@:native("IS_IPL_ACTIVE")
+	@:native("IsIplActive")
 	static function isIplActive(iplName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_FOCUS")
+	@:native("IsEntityFocus")
 	static function isEntityFocus(entity:Dynamic):Bool;
 
 	/**
@@ -195,7 +195,7 @@ extern class Streaming {
 	 * Returns whether the specified model exists in the game.  
 	 * ```
 	 */
-	@:native("IS_MODEL_VALID")
+	@:native("IsModelValid")
 	static function isModelValid(model:Int):Bool;
 
 	/**
@@ -203,7 +203,7 @@ extern class Streaming {
 	 * 
 	 * Animation set and clip set are synonymous. See [`SET_PED_MOVEMENT_CLIPSET`](#\_0xAF8A94EDE7712BEF).
 	 */
-	@:native("HAS_ANIM_SET_LOADED")
+	@:native("HasAnimSetLoaded")
 	static function hasAnimSetLoaded(animSet:String):Bool;
 
 	/**
@@ -211,7 +211,7 @@ extern class Streaming {
 	 * Check if model is in cdimage(rpf)  
 	 * ```
 	 */
-	@:native("IS_MODEL_IN_CDIMAGE")
+	@:native("IsModelInCdimage")
 	static function isModelInCdimage(model:Int):Bool;
 
 	/**
@@ -219,43 +219,43 @@ extern class Streaming {
 	 * 
 	 * Note that this will return 'true' even if the model has been requested and loaded by something other than the current script, if you're intending to actually use the model in a later frame, you should call REQUEST_MODEL anyway.
 	 */
-	@:native("HAS_MODEL_LOADED")
+	@:native("HasModelLoaded")
 	static function hasModelLoaded(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("INIT_CREATOR_BUDGET")
+	@:native("InitCreatorBudget")
 	static function initCreatorBudget():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NEW_LOAD_SCENE_LOADED")
+	@:native("IsNewLoadSceneLoaded")
 	static function isNewLoadSceneLoaded():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PTFX_ASSET_LOADED")
+	@:native("HasPtfxAssetLoaded")
 	static function hasPtfxAssetLoaded():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_MODEL_A_PED")
+	@:native("IsModelAPed")
 	static function IsModelAPed(model:Int):Bool;
 
 	/**
 	 * Returns true when the srl from BEGIN_SRL is loaded.
 	 */
-	@:native("IS_SRL_LOADED")
+	@:native("IsSrlLoaded")
 	static function isSrlLoaded():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NETWORK_LOADING_SCENE")
+	@:native("IsNetworkLoadingScene")
 	static function isNetworkLoadingScene():Bool;
 
 	/**
@@ -263,37 +263,37 @@ extern class Streaming {
 	 * Returns whether the specified model represents a vehicle.  
 	 * ```
 	 */
-	@:native("IS_MODEL_A_VEHICLE")
+	@:native("IsModelAVehicle")
 	static function isModelAVehicle(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STREAMVOL_ACTIVE")
+	@:native("IsStreamvolActive")
 	static function isStreamvolActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SWITCH_READY_FOR_DESCENT")
+	@:native("IsSwitchReadyForDescent")
 	static function isSwitchReadyForDescent():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SWITCH_SKIPPING_DESCENT")
+	@:native("IsSwitchSkippingDescent")
 	static function isSwitchSkippingDescent():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NEW_LOAD_SCENE_ACTIVE")
+	@:native("IsNewLoadSceneActive")
 	static function isNewLoadSceneActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LOAD_ALL_OBJECTS_NOW")
+	@:native("LoadAllObjectsNow")
 	static function loadAllObjectsNow():Dynamic;
 
 	/**
@@ -304,13 +304,13 @@ extern class Streaming {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_LOAD_GLOBAL_WATER_TYPE")
+	@:native("LoadGlobalWaterType")
 	static function LoadGlobalWaterType(waterType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LOAD_SCENE")
+	@:native("LoadScene")
 	static function loadScene(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -319,19 +319,19 @@ extern class Streaming {
 	 * (When the camera is in the sky moving from Trevor to Franklin for example)  
 	 * ```
 	 */
-	@:native("IS_PLAYER_SWITCH_IN_PROGRESS")
+	@:native("IsPlayerSwitchInProgress")
 	static function isPlayerSwitchInProgress():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_UPDATE_LOAD_SCENE")
+	@:native("NetworkUpdateLoadScene")
 	static function networkUpdateLoadScene():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_STOP_LOAD_SCENE")
+	@:native("NetworkStopLoadScene")
 	static function networkStopLoadScene():Dynamic;
 
 	/**
@@ -341,7 +341,7 @@ extern class Streaming {
 	 * Returns True if success, used only 7 times in decompiled scripts of 1868
 	 * ```
 	 */
-	@:native("NEW_LOAD_SCENE_START")
+	@:native("NewLoadSceneStart")
 	static function newLoadSceneStart(posX:Float, posY:Float, posZ:Float, offsetX:Float, offsetY:Float, offsetZ:Float, radius:Float, p7:Int):Bool;
 
 	/**
@@ -351,13 +351,13 @@ extern class Streaming {
 	 * See https://gfycat.com/DetailedHauntingIncatern
 	 * ```
 	 */
-	@:native("OVERRIDE_LODSCALE_THIS_FRAME")
+	@:native("OverrideLodscaleThisFrame")
 	static function overrideLodscaleThisFrame(scaling:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NEW_LOAD_SCENE_STOP")
+	@:native("NewLoadSceneStop")
 	static function newLoadSceneStop():Dynamic;
 
 	/**
@@ -365,7 +365,7 @@ extern class Streaming {
 	 * 
 	 * Animation set and clip set are synonymous. See [`SET_PED_MOVEMENT_CLIPSET`](#\_0xAF8A94EDE7712BEF).
 	 */
-	@:native("REMOVE_ANIM_SET")
+	@:native("RemoveAnimSet")
 	static function removeAnimSet(animSet:String):Dynamic;
 
 	/**
@@ -379,13 +379,13 @@ extern class Streaming {
 	 * (Previously known as STREAMING::_NEW_LOAD_SCENE_START_SAFE)
 	 * ```
 	 */
-	@:native("NEW_LOAD_SCENE_START_SPHERE")
+	@:native("NewLoadSceneStartSphere")
 	static function newLoadSceneStartSphere(x:Float, y:Float, z:Float, radius:Float, p4:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_MODEL_FROM_CREATOR_BUDGET")
+	@:native("RemoveModelFromCreatorBudget")
 	static function removeModelFromCreatorBudget(modelHash:Int):Dynamic;
 
 	/**
@@ -393,31 +393,31 @@ extern class Streaming {
 	 * Alias for REMOVE_ANIM_SET.  
 	 * ```
 	 */
-	@:native("REMOVE_CLIP_SET")
+	@:native("RemoveClipSet")
 	static function removeClipSet(clipSet:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_ANIM_DICT")
+	@:native("RemoveAnimDict")
 	static function removeAnimDict(animDict:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PTFX_ASSET")
+	@:native("RemovePtfxAsset")
 	static function removePtfxAsset():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_NAMED_PTFX_ASSET")
+	@:native("RemoveNamedPtfxAsset")
 	static function removeNamedPtfxAsset(fxName:String):Dynamic;
 
 	/**
 	 * IPL list can be found [here](https://gist.github.com/4mmonium/4c8a076b5f712a7cc64666003009a2e7).
 	 */
-	@:native("REMOVE_IPL")
+	@:native("RemoveIpl")
 	static function removeIpl(iplName:String):Dynamic;
 
 	/**
@@ -427,25 +427,25 @@ extern class Streaming {
 	 * https://pastebin.com/2EeKVeLA : a list of SRL found in srllist.meta
 	 * https://pastebin.com/zd9XYUWY : here is the content of a SRL file opened with codewalker.
 	 */
-	@:native("PREFETCH_SRL")
+	@:native("PrefetchSrl")
 	static function prefetchSrl(srl:String):Dynamic;
 
 	/**
 	 * Starts loading the specified animation set. An animation set provides movement animations for a ped. See [`SET_PED_MOVEMENT_CLIPSET`](#\_0xAF8A94EDE7712BEF).
 	 */
-	@:native("REQUEST_ANIM_SET")
+	@:native("RequestAnimSet")
 	static function requestAnimSet(animSet:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_CLIP_SET")
+	@:native("RequestClipSet")
 	static function requestClipSet(clipSet:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_ADDITIONAL_COLLISION_AT_COORD")
+	@:native("RequestAdditionalCollisionAtCoord")
 	static function requestAdditionalCollisionAtCoord(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -453,25 +453,25 @@ extern class Streaming {
 	 * Exemple: REQUEST_IPL("TrevorsTrailerTrash");
 	 * ```
 	 */
-	@:native("REQUEST_IPL")
+	@:native("RequestIpl")
 	static function requestIpl(iplName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_ANIM_DICT")
+	@:native("RequestAnimDict")
 	static function requestAnimDict(animDict:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_COLLISION_AT_COORD")
+	@:native("RequestCollisionAtCoord")
 	static function requestCollisionAtCoord(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_MENU_PED_MODEL")
+	@:native("RequestMenuPedModel")
 	static function requestMenuPedModel(model:Int):Dynamic;
 
 	/**
@@ -484,19 +484,19 @@ extern class Streaming {
 	 * STREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, "limbo");
 	 * ```
 	 */
-	@:native("REQUEST_MODELS_IN_ROOM")
+	@:native("RequestModelsInRoom")
 	static function requestModelsInRoom(interior:Int, roomName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_COLLISION_FOR_MODEL")
+	@:native("RequestCollisionForModel")
 	static function requestCollisionForModel(model:Int):Dynamic;
 
 	/**
 	 * Request a model (archetype) to be loaded for use by the current script. Use SET_MODEL_AS_NO_LONGER_NEEDED when done using the model in script.
 	 */
-	@:native("REQUEST_MODEL")
+	@:native("RequestModel")
 	static function requestModel(model:Int):Dynamic;
 
 	/**
@@ -504,7 +504,7 @@ extern class Streaming {
 	 * maps script name (thread + 0xD0) by lookup via scriptfx.dat - does nothing when script name is empty
 	 * ```
 	 */
-	@:native("REQUEST_PTFX_ASSET")
+	@:native("RequestPtfxAsset")
 	static function requestPtfxAsset():Dynamic;
 
 	/**
@@ -525,7 +525,7 @@ extern class Streaming {
 	 *  STREAMING::REQUEST_NAMED_PTFX_ASSET("scr_prison_break_heist_station");
 	 * ```
 	 */
-	@:native("REQUEST_NAMED_PTFX_ASSET")
+	@:native("RequestNamedPtfxAsset")
 	static function requestNamedPtfxAsset(fxName:String):Dynamic;
 
 	/**
@@ -534,7 +534,7 @@ extern class Streaming {
 	 * p3, p4 and p5 are usually set to 0.0
 	 * ```
 	 */
-	@:native("SET_FOCUS_POS_AND_VEL")
+	@:native("SetFocusPosAndVel")
 	static function setFocusPosAndVel(x:Float, y:Float, z:Float, offsetX:Float, offsetY:Float, offsetZ:Float):Dynamic;
 
 	/**
@@ -542,7 +542,7 @@ extern class Streaming {
 	 * It seems to make the entity's coords mark the point from which LOD-distances are measured. In my testing, setting a vehicle as the focus entity and moving that vehicle more than 300 distance units away from the player will make the level of detail around the player go down drastically (shadows disappear, textures go extremely low res, etc). The player seems to be the default focus entity.  
 	 * ```
 	 */
-	@:native("SET_FOCUS_ENTITY")
+	@:native("SetFocusEntity")
 	static function setFocusEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -552,7 +552,7 @@ extern class Streaming {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("SET_ISLAND_ENABLED")
+	@:native("SetIslandEnabled")
 	static function setIslandEnabled(islandName:String, toggle:Bool):Dynamic;
 
 	/**
@@ -560,7 +560,7 @@ extern class Streaming {
 	 * This is a NOP function. It does nothing at all.  
 	 * ```
 	 */
-	@:native("SET_DITCH_POLICE_MODELS")
+	@:native("SetDitchPoliceModels")
 	static function setDitchPoliceModels(toggle:Bool):Dynamic;
 
 	/**
@@ -568,31 +568,31 @@ extern class Streaming {
 	 * All names can be found in playerswitchestablishingshots.meta
 	 * ```
 	 */
-	@:native("SET_PLAYER_SWITCH_ESTABLISHING_SHOT")
+	@:native("SetPlayerSwitchEstablishingShot")
 	static function setPlayerSwitchEstablishingShot(name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAME_PAUSES_FOR_STREAMING")
+	@:native("SetGamePausesForStreaming")
 	static function setGamePausesForStreaming(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HD_AREA")
+	@:native("SetHdArea")
 	static function setHdArea(x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_REDUCE_VEHICLE_MODEL_BUDGET")
+	@:native("SetReduceVehicleModelBudget")
 	static function setReduceVehicleModelBudget(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_INTERIOR_ACTIVE")
+	@:native("SetInteriorActive")
 	static function setInteriorActive(interiorID:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -602,37 +602,37 @@ extern class Streaming {
 	 * "Prologue_Main"  
 	 * ```
 	 */
-	@:native("SET_MAPDATACULLBOX_ENABLED")
+	@:native("SetMapdatacullboxEnabled")
 	static function setMapdatacullboxEnabled(name:String, toggle:Bool):Dynamic;
 
 	/**
 	 * Releases the script ownership assigned by REQUEST_MODEL. This command should be used when done using a specific model hash in script.
 	 */
-	@:native("SET_MODEL_AS_NO_LONGER_NEEDED")
+	@:native("SetModelAsNoLongerNeeded")
 	static function setModelAsNoLongerNeeded(model:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_REDUCE_PED_MODEL_BUDGET")
+	@:native("SetReducePedModelBudget")
 	static function setReducePedModelBudget(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SRL_TIME")
+	@:native("SetSrlTime")
 	static function setSrlTime(p0:Float):Dynamic;
 
 	/**
 	 * Sets the memory budget level for ped population.
 	 */
-	@:native("SET_PED_POPULATION_BUDGET")
+	@:native("SetPedPopulationBudget")
 	static function setPedPopulationBudget(budgetLevel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_SHORT_SWITCH_STYLE")
+	@:native("SetPlayerShortSwitchStyle")
 	static function setPlayerShortSwitchStyle(style:Int):Dynamic;
 
 	/**
@@ -667,49 +667,49 @@ extern class Streaming {
 	 * }
 	 * ```
 	 */
-	@:native("START_PLAYER_SWITCH")
+	@:native("StartPlayerSwitch")
 	static function startPlayerSwitch(from:Dynamic, to:Dynamic, flags:Int, switchType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RENDER_HD_ONLY")
+	@:native("SetRenderHdOnly")
 	static function setRenderHdOnly(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_POPULATION_BUDGET")
+	@:native("SetVehiclePopulationBudget")
 	static function setVehiclePopulationBudget(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STREAMVOL_IS_VALID")
+	@:native("StreamvolIsValid")
 	static function streamvolIsValid(unused:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SHUTDOWN_CREATOR_BUDGET")
+	@:native("ShutdownCreatorBudget")
 	static function shutdownCreatorBudget():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_SWITCH_OUTRO")
+	@:native("SetPlayerSwitchOutro")
 	static function setPlayerSwitchOutro(cameraCoordX:Float, cameraCoordY:Float, cameraCoordZ:Float, camRotationX:Float, camRotationY:Float, camRotationZ:Float, camFov:Float, camFarClip:Float, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_PLAYER_SWITCH")
+	@:native("StopPlayerSwitch")
 	static function stopPlayerSwitch():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_STREAMING")
+	@:native("SetStreaming")
 	static function setStreaming(toggle:Bool):Dynamic;
 
 	/**
@@ -717,7 +717,7 @@ extern class Streaming {
 	 * Always returns zero.
 	 * ```
 	 */
-	@:native("STREAMVOL_CREATE_FRUSTUM")
+	@:native("StreamvolCreateFrustum")
 	static function streamvolCreateFrustum(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Dynamic, p8:Dynamic):Dynamic;
 
 	/**
@@ -725,7 +725,7 @@ extern class Streaming {
 	 * Always returns zero.
 	 * ```
 	 */
-	@:native("STREAMVOL_CREATE_SPHERE")
+	@:native("StreamvolCreateSphere")
 	static function streamvolCreateSphere(x:Float, y:Float, z:Float, rad:Float, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -733,19 +733,19 @@ extern class Streaming {
 	 * Always returns zero.
 	 * ```
 	 */
-	@:native("STREAMVOL_CREATE_LINE")
+	@:native("StreamvolCreateLine")
 	static function streamvolCreateLine(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STREAMVOL_DELETE")
+	@:native("StreamvolDelete")
 	static function streamvolDelete(unused:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STREAMVOL_HAS_LOADED")
+	@:native("StreamvolHasLoaded")
 	static function streamvolHasLoaded(unused:Dynamic):Bool;
 
 	/**
@@ -753,13 +753,13 @@ extern class Streaming {
 	 * 
 	 * ***Note:** Doesn't act normally when used on Mount Chiliad.*
 	 */
-	@:native("SWITCH_TO_MULTI_FIRSTPART")
+	@:native("SwitchToMultiFirstpart")
 	static function switchToMultiFirstpart(ped:Dynamic, flags:Int, switchType:Int):Dynamic;
 
 	/**
 	 * After using [`SWITCH_TO_MULTI_FIRSTPART`](#\_0xAAB3200ED59016BC) , use this native to smoothly return the camera to the player's character.
 	 */
-	@:native("SWITCH_TO_MULTI_SECONDPART")
+	@:native("SwitchToMultiSecondpart")
 	static function switchToMultiSecondpart(ped:Dynamic):Dynamic;
 
 }

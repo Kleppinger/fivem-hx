@@ -27,12 +27,12 @@ class OxMysqlBridge {
 	static function __init__():Void {
 		untyped __lua__("
 function __hx_oxmysql_call(method, query, parameters, cb)
-	local resourceName = _G.GetCurrentResourceName and _G.GetCurrentResourceName() or (_G.GET_CURRENT_RESOURCE_NAME and _G.GET_CURRENT_RESOURCE_NAME() or 'hx-resource')
+	local resourceName = _G.GetCurrentResourceName()
 	return _G.exports.oxmysql[method](nil, query, parameters, cb, resourceName, false)
 end
 
 function __hx_oxmysql_await(method, query, parameters)
-	local resourceName = _G.GetCurrentResourceName and _G.GetCurrentResourceName() or (_G.GET_CURRENT_RESOURCE_NAME and _G.GET_CURRENT_RESOURCE_NAME() or 'hx-resource')
+	local resourceName = _G.GetCurrentResourceName()
 	local p = _G.promise.new()
 	_G.exports.oxmysql[method](nil, query, parameters, function(result, error)
 		if error then

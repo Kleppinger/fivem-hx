@@ -7,7 +7,7 @@ extern class Replay {
 	 * Sets (almost, not sure) all Rockstar Editor values (bIsRecording etc) to 0.  
 	 * ```
 	 */
-	@:native("_RESET_EDITOR_VALUES")
+	@:native("ResetEditorValues")
 	static function ResetEditorValues():Dynamic;
 
 	/**
@@ -17,7 +17,7 @@ extern class Replay {
 	 * NativeDB Added Parameter 1: int p0
 	 * ```
 	 */
-	@:native("_ACTIVATE_ROCKSTAR_EDITOR")
+	@:native("ActivateRockstarEditor")
 	static function ActivateRockstarEditor():Dynamic;
 
 	/**
@@ -25,7 +25,7 @@ extern class Replay {
 	 * Returns a bool if interior rendering is disabled, if yes, all "normal" rendered interiors are invisible  
 	 * ```
 	 */
-	@:native("_IS_INTERIOR_RENDERING_DISABLED")
+	@:native("IsInteriorRenderingDisabled")
 	static function IsInteriorRenderingDisabled():Bool;
 
 }

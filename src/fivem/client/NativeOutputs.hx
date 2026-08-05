@@ -30,11 +30,11 @@ extern class NativeOutputs {
 		around that spot isn't streamed in — which is the usual reason a
 		spawn ends up under the map.
 	**/
-	@:native("GET_GROUND_Z_FOR_3D_COORD")
+	@:native("GetGroundZFor_3dCoord")
 	static function getGroundZFor3dCoord(x:Float, y:Float, z:Float, includeWater:Bool = false):GroundZResult;
 
 	/** Projects a world position onto screen space, in 0..1 coordinates. **/
-	@:native("GET_SCREEN_COORD_FROM_WORLD_COORD")
+	@:native("GetScreenCoordFromWorldCoord")
 	static function getScreenCoordFromWorldCoord(worldX:Float, worldY:Float, worldZ:Float):ScreenCoordResult;
 
 	/**
@@ -42,31 +42,31 @@ extern class NativeOutputs {
 		natives. `status` is 0 while pending, 1 when ready, 2 when the handle
 		is invalid.
 	**/
-	@:native("GET_SHAPE_TEST_RESULT")
+	@:native("GetShapeTestResult")
 	static function getShapeTestResult(shapeTestHandle:Int):ShapeTestResult;
 
 	/** As `getShapeTestResult`, but also reports the material that was hit. **/
-	@:native("GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL")
+	@:native("GetShapeTestResultIncludingMaterial")
 	static function getShapeTestResultIncludingMaterial(shapeTestHandle:Int):ShapeTestMaterialResult;
 
 	/** The weapon a ped currently has equipped. **/
-	@:native("GET_CURRENT_PED_WEAPON")
+	@:native("GetCurrentPedWeapon")
 	static function getCurrentPedWeapon(ped:Int, p2:Bool = true):CurrentWeaponResult;
 
 	/** A vehicle's primary and secondary paint indices. **/
-	@:native("GET_VEHICLE_COLOURS")
+	@:native("GetVehicleColours")
 	static function getVehicleColours(vehicle:Int):VehicleColoursResult;
 
 	/** A vehicle's pearlescent and wheel colour indices. **/
-	@:native("GET_VEHICLE_EXTRA_COLOURS")
+	@:native("GetVehicleExtraColours")
 	static function getVehicleExtraColours(vehicle:Int):VehicleColoursResult;
 
 	/** An entity's orientation as a quaternion. **/
-	@:native("GET_ENTITY_QUATERNION")
+	@:native("GetEntityQuaternion")
 	static function getEntityQuaternion(entity:Int):QuaternionResult;
 
 	/** An entity's basis vectors and position in one call. **/
-	@:native("GET_ENTITY_MATRIX")
+	@:native("GetEntityMatrix")
 	static function getEntityMatrix(entity:Int):EntityMatrixResult;
 }
 

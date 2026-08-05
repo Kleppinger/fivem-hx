@@ -7,7 +7,7 @@ extern class Money {
 	 * Does nothing and always returns false.
 	 * ```
 	 */
-	@:native("DEPOSIT_VC")
+	@:native("DepositVc")
 	static function depositVc(amount:Int):Bool;
 
 	/**
@@ -18,7 +18,7 @@ extern class Money {
 	 * NativeDB Added Parameter 4: int* p3
 	 * ```
 	 */
-	@:native("_CAN_PAY_GOON")
+	@:native("CanPayGoon")
 	static function CanPayGoon():Bool;
 
 	/**
@@ -26,13 +26,13 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_BUY_BACKUP_GANG")
+	@:native("NetworkBuyBackupGang")
 	static function networkBuyBackupGang(p0:Int, p1:Int, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_BUY_CONTRABAND")
+	@:native("NetworkBuyContraband")
 	static function NetworkBuyContraband(p0:Int, p1:Int, p2:Int, p3:Bool, p4:Bool):Dynamic;
 
 	/**
@@ -41,7 +41,7 @@ extern class Money {
 	 * p2 = 1 (always)  
 	 * ```
 	 */
-	@:native("NETWORK_BUY_AIRSTRIKE")
+	@:native("NetworkBuyAirstrike")
 	static function networkBuyAirstrike(cost:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -52,7 +52,7 @@ extern class Money {
 	 * 1,0,1 in the am_rollercoaster.c  
 	 * ```
 	 */
-	@:native("NETWORK_BUY_FAIRGROUND_RIDE")
+	@:native("NetworkBuyFairgroundRide")
 	static function networkBuyFairgroundRide(amountSpent:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -60,7 +60,7 @@ extern class Money {
 	 * p1 is just an assumption. p2 was false and p3 was true.  
 	 * ```
 	 */
-	@:native("NETWORK_BUY_BOUNTY")
+	@:native("NetworkBuyBounty")
 	static function networkBuyBounty(amount:Int, victim:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -69,19 +69,19 @@ extern class Money {
 	 * p2 = 1 (always)  
 	 * ```
 	 */
-	@:native("NETWORK_BUY_HELI_STRIKE")
+	@:native("NetworkBuyHeliStrike")
 	static function networkBuyHeliStrike(cost:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_BUY_ITEM")
+	@:native("NetworkBuyItem")
 	static function networkBuyItem(amount:Int, item:Int, p2:Dynamic, p3:Dynamic, p4:Bool, item_name:String, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_BUY_HEALTHCARE")
+	@:native("NetworkBuyHealthcare")
 	static function networkBuyHealthcare(cost:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -89,19 +89,19 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_BUY_SMOKES")
+	@:native("NetworkBuySmokes")
 	static function networkBuySmokes(p0:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_BET")
+	@:native("NetworkCanBet")
 	static function networkCanBet(amount:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_SHARE_JOB_CASH")
+	@:native("NetworkCanShareJobCash")
 	static function networkCanShareJobCash():Bool;
 
 	/**
@@ -109,7 +109,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_BUY_LOTTERY_TICKET")
+	@:native("NetworkBuyLotteryTicket")
 	static function networkBuyLotteryTicket(p0:Int, p1:Int, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -117,13 +117,13 @@ extern class Money {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("NETWORK_CAN_SPEND_MONEY")
+	@:native("NetworkCanSpendMoney")
 	static function networkCanSpendMoney(p0:Dynamic, p1:Bool, p2:Bool, p3:Bool, p4:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_BUY_PROPERTY")
+	@:native("NetworkBuyProperty")
 	static function networkBuyProperty(propertyCost:Int, propertyName:Int, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -131,7 +131,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_CAN_BUY_LOTTERY_TICKET")
+	@:native("NetworkCanBuyLotteryTicket")
 	static function networkCanBuyLotteryTicket(cost:Int):Bool;
 
 	/**
@@ -142,7 +142,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC")
+	@:native("NetworkCasinoCanPurchaseChipsWithPvc")
 	static function NetworkCasinoCanPurchaseChipsWithPvc():Bool;
 
 	/**
@@ -153,13 +153,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC_2")
+	@:native("NetworkCasinoCanPurchaseChipsWithPvc_2")
 	static function NetworkCasinoCanPurchaseChipsWithPvc2():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_RECEIVE_PLAYER_CASH")
+	@:native("NetworkCanReceivePlayerCash")
 	static function networkCanReceivePlayerCash(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -169,7 +169,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_CAN_GAMBLE")
+	@:native("NetworkCasinoCanGamble")
 	static function NetworkCasinoCanGamble(p0:Dynamic):Bool;
 
 	/**
@@ -179,7 +179,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_PURCHASE_CHIPS")
+	@:native("NetworkCasinoPurchaseChips")
 	static function NetworkCasinoPurchaseChips(p0:Int, p1:Int):Bool;
 
 	/**
@@ -191,7 +191,7 @@ extern class Money {
 	 * NativeDB Added Parameter 7: Any p6
 	 * ```
 	 */
-	@:native("_NETWORK_CAN_SPEND_MONEY_2")
+	@:native("NetworkCanSpendMoney_2")
 	static function NetworkCanSpendMoney2(p0:Dynamic, p1:Bool, p2:Bool, p3:Bool, p4:Dynamic, p5:Dynamic):Bool;
 
 	/**
@@ -208,19 +208,19 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE")
+	@:native("NetworkCasinoCanUseGamblingType")
 	static function NetworkCasinoCanUseGamblingType(hash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_CHARACTER_WALLET")
+	@:native("NetworkClearCharacterWallet")
 	static function networkClearCharacterWallet(characterSlot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_BOSS")
+	@:native("NetworkEarnBoss")
 	static function NetworkEarnBoss(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -228,7 +228,7 @@ extern class Money {
 	 * Note the 2nd parameters are always 1, 0. I have a feeling it deals with your money, wallet, bank. So when you delete the character it of course wipes the wallet cash at that time. So if that was the case, it would be eg, NETWORK_DELETE_CHARACTER(characterIndex, deleteWalletCash, deleteBankCash);  
 	 * ```
 	 */
-	@:native("NETWORK_DELETE_CHARACTER")
+	@:native("NetworkDeleteCharacter")
 	static function networkDeleteCharacter(characterSlot:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -236,7 +236,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_DEDUCT_CASH")
+	@:native("NetworkDeductCash")
 	static function NetworkDeductCash(amount:Int, p1:String, p2:String, p3:Bool, p4:Bool, p5:Bool):Dynamic;
 
 	/**
@@ -246,7 +246,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_CASINO_SELL_CHIPS")
+	@:native("NetworkCasinoSellChips")
 	static function NetworkCasinoSellChips(p0:Int, p1:Int):Bool;
 
 	/**
@@ -254,7 +254,7 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_CASINO_HEIST_BONUS")
+	@:native("NetworkEarnCasinoHeistBonus")
 	static function NetworkEarnCasinoHeistBonus(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -262,13 +262,13 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_CASINO_HEIST")
+	@:native("NetworkEarnCasinoHeist")
 	static function NetworkEarnCasinoHeist(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_BOSS_AGENCY")
+	@:native("NetworkEarnBossAgency")
 	static function NetworkEarnBossAgency(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -276,7 +276,7 @@ extern class Money {
 	 * DSPORT  
 	 * ```
 	 */
-	@:native("NETWORK_EARN_FROM_AI_TARGET_KILL")
+	@:native("NetworkEarnFromAiTargetKill")
 	static function networkEarnFromAiTargetKill(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -284,7 +284,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FMBB_WAGE_BONUS")
+	@:native("NetworkEarnFmbbWageBonus")
 	static function NetworkEarnFmbbWageBonus(p0:Dynamic):Dynamic;
 
 	/**
@@ -292,7 +292,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_BOUNTY_HUNTER_REWARD")
+	@:native("NetworkEarnBountyHunterReward")
 	static function NetworkEarnBountyHunterReward(p0:Dynamic):Dynamic;
 
 	/**
@@ -300,7 +300,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ARENA_SKILL_LEVEL_PROGRESSION")
+	@:native("NetworkEarnFromArenaSkillLevelProgression")
 	static function NetworkEarnFromArenaSkillLevelProgression(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
@@ -308,7 +308,7 @@ extern class Money {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION")
+	@:native("NetworkEarnCollectableCompletedCollection")
 	static function NetworkEarnCollectableCompletedCollection(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
@@ -316,7 +316,7 @@ extern class Money {
 	 * Example for p1: "AM_DISTRACT_COPS"  
 	 * ```
 	 */
-	@:native("NETWORK_EARN_FROM_AMBIENT_JOB")
+	@:native("NetworkEarnFromAmbientJob")
 	static function networkEarnFromAmbientJob(p0:Int, p1:String, p2:Dynamic):Dynamic;
 
 	/**
@@ -324,7 +324,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED_2")
+	@:native("NetworkEarnFromAssassinateTargetKilled_2")
 	static function NetworkEarnFromAssassinateTargetKilled2(amount:Int):Dynamic;
 
 	/**
@@ -332,7 +332,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ARENA_WAR")
+	@:native("NetworkEarnFromArenaWar")
 	static function NetworkEarnFromArenaWar(amount:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -340,7 +340,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ARENA_CAREER_PROGRESSION")
+	@:native("NetworkEarnFromArenaCareerProgression")
 	static function NetworkEarnFromArenaCareerProgression(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
@@ -348,7 +348,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED")
+	@:native("NetworkEarnFromAssassinateTargetKilled")
 	static function NetworkEarnFromAssassinateTargetKilled(amount:Int):Dynamic;
 
 	/**
@@ -357,7 +357,7 @@ extern class Money {
 	 * Most likely NETWORK_EARN_FROM_ROB***
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_ARMOUR_TRUCK")
+	@:native("NetworkEarnFromArmourTruck")
 	static function NetworkEarnFromArmourTruck(amount:Int):Dynamic;
 
 	/**
@@ -365,13 +365,13 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BB_EVENT_BONUS")
+	@:native("NetworkEarnFromBbEventBonus")
 	static function NetworkEarnFromBbEventBonus(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_BETTING")
+	@:native("NetworkEarnFromBetting")
 	static function networkEarnFromBetting(amount:Int, p1:String):Dynamic;
 
 	/**
@@ -379,13 +379,13 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_AUTOSHOP_BUSINESS")
+	@:native("NetworkEarnFromAutoshopBusiness")
 	static function NetworkEarnFromAutoshopBusiness(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_BEND_JOB")
+	@:native("NetworkEarnFromBendJob")
 	static function networkEarnFromBendJob(amount:Int, heistHash:String):Dynamic;
 
 	/**
@@ -393,7 +393,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_AUTOSHOP_INCOME")
+	@:native("NetworkEarnFromAutoshopIncome")
 	static function NetworkEarnFromAutoshopIncome(p0:Dynamic):Dynamic;
 
 	/**
@@ -401,7 +401,7 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BIKE_SHOP_BUSINESS")
+	@:native("NetworkEarnFromBikeShopBusiness")
 	static function NetworkEarnFromBikeShopBusiness(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -409,7 +409,7 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BIKER_INCOME")
+	@:native("NetworkEarnFromBikerIncome")
 	static function NetworkEarnFromBikerIncome(p0:Dynamic):Dynamic;
 
 	/**
@@ -417,13 +417,13 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BB_EVENT_CARGO")
+	@:native("NetworkEarnFromBbEventCargo")
 	static function NetworkEarnFromBbEventCargo(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_BOUNTY")
+	@:native("NetworkEarnFromBounty")
 	static function networkEarnFromBounty(amount:Int, networkHandle:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -431,13 +431,13 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BUSINESS_HUB_SELL")
+	@:native("NetworkEarnFromBusinessHubSell")
 	static function NetworkEarnFromBusinessHubSell(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_BUSINESS_PRODUCT")
+	@:native("NetworkEarnFromBusinessProduct")
 	static function NetworkEarnFromBusinessProduct(amount:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -445,7 +445,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BUSINESS_BATTLE")
+	@:native("NetworkEarnFromBusinessBattle")
 	static function NetworkEarnFromBusinessBattle(p0:Dynamic):Dynamic;
 
 	/**
@@ -453,7 +453,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CARCLUB_MEMBERSHIP")
+	@:native("NetworkEarnFromCarclubMembership")
 	static function NetworkEarnFromCarclubMembership(p0:Dynamic):Dynamic;
 
 	/**
@@ -461,7 +461,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CASHING_OUT")
+	@:native("NetworkEarnFromCashingOut")
 	static function NetworkEarnFromCashingOut(amount:Int):Dynamic;
 
 	/**
@@ -469,7 +469,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CASINO_MISSION_PARTICIPATION")
+	@:native("NetworkEarnFromCasinoMissionParticipation")
 	static function NetworkEarnFromCasinoMissionParticipation(amount:Int):Dynamic;
 
 	/**
@@ -477,7 +477,7 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_BUSINESS_HUB_SOURCE")
+	@:native("NetworkEarnFromBusinessHubSource")
 	static function NetworkEarnFromBusinessHubSource(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -485,7 +485,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CASINO_AWARD")
+	@:native("NetworkEarnFromCasinoAward")
 	static function NetworkEarnFromCasinoAward(amount:Int, hash:Int):Dynamic;
 
 	/**
@@ -493,13 +493,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CASINO_MISSION_REWARD")
+	@:native("NetworkEarnFromCasinoMissionReward")
 	static function NetworkEarnFromCasinoMissionReward(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_CHALLENGE_WIN")
+	@:native("NetworkEarnFromChallengeWin")
 	static function networkEarnFromChallengeWin(p0:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
@@ -507,7 +507,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CASINO_STORY_MISSION_REWARD")
+	@:native("NetworkEarnFromCasinoStoryMissionReward")
 	static function NetworkEarnFromCasinoStoryMissionReward(amount:Int):Dynamic;
 
 	/**
@@ -515,7 +515,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION")
+	@:native("NetworkEarnFromClubManagementParticipation")
 	static function NetworkEarnFromClubManagementParticipation(p0:Dynamic):Dynamic;
 
 	/**
@@ -523,13 +523,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_COLLECTION_ITEM")
+	@:native("NetworkEarnFromCollectionItem")
 	static function NetworkEarnFromCollectionItem(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_CRATE_DROP")
+	@:native("NetworkEarnFromCrateDrop")
 	static function networkEarnFromCrateDrop(amount:Int):Dynamic;
 
 	/**
@@ -537,13 +537,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_COLLECTABLES_ACTION_FIGURES")
+	@:native("NetworkEarnFromCollectablesActionFigures")
 	static function NetworkEarnFromCollectablesActionFigures(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_CONTRABAND")
+	@:native("NetworkEarnFromContraband")
 	static function NetworkEarnFromContraband(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
@@ -551,7 +551,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_COMPLETE_COLLECTION")
+	@:native("NetworkEarnFromCompleteCollection")
 	static function NetworkEarnFromCompleteCollection(amount:Int):Dynamic;
 
 	/**
@@ -559,13 +559,13 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_CRIMINAL_MASTERMIND_BONUS")
+	@:native("NetworkEarnFromCriminalMastermindBonus")
 	static function NetworkEarnFromCriminalMastermindBonus(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_DAILY_OBJECTIVES")
+	@:native("NetworkEarnFromDailyObjectives")
 	static function networkEarnFromDailyObjectives(p0:Int, p1:String, p2:Int):Dynamic;
 
 	/**
@@ -573,7 +573,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_DAR_CHALLENGE")
+	@:native("NetworkEarnFromDarChallenge")
 	static function NetworkEarnFromDarChallenge(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
@@ -581,7 +581,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_DOOMSDAY_FINALE_BONUS")
+	@:native("NetworkEarnFromDoomsdayFinaleBonus")
 	static function NetworkEarnFromDoomsdayFinaleBonus(amount:Int, vehicleHash:Int):Dynamic;
 
 	/**
@@ -589,7 +589,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_DAILY_OBJECTIVE_EVENT")
+	@:native("NetworkEarnFromDailyObjectiveEvent")
 	static function NetworkEarnFromDailyObjectiveEvent(amount:Int):Dynamic;
 
 	/**
@@ -597,13 +597,13 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION")
+	@:native("NetworkEarnFromFmbbPhonecallMission")
 	static function NetworkEarnFromFmbbPhonecallMission(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_DESTROYING_CONTRABAND")
+	@:native("NetworkEarnFromDestroyingContraband")
 	static function NetworkEarnFromDestroyingContraband(p0:Dynamic):Dynamic;
 
 	/**
@@ -611,13 +611,13 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_FMBB_BOSS_WORK")
+	@:native("NetworkEarnFromFmbbBossWork")
 	static function NetworkEarnFromFmbbBossWork(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_GANG_PICKUP")
+	@:native("NetworkEarnFromGangPickup")
 	static function NetworkEarnFromGangPickup(amount:Int):Dynamic;
 
 	/**
@@ -625,7 +625,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_JOBS_FINALE")
+	@:native("NetworkEarnFromGangopsJobsFinale")
 	static function NetworkEarnFromGangopsJobsFinale(amount:Int, unk:String):Dynamic;
 
 	/**
@@ -633,7 +633,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_AWARDS")
+	@:native("NetworkEarnFromGangopsAwards")
 	static function NetworkEarnFromGangopsAwards(amount:Int, unk:String, p2:Dynamic):Dynamic;
 
 	/**
@@ -641,7 +641,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_ELITE")
+	@:native("NetworkEarnFromGangopsElite")
 	static function NetworkEarnFromGangopsElite(amount:Int, unk:String, actIndex:Int):Dynamic;
 
 	/**
@@ -649,7 +649,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_JOBS_SETUP")
+	@:native("NetworkEarnFromGangopsJobsSetup")
 	static function NetworkEarnFromGangopsJobsSetup(amount:Int, unk:String):Dynamic;
 
 	/**
@@ -657,7 +657,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_WAGES")
+	@:native("NetworkEarnFromGangopsWages")
 	static function NetworkEarnFromGangopsWages(amount:Int, p1:Int):Dynamic;
 
 	/**
@@ -665,7 +665,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_HACKER_TRUCK_MISSION")
+	@:native("NetworkEarnFromHackerTruckMission")
 	static function NetworkEarnFromHackerTruckMission(p0:Dynamic, amount:Int, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -673,13 +673,13 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_WAGES_BONUS")
+	@:native("NetworkEarnFromGangopsWagesBonus")
 	static function NetworkEarnFromGangopsWagesBonus(amount:Int, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_HOLDUPS")
+	@:native("NetworkEarnFromHoldups")
 	static function networkEarnFromHoldups(amount:Int):Dynamic;
 
 	/**
@@ -687,7 +687,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_GANGOPS_JOBS_PREP_PARTICIPATION")
+	@:native("NetworkEarnFromGangopsJobsPrepParticipation")
 	static function NetworkEarnFromGangopsJobsPrepParticipation(amount:Int):Dynamic;
 
 	/**
@@ -695,19 +695,19 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_EARN_FROM_JOB_BONUS")
+	@:native("NetworkEarnFromJobBonus")
 	static function networkEarnFromJobBonus(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_PREMIUM_JOB")
+	@:native("NetworkEarnFromPremiumJob")
 	static function NetworkEarnFromPremiumJob(amount:Int, p1:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_IMPORT_EXPORT")
+	@:native("NetworkEarnFromImportExport")
 	static function networkEarnFromImportExport(amount:Int, modelHash:Int):Dynamic;
 
 	/**
@@ -715,13 +715,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_RC_TIME_TRIAL")
+	@:native("NetworkEarnFromRcTimeTrial")
 	static function NetworkEarnFromRcTimeTrial(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_JOB")
+	@:native("NetworkEarnFromJob")
 	static function networkEarnFromJob(amount:Int, p1:String):Dynamic;
 
 	/**
@@ -729,31 +729,31 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_JOB_X2")
+	@:native("NetworkEarnFromJobX2")
 	static function NetworkEarnFromJobX2(amount:Int, p1:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_PERSONAL_VEHICLE")
+	@:native("NetworkEarnFromPersonalVehicle")
 	static function networkEarnFromPersonalVehicle(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_NOT_BADSPORT")
+	@:native("NetworkEarnFromNotBadsport")
 	static function networkEarnFromNotBadsport(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_PICKUP")
+	@:native("NetworkEarnFromPickup")
 	static function networkEarnFromPickup(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_PROPERTY")
+	@:native("NetworkEarnFromProperty")
 	static function networkEarnFromProperty(amount:Int, propertyName:Int):Dynamic;
 
 	/**
@@ -761,7 +761,7 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_SIGHTSEEING")
+	@:native("NetworkEarnFromSightseeing")
 	static function NetworkEarnFromSightseeing(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -769,13 +769,13 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_RDR_BONUS")
+	@:native("NetworkEarnFromRdrBonus")
 	static function NetworkEarnFromRdrBonus(amount:Int, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_SELL_BUNKER")
+	@:native("NetworkEarnFromSellBunker")
 	static function NetworkEarnFromSellBunker(amount:Int, bunkerHash:Int):Dynamic;
 
 	/**
@@ -785,13 +785,13 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_SELLING_VEHICLE")
+	@:native("NetworkEarnFromSellingVehicle")
 	static function NetworkEarnFromSellingVehicle(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_ROCKSTAR")
+	@:native("NetworkEarnFromRockstar")
 	static function networkEarnFromRockstar(amount:Int):Dynamic;
 
 	/**
@@ -799,7 +799,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_SPIN_THE_WHEEL_CASH")
+	@:native("NetworkEarnFromSpinTheWheelCash")
 	static function NetworkEarnFromSpinTheWheelCash(amount:Int):Dynamic;
 
 	/**
@@ -807,7 +807,7 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_SMUGGLING")
+	@:native("NetworkEarnFromSmuggling")
 	static function NetworkEarnFromSmuggling(amount:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -815,7 +815,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_TUNER_FINALE")
+	@:native("NetworkEarnFromTunerFinale")
 	static function NetworkEarnFromTunerFinale(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -823,7 +823,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_UPGRADE_AUTOSHOP_LOCATION")
+	@:native("NetworkEarnFromUpgradeAutoshopLocation")
 	static function NetworkEarnFromUpgradeAutoshopLocation(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -831,7 +831,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_SELL_BASE")
+	@:native("NetworkEarnFromSellBase")
 	static function NetworkEarnFromSellBase(amount:Int, baseNameHash:Int):Dynamic;
 
 	/**
@@ -839,13 +839,13 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_TARGET_REFUND")
+	@:native("NetworkEarnFromTargetRefund")
 	static function NetworkEarnFromTargetRefund(amount:Int, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_FROM_VEHICLE_EXPORT")
+	@:native("NetworkEarnFromVehicleExport")
 	static function NetworkEarnFromVehicleExport(amount:Int, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -853,13 +853,13 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP")
+	@:native("NetworkEarnFromVehicleAutoshop")
 	static function NetworkEarnFromVehicleAutoshop(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EARN_FROM_VEHICLE")
+	@:native("NetworkEarnFromVehicle")
 	static function networkEarnFromVehicle(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic):Dynamic;
 
 	/**
@@ -867,7 +867,7 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_WAGE_PAYMENT_BONUS")
+	@:native("NetworkEarnFromWagePaymentBonus")
 	static function NetworkEarnFromWagePaymentBonus(amount:Int):Dynamic;
 
 	/**
@@ -875,7 +875,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_TIME_TRIAL_WIN")
+	@:native("NetworkEarnFromTimeTrialWin")
 	static function NetworkEarnFromTimeTrialWin(amount:Int):Dynamic;
 
 	/**
@@ -883,7 +883,7 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_WAGE_PAYMENT")
+	@:native("NetworkEarnFromWagePayment")
 	static function NetworkEarnFromWagePayment(amount:Int):Dynamic;
 
 	/**
@@ -891,13 +891,13 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_TUNER_AWARD")
+	@:native("NetworkEarnFromTunerAward")
 	static function NetworkEarnFromTunerAward(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_EARN_GOON")
+	@:native("NetworkEarnGoon")
 	static function NetworkEarnGoon(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -905,7 +905,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_JOB_BONUS_FIRST_TIME_BONUS")
+	@:native("NetworkEarnJobBonusFirstTimeBonus")
 	static function NetworkEarnJobBonusFirstTimeBonus(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -913,7 +913,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP_BONUS")
+	@:native("NetworkEarnFromVehicleAutoshopBonus")
 	static function NetworkEarnFromVehicleAutoshopBonus(p0:Dynamic):Dynamic;
 
 	/**
@@ -921,7 +921,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_JOB_BONUS_HEIST_AWARD")
+	@:native("NetworkEarnJobBonusHeistAward")
 	static function NetworkEarnJobBonusHeistAward(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -930,7 +930,7 @@ extern class Money {
 	 * NativeDB Added Parameter 2: int id
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_FROM_WAREHOUSE")
+	@:native("NetworkEarnFromWarehouse")
 	static function NetworkEarnFromWarehouse():Dynamic;
 
 	/**
@@ -938,7 +938,7 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_EARN_ISLAND_HEIST")
+	@:native("NetworkEarnIslandHeist")
 	static function NetworkEarnIslandHeist(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -946,7 +946,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_PVC_BALANCE")
+	@:native("NetworkGetPvcBalance")
 	static function networkGetPvcBalance():Int;
 
 	/**
@@ -954,7 +954,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_EVC_BALANCE")
+	@:native("NetworkGetEvcBalance")
 	static function networkGetEvcBalance():Int;
 
 	/**
@@ -964,7 +964,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_REMAINING_TRANSFER_BALANCE")
+	@:native("NetworkGetRemainingTransferBalance")
 	static function networkGetRemainingTransferBalance():Int;
 
 	/**
@@ -972,7 +972,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_IS_HIGH_EARNER")
+	@:native("NetworkGetIsHighEarner")
 	static function NetworkGetIsHighEarner():Bool;
 
 	/**
@@ -986,13 +986,13 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_PVC_TRANSFER_BALANCE")
+	@:native("NetworkGetPvcTransferBalance")
 	static function networkGetPvcTransferBalance():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_STRING_BANK_BALANCE")
+	@:native("NetworkGetStringBankBalance")
 	static function networkGetStringBankBalance():String;
 
 	/**
@@ -1002,7 +1002,7 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN")
+	@:native("NetworkGetVcBankBalanceIsNotLessThan")
 	static function NetworkGetVcBankBalanceIsNotLessThan(amount:Int):Bool;
 
 	/**
@@ -1010,19 +1010,19 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_STRING_BANK_WALLET_BALANCE")
+	@:native("NetworkGetStringBankWalletBalance")
 	static function networkGetStringBankWalletBalance():String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_VC_BANK_BALANCE")
+	@:native("NetworkGetVcBankBalance")
 	static function networkGetVcBankBalance():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_VC_WALLET_BALANCE")
+	@:native("NetworkGetVcWalletBalance")
 	static function networkGetVcWalletBalance(characterSlot:Int):Int;
 
 	/**
@@ -1030,13 +1030,13 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_GET_STRING_WALLET_BALANCE")
+	@:native("NetworkGetStringWalletBalance")
 	static function networkGetStringWalletBalance(characterSlot:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GIVE_PLAYER_JOBSHARE_CASH")
+	@:native("NetworkGivePlayerJobshareCash")
 	static function networkGivePlayerJobshareCash(amount:Int, networkHandle:Dynamic):Dynamic;
 
 	/**
@@ -1044,19 +1044,19 @@ extern class Money {
 	 * Returns true if bank balance + wallet balance >= amount.
 	 * ```
 	 */
-	@:native("_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN")
+	@:native("NetworkGetVcBankWalletBalanceIsNotLessThan")
 	static function NetworkGetVcBankWalletBalanceIsNotLessThan(amount:Int, characterSlot:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_INITIALIZE_CASH")
+	@:native("NetworkInitializeCash")
 	static function networkInitializeCash(wallet:Int, bank:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_VC_BALANCE")
+	@:native("NetworkGetVcBalance")
 	static function networkGetVcBalance():Int;
 
 	/**
@@ -1066,31 +1066,31 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN")
+	@:native("NetworkGetVcWalletBalanceIsNotLessThan")
 	static function NetworkGetVcWalletBalanceIsNotLessThan(amount:Int, characterSlot:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_MONEY_CAN_BET")
+	@:native("NetworkMoneyCanBet")
 	static function networkMoneyCanBet(amount:Int, p1:Bool, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PAY_EMPLOYEE_WAGE")
+	@:native("NetworkPayEmployeeWage")
 	static function networkPayEmployeeWage(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_MANUAL_DELETE_CHARACTER")
+	@:native("NetworkManualDeleteCharacter")
 	static function NetworkManualDeleteCharacter(characterSlot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PAY_MATCH_ENTRY_FEE")
+	@:native("NetworkPayMatchEntryFee")
 	static function networkPayMatchEntryFee(amount:Int, matchId:String, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1129,19 +1129,19 @@ extern class Money {
 	 * Unknown bool value  
 	 * ```
 	 */
-	@:native("NETWORK_REFUND_CASH")
+	@:native("NetworkRefundCash")
 	static function networkRefundCash(index:Int, context:String, reason:String, unk:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PAY_UTILITY_BILL")
+	@:native("NetworkPayUtilityBill")
 	static function networkPayUtilityBill(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_RECEIVE_PLAYER_JOBSHARE_CASH")
+	@:native("NetworkReceivePlayerJobshareCash")
 	static function networkReceivePlayerJobshareCash(value:Int, networkHandle:Dynamic):Dynamic;
 
 	/**
@@ -1149,7 +1149,7 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ARCADE_GAME")
+	@:native("NetworkSpentArcadeGame")
 	static function NetworkSpentArcadeGame(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -1157,7 +1157,7 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ARCADE_GENERIC")
+	@:native("NetworkSpentArcadeGeneric")
 	static function NetworkSpentArcadeGeneric(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -1165,13 +1165,13 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ARENA_SPECTATOR_BOX")
+	@:native("NetworkSpentArenaSpectatorBox")
 	static function NetworkSpentArenaSpectatorBox(amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_AMMO_DROP")
+	@:native("NetworkSpentAmmoDrop")
 	static function networkSpentAmmoDrop(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1179,7 +1179,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_RIVAL_DELIVERY_COMPLETED")
+	@:native("NetworkRivalDeliveryCompleted")
 	static function NetworkRivalDeliveryCompleted(earnedMoney:Int):Dynamic;
 
 	/**
@@ -1187,7 +1187,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ARENA_PREMIUM")
+	@:native("NetworkSpentArenaPremium")
 	static function NetworkSpentArenaPremium(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1195,7 +1195,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ARENA_JOIN_SPECTATOR")
+	@:native("NetworkSpentArenaJoinSpectator")
 	static function NetworkSpentArenaJoinSpectator(amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1203,7 +1203,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_AUTOSHOP_MODIFICATIONS")
+	@:native("NetworkSpentAutoshopModifications")
 	static function NetworkSpentAutoshopModifications(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -1211,31 +1211,31 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_AUTOSHOP_PROPERTY_UTILITY_FEE")
+	@:native("NetworkSpentAutoshopPropertyUtilityFee")
 	static function NetworkSpentAutoshopPropertyUtilityFee(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BOAT_PICKUP")
+	@:native("NetworkSpentBoatPickup")
 	static function networkSpentBoatPickup(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_BA_SERVICE")
+	@:native("NetworkSpentBaService")
 	static function NetworkSpentBaService(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_ARREST_BAIL")
+	@:native("NetworkSpentArrestBail")
 	static function networkSpentArrestBail(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BOUNTY")
+	@:native("NetworkSpentBounty")
 	static function networkSpentBounty(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1243,7 +1243,7 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BEACH_PARTY_GENERIC")
+	@:native("NetworkSpentBeachPartyGeneric")
 	static function NetworkSpentBeachPartyGeneric(p0:Dynamic):Dynamic;
 
 	/**
@@ -1251,25 +1251,25 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("NETWORK_SPENT_BANK_INTEREST")
+	@:native("NetworkSpentBankInterest")
 	static function networkSpentBankInterest(p0:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_BALLISTIC_EQUIPMENT")
+	@:native("NetworkSpentBallisticEquipment")
 	static function NetworkSpentBallisticEquipment(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BULL_SHARK")
+	@:native("NetworkSpentBullShark")
 	static function networkSpentBullShark(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BETTING")
+	@:native("NetworkSpentBetting")
 	static function networkSpentBetting(amount:Int, p1:Int, matchId:String, p3:Bool, p4:Bool):Dynamic;
 
 	/**
@@ -1277,13 +1277,13 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BIKE_SHOP_MODIFY")
+	@:native("NetworkSpentBikeShopModify")
 	static function NetworkSpentBikeShopModify(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_BUSINESS")
+	@:native("NetworkSpentBusiness")
 	static function NetworkSpentBusiness(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1291,7 +1291,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BUY_BASE")
+	@:native("NetworkSpentBuyBase")
 	static function NetworkSpentBuyBase(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1301,13 +1301,13 @@ extern class Money {
 	 * NativeDB Added Parameter 3: BOOL p2
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BOSS")
+	@:native("NetworkSpentBoss")
 	static function NetworkSpentBoss():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BUY_OFFTHERADAR")
+	@:native("NetworkSpentBuyOfftheradar")
 	static function networkSpentBuyOfftheradar(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1315,7 +1315,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BUY_AUTOSHOP")
+	@:native("NetworkSpentBuyAutoshop")
 	static function NetworkSpentBuyAutoshop(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1323,7 +1323,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BOUNTY_HUNTER_MISSION")
+	@:native("NetworkSpentBountyHunterMission")
 	static function NetworkSpentBountyHunterMission(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1331,7 +1331,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BUY_CASINO")
+	@:native("NetworkSpentBuyCasino")
 	static function NetworkSpentBuyCasino(amount:Int, p1:Bool, p2:Bool, data:Dynamic):Dynamic;
 
 	/**
@@ -1339,19 +1339,19 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BUY_ARENA")
+	@:native("NetworkSpentBuyArena")
 	static function NetworkSpentBuyArena(amount:Int, p1:Bool, p2:Bool, p3:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_BUY_TRUCK")
+	@:native("NetworkSpentBuyTruck")
 	static function NetworkSpentBuyTruck(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_BUY_BUNKER")
+	@:native("NetworkSpentBuyBunker")
 	static function NetworkSpentBuyBunker(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1359,7 +1359,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_BUY_TILTROTOR")
+	@:native("NetworkSpentBuyTiltrotor")
 	static function NetworkSpentBuyTiltrotor(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1367,7 +1367,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CARCLUB_MEMBERSHIP")
+	@:native("NetworkSpentCarclubMembership")
 	static function NetworkSpentCarclubMembership(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -1375,31 +1375,31 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CARCLUB")
+	@:native("NetworkSpentCarclub")
 	static function NetworkSpentCarclub(p0:Dynamic, p1:Bool, p2:Bool, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BUY_REVEAL_PLAYERS")
+	@:native("NetworkSpentBuyRevealPlayers")
 	static function networkSpentBuyRevealPlayers(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BUY_PASSIVE_MODE")
+	@:native("NetworkSpentBuyPassiveMode")
 	static function networkSpentBuyPassiveMode(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_CARWASH")
+	@:native("NetworkSpentCarwash")
 	static function networkSpentCarwash(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Bool, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_CASH_DROP")
+	@:native("NetworkSpentCashDrop")
 	static function networkSpentCashDrop(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1407,7 +1407,7 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CASINO_HEIST_SKIP_MISSION")
+	@:native("NetworkSpentCasinoHeistSkipMission")
 	static function NetworkSpentCasinoHeistSkipMission(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1415,25 +1415,25 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CASINO_GENERIC")
+	@:native("NetworkSpentCasinoGeneric")
 	static function NetworkSpentCasinoGeneric(amount:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_BUY_WANTEDLEVEL")
+	@:native("NetworkSpentBuyWantedlevel")
 	static function networkSpentBuyWantedlevel(p0:Dynamic, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_CALL_PLAYER")
+	@:native("NetworkSpentCallPlayer")
 	static function networkSpentCallPlayer(p0:Dynamic, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_CINEMA")
+	@:native("NetworkSpentCinema")
 	static function networkSpentCinema(p0:Dynamic, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1441,7 +1441,7 @@ extern class Money {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CASINO_HEIST")
+	@:native("NetworkSpentCasinoHeist")
 	static function NetworkSpentCasinoHeist(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Dynamic, p10:Dynamic):Dynamic;
 
 	/**
@@ -1449,7 +1449,7 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CARGO_SOURCING")
+	@:native("NetworkSpentCargoSourcing")
 	static function NetworkSpentCargoSourcing(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -1457,13 +1457,13 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CARCLUB_TAKEOVER")
+	@:native("NetworkSpentCarclubTakeover")
 	static function NetworkSpentCarclubTakeover(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_FROM_ROCKSTAR")
+	@:native("NetworkSpentFromRockstar")
 	static function networkSpentFromRockstar(bank:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1471,7 +1471,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CASINO_MEMBERSHIP")
+	@:native("NetworkSpentCasinoMembership")
 	static function NetworkSpentCasinoMembership(amount:Int, p1:Bool, p2:Bool, p3:Int):Dynamic;
 
 	/**
@@ -1479,7 +1479,7 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_CASINO_CLUB_GENERIC")
+	@:native("NetworkSpentCasinoClubGeneric")
 	static function NetworkSpentCasinoClubGeneric(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic):Dynamic;
 
 	/**
@@ -1487,7 +1487,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_FROM_BANK")
+	@:native("NetworkSpentFromBank")
 	static function NetworkSpentFromBank(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
@@ -1495,7 +1495,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_EMPLOY_ASSASSINS")
+	@:native("NetworkSpentEmployAssassins")
 	static function NetworkSpentEmployAssassins(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1503,7 +1503,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_GANGOPS_START_MISSION")
+	@:native("NetworkSpentGangopsStartMission")
 	static function NetworkSpentGangopsStartMission(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1511,7 +1511,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_GANGOPS_START_STRAND")
+	@:native("NetworkSpentGangopsStartStrand")
 	static function NetworkSpentGangopsStartStrand(type:Int, amount:Int, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1519,7 +1519,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_GANGOPS_CANNON")
+	@:native("NetworkSpentGangopsCannon")
 	static function NetworkSpentGangopsCannon(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1527,7 +1527,7 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_HANGAR_STAFF_CHARGES")
+	@:native("NetworkSpentHangarStaffCharges")
 	static function NetworkSpentHangarStaffCharges(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1535,7 +1535,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_GANGOPS_TRIP_SKIP")
+	@:native("NetworkSpentGangopsTripSkip")
 	static function NetworkSpentGangopsTripSkip(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1543,13 +1543,13 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_GUNRUNNING_CONTACT_SERVICE")
+	@:native("NetworkSpentGunrunningContactService")
 	static function NetworkSpentGunrunningContactService(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_HOLDUPS")
+	@:native("NetworkSpentHoldups")
 	static function networkSpentHoldups(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1557,13 +1557,13 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_HANGAR_UTILITY_CHARGES")
+	@:native("NetworkSpentHangarUtilityCharges")
 	static function NetworkSpentHangarUtilityCharges(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_HELI_PICKUP")
+	@:native("NetworkSpentHeliPickup")
 	static function networkSpentHeliPickup(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1573,13 +1573,13 @@ extern class Money {
 	 * p2 = 1  
 	 * ```
 	 */
-	@:native("NETWORK_SPENT_HIRE_MUGGER")
+	@:native("NetworkSpentHireMugger")
 	static function networkSpentHireMugger(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_HIRE_MERCENARY")
+	@:native("NetworkSpentHireMercenary")
 	static function networkSpentHireMercenary(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1587,7 +1587,7 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_IM_ABILITY")
+	@:native("NetworkSpentImAbility")
 	static function NetworkSpentImAbility(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1595,25 +1595,25 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_ISLAND_HEIST")
+	@:native("NetworkSpentIslandHeist")
 	static function NetworkSpentIslandHeist(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_IN_STRIPCLUB")
+	@:native("NetworkSpentInStripclub")
 	static function networkSpentInStripclub(p0:Dynamic, p1:Bool, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_JUKEBOX")
+	@:native("NetworkSpentJukebox")
 	static function NetworkSpentJukebox(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_IMPORT_EXPORT_REPAIR")
+	@:native("NetworkSpentImportExportRepair")
 	static function NetworkSpentImportExportRepair(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -1621,7 +1621,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE")
+	@:native("NetworkSpentNightclubEntryFee")
 	static function NetworkSpentNightclubEntryFee(player:Dynamic, amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1629,13 +1629,13 @@ extern class Money {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_JOB_SKIP")
+	@:native("NetworkSpentJobSkip")
 	static function NetworkSpentJobSkip(amount:Int, matchId:String, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_MOVE_YACHT")
+	@:native("NetworkSpentMoveYacht")
 	static function NetworkSpentMoveYacht(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1643,7 +1643,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_MAKE_IT_RAIN")
+	@:native("NetworkSpentMakeItRain")
 	static function NetworkSpentMakeItRain(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1651,43 +1651,43 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_NIGHTCLUB_BAR_DRINK")
+	@:native("NetworkSpentNightclubBarDrink")
 	static function NetworkSpentNightclubBarDrink(amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_NO_COPS")
+	@:native("NetworkSpentNoCops")
 	static function networkSpentNoCops(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE")
+	@:native("NetworkSpentOrderBodyguardVehicle")
 	static function NetworkSpentOrderBodyguardVehicle(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE")
+	@:native("NetworkSpentOrderWarehouseVehicle")
 	static function NetworkSpentOrderWarehouseVehicle(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_PAY_GOON")
+	@:native("NetworkSpentPayGoon")
 	static function NetworkSpentPayGoon(p0:Int, p1:Int, amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_PA_SERVICE_HELI_PICKUP")
+	@:native("NetworkSpentPaServiceHeliPickup")
 	static function NetworkSpentPaServiceHeliPickup(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_PA_SERVICE_DANCER")
+	@:native("NetworkSpentPaServiceDancer")
 	static function NetworkSpentPaServiceDancer(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1701,19 +1701,19 @@ extern class Money {
 	 * bool hasTheMoney = MONEY::_GET_BANK_BALANCE() < carCost.
 	 * ```
 	 */
-	@:native("NETWORK_SPENT_PAY_VEHICLE_INSURANCE_PREMIUM")
+	@:native("NetworkSpentPayVehicleInsurancePremium")
 	static function networkSpentPayVehicleInsurancePremium(amount:Int, vehicleModel:Int, networkHandle:Dynamic, notBankrupt:Bool, hasTheMoney:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_PAY_BOSS")
+	@:native("NetworkSpentPayBoss")
 	static function NetworkSpentPayBoss(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_PLAYER_HEALTHCARE")
+	@:native("NetworkSpentPlayerHealthcare")
 	static function networkSpentPlayerHealthcare(p0:Int, p1:Int, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1721,19 +1721,19 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_PURCHASE_HANGAR")
+	@:native("NetworkSpentPurchaseHangar")
 	static function NetworkSpentPurchaseHangar(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_PROSTITUTES")
+	@:native("NetworkSpentProstitutes")
 	static function networkSpentProstitutes(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_PURCHASE_WAREHOUSE")
+	@:native("NetworkSpentPurchaseWarehouse")
 	static function NetworkSpentPurchaseWarehouse(amount:Int, data:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1741,7 +1741,7 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_RDRHATCHET_BONUS")
+	@:native("NetworkSpentRdrhatchetBonus")
 	static function NetworkSpentRdrhatchetBonus(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1749,37 +1749,37 @@ extern class Money {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_REHIRE_DJ")
+	@:native("NetworkSpentRehireDj")
 	static function NetworkSpentRehireDj(amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_REQUEST_JOB")
+	@:native("NetworkSpentRequestJob")
 	static function networkSpentRequestJob(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_RENAME_ORGANIZATION")
+	@:native("NetworkSpentRenameOrganization")
 	static function NetworkSpentRenameOrganization(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_ROBBED_BY_MUGGER")
+	@:native("NetworkSpentRobbedByMugger")
 	static function networkSpentRobbedByMugger(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_TAXI")
+	@:native("NetworkSpentTaxi")
 	static function networkSpentTaxi(amount:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_REQUEST_HEIST")
+	@:native("NetworkSpentRequestHeist")
 	static function networkSpentRequestHeist(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1789,7 +1789,7 @@ extern class Money {
 	 * NativeDB Removed Parameter 4: BOOL p3
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_SPIN_THE_WHEEL_PAYMENT")
+	@:native("NetworkSpentSpinTheWheelPayment")
 	static function NetworkSpentSpinTheWheelPayment(amount:Int, p1:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
@@ -1797,7 +1797,7 @@ extern class Money {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_ARENA")
+	@:native("NetworkSpentUpgradeArena")
 	static function NetworkSpentUpgradeArena(amount:Int, p1:Bool, p2:Bool, p3:String):Dynamic;
 
 	/**
@@ -1805,13 +1805,13 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_SALES_DISPLAY")
+	@:native("NetworkSpentSalesDisplay")
 	static function NetworkSpentSalesDisplay(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SPENT_TELESCOPE")
+	@:native("NetworkSpentTelescope")
 	static function networkSpentTelescope(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1819,7 +1819,7 @@ extern class Money {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_CASINO")
+	@:native("NetworkSpentUpgradeCasino")
 	static function NetworkSpentUpgradeCasino(amount:Int, p1:Bool, p2:Bool, data:Dynamic):Dynamic;
 
 	/**
@@ -1827,13 +1827,13 @@ extern class Money {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_AUTOSHOP")
+	@:native("NetworkSpentUpgradeAutoshop")
 	static function NetworkSpentUpgradeAutoshop(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_BUNKER")
+	@:native("NetworkSpentUpgradeBunker")
 	static function NetworkSpentUpgradeBunker(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1841,7 +1841,7 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_SUBMARINE")
+	@:native("NetworkSpentSubmarine")
 	static function NetworkSpentSubmarine(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -1849,7 +1849,7 @@ extern class Money {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_HANGAR")
+	@:native("NetworkSpentUpgradeHangar")
 	static function NetworkSpentUpgradeHangar(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1857,7 +1857,7 @@ extern class Money {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_SUB")
+	@:native("NetworkSpentUpgradeSub")
 	static function NetworkSpentUpgradeSub(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1865,13 +1865,13 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_BASE")
+	@:native("NetworkSpentUpgradeBase")
 	static function NetworkSpentUpgradeBase(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_TRUCK")
+	@:native("NetworkSpentUpgradeTruck")
 	static function NetworkSpentUpgradeTruck(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1879,7 +1879,7 @@ extern class Money {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_UPGRADE_TILTROTOR")
+	@:native("NetworkSpentUpgradeTiltrotor")
 	static function NetworkSpentUpgradeTiltrotor(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1887,31 +1887,31 @@ extern class Money {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SPENT_VEHICLE_REQUESTED")
+	@:native("NetworkSpentVehicleRequested")
 	static function NetworkSpentVehicleRequested(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_VEHICLE_EXPORT_MODS")
+	@:native("NetworkSpentVehicleExportMods")
 	static function NetworkSpentVehicleExportMods(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_WAGER")
+	@:native("NetworkSpentWager")
 	static function NetworkSpentWager(p0:Dynamic, p1:Dynamic, amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SPENT_VIP_UTILITY_CHARGES")
+	@:native("NetworkSpentVipUtilityCharges")
 	static function NetworkSpentVipUtilityCharges(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PROCESS_CASH_GIFT")
+	@:native("ProcessCashGift")
 	static function processCashGift(p0:Dynamic, p1:Dynamic, p2:String):String;
 
 	/**
@@ -1919,7 +1919,7 @@ extern class Money {
 	 * Does nothing and always returns 0.
 	 * ```
 	 */
-	@:native("WITHDRAW_VC")
+	@:native("WithdrawVc")
 	static function withdrawVc(amount:Int):Int;
 
 }

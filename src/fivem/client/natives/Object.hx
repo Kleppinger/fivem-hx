@@ -9,49 +9,49 @@ extern class Object {
 	 * 
 	 * A simple "localized" door-system (with hundreds/thousands of doors) can be created by setting p5, p6, and p7 to false and using EventHandlers to synchronize the states to: [DOOR_SYSTEM_SET_DOOR_STATE](#\_0x6BAB9442830C7F53), [DOOR_SYSTEM_SET_OPEN_RATIO](#\_0xB6E6FBA95C7324AC), [DOOR_SYSTEM_SET_HOLD_OPEN](#\_0xD9B71952F78A2640), etc.
 	 */
-	@:native("ADD_DOOR_TO_SYSTEM")
+	@:native("AddDoorToSystem")
 	static function addDoorToSystem(doorHash:Int, modelHash:Int, x:Float, y:Float, z:Float, p5:Bool, scriptDoor:Bool, isLocal:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_GARAGE_AREA")
+	@:native("ClearGarageArea")
 	static function ClearGarageArea(garageHash:Int, isNetwork:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_ENTITIES_ENTIRELY_INSIDE_GARAGE")
+	@:native("AreEntitiesEntirelyInsideGarage")
 	static function areEntitiesEntirelyInsideGarage(garageHash:Int, p1:Bool, p2:Bool, p3:Bool, p4:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BREAK_OBJECT_FRAGMENT_CHILD")
+	@:native("BreakObjectFragmentChild")
 	static function breakObjectFragmentChild(p0:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_PORTABLE_PICKUP_TO_PED")
+	@:native("AttachPortablePickupToPed")
 	static function attachPortablePickupToPed(pickupObject:Dynamic, ped:Dynamic):Dynamic;
 
 	/**
 	 * Creates an ambient pickup given the hash. Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 	 */
-	@:native("CREATE_AMBIENT_PICKUP")
+	@:native("CreateAmbientPickup")
 	static function createAmbientPickup(pickupHash:Int, posX:Float, posY:Float, posZ:Float, flags:Int, value:Int, modelHash:Int, returnHandle:Bool, p8:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_OBJECTS_INSIDE_GARAGE")
+	@:native("ClearObjectsInsideGarage")
 	static function clearObjectsInsideGarage(garageHash:Int, vehicles:Bool, peds:Bool, objects:Bool, isNetwork:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_NON_NETWORKED_PORTABLE_PICKUP")
+	@:native("CreateNonNetworkedPortablePickup")
 	static function createNonNetworkedPortablePickup(pickupHash:Int, x:Float, y:Float, z:Float, placeOnGround:Bool, modelHash:Int):Dynamic;
 
 	/**
@@ -70,7 +70,7 @@ extern class Object {
 	 * Max is 2000 in MP. So if you put the amount to 20, but the value to $400,000 eg. They will only be able to pickup 20 - $2,000 bags. So, $40,000  
 	 * ```
 	 */
-	@:native("CREATE_MONEY_PICKUPS")
+	@:native("CreateMoneyPickups")
 	static function createMoneyPickups(x:Float, y:Float, z:Float, value:Int, amount:Int, model:Int):Dynamic;
 
 	/**
@@ -78,27 +78,27 @@ extern class Object {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_CREATE_NON_NETWORKED_AMBIENT_PICKUP")
+	@:native("CreateNonNetworkedAmbientPickup")
 	static function CreateNonNetworkedAmbientPickup(pickupHash:Dynamic, posX:Float, posY:Float, posZ:Float, flags:Int, value:Int, modelHash:Dynamic, p7:Bool, p8:Bool):Dynamic;
 
 	/**
 	 * Creates an object (prop) with the specified model at the specified position, offset on the Z axis by the radius of the object's model.
 	 * This object will initially be owned by the creating script as a mission entity, and the model should be loaded already (e.g. using REQUEST_MODEL).
 	 */
-	@:native("CREATE_OBJECT")
+	@:native("CreateObject")
 	static function createObject(modelHash:Int, x:Float, y:Float, z:Float, isNetwork:Bool, netMissionEntity:Bool, doorFlag:Bool):Dynamic;
 
 	/**
 	 * Creates an object (prop) with the specified model centered at the specified position.
 	 * This object will initially be owned by the creating script as a mission entity, and the model should be loaded already (e.g. using REQUEST_MODEL).
 	 */
-	@:native("CREATE_OBJECT_NO_OFFSET")
+	@:native("CreateObjectNoOffset")
 	static function createObjectNoOffset(modelHash:Int, x:Float, y:Float, z:Float, isNetwork:Bool, netMissionEntity:Bool, doorFlag:Bool):Dynamic;
 
 	/**
 	 * Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 	 */
-	@:native("CREATE_PORTABLE_PICKUP")
+	@:native("CreatePortablePickup")
 	static function createPortablePickup(pickupHash:Int, x:Float, y:Float, z:Float, placeOnGround:Bool, modelHash:Int):Dynamic;
 
 	/**
@@ -109,13 +109,13 @@ extern class Object {
 	 * 512 (1 << 9): spin around  
 	 * ```
 	 */
-	@:native("CREATE_PICKUP_ROTATE")
+	@:native("CreatePickupRotate")
 	static function createPickupRotate(pickupHash:Int, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, flag:Int, amount:Int, p9:Dynamic, p10:Bool, modelHash:Int):Dynamic;
 
 	/**
 	 * Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 	 */
-	@:native("CREATE_PICKUP")
+	@:native("CreatePickup")
 	static function createPickup(pickupHash:Int, posX:Float, posY:Float, posZ:Float, p4:Int, value:Int, p6:Bool, modelHash:Int):Dynamic;
 
 	/**
@@ -123,7 +123,7 @@ extern class Object {
 	 * p5 is usually 0.  
 	 * ```
 	 */
-	@:native("DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS")
+	@:native("DoesObjectOfTypeExistAtCoords")
 	static function doesObjectOfTypeExistAtCoords(x:Float, y:Float, z:Float, radius:Float, hash:Int, p5:Bool):Bool;
 
 	/**
@@ -135,25 +135,25 @@ extern class Object {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("DELETE_OBJECT")
+	@:native("DeleteObject")
 	static function deleteObject(object:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_PORTABLE_PICKUP_FROM_PED")
+	@:native("DetachPortablePickupFromPed")
 	static function detachPortablePickupFromPed(pickupObject:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_PICKUP_EXIST")
+	@:native("DoesPickupExist")
 	static function doesPickupExist(pickup:Dynamic):Bool;
 
 	/**
 	 * Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 	 */
-	@:native("DOES_PICKUP_OF_TYPE_EXIST_IN_AREA")
+	@:native("DoesPickupOfTypeExistInArea")
 	static function doesPickupOfTypeExistInArea(pickupHash:Int, x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
@@ -161,7 +161,7 @@ extern class Object {
 	 * Returns true if a destructible object with this handle exists, false otherwise.  
 	 * ```
 	 */
-	@:native("DOES_RAYFIRE_MAP_OBJECT_EXIST")
+	@:native("DoesRayfireMapObjectExist")
 	static function doesRayfireMapObjectExist(object:Dynamic):Bool;
 
 	/**
@@ -169,31 +169,31 @@ extern class Object {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE")
+	@:native("DoorSystemGetAutomaticDistance")
 	static function DoorSystemGetAutomaticDistance(doorHash:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_PICKUP_OBJECT_EXIST")
+	@:native("DoesPickupObjectExist")
 	static function doesPickupObjectExist(pickupObject:Dynamic):Bool;
 
 	/**
 	 * Search radius: 0.5
 	 */
-	@:native("DOOR_SYSTEM_FIND_EXISTING_DOOR")
+	@:native("DoorSystemFindExistingDoor")
 	static function doorSystemFindExistingDoor(x:Float, y:Float, z:Float, modelHash:Int, doorOutPointer:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOOR_SYSTEM_GET_DOOR_STATE")
+	@:native("DoorSystemGetDoorState")
 	static function doorSystemGetDoorState(doorHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DOOR_SYSTEM_GET_OPEN_RATIO")
+	@:native("DoorSystemGetOpenRatio")
 	static function doorSystemGetOpenRatio(doorHash:Int):Float;
 
 	/**
@@ -205,31 +205,31 @@ extern class Object {
 	 * OBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door locked
 	 * ```
 	 */
-	@:native("_DOOR_CONTROL")
+	@:native("DoorControl")
 	static function DoorControl(modelHash:Int, x:Float, y:Float, z:Float, locked:Bool, xRotMult:Float, yRotMult:Float, zRotMult:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOOR_SYSTEM_GET_IS_PHYSICS_LOADED")
+	@:native("DoorSystemGetIsPhysicsLoaded")
 	static function doorSystemGetIsPhysicsLoaded(doorHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE")
+	@:native("DoorSystemSetAutomaticDistance")
 	static function doorSystemSetAutomaticDistance(doorHash:Int, distance:Float, requestDoor:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOOR_SYSTEM_GET_DOOR_PENDING_STATE")
+	@:native("DoorSystemGetDoorPendingState")
 	static function doorSystemGetDoorPendingState(doorHash:Int):Int;
 
 	/**
 	 * Includes networking check: ownership vs. or the door itself **isn't** networked.
 	 */
-	@:native("DOOR_SYSTEM_SET_AUTOMATIC_RATE")
+	@:native("DoorSystemSetAutomaticRate")
 	static function doorSystemSetAutomaticRate(doorHash:Int, rate:Float, requestDoor:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -245,7 +245,7 @@ extern class Object {
 	 * *   **5**: DOORSTATE_FORCE_OPEN_THIS_FRAME
 	 * *   **6**: DOORSTATE_FORCE_CLOSED_THIS_FRAME
 	 */
-	@:native("DOOR_SYSTEM_SET_DOOR_STATE")
+	@:native("DoorSystemSetDoorState")
 	static function doorSystemSetDoorState(doorHash:Int, state:Int, requestDoor:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -254,19 +254,19 @@ extern class Object {
 	 * Ranges from -1.0 to 1.0, and 0.0 is closed / default.
 	 * ```
 	 */
-	@:native("DOOR_SYSTEM_SET_OPEN_RATIO")
+	@:native("DoorSystemSetOpenRatio")
 	static function doorSystemSetOpenRatio(doorHash:Int, ajar:Float, requestDoor:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_SAVING_IN_GARAGE")
+	@:native("EnableSavingInGarage")
 	static function enableSavingInGarage(garageHash:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * Includes networking check: ownership vs. or the door itself **isn't** networked.
 	 */
-	@:native("DOOR_SYSTEM_SET_HOLD_OPEN")
+	@:native("DoorSystemSetHoldOpen")
 	static function doorSystemSetHoldOpen(doorHash:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -274,19 +274,19 @@ extern class Object {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_IS_ARENA_PROP_PHYSICS_DISABLED")
+	@:native("GetIsArenaPropPhysicsDisabled")
 	static function GetIsArenaPropPhysicsDisabled(entity:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_FORCE_PICKUP_REGENERATE")
+	@:native("ForcePickupRegenerate")
 	static function ForcePickupRegenerate(p0:Dynamic):Dynamic;
 
 	/**
 	 * Includes networking check: ownership vs. or the door itself **isn't** networked.
 	 */
-	@:native("DOOR_SYSTEM_SET_SPRING_REMOVED")
+	@:native("DoorSystemSetSpringRemoved")
 	static function doorSystemSetSpringRemoved(doorHash:Int, removed:Bool, requestDoor:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -295,25 +295,25 @@ extern class Object {
 	 * isMission - if true doesn't return mission objects  
 	 * ```
 	 */
-	@:native("GET_CLOSEST_OBJECT_OF_TYPE")
+	@:native("GetClosestObjectOfType")
 	static function getClosestObjectOfType(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, isMission:Bool, p6:Bool, p7:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_OBJECT_TEXTURE_VARIATION")
+	@:native("GetObjectTextureVariation")
 	static function GetObjectTextureVariation(object:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PICKUP_COORDS")
+	@:native("GetPickupCoords")
 	static function getPickupCoords(pickup:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_OBJECT_FRAGMENT_DAMAGE_HEALTH")
+	@:native("GetObjectFragmentDamageHealth")
 	static function getObjectFragmentDamageHealth(p0:Dynamic, p1:Bool):Float;
 
 	/**
@@ -321,7 +321,7 @@ extern class Object {
 	 * returns pickup hash.
 	 * ```
 	 */
-	@:native("_GET_PICKUP_HASH")
+	@:native("GetPickupHash")
 	static function GetPickupHash(pickupHash:Int):Int;
 
 	/**
@@ -334,14 +334,14 @@ extern class Object {
 	 * 
 	 * Example given down below.
 	 */
-	@:native("FIX_OBJECT_FRAGMENT")
+	@:native("FixObjectFragment")
 	static function fixObjectFragment(object:Dynamic):Dynamic;
 
 	/**
 	 * Calculates the world coordinates after applying the specified offsets to the given position, relative to a certain heading.
 	 * This native is similar to [`GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS`](#\_0x1899F328B0E12848), but uses a world position and heading as the reference point.
 	 */
-	@:native("GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS")
+	@:native("GetOffsetFromCoordAndHeadingInWorldCoords")
 	static function getOffsetFromCoordAndHeadingInWorldCoords(xPos:Float, yPos:Float, zPos:Float, heading:Float, xOffset:Float, yOffset:Float, zOffset:Float):Dynamic;
 
 	/**
@@ -350,19 +350,19 @@ extern class Object {
 	 * OBJECT::GET_RAYFIRE_MAP_OBJECT(-809.9619750976562, 170.919, 75.7406997680664, 3.0, "des_tvsmash");
 	 * ```
 	 */
-	@:native("GET_RAYFIRE_MAP_OBJECT")
+	@:native("GetRayfireMapObject")
 	static function getRayfireMapObject(x:Float, y:Float, z:Float, radius:Float, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PICKUP_OBJECT")
+	@:native("GetPickupObject")
 	static function getPickupObject(pickup:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COORDS_AND_ROTATION_OF_CLOSEST_OBJECT_OF_TYPE")
+	@:native("GetCoordsAndRotationOfClosestObjectOfType")
 	static function getCoordsAndRotationOfClosestObjectOfType(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, outPosition:Dynamic, outRotation:Dynamic, rotationOrder:Int):Dynamic;
 
 	/**
@@ -371,25 +371,25 @@ extern class Object {
 	 * Return value is a float between 0.0 and 1.0, 0.0 is the beginning of the animation, 1.0 is the end. Value resets to 0.0 instantly after reaching 1.0.
 	 * ```
 	 */
-	@:native("GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE")
+	@:native("GetRayfireMapObjectAnimPhase")
 	static function getRayfireMapObjectAnimPhase(object:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPON_TYPE_FROM_PICKUP_TYPE")
+	@:native("GetWeaponTypeFromPickupType")
 	static function getWeaponTypeFromPickupType(pickupHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SAFE_PICKUP_COORDS")
+	@:native("GetSafePickupCoords")
 	static function getSafePickupCoords(x:Float, y:Float, z:Float, p3:Float, p4:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PICKUP_GENERATION_RANGE_MULTIPLIER")
+	@:native("GetPickupGenerationRangeMultiplier")
 	static function GetPickupGenerationRangeMultiplier():Float;
 
 	/**
@@ -397,19 +397,19 @@ extern class Object {
 	 * 
 	 * Get a destructible object's state. Substract 1 to get the real state. For example, if the object just spawned (state 2), the native will return 3.
 	 */
-	@:native("GET_STATE_OF_RAYFIRE_MAP_OBJECT")
+	@:native("GetStateOfRayfireMapObject")
 	static function getStateOfRayfireMapObject(object:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_CLOSEST_OBJECT_OF_TYPE_BEEN_BROKEN")
+	@:native("HasClosestObjectOfTypeBeenBroken")
 	static function hasClosestObjectOfTypeBeenBroken(p0:Float, p1:Float, p2:Float, p3:Float, modelHash:Int, p5:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_CLOSEST_OBJECT_OF_TYPE_BEEN_COMPLETELY_DESTROYED")
+	@:native("HasClosestObjectOfTypeBeenCompletelyDestroyed")
 	static function hasClosestObjectOfTypeBeenCompletelyDestroyed(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, p5:Bool):Bool;
 
 	/**
@@ -417,7 +417,7 @@ extern class Object {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("HAS_OBJECT_BEEN_BROKEN")
+	@:native("HasObjectBeenBroken")
 	static function hasObjectBeenBroken(object:Dynamic):Bool;
 
 	/**
@@ -425,7 +425,7 @@ extern class Object {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_GET_PICKUP_HASH_FROM_WEAPON")
+	@:native("GetPickupHashFromWeapon")
 	static function GetPickupHashFromWeapon(weapon:Int):Int;
 
 	/**
@@ -437,25 +437,25 @@ extern class Object {
 	 * the locked bool is either 0(unlocked)(false) or 1(locked)(true)  
 	 * ```
 	 */
-	@:native("GET_STATE_OF_CLOSEST_DOOR_OF_TYPE")
+	@:native("GetStateOfClosestDoorOfType")
 	static function getStateOfClosestDoorOfType(type:Int, x:Float, y:Float, z:Float, locked:Dynamic, heading:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PICKUP_BEEN_COLLECTED")
+	@:native("HasPickupBeenCollected")
 	static function hasPickupBeenCollected(pickup:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_PORTABLE_PICKUP_WHEN_DETACHED")
+	@:native("HidePortablePickupWhenDetached")
 	static function hidePortablePickupWhenDetached(pickup:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_ENTITY_ENTIRELY_INSIDE_GARAGE")
+	@:native("IsAnyEntityEntirelyInsideGarage")
 	static function isAnyEntityEntirelyInsideGarage(garageHash:Int, p1:Bool, p2:Bool, p3:Bool, p4:Dynamic):Bool;
 
 	/**
@@ -466,49 +466,49 @@ extern class Object {
 	 * }
 	 * ```
 	 */
-	@:native("IS_DOOR_REGISTERED_WITH_SYSTEM")
+	@:native("IsDoorRegisteredWithSystem")
 	static function isDoorRegisteredWithSystem(doorHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_OBJECT_NEAR_POINT")
+	@:native("IsAnyObjectNearPoint")
 	static function isAnyObjectNearPoint(x:Float, y:Float, z:Float, range:Float, p4:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_GARAGE_EMPTY")
+	@:native("IsGarageEmpty")
 	static function isGarageEmpty(garageHash:Int, p1:Bool, p2:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_OBJECT_ENTIRELY_INSIDE_GARAGE")
+	@:native("IsObjectEntirelyInsideGarage")
 	static function isObjectEntirelyInsideGarage(garageHash:Int, entity:Dynamic, p2:Float, p3:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DOOR_CLOSED")
+	@:native("IsDoorClosed")
 	static function isDoorClosed(doorHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_OBJECT_NEAR_POINT")
+	@:native("IsObjectNearPoint")
 	static function isObjectNearPoint(objectHash:Int, x:Float, y:Float, z:Float, range:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_OBJECT_A_PICKUP")
+	@:native("IsObjectAPickup")
 	static function isObjectAPickup(object:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_OBJECT_VISIBLE")
+	@:native("IsObjectVisible")
 	static function isObjectVisible(object:Dynamic):Bool;
 
 	/**
@@ -516,31 +516,31 @@ extern class Object {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("IS_OBJECT_A_PORTABLE_PICKUP")
+	@:native("IsObjectAPortablePickup")
 	static function isObjectAPortablePickup(object:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PICKUP_WEAPON_OBJECT_VALID")
+	@:native("IsPickupWeaponObjectValid")
 	static function isPickupWeaponObjectValid(object:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_OBJECT_PARTIALLY_INSIDE_GARAGE")
+	@:native("IsObjectPartiallyInsideGarage")
 	static function isObjectPartiallyInsideGarage(garageHash:Int, entity:Dynamic, p2:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_ENTIRELY_INSIDE_GARAGE")
+	@:native("IsPlayerEntirelyInsideGarage")
 	static function isPlayerEntirelyInsideGarage(garageHash:Int, player:Dynamic, p2:Float, p3:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_PARTIALLY_INSIDE_GARAGE")
+	@:native("IsPlayerPartiallyInsideGarage")
 	static function isPlayerPartiallyInsideGarage(garageHash:Int, player:Dynamic, p2:Int):Bool;
 
 	/**
@@ -548,7 +548,7 @@ extern class Object {
 	 * is this like setting is as no longer needed?  
 	 * ```
 	 */
-	@:native("_MARK_OBJECT_FOR_DELETION")
+	@:native("MarkObjectForDeletion")
 	static function MarkObjectForDeletion(object:Dynamic):Dynamic;
 
 	/**
@@ -563,19 +563,19 @@ extern class Object {
 	 * 1.  [golf_mp](https://i.imgur.com/JhsQAK9.png)
 	 * 2.  [am_taxi](https://i.imgur.com/TJWCZaT.jpg)
 	 */
-	@:native("IS_POINT_IN_ANGLED_AREA")
+	@:native("IsPointInAngledArea")
 	static function isPointInAngledArea(xPos:Float, yPos:Float, zPos:Float, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, p10:Bool, includez:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_PLACE_OBJECT_ON_GROUND_PROPERLY_2")
+	@:native("PlaceObjectOnGroundProperly_2")
 	static function PlaceObjectOnGroundProperly2(object:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PREVENT_COLLECTION_OF_PORTABLE_PICKUP")
+	@:native("PreventCollectionOfPortablePickup")
 	static function preventCollectionOfPortablePickup(object:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -583,19 +583,19 @@ extern class Object {
 	 * 
 	 * Only its NetObj removed and flag `*(v2 + 192) |= 8u` (1604 retail) toggled.
 	 */
-	@:native("REMOVE_DOOR_FROM_SYSTEM")
+	@:native("RemoveDoorFromSystem")
 	static function removeDoorFromSystem(doorHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLACE_OBJECT_ON_GROUND_PROPERLY")
+	@:native("PlaceObjectOnGroundProperly")
 	static function placeObjectOnGroundProperly(object:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_OBJECT_HIGH_DETAIL_MODEL")
+	@:native("RemoveObjectHighDetailModel")
 	static function removeObjectHighDetailModel(object:Dynamic):Dynamic;
 
 	/**
@@ -607,25 +607,25 @@ extern class Object {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_ENABLE_ARENA_PROP_PHYSICS")
+	@:native("SetEnableArenaPropPhysics")
 	static function SetEnableArenaPropPhysics(entity:Dynamic, toggle:Bool, p2:Int):Dynamic;
 
 	/**
 	 * Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 	 */
-	@:native("REMOVE_ALL_PICKUPS_OF_TYPE")
+	@:native("RemoveAllPickupsOfType")
 	static function removeAllPickupsOfType(pickupHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN")
+	@:native("SetActivateObjectPhysicsAsSoonAsItIsUnfrozen")
 	static function setActivateObjectPhysicsAsSoonAsItIsUnfrozen(object:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PICKUP")
+	@:native("RemovePickup")
 	static function removePickup(pickup:Dynamic):Dynamic;
 
 	/**
@@ -640,7 +640,7 @@ extern class Object {
 	 * 5 = green small
 	 * ```
 	 */
-	@:native("RENDER_FAKE_PICKUP_GLOW")
+	@:native("RenderFakePickupGlow")
 	static function renderFakePickupGlow(x:Float, y:Float, z:Float, colorIndex:Int):Dynamic;
 
 	/**
@@ -648,7 +648,7 @@ extern class Object {
 	 * Requires a component_at_*_flsh to be attached to the weapon object
 	 * ```
 	 */
-	@:native("_SET_CREATE_WEAPON_OBJECT_LIGHT_SOURCE")
+	@:native("SetCreateWeaponObjectLightSource")
 	static function SetCreateWeaponObjectLightSource(object:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -656,7 +656,7 @@ extern class Object {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_ENABLE_ARENA_PROP_PHYSICS_ON_PED")
+	@:native("SetEnableArenaPropPhysicsOnPed")
 	static function SetEnableArenaPropPhysicsOnPed(entity:Dynamic, toggle:Bool, p2:Int, ped:Dynamic):Dynamic;
 
 	/**
@@ -665,13 +665,13 @@ extern class Object {
 	 * SET_LOCAL_PLAYER_*
 	 * ```
 	 */
-	@:native("_SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL")
+	@:native("SetLocalPlayerCanUsePickupsWithThisModel")
 	static function SetLocalPlayerCanUsePickupsWithThisModel(modelHash:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LOCAL_PLAYER_CAN_COLLECT_PORTABLE_PICKUPS")
+	@:native("SetLocalPlayerCanCollectPortablePickups")
 	static function setLocalPlayerCanCollectPortablePickups(p0:Bool):Dynamic;
 
 	/**
@@ -679,26 +679,26 @@ extern class Object {
 	 * Overrides the climbing/blocking flags of the object, used in the native scripts mostly for "prop_dock_bouy_*"
 	 * ```
 	 */
-	@:native("SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY")
+	@:native("SetObjectAllowLowLodBuoyancy")
 	static function setObjectAllowLowLodBuoyancy(object:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MAX_NUM_PORTABLE_PICKUPS_CARRIED_BY_PLAYER")
+	@:native("SetMaxNumPortablePickupsCarriedByPlayer")
 	static function setMaxNumPortablePickupsCarriedByPlayer(modelHash:Int, p1:Int):Dynamic;
 
 	/**
 	 * Overrides a flag on the object which determines if the object should be avoided by a vehicle in task: CTaskVehicleGoToPointWithAvoidanceAutomobile.
 	 * Tested on vehicles that were created by the vehicle generators.
 	 */
-	@:native("SET_OBJECT_FORCE_VEHICLES_TO_AVOID")
+	@:native("SetObjectForceVehiclesToAvoid")
 	static function setObjectForceVehiclesToAvoid(object:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FORCE_OBJECT_THIS_FRAME")
+	@:native("SetForceObjectThisFrame")
 	static function setForceObjectThisFrame(x:Float, y:Float, z:Float, p3:Float):Dynamic;
 
 	/**
@@ -707,7 +707,7 @@ extern class Object {
 	 * p9: Some phBoundGeometry margin value, limited to (0.0, 0.1) exclusive.
 	 * ```
 	 */
-	@:native("SET_OBJECT_PHYSICS_PARAMS")
+	@:native("SetObjectPhysicsParams")
 	static function setObjectPhysicsParams(object:Dynamic, mass:Float, gravityFactor:Float, linearC:Float, linearV:Float, linearV2:Float, angularC:Float, angularV:Float, angularV2:Float, p9:Float, maxAngSpeed:Float, buoyancyFactor:Float):Dynamic;
 
 	/**
@@ -720,13 +720,13 @@ extern class Object {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_OBJECT_LIGHT_COLOR")
+	@:native("SetObjectLightColor")
 	static function SetObjectLightColor(object:Dynamic, p1:Bool, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_OBJECT_STUNT_PROP_DURATION")
+	@:native("SetObjectStuntPropDuration")
 	static function SetObjectStuntPropDuration(object:Dynamic, duration:Float):Dynamic;
 
 	/**
@@ -752,7 +752,7 @@ extern class Object {
 	 * };  
 	 * ```
 	 */
-	@:native("_SET_OBJECT_TEXTURE_VARIATION")
+	@:native("SetObjectTextureVariation")
 	static function SetObjectTextureVariation(object:Dynamic, textureVariation:Int):Dynamic;
 
 	/**
@@ -770,31 +770,31 @@ extern class Object {
 	 * Normal: `30`\
 	 * Strong: `16`
 	 */
-	@:native("_SET_OBJECT_STUNT_PROP_SPEEDUP")
+	@:native("SetObjectStuntPropSpeedup")
 	static function SetObjectStuntPropSpeedup(object:Dynamic, intensity:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_OBJECT_TARGETTABLE")
+	@:native("SetObjectTargettable")
 	static function setObjectTargettable(object:Dynamic, targettable:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PICKUP_REGENERATION_TIME")
+	@:native("SetPickupRegenerationTime")
 	static function setPickupRegenerationTime(pickup:Dynamic, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_OBJECT_TARGETTABLE_BY_PLAYER")
+	@:native("SetObjectTargettableByPlayer")
 	static function SetObjectTargettableByPlayer(object:Dynamic, setFlag34:Bool, setFlag35:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PICKUP_HIDDEN_WHEN_UNCOLLECTABLE")
+	@:native("SetPickupHiddenWhenUncollectable")
 	static function SetPickupHiddenWhenUncollectable(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -807,13 +807,13 @@ extern class Object {
 	 * State 9 == End of the animation
 	 * ```
 	 */
-	@:native("SET_STATE_OF_RAYFIRE_MAP_OBJECT")
+	@:native("SetStateOfRayfireMapObject")
 	static function setStateOfRayfireMapObject(object:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_TEXTURE_VARIATION_OF_CLOSEST_OBJECT_OF_TYPE")
+	@:native("SetTextureVariationOfClosestObjectOfType")
 	static function SetTextureVariationOfClosestObjectOfType(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, textureVariation:Int):Bool;
 
 	/**
@@ -830,13 +830,13 @@ extern class Object {
 	 * get door info: pastebin.com/i14rbekD  
 	 * ```
 	 */
-	@:native("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE")
+	@:native("SetStateOfClosestDoorOfType")
 	static function setStateOfClosestDoorOfType(type:Int, x:Float, y:Float, z:Float, locked:Bool, heading:Float, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PICKUP_GENERATION_RANGE_MULTIPLIER")
+	@:native("SetPickupGenerationRangeMultiplier")
 	static function setPickupGenerationRangeMultiplier(multiplier:Float):Dynamic;
 
 	/**
@@ -851,19 +851,19 @@ extern class Object {
 	 * SET_PLAYER_*
 	 * ```
 	 */
-	@:native("_TOGGLE_USE_PICKUPS_FOR_PLAYER")
+	@:native("ToggleUsePickupsForPlayer")
 	static function ToggleUsePickupsForPlayer(player:Dynamic, pickupHash:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PICKUP_UNCOLLECTABLE")
+	@:native("SetPickupUncollectable")
 	static function SetPickupUncollectable(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TRACK_OBJECT_VISIBILITY")
+	@:native("TrackObjectVisibility")
 	static function trackObjectVisibility(object:Dynamic):Dynamic;
 
 	/**
@@ -871,13 +871,13 @@ extern class Object {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_SET_UNK_GLOBAL_BOOL_RELATED_TO_DAMAGE")
+	@:native("SetUnkGlobalBoolRelatedToDamage")
 	static function SetUnkGlobalBoolRelatedToDamage(value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEAM_PICKUP_OBJECT")
+	@:native("SetTeamPickupObject")
 	static function setTeamPickupObject(object:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
@@ -888,7 +888,7 @@ extern class Object {
 	 * Has to be looped until it returns true.   
 	 * ```
 	 */
-	@:native("SLIDE_OBJECT")
+	@:native("SlideObject")
 	static function slideObject(object:Dynamic, toX:Float, toY:Float, toZ:Float, speedX:Float, speedY:Float, speedZ:Float, collision:Bool):Bool;
 
 }

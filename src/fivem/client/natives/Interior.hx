@@ -7,7 +7,7 @@ extern class Interior {
 	 * Does something similar to INTERIOR::DISABLE_INTERIOR  
 	 * ```
 	 */
-	@:native("CAP_INTERIOR")
+	@:native("CapInterior")
 	static function capInterior(interiorID:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -15,19 +15,19 @@ extern class Interior {
 	 * More info: http://gtaforums.com/topic/836367-adding-props-to-interiors/  
 	 * ```
 	 */
-	@:native("ACTIVATE_INTERIOR_ENTITY_SET")
+	@:native("ActivateInteriorEntitySet")
 	static function activateInteriorEntitySet(interior:Int, entitySetName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME")
+	@:native("AddPickupToInteriorRoomByName")
 	static function addPickupToInteriorRoomByName(pickup:Dynamic, roomName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ROOM_FOR_ENTITY")
+	@:native("ClearRoomForEntity")
 	static function clearRoomForEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -37,19 +37,19 @@ extern class Interior {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_CLEAR_INTERIOR_FOR_ENTITY")
+	@:native("ClearInteriorForEntity")
 	static function ClearInteriorForEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ROOM_FOR_GAME_VIEWPORT")
+	@:native("ClearRoomForGameViewport")
 	static function clearRoomForGameViewport():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DEACTIVATE_INTERIOR_ENTITY_SET")
+	@:native("DeactivateInteriorEntitySet")
 	static function deactivateInteriorEntitySet(interior:Int, entitySetName:String):Dynamic;
 
 	/**
@@ -59,13 +59,13 @@ extern class Interior {
 	 * INTERIOR::DISABLE_INTERIOR(118018, true);  
 	 * ```
 	 */
-	@:native("DISABLE_INTERIOR")
+	@:native("DisableInterior")
 	static function disableInterior(interiorID:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ENABLE_SCRIPT_CULL_MODEL_THIS_FRAME")
+	@:native("EnableScriptCullModelThisFrame")
 	static function EnableScriptCullModelThisFrame(mapObjectHash:Int):Dynamic;
 
 	/**
@@ -73,7 +73,7 @@ extern class Interior {
 	 * This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.
 	 * ```
 	 */
-	@:native("ENABLE_EXTERIOR_CULL_MODEL_THIS_FRAME")
+	@:native("EnableExteriorCullModelThisFrame")
 	static function enableExteriorCullModelThisFrame(mapObjectHash:Int):Dynamic;
 
 	/**
@@ -81,13 +81,13 @@ extern class Interior {
 	 * Hashed version of GET_INTERIOR_AT_COORDS_WITH_TYPE
 	 * ```
 	 */
-	@:native("GET_INTERIOR_AT_COORDS_WITH_TYPEHASH")
+	@:native("GetInteriorAtCoordsWithTypehash")
 	static function getInteriorAtCoordsWithTypehash(x:Float, y:Float, z:Float, typeHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_ROOM_FOR_GAME_VIEWPORT")
+	@:native("ForceRoomForGameViewport")
 	static function forceRoomForGameViewport(interiorID:Int, roomHashKey:Int):Dynamic;
 
 	/**
@@ -98,7 +98,7 @@ extern class Interior {
 	 * Not a very useful native as you could just use GET_INTERIOR_AT_COORDS instead and get the same result, without even having to specify the interior type.  
 	 * ```
 	 */
-	@:native("GET_INTERIOR_AT_COORDS_WITH_TYPE")
+	@:native("GetInteriorAtCoordsWithType")
 	static function getInteriorAtCoordsWithType(x:Float, y:Float, z:Float, interiorType:String):Int;
 
 	/**
@@ -106,7 +106,7 @@ extern class Interior {
 	 * Forces the particular room in an interior to load incase not teleporting into the portal.
 	 * ```
 	 */
-	@:native("FORCE_ROOM_FOR_ENTITY")
+	@:native("ForceRoomForEntity")
 	static function forceRoomForEntity(entity:Dynamic, interior:Int, roomHashKey:Int):Dynamic;
 
 	/**
@@ -114,19 +114,19 @@ extern class Interior {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("GET_INTERIOR_FROM_PRIMARY_VIEW")
+	@:native("GetInteriorFromPrimaryView")
 	static function getInteriorFromPrimaryView():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_INTERIOR_FROM_COLLISION")
+	@:native("GetInteriorFromCollision")
 	static function getInteriorFromCollision(x:Float, y:Float, z:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_OFFSET_FROM_INTERIOR_IN_WORLD_COORDS")
+	@:native("GetOffsetFromInteriorInWorldCoords")
 	static function getOffsetFromInteriorInWorldCoords(interior:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -136,7 +136,7 @@ extern class Interior {
 	 * Dim interiorID As Integer = Native.Function.Call(Of Integer)(Hash.GET_INTERIOR_AT_COORDS, X, Y, Z)  
 	 * ```
 	 */
-	@:native("GET_INTERIOR_AT_COORDS")
+	@:native("GetInteriorAtCoords")
 	static function getInteriorAtCoords(x:Float, y:Float, z:Float):Int;
 
 	/**
@@ -144,7 +144,7 @@ extern class Interior {
 	 * Returns the handle of the interior that the entity is in. Returns 0 if outside.  
 	 * ```
 	 */
-	@:native("GET_INTERIOR_FROM_ENTITY")
+	@:native("GetInteriorFromEntity")
 	static function getInteriorFromEntity(entity:Dynamic):Int;
 
 	/**
@@ -152,7 +152,7 @@ extern class Interior {
 	 * Returns the group ID of the specified interior. For example, regular interiors have group 0, subway interiors have group 1. There are a few other groups too.  
 	 * ```
 	 */
-	@:native("GET_INTERIOR_GROUP_ID")
+	@:native("GetInteriorGroupId")
 	static function getInteriorGroupId(interior:Int):Int;
 
 	/**
@@ -160,7 +160,7 @@ extern class Interior {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("GET_INTERIOR_HEADING")
+	@:native("GetInteriorHeading")
 	static function getInteriorHeading(interior:Int):Float;
 
 	/**
@@ -168,19 +168,19 @@ extern class Interior {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("GET_INTERIOR_LOCATION_AND_NAMEHASH")
+	@:native("GetInteriorLocationAndNamehash")
 	static function getInteriorLocationAndNamehash(interior:Int, position:Dynamic, nameHash:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ROOM_KEY_FOR_GAME_VIEWPORT")
+	@:native("GetRoomKeyForGameViewport")
 	static function getRoomKeyForGameViewport():Int;
 
 	/**
 	 * 
 	 */
-	@:native("IS_INTERIOR_DISABLED")
+	@:native("IsInteriorDisabled")
 	static function isInteriorDisabled(interior:Int):Bool;
 
 	/**
@@ -188,7 +188,7 @@ extern class Interior {
 	 * Seems to do the exact same as INTERIOR::GET_ROOM_KEY_FROM_ENTITY  
 	 * ```
 	 */
-	@:native("GET_KEY_FOR_ENTITY_IN_ROOM")
+	@:native("GetKeyForEntityInRoom")
 	static function getKeyForEntityInRoom(entity:Dynamic):Int;
 
 	/**
@@ -196,61 +196,61 @@ extern class Interior {
 	 * Gets the room hash key from the room that the specified entity is in. Each room in every interior has a unique key. Returns 0 if the entity is outside.  
 	 * ```
 	 */
-	@:native("GET_ROOM_KEY_FROM_ENTITY")
+	@:native("GetRoomKeyFromEntity")
 	static function getRoomKeyFromEntity(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("IS_INTERIOR_SCENE")
+	@:native("IsInteriorScene")
 	static function isInteriorScene():Bool;
 
 	/**
 	 * Returns true if the collision at the specified coords is marked as being outside (false if there's an interior)
 	 */
-	@:native("IS_COLLISION_MARKED_OUTSIDE")
+	@:native("IsCollisionMarkedOutside")
 	static function isCollisionMarkedOutside(x:Float, y:Float, z:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_INTERIOR_CAPPED")
+	@:native("IsInteriorCapped")
 	static function isInteriorCapped(interiorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_INTERIOR_READY")
+	@:native("IsInteriorReady")
 	static function isInteriorReady(interiorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_INTERIOR_ENTITY_SET_ACTIVE")
+	@:native("IsInteriorEntitySetActive")
 	static function isInteriorEntitySetActive(interior:Int, entitySetName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VALID_INTERIOR")
+	@:native("IsValidInterior")
 	static function isValidInterior(interior:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REFRESH_INTERIOR")
+	@:native("RefreshInterior")
 	static function refreshInterior(interiorID:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PIN_INTERIOR_IN_MEMORY")
+	@:native("PinInteriorInMemory")
 	static function pinInteriorInMemory(interior:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_INTERIOR_ENTITY_SET_COLOR")
+	@:native("SetInteriorEntitySetColor")
 	static function SetInteriorEntitySetColor(interior:Int, entitySetName:String, color:Int):Dynamic;
 
 	/**
@@ -259,7 +259,7 @@ extern class Interior {
 	 * You don't fall through the floor but everything is invisible inside and looks the same as when INTERIOR::DISABLE_INTERIOR is used. Peds behaves normally inside.  
 	 * ```
 	 */
-	@:native("UNPIN_INTERIOR")
+	@:native("UnpinInterior")
 	static function unpinInterior(interior:Int):Dynamic;
 
 }

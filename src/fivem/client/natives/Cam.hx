@@ -5,13 +5,13 @@ extern class Cam {
 	/**
 	 * Takes a camera and uses the information from it as a camera spline node.
 	 */
-	@:native("ADD_CAM_SPLINE_NODE_USING_CAMERA")
+	@:native("AddCamSplineNodeUsingCamera")
 	static function addCamSplineNodeUsingCamera(cam:Dynamic, cam2:Dynamic, length:Int, p3:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_CAM_SPLINE_NODE_USING_CAMERA_FRAME")
+	@:native("AddCamSplineNodeUsingCameraFrame")
 	static function addCamSplineNodeUsingCameraFrame(cam:Dynamic, cam2:Dynamic, p2:Int, p3:Int):Dynamic;
 
 	/**
@@ -19,13 +19,13 @@ extern class Cam {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_ACTIVATE_CAM_WITH_INTERP_AND_FOV_CURVE")
+	@:native("ActivateCamWithInterpAndFovCurve")
 	static function ActivateCamWithInterpAndFovCurve(camTo:Dynamic, camFrom:Dynamic, duration:Int, easeLocation:Int, easeRotation:Int, easeFove:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_CAM_SPLINE_NODE_USING_GAMEPLAY_FRAME")
+	@:native("AddCamSplineNodeUsingGameplayFrame")
 	static function addCamSplineNodeUsingGameplayFrame(cam:Dynamic, p1:Int, p2:Int):Dynamic;
 
 	/**
@@ -33,7 +33,7 @@ extern class Cam {
 	 * CAM::ANIMATED_SHAKE_SCRIPT_GLOBAL("SHAKE_CAM_medium", "medium", "", 0.5f);
 	 * ```
 	 */
-	@:native("ANIMATED_SHAKE_SCRIPT_GLOBAL")
+	@:native("AnimatedShakeScriptGlobal")
 	static function animatedShakeScriptGlobal(p0:String, p1:String, p2:String, p3:Float):Dynamic;
 
 	/**
@@ -44,13 +44,13 @@ extern class Cam {
 	 * p9 != 0 seems to override the rotation/pitch (bool?)  
 	 * ```
 	 */
-	@:native("ADD_CAM_SPLINE_NODE")
+	@:native("AddCamSplineNode")
 	static function addCamSplineNode(camera:Dynamic, x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, length:Int, p8:Int, transitionType:Int):Dynamic;
 
 	/**
 	 * This native works with peds only.
 	 */
-	@:native("ATTACH_CAM_TO_PED_BONE")
+	@:native("AttachCamToPedBone")
 	static function attachCamToPedBone(cam:Dynamic, ped:Dynamic, boneIndex:Int, xOffset:Float, yOffset:Float, zOffset:Float, isRelative:Bool):Dynamic;
 
 	/**
@@ -59,7 +59,7 @@ extern class Cam {
 	 * CAM::ANIMATED_SHAKE_CAM(l_5069, "shake_cam_all@", "light", "", 1f);  
 	 * ```
 	 */
-	@:native("ANIMATED_SHAKE_CAM")
+	@:native("AnimatedShakeCam")
 	static function animatedShakeCam(cam:Dynamic, p1:String, p2:String, p3:String, amplitude:Float):Dynamic;
 
 	/**
@@ -76,7 +76,7 @@ extern class Cam {
 	 * CAM::_ANIMATE_GAMEPLAY_CAM_ZOOM(1f, 1f);  
 	 * ```
 	 */
-	@:native("_ANIMATE_GAMEPLAY_CAM_ZOOM")
+	@:native("AnimateGameplayCamZoom")
 	static function AnimateGameplayCamZoom(p0:Float, distance:Float):Dynamic;
 
 	/**
@@ -87,14 +87,14 @@ extern class Cam {
 	 * Eg. _CLAMP_GAMEPLAY_CAM_YAW(0.0f, 0.0f) will set the horizontal angle directly behind the player.
 	 * ```
 	 */
-	@:native("_CLAMP_GAMEPLAY_CAM_YAW")
+	@:native("ClampGameplayCamYaw")
 	static function ClampGameplayCamYaw(minimum:Float, maximum:Float):Dynamic;
 
 	/**
 	 * This native works with vehicles only.
 	 * Bone indexes are usually given by this native [GET_ENTITY_BONE_INDEX_BY_NAME](#\_0xFB71170B7E76ACBA).
 	 */
-	@:native("_ATTACH_CAM_TO_VEHICLE_BONE")
+	@:native("AttachCamToVehicleBone")
 	static function AttachCamToVehicleBone(cam:Dynamic, vehicle:Dynamic, boneIndex:Int, relativeRotation:Bool, rotX:Float, rotY:Float, rotZ:Float, offX:Float, offY:Float, offZ:Float, fixedDirection:Bool):Dynamic;
 
 	/**
@@ -102,7 +102,7 @@ extern class Cam {
 	 * Last param determines if its relative to the Entity  
 	 * ```
 	 */
-	@:native("ATTACH_CAM_TO_ENTITY")
+	@:native("AttachCamToEntity")
 	static function attachCamToEntity(cam:Dynamic, entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, isRelative:Bool):Dynamic;
 
 	/**
@@ -115,7 +115,7 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("CREATE_CAMERA")
+	@:native("CreateCamera")
 	static function createCamera(camHash:Int, active:Bool):Dynamic;
 
 	/**
@@ -123,7 +123,7 @@ extern class Cam {
 	 * 
 	 * Take a look at [CREATE_CAM](#\_0xC3981DCE61D9E13F) if you would like to see the available camera names.
 	 */
-	@:native("CREATE_CAM_WITH_PARAMS")
+	@:native("CreateCamWithParams")
 	static function createCamWithParams(camName:String, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, fov:Float, active:Bool, rotationOrder:Int):Dynamic;
 
 	/**
@@ -131,7 +131,7 @@ extern class Cam {
 	 * BOOL param indicates whether the cam should be destroyed if it belongs to the calling script.  
 	 * ```
 	 */
-	@:native("DESTROY_ALL_CAMS")
+	@:native("DestroyAllCams")
 	static function destroyAllCams(bScriptHostCam:Bool):Dynamic;
 
 	/**
@@ -142,7 +142,7 @@ extern class Cam {
 	 * Eg. _CLAMP_GAMEPLAY_CAM_PITCH(0.0f, 0.0f) will set the vertical angle directly behind the player.
 	 * ```
 	 */
-	@:native("_CLAMP_GAMEPLAY_CAM_PITCH")
+	@:native("ClampGameplayCamPitch")
 	static function ClampGameplayCamPitch(minimum:Float, maximum:Float):Dynamic;
 
 	/**
@@ -155,13 +155,13 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("CREATE_CAMERA_WITH_PARAMS")
+	@:native("CreateCameraWithParams")
 	static function createCameraWithParams(camHash:Int, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, fov:Float, active:Bool, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_CAM")
+	@:native("DetachCam")
 	static function detachCam(cam:Dynamic):Dynamic;
 
 	/**
@@ -179,7 +179,7 @@ extern class Cam {
 	 * *   ROUNDED_SPLINE_CAMERA
 	 * *   SMOOTHED_SPLINE_CAMERA
 	 */
-	@:native("CREATE_CAM")
+	@:native("CreateCam")
 	static function createCam(camName:String, active:Bool):Dynamic;
 
 	/**
@@ -187,7 +187,7 @@ extern class Cam {
 	 * some camera effect that is used in the drunk-cheat, and turned off (by setting it to 0.0) along with the shaking effects once the drunk cheat is disabled.  
 	 * ```
 	 */
-	@:native("CUSTOM_MENU_COORDINATES")
+	@:native("CustomMenuCoordinates")
 	static function customMenuCoordinates(p0:Float):Dynamic;
 
 	/**
@@ -195,13 +195,13 @@ extern class Cam {
 	 * BOOL param indicates whether the cam should be destroyed if it belongs to the calling script.  
 	 * ```
 	 */
-	@:native("DESTROY_CAM")
+	@:native("DestroyCam")
 	static function destroyCam(cam:Dynamic, bScriptHostCam:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_CINEMATIC_SHOT")
+	@:native("CreateCinematicShot")
 	static function createCinematicShot(p0:Dynamic, p1:Int, p2:Dynamic, entity:Dynamic):Dynamic;
 
 	/**
@@ -212,19 +212,19 @@ extern class Cam {
 	 * CAM::_DE2EF5DA284CC8DF();  
 	 * ```
 	 */
-	@:native("_DISABLE_FIRST_PERSON_CAM_THIS_FRAME")
+	@:native("DisableFirstPersonCamThisFrame")
 	static function DisableFirstPersonCamThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_CAM_COLLISION_FOR_OBJECT")
+	@:native("DisableCamCollisionForObject")
 	static function disableCamCollisionForObject(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_AIM_CAM_THIS_UPDATE")
+	@:native("DisableAimCamThisUpdate")
 	static function disableAimCamThisUpdate():Dynamic;
 
 	/**
@@ -233,19 +233,19 @@ extern class Cam {
 	 * duration: The time the fade should take, in milliseconds.  
 	 * ```
 	 */
-	@:native("DO_SCREEN_FADE_IN")
+	@:native("DoScreenFadeIn")
 	static function doScreenFadeIn(duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_VEHICLE_FIRST_PERSON_CAM_THIS_FRAME")
+	@:native("DisableVehicleFirstPersonCamThisFrame")
 	static function DisableVehicleFirstPersonCamThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_CAM_COLLISION_FOR_ENTITY")
+	@:native("DisableCamCollisionForEntity")
 	static function DisableCamCollisionForEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -254,19 +254,19 @@ extern class Cam {
 	 * duration: The time the fade should take, in milliseconds.  
 	 * ```
 	 */
-	@:native("DO_SCREEN_FADE_OUT")
+	@:native("DoScreenFadeOut")
 	static function doScreenFadeOut(duration:Int):Dynamic;
 
 	/**
 	 * Looks up a camera handle in the current camera pool and returns `true` if the handle is found, otherwise it returns `false`.
 	 */
-	@:native("DOES_CAM_EXIST")
+	@:native("DoesCamExist")
 	static function doesCamExist(cam:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_CINEMATIC_RENDERING_THIS_UPDATE")
+	@:native("ForceCinematicRenderingThisUpdate")
 	static function forceCinematicRenderingThisUpdate(p0:Bool):Dynamic;
 
 	/**
@@ -274,7 +274,7 @@ extern class Cam {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_GET_CAM_DOF_STRENGTH")
+	@:native("GetCamDofStrength")
 	static function GetCamDofStrength(cam:Dynamic):Float;
 
 	/**
@@ -293,13 +293,13 @@ extern class Cam {
 	 * }
 	 * ```
 	 */
-	@:native("_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT")
+	@:native("GetCamActiveViewModeContext")
 	static function GetCamActiveViewModeContext():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_FOV")
+	@:native("GetCamFov")
 	static function getCamFov(cam:Dynamic):Float;
 
 	/**
@@ -307,49 +307,49 @@ extern class Cam {
 	 * Shows the crosshair even if it wouldn't show normally. Only works for one frame, so make sure to call it repeatedly.  
 	 * ```
 	 */
-	@:native("_ENABLE_CROSSHAIR_THIS_FRAME")
+	@:native("EnableCrosshairThisFrame")
 	static function EnableCrosshairThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_ANIM_CURRENT_PHASE")
+	@:native("GetCamAnimCurrentPhase")
 	static function getCamAnimCurrentPhase(cam:Dynamic):Float;
 
 	/**
 	 * Gets a camera's rotation by handle (`cam`) lookup, outputs a `Vector3` in degrees.
 	 */
-	@:native("GET_CAM_ROT")
+	@:native("GetCamRot")
 	static function getCamRot(cam:Dynamic, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_COORD")
+	@:native("GetCamCoord")
 	static function getCamCoord(cam:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_FAR_CLIP")
+	@:native("GetCamFarClip")
 	static function getCamFarClip(cam:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_FAR_DOF")
+	@:native("GetCamFarDof")
 	static function getCamFarDof(cam:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_NEAR_CLIP")
+	@:native("GetCamNearClip")
 	static function getCamNearClip(cam:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAM_SPLINE_NODE_INDEX")
+	@:native("GetCamSplineNodeIndex")
 	static function getCamSplineNodeIndex(cam:Dynamic):Int;
 
 	/**
@@ -357,13 +357,13 @@ extern class Cam {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_GET_CAM_NEAR_DOF")
+	@:native("GetCamNearDof")
 	static function GetCamNearDof(cam:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_COORD")
+	@:native("GetFinalRenderedCamCoord")
 	static function getFinalRenderedCamCoord():Dynamic;
 
 	/**
@@ -371,19 +371,19 @@ extern class Cam {
 	 * I'm pretty sure the parameter is the camera as usual, but I am not certain so I'm going to leave it as is.  
 	 * ```
 	 */
-	@:native("GET_CAM_SPLINE_NODE_PHASE")
+	@:native("GetCamSplineNodePhase")
 	static function getCamSplineNodePhase(cam:Dynamic):Float;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the view mode enum.
 	 */
-	@:native("GET_CAM_VIEW_MODE_FOR_CONTEXT")
+	@:native("GetCamViewModeForContext")
 	static function getCamViewModeForContext(context:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_FAR_DOF")
+	@:native("GetFinalRenderedCamFarDof")
 	static function getFinalRenderedCamFarDof():Float;
 
 	/**
@@ -392,25 +392,25 @@ extern class Cam {
 	 * (returns 1.0f when no nodes has been added, reached end of non existing spline)  
 	 * ```
 	 */
-	@:native("GET_CAM_SPLINE_PHASE")
+	@:native("GetCamSplinePhase")
 	static function getCamSplinePhase(cam:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_FAR_CLIP")
+	@:native("GetFinalRenderedCamFarClip")
 	static function getFinalRenderedCamFarClip():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_FOV")
+	@:native("GetFinalRenderedCamFov")
 	static function getFinalRenderedCamFov():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_NEAR_CLIP")
+	@:native("GetFinalRenderedCamNearClip")
 	static function getFinalRenderedCamNearClip():Float;
 
 	/**
@@ -418,61 +418,61 @@ extern class Cam {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_DEBUG_CAMERA")
+	@:native("GetDebugCamera")
 	static function GetDebugCamera():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_MOTION_BLUR_STRENGTH")
+	@:native("GetFinalRenderedCamMotionBlurStrength")
 	static function getFinalRenderedCamMotionBlurStrength():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_ROT")
+	@:native("GetFinalRenderedCamRot")
 	static function getFinalRenderedCamRot(rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR")
+	@:native("GetFirstPersonAimCamZoomFactor")
 	static function getFirstPersonAimCamZoomFactor():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_CAM_NEAR_DOF")
+	@:native("GetFinalRenderedCamNearDof")
 	static function getFinalRenderedCamNearDof():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_IN_WHEN_FRIENDLY_ROT")
+	@:native("GetFinalRenderedInWhenFriendlyRot")
 	static function getFinalRenderedInWhenFriendlyRot(player:Dynamic, rotationOrder:Int):Dynamic;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("GET_FOLLOW_PED_CAM_ZOOM_LEVEL")
+	@:native("GetFollowPedCamZoomLevel")
 	static function getFollowPedCamZoomLevel():Int;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("GET_FOLLOW_VEHICLE_CAM_ZOOM_LEVEL")
+	@:native("GetFollowVehicleCamZoomLevel")
 	static function getFollowVehicleCamZoomLevel():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FINAL_RENDERED_IN_WHEN_FRIENDLY_FOV")
+	@:native("GetFinalRenderedInWhenFriendlyFov")
 	static function getFinalRenderedInWhenFriendlyFov(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FOCUS_PED_ON_SCREEN")
+	@:native("GetFocusPedOnScreen")
 	static function getFocusPedOnScreen(p0:Float, p1:Int, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Int, p8:Int):Dynamic;
 
 	/**
@@ -488,31 +488,31 @@ extern class Cam {
 	 * };
 	 * ```
 	 */
-	@:native("GET_FOLLOW_PED_CAM_VIEW_MODE")
+	@:native("GetFollowPedCamViewMode")
 	static function getFollowPedCamViewMode():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GAMEPLAY_CAM_COORD")
+	@:native("GetGameplayCamCoord")
 	static function getGameplayCamCoord():Dynamic;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("GET_FOLLOW_VEHICLE_CAM_VIEW_MODE")
+	@:native("GetFollowVehicleCamViewMode")
 	static function getFollowVehicleCamViewMode():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GAMEPLAY_CAM_RELATIVE_HEADING")
+	@:native("GetGameplayCamRelativeHeading")
 	static function getGameplayCamRelativeHeading():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GAMEPLAY_CAM_FOV")
+	@:native("GetGameplayCamFov")
 	static function getGameplayCamFov():Float;
 
 	/**
@@ -523,19 +523,19 @@ extern class Cam {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("HARD_ATTACH_CAM_TO_PED_BONE")
+	@:native("HardAttachCamToPedBone")
 	static function hardAttachCamToPedBone(cam:Dynamic, ped:Dynamic, boneIndex:Int, xRot:Float, yRot:Float, zRot:Float, xOffset:Float, yOffset:Float, zOffset:Float, isRelative:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RENDERING_CAM")
+	@:native("GetRenderingCam")
 	static function getRenderingCam():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GAMEPLAY_CAM_RELATIVE_PITCH")
+	@:native("GetGameplayCamRelativePitch")
 	static function getGameplayCamRelativePitch():Float;
 
 	/**
@@ -543,13 +543,13 @@ extern class Cam {
 	 * 
 	 * It first calls a game function to calculate these values given the rotation order and effectively multiplies those values by `180/PI`, hence degrees since the function it calls outputs radians which are then converted to degrees.
 	 */
-	@:native("GET_GAMEPLAY_CAM_ROT")
+	@:native("GetGameplayCamRot")
 	static function getGameplayCamRot(rotationOrder:Int):Dynamic;
 
 	/**
 	 * Resets the idle camera timer. Calling that in a loop once every few seconds is enough to disable the idle cinematic camera.
 	 */
-	@:native("INVALIDATE_IDLE_CAM")
+	@:native("InvalidateIdleCam")
 	static function invalidateIdleCam():Dynamic;
 
 	/**
@@ -559,7 +559,7 @@ extern class Cam {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_INTERPOLATE_CAM_WITH_PARAMS")
+	@:native("InterpolateCamWithParams")
 	static function InterpolateCamWithParams(camera:Dynamic, camPosX:Float, camPosY:Float, camPosZ:Float, camRotX:Float, camRotY:Float, camRotZ:Float, fov:Float, duration:Int, posCurveType:Int, rotCurveType:Int, rotOrder:Int, fovCurveType:Int):Dynamic;
 
 	/**
@@ -569,7 +569,7 @@ extern class Cam {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("HARD_ATTACH_CAM_TO_ENTITY")
+	@:native("HardAttachCamToEntity")
 	static function hardAttachCamToEntity(cam:Dynamic, entity:Dynamic, xRot:Float, yRot:Float, zRot:Float, xOffset:Float, yOffset:Float, zOffset:Float, isRelative:Bool):Dynamic;
 
 	/**
@@ -577,31 +577,31 @@ extern class Cam {
 	 * IS_A*
 	 * ```
 	 */
-	@:native("_IS_AIM_CAM_THIRD_PERSON_ACTIVE")
+	@:native("IsAimCamThirdPersonActive")
 	static function IsAimCamThirdPersonActive():Bool;
 
 	/**
 	 * Resets the vehicle idle camera timer. Calling this in a loop will disable the idle camera.
 	 */
-	@:native("_INVALIDATE_VEHICLE_IDLE_CAM")
+	@:native("InvalidateVehicleIdleCam")
 	static function InvalidateVehicleIdleCam():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AIM_CAM_ACTIVE")
+	@:native("IsAimCamActive")
 	static function isAimCamActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BONNET_CINEMATIC_CAM_RENDERING")
+	@:native("IsBonnetCinematicCamRendering")
 	static function isBonnetCinematicCamRendering():Bool;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("IS_CAM_PLAYING_ANIM")
+	@:native("IsCamPlayingAnim")
 	static function isCamPlayingAnim(cam:Dynamic, animName:String, animDictionary:String):Bool;
 
 	/**
@@ -609,13 +609,13 @@ extern class Cam {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("IS_CINEMATIC_CAM_INPUT_ACTIVE")
+	@:native("IsCinematicCamInputActive")
 	static function isCinematicCamInputActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CAM_INTERPOLATING")
+	@:native("IsCamInterpolating")
 	static function isCamInterpolating(cam:Dynamic):Bool;
 
 	/**
@@ -623,85 +623,85 @@ extern class Cam {
 	 * Returns whether or not the passed camera handle is active.  
 	 * ```
 	 */
-	@:native("IS_CAM_ACTIVE")
+	@:native("IsCamActive")
 	static function isCamActive(cam:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CINEMATIC_CAM_RENDERING")
+	@:native("IsCinematicCamRendering")
 	static function isCinematicCamRendering():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CINEMATIC_CAM_SHAKING")
+	@:native("IsCinematicCamShaking")
 	static function isCinematicCamShaking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CAM_RENDERING")
+	@:native("IsCamRendering")
 	static function isCamRendering(cam:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CINEMATIC_SHOT_ACTIVE")
+	@:native("IsCinematicShotActive")
 	static function isCinematicShotActive(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CAM_SPLINE_PAUSED")
+	@:native("IsCamSplinePaused")
 	static function isCamSplinePaused(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FOLLOW_VEHICLE_CAM_ACTIVE")
+	@:native("IsFollowVehicleCamActive")
 	static function isFollowVehicleCamActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FOLLOW_PED_CAM_ACTIVE")
+	@:native("IsFollowPedCamActive")
 	static function isFollowPedCamActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CAM_SHAKING")
+	@:native("IsCamShaking")
 	static function isCamShaking(cam:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_GAMEPLAY_CAM_SHAKING")
+	@:native("IsGameplayCamShaking")
 	static function isGameplayCamShaking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CINEMATIC_IDLE_CAM_RENDERING")
+	@:native("IsCinematicIdleCamRendering")
 	static function isCinematicIdleCamRendering():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_GAMEPLAY_CAM_LOOKING_BEHIND")
+	@:native("IsGameplayCamLookingBehind")
 	static function isGameplayCamLookingBehind():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_GAMEPLAY_HINT_ACTIVE")
+	@:native("IsGameplayHintActive")
 	static function isGameplayHintActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FIRST_PERSON_AIM_CAM_ACTIVE")
+	@:native("IsFirstPersonAimCamActive")
 	static function isFirstPersonAimCamActive():Bool;
 
 	/**
@@ -713,37 +713,37 @@ extern class Cam {
 	 * - When player is buying gun from AmmuNation.
 	 * ```
 	 */
-	@:native("IS_GAMEPLAY_CAM_RENDERING")
+	@:native("IsGameplayCamRendering")
 	static function isGameplayCamRendering():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCREEN_FADING_OUT")
+	@:native("IsScreenFadingOut")
 	static function isScreenFadingOut():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCREEN_FADING_IN")
+	@:native("IsScreenFadingIn")
 	static function isScreenFadingIn():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCREEN_FADED_OUT")
+	@:native("IsScreenFadedOut")
 	static function isScreenFadedOut():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_IN_VEHICLE_CAM_DISABLED")
+	@:native("IsInVehicleCamDisabled")
 	static function IsInVehicleCamDisabled():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCREEN_FADED_IN")
+	@:native("IsScreenFadedIn")
 	static function isScreenFadedIn():Bool;
 
 	/**
@@ -753,19 +753,19 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("IS_SCRIPT_GLOBAL_SHAKING")
+	@:native("IsScriptGlobalShaking")
 	static function isScriptGlobalShaking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SPHERE_VISIBLE")
+	@:native("IsSphereVisible")
 	static function isSphereVisible(x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("OVERRIDE_CAM_SPLINE_VELOCITY")
+	@:native("OverrideCamSplineVelocity")
 	static function overrideCamSplineVelocity(cam:Dynamic, p1:Int, p2:Float, p3:Float):Dynamic;
 
 	/**
@@ -777,7 +777,7 @@ extern class Cam {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_CAM_ANIM")
+	@:native("PlayCamAnim")
 	static function playCamAnim(cam:Dynamic, animName:String, animDictionary:String, x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, p9:Bool, p10:Int):Bool;
 
 	/**
@@ -785,7 +785,7 @@ extern class Cam {
 	 * Max value for p1 is 15.  
 	 * ```
 	 */
-	@:native("OVERRIDE_CAM_SPLINE_MOTION_BLUR")
+	@:native("OverrideCamSplineMotionBlur")
 	static function overrideCamSplineMotionBlur(cam:Dynamic, p1:Int, p2:Float, p3:Float):Dynamic;
 
 	/**
@@ -797,13 +797,13 @@ extern class Cam {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_SYNCHRONIZED_CAM_ANIM")
+	@:native("PlaySynchronizedCamAnim")
 	static function playSynchronizedCamAnim(camera:Dynamic, scene:Int, animName:String, animDictionary:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("POINT_CAM_AT_COORD")
+	@:native("PointCamAtCoord")
 	static function pointCamAtCoord(cam:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -811,7 +811,7 @@ extern class Cam {
 	 * 
 	 * Offset works like [GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS](#\_0x1899F328B0E12848).
 	 */
-	@:native("POINT_CAM_AT_ENTITY")
+	@:native("PointCamAtEntity")
 	static function pointCamAtEntity(cam:Dynamic, entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, p5:Bool):Dynamic;
 
 	/**
@@ -819,7 +819,7 @@ extern class Cam {
 	 * Parameters p0-p5 seems correct. The bool p6 is unknown, but through every X360 script it's always 1. Please correct p0-p5 if any prove to be wrong.  
 	 * ```
 	 */
-	@:native("POINT_CAM_AT_PED_BONE")
+	@:native("PointCamAtPedBone")
 	static function pointCamAtPedBone(cam:Dynamic, ped:Dynamic, boneIndex:Int, x:Float, y:Float, z:Float, p6:Bool):Dynamic;
 
 	/**
@@ -829,7 +829,7 @@ extern class Cam {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("RENDER_SCRIPT_CAMS")
+	@:native("RenderScriptCams")
 	static function renderScriptCams(render:Bool, ease:Bool, easeTime:Int, easeCoordsAnim:Bool, p4:Bool):Dynamic;
 
 	/**
@@ -837,7 +837,7 @@ extern class Cam {
 	 * Set camera as active/inactive.  
 	 * ```
 	 */
-	@:native("SET_CAM_ACTIVE")
+	@:native("SetCamActive")
 	static function setCamActive(cam:Dynamic, active:Bool):Dynamic;
 
 	/**
@@ -845,13 +845,13 @@ extern class Cam {
 	 * Previous declaration void SET_CAM_ACTIVE_WITH_INTERP(Cam camTo, Cam camFrom, int duration, BOOL easeLocation, BOOL easeRotation) is completely wrong. The last two params are integers not BOOLs...  
 	 * ```
 	 */
-	@:native("SET_CAM_ACTIVE_WITH_INTERP")
+	@:native("SetCamActiveWithInterp")
 	static function setCamActiveWithInterp(camTo:Dynamic, camFrom:Dynamic, duration:Int, easeLocation:Int, easeRotation:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REPLAY_FREE_CAM_GET_MAX_RANGE")
+	@:native("ReplayFreeCamGetMaxRange")
 	static function ReplayFreeCamGetMaxRange():Float;
 
 	/**
@@ -859,7 +859,7 @@ extern class Cam {
 	 * Allows you to aim and shoot at the direction the camera is facing.  
 	 * ```
 	 */
-	@:native("SET_CAM_AFFECTS_AIMING")
+	@:native("SetCamAffectsAiming")
 	static function setCamAffectsAiming(cam:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -867,7 +867,7 @@ extern class Cam {
 	 * Sets the position of the cam.  
 	 * ```
 	 */
-	@:native("SET_CAM_COORD")
+	@:native("SetCamCoord")
 	static function setCamCoord(cam:Dynamic, posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
@@ -875,13 +875,13 @@ extern class Cam {
 	 * This native has a name defined inside its code  
 	 * ```
 	 */
-	@:native("_SET_CAM_DOF_FOCUS_DISTANCE_BIAS")
+	@:native("SetCamDofFocusDistanceBias")
 	static function SetCamDofFocusDistanceBias(camera:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_ANIM_CURRENT_PHASE")
+	@:native("SetCamAnimCurrentPhase")
 	static function setCamAnimCurrentPhase(cam:Dynamic, phase:Float):Dynamic;
 
 	/**
@@ -889,19 +889,19 @@ extern class Cam {
 	 * This native has its name defined inside its codE  
 	 * ```
 	 */
-	@:native("_SET_CAM_DOF_FNUMBER_OF_LENS")
+	@:native("SetCamDofFnumberOfLens")
 	static function SetCamDofFnumberOfLens(camera:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * Specifies how much the DoF effect should be applied (Set using [`SET_CAM_NEAR_DOF`](#\_0x3FA4BF0A7AB7DE2C), [`SET_CAM_FAR_DOF`](#\_0xEDD91296CD01AEE0), etc.)
 	 */
-	@:native("SET_CAM_DOF_STRENGTH")
+	@:native("SetCamDofStrength")
 	static function setCamDofStrength(cam:Dynamic, dofStrength:Float):Dynamic;
 
 	/**
 	 * Makes the minimap follow a scripted camera's rotation instead of the gameplay cam.
 	 */
-	@:native("SET_CAM_CONTROLS_MINI_MAP_HEADING")
+	@:native("SetCamControlsMiniMapHeading")
 	static function setCamControlsMiniMapHeading(cam:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -909,7 +909,7 @@ extern class Cam {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("SET_CAM_DEBUG_NAME")
+	@:native("SetCamDebugName")
 	static function setCamDebugName(camera:Dynamic, name:String):Dynamic;
 
 	/**
@@ -917,7 +917,7 @@ extern class Cam {
 	 * This native has a name defined inside its code  
 	 * ```
 	 */
-	@:native("_SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL")
+	@:native("SetCamDofMaxNearInFocusDistanceBlendLevel")
 	static function SetCamDofMaxNearInFocusDistanceBlendLevel(camera:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -927,7 +927,7 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_CAM_FOV")
+	@:native("SetCamFov")
 	static function setCamFov(cam:Dynamic, fieldOfView:Float):Dynamic;
 
 	/**
@@ -935,7 +935,7 @@ extern class Cam {
 	 * This native has a name defined inside its code  
 	 * ```
 	 */
-	@:native("_SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE")
+	@:native("SetCamDofMaxNearInFocusDistance")
 	static function SetCamDofMaxNearInFocusDistance(camera:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -945,7 +945,7 @@ extern class Cam {
 	 * if p0 is 2, effect immediately tilts cam clockwise apx 30 degrees, begins to wobble slowly, then gradually tilts cam back to normal. The wobbling will continue until the effect is cancelled.  
 	 * ```
 	 */
-	@:native("_SET_CAM_EFFECT")
+	@:native("SetCamEffect")
 	static function SetCamEffect(p0:Int):Dynamic;
 
 	/**
@@ -953,7 +953,7 @@ extern class Cam {
 	 * Native name labeled within its code
 	 * ```
 	 */
-	@:native("_SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER")
+	@:native("SetCamDofFocalLengthMultiplier")
 	static function SetCamDofFocalLengthMultiplier(camera:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -964,31 +964,31 @@ extern class Cam {
 	 * In the exile1 script.  
 	 * ```
 	 */
-	@:native("SET_CAM_INHERIT_ROLL_VEHICLE")
+	@:native("SetCamInheritRollVehicle")
 	static function setCamInheritRollVehicle(cam:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_DOF_PLANES")
+	@:native("SetCamDofPlanes")
 	static function setCamDofPlanes(cam:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_FAR_CLIP")
+	@:native("SetCamFarClip")
 	static function setCamFarClip(cam:Dynamic, farClip:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_NEAR_CLIP")
+	@:native("SetCamNearClip")
 	static function setCamNearClip(cam:Dynamic, nearClip:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_MOTION_BLUR_STRENGTH")
+	@:native("SetCamMotionBlurStrength")
 	static function setCamMotionBlurStrength(cam:Dynamic, strength:Float):Dynamic;
 
 	/**
@@ -998,7 +998,7 @@ extern class Cam {
 	 * 
 	 * A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](#\_0x5EE29B4D7D5DF897).
 	 */
-	@:native("SET_CAM_FAR_DOF")
+	@:native("SetCamFarDof")
 	static function setCamFarDof(cam:Dynamic, farDOF:Float):Dynamic;
 
 	/**
@@ -1008,19 +1008,19 @@ extern class Cam {
 	 * 
 	 * A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](#\_0x5EE29B4D7D5DF897).
 	 */
-	@:native("SET_CAM_NEAR_DOF")
+	@:native("SetCamNearDof")
 	static function setCamNearDof(cam:Dynamic, nearDOF:Float):Dynamic;
 
 	/**
 	 * Sets the rotation of the camera.
 	 */
-	@:native("SET_CAM_ROT")
+	@:native("SetCamRot")
 	static function setCamRot(cam:Dynamic, rotX:Float, rotY:Float, rotZ:Float, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_SHAKE_AMPLITUDE")
+	@:native("SetCamShakeAmplitude")
 	static function setCamShakeAmplitude(cam:Dynamic, amplitude:Float):Dynamic;
 
 	/**
@@ -1028,49 +1028,49 @@ extern class Cam {
 	 * I named p1 as timeDuration as it is obvious. I'm assuming tho it is ran in ms(Milliseconds) as usual.  
 	 * ```
 	 */
-	@:native("SET_CAM_SPLINE_DURATION")
+	@:native("SetCamSplineDuration")
 	static function setCamSplineDuration(cam:Dynamic, timeDuration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_SPLINE_PHASE")
+	@:native("SetCamSplinePhase")
 	static function setCamSplinePhase(cam:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_PARAMS")
+	@:native("SetCamParams")
 	static function setCamParams(cam:Dynamic, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, fieldOfView:Float, transitionSpeed:Int, p9:Int, p10:Int, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CINEMATIC_CAM_SHAKE_AMPLITUDE")
+	@:native("SetCinematicCamShakeAmplitude")
 	static function setCinematicCamShakeAmplitude(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_SPLINE_NODE_EASE")
+	@:native("SetCamSplineNodeEase")
 	static function setCamSplineNodeEase(cam:Dynamic, p1:Int, p2:Int, p3:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_SPLINE_NODE_EXTRA_FLAGS")
+	@:native("SetCamSplineNodeExtraFlags")
 	static function setCamSplineNodeExtraFlags(cam:Dynamic, p1:Int, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FIRST_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE")
+	@:native("SetFirstPersonAimCamNearClipThisUpdate")
 	static function setFirstPersonAimCamNearClipThisUpdate(distance:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_SPLINE_NODE_VELOCITY_SCALE")
+	@:native("SetCamSplineNodeVelocityScale")
 	static function setCamSplineNodeVelocityScale(cam:Dynamic, p1:Int, scale:Float):Dynamic;
 
 	/**
@@ -1122,19 +1122,19 @@ extern class Cam {
 	 * * **smoothingStyle**: 0 to 3, 0 no additional smoothing, 1 smooth lead-in, 2 smooth lead-out, 3 smooth lead-in & lead-out
 	 * ```
 	 */
-	@:native("SET_CAM_SPLINE_SMOOTHING_STYLE")
+	@:native("SetCamSplineSmoothingStyle")
 	static function setCamSplineSmoothingStyle(cam:Dynamic, smoothingStyle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_FIRST_PERSON_CAM_PITCH_RANGE")
+	@:native("SetFirstPersonCamPitchRange")
 	static function SetFirstPersonCamPitchRange(minAngle:Float, maxAngle:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAM_VIEW_MODE_FOR_CONTEXT")
+	@:native("SetCamViewModeForContext")
 	static function setCamViewModeForContext(context:Int, viewMode:Int):Dynamic;
 
 	/**
@@ -1144,13 +1144,13 @@ extern class Cam {
 	 * 
 	 * A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](#\_0x5EE29B4D7D5DF897).
 	 */
-	@:native("SET_CAM_USE_SHALLOW_DOF_MODE")
+	@:native("SetCamUseShallowDofMode")
 	static function setCamUseShallowDofMode(cam:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CINEMATIC_NEWS_CHANNEL_ACTIVE_THIS_UPDATE")
+	@:native("SetCinematicNewsChannelActiveThisUpdate")
 	static function setCinematicNewsChannelActiveThisUpdate():Dynamic;
 
 	/**
@@ -1158,31 +1158,31 @@ extern class Cam {
 	 * Toggles the vehicle cinematic cam; requires the player ped to be in a vehicle to work.
 	 * ```
 	 */
-	@:native("SET_CINEMATIC_MODE_ACTIVE")
+	@:native("SetCinematicModeActive")
 	static function setCinematicModeActive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CINEMATIC_BUTTON_ACTIVE")
+	@:native("SetCinematicButtonActive")
 	static function setCinematicButtonActive(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLY_CAM_HORIZONTAL_RESPONSE")
+	@:native("SetFlyCamHorizontalResponse")
 	static function setFlyCamHorizontalResponse(cam:Dynamic, p1:Float, p2:Float, p3:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_FLY_CAM_VERTICAL_SPEED_MULTIPLIER")
+	@:native("SetFlyCamVerticalSpeedMultiplier")
 	static function SetFlyCamVerticalSpeedMultiplier(cam:Dynamic, p1:Float, p2:Float, p3:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR")
+	@:native("SetFirstPersonAimCamZoomFactor")
 	static function setFirstPersonAimCamZoomFactor(zoomFactor:Float):Dynamic;
 
 	/**
@@ -1215,37 +1215,37 @@ extern class Cam {
 	 * // 0x41D72A2E
 	 * ```
 	 */
-	@:native("SET_FOLLOW_PED_CAM_THIS_UPDATE")
+	@:native("SetFollowPedCamThisUpdate")
 	static function setFollowPedCamThisUpdate(camName:String, easeTime:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLY_CAM_COORD_AND_CONSTRAIN")
+	@:native("SetFlyCamCoordAndConstrain")
 	static function setFlyCamCoordAndConstrain(cam:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLY_CAM_MAX_HEIGHT")
+	@:native("SetFlyCamMaxHeight")
 	static function setFlyCamMaxHeight(cam:Dynamic, height:Float):Dynamic;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("SET_FOLLOW_VEHICLE_CAM_ZOOM_LEVEL")
+	@:native("SetFollowVehicleCamZoomLevel")
 	static function setFollowVehicleCamZoomLevel(zoomLevel:Int):Dynamic;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("SET_FOLLOW_VEHICLE_CAM_VIEW_MODE")
+	@:native("SetFollowVehicleCamViewMode")
 	static function setFollowVehicleCamViewMode(viewMode:Int):Dynamic;
 
 	/**
 	 * See [`GET_FOLLOW_PED_CAM_VIEW_MODE`](#\_0x8D4D46230B2C353A) for the follow mode enum.
 	 */
-	@:native("SET_FOLLOW_PED_CAM_VIEW_MODE")
+	@:native("SetFollowPedCamViewMode")
 	static function setFollowPedCamViewMode(viewMode:Int):Dynamic;
 
 	/**
@@ -1253,25 +1253,25 @@ extern class Cam {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_SET_FOLLOW_TURRET_SEAT_CAM")
+	@:native("SetFollowTurretSeatCam")
 	static function SetFollowTurretSeatCam(seatIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_CAM_RAW_PITCH")
+	@:native("SetGameplayCamRawPitch")
 	static function SetGameplayCamRawPitch(pitch:Float):Dynamic;
 
 	/**
 	 * This native sets the camera's pitch (rotation on the x-axis).
 	 */
-	@:native("SET_GAMEPLAY_CAM_RELATIVE_PITCH")
+	@:native("SetGameplayCamRelativePitch")
 	static function setGameplayCamRelativePitch(angle:Float, scalingFactor:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE")
+	@:native("SetGameplayCamFollowPedThisUpdate")
 	static function setGameplayCamFollowPedThisUpdate(ped:Dynamic):Dynamic;
 
 	/**
@@ -1283,13 +1283,13 @@ extern class Cam {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_SET_GAMEPLAY_CAM_HASH")
+	@:native("SetGameplayCamHash")
 	static function SetGameplayCamHash(camName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_CAM_RELATIVE_ROTATION")
+	@:native("SetGameplayCamRelativeRotation")
 	static function SetGameplayCamRelativeRotation(roll:Float, pitch:Float, yaw:Float):Dynamic;
 
 	/**
@@ -1297,7 +1297,7 @@ extern class Cam {
 	 * Sets the amplitude for the gameplay (i.e. 3rd or 1st) camera to shake. Used in script "drunk_controller.ysc.c4" to simulate making the player drunk.  
 	 * ```
 	 */
-	@:native("SET_GAMEPLAY_CAM_SHAKE_AMPLITUDE")
+	@:native("SetGameplayCamShakeAmplitude")
 	static function setGameplayCamShakeAmplitude(amplitude:Float):Dynamic;
 
 	/**
@@ -1306,7 +1306,7 @@ extern class Cam {
 	 * Heading is alwyas 0 in aiming camera.  
 	 * ```
 	 */
-	@:native("SET_GAMEPLAY_CAM_RELATIVE_HEADING")
+	@:native("SetGameplayCamRelativeHeading")
 	static function setGameplayCamRelativeHeading(heading:Float):Dynamic;
 
 	/**
@@ -1318,7 +1318,7 @@ extern class Cam {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("_SET_GAMEPLAY_CAM_RAW_YAW")
+	@:native("SetGameplayCamRawYaw")
 	static function SetGameplayCamRawYaw(yaw:Float):Dynamic;
 
 	/**
@@ -1329,13 +1329,13 @@ extern class Cam {
 	 * CAM::_21E253A7F8DA5DFB("SPEEDO");
 	 * ```
 	 */
-	@:native("_SET_GAMEPLAY_CAM_VEHICLE_CAMERA")
+	@:native("SetGameplayCamVehicleCamera")
 	static function SetGameplayCamVehicleCamera(vehicleName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_CAM_VEHICLE_CAMERA_NAME")
+	@:native("SetGameplayCamVehicleCameraName")
 	static function SetGameplayCamVehicleCameraName(vehicleModel:Int):Dynamic;
 
 	/**
@@ -1343,73 +1343,73 @@ extern class Cam {
 	 * p6 & p7 - possibly length or time  
 	 * ```
 	 */
-	@:native("SET_GAMEPLAY_ENTITY_HINT")
+	@:native("SetGameplayEntityHint")
 	static function setGameplayEntityHint(entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, p4:Bool, p5:Int, p6:Int, p7:Int, p8:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_COORD_HINT")
+	@:native("SetGameplayCoordHint")
 	static function setGameplayCoordHint(x:Float, y:Float, z:Float, duration:Int, blendOutDuration:Int, blendInDuration:Int, unk:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_HINT_ANIM_CLOSEUP")
+	@:native("SetGameplayHintAnimCloseup")
 	static function SetGameplayHintAnimCloseup(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR")
+	@:native("SetGameplayHintFollowDistanceScalar")
 	static function setGameplayHintFollowDistanceScalar(value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_HINT_FOV")
+	@:native("SetGameplayHintFov")
 	static function setGameplayHintFov(FOV:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_HINT_ANIM_OFFSETX")
+	@:native("SetGameplayHintAnimOffsetx")
 	static function SetGameplayHintAnimOffsetx(xOffset:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET")
+	@:native("SetGameplayHintBaseOrbitPitchOffset")
 	static function setGameplayHintBaseOrbitPitchOffset(value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_PED_HINT")
+	@:native("SetGameplayPedHint")
 	static function setGameplayPedHint(p0:Dynamic, x1:Float, y1:Float, z1:Float, p4:Bool, duration:Int, blendOutDuration:Int, blendInDuration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_GAMEPLAY_HINT_ANIM_OFFSETY")
+	@:native("SetGameplayHintAnimOffsety")
 	static function SetGameplayHintAnimOffsety(yOffset:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GAMEPLAY_OBJECT_HINT")
+	@:native("SetGameplayObjectHint")
 	static function setGameplayObjectHint(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Bool, p5:Dynamic, p6:Dynamic, p7:Dynamic):Dynamic;
 
 	/**
 	 * Focuses the camera on the specified vehicle.
 	 */
-	@:native("SET_GAMEPLAY_VEHICLE_HINT")
+	@:native("SetGameplayVehicleHint")
 	static function setGameplayVehicleHint(vehicle:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, p4:Bool, time:Int, easeInTime:Int, easeOutTime:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE")
+	@:native("SetInVehicleCamStateThisUpdate")
 	static function setInVehicleCamStateThisUpdate(p0:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -1426,13 +1426,13 @@ extern class Cam {
 	 * | `ARCADE_LOVE_PROFESSOR_P1_CAMERA` | `545868034` |   LoveProfessorP1   |
 	 * | `ARCADE_LOVE_PROFESSOR_P2_CAMERA` | `935304251` |   LoveProfessorP2   |
 	 */
-	@:native("SET_TABLE_GAMES_CAMERA_THIS_UPDATE")
+	@:native("SetTableGamesCameraThisUpdate")
 	static function setTableGamesCameraThisUpdate(hash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE")
+	@:native("SetThirdPersonAimCamNearClipThisUpdate")
 	static function setThirdPersonAimCamNearClipThisUpdate(distance:Float):Dynamic;
 
 	/**
@@ -1444,13 +1444,13 @@ extern class Cam {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_SET_USE_HI_DOF_IN_CUTSCENE")
+	@:native("SetUseHiDofInCutscene")
 	static function SetUseHiDofInCutscene():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_WIDESCREEN_BORDERS")
+	@:native("SetWidescreenBorders")
 	static function setWidescreenBorders(p0:Bool, p1:Int):Dynamic;
 
 	/**
@@ -1469,7 +1469,7 @@ extern class Cam {
 	 * VIBRATE_SHAKE  
 	 * ```
 	 */
-	@:native("SHAKE_GAMEPLAY_CAM")
+	@:native("ShakeGameplayCam")
 	static function shakeGameplayCam(shakeName:String, intensity:Float):Dynamic;
 
 	/**
@@ -1480,7 +1480,7 @@ extern class Cam {
 	 * 
 	 * A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](#\_0x5EE29B4D7D5DF897).
 	 */
-	@:native("SET_USE_HI_DOF")
+	@:native("SetUseHiDof")
 	static function setUseHiDof():Dynamic;
 
 	/**
@@ -1499,7 +1499,7 @@ extern class Cam {
 	 * VIBRATE_SHAKE  
 	 * ```
 	 */
-	@:native("SHAKE_CAM")
+	@:native("ShakeCam")
 	static function shakeCam(cam:Dynamic, type:String, amplitude:Float):Dynamic;
 
 	/**
@@ -1507,7 +1507,7 @@ extern class Cam {
 	 * p0 argument found in the b617d scripts: "DRUNK_SHAKE"  
 	 * ```
 	 */
-	@:native("SHAKE_CINEMATIC_CAM")
+	@:native("ShakeCinematicCam")
 	static function shakeCinematicCam(p0:String, p1:Float):Dynamic;
 
 	/**
@@ -1515,37 +1515,37 @@ extern class Cam {
 	 * CAM::SHAKE_SCRIPT_GLOBAL("HAND_SHAKE", 0.2);
 	 * ```
 	 */
-	@:native("SHAKE_SCRIPT_GLOBAL")
+	@:native("ShakeScriptGlobal")
 	static function shakeScriptGlobal(p0:String, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_CINEMATIC_CAM_SHAKING")
+	@:native("StopCinematicCamShaking")
 	static function stopCinematicCamShaking(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_CAM_POINTING")
+	@:native("StopCamPointing")
 	static function stopCamPointing(cam:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_CINEMATIC_SHOT")
+	@:native("StopCinematicShot")
 	static function stopCinematicShot(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_CAM_SHAKING")
+	@:native("StopCamShaking")
 	static function stopCamShaking(cam:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_GAMEPLAY_CAM_SHAKING")
+	@:native("StopGameplayCamShaking")
 	static function stopGameplayCamShaking(bStopImmediately:Bool):Dynamic;
 
 	/**
@@ -1601,13 +1601,13 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP")
+	@:native("StopRenderingScriptCamsUsingCatchUp")
 	static function stopRenderingScriptCamsUsingCatchUp(bShouldApplyAcrossAllThreads:Bool, distanceToBlend:Float, blendType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_CUTSCENE_CAM_SHAKING")
+	@:native("StopCutsceneCamShaking")
 	static function stopCutsceneCamShaking():Dynamic;
 
 	/**
@@ -1617,7 +1617,7 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("STOP_GAMEPLAY_HINT")
+	@:native("StopGameplayHint")
 	static function stopGameplayHint(bStopImmediately:Bool):Dynamic;
 
 	/**
@@ -1627,7 +1627,7 @@ extern class Cam {
 	 * NativeDB Introduced: v791
 	 * ```
 	 */
-	@:native("USE_VEHICLE_CAM_STUNT_SETTINGS_THIS_UPDATE")
+	@:native("UseVehicleCamStuntSettingsThisUpdate")
 	static function useVehicleCamStuntSettingsThisUpdate():Dynamic;
 
 	/**
@@ -1637,14 +1637,14 @@ extern class Cam {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("STOP_SCRIPT_GLOBAL_SHAKING")
+	@:native("StopScriptGlobalShaking")
 	static function stopScriptGlobalShaking(bStopImmediately:Bool):Dynamic;
 
 	/**
 	 * Sets the ambient ped & vehicle population spawning origin to be based around the active scripted camera for this frame
 	 * This will prevent vehicles from being created close to the camera and/or on-screen
 	 */
-	@:native("USE_SCRIPT_CAM_FOR_AMBIENT_POPULATION_ORIGIN_THIS_FRAME")
+	@:native("UseScriptCamForAmbientPopulationOriginThisFrame")
 	static function useScriptCamForAmbientPopulationOriginThisFrame(vehicles:Bool, peds:Bool):Dynamic;
 
 }

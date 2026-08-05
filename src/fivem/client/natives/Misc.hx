@@ -5,7 +5,7 @@ extern class Misc {
 	/**
 	 * 
 	 */
-	@:native("ACOS")
+	@:native("Acos")
 	static function acos(p0:Float):Float;
 
 	/**
@@ -13,13 +13,13 @@ extern class Misc {
 	 * 
 	 * See [`IS_POINT_IN_ANGLED_AREA`](#\_0x2A70BAE8883E4C81) for the definition of an angled area.
 	 */
-	@:native("_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA")
+	@:native("AddDispatchSpawnBlockingAngledArea")
 	static function AddDispatchSpawnBlockingAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ABSF")
+	@:native("Absf")
 	static function absf(value:Float):Float;
 
 	/**
@@ -27,25 +27,25 @@ extern class Misc {
 	 * 
 	 * **Note**: This is a PS4 related native, resulting in a nullsub on the PC platform. This native won't do anything when invoked.
 	 */
-	@:native("ACTIVITY_FEED_CREATE")
+	@:native("ActivityFeedCreate")
 	static function activityFeedCreate(captionString:String, condensedCaptionString:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ABSI")
+	@:native("Absi")
 	static function absi(value:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_POLICE_RESTART")
+	@:native("AddPoliceRestart")
 	static function addPoliceRestart(p0:Float, p1:Float, p2:Float, p3:Float, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ADD_DISPATCH_SPAWN_BLOCKING_AREA")
+	@:native("AddDispatchSpawnBlockingArea")
 	static function AddDispatchSpawnBlockingArea(x1:Float, y1:Float, x2:Float, y2:Float):Dynamic;
 
 	/**
@@ -54,7 +54,7 @@ extern class Misc {
 	 * p3 might be radius?  
 	 * ```
 	 */
-	@:native("ADD_HOSPITAL_RESTART")
+	@:native("AddHospitalRestart")
 	static function addHospitalRestart(x:Float, y:Float, z:Float, p3:Float, p4:Dynamic):Int;
 
 	/**
@@ -62,13 +62,13 @@ extern class Misc {
 	 * This native is adding a zone, where you can change density settings. For example, you can add a zone on 0.0, 0.0, 0.0 with radius 900.0 and vehicleMultiplier 0.0, and you will not see any new population vehicle spawned in a radius of 900.0 from 0.0, 0.0, 0.0. Returns the id. You can have only 15 zones at the same time. You can remove zone using REMOVE_POP_MULTIPLIER_SPHERE
 	 * ```
 	 */
-	@:native("ADD_POP_MULTIPLIER_SPHERE")
+	@:native("AddPopMultiplierSphere")
 	static function addPopMultiplierSphere(x:Float, y:Float, z:Float, radius:Float, pedMultiplier:Float, vehicleMultiplier:Float, p6:Bool, p7:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_REPLAY_STAT_VALUE")
+	@:native("AddReplayStatValue")
 	static function addReplayStatValue(value:Dynamic):Dynamic;
 
 	/**
@@ -100,7 +100,7 @@ extern class Misc {
 	 * 
 	 * Here is a list of almost all of the stunt jumps from GTA V (taken from decompiled scripts): https://pastebin.com/EW1jBPkY
 	 */
-	@:native("ADD_STUNT_JUMP_ANGLED")
+	@:native("AddStuntJumpAngled")
 	static function addStuntJumpAngled(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, radius1:Float, x3:Float, y3:Float, z3:Float, x4:Float, y4:Float, z4:Float, radius2:Float, camX:Float, camY:Float, camZ:Float, unk1:Int, unk2:Int, unk3:Int):Int;
 
 	/**
@@ -108,7 +108,7 @@ extern class Misc {
 	 * NativeDB Added Parameter 10: BOOL p9
 	 * ```
 	 */
-	@:native("ADD_POP_MULTIPLIER_AREA")
+	@:native("AddPopMultiplierArea")
 	static function addPopMultiplierArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, p6:Float, p7:Float, p8:Bool):Int;
 
 	/**
@@ -116,61 +116,61 @@ extern class Misc {
 	 * Adds a point related to CTacticalAnalysis
 	 * ```
 	 */
-	@:native("_ADD_TACTICAL_ANALYSIS_POINT")
+	@:native("AddTacticalAnalysisPoint")
 	static function AddTacticalAnalysisPoint(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_PROFILE_SETTINGS_VALID")
+	@:native("AreProfileSettingsValid")
 	static function areProfileSettingsValid():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_MISSION_CREATOR_WARP")
+	@:native("AllowMissionCreatorWarp")
 	static function allowMissionCreatorWarp(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ASIN")
+	@:native("Asin")
 	static function asin(value:Float):Float;
 
 	/**
 	 * See description of [`ADD_STUNT_JUMP_ANGLED`](#\_0xBBE5D803A5360CBF) for detailed info. The only difference really is this one does not have the radius (or angle, not sure) floats parameters for entry and landing zones.
 	 */
-	@:native("ADD_STUNT_JUMP")
+	@:native("AddStuntJump")
 	static function addStuntJump(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, x3:Float, y3:Float, z3:Float, x4:Float, y4:Float, z4:Float, camX:Float, camY:Float, camZ:Float, unk1:Int, unk2:Int, unk3:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_STRINGS_EQUAL")
+	@:native("AreStringsEqual")
 	static function areStringsEqual(string1:String, string2:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ATAN2")
+	@:native("Atan2")
 	static function atan2(p0:Float, p1:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("ATAN")
+	@:native("Atan")
 	static function atan(p0:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION")
+	@:native("BlockDispatchServiceResourceCreation")
 	static function blockDispatchServiceResourceCreation(dispatchService:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CANCEL_STUNT_JUMP")
+	@:native("CancelStuntJump")
 	static function cancelStuntJump():Dynamic;
 
 	/**
@@ -179,13 +179,13 @@ extern class Misc {
 	 * **NOTE:** Do not use this native in FiveM/PC, because [`UPDATE_ONSCREEN_KEYBOARD`](#\_0x0CF2B696BBF945AE) value doesn't get cleaned up and stays as `0`.
 	 * You should use [`FORCE_CLOSE_TEXT_INPUT_BOX`](#\_0x8817605C2BA76200) instead.
 	 */
-	@:native("CANCEL_ONSCREEN_KEYBOARD")
+	@:native("CancelOnscreenKeyboard")
 	static function cancelOnscreenKeyboard():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_REPLAY_STATS")
+	@:native("BeginReplayStats")
 	static function beginReplayStats(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -193,7 +193,7 @@ extern class Misc {
 	 * Example: CLEAR_AREA(0, 0, 0, 30, true, false, false, false);  
 	 * ```
 	 */
-	@:native("CLEAR_AREA")
+	@:native("ClearArea")
 	static function clearArea(X:Float, Y:Float, Z:Float, radius:Float, p4:Bool, ignoreCopCars:Bool, ignoreObjects:Bool, p7:Bool):Dynamic;
 
 	/**
@@ -201,13 +201,13 @@ extern class Misc {
 	 * I looked through the PC scripts that this site provides you with a link to find. It shows the last param mainly uses, (0, 2, 6, 16, and 17) so I am going to assume it is a type of flag.  
 	 * ```
 	 */
-	@:native("CLEAR_AREA_OF_OBJECTS")
+	@:native("ClearAreaOfObjects")
 	static function clearAreaOfObjects(x:Float, y:Float, z:Float, radius:Float, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEANUP_ASYNC_INSTALL")
+	@:native("CleanupAsyncInstall")
 	static function CleanupAsyncInstall():Dynamic;
 
 	/**
@@ -215,19 +215,19 @@ extern class Misc {
 	 * NativeDB Added Parameter 13: Any p12
 	 * ```
 	 */
-	@:native("CLEAR_ANGLED_AREA_OF_VEHICLES")
+	@:native("ClearAngledAreaOfVehicles")
 	static function clearAngledAreaOfVehicles(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, p7:Bool, p8:Bool, p9:Bool, p10:Bool, p11:Bool):Dynamic;
 
 	/**
 	 * Clears an area of peds at the given coordinates and radius.
 	 */
-	@:native("CLEAR_AREA_OF_PEDS")
+	@:native("ClearAreaOfPeds")
 	static function clearAreaOfPeds(x:Float, y:Float, z:Float, radius:Float, createNetEvent:Bool):Dynamic;
 
 	/**
 	 * Clears an area of cops at the given coordinates and radius.
 	 */
-	@:native("CLEAR_AREA_OF_COPS")
+	@:native("ClearAreaOfCops")
 	static function clearAreaOfCops(x:Float, y:Float, z:Float, radius:Float, createNetEvent:Bool):Dynamic;
 
 	/**
@@ -235,13 +235,13 @@ extern class Misc {
 	 * MISC::_0x957838AAF91BD12D(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything.
 	 * ```
 	 */
-	@:native("CLEAR_AREA_LEAVE_VEHICLE_HEALTH")
+	@:native("ClearAreaLeaveVehicleHealth")
 	static function clearAreaLeaveVehicleHealth(x:Float, y:Float, z:Float, radius:Float, p4:Bool, p5:Bool, p6:Bool, p7:Bool):Dynamic;
 
 	/**
 	 * Clears an area of projectiles at the given coordinates and radius.
 	 */
-	@:native("CLEAR_AREA_OF_PROJECTILES")
+	@:native("ClearAreaOfProjectiles")
 	static function clearAreaOfProjectiles(x:Float, y:Float, z:Float, radius:Float, createNetEvent:Bool):Dynamic;
 
 	/**
@@ -253,13 +253,13 @@ extern class Misc {
 	 * NativeDB Added Parameter 10: BOOL p9
 	 * ```
 	 */
-	@:native("CLEAR_AREA_OF_VEHICLES")
+	@:native("ClearAreaOfVehicles")
 	static function clearAreaOfVehicles(x:Float, y:Float, z:Float, radius:Float, p4:Bool, p5:Bool, p6:Bool, p7:Bool, p8:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_TACTICAL_ANALYSIS_POINTS")
+	@:native("ClearTacticalAnalysisPoints")
 	static function ClearTacticalAnalysisPoints():Dynamic;
 
 	/**
@@ -271,37 +271,37 @@ extern class Misc {
 	 * MISC::IS_BIT_SET(bitAddress, 1); // will return 0 afterwards
 	 * ```
 	 */
-	@:native("CLEAR_BIT")
+	@:native("ClearBit")
 	static function clearBit(address:Dynamic, offset:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_CLOUD_HAT")
+	@:native("ClearCloudHat")
 	static function ClearCloudHat():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_OVERRIDE_WEATHER")
+	@:native("ClearOverrideWeather")
 	static function clearOverrideWeather():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_REPLAY_STATS")
+	@:native("ClearReplayStats")
 	static function clearReplayStats():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_WEATHER_TYPE_PERSIST")
+	@:native("ClearWeatherTypePersist")
 	static function clearWeatherTypePersist():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_RESTART_CUSTOM_POSITION")
+	@:native("ClearRestartCustomPosition")
 	static function ClearRestartCustomPosition():Dynamic;
 
 	/**
@@ -328,7 +328,7 @@ extern class Misc {
 	 * MISC::COMPARE_STRINGS("a", "A", true, 1); // 1; 'a' > 'A'
 	 * ```
 	 */
-	@:native("COMPARE_STRINGS")
+	@:native("CompareStrings")
 	static function compareStrings(str1:String, str2:String, matchCase:Bool, maxLength:Int):Int;
 
 	/**
@@ -341,19 +341,19 @@ extern class Misc {
 	 * =======================================================  
 	 * ```
 	 */
-	@:native("DELETE_INCIDENT")
+	@:native("DeleteIncident")
 	static function deleteIncident(incidentId:Int):Dynamic;
 
 	/**
 	 * Clears the active weather type after a specific amount of time determined by `transitionTimeInMs`.
 	 */
-	@:native("CLEAR_WEATHER_TYPE_NOW_PERSIST_NETWORK")
+	@:native("ClearWeatherTypeNowPersistNetwork")
 	static function clearWeatherTypeNowPersistNetwork(transitionTimeInMs:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_COPY_MEMORY")
+	@:native("CopyMemory")
 	static function CopyMemory(dst:Dynamic, src:Dynamic, size:Int):Dynamic;
 
 	/**
@@ -362,7 +362,7 @@ extern class Misc {
 	 * NativeDB Added Parameter 7: Any p6
 	 * ```
 	 */
-	@:native("CREATE_INCIDENT_WITH_ENTITY")
+	@:native("CreateIncidentWithEntity")
 	static function createIncidentWithEntity(dispatchService:Int, ped:Dynamic, numUnits:Int, radius:Float, outIncidentID:Dynamic):Bool;
 
 	/**
@@ -371,7 +371,7 @@ extern class Misc {
 	 * NativeDB Added Parameter 9: Any p8
 	 * ```
 	 */
-	@:native("CREATE_INCIDENT")
+	@:native("CreateIncident")
 	static function createIncident(dispatchService:Int, x:Float, y:Float, z:Float, numUnits:Int, radius:Float, outIncidentID:Dynamic):Bool;
 
 	/**
@@ -390,7 +390,7 @@ extern class Misc {
 	 * };
 	 * ```
 	 */
-	@:native("DISPLAY_ONSCREEN_KEYBOARD")
+	@:native("DisplayOnscreenKeyboard")
 	static function displayOnscreenKeyboard(keyboardType:Int, windowTitle:String, description:String, defaultText:String, defaultConcat1:String, defaultConcat2:String, defaultConcat3:String, maxInputLength:Int):Dynamic;
 
 	/**
@@ -401,25 +401,25 @@ extern class Misc {
 	 * - Nacorpio
 	 * ```
 	 */
-	@:native("DISABLE_POLICE_RESTART")
+	@:native("DisablePoliceRestart")
 	static function disablePoliceRestart(policeIndex:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DELETE_STUNT_JUMP")
+	@:native("DeleteStuntJump")
 	static function deleteStuntJump(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DO_AUTO_SAVE")
+	@:native("DoAutoSave")
 	static function doAutoSave():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_POP_MULTIPLIER_AREA_EXIST")
+	@:native("DoesPopMultiplierAreaExist")
 	static function doesPopMultiplierAreaExist(id:Int):Bool;
 
 	/**
@@ -451,7 +451,7 @@ extern class Misc {
 	 * 
 	 * Note that 'dispatch service' has nothing to do with the police scanner (audio), to toggle that, use [SET_AUDIO_FLAG](#\_0xB9EFD5C25018725A) with `'PoliceScannerDisabled'`.
 	 */
-	@:native("ENABLE_DISPATCH_SERVICE")
+	@:native("EnableDispatchService")
 	static function enableDispatchService(dispatchService:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -459,7 +459,7 @@ extern class Misc {
 	 * Makes the ped jump around like they're in a tennis match  
 	 * ```
 	 */
-	@:native("ENABLE_TENNIS_MODE")
+	@:native("EnableTennisMode")
 	static function enableTennisMode(ped:Dynamic, toggle:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -467,31 +467,31 @@ extern class Misc {
 	 * The game by default has 5 hospital respawn points. Disabling them all will cause the player to respawn at the last position they were.
 	 * ```
 	 */
-	@:native("DISABLE_HOSPITAL_RESTART")
+	@:native("DisableHospitalRestart")
 	static function disableHospitalRestart(hospitalIndex:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_STUNT_JUMP_SET")
+	@:native("DisableStuntJumpSet")
 	static function disableStuntJumpSet(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_REPLAY_STATS")
+	@:native("EndReplayStats")
 	static function endReplayStats():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_POP_MULTIPLIER_SPHERE_EXIST")
+	@:native("DoesPopMultiplierSphereExist")
 	static function doesPopMultiplierSphereExist(id:Int):Bool;
 
 	/**
 	 * Displays the text input box with support for input with 500 characters.
 	 */
-	@:native("DISPLAY_ONSCREEN_KEYBOARD_WITH_LONGER_INITIAL_STRING")
+	@:native("DisplayOnscreenKeyboardWithLongerInitialString")
 	static function displayOnscreenKeyboardWithLongerInitialString(keyboardType:Int, windowTitle:String, description:String, defaultText:String, defaultConcat1:String, defaultConcat2:String, defaultConcat3:String, defaultConcat4:String, defaultConcat5:String, defaultConcat6:String, defaultConcat7:String, maxInputLength:Int):Dynamic;
 
 	/**
@@ -508,31 +508,31 @@ extern class Misc {
 	 * 6: "In MP Cutscene"  
 	 * ```
 	 */
-	@:native("FORCE_GAME_STATE_PLAYING")
+	@:native("ForceGameStatePlaying")
 	static function forceGameStatePlaying():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ALLOCATED_STACK_SIZE")
+	@:native("GetAllocatedStackSize")
 	static function getAllocatedStackSize():Int;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_STUNT_JUMP_SET")
+	@:native("EnableStuntJumpSet")
 	static function enableStuntJumpSet(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_BASE_ELEMENT_METADATA")
+	@:native("GetBaseElementMetadata")
 	static function GetBaseElementMetadata(p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_BENCHMARK_TIME")
+	@:native("GetBenchmarkTime")
 	static function GetBenchmarkTime():Float;
 
 	/**
@@ -542,13 +542,13 @@ extern class Misc {
 	 * When roads diverge, the position may rapidly change between two or more positions. This is due to the engine not being certain of which path the player will take.  
 	 * ```
 	 */
-	@:native("FIND_SPAWN_POINT_IN_DIRECTION")
+	@:native("FindSpawnPointInDirection")
 	static function findSpawnPointInDirection(posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, distance:Float, spawnPoint:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_CLOUD_HAT_OPACITY")
+	@:native("GetCloudHatOpacity")
 	static function GetCloudHatOpacity():Float;
 
 	/**
@@ -556,19 +556,19 @@ extern class Misc {
 	 * creates single lightning+thunder at random position  
 	 * ```
 	 */
-	@:native("FORCE_LIGHTNING_FLASH")
+	@:native("ForceLightningFlash")
 	static function forceLightningFlash():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ANGLE_BETWEEN_2D_VECTORS")
+	@:native("GetAngleBetween_2dVectors")
 	static function getAngleBetween2DVectors(x1:Float, y1:Float, x2:Float, y2:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA")
+	@:native("GetCoordsOfProjectileTypeInArea")
 	static function getCoordsOfProjectileTypeInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, projectileHash:Int, projectilePos:Dynamic, ownedByPlayer:Bool):Bool;
 
 	/**
@@ -576,13 +576,13 @@ extern class Misc {
 	 * Returns value of the '-benchmarkPass' command line option.
 	 * ```
 	 */
-	@:native("_GET_BENCHMARK_PASS_FROM_COMMAND_LINE")
+	@:native("GetBenchmarkPassFromCommandLine")
 	static function GetBenchmarkPassFromCommandLine():Int;
 
 	/**
 	 * Gets the number of the current frame being displayed.
 	 */
-	@:native("GET_FRAME_COUNT")
+	@:native("GetFrameCount")
 	static function getFrameCount():Int;
 
 	/**
@@ -590,13 +590,13 @@ extern class Misc {
 	 * Returns value of the '-benchmarkIterations' command line option.
 	 * ```
 	 */
-	@:native("_GET_BENCHMARK_ITERATIONS_FROM_COMMAND_LINE")
+	@:native("GetBenchmarkIterationsFromCommandLine")
 	static function GetBenchmarkIterationsFromCommandLine():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BITS_IN_RANGE")
+	@:native("GetBitsInRange")
 	static function getBitsInRange(var_:Int, rangeStart:Int, rangeEnd:Int):Int;
 
 	/**
@@ -604,7 +604,7 @@ extern class Misc {
 	 * If useZ is false, only the 2D plane (X-Y) will be considered for calculating the distance.
 	 * Consider using this faster native instead: SYSTEM::VDIST - DVIST always takes in consideration the 3D coordinates.
 	 */
-	@:native("GET_DISTANCE_BETWEEN_COORDS")
+	@:native("GetDistanceBetweenCoords")
 	static function getDistanceBetweenCoords(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, useZ:Bool):Float;
 
 	/**
@@ -613,13 +613,13 @@ extern class Misc {
 	 * GET_C*
 	 * ```
 	 */
-	@:native("_GET_GLOBAL_CHAR_BUFFER")
+	@:native("GetGlobalCharBuffer")
 	static function GetGlobalCharBuffer():String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE")
+	@:native("GetCoordsOfProjectileTypeWithinDistance")
 	static function getCoordsOfProjectileTypeWithinDistance(ped:Dynamic, weaponHash:Int, distance:Float, outCoords:Dynamic, ownedByPlayer:Bool):Bool;
 
 	/**
@@ -627,13 +627,13 @@ extern class Misc {
 	 * 
 	 * *note: the example above is way less precise.*
 	 */
-	@:native("GET_FRAME_TIME")
+	@:native("GetFrameTime")
 	static function getFrameTime():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FAKE_WANTED_LEVEL")
+	@:native("GetFakeWantedLevel")
 	static function getFakeWantedLevel():Int;
 
 	/**
@@ -647,7 +647,7 @@ extern class Misc {
 	 * NativeDB Introduced: v505
 	 * ```
 	 */
-	@:native("GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD")
+	@:native("GetGroundZExcludingObjectsFor_3dCoord")
 	static function getGroundZExcludingObjectsFor3DCoord(x:Float, y:Float, z:Float, groundZ:Dynamic, waterAsGround:Bool):Bool;
 
 	/**
@@ -657,13 +657,13 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD")
+	@:native("GetGroundZAndNormalFor_3dCoord")
 	static function getGroundZAndNormalFor3DCoord(x:Float, y:Float, z:Float, groundZ:Dynamic, normal:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_INDEX_OF_CURRENT_LEVEL")
+	@:native("GetIndexOfCurrentLevel")
 	static function getIndexOfCurrentLevel():Int;
 
 	/**
@@ -672,25 +672,25 @@ extern class Misc {
 	 * dy = y1 - y2
 	 * ```
 	 */
-	@:native("GET_HEADING_FROM_VECTOR_2D")
+	@:native("GetHeadingFromVector_2d")
 	static function getHeadingFromVector2D(dx:Float, dy:Float):Float;
 
 	/**
 	 * This native converts its past string to hash. It is hashed using jenkins one at a time method.
 	 */
-	@:native("GET_HASH_KEY")
+	@:native("GetHashKey")
 	static function getHashKey(string:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GAME_TIMER")
+	@:native("GetGameTimer")
 	static function getGameTimer():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MISSION_FLAG")
+	@:native("GetMissionFlag")
 	static function getMissionFlag():Bool;
 
 	/**
@@ -700,7 +700,7 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_LINE_PLANE_INTERSECTION")
+	@:native("GetLinePlaneIntersection")
 	static function getLinePlaneIntersection(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, planeX:Float, planeY:Float, planeZ:Float, planeNormalX:Float, planeNormalY:Float, planeNormalZ:Float, intersectionParameter:Dynamic):Bool;
 
 	/**
@@ -708,7 +708,7 @@ extern class Misc {
 	 * Although we don't have a jenkins hash for this one, the name is 100% confirmed.
 	 * ```
 	 */
-	@:native("_GET_IS_PLAYER_IN_ANIMAL_FORM")
+	@:native("GetIsPlayerInAnimalForm")
 	static function GetIsPlayerInAnimalForm():Bool;
 
 	/**
@@ -718,7 +718,7 @@ extern class Misc {
 	 * Example from the scripts: MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), &v_1A, &v_17);
 	 * ```
 	 */
-	@:native("GET_MODEL_DIMENSIONS")
+	@:native("GetModelDimensions")
 	static function getModelDimensions(modelHash:Int, minimum:Dynamic, maximum:Dynamic):Dynamic;
 
 	/**
@@ -729,19 +729,19 @@ extern class Misc {
 	 * NativeDB Added Parameter 6: BOOL p5
 	 * ```
 	 */
-	@:native("GET_GROUND_Z_FOR_3D_COORD")
+	@:native("GetGroundZFor_3dCoord")
 	static function getGroundZFor3DCoord(x:Float, y:Float, z:Float, groundZ:Dynamic, includeWater:Bool):Bool;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("GET_NEXT_WEATHER_TYPE_HASH_NAME")
+	@:native("GetNextWeatherTypeHashName")
 	static function getNextWeatherTypeHashName():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER")
+	@:native("GetNumDispatchedUnitsForPlayer")
 	static function GetNumDispatchedUnitsForPlayer(dispatchService:Int):Int;
 
 	/**
@@ -749,7 +749,7 @@ extern class Misc {
 	 * Returns duration of how long the game has been in power-saving mode (aka "constrained") in milliseconds.
 	 * ```
 	 */
-	@:native("_GET_POWER_SAVING_MODE_DURATION")
+	@:native("GetPowerSavingModeDuration")
 	static function GetPowerSavingModeDuration():Int;
 
 	/**
@@ -757,31 +757,31 @@ extern class Misc {
 	 * Returns true if profile setting 208 is equal to 0.
 	 * ```
 	 */
-	@:native("GET_IS_AUTO_SAVE_OFF")
+	@:native("GetIsAutoSaveOff")
 	static function getIsAutoSaveOff():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_SUCCESSFUL_STUNT_JUMPS")
+	@:native("GetNumSuccessfulStuntJumps")
 	static function getNumSuccessfulStuntJumps():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_FREE_STACKS_OF_THIS_SIZE")
+	@:native("GetNumberOfFreeStacksOfThisSize")
 	static function getNumberOfFreeStacksOfThisSize(stackSize:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PROFILE_SETTING")
+	@:native("GetProfileSetting")
 	static function getProfileSetting(profileSetting:Int):Int;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("GET_PREV_WEATHER_TYPE_HASH_NAME")
+	@:native("GetPrevWeatherTypeHashName")
 	static function getPrevWeatherTypeHashName():Int;
 
 	/**
@@ -789,49 +789,49 @@ extern class Misc {
 	 * Returns NULL unless UPDATE_ONSCREEN_KEYBOARD() returns 1 in the same tick.  
 	 * ```
 	 */
-	@:native("GET_ONSCREEN_KEYBOARD_RESULT")
+	@:native("GetOnscreenKeyboardResult")
 	static function getOnscreenKeyboardResult():String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RAIN_LEVEL")
+	@:native("GetRainLevel")
 	static function getRainLevel():Float;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PROJECTILE_NEAR_PED")
+	@:native("GetProjectileNearPed")
 	static function GetProjectileNearPed(ped:Dynamic, weaponHash:Int, distance:Float, outCoords:Dynamic, outProjectile:Dynamic, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_INT_IN_RANGE")
+	@:native("GetRandomIntInRange")
 	static function getRandomIntInRange(startRange:Int, endRange:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_EVENT_FLAG")
+	@:native("GetRandomEventFlag")
 	static function getRandomEventFlag():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_FLOAT_IN_RANGE")
+	@:native("GetRandomFloatInRange")
 	static function getRandomFloatInRange(startRange:Float, endRange:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SIZE_OF_SAVE_DATA")
+	@:native("GetSizeOfSaveData")
 	static function getSizeOfSaveData(p0:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATUS_OF_MISSION_REPEAT_SAVE")
+	@:native("GetStatusOfMissionRepeatSave")
 	static function getStatusOfMissionRepeatSave():Int;
 
 	/**
@@ -839,61 +839,61 @@ extern class Misc {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_GET_RANDOM_INT_IN_RANGE_2")
+	@:native("GetRandomIntInRange_2")
 	static function GetRandomIntInRange2(startRange:Int, endRange:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_REPLAY_STAT_AT_INDEX")
+	@:native("GetReplayStatAtIndex")
 	static function getReplayStatAtIndex(index:Int):Int;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("_GET_WEATHER_TYPE_TRANSITION")
+	@:native("GetWeatherTypeTransition")
 	static function GetWeatherTypeTransition(weatherType1:Dynamic, weatherType2:Dynamic, percentWeather2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_REPLAY_STAT_MISSION_TYPE")
+	@:native("GetReplayStatMissionType")
 	static function getReplayStatMissionType():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SNOW_LEVEL")
+	@:native("GetSnowLevel")
 	static function getSnowLevel():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_REPLAY_STAT_COUNT")
+	@:native("GetReplayStatCount")
 	static function getReplayStatCount():Int;
 
 	/**
 	 * Used for hunting in singleplayer and for golfing in both sp and online. The [`GET_HEADING_FROM_VECTOR_2D`](#\_0x2FFB6B224F4B2926) native can be used to get the wind heading from the direction.
 	 */
-	@:native("GET_WIND_DIRECTION")
+	@:native("GetWindDirection")
 	static function getWindDirection():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TOTAL_SUCCESSFUL_STUNT_JUMPS")
+	@:native("GetTotalSuccessfulStuntJumps")
 	static function getTotalSuccessfulStuntJumps():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TENNIS_SWING_ANIM_COMPLETE")
+	@:native("GetTennisSwingAnimComplete")
 	static function getTennisSwingAnimComplete(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_BULLET_IMPACTED_IN_BOX")
+	@:native("HasBulletImpactedInBox")
 	static function hasBulletImpactedInBox(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Bool, p7:Bool):Bool;
 
 	/**
@@ -901,7 +901,7 @@ extern class Misc {
 	 * p3 - possibly radius?  
 	 * ```
 	 */
-	@:native("HAS_BULLET_IMPACTED_IN_AREA")
+	@:native("HasBulletImpactedInArea")
 	static function hasBulletImpactedInArea(x:Float, y:Float, z:Float, p3:Float, p4:Bool, p5:Bool):Bool;
 
 	/**
@@ -909,13 +909,13 @@ extern class Misc {
 	 * Hardcoded to always return true.
 	 * ```
 	 */
-	@:native("_HAS_ASYNC_INSTALL_FINISHED")
+	@:native("HasAsyncInstallFinished")
 	static function HasAsyncInstallFinished():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WIND_SPEED")
+	@:native("GetWindSpeed")
 	static function getWindSpeed():Float;
 
 	/**
@@ -932,7 +932,7 @@ extern class Misc {
 	 * Calling this will also set the last saved string hash to zero.
 	 * ```
 	 */
-	@:native("_HAS_CHEAT_STRING_JUST_BEEN_ENTERED")
+	@:native("HasCheatStringJustBeenEntered")
 	static function HasCheatStringJustBeenEntered(hash:Int):Bool;
 
 	/**
@@ -941,7 +941,7 @@ extern class Misc {
 	 * INT_SCORES_SCORTED was a hash collision
 	 * ```
 	 */
-	@:native("_HAS_BUTTON_COMBINATION_JUST_BEEN_ENTERED")
+	@:native("HasButtonCombinationJustBeenEntered")
 	static function HasButtonCombinationJustBeenEntered(hash:Int, amount:Int):Bool;
 
 	/**
@@ -949,19 +949,19 @@ extern class Misc {
 	 * Hardcoded to return false.
 	 * ```
 	 */
-	@:native("_HAS_RESUMED_FROM_SUSPEND")
+	@:native("HasResumedFromSuspend")
 	static function HasResumedFromSuspend():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAVE_CREDITS_REACHED_END")
+	@:native("HaveCreditsReachedEnd")
 	static function haveCreditsReachedEnd():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IGNORE_NEXT_RESTART")
+	@:native("IgnoreNextRestart")
 	static function ignoreNextRestart(toggle:Bool):Dynamic;
 
 	/**
@@ -974,13 +974,13 @@ extern class Misc {
 	 * Used to block some of the prostitute stuff due to laws in Australia.
 	 * ```
 	 */
-	@:native("IS_AUSSIE_VERSION")
+	@:native("IsAussieVersion")
 	static function isAussieVersion():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AUTO_SAVE_IN_PROGRESS")
+	@:native("IsAutoSaveInProgress")
 	static function isAutoSaveInProgress():Bool;
 
 	/**
@@ -988,19 +988,19 @@ extern class Misc {
 	 * 
 	 * For projectiles, see: [`IS_PROJECTILE_TYPE_IN_ANGLED_AREA`](#\_0xF0BC12401061DEA0)
 	 */
-	@:native("IS_BULLET_IN_ANGLED_AREA")
+	@:native("IsBulletInAngledArea")
 	static function isBulletInAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BULLET_IN_BOX")
+	@:native("IsBulletInBox")
 	static function isBulletInBox(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AREA_OCCUPIED")
+	@:native("IsAreaOccupied")
 	static function isAreaOccupied(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Bool, p7:Bool, p8:Bool, p9:Bool, p10:Bool, p11:Dynamic, p12:Bool):Bool;
 
 	/**
@@ -1008,7 +1008,7 @@ extern class Misc {
 	 * Returns true if command line option '-benchmark' is set.
 	 * ```
 	 */
-	@:native("_IS_COMMAND_LINE_BENCHMARK_VALUE_SET")
+	@:native("IsCommandLineBenchmarkValueSet")
 	static function IsCommandLineBenchmarkValueSet():Bool;
 
 	/**
@@ -1021,13 +1021,13 @@ extern class Misc {
 	 * MISC::CLEAR_BIT(&bitAddress, 1); // disable
 	 * ```
 	 */
-	@:native("IS_BIT_SET")
+	@:native("IsBitSet")
 	static function isBitSet(address:Int, offset:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BULLET_IN_AREA")
+	@:native("IsBulletInArea")
 	static function isBulletInArea(x:Float, y:Float, z:Float, radius:Float, ownedByPlayer:Bool):Bool;
 
 	/**
@@ -1035,7 +1035,7 @@ extern class Misc {
 	 * aka "constrained"
 	 * ```
 	 */
-	@:native("_IS_IN_POWER_SAVING_MODE")
+	@:native("IsInPowerSavingMode")
 	static function IsInPowerSavingMode():Bool;
 
 	/**
@@ -1043,7 +1043,7 @@ extern class Misc {
 	 * This function is hard-coded to always return 0.  
 	 * ```
 	 */
-	@:native("IS_FRONTEND_FADING")
+	@:native("IsFrontendFading")
 	static function isFrontendFading():Bool;
 
 	/**
@@ -1055,19 +1055,19 @@ extern class Misc {
 	 * =======================================================  
 	 * ```
 	 */
-	@:native("IS_INCIDENT_VALID")
+	@:native("IsIncidentValid")
 	static function isIncidentValid(incidentId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DURANGO_VERSION")
+	@:native("IsDurangoVersion")
 	static function isDurangoVersion():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MEMORY_CARD_IN_USE")
+	@:native("IsMemoryCardInUse")
 	static function isMemoryCardInUse():Bool;
 
 	/**
@@ -1075,43 +1075,43 @@ extern class Misc {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("IS_JAPANESE_VERSION")
+	@:native("IsJapaneseVersion")
 	static function isJapaneseVersion():Bool;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("IS_NEXT_WEATHER_TYPE")
+	@:native("IsNextWeatherType")
 	static function isNextWeatherType(weatherType:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MINIGAME_IN_PROGRESS")
+	@:native("IsMinigameInProgress")
 	static function isMinigameInProgress():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_POINT_OBSCURED_BY_A_MISSION_ENTITY")
+	@:native("IsPointObscuredByAMissionEntity")
 	static function isPointObscuredByAMissionEntity(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PC_VERSION")
+	@:native("IsPcVersion")
 	static function isPcVersion():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ORBIS_VERSION")
+	@:native("IsOrbisVersion")
 	static function isOrbisVersion():Bool;
 
 	/**
 	 * The BOOL parameters that are documented have not been confirmed. They are just documented from what I've found during testing. They may not work as expected in all cases.
 	 */
-	@:native("IS_POSITION_OCCUPIED")
+	@:native("IsPositionOccupied")
 	static function isPositionOccupied(x:Float, y:Float, z:Float, range:Float, p4:Bool, checkVehicles:Bool, checkPeds:Bool, p7:Bool, p8:Bool, ignoreEntity:Dynamic, p10:Bool):Bool;
 
 	/**
@@ -1120,19 +1120,19 @@ extern class Misc {
 	 * ownedByPlayer = only projectiles fired by the player will be detected.  
 	 * ```
 	 */
-	@:native("IS_PROJECTILE_IN_AREA")
+	@:native("IsProjectileInArea")
 	static function isProjectileInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PROJECTILE_TYPE_WITHIN_DISTANCE")
+	@:native("IsProjectileTypeWithinDistance")
 	static function isProjectileTypeWithinDistance(x:Float, y:Float, z:Float, projHash:Int, radius:Float, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PS3_VERSION")
+	@:native("IsPs3Version")
 	static function isPs3Version():Bool;
 
 	/**
@@ -1140,19 +1140,19 @@ extern class Misc {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_IS_POP_MULTIPLIER_AREA_UNK")
+	@:native("IsPopMultiplierAreaUnk")
 	static function IsPopMultiplierAreaUnk(id:Int):Bool;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("IS_PREV_WEATHER_TYPE")
+	@:native("IsPrevWeatherType")
 	static function isPrevWeatherType(weatherType:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STRING_NULL")
+	@:native("IsStringNull")
 	static function isStringNull(string:String):Bool;
 
 	/**
@@ -1162,13 +1162,13 @@ extern class Misc {
 	 * NativeDB Removed Parameter 7: float p7
 	 * ```
 	 */
-	@:native("IS_PROJECTILE_TYPE_IN_ANGLED_AREA")
+	@:native("IsProjectileTypeInAngledArea")
 	static function isProjectileTypeInAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, p7:Float, weaponHash:Int, ownedByPlayer:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TENNIS_MODE")
+	@:native("IsTennisMode")
 	static function isTennisMode(ped:Dynamic):Bool;
 
 	/**
@@ -1176,7 +1176,7 @@ extern class Misc {
 	 * This function is hard-coded to always return 0.  
 	 * ```
 	 */
-	@:native("IS_SNIPER_INVERTED")
+	@:native("IsSniperInverted")
 	static function isSniperInverted():Bool;
 
 	/**
@@ -1184,7 +1184,7 @@ extern class Misc {
 	 * Determines whether there is a projectile of a specific type within the specified coordinates. The coordinates form a axis-aligned bounding box.  
 	 * ```
 	 */
-	@:native("IS_PROJECTILE_TYPE_IN_AREA")
+	@:native("IsProjectileTypeInArea")
 	static function isProjectileTypeInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, type:Int, ownedByPlayer:Bool):Bool;
 
 	/**
@@ -1192,13 +1192,13 @@ extern class Misc {
 	 * Determines whether there is a sniper bullet within the specified coordinates. The coordinates form an axis-aligned bounding box.  
 	 * ```
 	 */
-	@:native("IS_SNIPER_BULLET_IN_AREA")
+	@:native("IsSniperBulletInArea")
 	static function isSniperBulletInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STRING_NULL_OR_EMPTY")
+	@:native("IsStringNullOrEmpty")
 	static function isStringNullOrEmpty(string:String):Bool;
 
 	/**
@@ -1206,25 +1206,25 @@ extern class Misc {
 	 * Returns true if the current frontend menu is FE_MENU_VERSION_LANDING_MENU
 	 * ```
 	 */
-	@:native("_LANDING_MENU_IS_ACTIVE")
+	@:native("LandingMenuIsActive")
 	static function LandingMenuIsActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STUNT_JUMP_IN_PROGRESS")
+	@:native("IsStuntJumpInProgress")
 	static function isStuntJumpInProgress():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_A_MINIGAME_SCRIPT")
+	@:native("IsThisAMinigameScript")
 	static function isThisAMinigameScript():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_XBOX360_VERSION")
+	@:native("IsXbox360Version")
 	static function isXbox360Version():Bool;
 
 	/**
@@ -1232,13 +1232,13 @@ extern class Misc {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("IS_STEAM_VERSION")
+	@:native("IsSteamVersion")
 	static function isSteamVersion():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STUNT_JUMP_MESSAGE_SHOWING")
+	@:native("IsStuntJumpMessageShowing")
 	static function isStuntJumpMessageShowing():Bool;
 
 	/**
@@ -1266,13 +1266,13 @@ extern class Misc {
 	 * Wispy
 	 * ```
 	 */
-	@:native("LOAD_CLOUD_HAT")
+	@:native("LoadCloudHat")
 	static function loadCloudHat(name:String, transitionTime:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME")
+	@:native("NetworkSetScriptIsSafeForNetworkGame")
 	static function networkSetScriptIsSafeForNetworkGame():Dynamic;
 
 	/**
@@ -1290,25 +1290,25 @@ extern class Misc {
 	 * };
 	 * ```
 	 */
-	@:native("NEXT_ONSCREEN_KEYBOARD_RESULT_WILL_DISPLAY_USING_THESE_FONTS")
+	@:native("NextOnscreenKeyboardResultWillDisplayUsingTheseFonts")
 	static function nextOnscreenKeyboardResultWillDisplayUsingTheseFonts(fontBitField:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("OVERRIDE_SAVE_HOUSE")
+	@:native("OverrideSaveHouse")
 	static function overrideSaveHouse(p0:Bool, p1:Float, p2:Float, p3:Float, p4:Float, p5:Bool, p6:Dynamic, p7:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_DEATH_ARREST_RESTART")
+	@:native("PauseDeathArrestRestart")
 	static function pauseDeathArrestRestart(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_TENNIS_SWING_ANIM")
+	@:native("PlayTennisSwingAnim")
 	static function playTennisSwingAnim(ped:Dynamic, animDict:String, animName:String, p3:Float, p4:Float, p5:Bool):Dynamic;
 
 	/**
@@ -1317,55 +1317,55 @@ extern class Misc {
 	 * MISC::_11B56FBBF7224868("CONTRAILS");
 	 * ```
 	 */
-	@:native("PRELOAD_CLOUD_HAT")
+	@:native("PreloadCloudHat")
 	static function preloadCloudHat(name:String):Dynamic;
 
 	/**
 	 * Shows the screen which is visible before you redo a mission? The game will make a restoration point where you will cameback when the mission is over.
 	 */
-	@:native("QUEUE_MISSION_REPEAT_SAVE")
+	@:native("QueueMissionRepeatSave")
 	static function queueMissionRepeatSave():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("QUEUE_MISSION_REPEAT_LOAD")
+	@:native("QueueMissionRepeatLoad")
 	static function queueMissionRepeatLoad():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_BOOL_TO_SAVE")
+	@:native("RegisterBoolToSave")
 	static function registerBoolToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_TENNIS_DIVE_ANIM")
+	@:native("PlayTennisDiveAnim")
 	static function playTennisDiveAnim(ped:Dynamic, p1:Int, p2:Float, p3:Float, p4:Float, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_SAVE_HOUSE")
+	@:native("RegisterSaveHouse")
 	static function registerSaveHouse(p0:Float, p1:Float, p2:Float, p3:Float, p4:Dynamic, p5:Dynamic, p6:Dynamic):Dynamic;
 
 	/**
 	 * Quits the game.
 	 */
-	@:native("QUIT_GAME")
+	@:native("QuitGame")
 	static function quitGame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_INT_TO_SAVE")
+	@:native("RegisterIntToSave")
 	static function registerIntToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_DISPATCH_SPAWN_BLOCKING_AREA")
+	@:native("RemoveDispatchSpawnBlockingArea")
 	static function removeDispatchSpawnBlockingArea(p0:Dynamic):Dynamic;
 
 	/**
@@ -1373,31 +1373,31 @@ extern class Misc {
 	 * spawns a few distant/out-of-sight peds, vehicles, animals etc each time it is called  
 	 * ```
 	 */
-	@:native("POPULATE_NOW")
+	@:native("PopulateNow")
 	static function populateNow():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_FLOAT_TO_SAVE")
+	@:native("RegisterFloatToSave")
 	static function registerFloatToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_POP_MULTIPLIER_SPHERE")
+	@:native("RemovePopMultiplierSphere")
 	static function removePopMultiplierSphere(id:Int, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_ENUM_TO_SAVE")
+	@:native("RegisterEnumToSave")
 	static function registerEnumToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_TEXT_LABEL_TO_SAVE")
+	@:native("RegisterTextLabelToSave")
 	static function registerTextLabelToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
@@ -1405,7 +1405,7 @@ extern class Misc {
 	 * Appears to remove stealth kill action from memory
 	 * ```
 	 */
-	@:native("_REMOVE_STEALTH_KILL")
+	@:native("RemoveStealthKill")
 	static function RemoveStealthKill(hash:Int, p1:Bool):Dynamic;
 
 	/**
@@ -1417,20 +1417,20 @@ extern class Misc {
 	 * "tl" prefix sounds like "Text Label"
 	 * ```
 	 */
-	@:native("_REGISTER_TEXT_LABEL_TO_SAVE_2")
+	@:native("RegisterTextLabelToSave_2")
 	static function RegisterTextLabelToSave2(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REGISTER_INT64_TO_SAVE")
+	@:native("RegisterInt64ToSave")
 	static function RegisterInt64ToSave(p0:Dynamic, name:String):Dynamic;
 
 	/**
 	 * In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows the `Disconnecting from GTA Online` warning screen message and quits the game.
 	 * After quitting, the game process is started again (as the name implies).
 	 */
-	@:native("RESTART_GAME")
+	@:native("RestartGame")
 	static function restartGame():Dynamic;
 
 	/**
@@ -1440,19 +1440,19 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SCRIPT_RACE_INIT")
+	@:native("ScriptRaceInit")
 	static function scriptRaceInit(numCheckpoints:Int, numLaps:Int, numPlayers:Int, localPlayer:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_DISPATCH_SPAWN_BLOCKING_AREAS")
+	@:native("ResetDispatchSpawnBlockingAreas")
 	static function resetDispatchSpawnBlockingAreas():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SCRIPT_RACE_SHUTDOWN")
+	@:native("ScriptRaceShutdown")
 	static function scriptRaceShutdown():Dynamic;
 
 	/**
@@ -1460,7 +1460,7 @@ extern class Misc {
 	 * Saves the benchmark recording to %USERPROFILE%\Documents\Rockstar Games\GTA V\Benchmarks and submits some metrics.
 	 * ```
 	 */
-	@:native("_SAVE_BENCHMARK_RECORDING")
+	@:native("SaveBenchmarkRecording")
 	static function SaveBenchmarkRecording():Dynamic;
 
 	/**
@@ -1468,7 +1468,7 @@ extern class Misc {
 	 * Begins with RESET_*. Next character in the name is either D or E.
 	 * ```
 	 */
-	@:native("_RESET_BENCHMARK_RECORDING")
+	@:native("ResetBenchmarkRecording")
 	static function ResetBenchmarkRecording():Dynamic;
 
 	/**
@@ -1478,13 +1478,13 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SCRIPT_RACE_PLAYER_HIT_CHECKPOINT")
+	@:native("ScriptRacePlayerHitCheckpoint")
 	static function scriptRacePlayerHitCheckpoint(ped:Dynamic, checkpoint:Int, lap:Int, time:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_POP_MULTIPLIER_AREA")
+	@:native("RemovePopMultiplierArea")
 	static function removePopMultiplierArea(id:Int, p1:Bool):Dynamic;
 
 	/**
@@ -1492,7 +1492,7 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("RESET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS")
+	@:native("ResetDispatchTimeBetweenSpawnAttempts")
 	static function resetDispatchTimeBetweenSpawnAttempts(p0:Dynamic):Dynamic;
 
 	/**
@@ -1506,25 +1506,25 @@ extern class Misc {
 	 * Please note, this method may assign a value to [address] when used.
 	 * ```
 	 */
-	@:native("SET_BIT")
+	@:native("SetBit")
 	static function setBit(address:Dynamic, offset:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_DISPATCH_IDEAL_SPAWN_DISTANCE")
+	@:native("ResetDispatchIdealSpawnDistance")
 	static function resetDispatchIdealSpawnDistance():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISPATCH_IDEAL_SPAWN_DISTANCE")
+	@:native("SetDispatchIdealSpawnDistance")
 	static function setDispatchIdealSpawnDistance(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_BEAST_MODE_ACTIVE")
+	@:native("SetBeastModeActive")
 	static function SetBeastModeActive(player:Dynamic):Dynamic;
 
 	/**
@@ -1534,7 +1534,7 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_CLOUD_SETTINGS_OVERRIDE")
+	@:native("SetCloudSettingsOverride")
 	static function setCloudSettingsOverride(overrideSettingsName:String):Dynamic;
 
 	/**
@@ -1542,67 +1542,67 @@ extern class Misc {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_RESET_DISPATCH_SPAWN_LOCATION")
+	@:native("ResetDispatchSpawnLocation")
 	static function ResetDispatchSpawnLocation():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISPATCH_SPAWN_LOCATION")
+	@:native("SetDispatchSpawnLocation")
 	static function setDispatchSpawnLocation(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS")
+	@:native("SetDispatchTimeBetweenSpawnAttempts")
 	static function setDispatchTimeBetweenSpawnAttempts(p0:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BITS_IN_RANGE")
+	@:native("SetBitsInRange")
 	static function setBitsInRange(var_:Dynamic, rangeStart:Int, rangeEnd:Int, p3:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SCRIPT_RACE_GET_PLAYER_SPLIT_TIME")
+	@:native("ScriptRaceGetPlayerSplitTime")
 	static function scriptRaceGetPlayerSplitTime(player:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * Allows modification of the cloud opacity. It can also be used in other contexts, such as when the player is in a switch state [`IS_PLAYER_SWITCH_IN_PROGRESS`](#\_0xD9D2CFFF49FAB35F).
 	 */
-	@:native("SET_CLOUDS_ALPHA")
+	@:native("SetCloudsAlpha")
 	static function setCloudsAlpha(opacity:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_EXPLOSIVE_AMMO_THIS_FRAME")
+	@:native("SetExplosiveAmmoThisFrame")
 	static function setExplosiveAmmoThisFrame(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CREDITS_ACTIVE")
+	@:native("SetCreditsActive")
 	static function setCreditsActive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FADE_IN_AFTER_LOAD")
+	@:native("SetFadeInAfterLoad")
 	static function setFadeInAfterLoad(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_EXPLOSIVE_MELEE_THIS_FRAME")
+	@:native("SetExplosiveMeleeThisFrame")
 	static function setExplosiveMeleeThisFrame(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS_MULTIPLIER")
+	@:native("SetDispatchTimeBetweenSpawnAttemptsMultiplier")
 	static function setDispatchTimeBetweenSpawnAttemptsMultiplier(p0:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -1610,7 +1610,7 @@ extern class Misc {
 	 * Sets whether the game should fade in after the player dies or is arrested.  
 	 * ```
 	 */
-	@:native("SET_FADE_IN_AFTER_DEATH_ARREST")
+	@:native("SetFadeInAfterDeathArrest")
 	static function setFadeInAfterDeathArrest(toggle:Bool):Dynamic;
 
 	/**
@@ -1618,7 +1618,7 @@ extern class Misc {
 	 * Sets whether the game should fade out after the player dies.  
 	 * ```
 	 */
-	@:native("SET_FADE_OUT_AFTER_DEATH")
+	@:native("SetFadeOutAfterDeath")
 	static function setFadeOutAfterDeath(toggle:Bool):Dynamic;
 
 	/**
@@ -1626,7 +1626,7 @@ extern class Misc {
 	 * Sets whether the game should fade out after the player is arrested.  
 	 * ```
 	 */
-	@:native("SET_FADE_OUT_AFTER_ARREST")
+	@:native("SetFadeOutAfterArrest")
 	static function setFadeOutAfterArrest(toggle:Bool):Dynamic;
 
 	/**
@@ -1635,7 +1635,7 @@ extern class Misc {
 	 * Max is 6, anything above this makes it just 6. Also the mini-map gets the red & blue flashing effect.
 	 * ```
 	 */
-	@:native("SET_FAKE_WANTED_LEVEL")
+	@:native("SetFakeWantedLevel")
 	static function setFakeWantedLevel(fakeWantedLevel:Int):Dynamic;
 
 	/**
@@ -1649,7 +1649,7 @@ extern class Misc {
 	 * }
 	 * ```
 	 */
-	@:native("SET_GRAVITY_LEVEL")
+	@:native("SetGravityLevel")
 	static function setGravityLevel(level:Int):Dynamic;
 
 	/**
@@ -1657,13 +1657,13 @@ extern class Misc {
 	 * Make sure to call this from the correct thread if you're using multiple threads because all other threads except the one which is calling SET_GAME_PAUSED will be paused which means you will lose control and the game remains in paused mode until you exit GTA5.exe  
 	 * ```
 	 */
-	@:native("SET_GAME_PAUSED")
+	@:native("SetGamePaused")
 	static function setGamePaused(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FIRE_AMMO_THIS_FRAME")
+	@:native("SetFireAmmoThisFrame")
 	static function setFireAmmoThisFrame(player:Dynamic):Dynamic;
 
 	/**
@@ -1671,7 +1671,7 @@ extern class Misc {
 	 * Sets an unknown flag used by CScene in determining which entities from CMapData scene nodes to draw, similar to SET_INSTANCE_PRIORITY_MODE.
 	 * ```
 	 */
-	@:native("SET_INSTANCE_PRIORITY_HINT")
+	@:native("SetInstancePriorityHint")
 	static function setInstancePriorityHint(flag:Int):Dynamic;
 
 	/**
@@ -1679,7 +1679,7 @@ extern class Misc {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_SET_FORCE_PLAYER_TO_JUMP")
+	@:native("SetForcePlayerToJump")
 	static function SetForcePlayerToJump(player:Dynamic):Dynamic;
 
 	/**
@@ -1687,19 +1687,19 @@ extern class Misc {
 	 * SET_INCIDENT_*
 	 * ```
 	 */
-	@:native("_SET_INCIDENT_UNK")
+	@:native("SetIncidentUnk")
 	static function SetIncidentUnk(incidentId:Int, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_INCIDENT_REQUESTED_UNITS")
+	@:native("SetIncidentRequestedUnits")
 	static function setIncidentRequestedUnits(incidentId:Int, dispatchService:Int, numUnits:Int):Dynamic;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("SET_OVERRIDE_WEATHER")
+	@:native("SetOverrideWeather")
 	static function setOverrideWeather(weatherType:String):Dynamic;
 
 	/**
@@ -1708,19 +1708,19 @@ extern class Misc {
 	 * Does nothing if the mission flag is set.  
 	 * ```
 	 */
-	@:native("SET_RANDOM_EVENT_FLAG")
+	@:native("SetRandomEventFlag")
 	static function setRandomEventFlag(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MINIGAME_IN_PROGRESS")
+	@:native("SetMinigameInProgress")
 	static function setMinigameInProgress(toggle:Bool):Dynamic;
 
 	/**
 	 * Sets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. It causes a loading screen to show as it reloads map data.
 	 */
-	@:native("SET_INSTANCE_PRIORITY_MODE")
+	@:native("SetInstancePriorityMode")
 	static function setInstancePriorityMode(toggle:Int):Dynamic;
 
 	/**
@@ -1730,25 +1730,25 @@ extern class Misc {
 	 * ^ also, if the mission flag is already set, the function does nothing at all  
 	 * ```
 	 */
-	@:native("SET_MISSION_FLAG")
+	@:native("SetMissionFlag")
 	static function setMissionFlag(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RANDOM_SEED")
+	@:native("SetRandomSeed")
 	static function setRandomSeed(seed:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_RESTART_CUSTOM_POSITION")
+	@:native("SetRestartCustomPosition")
 	static function SetRestartCustomPosition(x:Float, y:Float, z:Float, heading:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RANDOM_WEATHER_TYPE")
+	@:native("SetRandomWeatherType")
 	static function setRandomWeatherType():Dynamic;
 
 	/**
@@ -1757,19 +1757,19 @@ extern class Misc {
 	 * If toggle is false, the ped's head is not shown in the pause menu
 	 * ```
 	 */
-	@:native("_SET_PLAYER_IS_IN_ANIMAL_FORM")
+	@:native("SetPlayerIsInAnimalForm")
 	static function SetPlayerIsInAnimalForm(toggle:Bool):Dynamic;
 
 	/**
 	 * Activates riot mode. All NPCs are being hostile to each other (including player). Also the game will give weapons (pistols, smgs) to random NPCs.
 	 */
-	@:native("SET_RIOT_MODE_ENABLED")
+	@:native("SetRiotModeEnabled")
 	static function setRiotModeEnabled(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SAVE_HOUSE")
+	@:native("SetSaveHouse")
 	static function setSaveHouse(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1777,7 +1777,7 @@ extern class Misc {
 	 * ignoreVehicle - bypasses vehicle check of the local player (it will not open if you are in a vehicle and this is set to false)
 	 * ```
 	 */
-	@:native("SET_SAVE_MENU_ACTIVE")
+	@:native("SetSaveMenuActive")
 	static function setSaveMenuActive(ignoreVehicle:Bool):Dynamic;
 
 	/**
@@ -1785,7 +1785,7 @@ extern class Misc {
 	 * SET_PLAYER_*
 	 * ```
 	 */
-	@:native("_SET_PLAYER_ROCKSTAR_EDITOR_DISABLED")
+	@:native("SetPlayerRockstarEditorDisabled")
 	static function SetPlayerRockstarEditorDisabled(toggle:Bool):Dynamic;
 
 	/**
@@ -1793,7 +1793,7 @@ extern class Misc {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_SET_SNOW_LEVEL")
+	@:native("SetSnowLevel")
 	static function SetSnowLevel(level:Float):Dynamic;
 
 	/**
@@ -1805,38 +1805,38 @@ extern class Misc {
 	 * 
 	 * To use the rain level of the current weather, call this native with `-1f` as `level`.
 	 */
-	@:native("_SET_RAIN_LEVEL")
+	@:native("SetRainLevel")
 	static function SetRainLevel(level:Float):Dynamic;
 
 	/**
 	 * Allows the player to perform super jumps. This function must be called every frame for it to work.
 	 * It basically OR's a flag for a single frame, allowing the ped to perform a super jump only when the flag is set.
 	 */
-	@:native("SET_SUPER_JUMP_THIS_FRAME")
+	@:native("SetSuperJumpThisFrame")
 	static function setSuperJumpThisFrame(player:Dynamic):Dynamic;
 
 	/**
 	 * Normally, blips can only be removed by the script or resource that created them. However, this native function allows a script to bypass this logic and remove blips from any script.
 	 */
-	@:native("SET_THIS_SCRIPT_CAN_REMOVE_BLIPS_CREATED_BY_ANY_SCRIPT")
+	@:native("SetThisScriptCanRemoveBlipsCreatedByAnyScript")
 	static function setThisScriptCanRemoveBlipsCreatedByAnyScript(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_STUNT_JUMPS_CAN_TRIGGER")
+	@:native("SetStuntJumpsCanTrigger")
 	static function setStuntJumpsCanTrigger(toggle:Bool):Dynamic;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](#\_0xED712CA327900C8A) for weather types.
 	 */
-	@:native("SET_WEATHER_TYPE_OVERTIME_PERSIST")
+	@:native("SetWeatherTypeOvertimePersist")
 	static function setWeatherTypeOvertimePersist(weatherType:String, time:Float):Dynamic;
 
 	/**
 	 * Refer to [`SET_WEATHER_TYPE_NOW`](#\_0x29B487C359E19889) for weather types.
 	 */
-	@:native("SET_WEATHER_TYPE_NOW_PERSIST")
+	@:native("SetWeatherTypeNowPersist")
 	static function setWeatherTypeNowPersist(weatherType:String):Dynamic;
 
 	/**
@@ -1866,13 +1866,13 @@ extern class Misc {
 	 * *   HALLOWEEN
 	 * *   NEUTRAL
 	 */
-	@:native("SET_WEATHER_TYPE_NOW")
+	@:native("SetWeatherTypeNow")
 	static function setWeatherTypeNow(weatherType:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_THIS_SCRIPT_CAN_BE_PAUSED")
+	@:native("SetThisScriptCanBePaused")
 	static function setThisScriptCanBePaused(toggle:Bool):Dynamic;
 
 	/**
@@ -1884,7 +1884,7 @@ extern class Misc {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_WEATHER_TYPE_PERSIST")
+	@:native("SetWeatherTypePersist")
 	static function setWeatherTypePersist(weatherType:String):Dynamic;
 
 	/**
@@ -1896,19 +1896,19 @@ extern class Misc {
 	 * Slow Motion 3: 0.2  
 	 * ```
 	 */
-	@:native("SET_TIME_SCALE")
+	@:native("SetTimeScale")
 	static function setTimeScale(timeScale:Float):Dynamic;
 
 	/**
 	 * Sets the wind direction. The wind direction will stay persistent until it is reset (see examples).
 	 */
-	@:native("SET_WIND_DIRECTION")
+	@:native("SetWindDirection")
 	static function setWindDirection(direction:Float):Dynamic;
 
 	/**
 	 * Shoots a bullet from the first vector to the second vector. The weapon used as weaponHash should already be loaded via REQUEST_WEAPON_ASSET, otherwise the bullet may fail to materialise.
 	 */
-	@:native("SHOOT_SINGLE_BULLET_BETWEEN_COORDS")
+	@:native("ShootSingleBulletBetweenCoords")
 	static function shootSingleBulletBetweenCoords(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, damage:Int, pureAccuracy:Bool, weaponHash:Int, ownerPed:Dynamic, isAudible:Bool, isInvisible:Bool, speed:Float):Dynamic;
 
 	/**
@@ -1919,13 +1919,13 @@ extern class Misc {
 	 * execute "NativeFunction.Natives.x578C752848ECFA0C(Game.GetHashKey(""RAIN""), Game.GetHashKey(""SMOG""), 0.50f);  
 	 * ```
 	 */
-	@:native("_SET_WEATHER_TYPE_TRANSITION")
+	@:native("SetWeatherTypeTransition")
 	static function SetWeatherTypeTransition(weatherType1:Int, weatherType2:Int, percentWeather2:Float):Dynamic;
 
 	/**
 	 * Sets the the raw wind speed value. The wind speed will stay persistent until it is reset (see examples).
 	 */
-	@:native("SET_WIND")
+	@:native("SetWind")
 	static function setWind(speed:Float):Dynamic;
 
 	/**
@@ -1937,25 +1937,25 @@ extern class Misc {
 	 * NativeDB Added Parameter 15: Any p14
 	 * ```
 	 */
-	@:native("SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY")
+	@:native("ShootSingleBulletBetweenCoordsIgnoreEntity")
 	static function shootSingleBulletBetweenCoordsIgnoreEntity(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, damage:Int, p7:Bool, weaponHash:Int, ownerPed:Dynamic, isAudible:Bool, isInvisible:Bool, speed:Float, entity:Dynamic):Dynamic;
 
 	/**
 	 * Using this native will clamp the wind speed value to a range of 0.0 - 12.0. The wind speed will stay persistent until it is reset (see examples).
 	 */
-	@:native("SET_WIND_SPEED")
+	@:native("SetWindSpeed")
 	static function setWindSpeed(speed:Float):Dynamic;
 
 	/**
 	 * Returns true if the game is using the metric measurement system (profile setting 227), false if imperial is used.
 	 */
-	@:native("SHOULD_USE_METRIC_MEASUREMENTS")
+	@:native("ShouldUseMetricMeasurements")
 	static function shouldUseMetricMeasurements():Bool;
 
 	/**
 	 * This native always come right before SET_ENTITY_QUATERNION where its final 4 parameters are SLERP_NEAR_QUATERNION p9 to p12
 	 */
-	@:native("SLERP_NEAR_QUATERNION")
+	@:native("SlerpNearQuaternion")
 	static function slerpNearQuaternion(t:Float, x:Float, y:Float, z:Float, w:Float, x1:Float, y1:Float, z1:Float, w1:Float, outX:Dynamic, outY:Dynamic, outZ:Dynamic, outW:Dynamic):Dynamic;
 
 	/**
@@ -1965,19 +1965,19 @@ extern class Misc {
 	 * NativeDB Added Parameter 21: Any p20
 	 * ```
 	 */
-	@:native("SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW")
+	@:native("ShootSingleBulletBetweenCoordsIgnoreEntityNew")
 	static function shootSingleBulletBetweenCoordsIgnoreEntityNew(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, damage:Int, p7:Bool, weaponHash:Int, ownerPed:Dynamic, isAudible:Bool, isInvisible:Bool, speed:Float, entity:Dynamic, p14:Bool, p15:Bool, p16:Bool, p17:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_SAVE_DATA")
+	@:native("StartSaveData")
 	static function startSaveData(p0:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_SAVE_ARRAY_WITH_SIZE")
+	@:native("StartSaveArrayWithSize")
 	static function startSaveArrayWithSize(p0:Dynamic, size:Int, arrayName:String):Dynamic;
 
 	/**
@@ -1985,7 +1985,7 @@ extern class Misc {
 	 * Begins with START_*. Next character in the name is either D or E.
 	 * ```
 	 */
-	@:native("_START_BENCHMARK_RECORDING")
+	@:native("StartBenchmarkRecording")
 	static function StartBenchmarkRecording():Dynamic;
 
 	/**
@@ -1993,37 +1993,37 @@ extern class Misc {
 	 * Begins with STOP_*. Next character in the name is either D or E.
 	 * ```
 	 */
-	@:native("_STOP_BENCHMARK_RECORDING")
+	@:native("StopBenchmarkRecording")
 	static function StopBenchmarkRecording():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SAVE_DATA")
+	@:native("StopSaveData")
 	static function stopSaveData():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SAVE_ARRAY")
+	@:native("StopSaveArray")
 	static function stopSaveArray():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TAN")
+	@:native("Tan")
 	static function tan(p0:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("START_SAVE_STRUCT_WITH_SIZE")
+	@:native("StartSaveStructWithSize")
 	static function startSaveStructWithSize(p0:Dynamic, size:Int, structName:String):Dynamic;
 
 	/**
 	 * For a full list, see [here](https://gist.github.com/4mmonium/f76f3ecef649ed275b260b433ea84494).
 	 */
-	@:native("TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME")
+	@:native("TerminateAllScriptsWithThisName")
 	static function terminateAllScriptsWithThisName(scriptName:String):Dynamic;
 
 	/**
@@ -2043,7 +2043,7 @@ extern class Misc {
 	 * }
 	 * ```
 	 */
-	@:native("SUPRESS_RANDOM_EVENT_THIS_FRAME")
+	@:native("SupressRandomEventThisFrame")
 	static function supressRandomEventThisFrame(eventType:Int, enable:Bool):Dynamic;
 
 	/**
@@ -2060,13 +2060,13 @@ extern class Misc {
 	 * };
 	 * ```
 	 */
-	@:native("UPDATE_ONSCREEN_KEYBOARD")
+	@:native("UpdateOnscreenKeyboard")
 	static function updateOnscreenKeyboard():Int;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SAVE_STRUCT")
+	@:native("StopSaveStruct")
 	static function stopSaveStruct():Dynamic;
 
 	/**
@@ -2075,19 +2075,19 @@ extern class Misc {
 	 * If all checks have passed successfully, the return value will be set to whatever strtol(string, 0i64, 10); returns.  
 	 * ```
 	 */
-	@:native("STRING_TO_INT")
+	@:native("StringToInt")
 	static function stringToInt(string:String, outInteger:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_OCEANNOISEMINAMPLITUDE")
+	@:native("WaterOverrideSetOceannoiseminamplitude")
 	static function waterOverrideSetOceannoiseminamplitude(minAmplitude:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("USING_MISSION_CREATOR")
+	@:native("UsingMissionCreator")
 	static function usingMissionCreator(toggle:Bool):Dynamic;
 
 	/**
@@ -2096,13 +2096,13 @@ extern class Misc {
 	 * MISC::_A74802FB8D0B7814("CONTRAILS", 0);
 	 * ```
 	 */
-	@:native("UNLOAD_CLOUD_HAT")
+	@:native("UnloadCloudHat")
 	static function unloadCloudHat(name:String, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_FADE_IN")
+	@:native("WaterOverrideFadeIn")
 	static function waterOverrideFadeIn(p0:Float):Dynamic;
 
 	/**
@@ -2112,67 +2112,67 @@ extern class Misc {
 	 * NativeDB Introduced: v757
 	 * ```
 	 */
-	@:native("TOGGLE_SHOW_OPTIONAL_STUNT_JUMP_CAMERA")
+	@:native("ToggleShowOptionalStuntJumpCamera")
 	static function toggleShowOptionalStuntJumpCamera(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_OCEANWAVEAMPLITUDE")
+	@:native("WaterOverrideSetOceanwaveamplitude")
 	static function waterOverrideSetOceanwaveamplitude(amplitude:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_RIPPLEBUMPINESS")
+	@:native("WaterOverrideSetRipplebumpiness")
 	static function waterOverrideSetRipplebumpiness(bumpiness:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_OCEANWAVEMINAMPLITUDE")
+	@:native("WaterOverrideSetOceanwaveminamplitude")
 	static function waterOverrideSetOceanwaveminamplitude(minAmplitude:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_OCEANWAVEMAXAMPLITUDE")
+	@:native("WaterOverrideSetOceanwavemaxamplitude")
 	static function waterOverrideSetOceanwavemaxamplitude(maxAmplitude:Float):Dynamic;
 
 	/**
 	 * Returns whether the In-Game Pause Menu Launched the Benchmark Tests.
 	 */
-	@:native("UI_STARTED_END_USER_BENCHMARK")
+	@:native("UiStartedEndUserBenchmark")
 	static function uiStartedEndUserBenchmark():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_RIPPLEDISTURB")
+	@:native("WaterOverrideSetRippledisturb")
 	static function waterOverrideSetRippledisturb(disturb:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_RIPPLEMINBUMPINESS")
+	@:native("WaterOverrideSetRippleminbumpiness")
 	static function waterOverrideSetRippleminbumpiness(minBumpiness:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_FADE_OUT")
+	@:native("WaterOverrideFadeOut")
 	static function waterOverrideFadeOut(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_SHOREWAVEMAXAMPLITUDE")
+	@:native("WaterOverrideSetShorewavemaxamplitude")
 	static function waterOverrideSetShorewavemaxamplitude(maxAmplitude:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_SHOREWAVEMINAMPLITUDE")
+	@:native("WaterOverrideSetShorewaveminamplitude")
 	static function waterOverrideSetShorewaveminamplitude(minAmplitude:Float):Dynamic;
 
 	/**
@@ -2183,19 +2183,19 @@ extern class Misc {
 	 * 3.0f = Really Intense.  
 	 * ```
 	 */
-	@:native("WATER_OVERRIDE_SET_STRENGTH")
+	@:native("WaterOverrideSetStrength")
 	static function waterOverrideSetStrength(strength:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_RIPPLEMAXBUMPINESS")
+	@:native("WaterOverrideSetRipplemaxbumpiness")
 	static function waterOverrideSetRipplemaxbumpiness(maxBumpiness:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WATER_OVERRIDE_SET_SHOREWAVEAMPLITUDE")
+	@:native("WaterOverrideSetShorewaveamplitude")
 	static function waterOverrideSetShorewaveamplitude(amplitude:Float):Dynamic;
 
 }

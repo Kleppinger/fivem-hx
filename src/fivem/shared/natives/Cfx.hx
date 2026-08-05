@@ -14,7 +14,7 @@ extern class Cfx {
 	 * *   **conVarName**: The ConVar that changed.
 	 * *   **reserved**: Currently unused.
 	 */
-	@:native("ADD_CONVAR_CHANGE_LISTENER")
+	@:native("AddConvarChangeListener")
 	static function addConvarChangeListener(conVarFilter:String, handler:haxe.Constraints.Function):Int;
 
 	/**
@@ -26,7 +26,8 @@ extern class Cfx {
 	 * function StateBagChangeHandler(bagName: string, key: string, value: any, reserved: number, replicated: boolean);
 	 * ```
 	 * 
-	 * *   **bagName**: The internal bag ID for the state bag which changed. This is usually `player:Source`, `entity:NetID`
+	 * *   **bagName**: The internal bag ID for the state bag which changed. This is usually `player:Source`, `entity:NetID`
+
 	 *     or `localEntity:Handle`.
 	 * *   **key**: The changed key.
 	 * *   **value**: The new value stored at key. The old value is still stored in the state bag at the time this callback executes.
@@ -35,58 +36,59 @@ extern class Cfx {
 	 * 
 	 * At this time, the change handler can't opt to reject changes.
 	 * 
-	 * If bagName refers to an entity, use [GET_ENTITY_FROM_STATE_BAG_NAME](#\_0x4BDF1867) to get the entity handle
+	 * If bagName refers to an entity, use [GET_ENTITY_FROM_STATE_BAG_NAME](#\_0x4BDF1867) to get the entity handle
+
 	 * If bagName refers to a player, use [GET_PLAYER_FROM_STATE_BAG_NAME](#\_0xA56135E0) to get the player handle
 	 */
-	@:native("ADD_STATE_BAG_CHANGE_HANDLER")
+	@:native("AddStateBagChangeHandler")
 	static function addStateBagChangeHandler(keyFilter:String, bagFilter:String, handler:haxe.Constraints.Function):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_TRAIN_STOP_AT_STATIONS")
+	@:native("DoesTrainStopAtStations")
 	static function doesTrainStopAtStations(train:Dynamic):Bool;
 
 	/**
 	 * Cancels the currently executing event.
 	 */
-	@:native("CANCEL_EVENT")
+	@:native("CancelEvent")
 	static function cancelEvent():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DELETE_FUNCTION_REFERENCE")
+	@:native("DeleteFunctionReference")
 	static function deleteFunctionReference(referenceIdentity:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DUPLICATE_FUNCTION_REFERENCE")
+	@:native("DuplicateFunctionReference")
 	static function duplicateFunctionReference(referenceIdentity:String):String;
 
 	/**
 	 * Internal function for ensuring an entity has a state bag.
 	 */
-	@:native("ENSURE_ENTITY_STATE_BAG")
+	@:native("EnsureEntityStateBag")
 	static function ensureEntityStateBag(entity:Dynamic):Dynamic;
 
 	/**
 	 * Depending on your use case you may need to use `add_acl resource.<your_resource_name> command.<command_name> allow` to use this native in your resource.
 	 */
-	@:native("EXECUTE_COMMAND")
+	@:native("ExecuteCommand")
 	static function executeCommand(commandString:String):Dynamic;
 
 	/**
 	 * Returns the name of the currently executing resource.
 	 */
-	@:native("GET_CURRENT_RESOURCE_NAME")
+	@:native("GetCurrentResourceName")
 	static function getCurrentResourceName():String;
 
 	/**
 	 * Can be used to get a console variable of type `char*`, for example a string.
 	 */
-	@:native("GET_CONVAR")
+	@:native("GetConvar")
 	static function getConvar(varName:String, default_:String):String;
 
 	/**
@@ -99,51 +101,68 @@ extern class Cfx {
 	 * ### Coordinates need to be send unpacked (x,y,z)
 	 * 
 	 * ```lua
-	 * 
-	 * -- Define the allowed model hashes
-	 * local allowedModelHashes = { GetHashKey("p_crate03x"), GetHashKey("p_crate22x") }
-	 * 
-	 * -- Get the player's current coordinates
-	 * local playerCoords = GetEntityCoords(PlayerPedId())
-	 * 
-	 * -- Retrieve all entities of type Object (type 3) within a radius of 10.0 units
-	 * -- that match the allowed model hashes
-	 * -- and sort output entities by distance
-	 * local entities = GetEntitiesInRadius(playerCoords.x, playerCoords.y, playerCoords.z, 10.0, 3, true, allowedModelHashes)
-	 * 
-	 * -- Iterate through the list of entities and print their ids
-	 * for i = 1, #entities do
-	 *     local entity = entities[i]
-	 *     print(entity)
-	 * end
+	 * 
+
+	 * -- Define the allowed model hashes
+
+	 * local allowedModelHashes = { GetHashKey("p_crate03x"), GetHashKey("p_crate22x") }
+
+	 * 
+
+	 * -- Get the player's current coordinates
+
+	 * local playerCoords = GetEntityCoords(PlayerPedId())
+
+	 * 
+
+	 * -- Retrieve all entities of type Object (type 3) within a radius of 10.0 units
+
+	 * -- that match the allowed model hashes
+
+	 * -- and sort output entities by distance
+
+	 * local entities = GetEntitiesInRadius(playerCoords.x, playerCoords.y, playerCoords.z, 10.0, 3, true, allowedModelHashes)
+
+	 * 
+
+	 * -- Iterate through the list of entities and print their ids
+
+	 * for i = 1, #entities do
+
+	 *     local entity = entities[i]
+
+	 *     print(entity)
+
+	 * end
+
 	 * 
 	 * ```
 	 */
-	@:native("GET_ENTITIES_IN_RADIUS")
+	@:native("GetEntitiesInRadius")
 	static function getEntitiesInRadius(x:Float, y:Float, z:Float, radius:Float, entityType:Int, sortByDistance:Bool, models:Dynamic):Dynamic;
 
 	/**
 	 * Returns the entity handle for the specified state bag name. For use with [ADD_STATE_BAG_CHANGE_HANDLER](#\_0x5BA35AAF).
 	 */
-	@:native("GET_ENTITY_FROM_STATE_BAG_NAME")
+	@:native("GetEntityFromStateBagName")
 	static function getEntityFromStateBagName(bagName:String):Dynamic;
 
 	/**
 	 * Can be used to get a console variable casted back to `bool`.
 	 */
-	@:native("GET_CONVAR_BOOL")
+	@:native("GetConvarBool")
 	static function getConvarBool(varName:String, defaultValue:Bool):Bool;
 
 	/**
 	 * Can be used to get a console variable casted back to `int` (an integer value).
 	 */
-	@:native("GET_CONVAR_INT")
+	@:native("GetConvarInt")
 	static function getConvarInt(varName:String, default_:Int):Int;
 
 	/**
 	 * An internal function for converting a stack trace object to a string.
 	 */
-	@:native("FORMAT_STACK_TRACE")
+	@:native("FormatStackTrace")
 	static function formatStackTrace(traceData:Dynamic):String;
 
 	/**
@@ -178,13 +197,13 @@ extern class Cfx {
 	 * *   FXServer
 	 *     *   0
 	 */
-	@:native("GET_GAME_BUILD_NUMBER")
+	@:native("GetGameBuildNumber")
 	static function getGameBuildNumber():Int;
 
 	/**
 	 * This will have floating point inaccuracy.
 	 */
-	@:native("GET_CONVAR_FLOAT")
+	@:native("GetConvarFloat")
 	static function getConvarFloat(varName:String, defaultValue:Float):Float;
 
 	/**
@@ -192,18 +211,24 @@ extern class Cfx {
 	 * 
 	 * Possible values:
 	 * 
-	 * | Return value | Meaning                        |
-	 * | ------------ | ------------------------------ |
-	 * | `fxserver`   | Server-side code ('Duplicity') |
-	 * | `fivem`      | FiveM for GTA V                |
-	 * | `libertym`   | LibertyM for GTA IV            |
+	 * | Return value | Meaning                        |
+
+	 * | ------------ | ------------------------------ |
+
+	 * | `fxserver`   | Server-side code ('Duplicity') |
+
+	 * | `fivem`      | FiveM for GTA V                |
+
+	 * | `libertym`   | LibertyM for GTA IV            |
+
 	 * | `redm`       | RedM for Red Dead Redemption 2 |
 	 */
-	@:native("GET_GAME_NAME")
+	@:native("GetGameName")
 	static function getGameName():String;
 
 	/**
-	 * Returns a list of entity handles (script GUID) for all entities in the specified pool - the data returned is an array as
+	 * Returns a list of entity handles (script GUID) for all entities in the specified pool - the data returned is an array as
+
 	 * follows:
 	 * 
 	 * ```json
@@ -218,155 +243,181 @@ extern class Cfx {
 	 * *   `CVehicle`: Vehicles.
 	 * *   `CPickup`: Pickups.
 	 */
-	@:native("GET_GAME_POOL")
+	@:native("GetGamePool")
 	static function getGamePool(poolName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_INVOKING_RESOURCE")
+	@:native("GetInvokingResource")
 	static function getInvokingResource():String;
 
 	/**
-	 * Gets the amount of metadata values with the specified key existing in the specified resource's manifest.
+	 * Gets the amount of metadata values with the specified key existing in the specified resource's manifest.
+
 	 * See also: [Resource manifest](https://docs.fivem.net/docs/scripting-reference/resource-manifest/)
 	 */
-	@:native("GET_NUM_RESOURCE_METADATA")
+	@:native("GetNumResourceMetadata")
 	static function getNumResourceMetadata(resourceName:String, metadataKey:String):Int;
 
 	/**
 	 * On the server this will return the players source, on the client it will return the player handle.
 	 */
-	@:native("GET_PLAYER_FROM_STATE_BAG_NAME")
+	@:native("GetPlayerFromStateBagName")
 	static function getPlayerFromStateBagName(bagName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_RESOURCES")
+	@:native("GetNumResources")
 	static function getNumResources():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_INSTANCE_ID")
+	@:native("GetInstanceId")
 	static function getInstanceId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RESOURCE_BY_FIND_INDEX")
+	@:native("GetResourceByFindIndex")
 	static function getResourceByFindIndex(findIndex:Int):String;
 
 	/**
-	 * Returns all commands that are registered in the command system.
+	 * Returns all commands that are registered in the command system.
+
 	 * The data returned adheres to the following layout:
 	 * 
 	 * ```
-	 * [
-	 * {
-	 * "name": "cmdlist",
-	 * "resource": "resource",
-	 * "arity" = -1,
-	 * },
-	 * {
-	 * "name": "command1"
-	 * "resource": "resource_2",
-	 * "arity" = -1,
-	 * }
+	 * [
+
+	 * {
+
+	 * "name": "cmdlist",
+
+	 * "resource": "resource",
+
+	 * "arity" = -1,
+
+	 * },
+
+	 * {
+
+	 * "name": "command1"
+
+	 * "resource": "resource_2",
+
+	 * "arity" = -1,
+
+	 * }
+
 	 * ]
 	 * ```
 	 */
-	@:native("GET_REGISTERED_COMMANDS")
+	@:native("GetRegisteredCommands")
 	static function getRegisteredCommands():Dynamic;
 
 	/**
 	 * A getter for [SET_PLAYER_WEAPON_DEFENSE_MODIFIER](#\_0x2D83BC011CA14A3C).
 	 */
-	@:native("GET_PLAYER_WEAPON_DEFENSE_MODIFIER")
+	@:native("GetPlayerWeaponDefenseModifier")
 	static function getPlayerWeaponDefenseModifier(playerId:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TRAIN_STATE")
+	@:native("GetTrainState")
 	static function getTrainState(train:Dynamic):Int;
 
 	/**
 	 * A getter for [SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER](#\_0x4A3DC7ECCC321032).
 	 */
-	@:native("GET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER")
+	@:native("GetPlayerMeleeWeaponDamageModifier")
 	static function getPlayerMeleeWeaponDamageModifier(playerId:Dynamic):Float;
 
 	/**
 	 * A getter for [SET_PLAYER_WEAPON_DAMAGE_MODIFIER](#\_0xCE07B9F7817AADA3).
 	 */
-	@:native("GET_PLAYER_WEAPON_DAMAGE_MODIFIER")
+	@:native("GetPlayerWeaponDamageModifier")
 	static function getPlayerWeaponDamageModifier(playerId:Dynamic):Float;
 
 	/**
 	 * Returns the value of a state bag key.
 	 */
-	@:native("GET_STATE_BAG_VALUE")
+	@:native("GetStateBagValue")
 	static function getStateBagValue(bagName:String, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TRAIN_TRACK_INDEX")
+	@:native("GetTrainTrackIndex")
 	static function getTrainTrackIndex(train:Dynamic):Int;
 
 	/**
-	 * Returns all commands registered by the specified resource.
+	 * Returns all commands registered by the specified resource.
+
 	 * The data returned adheres to the following layout:
 	 * 
 	 * ```
-	 * [
-	 * {
-	 * "name": "cmdlist",
-	 * "resource": "example_resource",
-	 * "arity" = -1,
-	 * },
-	 * {
-	 * "name": "command1"
-	 * "resource": "example_resource2",
-	 * "arity" = -1,
-	 * }
+	 * [
+
+	 * {
+
+	 * "name": "cmdlist",
+
+	 * "resource": "example_resource",
+
+	 * "arity" = -1,
+
+	 * },
+
+	 * {
+
+	 * "name": "command1"
+
+	 * "resource": "example_resource2",
+
+	 * "arity" = -1,
+
+	 * }
+
 	 * ]
 	 * ```
 	 */
-	@:native("GET_RESOURCE_COMMANDS")
+	@:native("GetResourceCommands")
 	static function getResourceCommands(resource:String):Dynamic;
 
 	/**
 	 * A getter for [\_SET_PLAYER_WEAPON_DEFENSE_MODIFIER\_2](#\_0xBCFDE9EDE4CF27DC).
 	 */
-	@:native("GET_PLAYER_WEAPON_DEFENSE_MODIFIER_2")
+	@:native("GetPlayerWeaponDefenseModifier_2")
 	static function getPlayerWeaponDefenseModifier2(playerId:Dynamic):Float;
 
 	/**
-	 * Gets the metadata value at a specified key/index from a resource's manifest.
+	 * Gets the metadata value at a specified key/index from a resource's manifest.
+
 	 * See also: [Resource manifest](https://docs.fivem.net/docs/scripting-reference/resource-manifest/)
 	 */
-	@:native("GET_RESOURCE_METADATA")
+	@:native("GetResourceMetadata")
 	static function getResourceMetadata(resourceName:String, metadataKey:String, index:Int):String;
 
 	/**
 	 * Returns the current state of the specified resource.
 	 */
-	@:native("GET_RESOURCE_STATE")
+	@:native("GetResourceState")
 	static function getResourceState(resourceName:String):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATE_BAG_KEYS")
+	@:native("GetStateBagKeys")
 	static function getStateBagKeys(bagName:String):Dynamic;
 
 	/**
 	 * Gets the direction the train is facing
 	 */
-	@:native("GET_TRAIN_DIRECTION")
+	@:native("GetTrainDirection")
 	static function getTrainDirection(train:Dynamic):Bool;
 
 	/**
@@ -385,75 +436,77 @@ extern class Cfx {
 	 * *   trailer
 	 * *   train
 	 */
-	@:native("GET_VEHICLE_TYPE")
+	@:native("GetVehicleType")
 	static function getVehicleType(vehicle:Dynamic):String;
 
 	/**
 	 * Gets the trains desired speed.
 	 */
-	@:native("GET_TRAIN_CRUISE_SPEED")
+	@:native("GetTrainCruiseSpeed")
 	static function getTrainCruiseSpeed(train:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_STEERING_ANGLE")
+	@:native("GetVehicleSteeringAngle")
 	static function getVehicleSteeringAngle(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_HANDBRAKE")
+	@:native("GetVehicleHandbrake")
 	static function getVehicleHandbrake(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ACE_ALLOWED")
+	@:native("IsAceAllowed")
 	static function isAceAllowed(object:String):Bool;
 
 	/**
 	 * A getter for [FREEZE_ENTITY_POSITION](#\_0x428CA6DBD1094446).
 	 */
-	@:native("IS_ENTITY_POSITION_FROZEN")
+	@:native("IsEntityPositionFrozen")
 	static function isEntityPositionFrozen(entity:Dynamic):Dynamic;
 
 	/**
 	 * Gets whether or not this is the CitizenFX server.
 	 */
-	@:native("IS_DUPLICITY_VERSION")
+	@:native("IsDuplicityVersion")
 	static function isDuplicityVersion():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_ENGINE_STARTING")
+	@:native("IsVehicleEngineStarting")
 	static function isVehicleEngineStarting(vehicle:Dynamic):Bool;
 
 	/**
-	 * Reads the contents of a text file in a specified resource.
-	 * If executed on the client, this file has to be included in `files` in the resource manifest.
+	 * Reads the contents of a text file in a specified resource.
+
+	 * If executed on the client, this file has to be included in `files` in the resource manifest.
+
 	 * Example: `local data = LoadResourceFile("devtools", "data.json")`
 	 */
-	@:native("LOAD_RESOURCE_FILE")
+	@:native("LoadResourceFile")
 	static function loadResourceFile(resourceName:String, fileName:String):String;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PRINCIPAL_ACE_ALLOWED")
+	@:native("IsPrincipalAceAllowed")
 	static function isPrincipalAceAllowed(principal:String, object:String):Bool;
 
 	/**
 	 * Scope exit for profiler.
 	 */
-	@:native("PROFILER_EXIT_SCOPE")
+	@:native("ProfilerExitScope")
 	static function profilerExitScope():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_CONVAR_CHANGE_LISTENER")
+	@:native("RemoveConvarChangeListener")
 	static function removeConvarChangeListener(cookie:Int):Dynamic;
 
 	/**
@@ -467,31 +520,31 @@ extern class Cfx {
 	 * 
 	 * ![](https://i.imgur.com/TaCnG09.png)
 	 */
-	@:native("REGISTER_COMMAND")
+	@:native("RegisterCommand")
 	static function registerCommand(commandName:String, handler:haxe.Constraints.Function, restricted:Bool):Dynamic;
 
 	/**
 	 * Returns the owner ID of the specified entity.
 	 */
-	@:native("NETWORK_GET_ENTITY_OWNER")
+	@:native("NetworkGetEntityOwner")
 	static function networkGetEntityOwner(entity:Dynamic):Int;
 
 	/**
 	 * Returns true if the profiler is active.
 	 */
-	@:native("PROFILER_IS_RECORDING")
+	@:native("ProfilerIsRecording")
 	static function profilerIsRecording():Bool;
 
 	/**
 	 * Scope entry for profiler.
 	 */
-	@:native("PROFILER_ENTER_SCOPE")
+	@:native("ProfilerEnterScope")
 	static function profilerEnterScope(scopeName:String):Dynamic;
 
 	/**
 	 * An internal function which allows the current resource's HLL script runtimes to receive state for the specified event.
 	 */
-	@:native("REGISTER_RESOURCE_AS_EVENT_HANDLER")
+	@:native("RegisterResourceAsEventHandler")
 	static function registerResourceAsEventHandler(eventName:String):Dynamic;
 
 	/**
@@ -499,115 +552,115 @@ extern class Cfx {
 	 * 
 	 * Removes a handler for changes to a state bag.
 	 */
-	@:native("REMOVE_STATE_BAG_CHANGE_HANDLER")
+	@:native("RemoveStateBagChangeHandler")
 	static function removeStateBagChangeHandler(cookie:Int):Dynamic;
 
 	/**
 	 * Internal function for setting a state bag value.
 	 */
-	@:native("SET_STATE_BAG_VALUE")
+	@:native("SetStateBagValue")
 	static function setStateBagValue(bagName:String, keyName:String, valueData:String, valueLength:Int, replicated:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STATE_BAG_HAS_KEY")
+	@:native("StateBagHasKey")
 	static function stateBagHasKey(bagName:String, key:String):Dynamic;
 
 	/**
 	 * The backing function for TriggerEvent.
 	 */
-	@:native("TRIGGER_EVENT_INTERNAL")
+	@:native("TriggerEventInternal")
 	static function triggerEventInternal(eventName:String, eventPayload:String, payloadLength:Int):Dynamic;
 
 	/**
 	 * Returns whether or not the currently executing event was canceled.
 	 */
-	@:native("WAS_EVENT_CANCELED")
+	@:native("WasEventCanceled")
 	static function wasEventCanceled():Bool;
 
 	/**
 	 * Nonsynchronous [SET_RESOURCE_KVP_FLOAT](#\_0x9ADD2938) operation; see [FLUSH_RESOURCE_KVP](#\_0x5240DA5A).
 	 */
-	@:native("SET_RESOURCE_KVP_FLOAT_NO_SYNC")
+	@:native("SetResourceKvpFloatNoSync")
 	static function setResourceKvpFloatNoSync(key:String, value:Float):Dynamic;
 
 	/**
 	 * A getter for [SET_RESOURCE_KVP](#\_0x21C7A35B).
 	 */
-	@:native("GET_RESOURCE_KVP_STRING")
+	@:native("GetResourceKvpString")
 	static function getResourceKvpString(key:String):String;
 
 	/**
 	 * Nonsynchronous [SET_RESOURCE_KVP_INT](#\_0x6A2B1E8) operation; see [FLUSH_RESOURCE_KVP](#\_0x5240DA5A).
 	 */
-	@:native("SET_RESOURCE_KVP_INT_NO_SYNC")
+	@:native("SetResourceKvpIntNoSync")
 	static function setResourceKvpIntNoSync(key:String, value:Int):Dynamic;
 
 	/**
 	 * A setter for [GET_RESOURCE_KVP_STRING](#\_0x5240DA5A).
 	 */
-	@:native("SET_RESOURCE_KVP")
+	@:native("SetResourceKvp")
 	static function setResourceKvp(key:String, value:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_FIND_KVP")
+	@:native("EndFindKvp")
 	static function endFindKvp(handle:Int):Dynamic;
 
 	/**
 	 * A getter for [SET_RESOURCE_KVP_FLOAT](#\_0x9ADD2938).
 	 */
-	@:native("GET_RESOURCE_KVP_FLOAT")
+	@:native("GetResourceKvpFloat")
 	static function getResourceKvpFloat(key:String):Float;
 
 	/**
 	 * 
 	 */
-	@:native("DELETE_RESOURCE_KVP")
+	@:native("DeleteResourceKvp")
 	static function deleteResourceKvp(key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FIND_KVP")
+	@:native("FindKvp")
 	static function findKvp(handle:Int):String;
 
 	/**
 	 * A setter for [GET_RESOURCE_KVP_FLOAT](#\_0x35BDCEEA).
 	 */
-	@:native("SET_RESOURCE_KVP_FLOAT")
+	@:native("SetResourceKvpFloat")
 	static function setResourceKvpFloat(key:String, value:Float):Dynamic;
 
 	/**
 	 * Nonsynchronous [SET_RESOURCE_KVP](#\_0x21C7A35B) operation; see [FLUSH_RESOURCE_KVP](#\_0x5240DA5A).
 	 */
-	@:native("SET_RESOURCE_KVP_NO_SYNC")
+	@:native("SetResourceKvpNoSync")
 	static function setResourceKvpNoSync(key:String, value:String):Dynamic;
 
 	/**
 	 * Nonsynchronous [DELETE_RESOURCE_KVP](#\_0x7389B5DF) operation; see [FLUSH_RESOURCE_KVP](#\_0x5240DA5A).
 	 */
-	@:native("DELETE_RESOURCE_KVP_NO_SYNC")
+	@:native("DeleteResourceKvpNoSync")
 	static function deleteResourceKvpNoSync(key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_FIND_KVP")
+	@:native("StartFindKvp")
 	static function startFindKvp(prefix:String):Int;
 
 	/**
 	 * A getter for [SET_RESOURCE_KVP_INT](#\_0x6A2B1E8).
 	 */
-	@:native("GET_RESOURCE_KVP_INT")
+	@:native("GetResourceKvpInt")
 	static function getResourceKvpInt(key:String):Int;
 
 	/**
 	 * A setter for [GET_RESOURCE_KVP_INT](#\_0x557B586A).
 	 */
-	@:native("SET_RESOURCE_KVP_INT")
+	@:native("SetResourceKvpInt")
 	static function setResourceKvpInt(key:String, value:Int):Dynamic;
 
 }

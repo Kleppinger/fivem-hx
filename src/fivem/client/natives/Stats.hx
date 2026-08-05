@@ -5,13 +5,13 @@ extern class Stats {
 	/**
 	 * 
 	 */
-	@:native("GET_PACKED_BOOL_STAT_KEY")
+	@:native("GetPackedBoolStatKey")
 	static function getPackedBoolStatKey(index:Int, spStat:Bool, charStat:Bool, character:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_HANDLE")
+	@:native("Leaderboards2ReadByHandle")
 	static function leaderboards2ReadByHandle(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
@@ -33,7 +33,7 @@ extern class Stats {
 	 * "_HEIST3TATTOOSTAT_BOOL"
 	 * ```
 	 */
-	@:native("_GET_NGSTAT_BOOL_HASH")
+	@:native("GetNgstatBoolHash")
 	static function GetNgstatBoolHash(index:Int, spStat:Bool, charStat:Bool, character:Int, section:String):Int;
 
 	/**
@@ -58,205 +58,205 @@ extern class Stats {
 	 * "_CASINOHSTPSTAT_INT"
 	 * ```
 	 */
-	@:native("_GET_NGSTAT_INT_HASH")
+	@:native("GetNgstatIntHash")
 	static function GetNgstatIntHash(index:Int, spStat:Bool, charStat:Bool, character:Int, section:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_RADIUS")
+	@:native("Leaderboards2ReadByRadius")
 	static function leaderboards2ReadByRadius(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PACKED_TU_BOOL_STAT_KEY")
+	@:native("GetPackedTuBoolStatKey")
 	static function getPackedTuBoolStatKey(index:Int, spStat:Bool, charStat:Bool, character:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PACKED_INT_STAT_KEY")
+	@:native("GetPackedIntStatKey")
 	static function getPackedIntStatKey(index:Int, spStat:Bool, charStat:Bool, character:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_LEADERBOARDS2_READ_BY_PLATFORM")
+	@:native("Leaderboards2ReadByPlatform")
 	static function Leaderboards2ReadByPlatform(p0:Dynamic, gamerHandleCsv:String, platformName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PACKED_TU_INT_STAT_KEY")
+	@:native("GetPackedTuIntStatKey")
 	static function getPackedTuIntStatKey(index:Int, spStat:Bool, charStat:Bool, character:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_HIRED_LIMO")
+	@:native("HiredLimo")
 	static function HiredLimo(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_RANK")
+	@:native("Leaderboards2ReadByRank")
 	static function leaderboards2ReadByRank(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_SCORE_INT")
+	@:native("Leaderboards2ReadByScoreInt")
 	static function leaderboards2ReadByScoreInt(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_ROW")
+	@:native("Leaderboards2ReadByRow")
 	static function leaderboards2ReadByRow(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_WRITE_DATA")
+	@:native("Leaderboards2WriteData")
 	static function leaderboards2WriteData(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_BY_SCORE_FLOAT")
+	@:native("Leaderboards2ReadByScoreFloat")
 	static function leaderboards2ReadByScoreFloat(p0:Dynamic, p1:Float, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_CACHE_DATA_ROW")
+	@:native("LeaderboardsCacheDataRow")
 	static function leaderboardsCacheDataRow(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_RANK_PREDICTION")
+	@:native("Leaderboards2ReadRankPrediction")
 	static function leaderboards2ReadRankPrediction(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_LEADERBOARDS_DEATHS")
+	@:native("LeaderboardsDeaths")
 	static function LeaderboardsDeaths(statName:Int, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_CLEAR_CACHE_DATA")
+	@:native("LeaderboardsClearCacheData")
 	static function leaderboardsClearCacheData():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_CACHE_TIME")
+	@:native("LeaderboardsGetCacheTime")
 	static function leaderboardsGetCacheTime(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_READ_FRIENDS_BY_ROW")
+	@:native("Leaderboards2ReadFriendsByRow")
 	static function leaderboards2ReadFriendsByRow(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Bool, p4:Dynamic, p5:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_CACHE_DATA_ROW")
+	@:native("LeaderboardsGetCacheDataRow")
 	static function leaderboardsGetCacheDataRow(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_CACHE_NUMBER_OF_ROWS")
+	@:native("LeaderboardsGetCacheNumberOfRows")
 	static function leaderboardsGetCacheNumberOfRows(p0:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_READ_CLEAR_ALL")
+	@:native("LeaderboardsReadClearAll")
 	static function leaderboardsReadClearAll():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS2_WRITE_DATA_FOR_EVENT_TYPE")
+	@:native("Leaderboards2WriteDataForEventType")
 	static function leaderboards2WriteDataForEventType(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_COLUMN_TYPE")
+	@:native("LeaderboardsGetColumnType")
 	static function leaderboardsGetColumnType(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_READ_CLEAR")
+	@:native("LeaderboardsReadClear")
 	static function leaderboardsReadClear(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_READ_ANY_PENDING")
+	@:native("LeaderboardsReadAnyPending")
 	static function leaderboardsReadAnyPending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_CACHE_EXISTS")
+	@:native("LeaderboardsGetCacheExists")
 	static function leaderboardsGetCacheExists(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_READ_SUCCESSFUL")
+	@:native("LeaderboardsReadSuccessful")
 	static function leaderboardsReadSuccessful(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_READ_PENDING")
+	@:native("LeaderboardsReadPending")
 	static function leaderboardsReadPending(p0:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_WRITE_ADD_COLUMN")
+	@:native("LeaderboardsWriteAddColumn")
 	static function leaderboardsWriteAddColumn(p0:Dynamic, p1:Dynamic, p2:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_COLUMN_ID")
+	@:native("LeaderboardsGetColumnId")
 	static function leaderboardsGetColumnId(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_GET_NUMBER_OF_COLUMNS")
+	@:native("LeaderboardsGetNumberOfColumns")
 	static function leaderboardsGetNumberOfColumns(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("LEADERBOARDS_WRITE_ADD_COLUMN_LONG")
+	@:native("LeaderboardsWriteAddColumnLong")
 	static function leaderboardsWriteAddColumnLong(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ORDERED_BOSS_VEHICLE")
+	@:native("OrderedBossVehicle")
 	static function OrderedBossVehicle(p0:Dynamic, p1:Dynamic, vehicleHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_ACQUIRED_HIDDEN_PACKAGE")
+	@:native("PlaystatsAcquiredHiddenPackage")
 	static function playstatsAcquiredHiddenPackage(p0:Dynamic):Dynamic;
 
 	/**
@@ -264,7 +264,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ARCADEGAME")
+	@:native("PlaystatsArcadegame")
 	static function PlaystatsArcadegame(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -272,13 +272,13 @@ extern class Stats {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ARENA_WAR_SPECTATOR")
+	@:native("PlaystatsArenaWarSpectator")
 	static function PlaystatsArenaWarSpectator(p0:Int, p1:Int, p2:Int, p3:Int, p4:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_ACTIVITY_DONE")
+	@:native("PlaystatsActivityDone")
 	static function playstatsActivityDone(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -286,31 +286,31 @@ extern class Stats {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ARENA_WARS_ENDED")
+	@:native("PlaystatsArenaWarsEnded")
 	static function PlaystatsArenaWarsEnded(data:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_AWARD_XP")
+	@:native("PlaystatsAwardXp")
 	static function playstatsAwardXp(amount:Int, type:Int, category:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_BAN_ALERT")
+	@:native("PlaystatsBanAlert")
 	static function PlaystatsBanAlert(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_BACKGROUND_SCRIPT_ACTION")
+	@:native("PlaystatsBackgroundScriptAction")
 	static function playstatsBackgroundScriptAction(action:String, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_AWARD_BADSPORT")
+	@:native("PlaystatsAwardBadsport")
 	static function PlaystatsAwardBadsport(id:Int):Dynamic;
 
 	/**
@@ -318,7 +318,7 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CARCLUB_PRIZE")
+	@:native("PlaystatsCarclubPrize")
 	static function PlaystatsCarclubPrize(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -326,13 +326,13 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CARCLUB_CHALLENGE")
+	@:native("PlaystatsCarclubChallenge")
 	static function PlaystatsCarclubChallenge(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_BUY_CONTRABAND")
+	@:native("PlaystatsBuyContraband")
 	static function PlaystatsBuyContraband(data:Dynamic):Dynamic;
 
 	/**
@@ -340,7 +340,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_CHIP")
+	@:native("PlaystatsCasinoChip")
 	static function PlaystatsCasinoChip(p0:Dynamic):Dynamic;
 
 	/**
@@ -348,7 +348,7 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CARCLUB_POINTS")
+	@:native("PlaystatsCarclubPoints")
 	static function PlaystatsCarclubPoints(p0:Dynamic):Dynamic;
 
 	/**
@@ -356,7 +356,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_INSIDETRACK_LIGHT")
+	@:native("PlaystatsCasinoInsidetrackLight")
 	static function PlaystatsCasinoInsidetrackLight(p0:Dynamic):Dynamic;
 
 	/**
@@ -364,7 +364,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_MISSION_ENDED")
+	@:native("PlaystatsCasinoMissionEnded")
 	static function PlaystatsCasinoMissionEnded(data:Dynamic):Dynamic;
 
 	/**
@@ -372,7 +372,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_BLACKJACK")
+	@:native("PlaystatsCasinoBlackjack")
 	static function PlaystatsCasinoBlackjack(p0:Dynamic):Dynamic;
 
 	/**
@@ -380,7 +380,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_ROULETTE_LIGHT")
+	@:native("PlaystatsCasinoRouletteLight")
 	static function PlaystatsCasinoRouletteLight(p0:Dynamic):Dynamic;
 
 	/**
@@ -388,7 +388,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_INSIDETRACK")
+	@:native("PlaystatsCasinoInsidetrack")
 	static function PlaystatsCasinoInsidetrack(p0:Dynamic):Dynamic;
 
 	/**
@@ -396,7 +396,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_SLOTMACHINE")
+	@:native("PlaystatsCasinoSlotmachine")
 	static function PlaystatsCasinoSlotmachine(p0:Dynamic):Dynamic;
 
 	/**
@@ -404,7 +404,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_BLACKJACK_LIGHT")
+	@:native("PlaystatsCasinoBlackjackLight")
 	static function PlaystatsCasinoBlackjackLight(p0:Dynamic):Dynamic;
 
 	/**
@@ -412,7 +412,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_ROULETTE")
+	@:native("PlaystatsCasinoRoulette")
 	static function PlaystatsCasinoRoulette(p0:Dynamic):Dynamic;
 
 	/**
@@ -420,7 +420,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_THREECARDPOKER")
+	@:native("PlaystatsCasinoThreecardpoker")
 	static function PlaystatsCasinoThreecardpoker(p0:Dynamic):Dynamic;
 
 	/**
@@ -428,7 +428,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_SLOTMACHINE_LIGHT")
+	@:native("PlaystatsCasinoSlotmachineLight")
 	static function PlaystatsCasinoSlotmachineLight(p0:Dynamic):Dynamic;
 
 	/**
@@ -436,13 +436,13 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_LUCKYSEVEN")
+	@:native("PlaystatsCasinoLuckyseven")
 	static function PlaystatsCasinoLuckyseven(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_CLOTH_CHANGE")
+	@:native("PlaystatsClothChange")
 	static function playstatsClothChange(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -450,7 +450,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_STORY_MISSION_ENDED")
+	@:native("PlaystatsCasinoStoryMissionEnded")
 	static function PlaystatsCasinoStoryMissionEnded(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -458,25 +458,25 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_CASINO_THREECARDPOKER_LIGHT")
+	@:native("PlaystatsCasinoThreecardpokerLight")
 	static function PlaystatsCasinoThreecardpokerLight(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_CHANGE_MC_EMBLEM")
+	@:native("PlaystatsChangeMcEmblem")
 	static function PlaystatsChangeMcEmblem(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_CRATE_CREATED")
+	@:native("PlaystatsCrateCreated")
 	static function playstatsCrateCreated(p0:Float, p1:Float, p2:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_CHEAT_APPLIED")
+	@:native("PlaystatsCheatApplied")
 	static function playstatsCheatApplied(cheat:String):Dynamic;
 
 	/**
@@ -484,19 +484,19 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_COLLECTIBLE")
+	@:native("PlaystatsCollectible")
 	static function PlaystatsCollectible(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_DIRECTOR_MODE")
+	@:native("PlaystatsDirectorMode")
 	static function PlaystatsDirectorMode(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_COPY_RANK_INTO_NEW_SLOT")
+	@:native("PlaystatsCopyRankIntoNewSlot")
 	static function PlaystatsCopyRankIntoNewSlot(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic):Dynamic;
 
 	/**
@@ -505,13 +505,13 @@ extern class Stats {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("PLAYSTATS_CRATE_DROP_MISSION_DONE")
+	@:native("PlaystatsCrateDropMissionDone")
 	static function playstatsCrateDropMissionDone(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_DEFEND_CONTRABAND")
+	@:native("PlaystatsDefendContraband")
 	static function PlaystatsDefendContraband(data:Dynamic):Dynamic;
 
 	/**
@@ -519,7 +519,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_PLAYSTATS_DAR_MISSION_END")
+	@:native("PlaystatsDarMissionEnd")
 	static function PlaystatsDarMissionEnd(data:Dynamic):Dynamic;
 
 	/**
@@ -527,13 +527,13 @@ extern class Stats {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_PLAYSTATS_DRONE_USAGE")
+	@:native("PlaystatsDroneUsage")
 	static function PlaystatsDroneUsage(p0:Int, p1:Int, p2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_DUPE_DETECTION")
+	@:native("PlaystatsDupeDetection")
 	static function PlaystatsDupeDetection(data:Dynamic):Dynamic;
 
 	/**
@@ -541,7 +541,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ENTER_SESSION_PACK")
+	@:native("PlaystatsEnterSessionPack")
 	static function PlaystatsEnterSessionPack(data:Dynamic):Dynamic;
 
 	/**
@@ -549,13 +549,13 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_EXTRA_EVENT")
+	@:native("PlaystatsExtraEvent")
 	static function PlaystatsExtraEvent(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_EARNED_MC_POINTS")
+	@:native("PlaystatsEarnedMcPoints")
 	static function PlaystatsEarnedMcPoints(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -563,25 +563,25 @@ extern class Stats {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_PLAYSTATS_H2_INSTANCE_END")
+	@:native("PlaystatsH2InstanceEnd")
 	static function PlaystatsH2InstanceEnd(data:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_FRIEND_ACTIVITY")
+	@:native("PlaystatsFriendActivity")
 	static function playstatsFriendActivity(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_HEIST_SAVE_CHEAT")
+	@:native("PlaystatsHeistSaveCheat")
 	static function playstatsHeistSaveCheat(hash:Int, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_GUNRUN_MISSION_ENDED")
+	@:native("PlaystatsGunrunMissionEnded")
 	static function PlaystatsGunrunMissionEnded(data:Dynamic):Dynamic;
 
 	/**
@@ -589,13 +589,13 @@ extern class Stats {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_PLAYSTATS_H2_FMPREP_END")
+	@:native("PlaystatsH2FmprepEnd")
 	static function PlaystatsH2FmprepEnd(data:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_IMPORT_EXPORT_MISSION_DONE")
+	@:native("PlaystatsImportExportMissionDone")
 	static function playstatsImportExportMissionDone(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -603,7 +603,7 @@ extern class Stats {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_PLAYSTATS_INVENTORY")
+	@:native("PlaystatsInventory")
 	static function PlaystatsInventory(p0:Dynamic):Dynamic;
 
 	/**
@@ -611,19 +611,19 @@ extern class Stats {
 	 * longest time being ilde?  
 	 * ```
 	 */
-	@:native("PLAYSTATS_IDLE_KICK")
+	@:native("PlaystatsIdleKick")
 	static function playstatsIdleKick(time:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_HOLD_UP_MISSION_DONE")
+	@:native("PlaystatsHoldUpMissionDone")
 	static function playstatsHoldUpMissionDone(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_LEAVE_JOB_CHAIN")
+	@:native("PlaystatsLeaveJobChain")
 	static function playstatsLeaveJobChain(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -634,31 +634,31 @@ extern class Stats {
 	 * NativeDB Removed Parameter 7: Any p6
 	 * ```
 	 */
-	@:native("PLAYSTATS_MATCH_STARTED")
+	@:native("PlaystatsMatchStarted")
 	static function playstatsMatchStarted(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_MISSION_CHECKPOINT")
+	@:native("PlaystatsMissionCheckpoint")
 	static function playstatsMissionCheckpoint(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_MISSION_OVER")
+	@:native("PlaystatsMissionOver")
 	static function playstatsMissionOver(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Bool, p4:Bool, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_MISSION_STARTED")
+	@:native("PlaystatsMissionStarted")
 	static function playstatsMissionStarted(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_JOB_BEND")
+	@:native("PlaystatsJobBend")
 	static function playstatsJobBend(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -666,13 +666,13 @@ extern class Stats {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_PLAYSTATS_PEGASAIRCRAFT")
+	@:native("PlaystatsPegasaircraft")
 	static function PlaystatsPegasaircraft(modelHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_NPC_INVITE")
+	@:native("PlaystatsNpcInvite")
 	static function playstatsNpcInvite(p0:Dynamic):Dynamic;
 
 	/**
@@ -680,49 +680,49 @@ extern class Stats {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_PLAYSTATS_PASSIVE_MODE")
+	@:native("PlaystatsPassiveMode")
 	static function PlaystatsPassiveMode(p0:Bool, p1:Int, p2:Int, p3:Int):Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("PLAYSTATS_ODDJOB_DONE")
+	@:native("PlaystatsOddjobDone")
 	static function playstatsOddjobDone(p0:Dynamic, p1:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_RANDOM_MISSION_DONE")
+	@:native("PlaystatsRandomMissionDone")
 	static function playstatsRandomMissionDone(name:String, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_PROP_CHANGE")
+	@:native("PlaystatsPropChange")
 	static function playstatsPropChange(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_PI_MENU_HIDE_SETTINGS")
+	@:native("PlaystatsPiMenuHideSettings")
 	static function PlaystatsPiMenuHideSettings(data:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_QUICKFIX_TOOL")
+	@:native("PlaystatsQuickfixTool")
 	static function playstatsQuickfixTool(element:Int, item:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_RECOVER_CONTRABAND")
+	@:native("PlaystatsRecoverContraband")
 	static function PlaystatsRecoverContraband(data:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_RACE_CHECKPOINT")
+	@:native("PlaystatsRaceCheckpoint")
 	static function playstatsRaceCheckpoint(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -735,19 +735,19 @@ extern class Stats {
 	 * NativeDB Removed Parameter 10: Any p9
 	 * ```
 	 */
-	@:native("PLAYSTATS_RACE_TO_POINT_MISSION_DONE")
+	@:native("PlaystatsRaceToPointMissionDone")
 	static function playstatsRaceToPointMissionDone(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_ROS_BET")
+	@:native("PlaystatsRosBet")
 	static function playstatsRosBet(amount:Int, act:Int, player:Dynamic, cm:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_RANK_UP")
+	@:native("PlaystatsRankUp")
 	static function playstatsRankUp(rank:Int):Dynamic;
 
 	/**
@@ -755,25 +755,25 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ROBBERY_FINALE")
+	@:native("PlaystatsRobberyFinale")
 	static function PlaystatsRobberyFinale(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_SHOP_ITEM")
+	@:native("PlaystatsShopItem")
 	static function playstatsShopItem(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * Sets a byte that is then used in session_host and session_join metrics when hosting or joining a session
 	 */
-	@:native("PLAYSTATS_SET_JOIN_TYPE")
+	@:native("PlaystatsSetJoinType")
 	static function playstatsSetJoinType(joinType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT")
+	@:native("PlaystatsSpentPiCustomLoadout")
 	static function PlaystatsSpentPiCustomLoadout(amount:Int):Dynamic;
 
 	/**
@@ -781,13 +781,13 @@ extern class Stats {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_PLAYSTATS_ROBBERY_PREP")
+	@:native("PlaystatsRobberyPrep")
 	static function PlaystatsRobberyPrep(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_PLAYSTATS_SELL_CONTRABAND")
+	@:native("PlaystatsSellContraband")
 	static function PlaystatsSellContraband(data:Dynamic):Dynamic;
 
 	/**
@@ -795,7 +795,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_PLAYSTATS_SPECTATOR_WHEEL_SPIN")
+	@:native("PlaystatsSpectatorWheelSpin")
 	static function PlaystatsSpectatorWheelSpin(p0:Int, p1:Int, p2:Int, p3:Int):Dynamic;
 
 	/**
@@ -803,7 +803,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_PLAYSTATS_SMUG_MISSION_ENDED")
+	@:native("PlaystatsSmugMissionEnded")
 	static function PlaystatsSmugMissionEnded(data:Dynamic):Dynamic;
 
 	/**
@@ -811,7 +811,7 @@ extern class Stats {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_PLAYSTATS_STONE_HATCHET_END")
+	@:native("PlaystatsStoneHatchetEnd")
 	static function PlaystatsStoneHatchetEnd(data:Dynamic):Dynamic;
 
 	/**
@@ -819,19 +819,19 @@ extern class Stats {
 	 * PLAYSTATS_START_INVITE_DESPAWNING?
 	 * ```
 	 */
-	@:native("_PLAYSTATS_START_OFFLINE_MODE")
+	@:native("PlaystatsStartOfflineMode")
 	static function PlaystatsStartOfflineMode():Dynamic;
 
 	/**
 	 * Disallows CEventNetworkStuntPerformed to be triggered (Resets [`PLAYSTATS_START_TRACKING_STUNTS`](#\_0x928DBFB892638EF3)).
 	 */
-	@:native("PLAYSTATS_STOP_TRACKING_STUNTS")
+	@:native("PlaystatsStopTrackingStunts")
 	static function playstatsStopTrackingStunts():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PROFILE_SETTING_PROLOGUE_COMPLETE")
+	@:native("SetProfileSettingPrologueComplete")
 	static function setProfileSettingPrologueComplete():Dynamic;
 
 	/**
@@ -853,37 +853,37 @@ extern class Stats {
 	 * };
 	 * ```
 	 */
-	@:native("PLAYSTATS_START_TRACKING_STUNTS")
+	@:native("PlaystatsStartTrackingStunts")
 	static function playstatsStartTrackingStunts():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_WEBSITE_VISITED")
+	@:native("PlaystatsWebsiteVisited")
 	static function playstatsWebsiteVisited(scaleformHash:Int, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_BOOL")
+	@:native("StatGetBool")
 	static function statGetBool(statHash:Int, outValue:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PRESENCE_EVENT_UPDATESTAT_INT")
+	@:native("PresenceEventUpdatestatInt")
 	static function presenceEventUpdatestatInt(statHash:Int, value:Int, p2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_STAT_GET_CANCEL_SAVE_MIGRATION_STATUS")
+	@:native("StatGetCancelSaveMigrationStatus")
 	static function StatGetCancelSaveMigrationStatus():Int;
 
 	/**
 	 * 
 	 */
-	@:native("PLAYSTATS_WEAPON_MODE_CHANGE")
+	@:native("PlaystatsWeaponModeChange")
 	static function playstatsWeaponModeChange(weaponHash:Int, componentHashTo:Int, componentHashFrom:Int):Dynamic;
 
 	/**
@@ -892,13 +892,13 @@ extern class Stats {
 	 * SET_*
 	 * ```
 	 */
-	@:native("_SET_HAS_CONTENT_UNLOCKS_FLAGS")
+	@:native("SetHasContentUnlocksFlags")
 	static function SetHasContentUnlocksFlags(value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_MASKED_INT")
+	@:native("StatGetMaskedInt")
 	static function statGetMaskedInt(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Bool;
 
 	/**
@@ -909,19 +909,19 @@ extern class Stats {
 	 * }
 	 * ```
 	 */
-	@:native("STAT_CLEAR_SLOT_FOR_RELOAD")
+	@:native("StatClearSlotForReload")
 	static function statClearSlotForReload(statSlot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PRESENCE_EVENT_UPDATESTAT_FLOAT")
+	@:native("PresenceEventUpdatestatFloat")
 	static function presenceEventUpdatestatFloat(statHash:Int, value:Float, p2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_DELETE_SLOT")
+	@:native("StatDeleteSlot")
 	static function statDeleteSlot(p0:Dynamic):Dynamic;
 
 	/**
@@ -929,7 +929,7 @@ extern class Stats {
 	 * p2 appears to always be -1  
 	 * ```
 	 */
-	@:native("STAT_GET_INT")
+	@:native("StatGetInt")
 	static function statGetInt(statHash:Int, outValue:Dynamic, p2:Int):Bool;
 
 	/**
@@ -937,7 +937,7 @@ extern class Stats {
 	 * p2 - Default value? Seems to be -1 most of the time.  
 	 * ```
 	 */
-	@:native("STAT_GET_BOOL_MASKED")
+	@:native("StatGetBoolMasked")
 	static function statGetBoolMasked(statName:Int, mask:Int, p2:Int):Bool;
 
 	/**
@@ -945,31 +945,31 @@ extern class Stats {
 	 * Sets profile setting 501
 	 * ```
 	 */
-	@:native("_SET_SAVE_MIGRATION_TRANSACTION_ID")
+	@:native("SetSaveMigrationTransactionId")
 	static function SetSaveMigrationTransactionId(transactionId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_FLOAT")
+	@:native("StatGetFloat")
 	static function statGetFloat(statHash:Int, outValue:Dynamic, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_NUMBER_OF_HOURS")
+	@:native("StatGetNumberOfHours")
 	static function statGetNumberOfHours(statName:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_NUMBER_OF_MINUTES")
+	@:native("StatGetNumberOfMinutes")
 	static function statGetNumberOfMinutes(statName:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_DATE")
+	@:native("StatGetDate")
 	static function statGetDate(statHash:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -977,25 +977,25 @@ extern class Stats {
 	 * Needs more research. Possibly used to calculate the "mask" when calling "STAT_SET_BOOL_MASKED"?  
 	 * ```
 	 */
-	@:native("_STAT_GET_PACKED_BOOL_MASK")
+	@:native("StatGetPackedBoolMask")
 	static function StatGetPackedBoolMask(p0:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_NUMBER_OF_DAYS")
+	@:native("StatGetNumberOfDays")
 	static function statGetNumberOfDays(statName:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_POS")
+	@:native("StatGetPos")
 	static function statGetPos(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_LICENSE_PLATE")
+	@:native("StatGetLicensePlate")
 	static function statGetLicensePlate(statName:Int):String;
 
 	/**
@@ -1003,13 +1003,13 @@ extern class Stats {
 	 * Needs more research. Possibly used to calculate the "mask" when calling "STAT_SET_MASKED_INT"?  
 	 * ```
 	 */
-	@:native("_STAT_GET_PACKED_INT_MASK")
+	@:native("StatGetPackedIntMask")
 	static function StatGetPackedIntMask(p0:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_NUMBER_OF_SECONDS")
+	@:native("StatGetNumberOfSeconds")
 	static function statGetNumberOfSeconds(statName:Int):Int;
 
 	/**
@@ -1017,25 +1017,25 @@ extern class Stats {
 	 * p1 is always -1 in the script files  
 	 * ```
 	 */
-	@:native("STAT_GET_STRING")
+	@:native("StatGetString")
 	static function statGetString(statHash:Int, p1:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_GET_SAVE_MIGRATION_STATUS")
+	@:native("StatGetSaveMigrationStatus")
 	static function statGetSaveMigrationStatus(data:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_LOAD")
+	@:native("StatLoad")
 	static function statLoad(p0:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK_STATUS")
+	@:native("StatGetSaveMigrationConsumeContentUnlockStatus")
 	static function StatGetSaveMigrationConsumeContentUnlockStatus(p0:Dynamic):Int;
 
 	/**
@@ -1043,7 +1043,7 @@ extern class Stats {
 	 * Needs more research. Seems to return "STAT_UNKNOWN" if no such user id exists.  
 	 * ```
 	 */
-	@:native("STAT_GET_USER_ID")
+	@:native("StatGetUserId")
 	static function statGetUserId(p0:Dynamic):String;
 
 	/**
@@ -1051,31 +1051,31 @@ extern class Stats {
 	 * platformName must be one of the following: ps3, xbox360, ps4, xboxone
 	 * ```
 	 */
-	@:native("_STAT_MIGRATE_SAVE")
+	@:native("StatMigrateSave")
 	static function StatMigrateSave(platformName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_INCREMENT")
+	@:native("StatIncrement")
 	static function statIncrement(statName:Int, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_STAT_SAVE_MIGRATION_CANCEL")
+	@:native("StatSaveMigrationCancel")
 	static function StatSaveMigrationCancel():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_LOAD_PENDING")
+	@:native("StatLoadPending")
 	static function statLoadPending(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SAVE_PENDING")
+	@:native("StatSavePending")
 	static function statSavePending():Bool;
 
 	/**
@@ -1083,37 +1083,37 @@ extern class Stats {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("STAT_SAVE")
+	@:native("StatSave")
 	static function statSave(p0:Int, p1:Bool, p2:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SAVE_MIGRATION_STATUS_START")
+	@:native("StatSaveMigrationStatusStart")
 	static function statSaveMigrationStatusStart():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_STAT_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK")
+	@:native("StatSaveMigrationConsumeContentUnlock")
 	static function StatSaveMigrationConsumeContentUnlock(contentId:Int, srcPlatform:String, srcGamerHandle:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SAVE_PENDING_OR_REQUESTED")
+	@:native("StatSavePendingOrRequested")
 	static function statSavePendingOrRequested():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_BLOCK_SAVES")
+	@:native("StatSetBlockSaves")
 	static function statSetBlockSaves(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_CHEAT_IS_ACTIVE")
+	@:native("StatSetCheatIsActive")
 	static function statSetCheatIsActive():Dynamic;
 
 	/**
@@ -1130,13 +1130,13 @@ extern class Stats {
 	 * The decompiled scripts use TIME::GET_POSIX_TIME to fill this structure.  
 	 * ```
 	 */
-	@:native("STAT_SET_DATE")
+	@:native("StatSetDate")
 	static function statSetDate(statName:Int, value:Dynamic, numFields:Int, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_BOOL_MASKED")
+	@:native("StatSetBoolMasked")
 	static function statSetBoolMasked(statName:Int, value:Bool, mask:Int, save:Bool):Bool;
 
 	/**
@@ -1145,13 +1145,13 @@ extern class Stats {
 	 *  STATS::STAT_SET_BOOL(MISC::GET_HASH_KEY("MPPLY_MELEECHLENGECOMPLETED"), trur, true);
 	 * ```
 	 */
-	@:native("STAT_SET_BOOL")
+	@:native("StatSetBool")
 	static function statSetBool(statName:Int, value:Bool, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_INT")
+	@:native("StatSetInt")
 	static function statSetInt(statName:Int, value:Int, save:Bool):Bool;
 
 	/**
@@ -1222,13 +1222,13 @@ extern class Stats {
 	 * "RC_TON5"  
 	 * ```
 	 */
-	@:native("STAT_SET_GXT_LABEL")
+	@:native("StatSetGxtLabel")
 	static function statSetGxtLabel(statName:Int, value:String, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_MASKED_INT")
+	@:native("StatSetMaskedInt")
 	static function statSetMaskedInt(statName:Int, p1:Dynamic, p2:Dynamic, p3:Int, save:Bool):Bool;
 
 	/**
@@ -1237,7 +1237,7 @@ extern class Stats {
 	 * profileSetting seems to only be 936, 937 and 938 in scripts
 	 * ```
 	 */
-	@:native("STAT_SET_PROFILE_SETTING_VALUE")
+	@:native("StatSetProfileSettingValue")
 	static function statSetProfileSettingValue(profileSetting:Int, value:Int):Dynamic;
 
 	/**
@@ -1245,13 +1245,13 @@ extern class Stats {
 	 * p1 always true.  
 	 * ```
 	 */
-	@:native("STAT_SET_CURRENT_POSIX_TIME")
+	@:native("StatSetCurrentPosixTime")
 	static function statSetCurrentPosixTime(statName:Int, p1:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_POS")
+	@:native("StatSetPos")
 	static function statSetPos(statName:Int, x:Float, y:Float, z:Float, save:Bool):Bool;
 
 	/**
@@ -1260,31 +1260,31 @@ extern class Stats {
 	 *  STATS::STAT_SET_FLOAT(MISC::GET_HASH_KEY("MP0_WEAPON_ACCURACY"), 66.6f, true);
 	 * ```
 	 */
-	@:native("STAT_SET_FLOAT")
+	@:native("StatSetFloat")
 	static function statSetFloat(statName:Int, value:Float, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_LICENSE_PLATE")
+	@:native("StatSetLicensePlate")
 	static function statSetLicensePlate(statName:Int, str:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_USER_ID")
+	@:native("StatSetUserId")
 	static function statSetUserId(statName:Int, value:String, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SET_STRING")
+	@:native("StatSetString")
 	static function statSetString(statName:Int, value:String, save:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STAT_SLOT_IS_LOADED")
+	@:native("StatSlotIsLoaded")
 	static function statSlotIsLoaded(p0:Dynamic):Bool;
 
 }

@@ -13,7 +13,7 @@ extern class Zone {
 	 * Hash h = Function.Call<Hash>(Hash.GET_HASH_OF_MAP_AREA_AT_COORDS, player.Position.X, player.Position.Y, player.Position.Z);  
 	 * ```
 	 */
-	@:native("GET_HASH_OF_MAP_AREA_AT_COORDS")
+	@:native("GetHashOfMapAreaAtCoords")
 	static function getHashOfMapAreaAtCoords(x:Float, y:Float, z:Float):Int;
 
 	/**
@@ -27,7 +27,7 @@ extern class Zone {
 	 * ZONE::CLEAR_POPSCHEDULE_OVERRIDE_VEHICLE_MODEL(popSchedules[index]);  
 	 * ```
 	 */
-	@:native("CLEAR_POPSCHEDULE_OVERRIDE_VEHICLE_MODEL")
+	@:native("ClearPopscheduleOverrideVehicleModel")
 	static function clearPopscheduleOverrideVehicleModel(scheduleId:Int):Dynamic;
 
 	/**
@@ -125,13 +125,13 @@ extern class Zone {
 	 * ISHeist = Cayo Perico Island
 	 * ```
 	 */
-	@:native("GET_NAME_OF_ZONE")
+	@:native("GetNameOfZone")
 	static function getNameOfZone(x:Float, y:Float, z:Float):String;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ZONE_ENABLED")
+	@:native("SetZoneEnabled")
 	static function setZoneEnabled(zoneId:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -228,19 +228,19 @@ extern class Zone {
 	 * ZQ_UAR = Davis Quartz  
 	 * ```
 	 */
-	@:native("GET_ZONE_FROM_NAME_ID")
+	@:native("GetZoneFromNameId")
 	static function getZoneFromNameId(zoneName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ZONE_POPSCHEDULE")
+	@:native("GetZonePopschedule")
 	static function getZonePopschedule(zoneId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ZONE_AT_COORDS")
+	@:native("GetZoneAtCoords")
 	static function getZoneAtCoords(x:Float, y:Float, z:Float):Int;
 
 	/**
@@ -254,7 +254,7 @@ extern class Zone {
 	 * STREAMING::REQUEST_MODEL(vehicleHash);  
 	 * ```
 	 */
-	@:native("OVERRIDE_POPSCHEDULE_VEHICLE_MODEL")
+	@:native("OverridePopscheduleVehicleModel")
 	static function overridePopscheduleVehicleModel(scheduleId:Int, vehicleHash:Int):Dynamic;
 
 	/**
@@ -272,7 +272,7 @@ extern class Zone {
 	 * }
 	 * ```
 	 */
-	@:native("GET_ZONE_SCUMMINESS")
+	@:native("GetZoneScumminess")
 	static function getZoneScumminess(zoneId:Int):Int;
 
 }

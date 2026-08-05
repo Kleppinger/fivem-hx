@@ -9,7 +9,7 @@ extern class Graphics {
 	 * I tried this and nothing happened...  
 	 * ```
 	 */
-	@:native("ADD_ENTITY_ICON")
+	@:native("AddEntityIcon")
 	static function addEntityIcon(entity:Dynamic, icon:String):Dynamic;
 
 	/**
@@ -73,7 +73,7 @@ extern class Graphics {
 	 * }  
 	 * ```
 	 */
-	@:native("ADD_DECAL")
+	@:native("AddDecal")
 	static function addDecal(decalType:Int, posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, sideX:Float, sideY:Float, sideZ:Float, width:Float, height:Float, rCoef:Float, gCoef:Float, bCoef:Float, opacity:Float, timeout:Float, isLongRange:Bool, isDynamic:Bool, useComplexColn:Bool):Int;
 
 	/**
@@ -81,55 +81,55 @@ extern class Graphics {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_ADD_OIL_DECAL")
+	@:native("AddOilDecal")
 	static function AddOilDecal(x:Float, y:Float, z:Float, groundLvl:Float, width:Float, transparency:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TCMODIFIER_OVERRIDE")
+	@:native("AddTcmodifierOverride")
 	static function addTcmodifierOverride(modifierName1:String, modifierName2:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_PETROL_TRAIL_DECAL_INFO")
+	@:native("AddPetrolTrailDecalInfo")
 	static function addPetrolTrailDecalInfo(x:Float, y:Float, z:Float, p3:Float):Dynamic;
 
 	/**
 	 * See [`ANIMPOSTFX_PLAY`](#\_0x2206BF9A37B7F724)
 	 */
-	@:native("_ANIMPOSTFX_GET_UNK")
+	@:native("AnimpostfxGetUnk")
 	static function AnimpostfxGetUnk(effectName:String):Float;
 
 	/**
 	 * See [`ANIMPOSTFX_PLAY`](#\_0x2206BF9A37B7F724).
 	 */
-	@:native("ANIMPOSTFX_IS_RUNNING")
+	@:native("AnimpostfxIsRunning")
 	static function animpostfxIsRunning(effectName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_PETROL_DECAL")
+	@:native("AddPetrolDecal")
 	static function addPetrolDecal(x:Float, y:Float, z:Float, groundLvl:Float, width:Float, transparency:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ANIMPOSTFX_STOP_ALL")
+	@:native("AnimpostfxStopAll")
 	static function animpostfxStopAll():Dynamic;
 
 	/**
 	 * See [`ANIMPOSTFX_PLAY`](#\_0x2206BF9A37B7F724).
 	 */
-	@:native("ANIMPOSTFX_STOP")
+	@:native("AnimpostfxStop")
 	static function animpostfxStop(effectName:String):Dynamic;
 
 	/**
 	 * Stops the effect and sets a value (bool) in its data (+0x199) to false; See [`ANIMPOSTFX_PLAY`](#\_0x2206BF9A37B7F724).
 	 */
-	@:native("_ANIMPOSTFX_STOP_AND_DO_UNK")
+	@:native("AnimpostfxStopAndDoUnk")
 	static function AnimpostfxStopAndDoUnk(effectName:String):Dynamic;
 
 	/**
@@ -137,7 +137,7 @@ extern class Graphics {
 	 * boneIndex is always chassis_dummy in the scripts. The x/y/z params are location relative to the chassis bone.
 	 * ```
 	 */
-	@:native("ADD_VEHICLE_CREW_EMBLEM")
+	@:native("AddVehicleCrewEmblem")
 	static function addVehicleCrewEmblem(vehicle:Dynamic, ped:Dynamic, boneIndex:Int, x1:Float, x2:Float, x3:Float, y1:Float, y2:Float, y3:Float, z1:Float, z2:Float, z3:Float, scale:Float, p13:Dynamic, alpha:Int):Bool;
 
 	/**
@@ -145,7 +145,7 @@ extern class Graphics {
 	 * 
 	 * Use [`BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND`](#\_0xAB58C27C2E6123C6) to customize the content inside the frontend menus.
 	 */
-	@:native("BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER")
+	@:native("BeginScaleformMovieMethodOnFrontendHeader")
 	static function beginScaleformMovieMethodOnFrontendHeader(functionName:String):Bool;
 
 	/**
@@ -153,7 +153,7 @@ extern class Graphics {
 	 * Might be more appropriate in AUDIO?  
 	 * ```
 	 */
-	@:native("ATTACH_TV_AUDIO_TO_ENTITY")
+	@:native("AttachTvAudioToEntity")
 	static function attachTvAudioToEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -161,13 +161,13 @@ extern class Graphics {
 	 * Push a function from the Scaleform onto the stack  
 	 * ```
 	 */
-	@:native("BEGIN_SCALEFORM_MOVIE_METHOD")
+	@:native("BeginScaleformMovieMethod")
 	static function beginScaleformMovieMethod(scaleform:Int, methodName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_TAKE_MISSION_CREATOR_PHOTO")
+	@:native("BeginTakeMissionCreatorPhoto")
 	static function beginTakeMissionCreatorPhoto():Bool;
 
 	/**
@@ -176,7 +176,7 @@ extern class Graphics {
 	 * 
 	 * Use [`BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER`](#\_0xB9449845F73F5E9C) for header scaleform functions.
 	 */
-	@:native("BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND")
+	@:native("BeginScaleformMovieMethodOnFrontend")
 	static function beginScaleformMovieMethodOnFrontend(functionName:String):Bool;
 
 	/**
@@ -184,7 +184,7 @@ extern class Graphics {
 	 * Calls the Scaleform function.  
 	 * ```
 	 */
-	@:native("CALL_SCALEFORM_MOVIE_METHOD")
+	@:native("CallScaleformMovieMethod")
 	static function callScaleformMovieMethod(scaleform:Int, method:String):Dynamic;
 
 	/**
@@ -193,7 +193,7 @@ extern class Graphics {
 	 * if loop is true, the effect won't stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)
 	 * ```
 	 */
-	@:native("ANIMPOSTFX_PLAY")
+	@:native("AnimpostfxPlay")
 	static function animpostfxPlay(effectName:String, duration:Int, looped:Bool):Dynamic;
 
 	/**
@@ -205,13 +205,13 @@ extern class Graphics {
 	 * This native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under "scripts\__Packages\com\rockstargames\gtav\hud\hudComponents" and "scripts\__Packages\com\rockstargames\gtav\Multiplayer".
 	 * ```
 	 */
-	@:native("BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD")
+	@:native("BeginScaleformScriptHudMovieMethod")
 	static function beginScaleformScriptHudMovieMethod(hudComponent:Int, methodName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_TAKE_HIGH_QUALITY_PHOTO")
+	@:native("BeginTakeHighQualityPhoto")
 	static function beginTakeHighQualityPhoto():Bool;
 
 	/**
@@ -220,7 +220,7 @@ extern class Graphics {
 	 * The number of parameters passed to the function varies, so the end of the parameter list is represented by 0 (NULL).  
 	 * ```
 	 */
-	@:native("CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING")
+	@:native("CallScaleformMovieMethodWithString")
 	static function callScaleformMovieMethodWithString(scaleform:Int, methodName:String, param1:String, param2:String, param3:String, param4:String, param5:String):Dynamic;
 
 	/**
@@ -242,7 +242,7 @@ extern class Graphics {
 	 * GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_SCALEFORM_STRING")
+	@:native("BeginTextCommandScaleformString")
 	static function beginTextCommandScaleformString(textLabel:String):Dynamic;
 
 	/**
@@ -251,19 +251,19 @@ extern class Graphics {
 	 * The number of parameters passed to the function varies, so the end of the parameter list is represented by -1.0.  
 	 * ```
 	 */
-	@:native("CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER")
+	@:native("CallScaleformMovieMethodWithNumber")
 	static function callScaleformMovieMethodWithNumber(scaleform:Int, methodName:String, param1:Float, param2:Float, param3:Float, param4:Float, param5:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE")
+	@:native("CascadeShadowsClearShadowSampleType")
 	static function CascadeShadowsClearShadowSampleType():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_INIT_SESSION")
+	@:native("CascadeShadowsInitSession")
 	static function cascadeShadowsInitSession():Dynamic;
 
 	/**
@@ -278,13 +278,13 @@ extern class Graphics {
 	 * GRAPHICS::_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS(scaleform, "MY_FUNCTION_2", 10.0, -1.0, -1.0, -1.0, -1.0, "String param #1", "String param #2", 0, 0, 0);  
 	 * ```
 	 */
-	@:native("CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING")
+	@:native("CallScaleformMovieMethodWithNumberAndString")
 	static function callScaleformMovieMethodWithNumberAndString(scaleform:Int, methodName:String, floatParam1:Float, floatParam2:Float, floatParam3:Float, floatParam4:Float, floatParam5:Float, stringParam1:String, stringParam2:String, stringParam3:String, stringParam4:String, stringParam5:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_CASCADE_BOUNDS")
+	@:native("CascadeShadowsSetCascadeBounds")
 	static function cascadeShadowsSetCascadeBounds(p0:Dynamic, p1:Bool, p2:Float, p3:Float, p4:Float, p5:Float, p6:Bool, p7:Float):Dynamic;
 
 	/**
@@ -293,37 +293,37 @@ extern class Graphics {
 	 * When OFF, they draw from a further distance.
 	 * ```
 	 */
-	@:native("CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER")
+	@:native("CascadeShadowsEnableEntityTracker")
 	static function cascadeShadowsEnableEntityTracker(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_MODE")
+	@:native("CascadeShadowsSetDynamicDepthMode")
 	static function cascadeShadowsSetDynamicDepthMode(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_ENTITY_TRACKER_SCALE")
+	@:native("CascadeShadowsSetEntityTrackerScale")
 	static function cascadeShadowsSetEntityTrackerScale(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_CASCADE_BOUNDS_SCALE")
+	@:native("CascadeShadowsSetCascadeBoundsScale")
 	static function cascadeShadowsSetCascadeBoundsScale(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_AIRCRAFT_MODE")
+	@:native("CascadeShadowsSetAircraftMode")
 	static function cascadeShadowsSetAircraftMode(p0:Bool):Dynamic;
 
 	/**
 	 * Resets the screen's draw-origin which was changed by the function [`SET_DRAW_ORIGIN`](#\_0xAA0008F3BBB8F416) back to `x=0, y=0`. See [`SET_DRAW_ORIGIN`](#\_0xAA0008F3BBB8F416) for further information.
 	 */
-	@:native("CLEAR_DRAW_ORIGIN")
+	@:native("ClearDrawOrigin")
 	static function clearDrawOrigin():Dynamic;
 
 	/**
@@ -353,13 +353,13 @@ extern class Graphics {
 	 * "CSM_ST_CLOUDS_POISSON16_RPDB_GNORM"
 	 * ```
 	 */
-	@:native("CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE")
+	@:native("CascadeShadowsSetShadowSampleType")
 	static function cascadeShadowsSetShadowSampleType(type:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_TIMECYCLE_MODIFIER")
+	@:native("ClearTimecycleModifier")
 	static function clearTimecycleModifier():Dynamic;
 
 	/**
@@ -402,55 +402,55 @@ extern class Graphics {
 	 * 
 	 * [Checkpoint Types](https://docs.fivem.net/docs/game-references/checkpoints/) as of game build 2189
 	 */
-	@:native("CREATE_CHECKPOINT")
+	@:native("CreateCheckpoint")
 	static function createCheckpoint(type:Int, posX1:Float, posY1:Float, posZ1:Float, posX2:Float, posY2:Float, posZ2:Float, diameter:Float, red:Int, green:Int, blue:Int, alpha:Int, reserved:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DELETE_CHECKPOINT")
+	@:native("DeleteCheckpoint")
 	static function deleteCheckpoint(checkpoint:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_TV_CHANNEL_PLAYLIST")
+	@:native("ClearTvChannelPlaylist")
 	static function clearTvChannelPlaylist(tvChannel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_VALUE")
+	@:native("CascadeShadowsSetDynamicDepthValue")
 	static function cascadeShadowsSetDynamicDepthValue(p0:Float):Dynamic;
 
 	/**
 	 * Removes any custom moon cycle overrides that have been configured with [ENABLE_MOON_CYCLE_OVERRIDE](#\_0x2C328AF17210F009)
 	 */
-	@:native("DISABLE_MOON_CYCLE_OVERRIDE")
+	@:native("DisableMoonCycleOverride")
 	static function disableMoonCycleOverride():Dynamic;
 
 	/**
 	 * Clears the secondary timecycle modifier usually set with [`SetExtraTimecycleModifier`](#\_0x5096FD9CCB49056D)
 	 */
-	@:native("_CLEAR_EXTRA_TIMECYCLE_MODIFIER")
+	@:native("ClearExtraTimecycleModifier")
 	static function ClearExtraTimecycleModifier():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DESTROY_TRACKED_POINT")
+	@:native("DestroyTrackedPoint")
 	static function destroyTrackedPoint(point:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_SCREENBLUR_FADE")
+	@:native("DisableScreenblurFade")
 	static function disableScreenblurFade():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_SCRIPT_AMBIENT_EFFECTS")
+	@:native("DisableScriptAmbientEffects")
 	static function DisableScriptAmbientEffects(p0:Dynamic):Dynamic;
 
 	/**
@@ -460,13 +460,13 @@ extern class Graphics {
 	 * 
 	 * Only 64 points may be tracked at a given time.
 	 */
-	@:native("CREATE_TRACKED_POINT")
+	@:native("CreateTrackedPoint")
 	static function createTrackedPoint():Int;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_PARTICLE_FX_LOOPED_EXIST")
+	@:native("DoesParticleFxLoopedExist")
 	static function doesParticleFxLoopedExist(ptfxHandle:Int):Bool;
 
 	/**
@@ -476,7 +476,7 @@ extern class Graphics {
 	 * 1 - Help text brief
 	 * 2 - Mission Objective brief
 	 */
-	@:native("DOES_LATEST_BRIEF_STRING_EXIST")
+	@:native("DoesLatestBriefStringExist")
 	static function doesLatestBriefStringExist(briefValue:Int):Bool;
 
 	/**
@@ -484,19 +484,19 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_BOX")
+	@:native("DrawDebugBox")
 	static function drawDebugBox(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_VEHICLE_HAVE_CREW_EMBLEM")
+	@:native("DoesVehicleHaveCrewEmblem")
 	static function doesVehicleHaveCrewEmblem(vehicle:Dynamic, p1:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_OCCLUSION_THIS_FRAME")
+	@:native("DisableOcclusionThisFrame")
 	static function disableOcclusionThisFrame():Dynamic;
 
 	/**
@@ -506,19 +506,19 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("DRAW_BOX")
+	@:native("DrawBox")
 	static function drawBox(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_VEHICLE_DISTANTLIGHTS")
+	@:native("DisableVehicleDistantlights")
 	static function disableVehicleDistantlights(toggle:Bool):Dynamic;
 
 	/**
 	 * Must be called each frame, will play at specified position on screen when called with [`_PLAY_BINK_MOVIE`](#\_0x70D2CC8A542A973C)
 	 */
-	@:native("_DRAW_BINK_MOVIE")
+	@:native("DrawBinkMovie")
 	static function DrawBinkMovie(binkMovie:Int, posX:Float, posY:Float, scaleX:Float, scaleY:Float, rotation:Float, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
@@ -526,7 +526,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_LINE")
+	@:native("DrawDebugLine")
 	static function drawDebugLine(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
@@ -534,13 +534,13 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_TEXT")
+	@:native("DrawDebugText")
 	static function drawDebugText(text:String, x:Float, y:Float, z:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DONT_RENDER_IN_GAME_UI")
+	@:native("DontRenderInGameUi")
 	static function dontRenderInGameUi(p0:Bool):Dynamic;
 
 	/**
@@ -548,7 +548,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_CROSS")
+	@:native("DrawDebugCross")
 	static function drawDebugCross(x:Float, y:Float, z:Float, size:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -556,7 +556,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_TEXT_2D")
+	@:native("DrawDebugText_2d")
 	static function drawDebugText2D(text:String, x:Float, y:Float, z:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -564,7 +564,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_SPHERE")
+	@:native("DrawDebugSphere")
 	static function drawDebugSphere(x:Float, y:Float, z:Float, radius:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -572,7 +572,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("DRAW_DEBUG_LINE_WITH_TWO_COLOURS")
+	@:native("DrawDebugLineWithTwoColours")
 	static function drawDebugLineWithTwoColours(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, r1:Int, g1:Int, b1:Int, r2:Int, g2:Int, b2:Int, alpha1:Int, alpha2:Int):Dynamic;
 
 	/**
@@ -592,13 +592,13 @@ extern class Graphics {
 	 * And a few others
 	 * ```
 	 */
-	@:native("_DRAW_INTERACTIVE_SPRITE")
+	@:native("DrawInteractiveSprite")
 	static function DrawInteractiveSprite(textureDict:String, textureName:String, screenX:Float, screenY:Float, width:Float, height:Float, heading:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DRAW_LIGHT_WITH_RANGE_AND_SHADOW")
+	@:native("DrawLightWithRangeAndShadow")
 	static function DrawLightWithRangeAndShadow(x:Float, y:Float, z:Float, r:Int, g:Int, b:Int, range:Float, intensity:Float, shadow:Float):Dynamic;
 
 	/**
@@ -624,19 +624,19 @@ extern class Graphics {
 	 * BTW: Intersecting triangles are not supported: They overlap in the order they were called.  
 	 * ```
 	 */
-	@:native("DRAW_POLY")
+	@:native("DrawPoly")
 	static function drawPoly(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, x3:Float, y3:Float, z3:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_LIGHT_WITH_RANGE")
+	@:native("DrawLightWithRange")
 	static function drawLightWithRange(posX:Float, posY:Float, posZ:Float, colorR:Int, colorG:Int, colorB:Int, range:Float, intensity:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_LOW_QUALITY_PHOTO_TO_PHONE")
+	@:native("DrawLowQualityPhotoToPhone")
 	static function drawLowQualityPhotoToPhone(p0:Bool, p1:Bool):Dynamic;
 
 	/**
@@ -646,7 +646,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("DRAW_LINE")
+	@:native("DrawLine")
 	static function drawLine(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -654,7 +654,7 @@ extern class Graphics {
 	 * unk is not used so no need  
 	 * ```
 	 */
-	@:native("DRAW_SCALEFORM_MOVIE_FULLSCREEN")
+	@:native("DrawScaleformMovieFullscreen")
 	static function drawScaleformMovieFullscreen(scaleform:Int, red:Int, green:Int, blue:Int, alpha:Int, unk:Int):Dynamic;
 
 	/**
@@ -675,13 +675,13 @@ extern class Graphics {
 	 * NativeDB Added Parameter 9: BOOL p8
 	 * ```
 	 */
-	@:native("DRAW_RECT")
+	@:native("DrawRect")
 	static function drawRect(x:Float, y:Float, width:Float, height:Float, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_SCALEFORM_MOVIE_3D_SOLID")
+	@:native("DrawScaleformMovie_3dSolid")
 	static function drawScaleformMovie3DSolid(scaleform:Int, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, p7:Float, p8:Float, p9:Float, scaleX:Float, scaleY:Float, scaleZ:Float, p13:Dynamic):Dynamic;
 
 	/**
@@ -689,7 +689,7 @@ extern class Graphics {
 	 * 
 	 * There's a [list of markers](https://docs.fivem.net/game-references/markers/) on the FiveM documentation site.
 	 */
-	@:native("DRAW_MARKER")
+	@:native("DrawMarker")
 	static function drawMarker(type:Int, posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, rotX:Float, rotY:Float, rotZ:Float, scaleX:Float, scaleY:Float, scaleZ:Float, red:Int, green:Int, blue:Int, alpha:Int, bobUpAndDown:Bool, faceCamera:Bool, p19:Int, rotate:Bool, textureDict:String, textureName:String, drawOnEnts:Bool):Dynamic;
 
 	/**
@@ -697,13 +697,13 @@ extern class Graphics {
 	 * NativeDB Added Parameter 26: BOOL p25
 	 * ```
 	 */
-	@:native("_DRAW_MARKER_2")
+	@:native("DrawMarker_2")
 	static function DrawMarker2(type:Int, posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, rotX:Float, rotY:Float, rotZ:Float, scaleX:Float, scaleY:Float, scaleZ:Float, red:Int, green:Int, blue:Int, alpha:Int, bobUpAndDown:Bool, faceCamera:Bool, p19:Int, rotate:Bool, textureDict:String, textureName:String, drawOnEnts:Bool, p24:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED")
+	@:native("DrawScaleformMovieFullscreenMasked")
 	static function drawScaleformMovieFullscreenMasked(scaleform1:Int, scaleform2:Int, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -712,19 +712,19 @@ extern class Graphics {
 	 * p0 was always "CELEBRATION_WINNER"  
 	 * ```
 	 */
-	@:native("_DRAW_SHOWROOM")
+	@:native("DrawShowroom")
 	static function DrawShowroom(p0:String, ped:Dynamic, p2:Int, posX:Float, posY:Float, posZ:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_SCALEFORM_MOVIE")
+	@:native("DrawScaleformMovie")
 	static function drawScaleformMovie(scaleformHandle:Int, x:Float, y:Float, width:Float, height:Float, red:Int, green:Int, blue:Int, alpha:Int, unk:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DRAW_SCALEFORM_MOVIE_3D")
+	@:native("DrawScaleformMovie_3d")
 	static function drawScaleformMovie3D(scaleform:Int, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, p7:Float, sharpness:Float, p9:Float, scaleX:Float, scaleY:Float, scaleZ:Float, p13:Dynamic):Dynamic;
 
 	/**
@@ -744,7 +744,7 @@ extern class Graphics {
 	 * NativeDB Added Parameter 12: BOOL p11
 	 * ```
 	 */
-	@:native("DRAW_SPRITE")
+	@:native("DrawSprite")
 	static function drawSprite(textureDict:String, textureName:String, screenX:Float, screenY:Float, width:Float, height:Float, heading:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -767,7 +767,7 @@ extern class Graphics {
 	 * Function.Call(Hash.DRAW_SPOT_LIGHT, pos.X, pos.Y, pos.Z, dirVector.X, dirVector.Y, dirVector.Z, 255, 255, 255, 100.0f, 1f, 0.0f, 13.0f, 1f);  
 	 * ```
 	 */
-	@:native("DRAW_SPOT_LIGHT")
+	@:native("DrawSpotLight")
 	static function drawSpotLight(posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, colorR:Int, colorG:Int, colorB:Int, distance:Float, brightness:Float, hardness:Float, radius:Float, falloff:Float):Dynamic;
 
 	/**
@@ -779,13 +779,13 @@ extern class Graphics {
 	 * DrawSphere(35.45, 172.66, 126.22, 1.0, 0, 0, 255, 0.2)
 	 * ```
 	 */
-	@:native("_DRAW_SPHERE")
+	@:native("DrawSphere")
 	static function DrawSphere(x:Float, y:Float, z:Float, radius:Float, r:Int, g:Int, b:Int, opacity:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DRAW_SPOT_LIGHT_WITH_SHADOW")
+	@:native("DrawSpotLightWithShadow")
 	static function DrawSpotLightWithShadow(posX:Float, posY:Float, posZ:Float, dirX:Float, dirY:Float, dirZ:Float, colorR:Int, colorG:Int, colorB:Int, distance:Float, brightness:Float, roundness:Float, radius:Float, falloff:Float, shadowId:Int):Dynamic;
 
 	/**
@@ -797,7 +797,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_DRAW_SPRITE_UV")
+	@:native("DrawSpriteUv")
 	static function DrawSpriteUv(textureDict:String, textureName:String, x:Float, y:Float, width:Float, height:Float, u1:Float, v1:Float, u2:Float, v2:Float, heading:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -807,7 +807,7 @@ extern class Graphics {
 	 * 
 	 * For UVW mapping (u,v,w parameters), reference your favourite internet resource for more details.
 	 */
-	@:native("_DRAW_SPRITE_POLY_2")
+	@:native("DrawSpritePoly_2")
 	static function DrawSpritePoly2(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, x3:Float, y3:Float, z3:Float, red1:Float, green1:Float, blue1:Float, alpha1:Int, red2:Float, green2:Float, blue2:Float, alpha2:Int, red3:Float, green3:Float, blue3:Float, alpha3:Int, textureDict:String, textureName:String, u1:Float, v1:Float, w1:Float, u2:Float, v2:Float, w2:Float, u3:Float, v3:Float, w3:Float):Dynamic;
 
 	/**
@@ -817,7 +817,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v877
 	 * ```
 	 */
-	@:native("DRAW_TEXTURED_POLY")
+	@:native("DrawTexturedPoly")
 	static function drawTexturedPoly(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, x3:Float, y3:Float, z3:Float, red:Int, green:Int, blue:Int, alpha:Int, textureDict:String, textureName:String, u1:Float, v1:Float, w1:Float, u2:Float, v2:Float, w2:Float, u3:Float, v3:Float, w3:Float):Dynamic;
 
 	/**
@@ -837,7 +837,7 @@ extern class Graphics {
 	 * }
 	 * ```
 	 */
-	@:native("ENABLE_CLOWN_BLOOD_VFX")
+	@:native("EnableClownBloodVfx")
 	static function enableClownBloodVfx(toggle:Bool):Dynamic;
 
 	/**
@@ -871,13 +871,13 @@ extern class Graphics {
 	 * }
 	 * ```
 	 */
-	@:native("DRAW_TV_CHANNEL")
+	@:native("DrawTvChannel")
 	static function drawTvChannel(xPos:Float, yPos:Float, xScale:Float, yScale:Float, rotation:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_MOVIE_KEYFRAME_WAIT")
+	@:native("EnableMovieKeyframeWait")
 	static function enableMovieKeyframeWait(toggle:Bool):Dynamic;
 
 	/**
@@ -885,7 +885,7 @@ extern class Graphics {
 	 * 
 	 * This native does not seem to work, however by using the [ANIMPOSTFX_PLAY](#\_0x2206BF9A37B7F724) native with "DrugsMichaelAliensFight" as the effect parameter, you should be able to get the effect.
 	 */
-	@:native("ENABLE_ALIEN_BLOOD_VFX")
+	@:native("EnableAlienBloodVfx")
 	static function enableAlienBloodVfx(toggle:Bool):Dynamic;
 
 	/**
@@ -893,25 +893,25 @@ extern class Graphics {
 	 * Pops and calls the Scaleform function on the stack  
 	 * ```
 	 */
-	@:native("END_SCALEFORM_MOVIE_METHOD")
+	@:native("EndScaleformMovieMethod")
 	static function endScaleformMovieMethod():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_SCALEFORM_STRING")
+	@:native("EndTextCommandScaleformString")
 	static function endTextCommandScaleformString():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_PETROL_TRAIL_DECALS")
+	@:native("EndPetrolTrailDecals")
 	static function endPetrolTrailDecals():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FADE_DECALS_IN_RANGE")
+	@:native("FadeDecalsInRange")
 	static function fadeDecalsInRange(x:Float, y:Float, z:Float, radius:Float, duration:Float):Dynamic;
 
 	/**
@@ -931,56 +931,56 @@ extern class Graphics {
 	 * 
 	 * The moon phase can be disabled with [DISABLE_MOON_CYCLE_OVERRIDE](#\_0x2BF72AD5B41AA739)
 	 */
-	@:native("ENABLE_MOON_CYCLE_OVERRIDE")
+	@:native("EnableMoonCycleOverride")
 	static function enableMoonCycleOverride(phase:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_MOVIE_SUBTITLES")
+	@:native("EnableMovieSubtitles")
 	static function enableMovieSubtitles(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FREE_MEMORY_FOR_HIGH_QUALITY_PHOTO")
+	@:native("FreeMemoryForHighQualityPhoto")
 	static function freeMemoryForHighQualityPhoto():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_RENDER_IN_GAME_UI")
+	@:native("ForceRenderInGameUi")
 	static function forceRenderInGameUi(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE")
+	@:native("EndScaleformMovieMethodReturnValue")
 	static function endScaleformMovieMethodReturnValue():Int;
 
 	/**
 	 * Same as END_TEXT_COMMAND_SCALEFORM_STRING but does not perform HTML conversion for text tokens.
 	 * Also useful for when you are trying to add blips and inputs in your scaleform (If the scaleform supports it).
 	 */
-	@:native("END_TEXT_COMMAND_UNPARSED_SCALEFORM_STRING")
+	@:native("EndTextCommandUnparsedScaleformString")
 	static function endTextCommandUnparsedScaleformString():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FREE_MEMORY_FOR_MISSION_CREATOR_PHOTO")
+	@:native("FreeMemoryForMissionCreatorPhoto")
 	static function freeMemoryForMissionCreatorPhoto():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FADE_UP_PED_LIGHT")
+	@:native("FadeUpPedLight")
 	static function fadeUpPedLight(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FREE_MEMORY_FOR_LOW_QUALITY_PHOTO")
+	@:native("FreeMemoryForLowQualityPhoto")
 	static function freeMemoryForLowQualityPhoto():Dynamic;
 
 	/**
@@ -990,13 +990,13 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_ACTUAL_SCREEN_RESOLUTION")
+	@:native("GetActualScreenResolution")
 	static function getActualScreenResolution(x:Dynamic, y:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DECAL_WASH_LEVEL")
+	@:native("GetDecalWashLevel")
 	static function getDecalWashLevel(decal:Int):Float;
 
 	/**
@@ -1004,7 +1004,7 @@ extern class Graphics {
 	 * This function is hard-coded to always return 0.
 	 * ```
 	 */
-	@:native("GET_MAXIMUM_NUMBER_OF_PHOTOS")
+	@:native("GetMaximumNumberOfPhotos")
 	static function getMaximumNumberOfPhotos():Int;
 
 	/**
@@ -1014,7 +1014,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_ASPECT_RATIO")
+	@:native("GetAspectRatio")
 	static function getAspectRatio(physicalAspect:Bool):Float;
 
 	/**
@@ -1024,7 +1024,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_GET_BINK_MOVIE_TIME")
+	@:native("GetBinkMovieTime")
 	static function GetBinkMovieTime(binkMovie:Int):Float;
 
 	/**
@@ -1032,19 +1032,19 @@ extern class Graphics {
 	 * Gets the scale of safe zone. if the safe zone size scale is max, it will return 1.0.  
 	 * ```
 	 */
-	@:native("GET_SAFE_ZONE_SIZE")
+	@:native("GetSafeZoneSize")
 	static function getSafeZoneSize():Float;
 
 	/**
 	 * See [`GET_TIMECYCLE_MODIFIER_INDEX`](#\_0xFDF3D97C674AFB66) for use, works the same just for the secondary timecycle modifier.
 	 */
-	@:native("_GET_EXTRA_TIMECYCLE_MODIFIER_INDEX")
+	@:native("GetExtraTimecycleModifierIndex")
 	static function GetExtraTimecycleModifierIndex():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS")
+	@:native("GetCurrentNumberOfCloudPhotos")
 	static function getCurrentNumberOfCloudPhotos():Int;
 
 	/**
@@ -1054,7 +1054,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_IS_HIDEF")
+	@:native("GetIsHidef")
 	static function getIsHidef():Bool;
 
 	/**
@@ -1064,31 +1064,31 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_IS_WIDESCREEN")
+	@:native("GetIsWidescreen")
 	static function getIsWidescreen():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_REQUESTINGNIGHTVISION")
+	@:native("GetRequestingnightvision")
 	static function getRequestingnightvision():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_IS_PETROL_DECAL_IN_RANGE")
+	@:native("GetIsPetrolDecalInRange")
 	static function getIsPetrolDecalInRange(xCoord:Float, yCoord:Float, zCoord:Float, radius:Float):Bool;
 
 	/**
 	 * Used to get a return value from a scaleform function. Returns a string in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT returns an int.
 	 */
-	@:native("GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING")
+	@:native("GetScaleformMovieMethodReturnValueString")
 	static function getScaleformMovieMethodReturnValueString(method_return:Int):String;
 
 	/**
 	 * Used to get a return value from a scaleform function. Returns an int in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING returns a string.
 	 */
-	@:native("GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT")
+	@:native("GetScaleformMovieMethodReturnValueInt")
 	static function getScaleformMovieMethodReturnValueInt(method_return:Int):Int;
 
 	/**
@@ -1116,7 +1116,7 @@ extern class Graphics {
 	 * I thought we lost you from the scene forever. It does seem however that calling SET_DRAW_ORIGIN then your natives, then ending it. Seems to work better for certain things such as keeping boxes around people for a predator missile e.g.
 	 * ```
 	 */
-	@:native("GET_SCREEN_COORD_FROM_WORLD_COORD")
+	@:native("GetScreenCoordFromWorldCoord")
 	static function getScreenCoordFromWorldCoord(worldX:Float, worldY:Float, worldZ:Float, screenX:Dynamic, screenY:Dynamic):Bool;
 
 	/**
@@ -1124,68 +1124,68 @@ extern class Graphics {
 	 * This function is hard-coded to always return 96.
 	 * ```
 	 */
-	@:native("GET_MAXIMUM_NUMBER_OF_CLOUD_PHOTOS")
+	@:native("GetMaximumNumberOfCloudPhotos")
 	static function getMaximumNumberOfCloudPhotos():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SCREENBLUR_FADE_CURRENT_TIME")
+	@:native("GetScreenblurFadeCurrentTime")
 	static function getScreenblurFadeCurrentTime():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATUS_OF_LOAD_MISSION_CREATOR_PHOTO")
+	@:native("GetStatusOfLoadMissionCreatorPhoto")
 	static function getStatusOfLoadMissionCreatorPhoto(p0:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATUS_OF_TAKE_HIGH_QUALITY_PHOTO")
+	@:native("GetStatusOfTakeHighQualityPhoto")
 	static function getStatusOfTakeHighQualityPhoto():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL")
+	@:native("GetScaleformMovieMethodReturnValueBool")
 	static function getScaleformMovieMethodReturnValueBool(methodReturn:Int):Bool;
 
 	/**
 	 * Hardcoded to always return 1280x720. Use [`_GET_ACTIVE_SCREEN_RESOLUTION`](?\_0x873C9F3104101DD3) to retrieve the correct screen resolution.
 	 */
-	@:native("GET_SCREEN_RESOLUTION")
+	@:native("GetScreenResolution")
 	static function getScreenResolution(x:Dynamic, y:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIMECYCLE_TRANSITION_MODIFIER_INDEX")
+	@:native("GetTimecycleTransitionModifierIndex")
 	static function getTimecycleTransitionModifierIndex():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATUS_OF_SAVE_HIGH_QUALITY_PHOTO")
+	@:native("GetStatusOfSaveHighQualityPhoto")
 	static function getStatusOfSaveHighQualityPhoto():Int;
 
 	/**
 	 * Calculates the effective X/Y fractions when applying the values set by `SET_SCRIPT_GFX_ALIGN` and
 	 * `SET_SCRIPT_GFX_ALIGN_PARAMS`.
 	 */
-	@:native("_GET_SCRIPT_GFX_POSITION")
+	@:native("GetScriptGfxPosition")
 	static function GetScriptGfxPosition(x:Float, y:Float, calculatedX:Dynamic, calculatedY:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TOGGLE_PAUSED_RENDERPHASES_STATUS")
+	@:native("GetTogglePausedRenderphasesStatus")
 	static function getTogglePausedRenderphasesStatus():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STATUS_OF_TAKE_MISSION_CREATOR_PHOTO")
+	@:native("GetStatusOfTakeMissionCreatorPhoto")
 	static function getStatusOfTakeMissionCreatorPhoto():Int;
 
 	/**
@@ -1194,25 +1194,25 @@ extern class Graphics {
 	 * Note: Most texture resolutions are doubled compared to the console version of the game.  
 	 * ```
 	 */
-	@:native("GET_TEXTURE_RESOLUTION")
+	@:native("GetTextureResolution")
 	static function getTextureResolution(textureDict:String, textureName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_GET_MAX_HEIGHT")
+	@:native("GolfTrailGetMaxHeight")
 	static function golfTrailGetMaxHeight():Float;
 
 	/**
 	 * Returns status of gallery photo fetch, which was requested by [`QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS`](#\_0x2A893980E96B659A).
 	 */
-	@:native("GET_STATUS_OF_SORTED_LIST_OPERATION")
+	@:native("GetStatusOfSortedListOperation")
 	static function getStatusOfSortedListOperation(scanForSaving:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_USINGNIGHTVISION")
+	@:native("GetUsingnightvision")
 	static function getUsingnightvision():Bool;
 
 	/**
@@ -1222,49 +1222,49 @@ extern class Graphics {
 	 * For a full list, see here: pastebin.com/cnk7FTF2
 	 * ```
 	 */
-	@:native("GET_TIMECYCLE_MODIFIER_INDEX")
+	@:native("GetTimecycleModifierIndex")
 	static function getTimecycleModifierIndex():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TV_VOLUME")
+	@:native("GetTvVolume")
 	static function getTvVolume():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_SET_ENABLED")
+	@:native("GolfTrailSetEnabled")
 	static function golfTrailSetEnabled(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_USINGSEETHROUGH")
+	@:native("GetUsingseethrough")
 	static function getUsingseethrough():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TV_CHANNEL")
+	@:native("GetTvChannel")
 	static function getTvChannel():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CREW_EMBLEM_REQUEST_STATE")
+	@:native("GetVehicleCrewEmblemRequestState")
 	static function getVehicleCrewEmblemRequestState(vehicle:Dynamic, p1:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_SET_COLOUR")
+	@:native("GolfTrailSetColour")
 	static function golfTrailSetColour(p0:Int, p1:Int, p2:Int, p3:Int, p4:Int, p5:Int, p6:Int, p7:Int, p8:Int, p9:Int, p10:Int, p11:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_GET_VISUAL_CONTROL_POINT")
+	@:native("GolfTrailGetVisualControlPoint")
 	static function golfTrailGetVisualControlPoint(p0:Int):Dynamic;
 
 	/**
@@ -1272,7 +1272,7 @@ extern class Graphics {
 	 * p8 seems to always be false.  
 	 * ```
 	 */
-	@:native("GOLF_TRAIL_SET_PATH")
+	@:native("GolfTrailSetPath")
 	static function golfTrailSetPath(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Bool):Dynamic;
 
 	/**
@@ -1284,19 +1284,19 @@ extern class Graphics {
 	 * Tested but noticed nothing.
 	 * ```
 	 */
-	@:native("GOLF_TRAIL_SET_FIXED_CONTROL_POINT")
+	@:native("GolfTrailSetFixedControlPoint")
 	static function golfTrailSetFixedControlPoint(type:Int, xPos:Float, yPos:Float, zPos:Float, p4:Float, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_SET_RADIUS")
+	@:native("GolfTrailSetRadius")
 	static function golfTrailSetRadius(p0:Float, p1:Float, p2:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_SET_FACING")
+	@:native("GolfTrailSetFacing")
 	static function golfTrailSetFacing(p0:Bool):Dynamic;
 
 	/**
@@ -1304,13 +1304,13 @@ extern class Graphics {
 	 * Only appeared in Golf & Golf_mp. Parameters were all ptrs  
 	 * ```
 	 */
-	@:native("GOLF_TRAIL_SET_SHADER_PARAMS")
+	@:native("GolfTrailSetShaderParams")
 	static function golfTrailSetShaderParams(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GOLF_TRAIL_SET_TESSELLATION")
+	@:native("GolfTrailSetTessellation")
 	static function golfTrailSetTessellation(p0:Int, p1:Int):Dynamic;
 
 	/**
@@ -1322,7 +1322,7 @@ extern class Graphics {
 	 * "heist_pre"
 	 * ```
 	 */
-	@:native("HAS_SCALEFORM_MOVIE_FILENAME_LOADED")
+	@:native("HasScaleformMovieFilenameLoaded")
 	static function hasScaleformMovieFilenameLoaded(scaleformName:String):Bool;
 
 	/**
@@ -1330,32 +1330,32 @@ extern class Graphics {
 	 * Wraps 0xAAE9BE70EC7C69AB with FLT_MAX as p7, Jenkins: 0x73E96210?
 	 * ```
 	 */
-	@:native("_GRASS_LOD_SHRINK_SCRIPT_AREAS")
+	@:native("GrassLodShrinkScriptAreas")
 	static function GrassLodShrinkScriptAreas(x:Float, y:Float, z:Float, radius:Float, p4:Float, p5:Float, p6:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GRASS_LOD_RESET_SCRIPT_AREAS")
+	@:native("GrassLodResetScriptAreas")
 	static function GrassLodResetScriptAreas():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_SCALEFORM_MOVIE_LOADED")
+	@:native("HasScaleformMovieLoaded")
 	static function hasScaleformMovieLoaded(scaleformHandle:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DECAL_ALIVE")
+	@:native("IsDecalAlive")
 	static function isDecalAlive(decal:Int):Bool;
 
 	/**
 	 * methodReturn: The return value of this native: END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE
 	 * Returns true if the return value of a scaleform function is ready to be collected (using GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING or GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT).
 	 */
-	@:native("IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY")
+	@:native("IsScaleformMovieMethodReturnValueReady")
 	static function isScaleformMovieMethodReturnValueReady(method_return:Int):Bool;
 
 	/**
@@ -1363,31 +1363,31 @@ extern class Graphics {
 	 * Returns whether screen transition to blur/from blur is running.
 	 * ```
 	 */
-	@:native("IS_SCREENBLUR_FADE_RUNNING")
+	@:native("IsScreenblurFadeRunning")
 	static function isScreenblurFadeRunning():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_SCALEFORM_CONTAINER_MOVIE_LOADED_INTO_PARENT")
+	@:native("HasScaleformContainerMovieLoadedIntoParent")
 	static function hasScaleformContainerMovieLoadedIntoParent(scaleformHandle:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED")
+	@:native("HasScaleformScriptHudMovieLoaded")
 	static function hasScaleformScriptHudMovieLoaded(hudComponent:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_STREAMED_TEXTURE_DICT_LOADED")
+	@:native("HasStreamedTextureDictLoaded")
 	static function hasStreamedTextureDictLoaded(textureDict:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LOAD_MOVIE_MESH_SET")
+	@:native("LoadMovieMeshSet")
 	static function loadMovieMeshSet(movieMeshSetName:String):Int;
 
 	/**
@@ -1395,7 +1395,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("IS_SCALEFORM_MOVIE_DELETING")
+	@:native("IsScaleformMovieDeleting")
 	static function isScaleformMovieDeleting(scaleformIndex:Int):Bool;
 
 	/**
@@ -1403,7 +1403,7 @@ extern class Graphics {
 	 * IS_*
 	 * ```
 	 */
-	@:native("_IS_TV_PLAYLIST_ITEM_PLAYING")
+	@:native("IsTvPlaylistItemPlaying")
 	static function IsTvPlaylistItemPlaying(videoCliphash:Int):Bool;
 
 	/**
@@ -1411,37 +1411,37 @@ extern class Graphics {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_IS_PLAYLIST_UNK")
+	@:native("IsPlaylistUnk")
 	static function IsPlaylistUnk(tvChannel:Int, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LOAD_MISSION_CREATOR_PHOTO")
+	@:native("LoadMissionCreatorPhoto")
 	static function loadMissionCreatorPhoto(p0:String, p1:Dynamic, p2:Dynamic, p3:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("MOVE_VEHICLE_DECALS")
+	@:native("MoveVehicleDecals")
 	static function moveVehicleDecals(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TRACKED_POINT_VISIBLE")
+	@:native("IsTrackedPointVisible")
 	static function isTrackedPointVisible(point:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("OVERRIDE_INTERIOR_SMOKE_END")
+	@:native("OverrideInteriorSmokeEnd")
 	static function overrideInteriorSmokeEnd():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("OVERRIDE_INTERIOR_SMOKE_NAME")
+	@:native("OverrideInteriorSmokeName")
 	static function overrideInteriorSmokeName(name:String):Dynamic;
 
 	/**
@@ -1449,7 +1449,7 @@ extern class Graphics {
 	 * Overriding ped badge texture to a passed texture. It's synced between players (even custom textures!), don't forget to request used dict on *all* clients to make it sync properly. Can be removed by passing empty strings.
 	 * ```
 	 */
-	@:native("_OVERRIDE_PED_BADGE_TEXTURE")
+	@:native("OverridePedBadgeTexture")
 	static function OverridePedBadgeTexture(ped:Dynamic, txd:String, txn:String):Bool;
 
 	/**
@@ -1457,19 +1457,19 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_PLAY_BINK_MOVIE")
+	@:native("PlayBinkMovie")
 	static function PlayBinkMovie(binkMovie:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("POP_TIMECYCLE_MODIFIER")
+	@:native("PopTimecycleModifier")
 	static function popTimecycleModifier():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PUSH_TIMECYCLE_MODIFIER")
+	@:native("PushTimecycleModifier")
 	static function pushTimecycleModifier():Dynamic;
 
 	/**
@@ -1478,19 +1478,19 @@ extern class Graphics {
 	 * GRAPHICS::PRESET_INTERIOR_AMBIENT_CACHE("int_carrier_hanger");
 	 * ```
 	 */
-	@:native("PRESET_INTERIOR_AMBIENT_CACHE")
+	@:native("PresetInteriorAmbientCache")
 	static function presetInteriorAmbientCache(timecycleModifierName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("OVERRIDE_INTERIOR_SMOKE_LEVEL")
+	@:native("OverrideInteriorSmokeLevel")
 	static function overrideInteriorSmokeLevel(level:Float):Dynamic;
 
 	/**
 	 * Used with 'NG_filmnoir_BW{01,02}' timecycles and the "NOIR_FILTER_SOUNDS" audioref.
 	 */
-	@:native("_REGISTER_NOIR_SCREEN_EFFECT_THIS_FRAME")
+	@:native("RegisterNoirScreenEffectThisFrame")
 	static function RegisterNoirScreenEffectThisFrame():Dynamic;
 
 	/**
@@ -1498,7 +1498,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_RELEASE_BINK_MOVIE")
+	@:native("ReleaseBinkMovie")
 	static function ReleaseBinkMovie(binkMovie:Int):Dynamic;
 
 	/**
@@ -1507,20 +1507,20 @@ extern class Graphics {
 	 * The key parameter which is passed to the scaleform can also be: "BACKSPACE", "ENTER" or "\x1b" (Which is ESC).
 	 * This native is only used in `web_browser.c` as of game build 2944.
 	 */
-	@:native("PASS_KEYBOARD_INPUT_TO_SCALEFORM")
+	@:native("PassKeyboardInputToScaleform")
 	static function passKeyboardInputToScaleform(scaleformHandle:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_MOVIE_MESH_SET")
+	@:native("ReleaseMovieMeshSet")
 	static function releaseMovieMeshSet(movieMeshSet:Int):Dynamic;
 
 	/**
 	 * Queues a scan of all gallery photos.
 	 * Also see [`GET_STATUS_OF_SORTED_LIST_OPERATION`](#\_0xF5BED327CEA362B1)
 	 */
-	@:native("QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS")
+	@:native("QueueOperationToCreateSortedListOfPhotos")
 	static function queueOperationToCreateSortedListOfPhotos(scanForSaving:Bool):Bool;
 
 	/**
@@ -1530,25 +1530,25 @@ extern class Graphics {
 	 * PATCH_DECAL_DIFFUSE_MAP(9120, "MPOnMissMarkers", "Capture_The_Flag_Base_Icon");  
 	 * ```
 	 */
-	@:native("PATCH_DECAL_DIFFUSE_MAP")
+	@:native("PatchDecalDiffuseMap")
 	static function patchDecalDiffuseMap(decalType:Int, textureDict:String, textureName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_DECALS_FROM_OBJECT")
+	@:native("RemoveDecalsFromObject")
 	static function removeDecalsFromObject(obj:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_DECALS_FROM_OBJECT_FACING")
+	@:native("RemoveDecalsFromObjectFacing")
 	static function removeDecalsFromObjectFacing(obj:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("QUERY_MOVIE_MESH_SET_STATE")
+	@:native("QueryMovieMeshSetState")
 	static function queryMovieMeshSetState(p0:Dynamic):Dynamic;
 
 	/**
@@ -1556,73 +1556,73 @@ extern class Graphics {
 	 * Removes all decals in range from a position, it includes the bullet holes, blood pools, petrol...  
 	 * ```
 	 */
-	@:native("REMOVE_DECALS_IN_RANGE")
+	@:native("RemoveDecalsInRange")
 	static function removeDecalsInRange(x:Float, y:Float, z:Float, range:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PARTICLE_FX_IN_RANGE")
+	@:native("RemoveParticleFxInRange")
 	static function removeParticleFxInRange(X:Float, Y:Float, Z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_DECAL")
+	@:native("RemoveDecal")
 	static function removeDecal(decal:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PARTICLE_FX_FROM_ENTITY")
+	@:native("RemoveParticleFxFromEntity")
 	static function removeParticleFxFromEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_CREW_EMBLEM")
+	@:native("RemoveVehicleCrewEmblem")
 	static function removeVehicleCrewEmblem(vehicle:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PARTICLE_FX")
+	@:native("RemoveParticleFx")
 	static function removeParticleFx(ptfxHandle:Int, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_DECALS_FROM_VEHICLE")
+	@:native("RemoveDecalsFromVehicle")
 	static function removeDecalsFromVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Requests a scaleform movie that doesn't render when the game is paused (With [`SET_GAME_PAUSED`](#\_0x577D1284D6873711)).
 	 */
-	@:native("REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED")
+	@:native("RequestScaleformMovieSkipRenderWhilePaused")
 	static function requestScaleformMovieSkipRenderWhilePaused(scaleformName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_TCMODIFIER_OVERRIDE")
+	@:native("RemoveTcmodifierOverride")
 	static function removeTcmodifierOverride(p0:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_SCALEFORM_SCRIPT_HUD_MOVIE")
+	@:native("RemoveScaleformScriptHudMovie")
 	static function removeScaleformScriptHudMovie(hudComponent:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_SCALEFORM_MOVIE")
+	@:native("RequestScaleformMovie")
 	static function requestScaleformMovie(scaleformName:String):Int;
 
 	/**
 	 * Same as [REQUEST_SCALEFORM_MOVIE](#\_0x11FE353CF9733E6F), except it seems to fix stretched scaleforms on ultrawide.
 	 */
-	@:native("REQUEST_SCALEFORM_MOVIE_INSTANCE")
+	@:native("RequestScaleformMovieInstance")
 	static function requestScaleformMovieInstance(scaleformName:String):Int;
 
 	/**
@@ -1635,13 +1635,13 @@ extern class Graphics {
 	 * last param isnt a toggle
 	 * ```
 	 */
-	@:native("REQUEST_STREAMED_TEXTURE_DICT")
+	@:native("RequestStreamedTextureDict")
 	static function requestStreamedTextureDict(textureDict:String, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE")
+	@:native("RequestScaleformScriptHudMovie")
 	static function requestScaleformScriptHudMovie(hudComponent:Int):Dynamic;
 
 	/**
@@ -1649,7 +1649,7 @@ extern class Graphics {
 	 * values ('I', 'I'; 0, 0, 0, 0). This should be used after having used the aforementioned functions in order to not affect
 	 * any other scripts attempting to draw.
 	 */
-	@:native("RESET_SCRIPT_GFX_ALIGN")
+	@:native("ResetScriptGfxAlign")
 	static function resetScriptGfxAlign():Dynamic;
 
 	/**
@@ -1657,19 +1657,19 @@ extern class Graphics {
 	 * Resets the effect of SET_PARTICLE_FX_OVERRIDE
 	 * ```
 	 */
-	@:native("RESET_PARTICLE_FX_OVERRIDE")
+	@:native("ResetParticleFxOverride")
 	static function resetParticleFxOverride(name:String):Dynamic;
 
 	/**
 	 * Requests a scaleform movie, which has no widescreen adjustments while rendering (Useful for when your scaleform doesn't fully draw on the screen and borders are visible).
 	 */
-	@:native("REQUEST_SCALEFORM_MOVIE_WITH_IGNORE_SUPER_WIDESCREEN")
+	@:native("RequestScaleformMovieWithIgnoreSuperWidescreen")
 	static function requestScaleformMovieWithIgnoreSuperWidescreen(scaleformName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_RETURN_TWO")
+	@:native("ReturnTwo")
 	static function ReturnTwo(p0:Int):Int;
 
 	/**
@@ -1677,19 +1677,19 @@ extern class Graphics {
 	 * Pushes a float for the Scaleform function onto the stack.  
 	 * ```
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT")
+	@:native("ScaleformMovieMethodAddParamFloat")
 	static function scaleformMovieMethodAddParamFloat(value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SAVE_HIGH_QUALITY_PHOTO")
+	@:native("SaveHighQualityPhoto")
 	static function saveHighQualityPhoto(unused:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PAUSED_RENDERPHASES")
+	@:native("ResetPausedRenderphases")
 	static function resetPausedRenderphases():Dynamic;
 
 	/**
@@ -1698,7 +1698,7 @@ extern class Graphics {
 	 * 1 - Help Text Brief
 	 * 2 - Mission Objective Brief
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_LATEST_BRIEF_STRING")
+	@:native("ScaleformMovieMethodAddParamLatestBriefString")
 	static function scaleformMovieMethodAddParamLatestBriefString(value:Int):Dynamic;
 
 	/**
@@ -1706,14 +1706,14 @@ extern class Graphics {
 	 * Pushes an integer for the Scaleform function onto the stack.  
 	 * ```
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT")
+	@:native("ScaleformMovieMethodAddParamInt")
 	static function scaleformMovieMethodAddParamInt(value:Int):Dynamic;
 
 	/**
 	 * Adds a literal string to a scaleform movie method.
 	 * There doesn't seem to be any difference between this and other `SCALEFORM_MOVIE_METHOD_ADD_PARAM_*_STRING` natives in game code.
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING")
+	@:native("ScaleformMovieMethodAddParamLiteralString")
 	static function scaleformMovieMethodAddParamLiteralString(string:String):Dynamic;
 
 	/**
@@ -1721,7 +1721,7 @@ extern class Graphics {
 	 * Pushes a boolean for the Scaleform function onto the stack.  
 	 * ```
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL")
+	@:native("ScaleformMovieMethodAddParamBool")
 	static function scaleformMovieMethodAddParamBool(value:Bool):Dynamic;
 
 	/**
@@ -1730,13 +1730,13 @@ extern class Graphics {
 	 * When switching with a controller, the icons update and become the controller's icons.  
 	 * ```
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING")
+	@:native("ScaleformMovieMethodAddParamPlayerNameString")
 	static function scaleformMovieMethodAddParamPlayerNameString(string:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING")
+	@:native("ScaleformMovieMethodAddParamTextureNameString")
 	static function scaleformMovieMethodAddParamTextureNameString(string:String):Dynamic;
 
 	/**
@@ -1744,19 +1744,19 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SEETHROUGH_GET_MAX_THICKNESS")
+	@:native("SeethroughGetMaxThickness")
 	static function SeethroughGetMaxThickness():Float;
 
 	/**
 	 * 
 	 */
-	@:native("SEETHROUGH_SET_COLOR_NEAR")
+	@:native("SeethroughSetColorNear")
 	static function seethroughSetColorNear(red:Int, green:Int, blue:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_FADE_END_DISTANCE")
+	@:native("SeethroughSetFadeEndDistance")
 	static function SeethroughSetFadeEndDistance(distance:Float):Dynamic;
 
 	/**
@@ -1764,55 +1764,55 @@ extern class Graphics {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SEETHROUGH_RESET")
+	@:native("SeethroughReset")
 	static function seethroughReset():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_MAX_THICKNESS")
+	@:native("SeethroughSetMaxThickness")
 	static function SeethroughSetMaxThickness(thickness:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_FADE_START_DISTANCE")
+	@:native("SeethroughSetFadeStartDistance")
 	static function SeethroughSetFadeStartDistance(distance:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_HI_LIGHT_INTENSITY")
+	@:native("SeethroughSetHiLightIntensity")
 	static function SeethroughSetHiLightIntensity(intensity:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_NOISE_AMOUNT_MAX")
+	@:native("SeethroughSetNoiseAmountMax")
 	static function SeethroughSetNoiseAmountMax(amount:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SEETHROUGH_SET_HEATSCALE")
+	@:native("SeethroughSetHeatscale")
 	static function seethroughSetHeatscale(index:Int, heatScale:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_NOISE_AMOUNT_MIN")
+	@:native("SeethroughSetNoiseAmountMin")
 	static function SeethroughSetNoiseAmountMin(amount:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BACKFACECULLING")
+	@:native("SetBackfaceculling")
 	static function setBackfaceculling(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SEETHROUGH_SET_HI_LIGHT_NOISE")
+	@:native("SeethroughSetHiLightNoise")
 	static function SeethroughSetHiLightNoise(noise:Float):Dynamic;
 
 	/**
@@ -1822,14 +1822,14 @@ extern class Graphics {
 	 * 
 	 * Used in Humane Labs Heist for EMP.
 	 */
-	@:native("SET_ARTIFICIAL_LIGHTS_STATE")
+	@:native("SetArtificialLightsState")
 	static function setArtificialLightsState(state:Bool):Dynamic;
 
 	/**
 	 * Creates an integer (usually 1) for a BINK movie to be called with other natives.
 	 * [List of all BINK movies (alphabetically ordered) as of b2802](https://gist.github.com/ItsJunction/8046f28c29ea8ff2821e9e4f933f595f)
 	 */
-	@:native("_SET_BINK_MOVIE")
+	@:native("SetBinkMovie")
 	static function SetBinkMovie(name:String):Int;
 
 	/**
@@ -1837,7 +1837,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_SET_BINK_MOVIE_UNK_2")
+	@:native("SetBinkMovieUnk_2")
 	static function SetBinkMovieUnk2(binkMovie:Int, p1:Bool):Dynamic;
 
 	/**
@@ -1847,13 +1847,13 @@ extern class Graphics {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_SET_ARTIFICIAL_LIGHTS_STATE_AFFECTS_VEHICLES")
+	@:native("SetArtificialLightsStateAffectsVehicles")
 	static function SetArtificialLightsStateAffectsVehicles(toggle:Bool):Dynamic;
 
 	/**
 	 * Seeks a BINK movie to a specified position.
 	 */
-	@:native("_SET_BINK_MOVIE_TIME")
+	@:native("SetBinkMovieTime")
 	static function SetBinkMovieTime(binkMovie:Int, progress:Float):Dynamic;
 
 	/**
@@ -1865,7 +1865,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SET_BINK_MOVIE_VOLUME")
+	@:native("SetBinkMovieVolume")
 	static function SetBinkMovieVolume(binkMovie:Int, value:Float):Dynamic;
 
 	/**
@@ -1873,7 +1873,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SET_BINK_SHOULD_SKIP")
+	@:native("SetBinkShouldSkip")
 	static function SetBinkShouldSkip(binkMovie:Int, shouldSkip:Bool):Dynamic;
 
 	/**
@@ -1885,7 +1885,7 @@ extern class Graphics {
 	 * * radius - The radius of the checkpoint.  
 	 * ```
 	 */
-	@:native("SET_CHECKPOINT_CYLINDER_HEIGHT")
+	@:native("SetCheckpointCylinderHeight")
 	static function setCheckpointCylinderHeight(checkpoint:Int, nearHeight:Float, farHeight:Float, radius:Float):Dynamic;
 
 	/**
@@ -1893,25 +1893,25 @@ extern class Graphics {
 	 * Sets the checkpoint color.  
 	 * ```
 	 */
-	@:native("SET_CHECKPOINT_RGBA")
+	@:native("SetCheckpointRgba")
 	static function setCheckpointRgba(checkpoint:Int, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_CHECKPOINT_ICON_SCALE")
+	@:native("SetCheckpointIconScale")
 	static function SetCheckpointIconScale(checkpoint:Int, scale:Float):Dynamic;
 
 	/**
 	 * This multiplies the height of the icon inside a checkpoint with the default height of about 2 units above the checkpoint's coordinates.
 	 */
-	@:native("_SET_CHECKPOINT_ICON_HEIGHT")
+	@:native("SetCheckpointIconHeight")
 	static function SetCheckpointIconHeight(checkpoint:Int, height_multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CURRENT_PLAYER_TCMODIFIER")
+	@:native("SetCurrentPlayerTcmodifier")
 	static function setCurrentPlayerTcmodifier(modifierName:String):Dynamic;
 
 	/**
@@ -1919,7 +1919,7 @@ extern class Graphics {
 	 * NOTE: Debugging functions are not present in the retail version of the game.  
 	 * ```
 	 */
-	@:native("SET_DEBUG_LINES_AND_SPHERES_DRAWING_ACTIVE")
+	@:native("SetDebugLinesAndSpheresDrawingActive")
 	static function setDebugLinesAndSpheresDrawingActive(enabled:Bool):Dynamic;
 
 	/**
@@ -1927,7 +1927,7 @@ extern class Graphics {
 	 * Sets the checkpoint icon color.
 	 * ```
 	 */
-	@:native("SET_CHECKPOINT_RGBA2")
+	@:native("SetCheckpointRgba2")
 	static function setCheckpointRgba2(checkpoint:Int, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
@@ -1935,7 +1935,7 @@ extern class Graphics {
 	 * 
 	 * The effect can be reset by calling [`CLEAR_DRAW_ORIGIN`](#\_0xFF0B610F6BE0D7AF) and is limited to 32 different origins each frame.
 	 */
-	@:native("SET_DRAW_ORIGIN")
+	@:native("SetDrawOrigin")
 	static function setDrawOrigin(x:Float, y:Float, z:Float, p3:Dynamic):Dynamic;
 
 	/**
@@ -1943,19 +1943,19 @@ extern class Graphics {
 	 * 
 	 * **Note**: This native needs to be called every frame to prevent ignition.
 	 */
-	@:native("SET_DISABLE_PETROL_DECALS_IGNITING_THIS_FRAME")
+	@:native("SetDisablePetrolDecalsIgnitingThisFrame")
 	static function setDisablePetrolDecalsIgnitingThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ICON_COLOR")
+	@:native("SetEntityIconColor")
 	static function setEntityIconColor(entity:Dynamic, red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_DECAL_RENDERING_THIS_FRAME")
+	@:native("SetDisableDecalRenderingThisFrame")
 	static function setDisableDecalRenderingThisFrame():Dynamic;
 
 	/**
@@ -1963,13 +1963,13 @@ extern class Graphics {
 	 * Purpose of p0 and p1 unknown.  
 	 * ```
 	 */
-	@:native("SET_FLASH")
+	@:native("SetFlash")
 	static function setFlash(p0:Float, p1:Float, fadeIn:Float, duration:Float, fadeOut:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_EXTRA_TIMECYCLE_MODIFIER")
+	@:native("SetExtraTimecycleModifier")
 	static function SetExtraTimecycleModifier(modifierName:String):Dynamic;
 
 	/**
@@ -1978,25 +1978,25 @@ extern class Graphics {
 	 * USE_/USING_*
 	 * ```
 	 */
-	@:native("_SET_FORCE_PED_FOOTSTEPS_TRACKS")
+	@:native("SetForcePedFootstepsTracks")
 	static function SetForcePedFootstepsTracks(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HIDOF_OVERRIDE")
+	@:native("SetHidofOverride")
 	static function setHidofOverride(p0:Bool, p1:Bool, nearplaneOut:Float, nearplaneIn:Float, farplaneOut:Float, farplaneIn:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NEXT_PLAYER_TCMODIFIER")
+	@:native("SetNextPlayerTcmodifier")
 	static function setNextPlayerTcmodifier(modifierName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ICON_VISIBILITY")
+	@:native("SetEntityIconVisibility")
 	static function setEntityIconVisibility(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2005,19 +2005,19 @@ extern class Graphics {
 	 * USE_/USING_*
 	 * ```
 	 */
-	@:native("_SET_FORCE_VEHICLE_TRAILS")
+	@:native("SetForceVehicleTrails")
 	static function SetForceVehicleTrails(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NOISEOVERIDE")
+	@:native("SetNoiseoveride")
 	static function setNoiseoveride(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NOISINESSOVERIDE")
+	@:native("SetNoisinessoveride")
 	static function setNoisinessoveride(value:Float):Dynamic;
 
 	/**
@@ -2031,37 +2031,37 @@ extern class Graphics {
 	 * false = turns night vision off for your player.  
 	 * ```
 	 */
-	@:native("SET_NIGHTVISION")
+	@:native("SetNightvision")
 	static function setNightvision(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_CAM_INSIDE_NONPLAYER_VEHICLE")
+	@:native("SetParticleFxCamInsideNonplayerVehicle")
 	static function setParticleFxCamInsideNonplayerVehicle(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_BULLET_IMPACT_SCALE")
+	@:native("SetParticleFxBulletImpactScale")
 	static function setParticleFxBulletImpactScale(scale:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_ALPHA")
+	@:native("SetParticleFxLoopedAlpha")
 	static function setParticleFxLoopedAlpha(ptfxHandle:Int, alpha:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_CAM_INSIDE_VEHICLE")
+	@:native("SetParticleFxCamInsideVehicle")
 	static function setParticleFxCamInsideVehicle(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_SCALE")
+	@:native("SetParticleFxLoopedScale")
 	static function setParticleFxLoopedScale(ptfxHandle:Int, scale:Float):Dynamic;
 
 	/**
@@ -2069,19 +2069,19 @@ extern class Graphics {
 	 * 
 	 * You can use the [inverse lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/) method to normalize in a range from 0.0 to 1.0 an rgb
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_COLOUR")
+	@:native("SetParticleFxLoopedColour")
 	static function setParticleFxLoopedColour(ptfxHandle:Int, r:Float, g:Float, b:Float, bLocalOnly:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_FAR_CLIP_DIST")
+	@:native("SetParticleFxLoopedFarClipDist")
 	static function setParticleFxLoopedFarClipDist(ptfxHandle:Int, range:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_EVOLUTION")
+	@:native("SetParticleFxLoopedEvolution")
 	static function setParticleFxLoopedEvolution(ptfxHandle:Int, propertyName:String, amount:Float, noNetwork:Bool):Dynamic;
 
 	/**
@@ -2089,7 +2089,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_SET_PARTICLE_FX_NON_LOOPED_EMITTER_SCALE")
+	@:native("SetParticleFxNonLoopedEmitterScale")
 	static function SetParticleFxNonLoopedEmitterScale(p0:Float, p1:Float, scale:Float):Dynamic;
 
 	/**
@@ -2099,25 +2099,25 @@ extern class Graphics {
 	 * 		Note: the argument alpha ranges from 0.0f-1.0f !  
 	 * ```
 	 */
-	@:native("SET_PARTICLE_FX_NON_LOOPED_ALPHA")
+	@:native("SetParticleFxNonLoopedAlpha")
 	static function setParticleFxNonLoopedAlpha(alpha:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_LOOPED_OFFSETS")
+	@:native("SetParticleFxLoopedOffsets")
 	static function setParticleFxLoopedOffsets(ptfxHandle:Int, x:Float, y:Float, z:Float, rotX:Float, rotY:Float, rotZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED")
+	@:native("SetScaleformMovieAsNoLongerNeeded")
 	static function setScaleformMovieAsNoLongerNeeded(scaleformHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_OVERRIDE")
+	@:native("SetParticleFxOverride")
 	static function setParticleFxOverride(oldAsset:String, newAsset:String):Dynamic;
 
 	/**
@@ -2126,13 +2126,13 @@ extern class Graphics {
 	 * This doc previously stated that the set color is **NOT** networked, however it does actually turns out to be networked. Tested with all fireworks effects and several other FX effects resulted in colored fx effects on all clients when used in combination with [START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD](#\_0xF56B8137DF10135D).
 	 * This might however not be the case for all types of particle fx's, so it's recommended to test this thoroughly with multiple clients before releasing your script for example.
 	 */
-	@:native("SET_PARTICLE_FX_NON_LOOPED_COLOUR")
+	@:native("SetParticleFxNonLoopedColour")
 	static function setParticleFxNonLoopedColour(r:Float, g:Float, b:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARTICLE_FX_SHOOTOUT_BOAT")
+	@:native("SetParticleFxShootoutBoat")
 	static function setParticleFxShootoutBoat(p0:Dynamic):Dynamic;
 
 	/**
@@ -2142,13 +2142,13 @@ extern class Graphics {
 	 * 
 	 * Configures a Scaleform movie to render to a large render target (1280x720), which is useful for ensuring higher quality and clarity in certain display scenarios. Such as displaying the name of an organization (CEO Office) in a visually impactful way for example.
 	 */
-	@:native("SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT")
+	@:native("SetScaleformMovieToUseLargeRt")
 	static function setScaleformMovieToUseLargeRt(scaleformMovieId:Int, useLargeRT:Bool):Dynamic;
 
 	/**
 	 * Adjusts a scaleform movie's dimensions to fit a large rendertarget. Mostly used in casino scripts.
 	 */
-	@:native("SET_SCALEFORM_MOVIE_TO_USE_SUPER_LARGE_RT")
+	@:native("SetScaleformMovieToUseSuperLargeRt")
 	static function setScaleformMovieToUseSuperLargeRt(scaleformHandle:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -2183,25 +2183,25 @@ extern class Graphics {
 	 * 
 	 * To reset the value, use `RESET_SCRIPT_GFX_ALIGN`.
 	 */
-	@:native("SET_SCRIPT_GFX_ALIGN")
+	@:native("SetScriptGfxAlign")
 	static function setScriptGfxAlign(horizontalAlign:Int, verticalAlign:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCALEFORM_MOVIE_TO_USE_SYSTEM_TIME")
+	@:native("SetScaleformMovieToUseSystemTime")
 	static function setScaleformMovieToUseSystemTime(scaleform:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * Sets a flag defining whether or not script draw commands should continue being drawn behind the pause menu. This is usually used for TV channels and other draw commands that are used with a world render target.
 	 */
-	@:native("SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU")
+	@:native("SetScriptGfxDrawBehindPausemenu")
 	static function setScriptGfxDrawBehindPausemenu(flag:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_TCMODIFIER_TRANSITION")
+	@:native("SetPlayerTcmodifierTransition")
 	static function setPlayerTcmodifierTransition(value:Float):Dynamic;
 
 	/**
@@ -2211,7 +2211,7 @@ extern class Graphics {
 	 * modifierName - The modifier to load (e.g. "V_FIB_IT3", "scanline_cam", etc.)
 	 * ```
 	 */
-	@:native("SET_TIMECYCLE_MODIFIER")
+	@:native("SetTimecycleModifier")
 	static function setTimecycleModifier(modifierName:String):Dynamic;
 
 	/**
@@ -2219,7 +2219,7 @@ extern class Graphics {
 	 * expects the width/height to be configured using this native in order to get a proper starting position for the draw
 	 * command.
 	 */
-	@:native("SET_SCRIPT_GFX_ALIGN_PARAMS")
+	@:native("SetScriptGfxAlignParams")
 	static function setScriptGfxAlignParams(x:Float, y:Float, w:Float, h:Float):Dynamic;
 
 	/**
@@ -2245,13 +2245,13 @@ extern class Graphics {
 	 * }
 	 * ```
 	 */
-	@:native("SET_SCRIPT_GFX_DRAW_ORDER")
+	@:native("SetScriptGfxDrawOrder")
 	static function setScriptGfxDrawOrder(order:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED")
+	@:native("SetStreamedTextureDictAsNoLongerNeeded")
 	static function setStreamedTextureDictAsNoLongerNeeded(textureDict:String):Dynamic;
 
 	/**
@@ -2259,7 +2259,7 @@ extern class Graphics {
 	 * Probably changes tvs from being a 3d audio to being "global" audio
 	 * ```
 	 */
-	@:native("SET_TV_AUDIO_FRONTEND")
+	@:native("SetTvAudioFrontend")
 	static function setTvAudioFrontend(toggle:Bool):Dynamic;
 
 	/**
@@ -2267,19 +2267,19 @@ extern class Graphics {
 	 * Toggles Heatvision on/off.  
 	 * ```
 	 */
-	@:native("SET_SEETHROUGH")
+	@:native("SetSeethrough")
 	static function setSeethrough(toggle:Bool):Dynamic;
 
 	/**
 	 * This native doesn't work like [`SetWeatherTypeTransition`](#\_0x578C752848ECFA0C).
 	 */
-	@:native("SET_TRANSITION_TIMECYCLE_MODIFIER")
+	@:native("SetTransitionTimecycleModifier")
 	static function setTransitionTimecycleModifier(modifierName:String, transition:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TIMECYCLE_MODIFIER_STRENGTH")
+	@:native("SetTimecycleModifierStrength")
 	static function setTimecycleModifierStrength(strength:Float):Dynamic;
 
 	/**
@@ -2294,37 +2294,37 @@ extern class Graphics {
 	 * NativeDB Added Parameter 17: Any p16
 	 * ```
 	 */
-	@:native("START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE")
+	@:native("StartNetworkedParticleFxLoopedOnEntityBone")
 	static function startNetworkedParticleFxLoopedOnEntityBone(effectName:String, entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, xRot:Float, yRot:Float, zRot:Float, boneIndex:Int, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TRACKED_POINT_INFO")
+	@:native("SetTrackedPointInfo")
 	static function setTrackedPointInfo(point:Int, x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TV_CHANNEL_PLAYLIST_AT_HOUR")
+	@:native("SetTvChannelPlaylistAtHour")
 	static function setTvChannelPlaylistAtHour(tvChannel:Int, playlistName:String, hour:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TV_CHANNEL")
+	@:native("SetTvChannel")
 	static function setTvChannel(channel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TV_VOLUME")
+	@:native("SetTvVolume")
 	static function setTvVolume(volume:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY")
+	@:native("StartNetworkedParticleFxNonLoopedOnEntity")
 	static function startNetworkedParticleFxNonLoopedOnEntity(effectName:String, entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, rotX:Float, rotY:Float, rotZ:Float, scale:Float, axisX:Bool, axisY:Bool, axisZ:Bool):Bool;
 
 	/**
@@ -2338,7 +2338,7 @@ extern class Graphics {
 	 * NativeDB Added Parameter 12: BOOL p11
 	 * ```
 	 */
-	@:native("START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD")
+	@:native("StartNetworkedParticleFxNonLoopedAtCoord")
 	static function startNetworkedParticleFxNonLoopedAtCoord(effectName:String, xPos:Float, yPos:Float, zPos:Float, xRot:Float, yRot:Float, zRot:Float, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Bool;
 
 	/**
@@ -2365,7 +2365,7 @@ extern class Graphics {
 	 * The above playlists work as intended, and are commonly used, but there are many more playlists, as seen in `tvplaylists.xml`. A pastebin below outlines all playlists, they will be surronded by the name tag I.E. (<Name>PL_STD_CNT</Name> = PL_STD_CNT).
 	 * https://pastebin.com/zUzGB6h7
 	 */
-	@:native("SET_TV_CHANNEL_PLAYLIST")
+	@:native("SetTvChannelPlaylist")
 	static function setTvChannelPlaylist(tvChannel:Int, playlistName:String, restart:Bool):Dynamic;
 
 	/**
@@ -2380,7 +2380,7 @@ extern class Graphics {
 	 * NativeDB Added Parameter 16: Any p15
 	 * ```
 	 */
-	@:native("START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY")
+	@:native("StartNetworkedParticleFxLoopedOnEntity")
 	static function startNetworkedParticleFxLoopedOnEntity(effectName:String, entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, xRot:Float, yRot:Float, zRot:Float, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
@@ -2389,19 +2389,19 @@ extern class Graphics {
 	 * p11 seems to be always 0  
 	 * ```
 	 */
-	@:native("START_PARTICLE_FX_LOOPED_AT_COORD")
+	@:native("StartParticleFxLoopedAtCoord")
 	static function startParticleFxLoopedAtCoord(effectName:String, x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool, p11:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE")
+	@:native("StartNetworkedParticleFxNonLoopedOnPedBone")
 	static function startNetworkedParticleFxNonLoopedOnPedBone(effectName:String, ped:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, rotX:Float, rotY:Float, rotZ:Float, boneIndex:Int, scale:Float, axisX:Bool, axisY:Bool, axisZ:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE")
+	@:native("StartParticleFxLoopedOnEntityBone")
 	static function startParticleFxLoopedOnEntityBone(effectName:String, entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, xRot:Float, yRot:Float, zRot:Float, boneIndex:Int, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
@@ -2409,7 +2409,7 @@ extern class Graphics {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE")
+	@:native("StartNetworkedParticleFxNonLoopedOnEntityBone")
 	static function StartNetworkedParticleFxNonLoopedOnEntityBone(effectName:String, entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, rotX:Float, rotY:Float, rotZ:Float, boneIndex:Int, scale:Float, axisX:Bool, axisY:Bool, axisZ:Bool):Bool;
 
 	/**
@@ -2429,13 +2429,13 @@ extern class Graphics {
 	 * Function.Call<int>(Hash.START_PARTICLE_FX_NON_LOOPED_AT_COORD, "scr_fbi4_trucks_crash", GTA.Game.Player.Character.Position.X, GTA.Game.Player.Character.Position.Y, GTA.Game.Player.Character.Position.Z + 4f, 0, 0, 0, 5.5f, 0, 0, 0);  
 	 * ```
 	 */
-	@:native("START_PARTICLE_FX_NON_LOOPED_AT_COORD")
+	@:native("StartParticleFxNonLoopedAtCoord")
 	static function startParticleFxNonLoopedAtCoord(effectName:String, xPos:Float, yPos:Float, zPos:Float, xRot:Float, yRot:Float, zRot:Float, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("START_PETROL_TRAIL_DECALS")
+	@:native("StartPetrolTrailDecals")
 	static function startPetrolTrailDecals(p0:Float):Dynamic;
 
 	/**
@@ -2443,19 +2443,19 @@ extern class Graphics {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_STOP_BINK_MOVIE")
+	@:native("StopBinkMovie")
 	static function StopBinkMovie(binkMovie:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_PARTICLE_FX_LOOPED_ON_ENTITY")
+	@:native("StartParticleFxLoopedOnEntity")
 	static function startParticleFxLoopedOnEntity(effectName:String, entity:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, xRot:Float, yRot:Float, zRot:Float, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("START_PARTICLE_FX_LOOPED_ON_PED_BONE")
+	@:native("StartParticleFxLoopedOnPedBone")
 	static function startParticleFxLoopedOnPedBone(effectName:String, ped:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, xRot:Float, yRot:Float, zRot:Float, boneIndex:Int, scale:Float, xAxis:Bool, yAxis:Bool, zAxis:Bool):Int;
 
 	/**
@@ -2463,7 +2463,7 @@ extern class Graphics {
 	 * p1 is always 0 in the native scripts  
 	 * ```
 	 */
-	@:native("STOP_PARTICLE_FX_LOOPED")
+	@:native("StopParticleFxLooped")
 	static function stopParticleFxLooped(ptfxHandle:Int, p1:Bool):Dynamic;
 
 	/**
@@ -2477,14 +2477,14 @@ extern class Graphics {
 	 * however it uses -1 for the specified bone index, so it should be possible to start a non looped fx on an entity bone using that native  
 	 * ```
 	 */
-	@:native("START_PARTICLE_FX_NON_LOOPED_ON_ENTITY")
+	@:native("StartParticleFxNonLoopedOnEntity")
 	static function startParticleFxNonLoopedOnEntity(effectName:String, entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, rotX:Float, rotY:Float, rotZ:Float, scale:Float, axisX:Bool, axisY:Bool, axisZ:Bool):Bool;
 
 	/**
 	 * This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).
 	 * This requires these two natives to be called as well to configure the grid: [`TERRAINGRID_SET_PARAMS`](#\_0x1C4FC5752BCD8E48) and [`TERRAINGRID_SET_COLOURS`](#\_0x5CE62918F8D703C7).
 	 */
-	@:native("TERRAINGRID_ACTIVATE")
+	@:native("TerraingridActivate")
 	static function terraingridActivate(toggle:Bool):Dynamic;
 
 	/**
@@ -2494,13 +2494,13 @@ extern class Graphics {
 	 * list: pastebin.com/N9unUFWY  
 	 * ```
 	 */
-	@:native("START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE")
+	@:native("StartParticleFxNonLoopedOnPedBone")
 	static function startParticleFxNonLoopedOnPedBone(effectName:String, ped:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, rotX:Float, rotY:Float, rotZ:Float, boneIndex:Int, scale:Float, axisX:Bool, axisY:Bool, axisZ:Bool):Bool;
 
 	/**
 	 * Switches the rendering display to exclude everything except PostFX, resulting in a frozen screen before the UI pass.
 	 */
-	@:native("TOGGLE_PAUSED_RENDERPHASES")
+	@:native("TogglePausedRenderphases")
 	static function togglePausedRenderphases(toggle:Bool):Dynamic;
 
 	/**
@@ -2509,7 +2509,7 @@ extern class Graphics {
 	 * GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED("MPMissMarkers256");  
 	 * ```
 	 */
-	@:native("UNPATCH_DECAL_DIFFUSE_MAP")
+	@:native("UnpatchDecalDiffuseMap")
 	static function unpatchDecalDiffuseMap(decalType:Int):Dynamic;
 
 	/**
@@ -2524,7 +2524,7 @@ extern class Graphics {
 	 *  GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL("scr_prison_break_heist_station");
 	 * ```
 	 */
-	@:native("USE_PARTICLE_FX_ASSET")
+	@:native("UseParticleFxAsset")
 	static function useParticleFxAsset(name:String):Dynamic;
 
 	/**
@@ -2537,25 +2537,25 @@ extern class Graphics {
 	 * parameters used are\
 	 * GRAPHICS::\_0x5CE62918F8D703C7(255, 0, 0, 64, 255, 255, 255, 5, 255, 255, 0, 64);
 	 */
-	@:native("TERRAINGRID_SET_COLOURS")
+	@:native("TerraingridSetColours")
 	static function terraingridSetColours(lowR:Int, lowG:Int, lowB:Int, lowAlpha:Int, R:Int, G:Int, B:Int, Alpha:Int, highR:Int, highG:Int, highB:Int, highAlpha:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WASH_DECALS_IN_RANGE")
+	@:native("WashDecalsInRange")
 	static function washDecalsInRange(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TRIGGER_SCREENBLUR_FADE_IN")
+	@:native("TriggerScreenblurFadeIn")
 	static function triggerScreenblurFadeIn(transitionTime:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UI3DSCENE_IS_AVAILABLE")
+	@:native("Ui3dsceneIsAvailable")
 	static function ui3dsceneIsAvailable():Bool;
 
 	/**
@@ -2565,19 +2565,19 @@ extern class Graphics {
 	 * 
 	 * All those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png
 	 */
-	@:native("TERRAINGRID_SET_PARAMS")
+	@:native("TerraingridSetParams")
 	static function terraingridSetParams(x:Float, y:Float, z:Float, p3:Float, rotation:Float, p5:Float, width:Float, height:Float, p8:Float, scale:Float, glowIntensity:Float, normalHeight:Float, heightDiff:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TRIGGER_SCREENBLUR_FADE_OUT")
+	@:native("TriggerScreenblurFadeOut")
 	static function triggerScreenblurFadeOut(transitionTime:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_LIGHTS_ON_ENTITY")
+	@:native("UpdateLightsOnEntity")
 	static function updateLightsOnEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -2585,13 +2585,13 @@ extern class Graphics {
 	 * All presets can be found in common\data\ui\uiscenes.meta
 	 * ```
 	 */
-	@:native("UI3DSCENE_PUSH_PRESET")
+	@:native("Ui3dscenePushPreset")
 	static function ui3dscenePushPreset(presetName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WASH_DECALS_FROM_VEHICLE")
+	@:native("WashDecalsFromVehicle")
 	static function washDecalsFromVehicle(vehicle:Dynamic, p1:Float):Dynamic;
 
 }

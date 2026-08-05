@@ -28,13 +28,13 @@ extern class Ped {
 	 * PED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("mpbeach_overlays"), MISC::GET_HASH_KEY("fm_hair_fuzz"))
 	 * ```
 	 */
-	@:native("ADD_PED_DECORATION_FROM_HASHES")
+	@:native("AddPedDecorationFromHashes")
 	static function addPedDecorationFromHashes(ped:Dynamic, collection:Int, overlay:Int):Dynamic;
 
 	/**
 	 * Sets an area where scenarios are blocked
 	 */
-	@:native("ADD_SCENARIO_BLOCKING_AREA")
+	@:native("AddScenarioBlockingArea")
 	static function addScenarioBlockingArea(posMinX:Float, posMinY:Float, posMinZ:Float, posMaxX:Float, posMaxY:Float, posMaxZ:Float, network:Bool, cancelActive:Bool, blockPeds:Bool, blockVehicles:Bool):Int;
 
 	/**
@@ -42,19 +42,19 @@ extern class Ped {
 	 * Same as SET_PED_ARMOUR, but ADDS 'amount' to the armor the Ped already has.  
 	 * ```
 	 */
-	@:native("ADD_ARMOUR_TO_PED")
+	@:native("AddArmourToPed")
 	static function addArmourToPed(ped:Dynamic, amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_PED_DECORATION_FROM_HASHES_IN_CORONA")
+	@:native("AddPedDecorationFromHashesInCorona")
 	static function addPedDecorationFromHashesInCorona(ped:Dynamic, collection:Int, overlay:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("APPLY_PED_BLOOD_BY_ZONE")
+	@:native("ApplyPedBloodByZone")
 	static function applyPedBloodByZone(ped:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Dynamic):Dynamic;
 
 	/**
@@ -62,7 +62,7 @@ extern class Ped {
 	 * Can't select void. This function returns nothing. The hash of the created relationship group is output in the second parameter.  
 	 * ```
 	 */
-	@:native("ADD_RELATIONSHIP_GROUP")
+	@:native("AddRelationshipGroup")
 	static function addRelationshipGroup(name:String, groupHash:Dynamic):Dynamic;
 
 	/**
@@ -72,7 +72,7 @@ extern class Ped {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("APPLY_PED_BLOOD_SPECIFIC")
+	@:native("ApplyPedBloodSpecific")
 	static function applyPedBloodSpecific(ped:Dynamic, component:Int, u:Float, v:Float, rotation:Float, scale:Float, forcedFrame:Int, preAge:Float, bloodName:String):Dynamic;
 
 	/**
@@ -90,7 +90,7 @@ extern class Ped {
 	 * cs_trev1_dirt
 	 * ```
 	 */
-	@:native("APPLY_PED_DAMAGE_DECAL")
+	@:native("ApplyPedDamageDecal")
 	static function applyPedDamageDecal(ped:Dynamic, damageZone:Int, xOffset:Float, yOffset:Float, heading:Float, scale:Float, alpha:Float, variation:Int, fadeIn:Bool, decalName:String):Dynamic;
 
 	/**
@@ -99,13 +99,13 @@ extern class Ped {
 	 * PED::APPLY_PED_BLOOD(l_4B, 3, 0.0, 0.0, 0.0, "wound_sheet");  
 	 * ```
 	 */
-	@:native("APPLY_PED_BLOOD")
+	@:native("ApplyPedBlood")
 	static function applyPedBlood(ped:Dynamic, boneIndex:Int, xRot:Float, yRot:Float, zRot:Float, woundType:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_BLOCK_PED_DEAD_BODY_SHOCKING_EVENTS")
+	@:native("BlockPedDeadBodyShockingEvents")
 	static function BlockPedDeadBodyShockingEvents(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -120,31 +120,31 @@ extern class Ped {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("APPLY_DAMAGE_TO_PED")
+	@:native("ApplyDamageToPed")
 	static function applyDamageToPed(ped:Dynamic, damageAmount:Int, armorFirst:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_CREATE_RANDOM_BIKE_RIDER")
+	@:native("CanCreateRandomBikeRider")
 	static function canCreateRandomBikeRider():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_CREATE_RANDOM_DRIVER")
+	@:native("CanCreateRandomDriver")
 	static function canCreateRandomDriver():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_CREATE_RANDOM_PED")
+	@:native("CanCreateRandomPed")
 	static function canCreateRandomPed(unk:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("APPLY_PED_BLOOD_DAMAGE_BY_ZONE")
+	@:native("ApplyPedBloodDamageByZone")
 	static function applyPedBloodDamageByZone(ped:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Dynamic):Dynamic;
 
 	/**
@@ -175,7 +175,7 @@ extern class Ped {
 	 * gist.github.com/alexguirre/f3f47f75ddcf617f416f3c8a55ae2227  
 	 * ```
 	 */
-	@:native("APPLY_PED_DAMAGE_PACK")
+	@:native("ApplyPedDamagePack")
 	static function applyPedDamagePack(ped:Dynamic, damagePack:String, damage:Float, mult:Float):Dynamic;
 
 	/**
@@ -184,61 +184,61 @@ extern class Ped {
 	 * [Example: Can prevent peds from falling when standing on moving vehicles.]  
 	 * ```
 	 */
-	@:native("CAN_PED_RAGDOLL")
+	@:native("CanPedRagdoll")
 	static function canPedRagdoll(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_KNOCK_PED_OFF_VEHICLE")
+	@:native("CanKnockPedOffVehicle")
 	static function canKnockPedOffVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ALL_PED_PROPS")
+	@:native("ClearAllPedProps")
 	static function clearAllPedProps(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_SYNCHRONIZED_SCENE_TO_ENTITY")
+	@:native("AttachSynchronizedSceneToEntity")
 	static function attachSynchronizedSceneToEntity(sceneID:Int, entity:Dynamic, boneIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_CREATE_RANDOM_COPS")
+	@:native("CanCreateRandomCops")
 	static function canCreateRandomCops():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_FACIAL_IDLE_ANIM_OVERRIDE")
+	@:native("ClearFacialIdleAnimOverride")
 	static function clearFacialIdleAnimOverride(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ALL_PED_VEHICLE_FORCED_SEAT_USAGE")
+	@:native("ClearAllPedVehicleForcedSeatUsage")
 	static function clearAllPedVehicleForcedSeatUsage(ped:Dynamic):Dynamic;
 
 	/**
 	 * Clears the blood on a ped.
 	 */
-	@:native("CLEAR_PED_BLOOD_DAMAGE")
+	@:native("ClearPedBloodDamage")
 	static function clearPedBloodDamage(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_PED_IN_COMBAT_SEE_TARGET")
+	@:native("CanPedInCombatSeeTarget")
 	static function canPedInCombatSeeTarget(ped:Dynamic, target:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_ALTERNATE_MOVEMENT_ANIM")
+	@:native("ClearPedAlternateMovementAnim")
 	static function clearPedAlternateMovementAnim(ped:Dynamic, stance:Int, p2:Float):Dynamic;
 
 	/**
@@ -246,7 +246,7 @@ extern class Ped {
 	 * CLEAR_PED_*
 	 * ```
 	 */
-	@:native("_CLEAR_PED_COVER_CLIPSET_OVERRIDE")
+	@:native("ClearPedCoverClipsetOverride")
 	static function ClearPedCoverClipsetOverride(ped:Dynamic):Dynamic;
 
 	/**
@@ -254,13 +254,13 @@ extern class Ped {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_CLEAR_FACIAL_CLIPSET_OVERRIDE")
+	@:native("ClearFacialClipsetOverride")
 	static function ClearFacialClipsetOverride(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_PED_SEE_HATED_PED")
+	@:native("CanPedSeeHatedPed")
 	static function canPedSeeHatedPed(ped1:Dynamic, ped2:Dynamic):Bool;
 
 	/**
@@ -268,19 +268,19 @@ extern class Ped {
 	 * Somehow related to changing ped's clothes.  
 	 * ```
 	 */
-	@:native("CLEAR_PED_BLOOD_DAMAGE_BY_ZONE")
+	@:native("ClearPedBloodDamageByZone")
 	static function clearPedBloodDamageByZone(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_ALTERNATE_WALK_ANIM")
+	@:native("ClearPedAlternateWalkAnim")
 	static function clearPedAlternateWalkAnim(ped:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_DECORATIONS_LEAVE_SCARS")
+	@:native("ClearPedDecorationsLeaveScars")
 	static function clearPedDecorationsLeaveScars(ped:Dynamic):Dynamic;
 
 	/**
@@ -289,43 +289,43 @@ extern class Ped {
 	 * p2: "blushing" and "ALL" found in the b617d scripts.  
 	 * ```
 	 */
-	@:native("CLEAR_PED_DAMAGE_DECAL_BY_ZONE")
+	@:native("ClearPedDamageDecalByZone")
 	static function clearPedDamageDecalByZone(ped:Dynamic, p1:Int, p2:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_ENV_DIRT")
+	@:native("ClearPedEnvDirt")
 	static function clearPedEnvDirt(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_DECORATIONS")
+	@:native("ClearPedDecorations")
 	static function clearPedDecorations(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_NON_CREATION_AREA")
+	@:native("ClearPedNonCreationArea")
 	static function clearPedNonCreationArea():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_LAST_DAMAGE_BONE")
+	@:native("ClearPedLastDamageBone")
 	static function clearPedLastDamageBone(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_DRIVE_BY_CLIPSET_OVERRIDE")
+	@:native("ClearPedDriveByClipsetOverride")
 	static function clearPedDriveByClipsetOverride(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_PROP")
+	@:native("ClearPedProp")
 	static function clearPedProp(ped:Dynamic, propId:Int):Dynamic;
 
 	/**
@@ -333,19 +333,19 @@ extern class Ped {
 	 * It clears the wetness of the selected Ped/Player. Clothes have to be wet to notice the difference.  
 	 * ```
 	 */
-	@:native("CLEAR_PED_WETNESS")
+	@:native("ClearPedWetness")
 	static function clearPedWetness(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_STORED_HAT_PROP")
+	@:native("ClearPedStoredHatProp")
 	static function clearPedStoredHatProp(ped:Dynamic):Dynamic;
 
 	/**
 	 * Creates a copy of the passed ped, optionally setting it as local and/or shallow-copying the head blend data.
 	 */
-	@:native("CLONE_PED")
+	@:native("ClonePed")
 	static function clonePed(ped:Dynamic, isNetwork:Bool, bScriptHostPed:Bool, copyHeadBlendFlag:Bool):Dynamic;
 
 	/**
@@ -353,13 +353,13 @@ extern class Ped {
 	 * There seem to be 26 flags  
 	 * ```
 	 */
-	@:native("CLEAR_RAGDOLL_BLOCKING_FLAGS")
+	@:native("ClearRagdollBlockingFlags")
 	static function clearRagdollBlockingFlags(ped:Dynamic, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_PARACHUTE_PACK_VARIATION")
+	@:native("ClearPedParachutePackVariation")
 	static function clearPedParachutePackVariation(ped:Dynamic):Dynamic;
 
 	/**
@@ -379,13 +379,13 @@ extern class Ped {
 	 * PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(2, 0xA49E591C, l_1017);  
 	 * ```
 	 */
-	@:native("CLEAR_RELATIONSHIP_BETWEEN_GROUPS")
+	@:native("ClearRelationshipBetweenGroups")
 	static function clearRelationshipBetweenGroups(relationship:Int, group1:Int, group2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLONE_PED_TO_TARGET_EX")
+	@:native("ClonePedToTargetEx")
 	static function ClonePedToTargetEx(ped:Dynamic, targetPed:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -393,13 +393,13 @@ extern class Ped {
 	 * Copies ped's components and props to targetPed.
 	 * ```
 	 */
-	@:native("CLONE_PED_TO_TARGET")
+	@:native("ClonePedToTarget")
 	static function clonePedToTarget(ped:Dynamic, targetPed:Dynamic):Dynamic;
 
 	/**
 	 * Removes the scubagear (for mp male: component id: 8, drawableId: 123, textureId: any) from peds. Does not play the 'remove scuba gear' animation, but instantly removes it.
 	 */
-	@:native("CLEAR_PED_SCUBA_GEAR_VARIATION")
+	@:native("ClearPedScubaGearVariation")
 	static function clearPedScubaGearVariation(ped:Dynamic):Dynamic;
 
 	/**
@@ -410,13 +410,13 @@ extern class Ped {
 	 * Returns a handle to the created group, or 0 if a group couldn't be created.  
 	 * ```
 	 */
-	@:native("CREATE_GROUP")
+	@:native("CreateGroup")
 	static function createGroup(unused:Int):Int;
 
 	/**
 	 * Used one time in fmmc_launcher.c instead of CLONE_PED because ?
 	 */
-	@:native("_CLONE_PED_EX")
+	@:native("ClonePedEx")
 	static function ClonePedEx(ped:Dynamic, heading:Float, isNetwork:Bool, bScriptHostPed:Bool, p4:Dynamic):Dynamic;
 
 	/**
@@ -427,25 +427,25 @@ extern class Ped {
 	 * If a message already exists, this function does nothing. A message exists until the point it has been successfully dispatched by GIVE_PED_NM_MESSAGE.  
 	 * ```
 	 */
-	@:native("CREATE_NM_MESSAGE")
+	@:native("CreateNmMessage")
 	static function createNmMessage(startImmediately:Bool, messageId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_PARACHUTE_BAG_OBJECT")
+	@:native("CreateParachuteBagObject")
 	static function createParachuteBagObject(ped:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_PED_INSIDE_VEHICLE")
+	@:native("CreatePedInsideVehicle")
 	static function createPedInsideVehicle(vehicle:Dynamic, pedType:Int, modelHash:Int, seat:Int, isNetwork:Bool, bScriptHostPed:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_RANDOM_PED_AS_DRIVER")
+	@:native("CreateRandomPedAsDriver")
 	static function createRandomPedAsDriver(vehicle:Dynamic, returnHandle:Bool):Dynamic;
 
 	/**
@@ -453,7 +453,7 @@ extern class Ped {
 	 * This ped will initially be owned by the creating script as a mission entity, and the model should be loaded already
 	 * (e.g. using REQUEST_MODEL).
 	 */
-	@:native("CREATE_PED")
+	@:native("CreatePed")
 	static function createPed(pedType:Int, modelHash:Int, x:Float, y:Float, z:Float, heading:Float, isNetwork:Bool, bScriptHostPed:Bool):Dynamic;
 
 	/**
@@ -463,7 +463,7 @@ extern class Ped {
 	 * yaw to Ped.rotation  
 	 * ```
 	 */
-	@:native("CREATE_SYNCHRONIZED_SCENE")
+	@:native("CreateSynchronizedScene")
 	static function createSynchronizedScene(x:Float, y:Float, z:Float, roll:Float, pitch:Float, yaw:Float, p6:Int):Int;
 
 	/**
@@ -478,13 +478,13 @@ extern class Ped {
 	 * Ped will not act until SET_PED_AS_NO_LONGER_NEEDED is called.
 	 * ```
 	 */
-	@:native("CREATE_RANDOM_PED")
+	@:native("CreateRandomPed")
 	static function createRandomPed(posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_SYNCHRONIZED_SCENE")
+	@:native("DetachSynchronizedScene")
 	static function detachSynchronizedScene(sceneID:Int):Dynamic;
 
 	/**
@@ -492,55 +492,55 @@ extern class Ped {
 	 * Deletes the specified ped, then sets the handle pointed to by the pointer to NULL.  
 	 * ```
 	 */
-	@:native("DELETE_PED")
+	@:native("DeletePed")
 	static function deletePed(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_HEAD_BLEND_PALETTE_COLOR")
+	@:native("DisableHeadBlendPaletteColor")
 	static function disableHeadBlendPaletteColor(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CREATE_SYNCHRONIZED_SCENE_2")
+	@:native("CreateSynchronizedScene_2")
 	static function CreateSynchronizedScene2(x:Float, y:Float, z:Float, radius:Float, object:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_PED_HEATSCALE_OVERRIDE")
+	@:native("DisablePedHeatscaleOverride")
 	static function disablePedHeatscaleOverride(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_GROUP_EXIST")
+	@:native("DoesGroupExist")
 	static function doesGroupExist(groupId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_DOES_RELATIONSHIP_GROUP_EXIST")
+	@:native("DoesRelationshipGroupExist")
 	static function DoesRelationshipGroupExist(groupHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_DOES_SCENARIO_BLOCKING_AREA_EXIST")
+	@:native("DoesScenarioBlockingAreaExist")
 	static function DoesScenarioBlockingAreaExist(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DROP_AMBIENT_PROP")
+	@:native("DropAmbientProp")
 	static function dropAmbientProp(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_PED_AI_AND_ANIMATION_UPDATE")
+	@:native("ForcePedAiAndAnimationUpdate")
 	static function forcePedAiAndAnimationUpdate(ped:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -574,13 +574,13 @@ extern class Ped {
 	 * }
 	 * ```
 	 */
-	@:native("FORCE_PED_MOTION_STATE")
+	@:native("ForcePedMotionState")
 	static function forcePedMotionState(ped:Dynamic, motionStateHash:Int, shouldReset:Bool, updateState:Int, forceAIPreCameraUpdate:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_PED_TO_OPEN_PARACHUTE")
+	@:native("ForcePedToOpenParachute")
 	static function forcePedToOpenParachute(ped:Dynamic):Dynamic;
 
 	/**
@@ -592,31 +592,31 @@ extern class Ped {
 	 * 
 	 * Do note that this native function does not work in multiplayer/network environment.
 	 */
-	@:native("EXPLODE_PED_HEAD")
+	@:native("ExplodePedHead")
 	static function explodePedHead(ped:Dynamic, weaponHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_FREEZE_PED_CAMERA_ROTATION")
+	@:native("FreezePedCameraRotation")
 	static function FreezePedCameraRotation(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FINALIZE_HEAD_BLEND")
+	@:native("FinalizeHeadBlend")
 	static function finalizeHeadBlend(ped:Dynamic):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("GET_ANIM_INITIAL_OFFSET_POSITION")
+	@:native("GetAnimInitialOffsetPosition")
 	static function getAnimInitialOffsetPosition(animDict:String, animName:String, x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, p8:Float, p9:Int):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("GET_ANIM_INITIAL_OFFSET_ROTATION")
+	@:native("GetAnimInitialOffsetRotation")
 	static function getAnimInitialOffsetRotation(animDict:String, animName:String, x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, p8:Float, p9:Int):Dynamic;
 
 	/**
@@ -651,7 +651,7 @@ extern class Ped {
 	 * Note: PED::GET_PED_NEARBY_PEDS works for more peds.  
 	 * ```
 	 */
-	@:native("GET_CLOSEST_PED")
+	@:native("GetClosestPed")
 	static function getClosestPed(x:Float, y:Float, z:Float, radius:Float, p4:Bool, p5:Bool, outPed:Dynamic, p7:Bool, p8:Bool, pedType:Int):Bool;
 
 	/**
@@ -659,7 +659,7 @@ extern class Ped {
 	 * p1 may be a BOOL representing whether or not the group even exists  
 	 * ```
 	 */
-	@:native("GET_GROUP_SIZE")
+	@:native("GetGroupSize")
 	static function getGroupSize(groupID:Int, unknown:Dynamic, sizeInMembers:Dynamic):Dynamic;
 
 	/**
@@ -693,31 +693,31 @@ extern class Ped {
 	 * 16=OptimalCoverDistance  
 	 * ```
 	 */
-	@:native("GET_COMBAT_FLOAT")
+	@:native("GetCombatFloat")
 	static function getCombatFloat(ped:Dynamic, p1:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MELEE_TARGET_FOR_PED")
+	@:native("GetMeleeTargetForPed")
 	static function getMeleeTargetForPed(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS")
+	@:native("GetNumberOfPedDrawableVariations")
 	static function getNumberOfPedDrawableVariations(ped:Dynamic, componentId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_ACCURACY")
+	@:native("GetPedAccuracy")
 	static function getPedAccuracy(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_JACK_TARGET")
+	@:native("GetJackTarget")
 	static function getJackTarget(ped:Dynamic):Dynamic;
 
 	/**
@@ -725,25 +725,25 @@ extern class Ped {
 	 * Used for freemode (online) characters.  
 	 * ```
 	 */
-	@:native("_GET_NUM_HAIR_COLORS")
+	@:native("GetNumHairColors")
 	static function GetNumHairColors():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_NUM_MAKEUP_COLORS")
+	@:native("GetNumMakeupColors")
 	static function GetNumMakeupColors():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DEAD_PED_PICKUP_COORDS")
+	@:native("GetDeadPedPickupCoords")
 	static function getDeadPedPickupCoords(ped:Dynamic, p1:Float, p2:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_PED_TEXTURE_VARIATIONS")
+	@:native("GetNumberOfPedTextureVariations")
 	static function getNumberOfPedTextureVariations(ped:Dynamic, componentId:Int, drawableId:Int):Int;
 
 	/**
@@ -751,7 +751,7 @@ extern class Ped {
 	 * Need to check behavior when drawableId = -1
 	 * ```
 	 */
-	@:native("GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS")
+	@:native("GetNumberOfPedPropTextureVariations")
 	static function getNumberOfPedPropTextureVariations(ped:Dynamic, propId:Int, drawableId:Int):Int;
 
 	/**
@@ -766,13 +766,13 @@ extern class Ped {
 	 * }  
 	 * ```
 	 */
-	@:native("GET_MOUNT")
+	@:native("GetMount")
 	static function getMount(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_AS_GROUP_LEADER")
+	@:native("GetPedAsGroupLeader")
 	static function getPedAsGroupLeader(groupID:Int):Dynamic;
 
 	/**
@@ -786,7 +786,7 @@ extern class Ped {
 	 * If the Ped does not exist, returns -1.  
 	 * ```
 	 */
-	@:native("GET_PED_ALERTNESS")
+	@:native("GetPedAlertness")
 	static function getPedAlertness(ped:Dynamic):Int;
 
 	/**
@@ -794,7 +794,7 @@ extern class Ped {
 	 * Returns the hash of the weapon/model/object that killed the ped.  
 	 * ```
 	 */
-	@:native("GET_PED_CAUSE_OF_DEATH")
+	@:native("GetPedCauseOfDeath")
 	static function getPedCauseOfDeath(ped:Dynamic):Int;
 
 	/**
@@ -807,7 +807,7 @@ extern class Ped {
 	 * offsetZ: The Z-component of the offset to add to the position relative to the bone's rotation.  
 	 * ```
 	 */
-	@:native("GET_PED_BONE_COORDS")
+	@:native("GetPedBoneCoords")
 	static function getPedBoneCoords(ped:Dynamic, boneId:Int, offsetX:Float, offsetY:Float, offsetZ:Float):Dynamic;
 
 	/**
@@ -1175,37 +1175,37 @@ extern class Ped {
 	 * }; 
 	 * ```
 	 */
-	@:native("GET_PED_BONE_INDEX")
+	@:native("GetPedBoneIndex")
 	static function getPedBoneIndex(ped:Dynamic, boneId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_COMBAT_MOVEMENT")
+	@:native("GetPedCombatMovement")
 	static function getPedCombatMovement(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_PED_PROP_DRAWABLE_VARIATIONS")
+	@:native("GetNumberOfPedPropDrawableVariations")
 	static function getNumberOfPedPropDrawableVariations(ped:Dynamic, propId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PED_CURRENT_MOVEMENT_SPEED")
+	@:native("GetPedCurrentMovementSpeed")
 	static function GetPedCurrentMovementSpeed(ped:Dynamic, speedX:Dynamic, speedY:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_ARMOUR")
+	@:native("GetPedArmour")
 	static function getPedArmour(ped:Dynamic):Int;
 
 	/**
 	 * See [`SET_PED_CONFIG_FLAG`](#\_0x1913FE4CBF41C463).
 	 */
-	@:native("GET_PED_CONFIG_FLAG")
+	@:native("GetPedConfigFlag")
 	static function getPedConfigFlag(ped:Dynamic, flagId:Int, p2:Bool):Bool;
 
 	/**
@@ -1213,7 +1213,7 @@ extern class Ped {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_GET_PED_DIES_IN_WATER")
+	@:native("GetPedDiesInWater")
 	static function GetPedDiesInWater(ped:Dynamic):Bool;
 
 	/**
@@ -1231,13 +1231,13 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("GET_PED_DECORATION_ZONE_FROM_HASHES")
+	@:native("GetPedDecorationZoneFromHashes")
 	static function getPedDecorationZoneFromHashes(collection:Int, overlay:Int):Int;
 
 	/**
 	 * Use [`SetPedIlluminatedClothingGlowIntensity`](#\_0x4E90D746056E273D) to set the illuminated clothing glow intensity for a specific ped.
 	 */
-	@:native("_GET_PED_EMISSIVE_INTENSITY")
+	@:native("GetPedEmissiveIntensity")
 	static function GetPedEmissiveIntensity(ped:Dynamic):Float;
 
 	/**
@@ -1251,7 +1251,7 @@ extern class Ped {
 	 * . . . . . . . . //and so on  
 	 * ```
 	 */
-	@:native("GET_PED_AS_GROUP_MEMBER")
+	@:native("GetPedAsGroupMember")
 	static function getPedAsGroupMember(groupID:Int, memberNumber:Int):Dynamic;
 
 	/**
@@ -1271,13 +1271,13 @@ extern class Ped {
 	 * 11 - Auxiliary parts for torso
 	 * ```
 	 */
-	@:native("GET_PED_DRAWABLE_VARIATION")
+	@:native("GetPedDrawableVariation")
 	static function getPedDrawableVariation(ped:Dynamic, componentId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_DEFENSIVE_AREA_POSITION")
+	@:native("GetPedDefensiveAreaPosition")
 	static function getPedDefensiveAreaPosition(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -1285,19 +1285,19 @@ extern class Ped {
 	 * Returns the group id of which the specified ped is a member of.  
 	 * ```
 	 */
-	@:native("GET_PED_GROUP_INDEX")
+	@:native("GetPedGroupIndex")
 	static function getPedGroupIndex(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_COMBAT_RANGE")
+	@:native("GetPedCombatRange")
 	static function getPedCombatRange(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_ENVEFF_SCALE")
+	@:native("GetPedEnveffScale")
 	static function getPedEnveffScale(ped:Dynamic):Float;
 
 	/**
@@ -1308,7 +1308,7 @@ extern class Ped {
 	 * 
 	 * Use [`_0x013E5CFC38CD5387`](#\_0x013E5CFC38CD5387) to get the makeup colors.
 	 */
-	@:native("_GET_PED_HAIR_RGB_COLOR")
+	@:native("GetPedHairRgbColor")
 	static function GetPedHairRgbColor(hairColorIndex:Int, outR:Dynamic, outG:Dynamic, outB:Dynamic):Dynamic;
 
 	/**
@@ -1316,19 +1316,19 @@ extern class Ped {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_GET_PED_EVENT_DATA")
+	@:native("GetPedEventData")
 	static function GetPedEventData(ped:Dynamic, eventType:Int, outData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_DECORATIONS_STATE")
+	@:native("GetPedDecorationsState")
 	static function getPedDecorationsState(ped:Dynamic):Int;
 
 	/**
 	 * A getter for [`_SET_PED_EYE_COLOR`](#\_0x50B56988B170AFDF).
 	 */
-	@:native("_GET_PED_EYE_COLOR")
+	@:native("GetPedEyeColor")
 	static function GetPedEyeColor(ped:Dynamic):Int;
 
 	/**
@@ -1338,7 +1338,7 @@ extern class Ped {
 	 * If worldSpace is true, the returned offset is relative to the world. That is, if the ped has moved 1 meter on the X axis and 5 meters on the Y axis, it'll return 1,5,0.  
 	 * ```
 	 */
-	@:native("GET_PED_EXTRACTED_DISPLACEMENT")
+	@:native("GetPedExtractedDisplacement")
 	static function getPedExtractedDisplacement(ped:Dynamic, worldSpace:Bool):Dynamic;
 
 	/**
@@ -1346,7 +1346,7 @@ extern class Ped {
 	 * Type equals 0 for male non-dlc, 1 for female non-dlc, 2 for male dlc, and 3 for female dlc.  
 	 * ```
 	 */
-	@:native("GET_PED_HEAD_BLEND_NUM_HEADS")
+	@:native("GetPedHeadBlendNumHeads")
 	static function getPedHeadBlendNumHeads(type:Int):Int;
 
 	/**
@@ -1361,19 +1361,19 @@ extern class Ped {
 	 * } headBlendData;  
 	 * ```
 	 */
-	@:native("GET_PED_HEAD_BLEND_DATA")
+	@:native("GetPedHeadBlendData")
 	static function getPedHeadBlendData(ped:Dynamic, headBlendData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_HELMET_STORED_HAT_PROP_INDEX")
+	@:native("GetPedHelmetStoredHatPropIndex")
 	static function getPedHelmetStoredHatPropIndex(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_HELMET_STORED_HAT_TEX_INDEX")
+	@:native("GetPedHelmetStoredHatTexIndex")
 	static function getPedHelmetStoredHatTexIndex(ped:Dynamic):Int;
 
 	/**
@@ -1382,19 +1382,19 @@ extern class Ped {
 	 * This might be the once removed native GET_PED_HEAD_OVERLAY.
 	 * ```
 	 */
-	@:native("_GET_PED_HEAD_OVERLAY_VALUE")
+	@:native("GetPedHeadOverlayValue")
 	static function GetPedHeadOverlayValue(ped:Dynamic, overlayID:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_MONEY")
+	@:native("GetPedMoney")
 	static function getPedMoney(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_MAX_HEALTH")
+	@:native("GetPedMaxHealth")
 	static function getPedMaxHealth(ped:Dynamic):Int;
 
 	/**
@@ -1403,13 +1403,13 @@ extern class Ped {
 	 * Used when calling SET_PED_HEAD_BLEND_DATA.
 	 * ```
 	 */
-	@:native("GET_PED_HEAD_BLEND_FIRST_INDEX")
+	@:native("GetPedHeadBlendFirstIndex")
 	static function getPedHeadBlendFirstIndex(type:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_LAST_DAMAGE_BONE")
+	@:native("GetPedLastDamageBone")
 	static function getPedLastDamageBone(ped:Dynamic, outBone:Dynamic):Bool;
 
 	/**
@@ -1421,7 +1421,7 @@ extern class Ped {
 	 * 3: ragdoll  
 	 * ```
 	 */
-	@:native("GET_PED_PARACHUTE_LANDING_TYPE")
+	@:native("GetPedParachuteLandingType")
 	static function getPedParachuteLandingType(ped:Dynamic):Int;
 
 	/**
@@ -1432,7 +1432,7 @@ extern class Ped {
 	 * 
 	 * Use [`_0x4852FC386E2E1BB5`](#\_0x4852FC386E2E1BB5) to get the hair colors.
 	 */
-	@:native("_GET_PED_MAKEUP_RGB_COLOR")
+	@:native("GetPedMakeupRgbColor")
 	static function GetPedMakeupRgbColor(makeupColorIndex:Int, outR:Dynamic, outG:Dynamic, outB:Dynamic):Dynamic;
 
 	/**
@@ -1440,7 +1440,7 @@ extern class Ped {
 	 * 
 	 * For FiveM/Cfx.Re use-cases refer to: [`GET_GAME_POOL`](#\_0x2B9D4F50).
 	 */
-	@:native("GET_PED_NEARBY_PEDS")
+	@:native("GetPedNearbyPeds")
 	static function getPedNearbyPeds(ped:Dynamic, sizeAndPeds:Dynamic, ignore:Int):Int;
 
 	/**
@@ -1448,19 +1448,19 @@ extern class Ped {
 	 * Used with freemode (online) characters.
 	 * ```
 	 */
-	@:native("GET_PED_HEAD_OVERLAY_NUM")
+	@:native("GetPedHeadOverlayNum")
 	static function getPedHeadOverlayNum(overlayID:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_PROP_TEXTURE_INDEX")
+	@:native("GetPedPropTextureIndex")
 	static function getPedPropTextureIndex(ped:Dynamic, componentId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_PALETTE_VARIATION")
+	@:native("GetPedPaletteVariation")
 	static function getPedPaletteVariation(ped:Dynamic, componentId:Int):Int;
 
 	/**
@@ -1474,7 +1474,7 @@ extern class Ped {
 	 * Normal means no parachute?  
 	 * ```
 	 */
-	@:native("GET_PED_PARACHUTE_STATE")
+	@:native("GetPedParachuteState")
 	static function getPedParachuteState(ped:Dynamic):Int;
 
 	/**
@@ -1506,25 +1506,25 @@ extern class Ped {
 	 * pastebin.com/SsFej963  
 	 * ```
 	 */
-	@:native("GET_PED_NEARBY_VEHICLES")
+	@:native("GetPedNearbyVehicles")
 	static function getPedNearbyVehicles(ped:Dynamic, sizeAndVehs:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_PROP_INDEX")
+	@:native("GetPedPropIndex")
 	static function getPedPropIndex(ped:Dynamic, componentId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_RAGDOLL_BONE_INDEX")
+	@:native("GetPedRagdollBoneIndex")
 	static function getPedRagdollBoneIndex(ped:Dynamic, bone:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_PARACHUTE_TINT_INDEX")
+	@:native("GetPedParachuteTintIndex")
 	static function getPedParachuteTintIndex(ped:Dynamic, outTintIndex:Dynamic):Dynamic;
 
 	/**
@@ -1532,25 +1532,25 @@ extern class Ped {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_PED_TASK_COMBAT_TARGET")
+	@:native("GetPedTaskCombatTarget")
 	static function GetPedTaskCombatTarget(ped:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH")
+	@:native("GetPedRelationshipGroupDefaultHash")
 	static function getPedRelationshipGroupDefaultHash(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_RESET_FLAG")
+	@:native("GetPedResetFlag")
 	static function getPedResetFlag(ped:Dynamic, flagId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_RELATIONSHIP_GROUP_HASH")
+	@:native("GetPedRelationshipGroupHash")
 	static function getPedRelationshipGroupHash(ped:Dynamic):Int;
 
 	/**
@@ -1592,7 +1592,7 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("GET_PED_TYPE")
+	@:native("GetPedType")
 	static function getPedType(ped:Dynamic):Int;
 
 	/**
@@ -1601,7 +1601,7 @@ extern class Ped {
 	 * Is best to check if the Ped is dead before asking for its killer.  
 	 * ```
 	 */
-	@:native("GET_PED_SOURCE_OF_DEATH")
+	@:native("GetPedSourceOfDeath")
 	static function getPedSourceOfDeath(ped:Dynamic):Dynamic;
 
 	/**
@@ -1609,7 +1609,7 @@ extern class Ped {
 	 * Returns whether the entity is in stealth mode  
 	 * ```
 	 */
-	@:native("GET_PED_STEALTH_MOVEMENT")
+	@:native("GetPedStealthMovement")
 	static function getPedStealthMovement(ped:Dynamic):Bool;
 
 	/**
@@ -1617,7 +1617,7 @@ extern class Ped {
 	 * gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 	 * ```
 	 */
-	@:native("GET_PEDHEADSHOT_TXD_STRING")
+	@:native("GetPedheadshotTxdString")
 	static function getPedheadshotTxdString(id:Int):String;
 
 	/**
@@ -1625,13 +1625,13 @@ extern class Ped {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_GET_PED_VISUAL_FIELD_CENTER_ANGLE")
+	@:native("GetPedVisualFieldCenterAngle")
 	static function GetPedVisualFieldCenterAngle(ped:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_TEXTURE_VARIATION")
+	@:native("GetPedTextureVariation")
 	static function getPedTextureVariation(ped:Dynamic, componentId:Int):Int;
 
 	/**
@@ -1649,13 +1649,13 @@ extern class Ped {
 	 * Army = 29  
 	 * ```
 	 */
-	@:native("GET_RANDOM_PED_AT_COORD")
+	@:native("GetRandomPedAtCoord")
 	static function getRandomPedAtCoord(x:Float, y:Float, z:Float, xRadius:Float, yRadius:Float, zRadius:Float, pedType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PEDS_JACKER")
+	@:native("GetPedsJacker")
 	static function getPedsJacker(ped:Dynamic):Dynamic;
 
 	/**
@@ -1674,31 +1674,31 @@ extern class Ped {
 	 * PED::GET_RELATIONSHIP_BETWEEN_GROUPS(0xA49E591C, l_1017);  
 	 * ```
 	 */
-	@:native("GET_RELATIONSHIP_BETWEEN_GROUPS")
+	@:native("GetRelationshipBetweenGroups")
 	static function getRelationshipBetweenGroups(group1:Int, group2:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_TIME_OF_DEATH")
+	@:native("GetPedTimeOfDeath")
 	static function getPedTimeOfDeath(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SEAT_PED_IS_TRYING_TO_ENTER")
+	@:native("GetSeatPedIsTryingToEnter")
 	static function getSeatPedIsTryingToEnter(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SYNCHRONIZED_SCENE_RATE")
+	@:native("GetSynchronizedSceneRate")
 	static function getSynchronizedSceneRate(sceneID:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SYNCHRONIZED_SCENE_PHASE")
+	@:native("GetSynchronizedScenePhase")
 	static function getSynchronizedScenePhase(sceneID:Int):Float;
 
 	/**
@@ -1706,19 +1706,19 @@ extern class Ped {
 	 * GET_TIME_*
 	 * ```
 	 */
-	@:native("_GET_TIME_OF_LAST_PED_WEAPON_DAMAGE")
+	@:native("GetTimeOfLastPedWeaponDamage")
 	static function GetTimeOfLastPedWeaponDamage(ped:Dynamic, weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_PED_IS_FOLLOWING")
+	@:native("GetPlayerPedIsFollowing")
 	static function getPlayerPedIsFollowing(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_PED_IS_ENTERING")
+	@:native("GetVehiclePedIsEntering")
 	static function getVehiclePedIsEntering(ped:Dynamic):Dynamic;
 
 	/**
@@ -1749,7 +1749,7 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("GIVE_PED_HELMET")
+	@:native("GivePedHelmet")
 	static function givePedHelmet(ped:Dynamic, cannotRemove:Bool, helmetFlag:Int, textureIndex:Int):Dynamic;
 
 	/**
@@ -1769,43 +1769,43 @@ extern class Ped {
 	 * PED::GET_RELATIONSHIP_BETWEEN_PEDS(2, 0xA49E591C, l_1017);  
 	 * ```
 	 */
-	@:native("GET_RELATIONSHIP_BETWEEN_PEDS")
+	@:native("GetRelationshipBetweenPeds")
 	static function getRelationshipBetweenPeds(ped1:Dynamic, ped2:Dynamic):Int;
 
 	/**
 	 * Retrieves the vehicle the specified ped is currently in, or the last vehicle they were in.
 	 */
-	@:native("GET_VEHICLE_PED_IS_IN")
+	@:native("GetVehiclePedIsIn")
 	static function getVehiclePedIsIn(ped:Dynamic, lastVehicle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PED_PRELOAD_PROP_DATA_FINISHED")
+	@:native("HasPedPreloadPropDataFinished")
 	static function hasPedPreloadPropDataFinished(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PED_HEAD_BLEND_FINISHED")
+	@:native("HasPedHeadBlendFinished")
 	static function hasPedHeadBlendFinished(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PED_RECEIVED_EVENT")
+	@:native("HasPedReceivedEvent")
 	static function hasPedReceivedEvent(ped:Dynamic, eventId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_PED_IS_TRYING_TO_ENTER")
+	@:native("GetVehiclePedIsTryingToEnter")
 	static function getVehiclePedIsTryingToEnter(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PEDHEADSHOT_IMG_UPLOAD_SUCCEEDED")
+	@:native("HasPedheadshotImgUploadSucceeded")
 	static function hasPedheadshotImgUploadSucceeded():Bool;
 
 	/**
@@ -1828,13 +1828,13 @@ extern class Ped {
 	 * GIVE_PED_NM_MESSAGE(ped); // Dispatch message to Ped.  
 	 * ```
 	 */
-	@:native("GIVE_PED_NM_MESSAGE")
+	@:native("GivePedNmMessage")
 	static function givePedNmMessage(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("INSTANTLY_FILL_PED_POPULATION")
+	@:native("InstantlyFillPedPopulation")
 	static function instantlyFillPedPopulation():Dynamic;
 
 	/**
@@ -1842,67 +1842,67 @@ extern class Ped {
 	 * Gets ID of vehicle player using. It means it can get ID at any interaction with vehicle. Enter\exit for example. And that means it is faster than GET_VEHICLE_PED_IS_IN but less safe.  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_PED_IS_USING")
+	@:native("GetVehiclePedIsUsing")
 	static function getVehiclePedIsUsing(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ACTION_MODE_ASSET_LOADED")
+	@:native("HasActionModeAssetLoaded")
 	static function hasActionModeAssetLoaded(asset:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_PED_BLOOD_DAMAGE_BY_ZONE")
+	@:native("HidePedBloodDamageByZone")
 	static function hidePedBloodDamageByZone(ped:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PEDHEADSHOT_IMG_UPLOAD_FAILED")
+	@:native("HasPedheadshotImgUploadFailed")
 	static function hasPedheadshotImgUploadFailed():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PED_PRELOAD_VARIATION_DATA_FINISHED")
+	@:native("HasPedPreloadVariationDataFinished")
 	static function hasPedPreloadVariationDataFinished(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAVE_ALL_STREAMING_REQUESTS_COMPLETED")
+	@:native("HaveAllStreamingRequestsCompleted")
 	static function haveAllStreamingRequestsCompleted(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_STEALTH_MODE_ASSET_LOADED")
+	@:native("HasStealthModeAssetLoaded")
 	static function hasStealthModeAssetLoaded(asset:String):Bool;
 
 	/**
 	 * Verifies whether a ped is firing within a specific area.
 	 */
-	@:native("IS_ANY_PED_SHOOTING_IN_AREA")
+	@:native("IsAnyPedShootingInArea")
 	static function isAnyPedShootingInArea(minX:Float, minY:Float, minZ:Float, maxX:Float, maxY:Float, maxZ:Float, bHighlightArea:Bool, bDo3DCheck:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_HOSTILE_PED_NEAR_POINT")
+	@:native("IsAnyHostilePedNearPoint")
 	static function isAnyHostilePedNearPoint(ped:Dynamic, x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_PED_NEAR_POINT")
+	@:native("IsAnyPedNearPoint")
 	static function isAnyPedNearPoint(x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_AIMING_FROM_COVER")
+	@:native("IsPedAimingFromCover")
 	static function isPedAimingFromCover(ped:Dynamic):Bool;
 
 	/**
@@ -1910,7 +1910,7 @@ extern class Ped {
 	 * Returns true if the given ped has a valid pointer to CPlayerInfo in its CPed class. That's all.
 	 * ```
 	 */
-	@:native("IS_PED_A_PLAYER")
+	@:native("IsPedAPlayer")
 	static function isPedAPlayer(ped:Dynamic):Bool;
 
 	/**
@@ -1918,13 +1918,13 @@ extern class Ped {
 	 * p1 is always 0  
 	 * ```
 	 */
-	@:native("IS_PED_BEING_STUNNED")
+	@:native("IsPedBeingStunned")
 	static function isPedBeingStunned(ped:Dynamic, p1:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CONVERSATION_PED_DEAD")
+	@:native("IsConversationPedDead")
 	static function isConversationPedDead(ped:Dynamic):Bool;
 
 	/**
@@ -1932,25 +1932,25 @@ extern class Ped {
 	 * xyz - relative to the world origin.  
 	 * ```
 	 */
-	@:native("IS_COP_PED_IN_AREA_3D")
+	@:native("IsCopPedInArea_3d")
 	static function isCopPedInArea3D(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_BEING_STEALTH_KILLED")
+	@:native("IsPedBeingStealthKilled")
 	static function isPedBeingStealthKilled(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_BEING_JACKED")
+	@:native("IsPedBeingJacked")
 	static function isPedBeingJacked(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_BLUSH_COLOR_VALID_2")
+	@:native("IsPedBlushColorValid_2")
 	static function IsPedBlushColorValid2(colorId:Int):Bool;
 
 	/**
@@ -1958,25 +1958,25 @@ extern class Ped {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_IS_PED_BODY_BLEMISH_VALID")
+	@:native("IsPedBodyBlemishValid")
 	static function IsPedBodyBlemishValid(colorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_BLUSH_COLOR_VALID")
+	@:native("IsPedBlushColorValid")
 	static function IsPedBlushColorValid(colorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_DIVING")
+	@:native("IsPedDiving")
 	static function isPedDiving(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_CLIMBING")
+	@:native("IsPedClimbing")
 	static function isPedClimbing(ped:Dynamic):Bool;
 
 	/**
@@ -1986,7 +1986,7 @@ extern class Ped {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("IS_PED_DEAD_OR_DYING")
+	@:native("IsPedDeadOrDying")
 	static function isPedDeadOrDying(ped:Dynamic, checkMeleeDeathFlags:Bool):Bool;
 
 	/**
@@ -1997,25 +1997,25 @@ extern class Ped {
 	 *         if (ENTITY::IS_ENTITY_A_VEHICLE(num3) != 0)
 	 * ```
 	 */
-	@:native("IS_PED_EVASIVE_DIVING")
+	@:native("IsPedEvasiveDiving")
 	static function isPedEvasiveDiving(ped:Dynamic, evadingEntity:Dynamic):Bool;
 
 	/**
 	 * Checks if the component variation is valid, this works great for randomizing components using loops.
 	 */
-	@:native("IS_PED_COMPONENT_VARIATION_VALID")
+	@:native("IsPedComponentVariationValid")
 	static function isPedComponentVariationValid(ped:Dynamic, componentId:Int, drawableId:Int, textureId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_DOING_DRIVEBY")
+	@:native("IsPedDoingDriveby")
 	static function isPedDoingDriveby(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_DEFENSIVE_AREA_ACTIVE")
+	@:native("IsPedDefensiveAreaActive")
 	static function isPedDefensiveAreaActive(ped:Dynamic, p1:Bool):Bool;
 
 	/**
@@ -2024,19 +2024,19 @@ extern class Ped {
 	 * If the handle is invalid, the function returns true.  
 	 * ```
 	 */
-	@:native("IS_PED_FATALLY_INJURED")
+	@:native("IsPedFatallyInjured")
 	static function isPedFatallyInjured(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_DUCKING")
+	@:native("IsPedDucking")
 	static function isPedDucking(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_DOING_BEAST_JUMP")
+	@:native("IsPedDoingBeastJump")
 	static function IsPedDoingBeastJump(ped:Dynamic):Bool;
 
 	/**
@@ -2044,73 +2044,73 @@ extern class Ped {
 	 * angle is ped's view cone  
 	 * ```
 	 */
-	@:native("IS_PED_FACING_PED")
+	@:native("IsPedFacingPed")
 	static function isPedFacingPed(ped:Dynamic, otherPed:Dynamic, angle:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_FLEEING")
+	@:native("IsPedFleeing")
 	static function isPedFleeing(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_FALLING")
+	@:native("IsPedFalling")
 	static function isPedFalling(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_HAIR_COLOR_VALID")
+	@:native("IsPedHairColorValid")
 	static function IsPedHairColorValid(colorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_HEADTRACKING_ENTITY")
+	@:native("IsPedHeadtrackingEntity")
 	static function isPedHeadtrackingEntity(ped:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_GOING_INTO_COVER")
+	@:native("IsPedGoingIntoCover")
 	static function isPedGoingIntoCover(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_GETTING_INTO_A_VEHICLE")
+	@:native("IsPedGettingIntoAVehicle")
 	static function isPedGettingIntoAVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_HANGING_ON_TO_VEHICLE")
+	@:native("IsPedHangingOnToVehicle")
 	static function isPedHangingOnToVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_HAIR_COLOR_VALID_2")
+	@:native("IsPedHairColorValid_2")
 	static function IsPedHairColorValid2(colorId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_HEADTRACKING_PED")
+	@:native("IsPedHeadtrackingPed")
 	static function isPedHeadtrackingPed(ped1:Dynamic, ped2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_GROUP_MEMBER")
+	@:native("IsPedGroupMember")
 	static function isPedGroupMember(ped:Dynamic, groupId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_HEADING_TOWARDS_POSITION")
+	@:native("IsPedHeadingTowardsPosition")
 	static function isPedHeadingTowardsPosition(ped:Dynamic, x:Float, y:Float, z:Float, p4:Float):Bool;
 
 	/**
@@ -2118,7 +2118,7 @@ extern class Ped {
 	 * Returns whether the specified ped is hurt.  
 	 * ```
 	 */
-	@:native("IS_PED_HURT")
+	@:native("IsPedHurt")
 	static function isPedHurt(ped:Dynamic):Bool;
 
 	/**
@@ -2126,49 +2126,49 @@ extern class Ped {
 	 * Returns true/false if the ped is/isn't humanoid.  
 	 * ```
 	 */
-	@:native("IS_PED_HUMAN")
+	@:native("IsPedHuman")
 	static function isPedHuman(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_BOAT")
+	@:native("IsPedInAnyBoat")
 	static function isPedInAnyBoat(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_HELMET_UNK")
+	@:native("IsPedHelmetUnk")
 	static function IsPedHelmetUnk(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_HELI")
+	@:native("IsPedInAnyHeli")
 	static function isPedInAnyHeli(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_PLANE")
+	@:native("IsPedInAnyPlane")
 	static function isPedInAnyPlane(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_SUB")
+	@:native("IsPedInAnySub")
 	static function isPedInAnySub(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_TRAIN")
+	@:native("IsPedInAnyTrain")
 	static function isPedInAnyTrain(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_POLICE_VEHICLE")
+	@:native("IsPedInAnyPoliceVehicle")
 	static function isPedInAnyPoliceVehicle(ped:Dynamic):Bool;
 
 	/**
@@ -2176,50 +2176,50 @@ extern class Ped {
 	 * p1 is nearly always 0 in the scripts.  
 	 * ```
 	 */
-	@:native("IS_PED_IN_COVER")
+	@:native("IsPedInCover")
 	static function isPedInCover(ped:Dynamic, exceptUseWeapon:Bool):Bool;
 
 	/**
 	 * Examines whether the ped is engaged in combat; when given a target ped index, it confirms if the ped is actively fighting the specified target, returning true if engaged and false if not.
 	 */
-	@:native("IS_PED_IN_COMBAT")
+	@:native("IsPedInCombat")
 	static function isPedInCombat(ped:Dynamic, target:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_ANY_TAXI")
+	@:native("IsPedInAnyTaxi")
 	static function isPedInAnyTaxi(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_COVER_FACING_LEFT")
+	@:native("IsPedInCoverFacingLeft")
 	static function isPedInCoverFacingLeft(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_GROUP")
+	@:native("IsPedInGroup")
 	static function isPedInGroup(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_FLYING_VEHICLE")
+	@:native("IsPedInFlyingVehicle")
 	static function isPedInFlyingVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_PARACHUTE_FREE_FALL")
+	@:native("IsPedInParachuteFreeFall")
 	static function isPedInParachuteFreeFall(ped:Dynamic):Bool;
 
 	/**
 	 * Returns whether the specified ped is in any vehicle. If `atGetIn` is set to true, also returns true if the ped is
 	 * currently in the process of entering a vehicle (a specific stage check for `CTaskEnterVehicle`).
 	 */
-	@:native("IS_PED_IN_ANY_VEHICLE")
+	@:native("IsPedInAnyVehicle")
 	static function isPedInAnyVehicle(ped:Dynamic, atGetIn:Bool):Bool;
 
 	/**
@@ -2231,25 +2231,25 @@ extern class Ped {
 	 * You don't have to be holding the melee-targetting button to be in this stance; you stay in it by default for a few seconds after swinging at someone. If you do a sprinting punch, it returns true for the duration of the punch animation and then returns false again, even if you've punched and made-angry many peds  
 	 * ```
 	 */
-	@:native("IS_PED_IN_MELEE_COMBAT")
+	@:native("IsPedInMeleeCombat")
 	static function isPedInMeleeCombat(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_JACKING")
+	@:native("IsPedJacking")
 	static function isPedJacking(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_HIGH_COVER")
+	@:native("IsPedInHighCover")
 	static function isPedInHighCover(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_JUMPING_OUT_OF_VEHICLE")
+	@:native("IsPedJumpingOutOfVehicle")
 	static function isPedJumpingOutOfVehicle(ped:Dynamic):Bool;
 
 	/**
@@ -2258,25 +2258,25 @@ extern class Ped {
 	 * If 'atGetIn' is false, the function will not return true until the ped is sitting in the vehicle and is about to close the door. If it's true, the function returns true the moment the ped starts to get onto the seat (after opening the door). Eg. if false, and the ped is getting into a submersible, the function will not return true until the ped has descended down into the submersible and gotten into the seat, while if it's true, it'll return true the moment the hatch has been opened and the ped is about to descend into the submersible.  
 	 * ```
 	 */
-	@:native("IS_PED_IN_VEHICLE")
+	@:native("IsPedInVehicle")
 	static function isPedInVehicle(ped:Dynamic, vehicle:Dynamic, atGetIn:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_JUMPING")
+	@:native("IsPedJumping")
 	static function isPedJumping(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_MODEL")
+	@:native("IsPedInModel")
 	static function isPedInModel(ped:Dynamic, modelHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_LIPSTICK_COLOR_VALID_2")
+	@:native("IsPedLipstickColorValid_2")
 	static function IsPedLipstickColorValid2(colorId:Int):Bool;
 
 	/**
@@ -2291,19 +2291,19 @@ extern class Ped {
 	 * | 100.000000             | Average   |
 	 * | 100.000000             | Weak      |
 	 */
-	@:native("IS_PED_INJURED")
+	@:native("IsPedInjured")
 	static function isPedInjured(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_MODEL")
+	@:native("IsPedModel")
 	static function isPedModel(ped:Dynamic, modelHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_LIPSTICK_COLOR_VALID")
+	@:native("IsPedLipstickColorValid")
 	static function IsPedLipstickColorValid(colorID:Int):Bool;
 
 	/**
@@ -2311,19 +2311,19 @@ extern class Ped {
 	 * Returns true/false if the ped is/isn't male.  
 	 * ```
 	 */
-	@:native("IS_PED_MALE")
+	@:native("IsPedMale")
 	static function isPedMale(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_ON_ANY_BIKE")
+	@:native("IsPedOnAnyBike")
 	static function isPedOnAnyBike(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_ON_FOOT")
+	@:native("IsPedOnFoot")
 	static function isPedOnFoot(ped:Dynamic):Bool;
 
 	/**
@@ -2333,19 +2333,19 @@ extern class Ped {
 	 * Return 0 when ped is not on a vehicle.  
 	 * ```
 	 */
-	@:native("IS_PED_ON_VEHICLE")
+	@:native("IsPedOnVehicle")
 	static function isPedOnVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PERFORMING_DEPENDENT_COMBO_LIMIT")
+	@:native("IsPedPerformingDependentComboLimit")
 	static function isPedPerformingDependentComboLimit(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PERFORMING_MELEE_ACTION")
+	@:native("IsPedPerformingMeleeAction")
 	static function isPedPerformingMeleeAction(ped:Dynamic):Bool;
 
 	/**
@@ -2353,25 +2353,25 @@ extern class Ped {
 	 * Same function call as PED::GET_MOUNT, aka just returns 0  
 	 * ```
 	 */
-	@:native("IS_PED_ON_MOUNT")
+	@:native("IsPedOnMount")
 	static function isPedOnMount(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PLANTING_BOMB")
+	@:native("IsPedPlantingBomb")
 	static function isPedPlantingBomb(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PRONE")
+	@:native("IsPedProne")
 	static function isPedProne(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_ON_SPECIFIC_VEHICLE")
+	@:native("IsPedOnSpecificVehicle")
 	static function isPedOnSpecificVehicle(ped:Dynamic, vehicle:Dynamic):Bool;
 
 	/**
@@ -2381,7 +2381,7 @@ extern class Ped {
 	 * Returns true if the ped is currently opening a door (CTaskOpenDoor).
 	 * ```
 	 */
-	@:native("_IS_PED_OPENING_A_DOOR")
+	@:native("IsPedOpeningADoor")
 	static function IsPedOpeningADoor(ped:Dynamic):Bool;
 
 	/**
@@ -2389,31 +2389,31 @@ extern class Ped {
 	 * Returns whether the specified ped is reloading.  
 	 * ```
 	 */
-	@:native("IS_PED_RELOADING")
+	@:native("IsPedReloading")
 	static function isPedReloading(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PERFORMING_STEALTH_KILL")
+	@:native("IsPedPerformingStealthKill")
 	static function isPedPerformingStealthKill(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RUNNING_MELEE_TASK")
+	@:native("IsPedRunningMeleeTask")
 	static function isPedRunningMeleeTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RUNNING_RAGDOLL_TASK")
+	@:native("IsPedRunningRagdollTask")
 	static function isPedRunningRagdollTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RESPONDING_TO_EVENT")
+	@:native("IsPedRespondingToEvent")
 	static function isPedRespondingToEvent(ped:Dynamic, event:Dynamic):Bool;
 
 	/**
@@ -2421,7 +2421,7 @@ extern class Ped {
 	 * Returns whether the specified ped is shooting.  
 	 * ```
 	 */
-	@:native("IS_PED_SHOOTING")
+	@:native("IsPedShooting")
 	static function isPedShooting(ped:Dynamic):Bool;
 
 	/**
@@ -2429,31 +2429,31 @@ extern class Ped {
 	 * If the ped handle passed through the parenthesis is in a ragdoll state this will return true.  
 	 * ```
 	 */
-	@:native("IS_PED_RAGDOLL")
+	@:native("IsPedRagdoll")
 	static function isPedRagdoll(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_SHADER_EFFECT_VALID")
+	@:native("IsPedShaderEffectValid")
 	static function IsPedShaderEffectValid(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RUNNING_MOBILE_PHONE_TASK")
+	@:native("IsPedRunningMobilePhoneTask")
 	static function isPedRunningMobilePhoneTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_SHOOTING_IN_AREA")
+	@:native("IsPedShootingInArea")
 	static function isPedShootingInArea(ped:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, p7:Bool, p8:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_SWAPPING_WEAPON")
+	@:native("IsPedSwappingWeapon")
 	static function IsPedSwappingWeapon(Ped:Dynamic):Bool;
 
 	/**
@@ -2462,7 +2462,7 @@ extern class Ped {
 	 * [True/False]  
 	 * ```
 	 */
-	@:native("IS_PED_SITTING_IN_ANY_VEHICLE")
+	@:native("IsPedSittingInAnyVehicle")
 	static function isPedSittingInAnyVehicle(ped:Dynamic):Bool;
 
 	/**
@@ -2470,7 +2470,7 @@ extern class Ped {
 	 * Returns true if the ped doesn't do any movement. If the ped is being pushed forwards by using APPLY_FORCE_TO_ENTITY for example, the function returns false.  
 	 * ```
 	 */
-	@:native("IS_PED_STOPPED")
+	@:native("IsPedStopped")
 	static function isPedStopped(ped:Dynamic):Bool;
 
 	/**
@@ -2479,73 +2479,73 @@ extern class Ped {
 	 * [True/False]  
 	 * ```
 	 */
-	@:native("IS_PED_SITTING_IN_VEHICLE")
+	@:native("IsPedSittingInVehicle")
 	static function isPedSittingInVehicle(ped:Dynamic, vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_SWIMMING")
+	@:native("IsPedSwimming")
 	static function isPedSwimming(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_TRACKED")
+	@:native("IsPedTracked")
 	static function isPedTracked(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_SWIMMING_UNDER_WATER")
+	@:native("IsPedSwimmingUnderWater")
 	static function isPedSwimmingUnderWater(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_TAKING_OFF_HELMET")
+	@:native("IsPedTakingOffHelmet")
 	static function isPedTakingOffHelmet(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_USING_ACTION_MODE")
+	@:native("IsPedUsingActionMode")
 	static function isPedUsingActionMode(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PEDHEADSHOT_IMG_UPLOAD_AVAILABLE")
+	@:native("IsPedheadshotImgUploadAvailable")
 	static function isPedheadshotImgUploadAvailable():Bool;
 
 	/**
 	 * If the ped is attempting to enter a locked vehicle.
 	 */
-	@:native("IS_PED_TRYING_TO_ENTER_A_LOCKED_VEHICLE")
+	@:native("IsPedTryingToEnterALockedVehicle")
 	static function isPedTryingToEnterALockedVehicle(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_USING_ANY_SCENARIO")
+	@:native("IsPedUsingAnyScenario")
 	static function isPedUsingAnyScenario(ped:Dynamic):Bool;
 
 	/**
 	 * See [`TASK_START_SCENARIO_IN_PLACE`](#\_0x142A02425FF02BD9) for a list of scenarios.
 	 */
-	@:native("IS_PED_USING_SCENARIO")
+	@:native("IsPedUsingScenario")
 	static function isPedUsingScenario(ped:Dynamic, scenario:String):Bool;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM")
+	@:native("IsScriptedScenarioPedUsingConditionalAnim")
 	static function isScriptedScenarioPedUsingConditionalAnim(ped:Dynamic, animDict:String, anim:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_VAULTING")
+	@:native("IsPedVaulting")
 	static function isPedVaulting(ped:Dynamic):Bool;
 
 	/**
@@ -2553,7 +2553,7 @@ extern class Ped {
 	 * Returns true if the ped passed through the parenthesis is wearing a helmet.  
 	 * ```
 	 */
-	@:native("IS_PED_WEARING_HELMET")
+	@:native("IsPedWearingHelmet")
 	static function isPedWearingHelmet(ped:Dynamic):Bool;
 
 	/**
@@ -2561,7 +2561,7 @@ extern class Ped {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_IS_SCUBA_GEAR_LIGHT_ENABLED")
+	@:native("IsScubaGearLightEnabled")
 	static function IsScubaGearLightEnabled(ped:Dynamic):Bool;
 
 	/**
@@ -2569,13 +2569,13 @@ extern class Ped {
 	 * gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 	 * ```
 	 */
-	@:native("IS_PEDHEADSHOT_READY")
+	@:native("IsPedheadshotReady")
 	static function isPedheadshotReady(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SYNCHRONIZED_SCENE_LOOPED")
+	@:native("IsSynchronizedSceneLooped")
 	static function isSynchronizedSceneLooped(sceneID:Int):Bool;
 
 	/**
@@ -2583,13 +2583,13 @@ extern class Ped {
 	 * gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 	 * ```
 	 */
-	@:native("IS_PEDHEADSHOT_VALID")
+	@:native("IsPedheadshotValid")
 	static function isPedheadshotValid(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME")
+	@:native("IsSynchronizedSceneHoldLastFrame")
 	static function isSynchronizedSceneHoldLastFrame(sceneID:Int):Bool;
 
 	/**
@@ -2598,13 +2598,13 @@ extern class Ped {
 	 * Target needs to be tracked.. won't work otherwise.  
 	 * ```
 	 */
-	@:native("IS_TRACKED_PED_VISIBLE")
+	@:native("IsTrackedPedVisible")
 	static function isTrackedPedVisible(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("KNOCK_PED_OFF_VEHICLE")
+	@:native("KnockPedOffVehicle")
 	static function knockPedOffVehicle(ped:Dynamic):Dynamic;
 
 	/**
@@ -2612,13 +2612,13 @@ extern class Ped {
 	 * Returns true if a synchronized scene is running  
 	 * ```
 	 */
-	@:native("IS_SYNCHRONIZED_SCENE_RUNNING")
+	@:native("IsSynchronizedSceneRunning")
 	static function isSynchronizedSceneRunning(sceneId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("KNOCK_OFF_PED_PROP")
+	@:native("KnockOffPedProp")
 	static function knockOffPedProp(ped:Dynamic, p1:Bool, p2:Bool, p3:Bool, p4:Bool):Dynamic;
 
 	/**
@@ -2626,7 +2626,7 @@ extern class Ped {
 	 * gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 	 * ```
 	 */
-	@:native("REGISTER_PEDHEADSHOT")
+	@:native("RegisterPedheadshot")
 	static function registerPedheadshot(ped:Dynamic):Int;
 
 	/**
@@ -2634,13 +2634,13 @@ extern class Ped {
 	 * Based on TASK_COMBAT_HATED_TARGETS_AROUND_PED, the parameters are likely similar (PedHandle, and area to attack in).  
 	 * ```
 	 */
-	@:native("REGISTER_HATED_TARGETS_AROUND_PED")
+	@:native("RegisterHatedTargetsAroundPed")
 	static function registerHatedTargetsAroundPed(ped:Dynamic, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_FACIAL_ANIM")
+	@:native("PlayFacialAnim")
 	static function playFacialAnim(ped:Dynamic, animName:String, animDict:String):Dynamic;
 
 	/**
@@ -2649,13 +2649,13 @@ extern class Ped {
 	 * l_216 = RECSBRobber1  
 	 * ```
 	 */
-	@:native("REGISTER_TARGET")
+	@:native("RegisterTarget")
 	static function registerTarget(ped:Dynamic, target:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REGISTER_PEDHEADSHOT_3")
+	@:native("RegisterPedheadshot_3")
 	static function RegisterPedheadshot3(ped:Dynamic):Int;
 
 	/**
@@ -2664,13 +2664,13 @@ extern class Ped {
 	 * **Result of the example code:**
 	 * <https://i.imgur.com/iHz8ztn.png>
 	 */
-	@:native("REGISTER_PEDHEADSHOT_TRANSPARENT")
+	@:native("RegisterPedheadshotTransparent")
 	static function registerPedheadshotTransparent(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_PED_PRELOAD_VARIATION_DATA")
+	@:native("ReleasePedPreloadVariationData")
 	static function releasePedPreloadVariationData(ped:Dynamic):Dynamic;
 
 	/**
@@ -2678,31 +2678,31 @@ extern class Ped {
 	 * Ped will no longer get angry when you stay near him.  
 	 * ```
 	 */
-	@:native("REMOVE_PED_DEFENSIVE_AREA")
+	@:native("RemovePedDefensiveArea")
 	static function removePedDefensiveArea(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_PED_PRELOAD_PROP_DATA")
+	@:native("ReleasePedPreloadPropData")
 	static function releasePedPreloadPropData(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_ACTION_MODE_ASSET")
+	@:native("RemoveActionModeAsset")
 	static function removeActionModeAsset(asset:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_GROUP")
+	@:native("RemoveGroup")
 	static function removeGroup(groupId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_PEDHEADSHOT_IMG_UPLOAD")
+	@:native("ReleasePedheadshotImgUpload")
 	static function releasePedheadshotImgUpload(id:Int):Dynamic;
 
 	/**
@@ -2710,103 +2710,103 @@ extern class Ped {
 	 * Judging purely from a quick disassembly, if the ped is in a vehicle, the ped will be deleted immediately. If not, it'll be marked as no longer needed. 
 	 * ```
 	 */
-	@:native("REMOVE_PED_ELEGANTLY")
+	@:native("RemovePedElegantly")
 	static function removePedElegantly(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_RELATIONSHIP_GROUP")
+	@:native("RemoveRelationshipGroup")
 	static function removeRelationshipGroup(groupHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_SCENARIO_BLOCKING_AREAS")
+	@:native("RemoveScenarioBlockingAreas")
 	static function removeScenarioBlockingAreas():Dynamic;
 
 	/**
 	 * Remove a helmet from a ped
 	 */
-	@:native("REMOVE_PED_HELMET")
+	@:native("RemovePedHelmet")
 	static function removePedHelmet(ped:Dynamic, instantly:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PED_FROM_GROUP")
+	@:native("RemovePedFromGroup")
 	static function removePedFromGroup(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_PED_VISIBILITY_TRACKING")
+	@:native("RequestPedVisibilityTracking")
 	static function requestPedVisibilityTracking(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_SCENARIO_BLOCKING_AREA")
+	@:native("RemoveScenarioBlockingArea")
 	static function removeScenarioBlockingArea(scenarioBlockingIndex:Int, bNetwork:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_STEALTH_MODE_ASSET")
+	@:native("RequestStealthModeAsset")
 	static function requestStealthModeAsset(asset:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PED_PREFERRED_COVER_SET")
+	@:native("RemovePedPreferredCoverSet")
 	static function removePedPreferredCoverSet(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_AI_WEAPON_DAMAGE_MODIFIER")
+	@:native("ResetAiWeaponDamageModifier")
 	static function resetAiWeaponDamageModifier():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_PED_VEHICLE_VISIBILITY_TRACKING")
+	@:native("RequestPedVehicleVisibilityTracking")
 	static function requestPedVehicleVisibilityTracking(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_ACTION_MODE_ASSET")
+	@:native("RequestActionModeAsset")
 	static function requestActionModeAsset(asset:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_STEALTH_MODE_ASSET")
+	@:native("RemoveStealthModeAsset")
 	static function removeStealthModeAsset(asset:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_PEDHEADSHOT_IMG_UPLOAD")
+	@:native("RequestPedheadshotImgUpload")
 	static function requestPedheadshotImgUpload(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_AI_MELEE_WEAPON_DAMAGE_MODIFIER")
+	@:native("ResetAiMeleeWeaponDamageModifier")
 	static function resetAiMeleeWeaponDamageModifier():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_GROUP_FORMATION_DEFAULT_SPACING")
+	@:native("ResetGroupFormationDefaultSpacing")
 	static function resetGroupFormationDefaultSpacing(groupHandle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_IN_VEHICLE_CONTEXT")
+	@:native("ResetPedInVehicleContext")
 	static function resetPedInVehicleContext(ped:Dynamic):Dynamic;
 
 	/**
@@ -2814,37 +2814,37 @@ extern class Ped {
 	 * Resets the value for the last vehicle driven by the Ped.  
 	 * ```
 	 */
-	@:native("RESET_PED_LAST_VEHICLE")
+	@:native("ResetPedLastVehicle")
 	static function resetPedLastVehicle(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_STRAFE_CLIPSET")
+	@:native("ResetPedStrafeClipset")
 	static function resetPedStrafeClipset(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_MOVEMENT_CLIPSET")
+	@:native("ResetPedMovementClipset")
 	static function resetPedMovementClipset(ped:Dynamic, transitionSpeed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_RAGDOLL_TIMER")
+	@:native("ResetPedRagdollTimer")
 	static function resetPedRagdollTimer(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_VISIBLE_DAMAGE")
+	@:native("ResetPedVisibleDamage")
 	static function resetPedVisibleDamage(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_WEAPON_MOVEMENT_CLIPSET")
+	@:native("ResetPedWeaponMovementClipset")
 	static function resetPedWeaponMovementClipset(ped:Dynamic):Dynamic;
 
 	/**
@@ -2855,7 +2855,7 @@ extern class Ped {
 	 * Also, disabling any assigned task immediately helped in the number of scenarios, where If you want peds to perform certain decided tasks.
 	 * ```
 	 */
-	@:native("RESURRECT_PED")
+	@:native("ResurrectPed")
 	static function resurrectPed(ped:Dynamic):Dynamic;
 
 	/**
@@ -2865,19 +2865,19 @@ extern class Ped {
 	 * This function is well suited there.  
 	 * ```
 	 */
-	@:native("REVIVE_INJURED_PED")
+	@:native("ReviveInjuredPed")
 	static function reviveInjuredPed(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_PEDS_DROP_MONEY")
+	@:native("SetAmbientPedsDropMoney")
 	static function setAmbientPedsDropMoney(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AI_MELEE_WEAPON_DAMAGE_MODIFIER")
+	@:native("SetAiMeleeWeaponDamageModifier")
 	static function setAiMeleeWeaponDamageModifier(modifier:Float):Dynamic;
 
 	/**
@@ -2885,13 +2885,13 @@ extern class Ped {
 	 * works with TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS to make a ped completely oblivious to all events going on around him
 	 * ```
 	 */
-	@:native("SET_BLOCKING_OF_NON_TEMPORARY_EVENTS")
+	@:native("SetBlockingOfNonTemporaryEvents")
 	static function setBlockingOfNonTemporaryEvents(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AI_WEAPON_DAMAGE_MODIFIER")
+	@:native("SetAiWeaponDamageModifier")
 	static function setAiWeaponDamageModifier(value:Float):Dynamic;
 
 	/**
@@ -2901,19 +2901,19 @@ extern class Ped {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_SET_BLOCK_AMBIENT_PEDS_FROM_DROPPING_WEAPONS_THIS_FRAME")
+	@:native("SetBlockAmbientPedsFromDroppingWeaponsThisFrame")
 	static function SetBlockAmbientPedsFromDroppingWeaponsThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CREATE_RANDOM_COPS")
+	@:native("SetCreateRandomCops")
 	static function setCreateRandomCops(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_COMBAT_FLOAT")
+	@:native("SetCombatFloat")
 	static function setCombatFloat(ped:Dynamic, combatType:Int, p2:Float):Dynamic;
 
 	/**
@@ -2924,19 +2924,19 @@ extern class Ped {
 	 * p1 = true & p2 = false for able to aim at.  
 	 * ```
 	 */
-	@:native("SET_CAN_ATTACK_FRIENDLY")
+	@:native("SetCanAttackFriendly")
 	static function setCanAttackFriendly(ped:Dynamic, toggle:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CREATE_RANDOM_COPS_NOT_ON_SCENARIOS")
+	@:native("SetCreateRandomCopsNotOnScenarios")
 	static function setCreateRandomCopsNotOnScenarios(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CREATE_RANDOM_COPS_ON_SCENARIOS")
+	@:native("SetCreateRandomCopsOnScenarios")
 	static function setCreateRandomCopsOnScenarios(toggle:Bool):Dynamic;
 
 	/**
@@ -2944,7 +2944,7 @@ extern class Ped {
 	 * The function specifically verifies the value is equal to, or less than 1.0f. If it is greater than 1.0f, the function does nothing at all.  
 	 * ```
 	 */
-	@:native("SET_DRIVER_ABILITY")
+	@:native("SetDriverAbility")
 	static function setDriverAbility(driver:Dynamic, ability:Float):Dynamic;
 
 	/**
@@ -2952,7 +2952,7 @@ extern class Ped {
 	 * range 0.0f - 1.0f  
 	 * ```
 	 */
-	@:native("SET_DRIVER_AGGRESSIVENESS")
+	@:native("SetDriverAggressiveness")
 	static function setDriverAggressiveness(driver:Dynamic, aggressiveness:Float):Dynamic;
 
 	/**
@@ -2960,25 +2960,25 @@ extern class Ped {
 	 * Scripts use 0.2, 0.5 and 1.0. Value must be >= 0.0 && <= 1.0
 	 * ```
 	 */
-	@:native("SET_DRIVER_RACING_MODIFIER")
+	@:native("SetDriverRacingModifier")
 	static function setDriverRacingModifier(driver:Dynamic, modifier:Float):Dynamic;
 
 	/**
 	 * Used with [SET_ENABLE_HANDCUFFS](#\_0xDF1AF8B5D56542FA) in decompiled scripts. From my observations, I have noticed that while being ragdolled you are not able to get up but you can still run. Your legs can also bend.
 	 */
-	@:native("SET_ENABLE_BOUND_ANKLES")
+	@:native("SetEnableBoundAnkles")
 	static function setEnableBoundAnkles(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENABLE_PED_ENVEFF_SCALE")
+	@:native("SetEnablePedEnveffScale")
 	static function setEnablePedEnveffScale(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FACIAL_IDLE_ANIM_OVERRIDE")
+	@:native("SetFacialIdleAnimOverride")
 	static function setFacialIdleAnimOverride(ped:Dynamic, animName:String, animDict:String):Dynamic;
 
 	/**
@@ -2986,13 +2986,13 @@ extern class Ped {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_ENABLE_SCUBA_GEAR_LIGHT")
+	@:native("SetEnableScubaGearLight")
 	static function SetEnableScubaGearLight(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GROUP_FORMATION_SPACING")
+	@:native("SetGroupFormationSpacing")
 	static function setGroupFormationSpacing(groupId:Int, p1:Float, p2:Float, p3:Float):Dynamic;
 
 	/**
@@ -3000,7 +3000,7 @@ extern class Ped {
 	 * Enables diving motion when underwater.  
 	 * ```
 	 */
-	@:native("SET_ENABLE_SCUBA")
+	@:native("SetEnableScuba")
 	static function setEnableScuba(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3008,7 +3008,7 @@ extern class Ped {
 	 * ped can not pull out a weapon when true  
 	 * ```
 	 */
-	@:native("SET_ENABLE_HANDCUFFS")
+	@:native("SetEnableHandcuffs")
 	static function setEnableHandcuffs(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3027,13 +3027,13 @@ extern class Ped {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_FACIAL_CLIPSET_OVERRIDE")
+	@:native("SetFacialClipsetOverride")
 	static function SetFacialClipsetOverride(ped:Dynamic, animDict:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FORCE_FOOTSTEP_UPDATE")
+	@:native("SetForceFootstepUpdate")
 	static function setForceFootstepUpdate(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3085,7 +3085,7 @@ extern class Ped {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_IK_TARGET")
+	@:native("SetIkTarget")
 	static function setIkTarget(ped:Dynamic, ikIndex:Int, entityLookAt:Dynamic, boneLookAt:Int, offsetX:Float, offsetY:Float, offsetZ:Float, ikTargetFlags:Int, blendInDuration:Int, blendOutDuration:Int):Dynamic;
 
 	/**
@@ -3101,13 +3101,13 @@ extern class Ped {
 	 * 8: Pairwise
 	 * ```
 	 */
-	@:native("SET_GROUP_FORMATION")
+	@:native("SetGroupFormation")
 	static function setGroupFormation(groupId:Int, formationType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FORCE_STEP_TYPE")
+	@:native("SetForceStepType")
 	static function setForceStepType(ped:Dynamic, p1:Bool, type:Int, p3:Int):Dynamic;
 
 	/**
@@ -3115,7 +3115,7 @@ extern class Ped {
 	 * name: "MP_FEMALE_ACTION" found multiple times in the b617d scripts.
 	 * ```
 	 */
-	@:native("SET_MOVEMENT_MODE_OVERRIDE")
+	@:native("SetMovementModeOverride")
 	static function setMovementModeOverride(ped:Dynamic, name:String):Dynamic;
 
 	/**
@@ -3123,7 +3123,7 @@ extern class Ped {
 	 * Sets the range at which members will automatically leave the group.  
 	 * ```
 	 */
-	@:native("SET_GROUP_SEPARATION_RANGE")
+	@:native("SetGroupSeparationRange")
 	static function setGroupSeparationRange(groupHandle:Int, separationRange:Float):Dynamic;
 
 	/**
@@ -3131,13 +3131,13 @@ extern class Ped {
 	 * accuracy = 0-100, 100 being perfectly accurate
 	 * ```
 	 */
-	@:native("SET_PED_ACCURACY")
+	@:native("SetPedAccuracy")
 	static function setPedAccuracy(ped:Dynamic, accuracy:Int):Dynamic;
 
 	/**
 	 * Preview: https://gfycat.com/MaleRareAmazonparrot
 	 */
-	@:native("SET_HEAD_BLEND_PALETTE_COLOR")
+	@:native("SetHeadBlendPaletteColor")
 	static function setHeadBlendPaletteColor(ped:Dynamic, r:Int, g:Int, b:Int, id:Int):Dynamic;
 
 	/**
@@ -3151,19 +3151,19 @@ extern class Ped {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("SET_PED_ALTERNATE_MOVEMENT_ANIM")
+	@:native("SetPedAlternateMovementAnim")
 	static function setPedAlternateMovementAnim(ped:Dynamic, stance:Int, animDictionary:String, animationName:String, p4:Float, p5:Bool):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("SET_PED_ALTERNATE_WALK_ANIM")
+	@:native("SetPedAlternateWalkAnim")
 	static function setPedAlternateWalkAnim(ped:Dynamic, animDict:String, animName:String, p3:Float, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_ALLOWED_TO_DUCK")
+	@:native("SetPedAllowedToDuck")
 	static function setPedAllowedToDuck(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3171,7 +3171,7 @@ extern class Ped {
 	 * value ranges from 0 to 3.  
 	 * ```
 	 */
-	@:native("SET_PED_ALERTNESS")
+	@:native("SetPedAlertness")
 	static function setPedAlertness(ped:Dynamic, value:Int):Dynamic;
 
 	/**
@@ -3179,7 +3179,7 @@ extern class Ped {
 	 * Turns the desired ped into a cop. If you use this on the player ped, you will become almost invisible to cops dispatched for you. You will also report your own crimes, get a generic cop voice, get a cop-vision-cone on the radar, and you will be unable to shoot at other cops. SWAT and Army will still shoot at you. Toggling ped as "false" has no effect; you must change p0's ped model to disable the effect.  
 	 * ```
 	 */
-	@:native("SET_PED_AS_COP")
+	@:native("SetPedAsCop")
 	static function setPedAsCop(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3189,31 +3189,31 @@ extern class Ped {
 	 * amount: A value between 0 and 100 indicating the value to set the Ped's armor to.  
 	 * ```
 	 */
-	@:native("SET_PED_ARMOUR")
+	@:native("SetPedArmour")
 	static function setPedArmour(ped:Dynamic, amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_ALLOW_VEHICLES_OVERRIDE")
+	@:native("SetPedAllowVehiclesOverride")
 	static function setPedAllowVehiclesOverride(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_ANGLED_DEFENSIVE_AREA")
+	@:native("SetPedAngledDefensiveArea")
 	static function setPedAngledDefensiveArea(ped:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Bool, p9:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AS_GROUP_MEMBER")
+	@:native("SetPedAsGroupMember")
 	static function setPedAsGroupMember(ped:Dynamic, groupId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_BLEND_FROM_PARENTS")
+	@:native("SetPedBlendFromParents")
 	static function setPedBlendFromParents(ped:Dynamic, father:Dynamic, mother:Dynamic, fathersSide:Float, mothersSide:Float):Dynamic;
 
 	/**
@@ -3221,31 +3221,31 @@ extern class Ped {
 	 * Enable/disable ped shadow (ambient occlusion). https://gfycat.com/thankfulesteemedgecko
 	 * ```
 	 */
-	@:native("SET_PED_AO_BLOB_RENDERING")
+	@:native("SetPedAoBlobRendering")
 	static function setPedAoBlobRendering(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AS_GROUP_LEADER")
+	@:native("SetPedAsGroupLeader")
 	static function setPedAsGroupLeader(ped:Dynamic, groupId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_BOUNDS_ORIENTATION")
+	@:native("SetPedBoundsOrientation")
 	static function setPedBoundsOrientation(ped:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_ARM_IK")
+	@:native("SetPedCanArmIk")
 	static function setPedCanArmIk(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AS_ENEMY")
+	@:native("SetPedAsEnemy")
 	static function setPedAsEnemy(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3253,61 +3253,61 @@ extern class Ped {
 	 * state: https://alloc8or.re/gta5/doc/enums/eKnockOffVehicle.txt
 	 * ```
 	 */
-	@:native("SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE")
+	@:native("SetPedCanBeKnockedOffVehicle")
 	static function setPedCanBeKnockedOffVehicle(ped:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_SHOT_IN_VEHICLE")
+	@:native("SetPedCanBeShotInVehicle")
 	static function setPedCanBeShotInVehicle(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_BLOCKS_PATHING_WHEN_DEAD")
+	@:native("SetPedBlocksPathingWhenDead")
 	static function setPedBlocksPathingWhenDead(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_TARGETED_WITHOUT_LOS")
+	@:native("SetPedCanBeTargetedWithoutLos")
 	static function setPedCanBeTargetedWithoutLos(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_DRAGGED_OUT")
+	@:native("SetPedCanBeDraggedOut")
 	static function setPedCanBeDraggedOut(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_TARGETTED")
+	@:native("SetPedCanBeTargetted")
 	static function setPedCanBeTargetted(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_TARGETED_WHEN_INJURED")
+	@:native("SetPedCanBeTargetedWhenInjured")
 	static function setPedCanBeTargetedWhenInjured(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_TARGETTED_BY_TEAM")
+	@:native("SetPedCanBeTargettedByTeam")
 	static function setPedCanBeTargettedByTeam(ped:Dynamic, team:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_BE_TARGETTED_BY_PLAYER")
+	@:native("SetPedCanBeTargettedByPlayer")
 	static function setPedCanBeTargettedByPlayer(ped:Dynamic, player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_EVASIVE_DIVE")
+	@:native("SetPedCanEvasiveDive")
 	static function setPedCanEvasiveDive(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3316,62 +3316,62 @@ extern class Ped {
 	 * Peds flee attributes must be set to not to flee, first. Else, most of the peds, will just flee from gunshot sounds or any other panic situations.  
 	 * ```
 	 */
-	@:native("SET_PED_CAN_COWER_IN_COVER")
+	@:native("SetPedCanCowerInCover")
 	static function setPedCanCowerInCover(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_PLAY_AMBIENT_BASE_ANIMS")
+	@:native("SetPedCanPlayAmbientBaseAnims")
 	static function setPedCanPlayAmbientBaseAnims(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * It makes the ped lose (or not lose) their props (like glasses or helmets/hat) when someone punches or pushes the ped.
 	 * This is probably what's being used in GTA:O to keep players from knocking other player's hats/glasses off when in combat.
 	 */
-	@:native("SET_PED_CAN_LOSE_PROPS_ON_DAMAGE")
+	@:native("SetPedCanLosePropsOnDamage")
 	static function setPedCanLosePropsOnDamage(ped:Dynamic, loseProps:Bool, p2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_HEAD_IK")
+	@:native("SetPedCanHeadIk")
 	static function setPedCanHeadIk(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_LEG_IK")
+	@:native("SetPedCanLegIk")
 	static function setPedCanLegIk(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_PLAY_AMBIENT_ANIMS")
+	@:native("SetPedCanPlayAmbientAnims")
 	static function setPedCanPlayAmbientAnims(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_PLAY_GESTURE_ANIMS")
+	@:native("SetPedCanPlayGestureAnims")
 	static function setPedCanPlayGestureAnims(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_CAN_PLAY_INJURED_ANIMS")
+	@:native("SetPedCanPlayInjuredAnims")
 	static function SetPedCanPlayInjuredAnims(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_PEEK_IN_COVER")
+	@:native("SetPedCanPeekInCover")
 	static function setPedCanPeekInCover(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_RAGDOLL")
+	@:native("SetPedCanRagdoll")
 	static function setPedCanRagdoll(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3379,31 +3379,31 @@ extern class Ped {
 	 * p2 usually 0  
 	 * ```
 	 */
-	@:native("SET_PED_CAN_PLAY_VISEME_ANIMS")
+	@:native("SetPedCanPlayVisemeAnims")
 	static function setPedCanPlayVisemeAnims(ped:Dynamic, toggle:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_SWITCH_WEAPON")
+	@:native("SetPedCanSwitchWeapon")
 	static function setPedCanSwitchWeapon(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT")
+	@:native("SetPedCanRagdollFromPlayerImpact")
 	static function setPedCanRagdollFromPlayerImpact(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_TORSO_VEHICLE_IK")
+	@:native("SetPedCanTorsoVehicleIk")
 	static function setPedCanTorsoVehicleIk(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_TORSO_IK")
+	@:native("SetPedCanTorsoIk")
 	static function setPedCanTorsoIk(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3412,7 +3412,7 @@ extern class Ped {
 	 * Only works in singleplayer  
 	 * ```
 	 */
-	@:native("SET_PED_CAN_TELEPORT_TO_GROUP_LEADER")
+	@:native("SetPedCanTeleportToGroupLeader")
 	static function setPedCanTeleportToGroupLeader(pedHandle:Dynamic, groupHandle:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -3426,7 +3426,7 @@ extern class Ped {
 	 * Tested this and got the same results as the first explanation here. Could not find any difference between 0, 1 and 2.  
 	 * ```
 	 */
-	@:native("SET_PED_COMBAT_ABILITY")
+	@:native("SetPedCombatAbility")
 	static function setPedCombatAbility(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -3436,25 +3436,25 @@ extern class Ped {
 	 * Setting this to 0.001 will allow warping through some objects.  
 	 * ```
 	 */
-	@:native("SET_PED_CAPSULE")
+	@:native("SetPedCapsule")
 	static function setPedCapsule(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT")
+	@:native("SetPedCanUseAutoConversationLookat")
 	static function setPedCanUseAutoConversationLookat(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_SMASH_GLASS")
+	@:native("SetPedCanSmashGlass")
 	static function setPedCanSmashGlass(ped:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CLOTH_PRONE")
+	@:native("SetPedClothProne")
 	static function setPedClothProne(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -3633,7 +3633,7 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("SET_PED_COMBAT_ATTRIBUTES")
+	@:native("SetPedCombatAttributes")
 	static function setPedCombatAttributes(ped:Dynamic, attributeIndex:Int, enabled:Bool):Dynamic;
 
 	/**
@@ -3677,13 +3677,13 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("SET_PED_COMPONENT_VARIATION")
+	@:native("SetPedComponentVariation")
 	static function setPedComponentVariation(ped:Dynamic, componentId:Int, drawableId:Int, textureId:Int, paletteId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CAN_TORSO_REACT_IK")
+	@:native("SetPedCanTorsoReactIk")
 	static function setPedCanTorsoReactIk(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -3691,7 +3691,7 @@ extern class Ped {
 	 * teleports ped to coords along with the vehicle ped is in  
 	 * ```
 	 */
-	@:native("SET_PED_COORDS_KEEP_VEHICLE")
+	@:native("SetPedCoordsKeepVehicle")
 	static function setPedCoordsKeepVehicle(ped:Dynamic, posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
@@ -3706,19 +3706,19 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("SET_PED_COMBAT_RANGE")
+	@:native("SetPedCombatRange")
 	static function setPedCombatRange(ped:Dynamic, range:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_COORDS_NO_GANG")
+	@:native("SetPedCoordsNoGang")
 	static function setPedCoordsNoGang(ped:Dynamic, posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CLOTH_PACKAGE_INDEX")
+	@:native("SetPedClothPackageIndex")
 	static function setPedClothPackageIndex(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -3726,7 +3726,7 @@ extern class Ped {
 	 * Sets Ped Default Clothes  
 	 * ```
 	 */
-	@:native("SET_PED_DEFAULT_COMPONENT_VARIATION")
+	@:native("SetPedDefaultComponentVariation")
 	static function setPedDefaultComponentVariation(ped:Dynamic):Dynamic;
 
 	/**
@@ -3737,13 +3737,13 @@ extern class Ped {
 	 * 3 - Suicidal Offensive (Will try to flank enemy in a suicidal attack)  
 	 * ```
 	 */
-	@:native("SET_PED_COMBAT_MOVEMENT")
+	@:native("SetPedCombatMovement")
 	static function setPedCombatMovement(ped:Dynamic, combatMovement:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DEFENSIVE_AREA_DIRECTION")
+	@:native("SetPedDefensiveAreaDirection")
 	static function setPedDefensiveAreaDirection(ped:Dynamic, p1:Float, p2:Float, p3:Float, p4:Bool):Dynamic;
 
 	/**
@@ -3751,25 +3751,25 @@ extern class Ped {
 	 * p1: Only "CODE_HUMAN_STAND_COWER" found in the b617d scripts.  
 	 * ```
 	 */
-	@:native("SET_PED_COWER_HASH")
+	@:native("SetPedCowerHash")
 	static function setPedCowerHash(ped:Dynamic, p1:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DEFENSIVE_SPHERE_ATTACHED_TO_PED")
+	@:native("SetPedDefensiveSphereAttachedToPed")
 	static function setPedDefensiveSphereAttachedToPed(ped:Dynamic, target:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, radius:Float, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DEFENSIVE_SPHERE_ATTACHED_TO_VEHICLE")
+	@:native("SetPedDefensiveSphereAttachedToVehicle")
 	static function setPedDefensiveSphereAttachedToVehicle(ped:Dynamic, target:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, radius:Float, p6:Bool):Dynamic;
 
 	/**
 	 * **Usage:** Call this native every frame
 	 */
-	@:native("SET_PED_DENSITY_MULTIPLIER_THIS_FRAME")
+	@:native("SetPedDensityMultiplierThisFrame")
 	static function setPedDensityMultiplierThisFrame(multiplier:Float):Dynamic;
 
 	/**
@@ -4243,25 +4243,25 @@ extern class Ped {
 	 * }
 	 * ```
 	 */
-	@:native("SET_PED_CONFIG_FLAG")
+	@:native("SetPedConfigFlag")
 	static function setPedConfigFlag(ped:Dynamic, flagId:Int, value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DESIRED_HEADING")
+	@:native("SetPedDesiredHeading")
 	static function setPedDesiredHeading(ped:Dynamic, heading:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DIES_IN_WATER")
+	@:native("SetPedDiesInWater")
 	static function setPedDiesInWater(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DIES_IN_SINKING_VEHICLE")
+	@:native("SetPedDiesInSinkingVehicle")
 	static function setPedDiesInSinkingVehicle(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4271,25 +4271,25 @@ extern class Ped {
 	 * SET_PED_MO*
 	 * ```
 	 */
-	@:native("_SET_PED_COVER_CLIPSET_OVERRIDE")
+	@:native("SetPedCoverClipsetOverride")
 	static function SetPedCoverClipsetOverride(ped:Dynamic, p1:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DRIVE_BY_CLIPSET_OVERRIDE")
+	@:native("SetPedDriveByClipsetOverride")
 	static function setPedDriveByClipsetOverride(ped:Dynamic, clipset:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DEFENSIVE_AREA_ATTACHED_TO_PED")
+	@:native("SetPedDefensiveAreaAttachedToPed")
 	static function setPedDefensiveAreaAttachedToPed(ped:Dynamic, attachPed:Dynamic, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Float, p9:Bool, p10:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DIES_IN_VEHICLE")
+	@:native("SetPedDiesInVehicle")
 	static function setPedDiesInVehicle(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4298,19 +4298,19 @@ extern class Ped {
 	 * In the "agency_heist3b" script, p1 - p3 are always under 100 - usually they are {87, 81, 68}. If SET_PED_ENVEFF_SCALE is set to 0.65 (instead of the usual 1.0), they use {74, 69, 60}
 	 * ```
 	 */
-	@:native("SET_PED_ENVEFF_COLOR_MODULATOR")
+	@:native("SetPedEnveffColorModulator")
 	static function setPedEnveffColorModulator(ped:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DIES_WHEN_INJURED")
+	@:native("SetPedDiesWhenInjured")
 	static function setPedDiesWhenInjured(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_ENABLE_WEAPON_BLOCKING")
+	@:native("SetPedEnableWeaponBlocking")
 	static function setPedEnableWeaponBlocking(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4318,13 +4318,13 @@ extern class Ped {
 	 * This is the SET_CHAR_DUCKING from GTA IV, that makes Peds duck. This function does nothing in GTA V. It cannot set the ped as ducking in vehicles, and IS_PED_DUCKING will always return false.  
 	 * ```
 	 */
-	@:native("SET_PED_DUCKING")
+	@:native("SetPedDucking")
 	static function setPedDucking(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DIES_INSTANTLY_IN_WATER")
+	@:native("SetPedDiesInstantlyInWater")
 	static function setPedDiesInstantlyInWater(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4332,13 +4332,13 @@ extern class Ped {
 	 * bit 15 (0x8000) = force cower
 	 * ```
 	 */
-	@:native("SET_PED_FLEE_ATTRIBUTES")
+	@:native("SetPedFleeAttributes")
 	static function setPedFleeAttributes(ped:Dynamic, attributeFlags:Int, enable:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_GENERATES_DEAD_BODY_EVENTS")
+	@:native("SetPedGeneratesDeadBodyEvents")
 	static function setPedGeneratesDeadBodyEvents(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4365,7 +4365,7 @@ extern class Ped {
 	 * 
 	 * (Direct link if embed doesn't work: [here](https://www.vespura.com/hi/i/2018-11-13\_17-11\_10199\_232.gif))
 	 */
-	@:native("_SET_PED_EMISSIVE_INTENSITY")
+	@:native("SetPedEmissiveIntensity")
 	static function SetPedEmissiveIntensity(ped:Dynamic, intensity:Float):Dynamic;
 
 	/**
@@ -4375,7 +4375,7 @@ extern class Ped {
 	 * You are correct, just looked in IDA it breaks from the function if it's less than 0.0f or greater than 1.0f.  
 	 * ```
 	 */
-	@:native("SET_PED_ENVEFF_SCALE")
+	@:native("SetPedEnveffScale")
 	static function setPedEnveffScale(ped:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -4410,7 +4410,7 @@ extern class Ped {
 	 * 
 	 * You may need to call [`SetPedHeadBlendData`](#\_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 	 */
-	@:native("_SET_PED_FACE_FEATURE")
+	@:native("SetPedFaceFeature")
 	static function SetPedFaceFeature(ped:Dynamic, index:Int, scale:Float):Dynamic;
 
 	/**
@@ -4421,7 +4421,7 @@ extern class Ped {
 	 * PED::SET_PED_GRAVITY(Local_289[iVar0 / *20* /], 0x00000001);  
 	 * ```
 	 */
-	@:native("SET_PED_GRAVITY")
+	@:native("SetPedGravity")
 	static function setPedGravity(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4460,7 +4460,7 @@ extern class Ped {
 	 * 29. white small pupil
 	 * 30. glossed over
 	 */
-	@:native("_SET_PED_EYE_COLOR")
+	@:native("SetPedEyeColor")
 	static function SetPedEyeColor(ped:Dynamic, index:Int):Dynamic;
 
 	/**
@@ -4484,7 +4484,7 @@ extern class Ped {
 	 * if anyone is interested firing pattern info: pastebin.com/Px036isB  
 	 * ```
 	 */
-	@:native("SET_PED_FIRING_PATTERN")
+	@:native("SetPedFiringPattern")
 	static function setPedFiringPattern(ped:Dynamic, patternHash:Int):Dynamic;
 
 	/**
@@ -4510,7 +4510,7 @@ extern class Ped {
 	 * 
 	 * You may need to call [`SetPedHeadBlendData`](#\_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 	 */
-	@:native("SET_PED_HEAD_OVERLAY")
+	@:native("SetPedHeadOverlay")
 	static function setPedHeadOverlay(ped:Dynamic, overlayID:Int, index:Int, opacity:Float):Dynamic;
 
 	/**
@@ -4522,7 +4522,7 @@ extern class Ped {
 	 * "ANIM_GROUP_GESTURE_MISS_DocksSetup1");  
 	 * ```
 	 */
-	@:native("SET_PED_GESTURE_GROUP")
+	@:native("SetPedGestureGroup")
 	static function setPedGestureGroup(ped:Dynamic, animGroupGesture:String):Dynamic;
 
 	/**
@@ -4532,31 +4532,31 @@ extern class Ped {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_PED_HAIR_TINT")
+	@:native("SetPedHairTint")
 	static function setPedHairTint(ped:Dynamic, colorID:Int, highlightColorID:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_HEATSCALE_OVERRIDE")
+	@:native("SetPedHeatscaleOverride")
 	static function setPedHeatscaleOverride(ped:Dynamic, heatScale:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_GROUP_MEMBER_PASSENGER_INDEX")
+	@:native("SetPedGroupMemberPassengerIndex")
 	static function setPedGroupMemberPassengerIndex(ped:Dynamic, index:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE")
+	@:native("SetPedGetOutUpsideDownVehicle")
 	static function setPedGetOutUpsideDownVehicle(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_HEARING_RANGE")
+	@:native("SetPedHearingRange")
 	static function setPedHearingRange(ped:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -4569,7 +4569,7 @@ extern class Ped {
 	 * 
 	 * You may need to call [`SetPedHeadBlendData`](#\_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 	 */
-	@:native("_SET_PED_HEAD_OVERLAY_COLOR")
+	@:native("SetPedHeadOverlayColor")
 	static function SetPedHeadOverlayColor(ped:Dynamic, overlayID:Int, colorType:Int, colorID:Int, secondColorID:Int):Dynamic;
 
 	/**
@@ -4586,13 +4586,13 @@ extern class Ped {
 	 * *   [`SetPedHeadOverlay`](#\_0xD28DBA90)
 	 * *   [`SetPedFaceFeature`](#\_0x6C8D4458)
 	 */
-	@:native("SET_PED_HEAD_BLEND_DATA")
+	@:native("SetPedHeadBlendData")
 	static function setPedHeadBlendData(ped:Dynamic, shapeFirstID:Int, shapeSecondID:Int, shapeThirdID:Int, skinFirstID:Int, skinSecondID:Int, skinThirdID:Int, shapeMix:Float, skinMix:Float, thirdMix:Float, isParent:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_HELMET_FLAG")
+	@:native("SetPedHelmetFlag")
 	static function setPedHelmetFlag(ped:Dynamic, helmetFlag:Int):Dynamic;
 
 	/**
@@ -4600,25 +4600,25 @@ extern class Ped {
 	 * NativeDB Added Parameter 3: BOOL p2
 	 * ```
 	 */
-	@:native("SET_PED_HELMET_PROP_INDEX")
+	@:native("SetPedHelmetPropIndex")
 	static function setPedHelmetPropIndex(ped:Dynamic, propIndex:Int):Dynamic;
 
 	/**
 	 * Sets whether a pedestrian should wear a helmet.
 	 */
-	@:native("SET_PED_HELMET")
+	@:native("SetPedHelmet")
 	static function setPedHelmet(ped:Dynamic, bEnable:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_HELMET_UNK")
+	@:native("SetPedHelmetUnk")
 	static function SetPedHelmetUnk(ped:Dynamic, p1:Bool, p2:Int, p3:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_HELMET_TEXTURE_INDEX")
+	@:native("SetPedHelmetTextureIndex")
 	static function setPedHelmetTextureIndex(ped:Dynamic, textureIndex:Int):Dynamic;
 
 	/**
@@ -4633,55 +4633,55 @@ extern class Ped {
 	 * PED::SET_PED_IN_VEHICLE_CONTEXT(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("MISSFBI5_TREVOR_DRIVING"));
 	 * ```
 	 */
-	@:native("SET_PED_IN_VEHICLE_CONTEXT")
+	@:native("SetPedInVehicleContext")
 	static function setPedInVehicleContext(ped:Dynamic, context:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_HIGHLY_PERCEPTIVE")
+	@:native("SetPedHighlyPerceptive")
 	static function setPedHighlyPerceptive(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_KEEP_TASK")
+	@:native("SetPedKeepTask")
 	static function setPedKeepTask(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_ID_RANGE")
+	@:native("SetPedIdRange")
 	static function setPedIdRange(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MAX_MOVE_BLEND_RATIO")
+	@:native("SetPedMaxMoveBlendRatio")
 	static function setPedMaxMoveBlendRatio(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_INTO_VEHICLE")
+	@:native("SetPedIntoVehicle")
 	static function setPedIntoVehicle(ped:Dynamic, vehicle:Dynamic, seatIndex:Int):Dynamic;
 
 	/**
 	 * Set the maximum time a ped can stay underwater. Maximum seems to be 50 seconds.
 	 */
-	@:native("SET_PED_MAX_TIME_UNDERWATER")
+	@:native("SetPedMaxTimeUnderwater")
 	static function setPedMaxTimeUnderwater(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_INCREASED_AVOIDANCE_RADIUS")
+	@:native("SetPedIncreasedAvoidanceRadius")
 	static function setPedIncreasedAvoidanceRadius(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MAX_HEALTH")
+	@:native("SetPedMaxHealth")
 	static function setPedMaxHealth(ped:Dynamic, value:Int):Dynamic;
 
 	/**
@@ -4689,25 +4689,25 @@ extern class Ped {
 	 * "IK" stands for "Inverse kinematics." I assume this has something to do with how the ped uses his legs to balance. In the scripts, the second parameter is always an int with a value of 2, 0, or sometimes 1  
 	 * ```
 	 */
-	@:native("SET_PED_LEG_IK_MODE")
+	@:native("SetPedLegIkMode")
 	static function setPedLegIkMode(ped:Dynamic, mode:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_LOD_MULTIPLIER")
+	@:native("SetPedLodMultiplier")
 	static function setPedLodMultiplier(ped:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MODEL_IS_SUPPRESSED")
+	@:native("SetPedModelIsSuppressed")
 	static function setPedModelIsSuppressed(model:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MAX_TIME_IN_WATER")
+	@:native("SetPedMaxTimeInWater")
 	static function setPedMaxTimeInWater(ped:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -4717,7 +4717,7 @@ extern class Ped {
 	 * Maximum amount that a ped can theoretically have is 65535 (0xFFFF) since the amount is stored as an unsigned short (uint16_t) value.  
 	 * ```
 	 */
-	@:native("SET_PED_MONEY")
+	@:native("SetPedMoney")
 	static function setPedMoney(ped:Dynamic, amount:Int):Dynamic;
 
 	/**
@@ -4727,7 +4727,7 @@ extern class Ped {
 	 * 
 	 * **NOTE**: Unlike what the native name implies, this works on any weapon that has its `DamageType` in the `weapons.meta` set to `ELECTRIC`.
 	 */
-	@:native("SET_PED_MIN_GROUND_TIME_FOR_STUNGUN")
+	@:native("SetPedMinGroundTimeForStungun")
 	static function setPedMinGroundTimeForStungun(ped:Dynamic, minTimeInMs:Int):Dynamic;
 
 	/**
@@ -4742,25 +4742,25 @@ extern class Ped {
 	 * Note: According to IDA for the Xbox360 xex, when they check bgt they seem to have the min to 0.0f, but the max set to 1.15f not 10.0f.  
 	 * ```
 	 */
-	@:native("SET_PED_MOVE_RATE_OVERRIDE")
+	@:native("SetPedMoveRateOverride")
 	static function setPedMoveRateOverride(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MOVE_ANIMS_BLEND_OUT")
+	@:native("SetPedMoveAnimsBlendOut")
 	static function setPedMoveAnimsBlendOut(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MIN_MOVE_BLEND_RATIO")
+	@:native("SetPedMinMoveBlendRatio")
 	static function setPedMinMoveBlendRatio(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_MOTION_BLUR")
+	@:native("SetPedMotionBlur")
 	static function setPedMotionBlur(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4769,7 +4769,7 @@ extern class Ped {
 	 * *untested but char *name could also be a hash for a localized string  
 	 * ```
 	 */
-	@:native("SET_PED_NAME_DEBUG")
+	@:native("SetPedNameDebug")
 	static function setPedNameDebug(ped:Dynamic, name:String):Dynamic;
 
 	/**
@@ -4824,13 +4824,13 @@ extern class Ped {
 	 * ~ NotCrunchyTaco
 	 * ```
 	 */
-	@:native("SET_PED_MOVEMENT_CLIPSET")
+	@:native("SetPedMovementClipset")
 	static function setPedMovementClipset(ped:Dynamic, clipSet:String, transitionSpeed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_NEVER_LEAVES_GROUP")
+	@:native("SetPedNeverLeavesGroup")
 	static function setPedNeverLeavesGroup(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4838,19 +4838,19 @@ extern class Ped {
 	 * The distance between these points, is the diagonal of a box (remember it's 3D).  
 	 * ```
 	 */
-	@:native("SET_PED_NON_CREATION_AREA")
+	@:native("SetPedNonCreationArea")
 	static function setPedNonCreationArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PARACHUTE_TINT_INDEX")
+	@:native("SetPedParachuteTintIndex")
 	static function setPedParachuteTintIndex(ped:Dynamic, tintIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PANIC_EXIT_SCENARIO")
+	@:native("SetPedPanicExitScenario")
 	static function setPedPanicExitScenario(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -4870,7 +4870,7 @@ extern class Ped {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_PED_PHONE_PALETTE_IDX")
+	@:native("SetPedPhonePaletteIdx")
 	static function setPedPhonePaletteIdx(ped:Dynamic, index:Int):Dynamic;
 
 	/**
@@ -4881,7 +4881,7 @@ extern class Ped {
 	 *                     PED::SET_PED_PRIMARY_LOOKAT(getElem(3, &l_34, 4), PLAYER::PLAYER_PED_ID());
 	 * ```
 	 */
-	@:native("SET_PED_PRIMARY_LOOKAT")
+	@:native("SetPedPrimaryLookat")
 	static function setPedPrimaryLookat(ped:Dynamic, lookAt:Dynamic):Dynamic;
 
 	/**
@@ -4891,7 +4891,7 @@ extern class Ped {
 	 * Points to the same function as for example GET_RANDOM_VEHICLE_MODEL_IN_MEMORY and it does absolutely nothing.  
 	 * ```
 	 */
-	@:native("SET_PED_PLAYS_HEAD_ON_HORN_ANIM_WHEN_DIES_IN_VEHICLE")
+	@:native("SetPedPlaysHeadOnHornAnimWhenDiesInVehicle")
 	static function setPedPlaysHeadOnHornAnimWhenDiesInVehicle(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4899,7 +4899,7 @@ extern class Ped {
 	 * i could be time. Only example in the decompiled scripts uses it as -1.
 	 * ```
 	 */
-	@:native("SET_PED_PINNED_DOWN")
+	@:native("SetPedPinnedDown")
 	static function setPedPinnedDown(ped:Dynamic, pinned:Bool, i:Int):Dynamic;
 
 	/**
@@ -4909,32 +4909,32 @@ extern class Ped {
 	 * p1 is probably componentId
 	 * ```
 	 */
-	@:native("SET_PED_PRELOAD_VARIATION_DATA")
+	@:native("SetPedPreloadVariationData")
 	static function setPedPreloadVariationData(ped:Dynamic, slot:Int, drawableId:Int, textureId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PRELOAD_PROP_DATA")
+	@:native("SetPedPreloadPropData")
 	static function setPedPreloadPropData(ped:Dynamic, componentId:Int, drawableId:Int, textureId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RAGDOLL_FORCE_FALL")
+	@:native("SetPedRagdollForceFall")
 	static function setPedRagdollForceFall(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PREFERRED_COVER_SET")
+	@:native("SetPedPreferredCoverSet")
 	static function setPedPreferredCoverSet(ped:Dynamic, itemSet:Dynamic):Dynamic;
 
 	/**
 	 * Causes Ped to ragdoll on collision with any object (e.g Running into trashcan). If applied to player you will sometimes trip on the sidewalk.
 	 * Needs to be recalled after each ragdoll from a Collision.
 	 */
-	@:native("SET_PED_RAGDOLL_ON_COLLISION")
+	@:native("SetPedRagdollOnCollision")
 	static function setPedRagdollOnCollision(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4970,7 +4970,7 @@ extern class Ped {
 	 * };
 	 * ```
 	 */
-	@:native("SET_PED_PROP_INDEX")
+	@:native("SetPedPropIndex")
 	static function setPedPropIndex(ped:Dynamic, componentId:Int, drawableId:Int, textureId:Int, attach:Bool):Dynamic;
 
 	/**
@@ -4978,32 +4978,32 @@ extern class Ped {
 	 * p1 is always 0 in R* scripts; and a quick disassembly seems to indicate that p1 is unused.  
 	 * ```
 	 */
-	@:native("SET_PED_RANDOM_COMPONENT_VARIATION")
+	@:native("SetPedRandomComponentVariation")
 	static function setPedRandomComponentVariation(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH")
+	@:native("SetPedRelationshipGroupDefaultHash")
 	static function setPedRelationshipGroupDefaultHash(ped:Dynamic, hash:Int):Dynamic;
 
 	/**
 	 * PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 240, 1);
 	 * Known values:
 	 */
-	@:native("SET_PED_RESET_FLAG")
+	@:native("SetPedResetFlag")
 	static function setPedResetFlag(ped:Dynamic, flagId:Int, doReset:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RESERVE_PARACHUTE_TINT_INDEX")
+	@:native("SetPedReserveParachuteTintIndex")
 	static function setPedReserveParachuteTintIndex(ped:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RANDOM_PROPS")
+	@:native("SetPedRandomProps")
 	static function setPedRandomProps(ped:Dynamic):Dynamic;
 
 	/**
@@ -5012,25 +5012,25 @@ extern class Ped {
 	 * If the ped is not currently using a scenario at the time of the command or 0,0,0 is specified as the reaction position,
 	 * then the ped will by default attempt to direct their exit forwards.
 	 */
-	@:native("_SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT")
+	@:native("SetPedShouldPlayDirectedScenarioExit")
 	static function SetPedShouldPlayDirectedScenarioExit(ped:Dynamic, x:Float, y:Float, z:Float):Bool;
 
 	/**
 	 * This native sets a scuba mask for freemode models and an oxygen bottle for player_\* models. It works on freemode and player_\* models.
 	 */
-	@:native("_SET_PED_SCUBA_GEAR_VARIATION")
+	@:native("SetPedScubaGearVariation")
 	static function SetPedScubaGearVariation(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RELATIONSHIP_GROUP_HASH")
+	@:native("SetPedRelationshipGroupHash")
 	static function setPedRelationshipGroupHash(ped:Dynamic, hash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT")
+	@:native("SetPedShouldPlayNormalScenarioExit")
 	static function setPedShouldPlayNormalScenarioExit(ped:Dynamic):Dynamic;
 
 	/**
@@ -5038,43 +5038,43 @@ extern class Ped {
 	 * shootRate 0-1000  
 	 * ```
 	 */
-	@:native("SET_PED_SHOOT_RATE")
+	@:native("SetPedShootRate")
 	static function setPedShootRate(ped:Dynamic, shootRate:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_SEEING_RANGE")
+	@:native("SetPedSeeingRange")
 	static function setPedSeeingRange(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT")
+	@:native("SetPedShouldPlayImmediateScenarioExit")
 	static function setPedShouldPlayImmediateScenarioExit(ped:Dynamic):Dynamic;
 
 	/**
 	 * Fires a weapon at a coordinate using a ped.
 	 */
-	@:native("SET_PED_SHOOTS_AT_COORD")
+	@:native("SetPedShootsAtCoord")
 	static function setPedShootsAtCoord(ped:Dynamic, x:Float, y:Float, z:Float, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_STAY_IN_VEHICLE_WHEN_JACKED")
+	@:native("SetPedStayInVehicleWhenJacked")
 	static function setPedStayInVehicleWhenJacked(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_SPHERE_DEFENSIVE_AREA")
+	@:native("SetPedSphereDefensiveArea")
 	static function setPedSphereDefensiveArea(ped:Dynamic, x:Float, y:Float, z:Float, radius:Float, p5:Bool, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT")
+	@:native("SetPedShouldPlayFleeScenarioExit")
 	static function setPedShouldPlayFleeScenarioExit(ped:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -5082,25 +5082,25 @@ extern class Ped {
 	 * p1 is usually 0 in the scripts. action is either 0 or a pointer to "DEFAULT_ACTION".  
 	 * ```
 	 */
-	@:native("SET_PED_STEALTH_MOVEMENT")
+	@:native("SetPedStealthMovement")
 	static function setPedStealthMovement(ped:Dynamic, p1:Bool, action:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_STEERS_AROUND_PEDS")
+	@:native("SetPedSteersAroundPeds")
 	static function setPedSteersAroundPeds(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_STEERS_AROUND_OBJECTS")
+	@:native("SetPedSteersAroundObjects")
 	static function setPedSteersAroundObjects(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_STEERS_AROUND_VEHICLES")
+	@:native("SetPedSteersAroundVehicles")
 	static function setPedSteersAroundVehicles(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -5108,7 +5108,7 @@ extern class Ped {
 	 * Sweat is set to 100.0 or 0.0 in the decompiled scripts.  
 	 * ```
 	 */
-	@:native("SET_PED_SWEAT")
+	@:native("SetPedSweat")
 	static function setPedSweat(ped:Dynamic, sweat:Float):Dynamic;
 
 	/**
@@ -5116,13 +5116,13 @@ extern class Ped {
 	 * 
 	 * Example: Headshotting a player no longer one shots them. Instead they will take the same damage as a torso shot.
 	 */
-	@:native("SET_PED_SUFFERS_CRITICAL_HITS")
+	@:native("SetPedSuffersCriticalHits")
 	static function setPedSuffersCriticalHits(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_STRAFE_CLIPSET")
+	@:native("SetPedStrafeClipset")
 	static function setPedStrafeClipset(ped:Dynamic, clipSet:String):Dynamic;
 
 	/**
@@ -5130,13 +5130,13 @@ extern class Ped {
 	 * Only 1 and 2 appear in the scripts. combatbehaviour.meta seems to only have TLR_SearchForTarget for all peds, but we don't know if that's 1 or 2.  
 	 * ```
 	 */
-	@:native("SET_PED_TARGET_LOSS_RESPONSE")
+	@:native("SetPedTargetLossResponse")
 	static function setPedTargetLossResponse(ped:Dynamic, responseType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_TO_LOAD_COVER")
+	@:native("SetPedToLoadCover")
 	static function setPedToLoadCover(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -5150,13 +5150,13 @@ extern class Ped {
 	 * ped::set_ped_to_ragdoll_with_fall(ped, 1500, 2000, 1, -entity::get_entity_forward_vector(ped), 1f, 0f, 0f, 0f, 0f, 0f, 0f);  
 	 * ```
 	 */
-	@:native("SET_PED_TO_RAGDOLL_WITH_FALL")
+	@:native("SetPedToRagdollWithFall")
 	static function setPedToRagdollWithFall(ped:Dynamic, time:Int, p2:Int, ragdollType:Int, x:Float, y:Float, z:Float, p7:Float, p8:Float, p9:Float, p10:Float, p11:Float, p12:Float, p13:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_TO_INFORM_RESPECTED_FRIENDS")
+	@:native("SetPedToInformRespectedFriends")
 	static function setPedToInformRespectedFriends(ped:Dynamic, radius:Float, maxFriends:Int):Dynamic;
 
 	/**
@@ -5168,13 +5168,13 @@ extern class Ped {
 	 * **1**: CTaskNMScriptControl: Hardcoded not to work in networked environments.
 	 * **Else**: CTaskNMBalance
 	 */
-	@:native("SET_PED_TO_RAGDOLL")
+	@:native("SetPedToRagdoll")
 	static function setPedToRagdoll(ped:Dynamic, time1:Int, time2:Int, ragdollType:Int, p4:Bool, p5:Bool, p6:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_VISUAL_FIELD_CENTER_ANGLE")
+	@:native("SetPedVisualFieldCenterAngle")
 	static function setPedVisualFieldCenterAngle(ped:Dynamic, angle:Float):Dynamic;
 
 	/**
@@ -5182,7 +5182,7 @@ extern class Ped {
 	 * NativeDB Added Parameter 5: Any p4
 	 * ```
 	 */
-	@:native("SET_PED_VEHICLE_FORCED_SEAT_USAGE")
+	@:native("SetPedVehicleForcedSeatUsage")
 	static function setPedVehicleForcedSeatUsage(ped:Dynamic, vehicle:Dynamic, seatIndex:Int, flags:Int):Dynamic;
 
 	/**
@@ -5190,7 +5190,7 @@ extern class Ped {
 	 * This native refers to the field of vision the ped has above them, starting at 0 degrees. 90f would let the ped see enemies directly above of them.  
 	 * ```
 	 */
-	@:native("SET_PED_VISUAL_FIELD_MAX_ELEVATION_ANGLE")
+	@:native("SetPedVisualFieldMaxElevationAngle")
 	static function setPedVisualFieldMaxElevationAngle(ped:Dynamic, angle:Float):Dynamic;
 
 	/**
@@ -5198,7 +5198,7 @@ extern class Ped {
 	 * p2 is usually -1 in the scripts. action is either 0 or "DEFAULT_ACTION".  
 	 * ```
 	 */
-	@:native("SET_PED_USING_ACTION_MODE")
+	@:native("SetPedUsingActionMode")
 	static function setPedUsingActionMode(ped:Dynamic, p1:Bool, p2:Int, action:String):Dynamic;
 
 	/**
@@ -5206,19 +5206,19 @@ extern class Ped {
 	 * This native refers to the field of vision the ped has below them, starting at 0 degrees. The angle value should be negative.  
 	 * ```
 	 */
-	@:native("SET_PED_VISUAL_FIELD_MIN_ELEVATION_ANGLE")
+	@:native("SetPedVisualFieldMinElevationAngle")
 	static function setPedVisualFieldMinElevationAngle(ped:Dynamic, angle:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_VISUAL_FIELD_MAX_ANGLE")
+	@:native("SetPedVisualFieldMaxAngle")
 	static function setPedVisualFieldMaxAngle(ped:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_VISUAL_FIELD_MIN_ANGLE")
+	@:native("SetPedVisualFieldMinAngle")
 	static function setPedVisualFieldMinAngle(ped:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -5226,7 +5226,7 @@ extern class Ped {
 	 * combined with PED::SET_PED_WETNESS_HEIGHT(), this native makes the ped drenched in water up to the height specified in the other function  
 	 * ```
 	 */
-	@:native("SET_PED_WETNESS_ENABLED_THIS_FRAME")
+	@:native("SetPedWetnessEnabledThisFrame")
 	static function setPedWetnessEnabledThisFrame(ped:Dynamic):Dynamic;
 
 	/**
@@ -5234,7 +5234,7 @@ extern class Ped {
 	 * It adds the wetness level to the player clothing/outfit. As if player just got out from water surface.  
 	 * ```
 	 */
-	@:native("SET_PED_WETNESS_HEIGHT")
+	@:native("SetPedWetnessHeight")
 	static function setPedWetnessHeight(ped:Dynamic, height:Float):Dynamic;
 
 	/**
@@ -5242,19 +5242,19 @@ extern class Ped {
 	 * Min and max are usually 100.0 and 200.0
 	 * ```
 	 */
-	@:native("SET_POP_CONTROL_SPHERE_THIS_FRAME")
+	@:native("SetPopControlSphereThisFrame")
 	static function setPopControlSphereThisFrame(x:Float, y:Float, z:Float, min:Float, max:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_VISUAL_FIELD_PERIPHERAL_RANGE")
+	@:native("SetPedVisualFieldPeripheralRange")
 	static function setPedVisualFieldPeripheralRange(ped:Dynamic, range:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_WEAPON_MOVEMENT_CLIPSET")
+	@:native("SetPedWeaponMovementClipset")
 	static function setPedWeaponMovementClipset(ped:Dynamic, clipSet:String):Dynamic;
 
 	/**
@@ -5273,13 +5273,13 @@ extern class Ped {
 	 * PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, 0xA49E591C, l_1017);  
 	 * ```
 	 */
-	@:native("SET_RELATIONSHIP_BETWEEN_GROUPS")
+	@:native("SetRelationshipBetweenGroups")
 	static function setRelationshipBetweenGroups(relationship:Int, group1:Int, group2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCENARIO_PEDS_SPAWN_IN_SPHERE_AREA")
+	@:native("SetScenarioPedsSpawnInSphereArea")
 	static function setScenarioPedsSpawnInSphereArea(x:Float, y:Float, z:Float, range:Float, p4:Int):Dynamic;
 
 	/**
@@ -5292,73 +5292,73 @@ extern class Ped {
 	 * There seem to be 26 flags  
 	 * ```
 	 */
-	@:native("SET_RAGDOLL_BLOCKING_FLAGS")
+	@:native("SetRagdollBlockingFlags")
 	static function setRagdollBlockingFlags(ped:Dynamic, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCRIPTED_CONVERSION_COORD_THIS_FRAME")
+	@:native("SetScriptedConversionCoordThisFrame")
 	static function setScriptedConversionCoordThisFrame(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * Set the number of scenario peds on the entire map
 	 */
-	@:native("SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME")
+	@:native("SetScenarioPedDensityMultiplierThisFrame")
 	static function setScenarioPedDensityMultiplierThisFrame(interiorMult:Float, exteriorMult:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SYNCHRONIZED_SCENE_ORIGIN")
+	@:native("SetSynchronizedSceneOrigin")
 	static function setSynchronizedSceneOrigin(sceneID:Int, x:Float, y:Float, z:Float, roll:Float, pitch:Float, yaw:Float, p7:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SYNCHRONIZED_SCENE_LOOPED")
+	@:native("SetSynchronizedSceneLooped")
 	static function setSynchronizedSceneLooped(sceneID:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCRIPTED_ANIM_SEAT_OFFSET")
+	@:native("SetScriptedAnimSeatOffset")
 	static function setScriptedAnimSeatOffset(ped:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_RELATIONSHIP_GROUP_DONT_AFFECT_WANTED_LEVEL")
+	@:native("SetRelationshipGroupDontAffectWantedLevel")
 	static function SetRelationshipGroupDontAffectWantedLevel(group:Int, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SYNCHRONIZED_SCENE_RATE")
+	@:native("SetSynchronizedSceneRate")
 	static function setSynchronizedSceneRate(sceneID:Int, rate:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SYNCHRONIZED_SCENE_PHASE")
+	@:native("SetSynchronizedScenePhase")
 	static function setSynchronizedScenePhase(sceneID:Int, phase:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_GET_SEARCH_RESULT")
+	@:native("SpawnpointsGetSearchResult")
 	static function spawnpointsGetSearchResult(randomInt:Int, x:Dynamic, y:Dynamic, z:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_CANCEL_SEARCH")
+	@:native("SpawnpointsCancelSearch")
 	static function spawnpointsCancelSearch():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_IS_SEARCH_COMPLETE")
+	@:native("SpawnpointsIsSearchComplete")
 	static function spawnpointsIsSearchComplete():Bool;
 
 	/**
@@ -5366,44 +5366,44 @@ extern class Ped {
 	 * Sets a value indicating whether scenario peds should be returned by the next call to a command that returns peds. Eg. GET_CLOSEST_PED.  
 	 * ```
 	 */
-	@:native("SET_SCENARIO_PEDS_TO_BE_RETURNED_BY_NEXT_COMMAND")
+	@:native("SetScenarioPedsToBeReturnedByNextCommand")
 	static function setScenarioPedsToBeReturnedByNextCommand(value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_PED_WEAPON_FIRING_WHEN_DROPPED")
+	@:native("StopPedWeaponFiringWhenDropped")
 	static function stopPedWeaponFiringWhenDropped(ped:Dynamic):Dynamic;
 
 	/**
 	 * Kicks the ped from the current vehicle and keeps the rendering-focus on this ped (also disables its collision). If doing this for your player ped, you'll still be able to drive the vehicle.\
 	 * Only to be used in very specific situations where the ped needs to be inside the car still but not attached.
 	 */
-	@:native("SPECIAL_FUNCTION_DO_NOT_USE")
+	@:native("SpecialFunctionDoNotUse")
 	static function specialFunctionDoNotUse(ped:Dynamic, noCollisionUntilClear:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME")
+	@:native("SetSynchronizedSceneHoldLastFrame")
 	static function setSynchronizedSceneHoldLastFrame(sceneID:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_GET_NUM_SEARCH_RESULTS")
+	@:native("SpawnpointsGetNumSearchResults")
 	static function spawnpointsGetNumSearchResults():Int;
 
 	/**
 	 * See [`SET_PED_HEAD_BLEND_DATA`](#\_0x9414E18B9434C2FE)
 	 */
-	@:native("UPDATE_PED_HEAD_BLEND_DATA")
+	@:native("UpdatePedHeadBlendData")
 	static function updatePedHeadBlendData(ped:Dynamic, shapeMix:Float, skinMix:Float, thirdMix:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_GET_SEARCH_RESULT_FLAGS")
+	@:native("SpawnpointsGetSearchResultFlags")
 	static function spawnpointsGetSearchResultFlags(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -5411,19 +5411,19 @@ extern class Ped {
 	 * gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 	 * ```
 	 */
-	@:native("UNREGISTER_PEDHEADSHOT")
+	@:native("UnregisterPedheadshot")
 	static function unregisterPedheadshot(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAS_PED_KNOCKED_OUT")
+	@:native("WasPedKnockedOut")
 	static function wasPedKnockedOut(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_IS_SEARCH_ACTIVE")
+	@:native("SpawnpointsIsSearchActive")
 	static function spawnpointsIsSearchActive():Bool;
 
 	/**
@@ -5431,49 +5431,49 @@ extern class Ped {
 	 * Despite this function's name, it simply returns whether the specified handle is a Ped.  
 	 * ```
 	 */
-	@:native("WAS_PED_SKELETON_UPDATED")
+	@:native("WasPedSkeletonUpdated")
 	static function wasPedSkeletonUpdated(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_START_SEARCH")
+	@:native("SpawnpointsStartSearch")
 	static function spawnpointsStartSearch(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, interiorFlags:Int, scale:Float, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_IS_SEARCH_FAILED")
+	@:native("SpawnpointsIsSearchFailed")
 	static function spawnpointsIsSearchFailed():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SPAWNPOINTS_START_SEARCH_IN_ANGLED_AREA")
+	@:native("SpawnpointsStartSearchInAngledArea")
 	static function spawnpointsStartSearchInAngledArea(x:Float, y:Float, z:Float, p3:Float, p4:Float, p5:Float, p6:Float, interiorFlags:Int, scale:Float, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TAKE_OWNERSHIP_OF_SYNCHRONIZED_SCENE")
+	@:native("TakeOwnershipOfSynchronizedScene")
 	static function takeOwnershipOfSynchronizedScene(scene:Int):Dynamic;
 
 	/**
 	 * Verifies whether ped was eliminated through stealth.
 	 */
-	@:native("WAS_PED_KILLED_BY_STEALTH")
+	@:native("WasPedKilledByStealth")
 	static function wasPedKilledByStealth(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_ANY_PED_MODEL_BEING_SUPPRESSED")
+	@:native("StopAnyPedModelBeingSuppressed")
 	static function stopAnyPedModelBeingSuppressed():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAS_PED_KILLED_BY_TAKEDOWN")
+	@:native("WasPedKilledByTakedown")
 	static function wasPedKilledByTakedown(ped:Dynamic):Bool;
 
 }

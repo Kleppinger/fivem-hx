@@ -5,13 +5,13 @@ extern class Files {
 	/**
 	 * 
 	 */
-	@:native("DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG")
+	@:native("DoesShopPedApparelHaveRestrictionTag")
 	static function doesShopPedApparelHaveRestrictionTag(componentHash:Int, restrictionTagHash:Int, componentId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DLC_VEHICLE_FLAGS")
+	@:native("GetDlcVehicleFlags")
 	static function getDlcVehicleFlags(dlcVehicleIndex:Int):Int;
 
 	/**
@@ -19,19 +19,19 @@ extern class Files {
 	 * dlcVehicleIndex is 0 to GET_NUM_DLC_VEHICLS()  
 	 * ```
 	 */
-	@:native("GET_DLC_VEHICLE_MODEL")
+	@:native("GetDlcVehicleModel")
 	static function getDlcVehicleModel(dlcVehicleIndex:Int):Int;
 
 	/**
 	 * The Second item in the struct `*(Hash *)(outData + 1)` is the vehicle hash.
 	 */
-	@:native("GET_DLC_VEHICLE_DATA")
+	@:native("GetDlcVehicleData")
 	static function getDlcVehicleData(dlcVehicleIndex:Int, outData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DLC_VEHICLE_MOD_LOCK_HASH")
+	@:native("GetDlcVehicleModLockHash")
 	static function getDlcVehicleModLockHash(hash:Int):Int;
 
 	/**
@@ -56,7 +56,7 @@ extern class Files {
 	 * };  
 	 * ```
 	 */
-	@:native("GET_DLC_WEAPON_COMPONENT_DATA")
+	@:native("GetDlcWeaponComponentData")
 	static function getDlcWeaponComponentData(dlcWeaponIndex:Int, dlcWeapCompIndex:Int, ComponentDataPtr:Dynamic):Bool;
 
 	/**
@@ -66,13 +66,13 @@ extern class Files {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_DLC_WEAPON_DATA_SP")
+	@:native("GetDlcWeaponDataSp")
 	static function GetDlcWeaponDataSp(dlcWeaponIndex:Int, outData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FORCED_COMPONENT")
+	@:native("GetForcedComponent")
 	static function getForcedComponent(componentHash:Int, forcedComponentIndex:Int, nameHash:Dynamic, enumValue:Dynamic, componentType:Dynamic):Dynamic;
 
 	/**
@@ -101,7 +101,7 @@ extern class Files {
 	 * };  
 	 * ```
 	 */
-	@:native("GET_DLC_WEAPON_DATA")
+	@:native("GetDlcWeaponData")
 	static function getDlcWeaponData(dlcWeaponIndex:Int, outData:Dynamic):Bool;
 
 	/**
@@ -111,31 +111,31 @@ extern class Files {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_DLC_WEAPON_COMPONENT_DATA_SP")
+	@:native("GetDlcWeaponComponentDataSp")
 	static function GetDlcWeaponComponentDataSp(dlcWeaponIndex:Int, dlcWeapCompIndex:Int, ComponentDataPtr:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_HASH_NAME_FOR_PROP")
+	@:native("GetHashNameForProp")
 	static function getHashNameForProp(entity:Dynamic, componentId:Int, propIndex:Int, propTextureIndex:Int):Int;
 
 	/**
 	 * Returns the total number of DLC vehicles.
 	 */
-	@:native("GET_NUM_DLC_VEHICLES")
+	@:native("GetNumDlcVehicles")
 	static function getNumDlcVehicles():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_FORCED_PROP")
+	@:native("GetForcedProp")
 	static function getForcedProp(componentHash:Int, forcedPropIndex:Int, nameHash:Dynamic, enumValue:Dynamic, anchorPoint:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_HASH_NAME_FOR_COMPONENT")
+	@:native("GetHashNameForComponent")
 	static function getHashNameForComponent(entity:Dynamic, componentId:Int, drawableVariant:Int, textureVariant:Int):Int;
 
 	/**
@@ -143,7 +143,7 @@ extern class Files {
 	 * Returns the total number of DLC weapons.
 	 * ```
 	 */
-	@:native("GET_NUM_DLC_WEAPONS")
+	@:native("GetNumDlcWeapons")
 	static function getNumDlcWeapons():Int;
 
 	/**
@@ -153,7 +153,7 @@ extern class Files {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_NUM_DLC_WEAPON_COMPONENTS_SP")
+	@:native("GetNumDlcWeaponComponentsSp")
 	static function GetNumDlcWeaponComponentsSp(dlcWeaponIndex:Int):Int;
 
 	/**
@@ -161,7 +161,7 @@ extern class Files {
 	 * Returns the total number of DLC weapon components.
 	 * ```
 	 */
-	@:native("GET_NUM_DLC_WEAPON_COMPONENTS")
+	@:native("GetNumDlcWeaponComponents")
 	static function getNumDlcWeaponComponents(dlcWeaponIndex:Int):Int;
 
 	/**
@@ -171,7 +171,7 @@ extern class Files {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_NUM_DLC_WEAPONS_SP")
+	@:native("GetNumDlcWeaponsSp")
 	static function GetNumDlcWeaponsSp():Int;
 
 	/**
@@ -184,7 +184,7 @@ extern class Files {
 	 * 4 = MPFemale
 	 * ```
 	 */
-	@:native("GET_NUM_TATTOO_SHOP_DLC_ITEMS")
+	@:native("GetNumTattooShopDlcItems")
 	static function getNumTattooShopDlcItems(character:Int):Int;
 
 	/**
@@ -192,19 +192,19 @@ extern class Files {
 	 * Returns number of possible values of the forcedComponentIndex argument of GET_FORCED_COMPONENT.
 	 * ```
 	 */
-	@:native("GET_SHOP_PED_APPAREL_FORCED_COMPONENT_COUNT")
+	@:native("GetShopPedApparelForcedComponentCount")
 	static function getShopPedApparelForcedComponentCount(componentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT")
+	@:native("GetShopPedApparelVariantPropCount")
 	static function GetShopPedApparelVariantPropCount(propHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT")
+	@:native("GetShopPedOutfitComponentVariant")
 	static function getShopPedOutfitComponentVariant(outfit:Int, slot:Int, outComponentVariant:Dynamic):Bool;
 
 	/**
@@ -212,25 +212,25 @@ extern class Files {
 	 * Returns number of possible values of the forcedPropIndex argument of GET_FORCED_PROP.
 	 * ```
 	 */
-	@:native("GET_SHOP_PED_APPAREL_FORCED_PROP_COUNT")
+	@:native("GetShopPedApparelForcedPropCount")
 	static function getShopPedApparelForcedPropCount(componentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_APPAREL_VARIANT_COMPONENT_COUNT")
+	@:native("GetShopPedApparelVariantComponentCount")
 	static function getShopPedApparelVariantComponentCount(componentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_OUTFIT")
+	@:native("GetShopPedOutfit")
 	static function getShopPedOutfit(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_OUTFIT_LOCATE")
+	@:native("GetShopPedOutfitLocate")
 	static function getShopPedOutfitLocate(p0:Dynamic):Int;
 
 	/**
@@ -238,25 +238,25 @@ extern class Files {
 	 * More info here: https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86
 	 * ```
 	 */
-	@:native("GET_SHOP_PED_COMPONENT")
+	@:native("GetShopPedComponent")
 	static function getShopPedComponent(componentHash:Int, outComponent:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_OUTFIT_PROP_VARIANT")
+	@:native("GetShopPedOutfitPropVariant")
 	static function getShopPedOutfitPropVariant(outfitHash:Int, variantIndex:Int, outPropVariant:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_QUERY_COMPONENT")
+	@:native("GetShopPedQueryComponent")
 	static function getShopPedQueryComponent(componentId:Int, outComponent:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_PROP")
+	@:native("GetShopPedProp")
 	static function getShopPedProp(componentHash:Int, outProp:Dynamic):Dynamic;
 
 	/**
@@ -269,19 +269,19 @@ extern class Files {
 	 * };  
 	 * ```
 	 */
-	@:native("GET_SHOP_PED_QUERY_OUTFIT")
+	@:native("GetShopPedQueryOutfit")
 	static function getShopPedQueryOutfit(outfitIndex:Int, outfit:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SHOP_PED_QUERY_PROP")
+	@:native("GetShopPedQueryProp")
 	static function getShopPedQueryProp(componentId:Int, outProp:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VARIANT_COMPONENT")
+	@:native("GetVariantComponent")
 	static function getVariantComponent(componentHash:Int, variantComponentIndex:Int, nameHash:Dynamic, enumValue:Dynamic, componentType:Dynamic):Dynamic;
 
 	/**
@@ -289,37 +289,37 @@ extern class Files {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("GET_TATTOO_SHOP_DLC_ITEM_INDEX")
+	@:native("GetTattooShopDlcItemIndex")
 	static function getTattooShopDlcItemIndex(character:Int, collection:Int, preset:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VARIANT_PROP")
+	@:native("GetVariantProp")
 	static function GetVariantProp(componentHash:Int, variantPropIndex:Int, nameHash:Dynamic, enumValue:Dynamic, anchorPoint:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DLC_VEHICLE_MOD")
+	@:native("IsDlcVehicleMod")
 	static function isDlcVehicleMod(hash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("INIT_SHOP_PED_PROP")
+	@:native("InitShopPedProp")
 	static function initShopPedProp(outProp:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SETUP_SHOP_PED_APPAREL_QUERY")
+	@:native("SetupShopPedApparelQuery")
 	static function setupShopPedApparelQuery(p0:Int, p1:Int, p2:Int, p3:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CONTENT_ITEM_LOCKED")
+	@:native("IsContentItemLocked")
 	static function isContentItemLocked(itemHash:Int):Bool;
 
 	/**
@@ -362,13 +362,13 @@ extern class Files {
 	 * };
 	 * ```
 	 */
-	@:native("GET_TATTOO_SHOP_DLC_ITEM_DATA")
+	@:native("GetTattooShopDlcItemData")
 	static function getTattooShopDlcItemData(characterType:Int, decorationIndex:Int, outComponent:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("INIT_SHOP_PED_COMPONENT")
+	@:native("InitShopPedComponent")
 	static function initShopPedComponent(outComponent:Dynamic):Dynamic;
 
 	/**
@@ -382,7 +382,7 @@ extern class Files {
 	 * componentId is -1 when p3 is true in decompiled scripts.
 	 * ```
 	 */
-	@:native("SETUP_SHOP_PED_APPAREL_QUERY_TU")
+	@:native("SetupShopPedApparelQueryTu")
 	static function setupShopPedApparelQueryTu(character:Int, p1:Int, p2:Int, p3:Bool, p4:Int, componentId:Int):Int;
 
 	/**
@@ -395,7 +395,7 @@ extern class Files {
 	 * 4: MPFemale
 	 * ```
 	 */
-	@:native("SETUP_SHOP_PED_OUTFIT_QUERY")
+	@:native("SetupShopPedOutfitQuery")
 	static function setupShopPedOutfitQuery(character:Int, p1:Bool):Int;
 
 	/**
@@ -408,7 +408,7 @@ extern class Files {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_UNLOAD_CONTENT_CHANGE_SET_GROUP")
+	@:native("UnloadContentChangeSetGroup")
 	static function UnloadContentChangeSetGroup(hash:Int):Dynamic;
 
 	/**
@@ -421,7 +421,7 @@ extern class Files {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_LOAD_CONTENT_CHANGE_SET_GROUP")
+	@:native("LoadContentChangeSetGroup")
 	static function LoadContentChangeSetGroup(hash:Int):Dynamic;
 
 }

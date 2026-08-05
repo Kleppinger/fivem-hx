@@ -19,7 +19,7 @@ extern class Localization {
 	 * 12 = chinesesimp (zh-CN)
 	 * ```
 	 */
-	@:native("GET_CURRENT_LANGUAGE")
+	@:native("GetCurrentLanguage")
 	static function getCurrentLanguage():Int;
 
 	/**
@@ -27,7 +27,7 @@ extern class Localization {
 	 * Possible return values: 0, 1, 2
 	 * ```
 	 */
-	@:native("_LOCALIZATION_GET_SYSTEM_DATE_FORMAT")
+	@:native("LocalizationGetSystemDateFormat")
 	static function LocalizationGetSystemDateFormat():Int;
 
 	/**
@@ -35,7 +35,7 @@ extern class Localization {
 	 * Same return values as GET_CURRENT_LANGUAGE
 	 * ```
 	 */
-	@:native("_LOCALIZATION_GET_SYSTEM_LANGUAGE")
+	@:native("LocalizationGetSystemLanguage")
 	static function LocalizationGetSystemLanguage():Int;
 
 }

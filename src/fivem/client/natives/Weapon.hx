@@ -5,13 +5,13 @@ extern class Weapon {
 	/**
 	 * 
 	 */
-	@:native("ADD_AMMO_TO_PED")
+	@:native("AddAmmoToPed")
 	static function addAmmoToPed(ped:Dynamic, weaponHash:Int, ammo:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ADD_AMMO_TO_PED_BY_TYPE")
+	@:native("AddAmmoToPedByType")
 	static function AddAmmoToPedByType(ped:Dynamic, ammoType:Int, ammo:Int):Dynamic;
 
 	/**
@@ -19,25 +19,25 @@ extern class Weapon {
 	 * this returns if you can use the weapon while using a parachute  
 	 * ```
 	 */
-	@:native("CAN_USE_WEAPON_ON_PARACHUTE")
+	@:native("CanUseWeaponOnParachute")
 	static function canUseWeaponOnParachute(weaponHash:Int):Bool;
 
 	/**
 	 * Does NOT seem to work with HAS_PED_BEEN_DAMAGED_BY_WEAPON. Use CLEAR_ENTITY_LAST_WEAPON_DAMAGE and HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON instead.
 	 */
-	@:native("CLEAR_PED_LAST_WEAPON_DAMAGE")
+	@:native("ClearPedLastWeaponDamage")
 	static function clearPedLastWeaponDamage(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ENTITY_LAST_WEAPON_DAMAGE")
+	@:native("ClearEntityLastWeaponDamage")
 	static function clearEntityLastWeaponDamage(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CREATE_AIR_DEFENSE_AREA")
+	@:native("CreateAirDefenseArea")
 	static function CreateAirDefenseArea(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Float, p9:Float, weaponHash:Int):Int;
 
 	/**
@@ -48,13 +48,13 @@ extern class Weapon {
 	 * NativeDB Added Parameter 10: BOOL bScriptHostObject
 	 * ```
 	 */
-	@:native("CREATE_WEAPON_OBJECT")
+	@:native("CreateWeaponObject")
 	static function createWeaponObject(weaponHash:Int, ammoCount:Int, x:Float, y:Float, z:Float, bCreateDefaultComponents:Bool, scale:Float, customModelHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_AMMO_IN_CLIP")
+	@:native("GetAmmoInClip")
 	static function getAmmoInClip(ped:Dynamic, weaponHash:Int, ammo:Dynamic):Bool;
 
 	/**
@@ -62,25 +62,25 @@ extern class Weapon {
 	 * 
 	 * Native related to [\_0xECDC202B25E5CF48](#\_0xECDC202B25E5CF48) p1 value. The only weapon hash used in the decompiled scripts is weapon_air_defence_gun. These two natives are used by the yacht script, decompiled scripts suggest it and the weapon hash used (valkyrie's rockets) are also used by yachts.
 	 */
-	@:native("_CREATE_AIR_DEFENSE_SPHERE")
+	@:native("CreateAirDefenseSphere")
 	static function CreateAirDefenseSphere(x:Float, y:Float, z:Float, radius:Float, p4:Float, p5:Float, p6:Float, weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_PED_VEHICLE_WEAPON")
+	@:native("GetCurrentPedVehicleWeapon")
 	static function getCurrentPedVehicleWeapon(ped:Dynamic, weaponHash:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_DOES_AIR_DEFENSE_ZONE_EXIST")
+	@:native("DoesAirDefenseZoneExist")
 	static function DoesAirDefenseZoneExist(zoneId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_WEAPON_TAKE_WEAPON_COMPONENT")
+	@:native("DoesWeaponTakeWeaponComponent")
 	static function doesWeaponTakeWeaponComponent(weaponHash:Int, componentHash:Int):Bool;
 
 	/**
@@ -88,7 +88,7 @@ extern class Weapon {
 	 * WEAPON::EXPLODE_PROJECTILES(PLAYER::PLAYER_PED_ID(), func_221(0x00000003), 0x00000001);  
 	 * ```
 	 */
-	@:native("EXPLODE_PROJECTILES")
+	@:native("ExplodeProjectiles")
 	static function explodeProjectiles(ped:Dynamic, weaponHash:Int, p2:Bool):Dynamic;
 
 	/**
@@ -96,13 +96,13 @@ extern class Weapon {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("GET_CURRENT_PED_WEAPON_ENTITY_INDEX")
+	@:native("GetCurrentPedWeaponEntityIndex")
 	static function getCurrentPedWeaponEntityIndex(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_FIRE_AIR_DEFENSE_WEAPON")
+	@:native("FireAirDefenseWeapon")
 	static function FireAirDefenseWeapon(zoneId:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -111,13 +111,13 @@ extern class Weapon {
 	 * It doesn't work. Neither on tick nor OnKeyDown  
 	 * ```
 	 */
-	@:native("ENABLE_LASER_SIGHT_RENDERING")
+	@:native("EnableLaserSightRendering")
 	static function enableLaserSightRendering(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BEST_PED_WEAPON")
+	@:native("GetBestPedWeapon")
 	static function getBestPedWeapon(ped:Dynamic, ignoreAmmoCount:Bool):Int;
 
 	/**
@@ -126,7 +126,7 @@ extern class Weapon {
 	 * p2 seems to be 1 most of the time; and is not implemented.
 	 * ```
 	 */
-	@:native("GET_CURRENT_PED_WEAPON")
+	@:native("GetCurrentPedWeapon")
 	static function getCurrentPedWeapon(ped:Dynamic, weaponHash:Dynamic, p2:Bool):Bool;
 
 	/**
@@ -138,13 +138,13 @@ extern class Weapon {
 	 * natives.WEAPON.GET_AMMO_IN_PED_WEAPON(plyPed, WeaponHash)  
 	 * ```
 	 */
-	@:native("GET_AMMO_IN_PED_WEAPON")
+	@:native("GetAmmoInPedWeapon")
 	static function getAmmoInPedWeapon(ped:Dynamic, weaponhash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_MAX_AMMO_BY_TYPE")
+	@:native("GetMaxAmmoByType")
 	static function GetMaxAmmoByType(ped:Dynamic, ammoType:Int, ammo:Dynamic):Bool;
 
 	/**
@@ -152,37 +152,37 @@ extern class Weapon {
 	 * gadgetHash - was always 0xFBAB5776 ("GADGET_PARACHUTE").  
 	 * ```
 	 */
-	@:native("GET_IS_PED_GADGET_EQUIPPED")
+	@:native("GetIsPedGadgetEquipped")
 	static function getIsPedGadgetEquipped(ped:Dynamic, gadgetHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_RANGE_OF_CURRENT_PED_WEAPON")
+	@:native("GetMaxRangeOfCurrentPedWeapon")
 	static function getMaxRangeOfCurrentPedWeapon(ped:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_AMMO")
+	@:native("GetMaxAmmo")
 	static function getMaxAmmo(ped:Dynamic, weaponHash:Int, ammo:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PED_WEAPON_LIVERY_COLOR")
+	@:native("GetPedWeaponLiveryColor")
 	static function GetPedWeaponLiveryColor(ped:Dynamic, weaponHash:Int, camoComponentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON")
+	@:native("GetLockonDistanceOfCurrentPedWeapon")
 	static function getLockonDistanceOfCurrentPedWeapon(ped:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SELECTED_PED_WEAPON")
+	@:native("GetSelectedPedWeapon")
 	static function getSelectedPedWeapon(ped:Dynamic):Int;
 
 	/**
@@ -190,13 +190,13 @@ extern class Weapon {
 	 * p2 is mostly 1 in the scripts.  
 	 * ```
 	 */
-	@:native("GET_MAX_AMMO_IN_CLIP")
+	@:native("GetMaxAmmoInClip")
 	static function getMaxAmmoInClip(ped:Dynamic, weaponHash:Int, p2:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_AMMO_BY_TYPE")
+	@:native("GetPedAmmoByType")
 	static function getPedAmmoByType(ped:Dynamic, ammoType:Int):Int;
 
 	/**
@@ -206,7 +206,7 @@ extern class Weapon {
 	 * Use GET_PED_AMMO_TYPE_FROM_WEAPON if you want current ammo type (like AMMO_MG_INCENDIARY/AMMO_MG_TRACER while using MkII magazines) and use this if you want base ammo type. (AMMO_MG)
 	 * ```
 	 */
-	@:native("_GET_PED_AMMO_TYPE_FROM_WEAPON_2")
+	@:native("GetPedAmmoTypeFromWeapon_2")
 	static function GetPedAmmoTypeFromWeapon2(ped:Dynamic, weaponHash:Int):Int;
 
 	/**
@@ -226,7 +226,7 @@ extern class Weapon {
 	 * }  
 	 * ```
 	 */
-	@:native("GET_WEAPON_CLIP_SIZE")
+	@:native("GetWeaponClipSize")
 	static function getWeaponClipSize(weaponHash:Int):Int;
 
 	/**
@@ -236,7 +236,7 @@ extern class Weapon {
 	 * The return will determine whether there was a coord found or not.  
 	 * ```
 	 */
-	@:native("GET_PED_LAST_WEAPON_IMPACT_COORD")
+	@:native("GetPedLastWeaponImpactCoord")
 	static function getPedLastWeaponImpactCoord(ped:Dynamic, coords:Dynamic):Bool;
 
 	/**
@@ -248,55 +248,55 @@ extern class Weapon {
 	 * Use 0xF489B44DD5AF4BD9 if you always want AMMO_PISTOL.
 	 * ```
 	 */
-	@:native("GET_PED_AMMO_TYPE_FROM_WEAPON")
+	@:native("GetPedAmmoTypeFromWeapon")
 	static function getPedAmmoTypeFromWeapon(ped:Dynamic, weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_WEAPON_TINT_INDEX")
+	@:native("GetPedWeaponTintIndex")
 	static function getPedWeaponTintIndex(ped:Dynamic, weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_MODEL")
+	@:native("GetWeaponComponentVariantExtraComponentModel")
 	static function GetWeaponComponentVariantExtraComponentModel(componentHash:Int, extraComponentIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_COUNT")
+	@:native("GetWeaponComponentVariantExtraComponentCount")
 	static function GetWeaponComponentVariantExtraComponentCount(componentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_WEAPONTYPE_IN_SLOT")
+	@:native("GetPedWeapontypeInSlot")
 	static function getPedWeapontypeInSlot(ped:Dynamic, weaponSlot:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPON_COMPONENT_HUD_STATS")
+	@:native("GetWeaponComponentHudStats")
 	static function getWeaponComponentHudStats(componentHash:Int, outData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_WEAPON_OBJECT_LIVERY_COLOR")
+	@:native("GetWeaponObjectLiveryColor")
 	static function GetWeaponObjectLiveryColor(weaponObject:Dynamic, camoComponentHash:Int):Int;
 
 	/**
 	 * This native does not return damages of weapons from the melee and explosive group.
 	 */
-	@:native("GET_WEAPON_DAMAGE")
+	@:native("GetWeaponDamage")
 	static function getWeaponDamage(weaponHash:Int, componentHash:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPON_COMPONENT_TYPE_MODEL")
+	@:native("GetWeaponComponentTypeModel")
 	static function getWeaponComponentTypeModel(componentHash:Int):Int;
 
 	/**
@@ -305,7 +305,7 @@ extern class Weapon {
 	 * Unknown behavior when unarmed.  
 	 * ```
 	 */
-	@:native("GET_WEAPON_OBJECT_FROM_PED")
+	@:native("GetWeaponObjectFromPed")
 	static function getWeaponObjectFromPed(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -327,20 +327,20 @@ extern class Weapon {
 	 * }  
 	 * ```
 	 */
-	@:native("GET_WEAPON_HUD_STATS")
+	@:native("GetWeaponHudStats")
 	static function getWeaponHudStats(weaponHash:Int, outData:Dynamic):Bool;
 
 	/**
 	 * Gets and returns the hash of the group of the specified weapon (group names can be found/changed under "Group" in the weapons' meta file).
 	 * Note that the group is **not** the same as the location on the weapon wheel.
 	 */
-	@:native("GET_WEAPONTYPE_GROUP")
+	@:native("GetWeapontypeGroup")
 	static function getWeapontypeGroup(weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_WEAPON_TIME_BETWEEN_SHOTS")
+	@:native("GetWeaponTimeBetweenShots")
 	static function GetWeaponTimeBetweenShots(weaponHash:Int):Float;
 
 	/**
@@ -350,7 +350,7 @@ extern class Weapon {
 	 * sub_6663a(&l_115B, WEAPON::GET_WEAPONTYPE_MODEL(${ammo_rpg}));  
 	 * ```
 	 */
-	@:native("GET_WEAPONTYPE_MODEL")
+	@:native("GetWeapontypeModel")
 	static function getWeapontypeModel(weaponHash:Int):Int;
 
 	/**
@@ -370,25 +370,25 @@ extern class Weapon {
 	 * 14=water cannon(WEAPON_HIT_BY_WATER_CANNON)  
 	 * ```
 	 */
-	@:native("GET_WEAPON_DAMAGE_TYPE")
+	@:native("GetWeaponDamageType")
 	static function getWeaponDamageType(weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPON_TINT_COUNT")
+	@:native("GetWeaponTintCount")
 	static function getWeaponTintCount(weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPONTYPE_SLOT")
+	@:native("GetWeapontypeSlot")
 	static function getWeapontypeSlot(weaponHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WEAPON_OBJECT_TINT_INDEX")
+	@:native("GetWeaponObjectTintIndex")
 	static function getWeaponObjectTintIndex(weapon:Dynamic):Int;
 
 	/**
@@ -398,7 +398,7 @@ extern class Weapon {
 	 * ${component_at_ar_flsh}, ${component_at_ar_supp}, ${component_at_pi_flsh}, ${component_at_scope_large}, ${component_at_ar_supp_02}
 	 * ```
 	 */
-	@:native("GIVE_WEAPON_COMPONENT_TO_WEAPON_OBJECT")
+	@:native("GiveWeaponComponentToWeaponObject")
 	static function giveWeaponComponentToWeaponObject(weaponObject:Dynamic, addonHash:Int):Dynamic;
 
 	/**
@@ -407,19 +407,19 @@ extern class Weapon {
 	 * WEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY("WEAPON_PISTOL"), 1000, false)
 	 * ```
 	 */
-	@:native("GIVE_DELAYED_WEAPON_TO_PED")
+	@:native("GiveDelayedWeaponToPed")
 	static function giveDelayedWeaponToPed(ped:Dynamic, weaponHash:Int, ammoCount:Int, bForceInHand:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GIVE_WEAPON_COMPONENT_TO_PED")
+	@:native("GiveWeaponComponentToPed")
 	static function giveWeaponComponentToPed(ped:Dynamic, weaponHash:Int, componentHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GIVE_WEAPON_TO_PED")
+	@:native("GiveWeaponToPed")
 	static function giveWeaponToPed(ped:Dynamic, weaponHash:Int, ammoCount:Int, isHidden:Bool, bForceInHand:Bool):Dynamic;
 
 	/**
@@ -430,7 +430,7 @@ extern class Weapon {
 	 * If you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.
 	 * ```
 	 */
-	@:native("HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON")
+	@:native("HasEntityBeenDamagedByWeapon")
 	static function hasEntityBeenDamagedByWeapon(entity:Dynamic, weaponHash:Int, weaponType:Int):Bool;
 
 	/**
@@ -441,13 +441,13 @@ extern class Weapon {
 	 * If you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.  
 	 * ```
 	 */
-	@:native("HAS_PED_BEEN_DAMAGED_BY_WEAPON")
+	@:native("HasPedBeenDamagedByWeapon")
 	static function hasPedBeenDamagedByWeapon(ped:Dynamic, weaponHash:Int, weaponType:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PED_GOT_WEAPON_COMPONENT")
+	@:native("HasPedGotWeaponComponent")
 	static function hasPedGotWeaponComponent(ped:Dynamic, weaponHash:Int, componentHash:Int):Bool;
 
 	/**
@@ -457,7 +457,7 @@ extern class Weapon {
 	 * Fourth Parameter = unsure, almost always -1  
 	 * ```
 	 */
-	@:native("HAS_VEHICLE_GOT_PROJECTILE_ATTACHED")
+	@:native("HasVehicleGotProjectileAttached")
 	static function hasVehicleGotProjectileAttached(driver:Dynamic, vehicle:Dynamic, weaponHash:Int, p3:Dynamic):Bool;
 
 	/**
@@ -511,13 +511,13 @@ extern class Weapon {
 	 * LOADOUT_COW
 	 * ```
 	 */
-	@:native("_GIVE_LOADOUT_TO_PED")
+	@:native("GiveLoadoutToPed")
 	static function GiveLoadoutToPed(ped:Dynamic, loadoutHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_WEAPON_ASSET_LOADED")
+	@:native("HasWeaponAssetLoaded")
 	static function hasWeaponAssetLoaded(weaponHash:Int):Bool;
 
 	/**
@@ -525,37 +525,37 @@ extern class Weapon {
 	 * Hides the players weapon during a cutscene.  
 	 * ```
 	 */
-	@:native("HIDE_PED_WEAPON_FOR_SCRIPTED_CUTSCENE")
+	@:native("HidePedWeaponForScriptedCutscene")
 	static function hidePedWeaponForScriptedCutscene(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FLASH_LIGHT_ON")
+	@:native("IsFlashLightOn")
 	static function isFlashLightOn(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_ANY_AIR_DEFENSE_ZONE_INSIDE_SPHERE")
+	@:native("IsAnyAirDefenseZoneInsideSphere")
 	static function IsAnyAirDefenseZoneInsideSphere(x:Float, y:Float, z:Float, radius:Float, SphereIndex:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GIVE_WEAPON_OBJECT_TO_PED")
+	@:native("GiveWeaponObjectToPed")
 	static function giveWeaponObjectToPed(weaponObject:Dynamic, ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_WEAPON_COMPONENT_ACTIVE")
+	@:native("IsPedWeaponComponentActive")
 	static function isPedWeaponComponentActive(ped:Dynamic, weaponHash:Int, componentHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_WEAPON_READY_TO_SHOOT")
+	@:native("IsPedWeaponReadyToShoot")
 	static function isPedWeaponReadyToShoot(ped:Dynamic):Bool;
 
 	/**
@@ -564,13 +564,13 @@ extern class Weapon {
 	 * Bool does not check if the weapon is current equipped, unfortunately.  
 	 * ```
 	 */
-	@:native("HAS_PED_GOT_WEAPON")
+	@:native("HasPedGotWeapon")
 	static function hasPedGotWeapon(ped:Dynamic, weaponHash:Int, p2:Bool):Bool;
 
 	/**
 	 * Forces a ped to reload only if they are able to; if they have a full magazine, they will not reload.
 	 */
-	@:native("MAKE_PED_RELOAD")
+	@:native("MakePedReload")
 	static function makePedReload(ped:Dynamic):Bool;
 
 	/**
@@ -584,19 +584,19 @@ extern class Weapon {
 	 * 
 	 * Not specifying any bit will lead to the native *always* returning 'false', and for example specifying '4 | 2' will check for any weapon except fists and melee weapons.
 	 */
-	@:native("IS_PED_ARMED")
+	@:native("IsPedArmed")
 	static function isPedArmed(ped:Dynamic, typeFlags:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_WEAPON_VALID")
+	@:native("IsWeaponValid")
 	static function isWeaponValid(weaponHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_WEAPON_GOT_WEAPON_COMPONENT")
+	@:native("HasWeaponGotWeaponComponent")
 	static function hasWeaponGotWeaponComponent(weapon:Dynamic, addonHash:Int):Bool;
 
 	/**
@@ -605,62 +605,62 @@ extern class Weapon {
 	 * Ped ped = The ped whose weapon you want to check.  
 	 * ```
 	 */
-	@:native("IS_PED_CURRENT_WEAPON_SILENCED")
+	@:native("IsPedCurrentWeaponSilenced")
 	static function isPedCurrentWeaponSilenced(ped:Dynamic):Bool;
 
 	/**
 	 * If `explode` true, then removal is done through exploding the projectile. Basically the same as EXPLODE_PROJECTILES but without defining the owner ped.
 	 */
-	@:native("REMOVE_ALL_PROJECTILES_OF_TYPE")
+	@:native("RemoveAllProjectilesOfType")
 	static function removeAllProjectilesOfType(weaponHash:Int, explode:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REMOVE_AIR_DEFENSE_ZONE")
+	@:native("RemoveAirDefenseZone")
 	static function RemoveAirDefenseZone(zoneId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_WEAPON_COMPONENT_FROM_PED")
+	@:native("RemoveWeaponComponentFromPed")
 	static function removeWeaponComponentFromPed(ped:Dynamic, weaponHash:Int, componentHash:Int):Dynamic;
 
 	/**
 	 * Parameter `p1` does not seem to be used or referenced in game binaries.\
 	 * **Note:** When called for networked entities, a `CRemoveAllWeaponsEvent` will be created per request.
 	 */
-	@:native("REMOVE_ALL_PED_WEAPONS")
+	@:native("RemoveAllPedWeapons")
 	static function removeAllPedWeapons(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REFILL_AMMO_INSTANTLY")
+	@:native("RefillAmmoInstantly")
 	static function refillAmmoInstantly(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_WEAPON_HIGH_DETAIL_MODEL")
+	@:native("RequestWeaponHighDetailModel")
 	static function requestWeaponHighDetailModel(weaponObject:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REMOVE_ALL_AIR_DEFENSE_ZONES")
+	@:native("RemoveAllAirDefenseZones")
 	static function RemoveAllAirDefenseZones():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CURRENT_PED_VEHICLE_WEAPON")
+	@:native("SetCurrentPedVehicleWeapon")
 	static function setCurrentPedVehicleWeapon(ped:Dynamic, weaponHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_WEAPON_ASSET")
+	@:native("RemoveWeaponAsset")
 	static function removeWeaponAsset(weaponHash:Int):Dynamic;
 
 	/**
@@ -675,19 +675,19 @@ extern class Weapon {
 	 * The code above removes the knife from the player.  
 	 * ```
 	 */
-	@:native("REMOVE_WEAPON_FROM_PED")
+	@:native("RemoveWeaponFromPed")
 	static function removeWeaponFromPed(ped:Dynamic, weaponHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLASH_LIGHT_FADE_DISTANCE")
+	@:native("SetFlashLightFadeDistance")
 	static function setFlashLightFadeDistance(distance:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_WEAPON_COMPONENT_FROM_WEAPON_OBJECT")
+	@:native("RemoveWeaponComponentFromWeaponObject")
 	static function removeWeaponComponentFromWeaponObject(weaponObject:Dynamic, addonHash:Int):Dynamic;
 
 	/**
@@ -696,7 +696,7 @@ extern class Weapon {
 	 * REQUEST_WEAPON_ASSET(iLocal_1888, 31, 26);  
 	 * ```
 	 */
-	@:native("REQUEST_WEAPON_ASSET")
+	@:native("RequestWeaponAsset")
 	static function requestWeaponAsset(weaponHash:Int, p1:Int, p2:Int):Dynamic;
 
 	/**
@@ -704,37 +704,37 @@ extern class Weapon {
 	 * NativeDB Added Parameter 4: BOOL p3
 	 * ```
 	 */
-	@:native("SET_PED_AMMO")
+	@:native("SetPedAmmo")
 	static function setPedAmmo(ped:Dynamic, weaponHash:Int, ammo:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMMO_IN_CLIP")
+	@:native("SetAmmoInClip")
 	static function setAmmoInClip(ped:Dynamic, weaponHash:Int, ammo:Int):Bool;
 
 	/**
 	 * Disables selecting the given weapon. Ped isn't forced to put the gun away. However you can't reselect the weapon if you holster then unholster. Weapon is also grayed out on the weapon wheel.
 	 */
-	@:native("_SET_CAN_PED_EQUIP_WEAPON")
+	@:native("SetCanPedEquipWeapon")
 	static function SetCanPedEquipWeapon(ped:Dynamic, weaponHash:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * Does the same as [`_SET_CAN_PED_SELECT_WEAPON`](#\_0xB4771B9AAF4E68E4) except for all weapons.
 	 */
-	@:native("_SET_CAN_PED_EQUIP_ALL_WEAPONS")
+	@:native("SetCanPedEquipAllWeapons")
 	static function SetCanPedEquipAllWeapons(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CURRENT_PED_WEAPON")
+	@:native("SetCurrentPedWeapon")
 	static function setCurrentPedWeapon(ped:Dynamic, weaponHash:Int, bForceInHand:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_CHANCE_OF_FIRING_BLANKS")
+	@:native("SetPedChanceOfFiringBlanks")
 	static function setPedChanceOfFiringBlanks(ped:Dynamic, xBias:Float, yBias:Float):Dynamic;
 
 	/**
@@ -744,25 +744,25 @@ extern class Weapon {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_SET_FLASH_LIGHT_ENABLED")
+	@:native("SetFlashLightEnabled")
 	static function SetFlashLightEnabled(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AMMO_BY_TYPE")
+	@:native("SetPedAmmoByType")
 	static function setPedAmmoByType(ped:Dynamic, ammoType:Int, ammo:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AMMO_TO_DROP")
+	@:native("SetPedAmmoToDrop")
 	static function setPedAmmoToDrop(ped:Dynamic, ammo:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DROPS_INVENTORY_WEAPON")
+	@:native("SetPedDropsInventoryWeapon")
 	static function setPedDropsInventoryWeapon(ped:Dynamic, weaponHash:Int, xOffset:Float, yOffset:Float, zOffset:Float, ammoCount:Int):Dynamic;
 
 	/**
@@ -771,7 +771,7 @@ extern class Weapon {
 	 * p2 is always true.  
 	 * ```
 	 */
-	@:native("SET_PED_GADGET")
+	@:native("SetPedGadget")
 	static function setPedGadget(ped:Dynamic, gadgetHash:Int, p2:Bool):Dynamic;
 
 	/**
@@ -779,13 +779,13 @@ extern class Weapon {
 	 * Has 5 parameters since latest patches.  
 	 * ```
 	 */
-	@:native("SET_PED_CURRENT_WEAPON_VISIBLE")
+	@:native("SetPedCurrentWeaponVisible")
 	static function setPedCurrentWeaponVisible(ped:Dynamic, visible:Bool, deselectWeapon:Bool, p3:Bool, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DROPS_WEAPONS_WHEN_DEAD")
+	@:native("SetPedDropsWeaponsWhenDead")
 	static function setPedDropsWeaponsWhenDead(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -793,31 +793,31 @@ extern class Weapon {
 	 * Returns handle of the projectile.
 	 * ```
 	 */
-	@:native("SET_PED_SHOOT_ORDNANCE_WEAPON")
+	@:native("SetPedShootOrdnanceWeapon")
 	static function setPedShootOrdnanceWeapon(ped:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_INFINITE_AMMO")
+	@:native("SetPedInfiniteAmmo")
 	static function setPedInfiniteAmmo(ped:Dynamic, toggle:Bool, weaponHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_INFINITE_AMMO_CLIP")
+	@:native("SetPedInfiniteAmmoClip")
 	static function setPedInfiniteAmmoClip(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_WEAPON_LIVERY_COLOR")
+	@:native("SetPedWeaponLiveryColor")
 	static function SetPedWeaponLiveryColor(ped:Dynamic, weaponHash:Int, camoComponentHash:Int, colorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DROPS_WEAPON")
+	@:native("SetPedDropsWeapon")
 	static function setPedDropsWeapon(ped:Dynamic):Dynamic;
 
 	/**
@@ -868,19 +868,19 @@ extern class Weapon {
 	 * 32 : Mettalic Red and Yellow
 	 * ```
 	 */
-	@:native("SET_PED_WEAPON_TINT_INDEX")
+	@:native("SetPedWeaponTintIndex")
 	static function setPedWeaponTintIndex(ped:Dynamic, weaponHash:Int, tintIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PICKUP_AMMO_AMOUNT_SCALER")
+	@:native("SetPickupAmmoAmountScaler")
 	static function setPickupAmmoAmountScaler(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLAYER_AIR_DEFENSE_ZONE_FLAG")
+	@:native("SetPlayerAirDefenseZoneFlag")
 	static function SetPlayerAirDefenseZoneFlag(player:Dynamic, zoneId:Int, enable:Bool):Dynamic;
 
 	/**
@@ -927,14 +927,14 @@ extern class Weapon {
 	 * }
 	 * ```
 	 */
-	@:native("SET_WEAPON_ANIMATION_OVERRIDE")
+	@:native("SetWeaponAnimationOverride")
 	static function setWeaponAnimationOverride(ped:Dynamic, animStyle:Int):Dynamic;
 
 	/**
 	 * Changes the weapon damage output by the given multiplier value.
 	 * Does NOT need to be called every frame.
 	 */
-	@:native("_SET_WEAPON_DAMAGE_MODIFIER")
+	@:native("SetWeaponDamageModifier")
 	static function SetWeaponDamageModifier(weaponHash:Int, damageMultiplier:Float):Dynamic;
 
 	/**
@@ -942,19 +942,19 @@ extern class Weapon {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER")
+	@:native("SetWeaponExplosionRadiusMultiplier")
 	static function SetWeaponExplosionRadiusMultiplier(weaponHash:Int, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_WEAPON_OBJECT_LIVERY_COLOR")
+	@:native("SetWeaponObjectLiveryColor")
 	static function SetWeaponObjectLiveryColor(weaponObject:Dynamic, camoComponentHash:Int, colorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_WEAPON_OBJECT_TINT_INDEX")
+	@:native("SetWeaponObjectTintIndex")
 	static function setWeaponObjectTintIndex(weapon:Dynamic, tintIndex:Int):Dynamic;
 
 }

@@ -1,4 +1,5 @@
 import os
+import re
 import requests
 
 # 1. Endpoints
@@ -25,6 +26,37 @@ def snake_to_camel(name):
     if not name: return "unknown"
     parts = name.lower().split('_')
     return parts[0] + ''.join(x.title() for x in parts[1:])
+
+def to_lua_name(name):
+    """The global a native is actually exposed under in FiveM's Lua runtime.
+
+    This is NOT the SCREAMING_SNAKE_CASE name from the natives database.
+    CitizenFX generates its Lua bindings with (ext/natives/codegen_out_lua.lua):
+
+        native.name:lower()
+                   :gsub('0x', 'n_0x')
+                   :gsub('_(%a)', string.upper)
+                   :gsub('(%a)(.+)', function(a, b) return a:upper() .. b end)
+
+    and registers the result on the real _G. GET_CURRENT_RESOURCE_NAME is
+    therefore reachable as _G.GetCurrentResourceName and not under its
+    database name, which does not exist in the runtime at all.
+
+    Ported exactly, including the two cases a naive PascalCase conversion gets
+    wrong. Lua's %a matches letters only, so an underscore before a *digit*
+    survives (GET_GROUND_Z_FOR_3D_COORD -> GetGroundZFor_3dCoord,
+    ..._MODIFIER_2 -> ...Modifier_2), while a leading underscore is consumed
+    because a letter follows it (_ADD_BLIP_FOR_AREA -> AddBlipForArea).
+
+    Verified against citizen/scripting/lua/natives_server.lua from a live
+    FXServer build: 360/360 server natives match.
+    """
+    if not name:
+        return "unknown"
+    text = name.lower().replace("0x", "n_0x")
+    text = re.sub(r"_([A-Za-z])", lambda m: m.group(1).upper(), text)
+    return re.sub(r"([A-Za-z])(.+)", lambda m: m.group(1).upper() + m.group(2), text, count=1)
+
 
 def clean_ns(ns_name):
     """Normalize namespace (e.g. 'PED' -> 'Ped')"""
@@ -98,7 +130,7 @@ def generate_sub_classes(env_name):
 
         for hash_id, details in natives.items():
             haxe_name = snake_to_camel(details["name"])
-            lua_name = details["name"]
+            lua_name = to_lua_name(details["name"])
 
             # Format documentation. Nested /* */ sequences (e.g. inline Lua examples
             # in the source docs) would otherwise prematurely close the doc comment

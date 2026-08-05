@@ -5,25 +5,25 @@ extern class Network {
 	/**
 	 * 
 	 */
-	@:native("ACTIVATE_DAMAGE_TRACKER_ON_NETWORK_ID")
+	@:native("ActivateDamageTrackerOnNetworkId")
 	static function activateDamageTrackerOnNetworkId(netID:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_REGISTER_MISSION_OBJECTS")
+	@:native("CanRegisterMissionObjects")
 	static function canRegisterMissionObjects(amount:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_REGISTER_MISSION_ENTITIES")
+	@:native("CanRegisterMissionEntities")
 	static function canRegisterMissionEntities(ped_amt:Int, vehicle_amt:Int, object_amt:Int, pickup_amt:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_ACTIVATE_DAMAGE_TRACKER_ON_PLAYER")
+	@:native("ActivateDamageTrackerOnPlayer")
 	static function ActivateDamageTrackerOnPlayer(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -31,85 +31,85 @@ extern class Network {
 	 * Downloads prod.cloud.rockstargames.com/titles/gta5/[platform]/check.json
 	 * ```
 	 */
-	@:native("CLOUD_CHECK_AVAILABILITY")
+	@:native("CloudCheckAvailability")
 	static function cloudCheckAvailability():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CAN_REGISTER_MISSION_PICKUPS")
+	@:native("CanRegisterMissionPickups")
 	static function CanRegisterMissionPickups(amount:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_REGISTER_MISSION_PEDS")
+	@:native("CanRegisterMissionPeds")
 	static function canRegisterMissionPeds(amount:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLOUD_GET_AVAILABILITY_CHECK_RESULT")
+	@:native("CloudGetAvailabilityCheckResult")
 	static function cloudGetAvailabilityCheckResult():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BAD_SPORT_PLAYER_LEFT_DETECTED")
+	@:native("BadSportPlayerLeftDetected")
 	static function badSportPlayerLeftDetected(networkHandle:Dynamic, event:Int, amountReceived:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLOUD_DELETE_MEMBER_FILE")
+	@:native("CloudDeleteMemberFile")
 	static function cloudDeleteMemberFile(p0:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("CLOUD_HAS_REQUEST_COMPLETED")
+	@:native("CloudHasRequestCompleted")
 	static function cloudHasRequestCompleted(handle:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_REGISTER_MISSION_VEHICLES")
+	@:native("CanRegisterMissionVehicles")
 	static function canRegisterMissionVehicles(amount:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLOUD_DID_REQUEST_SUCCEED")
+	@:native("CloudDidRequestSucceed")
 	static function cloudDidRequestSucceed(handle:Int):Bool;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("_CLEAR_LAUNCH_PARAMS")
+	@:native("ClearLaunchParams")
 	static function ClearLaunchParams():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLOUD_IS_CHECKING_AVAILABILITY")
+	@:native("CloudIsCheckingAvailability")
 	static function cloudIsCheckingAvailability():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_FACEBOOK_IS_SENDING_DATA")
+	@:native("FacebookIsSendingData")
 	static function FacebookIsSendingData():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_FACEBOOK_DO_UNK_CHECK")
+	@:native("FacebookDoUnkCheck")
 	static function FacebookDoUnkCheck():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_FACEBOOK_IS_AVAILABLE")
+	@:native("FacebookIsAvailable")
 	static function FacebookIsAvailable():Bool;
 
 	/**
@@ -126,7 +126,7 @@ extern class Network {
 	 * };
 	 * ```
 	 */
-	@:native("CONVERT_POSIX_TIME")
+	@:native("ConvertPosixTime")
 	static function convertPosixTime(posixTime:Int, timeStructure:Dynamic):Dynamic;
 
 	/**
@@ -134,19 +134,19 @@ extern class Network {
 	 * Hardcoded to not work in SP.  
 	 * ```
 	 */
-	@:native("FADE_OUT_LOCAL_PLAYER")
+	@:native("FadeOutLocalPlayer")
 	static function fadeOutLocalPlayer(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_FACEBOOK_SET_HEIST_COMPLETE")
+	@:native("FacebookSetHeistComplete")
 	static function FacebookSetHeistComplete(heistName:String, cashEarned:Int, xpEarned:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE")
+	@:native("FacebookSetCreateCharacterComplete")
 	static function FacebookSetCreateCharacterComplete():Bool;
 
 	/**
@@ -154,7 +154,7 @@ extern class Network {
 	 * 
 	 * Renamed from `_GET_POSIX_TIME` to `GET_CLOUD_TIME_AS_INT` because of conflicting native names ([`0xDA488F299A5B164E`](#\_0xDA488F299A5B164E))
 	 */
-	@:native("GET_CLOUD_TIME_AS_INT")
+	@:native("GetCloudTimeAsInt")
 	static function getCloudTimeAsInt():Int;
 
 	/**
@@ -162,13 +162,13 @@ extern class Network {
 	 * index2 is unused
 	 * ```
 	 */
-	@:native("GET_COMMERCE_ITEM_CAT")
+	@:native("GetCommerceItemCat")
 	static function getCommerceItemCat(index:Int, index2:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("FILLOUT_PM_PLAYER_LIST")
+	@:native("FilloutPmPlayerList")
 	static function filloutPmPlayerList(networkHandle:Dynamic, p1:Dynamic, p2:Dynamic):Bool;
 
 	/**
@@ -176,7 +176,7 @@ extern class Network {
 	 * Same as GET_CLOUD_TIME_AS_INT but returns the value as a hex string (%I64X).
 	 * ```
 	 */
-	@:native("_GET_CLOUD_TIME_AS_STRING")
+	@:native("GetCloudTimeAsString")
 	static function GetCloudTimeAsString():String;
 
 	/**
@@ -191,25 +191,25 @@ extern class Network {
 	 * 6 = "prologue"  
 	 * ```
 	 */
-	@:native("_FACEBOOK_SET_MILESTONE_COMPLETE")
+	@:native("FacebookSetMilestoneComplete")
 	static function FacebookSetMilestoneComplete(milestoneId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COMMERCE_ITEM_NUM_CATS")
+	@:native("GetCommerceItemNumCats")
 	static function getCommerceItemNumCats(index:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COMMERCE_ITEM_ID")
+	@:native("GetCommerceItemId")
 	static function getCommerceItemId(index:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("FILLOUT_PM_PLAYER_LIST_WITH_NAMES")
+	@:native("FilloutPmPlayerListWithNames")
 	static function filloutPmPlayerListWithNames(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -217,37 +217,37 @@ extern class Network {
 	 * NativeDB Added Parameter 3: int p2
 	 * ```
 	 */
-	@:native("GET_COMMERCE_ITEM_TEXTURENAME")
+	@:native("GetCommerceItemTexturename")
 	static function getCommerceItemTexturename(index:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COMMERCE_PRODUCT_PRICE")
+	@:native("GetCommerceProductPrice")
 	static function getCommerceProductPrice(index:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_NUM_NETWORK_OBJECTS")
+	@:native("GetMaxNumNetworkObjects")
 	static function getMaxNumNetworkObjects():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COMMERCE_ITEM_NAME")
+	@:native("GetCommerceItemName")
 	static function getCommerceItemName(index:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_NUM_NETWORK_PEDS")
+	@:native("GetMaxNumNetworkPeds")
 	static function getMaxNumNetworkPeds():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_NUM_NETWORK_PICKUPS")
+	@:native("GetMaxNumNetworkPickups")
 	static function getMaxNumNetworkPickups():Int;
 
 	/**
@@ -255,37 +255,37 @@ extern class Network {
 	 * 
 	 * Could be used for benchmarking since it can return times in ticks.
 	 */
-	@:native("GET_NETWORK_TIME_ACCURATE")
+	@:native("GetNetworkTimeAccurate")
 	static function getNetworkTimeAccurate():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NETWORK_TIME")
+	@:native("GetNetworkTime")
 	static function getNetworkTime():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAX_NUM_NETWORK_VEHICLES")
+	@:native("GetMaxNumNetworkVehicles")
 	static function getMaxNumNetworkVehicles():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_CREATED_MISSION_OBJECTS")
+	@:native("GetNumCreatedMissionObjects")
 	static function getNumCreatedMissionObjects(p0:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_CREATED_MISSION_PEDS")
+	@:native("GetNumCreatedMissionPeds")
 	static function getNumCreatedMissionPeds(p0:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_COMMERCE_ITEMS")
+	@:native("GetNumCommerceItems")
 	static function getNumCommerceItems():Int;
 
 	/**
@@ -297,7 +297,7 @@ extern class Network {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("GET_NUM_RESERVED_MISSION_VEHICLES")
+	@:native("GetNumReservedMissionVehicles")
 	static function getNumReservedMissionVehicles(p0:Bool):Int;
 
 	/**
@@ -309,7 +309,7 @@ extern class Network {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("GET_NUM_RESERVED_MISSION_PEDS")
+	@:native("GetNumReservedMissionPeds")
 	static function getNumReservedMissionPeds(p0:Bool):Int;
 
 	/**
@@ -321,13 +321,13 @@ extern class Network {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("GET_NUM_RESERVED_MISSION_OBJECTS")
+	@:native("GetNumReservedMissionObjects")
 	static function getNumReservedMissionObjects(p0:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_CREATED_MISSION_VEHICLES")
+	@:native("GetNumCreatedMissionVehicles")
 	static function getNumCreatedMissionVehicles(p0:Bool):Int;
 
 	/**
@@ -337,7 +337,7 @@ extern class Network {
 	 * 2 = failed
 	 * ```
 	 */
-	@:native("GET_STATUS_OF_TEXTURE_DOWNLOAD")
+	@:native("GetStatusOfTextureDownload")
 	static function getStatusOfTextureDownload(p0:Int):Int;
 
 	/**
@@ -349,7 +349,7 @@ extern class Network {
 	 * _GET_ONLINE_VERSION() will return "1.33"
 	 * ```
 	 */
-	@:native("_GET_ONLINE_VERSION")
+	@:native("GetOnlineVersion")
 	static function GetOnlineVersion():String;
 
 	/**
@@ -357,7 +357,7 @@ extern class Network {
 	 * Subtracts the second argument from the first.  
 	 * ```
 	 */
-	@:native("GET_TIME_DIFFERENCE")
+	@:native("GetTimeDifference")
 	static function getTimeDifference(timeA:Int, timeB:Int):Int;
 
 	/**
@@ -365,55 +365,55 @@ extern class Network {
 	 * Adds the first argument to the second.  
 	 * ```
 	 */
-	@:native("GET_TIME_OFFSET")
+	@:native("GetTimeOffset")
 	static function getTimeOffset(timeA:Int, timeB:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIME_AS_STRING")
+	@:native("GetTimeAsString")
 	static function getTimeAsString(time:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NETWORK_ID_OWNED_BY_PARTICIPANT")
+	@:native("IsNetworkIdOwnedByParticipant")
 	static function isNetworkIdOwnedByParticipant(netId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_COMMERCE_DATA_VALID")
+	@:native("IsCommerceDataValid")
 	static function isCommerceDataValid():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_NETWORK_TIME_STARTED")
+	@:native("HasNetworkTimeStarted")
 	static function hasNetworkTimeStarted():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_COMMERCE_STORE_OPEN")
+	@:native("IsCommerceStoreOpen")
 	static function isCommerceStoreOpen():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER")
+	@:native("IsDamageTrackerActiveOnPlayer")
 	static function IsDamageTrackerActiveOnPlayer(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SPHERE_VISIBLE_TO_PLAYER")
+	@:native("IsSphereVisibleToPlayer")
 	static function isSphereVisibleToPlayer(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DAMAGE_TRACKER_ACTIVE_ON_NETWORK_ID")
+	@:native("IsDamageTrackerActiveOnNetworkId")
 	static function isDamageTrackerActiveOnNetworkId(netID:Int):Bool;
 
 	/**
@@ -421,31 +421,31 @@ extern class Network {
 	 * Subtracts the first argument from the second, then returns whether the result is negative.  
 	 * ```
 	 */
-	@:native("IS_TIME_MORE_THAN")
+	@:native("IsTimeMoreThan")
 	static function isTimeMoreThan(timeA:Int, timeB:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER")
+	@:native("IsEntityGhostedToLocalPlayer")
 	static function IsEntityGhostedToLocalPlayer(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SPHERE_VISIBLE_TO_ANOTHER_MACHINE")
+	@:native("IsSphereVisibleToAnotherMachine")
 	static function isSphereVisibleToAnotherMachine(p0:Float, p1:Float, p2:Float, p3:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_IN_CUTSCENE")
+	@:native("IsPlayerInCutscene")
 	static function isPlayerInCutscene(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STORE_AVAILABLE_TO_USER")
+	@:native("IsStoreAvailableToUser")
 	static function isStoreAvailableToUser():Bool;
 
 	/**
@@ -453,7 +453,7 @@ extern class Network {
 	 * Returns true if the two times are equal; otherwise returns false.  
 	 * ```
 	 */
-	@:native("IS_TIME_EQUAL_TO")
+	@:native("IsTimeEqualTo")
 	static function isTimeEqualTo(timeA:Int, timeB:Int):Bool;
 
 	/**
@@ -461,13 +461,13 @@ extern class Network {
 	 * Subtracts the second argument from the first, then returns whether the result is negative.  
 	 * ```
 	 */
-	@:native("IS_TIME_LESS_THAN")
+	@:native("IsTimeLessThan")
 	static function isTimeLessThan(timeA:Int, timeB:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_BLOCK_JOIN_QUEUE_INVITES")
+	@:native("NetworkBlockJoinQueueInvites")
 	static function networkBlockJoinQueueInvites(toggle:Bool):Dynamic;
 
 	/**
@@ -475,7 +475,7 @@ extern class Network {
 	 * gets the entity id of a network id  
 	 * ```
 	 */
-	@:native("NET_TO_ENT")
+	@:native("NetToEnt")
 	static function netToEnt(netHandle:Int):Dynamic;
 
 	/**
@@ -483,7 +483,7 @@ extern class Network {
 	 * gets the ped id of a network id  
 	 * ```
 	 */
-	@:native("NET_TO_PED")
+	@:native("NetToPed")
 	static function netToPed(netHandle:Int):Dynamic;
 
 	/**
@@ -493,31 +493,31 @@ extern class Network {
 	 * Triggers a CEventNetworkInviteConfirmed event
 	 * ```
 	 */
-	@:native("_NETWORK_ACCEPT_INVITE")
+	@:native("NetworkAcceptInvite")
 	static function NetworkAcceptInvite():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NET_TO_VEH")
+	@:native("NetToVeh")
 	static function netToVeh(netHandle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_BOOL")
+	@:native("NetworkAccessTunableBool")
 	static function networkAccessTunableBool(tunableContext:String, tunableName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_FLOAT")
+	@:native("NetworkAccessTunableFloat")
 	static function networkAccessTunableFloat(tunableContext:String, tunableName:String, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_INT")
+	@:native("NetworkAccessTunableInt")
 	static function networkAccessTunableInt(tunableContext:String, tunableName:String, value:Dynamic):Bool;
 
 	/**
@@ -525,49 +525,49 @@ extern class Network {
 	 * gets the object id of a network id  
 	 * ```
 	 */
-	@:native("NET_TO_OBJ")
+	@:native("NetToObj")
 	static function netToObj(netHandle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCEPT_PRESENCE_INVITE")
+	@:native("NetworkAcceptPresenceInvite")
 	static function networkAcceptPresenceInvite(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ADD_ENTITY_AREA")
+	@:native("NetworkAddEntityArea")
 	static function networkAddEntityArea(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_INT_HASH")
+	@:native("NetworkAccessTunableIntHash")
 	static function networkAccessTunableIntHash(tunableContext:Int, tunableName:Int, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_FLOAT_HASH")
+	@:native("NetworkAccessTunableFloatHash")
 	static function networkAccessTunableFloatHash(tunableContext:Int, tunableName:Int, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACCESS_TUNABLE_BOOL_HASH")
+	@:native("NetworkAccessTunableBoolHash")
 	static function networkAccessTunableBoolHash(tunableContext:Int, tunableName:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ADD_ENTITY_DISPLAYED_BOUNDARIES")
+	@:native("NetworkAddEntityDisplayedBoundaries")
 	static function networkAddEntityDisplayedBoundaries(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ACTION_FOLLOW_INVITE")
+	@:native("NetworkActionFollowInvite")
 	static function networkActionFollowInvite():Dynamic;
 
 	/**
@@ -575,19 +575,19 @@ extern class Network {
 	 * ..  
 	 * ```
 	 */
-	@:native("NETWORK_ADD_FOLLOWERS")
+	@:native("NetworkAddFollowers")
 	static function networkAddFollowers(p0:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * Adds an entity to a network synchronised scene.
 	 */
-	@:native("NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE")
+	@:native("NetworkAddEntityToSynchronisedScene")
 	static function networkAddEntityToSynchronisedScene(entity:Dynamic, netScene:Int, animDict:String, animName:String, blendIn:Float, blendOut:Float, flag:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA")
+	@:native("NetworkAddSynchronisedSceneCamera")
 	static function networkAddSynchronisedSceneCamera(netScene:Int, animDict:String, animName:String):Dynamic;
 
 	/**
@@ -595,7 +595,7 @@ extern class Network {
 	 * 
 	 * See [`IS_POINT_IN_ANGLED_AREA`](#\_0x2A70BAE8883E4C81) for the definition of an angled area.
 	 */
-	@:native("NETWORK_ADD_ENTITY_ANGLED_AREA")
+	@:native("NetworkAddEntityAngledArea")
 	static function networkAddEntityAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float):Dynamic;
 
 	/**
@@ -608,7 +608,7 @@ extern class Network {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("NETWORK_ADD_MAP_ENTITY_TO_SYNCHRONISED_SCENE")
+	@:native("NetworkAddMapEntityToSynchronisedScene")
 	static function networkAddMapEntityToSynchronisedScene(netScene:Int, modelHash:Int, x:Float, y:Float, z:Float, animDict:String, animName:String, blendInSpeed:Float, blendOutSpeed:Float, flags:Int):Dynamic;
 
 	/**
@@ -619,25 +619,25 @@ extern class Network {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE_WITH_IK")
+	@:native("NetworkAddPedToSynchronisedSceneWithIk")
 	static function networkAddPedToSynchronisedSceneWithIk(ped:Dynamic, netSceneID:Int, animDict:String, animClip:String, blendIn:Float, blendOut:Float, sceneFlags:Int, ragdollFlags:Int, moverBlendInDelta:Float, ikFlags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_AM_I_MUTED_BY_GAMER")
+	@:native("NetworkAmIMutedByGamer")
 	static function networkAmIMutedByGamer(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ADD_FRIEND")
+	@:native("NetworkAddFriend")
 	static function networkAddFriend(networkHandle:Dynamic, message:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_ALLOCATE_TUNABLES_REGISTRATION_DATA_MAP")
+	@:native("NetworkAllocateTunablesRegistrationDataMap")
 	static function NetworkAllocateTunablesRegistrationDataMap():Bool;
 
 	/**
@@ -645,25 +645,25 @@ extern class Network {
 	 * 
 	 * **Note:** This is only local and does not affect entities on other machines. This is used by the ferris wheel script to sync players on carts.
 	 */
-	@:native("NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION")
+	@:native("NetworkAllowRemoteAttachmentModification")
 	static function networkAllowRemoteAttachmentModification(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_AM_I_BLOCKED_BY_PLAYER")
+	@:native("NetworkAmIBlockedByPlayer")
 	static function networkAmIBlockedByPlayer(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_APPLY_PED_SCAR_DATA")
+	@:native("NetworkApplyPedScarData")
 	static function networkApplyPedScarData(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_AM_I_MUTED_BY_PLAYER")
+	@:native("NetworkAmIMutedByPlayer")
 	static function networkAmIMutedByPlayer(player:Dynamic):Bool;
 
 	/**
@@ -694,37 +694,37 @@ extern class Network {
 	 * 
 	 * These flags can be combined with the `|` operator.
 	 */
-	@:native("NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE")
+	@:native("NetworkAddPedToSynchronisedScene")
 	static function networkAddPedToSynchronisedScene(ped:Dynamic, netScene:Int, animDict:String, animClip:String, blendInSpeed:Float, blendOutSpeed:Float, syncedSceneFlags:Int, ragdollFlags:Int, moverBlendInDelta:Float, ikFlags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_APPLY_CACHED_PLAYER_HEAD_BLEND_DATA")
+	@:native("NetworkApplyCachedPlayerHeadBlendData")
 	static function networkApplyCachedPlayerHeadBlendData(ped:Dynamic, player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_AM_I_BLOCKED_BY_GAMER")
+	@:native("NetworkAmIBlockedByGamer")
 	static function networkAmIBlockedByGamer(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_APPLY_TRANSITION_PARAMETER_STRING")
+	@:native("NetworkApplyTransitionParameterString")
 	static function networkApplyTransitionParameterString(p0:Int, string:String, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_APPLY_TRANSITION_PARAMETER")
+	@:native("NetworkApplyTransitionParameter")
 	static function networkApplyTransitionParameter(p0:Int, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ARE_HANDLES_THE_SAME")
+	@:native("NetworkAreHandlesTheSame")
 	static function networkAreHandlesTheSame(netHandle1:Dynamic, netHandle2:Dynamic):Bool;
 
 	/**
@@ -732,13 +732,13 @@ extern class Network {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_BAIL_TRANSITION_QUICKMATCH")
+	@:native("NetworkBailTransitionQuickmatch")
 	static function NetworkBailTransitionQuickmatch():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_APPLY_VOICE_PROXIMITY_OVERRIDE")
+	@:native("NetworkApplyVoiceProximityOverride")
 	static function networkApplyVoiceProximityOverride(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -750,31 +750,31 @@ extern class Network {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_ARE_CUTSCENE_ENTITIES")
+	@:native("NetworkAreCutsceneEntities")
 	static function NetworkAreCutsceneEntities():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_BLOCK_KICKED_PLAYERS")
+	@:native("NetworkBlockKickedPlayers")
 	static function NetworkBlockKickedPlayers(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ATTACH_SYNCHRONISED_SCENE_TO_ENTITY")
+	@:native("NetworkAttachSynchronisedSceneToEntity")
 	static function networkAttachSynchronisedSceneToEntity(netScene:Int, entity:Dynamic, bone:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ARE_SOCIAL_CLUB_POLICIES_CURRENT")
+	@:native("NetworkAreSocialClubPoliciesCurrent")
 	static function networkAreSocialClubPoliciesCurrent():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_BAIL")
+	@:native("NetworkCanBail")
 	static function networkCanBail():Bool;
 
 	/**
@@ -784,19 +784,19 @@ extern class Network {
 	 * NativeDB Added Parameter 3: int p2
 	 * ```
 	 */
-	@:native("NETWORK_BAIL_TRANSITION")
+	@:native("NetworkBailTransition")
 	static function networkBailTransition():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ARE_TRANSITION_DETAILS_VALID")
+	@:native("NetworkAreTransitionDetailsValid")
 	static function networkAreTransitionDetailsValid(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_ENTER_MULTIPLAYER")
+	@:native("NetworkCanEnterMultiplayer")
 	static function networkCanEnterMultiplayer():Bool;
 
 	/**
@@ -806,7 +806,7 @@ extern class Network {
 	 * NativeDB Added Parameter 3: int p2
 	 * ```
 	 */
-	@:native("NETWORK_BAIL")
+	@:native("NetworkBail")
 	static function networkBail():Dynamic;
 
 	/**
@@ -816,61 +816,61 @@ extern class Network {
 	 * Returns 1 if the multiplayer is loaded, otherwhise 0.  
 	 * ```
 	 */
-	@:native("NETWORK_CAN_ACCESS_MULTIPLAYER")
+	@:native("NetworkCanAccessMultiplayer")
 	static function networkCanAccessMultiplayer(loadingState:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_SESSION_END")
+	@:native("NetworkCanSessionEnd")
 	static function networkCanSessionEnd():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_CAN_PLAY_MULTIPLAYER_WITH_GAMER")
+	@:native("NetworkCanPlayMultiplayerWithGamer")
 	static function NetworkCanPlayMultiplayerWithGamer(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_BLOCK_INVITES")
+	@:native("NetworkBlockInvites")
 	static function networkBlockInvites(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_COMMUNICATE_WITH_GAMER")
+	@:native("NetworkCanCommunicateWithGamer")
 	static function networkCanCommunicateWithGamer(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CANCEL_RESPAWN_SEARCH")
+	@:native("NetworkCancelRespawnSearch")
 	static function networkCancelRespawnSearch():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CAN_SET_WAYPOINT")
+	@:native("NetworkCanSetWaypoint")
 	static function networkCanSetWaypoint():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CACHE_LOCAL_PLAYER_HEAD_BLEND_DATA")
+	@:native("NetworkCacheLocalPlayerHeadBlendData")
 	static function networkCacheLocalPlayerHeadBlendData():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_CAN_GAMER_PLAY_MULTIPLAYER_WITH_ME")
+	@:native("NetworkCanGamerPlayMultiplayerWithMe")
 	static function NetworkCanGamerPlayMultiplayerWithMe(networkHandle:Dynamic):Bool;
 
 	/**
 	 * Checks if the friendDataIndex in the friend data manager contains the data for the specified networkHandle
 	 */
-	@:native("NETWORK_CHECK_DATA_MANAGER_SUCCEEDED_FOR_HANDLE")
+	@:native("NetworkCheckDataManagerSucceededForHandle")
 	static function networkCheckDataManagerSucceededForHandle(friendDataIndex:Int, networkHandle:Dynamic):Bool;
 
 	/**
@@ -880,61 +880,61 @@ extern class Network {
 	 * NETWORK_CAN_*
 	 * ```
 	 */
-	@:native("_NETWORK_CAN_COMMUNICATE_WITH_GAMER_2")
+	@:native("NetworkCanCommunicateWithGamer_2")
 	static function NetworkCanCommunicateWithGamer2(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_CAN_VIEW_GAMER_USER_CONTENT")
+	@:native("NetworkCanViewGamerUserContent")
 	static function NetworkCanViewGamerUserContent(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CHECK_COMMUNICATION_PRIVILEGES")
+	@:native("NetworkCheckCommunicationPrivileges")
 	static function networkCheckCommunicationPrivileges(p0:Int, p1:Int, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_DOWNLOAD_MEMBERSHIP")
+	@:native("NetworkClanDownloadMembership")
 	static function networkClanDownloadMembership(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CHECK_USER_CONTENT_PRIVILEGES")
+	@:native("NetworkCheckUserContentPrivileges")
 	static function networkCheckUserContentPrivileges(p0:Int, p1:Int, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING")
+	@:native("NetworkClanAnyDownloadMembershipPending")
 	static function networkClanAnyDownloadMembershipPending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_GET_EMBLEM_TXD_NAME")
+	@:native("NetworkClanGetEmblemTxdName")
 	static function networkClanGetEmblemTxdName(netHandle:Dynamic, txdName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_DOWNLOAD_MEMBERSHIP_PENDING")
+	@:native("NetworkClanDownloadMembershipPending")
 	static function networkClanDownloadMembershipPending(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_GET_MEMBERSHIP_COUNT")
+	@:native("NetworkClanGetMembershipCount")
 	static function networkClanGetMembershipCount(p0:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CHANGE_TRANSITION_SLOTS")
+	@:native("NetworkChangeTransitionSlots")
 	static function networkChangeTransitionSlots(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
@@ -943,13 +943,13 @@ extern class Network {
 	 * Test C++ code:
 	 * https://pastebin.com/CD8wni4C
 	 */
-	@:native("NETWORK_CLAN_GET_MEMBERSHIP")
+	@:native("NetworkClanGetMembership")
 	static function networkClanGetMembership(networkHandle:Dynamic, clanMembership:Dynamic, membershipIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_GET_MEMBERSHIP_DESC")
+	@:native("NetworkClanGetMembershipDesc")
 	static function networkClanGetMembershipDesc(memberDesc:Dynamic, p1:Int):Bool;
 
 	/**
@@ -957,25 +957,25 @@ extern class Network {
 	 * Only documented...  
 	 * ```
 	 */
-	@:native("_NETWORK_CLAN_ANIMATION")
+	@:native("NetworkClanAnimation")
 	static function NetworkClanAnimation(animDict:String, animName:String):Bool;
 
 	/**
 	 * Checks if a crew/membership for a player, from the cache (i.e. downloaded via NETWORK_CLAN_DOWNLOAD_MEMBERSHIP) is valid.
 	 */
-	@:native("NETWORK_CLAN_GET_MEMBERSHIP_VALID")
+	@:native("NetworkClanGetMembershipValid")
 	static function networkClanGetMembershipValid(networkHandle:Dynamic, membershipIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT")
+	@:native("NetworkClanGetLocalMembershipsCount")
 	static function networkClanGetLocalMembershipsCount():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_IS_EMBLEM_READY")
+	@:native("NetworkClanIsEmblemReady")
 	static function networkClanIsEmblemReady(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
@@ -983,19 +983,19 @@ extern class Network {
 	 * bufferSize is 35 in the scripts.
 	 * ```
 	 */
-	@:native("NETWORK_CLAN_GET_UI_FORMATTED_TAG")
+	@:native("NetworkClanGetUiFormattedTag")
 	static function networkClanGetUiFormattedTag(clanDesc:Dynamic, bufferSize:Int, formattedTag:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_REMOTE_MEMBERSHIPS_ARE_IN_CACHE")
+	@:native("NetworkClanRemoteMembershipsAreInCache")
 	static function networkClanRemoteMembershipsAreInCache(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_CLOCK_TIME_OVERRIDE")
+	@:native("NetworkClearClockTimeOverride")
 	static function networkClearClockTimeOverride():Dynamic;
 
 	/**
@@ -1006,13 +1006,13 @@ extern class Network {
 	 * pastebin.com/cSZniHak  
 	 * ```
 	 */
-	@:native("NETWORK_CLAN_PLAYER_GET_DESC")
+	@:native("NetworkClanPlayerGetDesc")
 	static function networkClanPlayerGetDesc(clanDesc:Dynamic, bufferSize:Int, networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_REQUEST_EMBLEM")
+	@:native("NetworkClanRequestEmblem")
 	static function networkClanRequestEmblem(p0:Dynamic):Bool;
 
 	/**
@@ -1020,85 +1020,85 @@ extern class Network {
 	 * bufferSize is 35 in the scripts.  
 	 * ```
 	 */
-	@:native("NETWORK_CLAN_IS_ROCKSTAR_CLAN")
+	@:native("NetworkClanIsRockstarClan")
 	static function networkClanIsRockstarClan(clanDesc:Dynamic, bufferSize:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_FOUND_GAMERS")
+	@:native("NetworkClearFoundGamers")
 	static function networkClearFoundGamers():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_FOLLOW_INVITE")
+	@:native("NetworkClearFollowInvite")
 	static function networkClearFollowInvite():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_PLAYER_IS_ACTIVE")
+	@:native("NetworkClanPlayerIsActive")
 	static function networkClanPlayerIsActive(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_FOLLOWERS")
+	@:native("NetworkClearFollowers")
 	static function networkClearFollowers():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_GET_GAMER_STATUS")
+	@:native("NetworkClearGetGamerStatus")
 	static function networkClearGetGamerStatus():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_JOIN")
+	@:native("NetworkClanJoin")
 	static function networkClanJoin(clanDesc:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_RELEASE_EMBLEM")
+	@:native("NetworkClanReleaseEmblem")
 	static function networkClanReleaseEmblem(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_VOICE_CHANNEL")
+	@:native("NetworkClearVoiceChannel")
 	static function networkClearVoiceChannel():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_GROUP_ACTIVITY")
+	@:native("NetworkClearGroupActivity")
 	static function networkClearGroupActivity():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_PROPERTY_ID")
+	@:native("NetworkClearPropertyId")
 	static function networkClearPropertyId():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLAN_SERVICE_IS_VALID")
+	@:native("NetworkClanServiceIsValid")
 	static function networkClanServiceIsValid():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_VOICE_PROXIMITY_OVERRIDE")
+	@:native("NetworkClearVoiceProximityOverride")
 	static function networkClearVoiceProximityOverride():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLOSE_TRANSITION_MATCHMAKING")
+	@:native("NetworkCloseTransitionMatchmaking")
 	static function networkCloseTransitionMatchmaking():Dynamic;
 
 	/**
@@ -1116,56 +1116,56 @@ extern class Network {
 	 * 
 	 * This setup keeps instance players separate from each other while allowing interaction with the general population.
 	 */
-	@:native("NETWORK_CONCEAL_PLAYER")
+	@:native("NetworkConcealPlayer")
 	static function networkConcealPlayer(player:Dynamic, toggle:Bool, bAllowDamagingWhileConcealed:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_CLEAR_TRANSITION_CREATOR_HANDLE")
+	@:native("NetworkClearTransitionCreatorHandle")
 	static function networkClearTransitionCreatorHandle():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DID_GET_GAMER_STATUS_SUCCEED")
+	@:native("NetworkDidGetGamerStatusSucceed")
 	static function networkDidGetGamerStatusSucceed():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DID_FIND_GAMERS_SUCCEED")
+	@:native("NetworkDidFindGamersSucceed")
 	static function networkDidFindGamersSucceed():Bool;
 
 	/**
 	 * Creates a networked synchronized scene.
 	 * Be sure to actually start the scene with [`NETWORK_START_SYNCHRONISED_SCENE`](#\_0x9A1B3FCDB36C8697) after you're done adding peds or entities to the scene.
 	 */
-	@:native("NETWORK_CREATE_SYNCHRONISED_SCENE")
+	@:native("NetworkCreateSynchronisedScene")
 	static function networkCreateSynchronisedScene(x:Float, y:Float, z:Float, xRot:Float, yRot:Float, zRot:Float, rotationOrder:Int, holdLastFrame:Bool, looped:Bool, phaseToStopScene:Float, phaseToStartScene:Float, animSpeed:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_CONCEAL_ENTITY")
+	@:native("NetworkConcealEntity")
 	static function NetworkConcealEntity(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DISABLE_INVINCIBLE_FLASHING")
+	@:native("NetworkDisableInvincibleFlashing")
 	static function networkDisableInvincibleFlashing(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DISABLE_PROXIMITY_MIGRATION")
+	@:native("NetworkDisableProximityMigration")
 	static function networkDisableProximityMigration(netID:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DO_TRANSITION_TO_GAME")
+	@:native("NetworkDoTransitionToGame")
 	static function networkDoTransitionToGame(p0:Bool, maxPlayers:Int):Bool;
 
 	/**
@@ -1174,13 +1174,13 @@ extern class Network {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("NETWORK_DO_TRANSITION_QUICKMATCH")
+	@:native("NetworkDoTransitionQuickmatch")
 	static function networkDoTransitionQuickmatch(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID")
+	@:native("NetworkDoesEntityExistWithNetworkId")
 	static function networkDoesEntityExistWithNetworkId(netId:Int):Bool;
 
 	/**
@@ -1188,25 +1188,25 @@ extern class Network {
 	 * Hardcoded to return -1.
 	 * ```
 	 */
-	@:native("_NETWORK_DISPLAYNAMES_FROM_HANDLES_START")
+	@:native("NetworkDisplaynamesFromHandlesStart")
 	static function NetworkDisplaynamesFromHandlesStart(p0:Dynamic, p1:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DISABLE_LEAVE_REMOTE_PED_BEHIND")
+	@:native("NetworkDisableLeaveRemotePedBehind")
 	static function networkDisableLeaveRemotePedBehind(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DOES_TUNABLE_EXIST")
+	@:native("NetworkDoesTunableExist")
 	static function networkDoesTunableExist(tunableContext:String, tunableName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DO_TRANSITION_TO_NEW_GAME")
+	@:native("NetworkDoTransitionToNewGame")
 	static function networkDoTransitionToNewGame(p0:Bool, maxPlayers:Int, p2:Bool):Bool;
 
 	/**
@@ -1215,13 +1215,13 @@ extern class Network {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("NETWORK_DO_TRANSITION_QUICKMATCH_WITH_GROUP")
+	@:native("NetworkDoTransitionQuickmatchWithGroup")
 	static function networkDoTransitionQuickmatchWithGroup(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DOES_TUNABLE_EXIST_HASH")
+	@:native("NetworkDoesTunableExistHash")
 	static function networkDoesTunableExistHash(tunableContext:Int, tunableName:Int):Bool;
 
 	/**
@@ -1230,13 +1230,13 @@ extern class Network {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("NETWORK_DO_TRANSITION_QUICKMATCH_ASYNC")
+	@:native("NetworkDoTransitionQuickmatchAsync")
 	static function networkDoTransitionQuickmatchAsync(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DO_TRANSITION_TO_NEW_FREEMODE")
+	@:native("NetworkDoTransitionToNewFreemode")
 	static function networkDoTransitionToNewFreemode(p0:Dynamic, p1:Dynamic, players:Int, p3:Bool, p4:Bool, p5:Bool):Bool;
 
 	/**
@@ -1245,31 +1245,31 @@ extern class Network {
 	 * 'players' is the number of players for a session. On PS3/360 it's always 18. On PC it's 32.  
 	 * ```
 	 */
-	@:native("NETWORK_DO_TRANSITION_TO_FREEMODE")
+	@:native("NetworkDoTransitionToFreemode")
 	static function networkDoTransitionToFreemode(p0:Dynamic, p1:Dynamic, p2:Bool, players:Int, p4:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_DOES_NETWORK_ID_EXIST")
+	@:native("NetworkDoesNetworkIdExist")
 	static function networkDoesNetworkIdExist(netId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ENTITY_AREA_DOES_EXIST")
+	@:native("NetworkEntityAreaDoesExist")
 	static function networkEntityAreaDoesExist(areaHandle:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_END_TUTORIAL_SESSION")
+	@:native("NetworkEndTutorialSession")
 	static function networkEndTutorialSession():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_ENTITY_AREA_IS_OCCUPIED")
+	@:native("NetworkEntityAreaIsOccupied")
 	static function networkEntityAreaIsOccupied(areaHandle:Int):Bool;
 
 	/**
@@ -1289,13 +1289,13 @@ extern class Network {
 	 * Seems it's like ADD_EXPLOSION, etc. the first 2 params. The 3rd atm no need to worry since it always seems to be 0.  
 	 * ```
 	 */
-	@:native("NETWORK_EXPLODE_VEHICLE")
+	@:native("NetworkExplodeVehicle")
 	static function networkExplodeVehicle(vehicle:Dynamic, isAudible:Bool, isInvisible:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_EXPLODE_HELI")
+	@:native("NetworkExplodeHeli")
 	static function networkExplodeHeli(heli:Dynamic, isAudible:Bool, isInvisible:Bool, netScriptEntityId:Int):Dynamic;
 
 	/**
@@ -1307,7 +1307,7 @@ extern class Network {
 	 * 
 	 * *   **flash**: If set to true the entity will flash while fading in.
 	 */
-	@:native("NETWORK_FADE_IN_ENTITY")
+	@:native("NetworkFadeInEntity")
 	static function networkFadeInEntity(entity:Dynamic, bNetwork:Bool):Dynamic;
 
 	/**
@@ -1316,61 +1316,61 @@ extern class Network {
 	 * slow - transition like when you walk into a mission  
 	 * ```
 	 */
-	@:native("NETWORK_FADE_OUT_ENTITY")
+	@:native("NetworkFadeOutEntity")
 	static function networkFadeOutEntity(entity:Dynamic, normal:Bool, slow:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GAMER_HAS_HEADSET")
+	@:native("NetworkGamerHasHeadset")
 	static function networkGamerHasHeadset(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_FIND_GAMERS_IN_CREW")
+	@:native("NetworkFindGamersInCrew")
 	static function networkFindGamersInCrew(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_FIND_MATCHED_GAMERS")
+	@:native("NetworkFindMatchedGamers")
 	static function networkFindMatchedGamers(p0:Dynamic, p1:Float, p2:Float, p3:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_FINISH_BROADCASTING_DATA")
+	@:native("NetworkFinishBroadcastingData")
 	static function networkFinishBroadcastingData():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GAMERTAG_FROM_HANDLE_PENDING")
+	@:native("NetworkGamertagFromHandlePending")
 	static function networkGamertagFromHandlePending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA")
+	@:native("NetworkForceLocalUseOfSyncedSceneCamera")
 	static function networkForceLocalUseOfSyncedSceneCamera(sceneId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_ACTIVITY_PLAYER_NUM")
+	@:native("NetworkGetActivityPlayerNum")
 	static function networkGetActivityPlayerNum(p0:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_AGE_GROUP")
+	@:native("NetworkGetAgeGroup")
 	static function networkGetAgeGroup():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GAMERTAG_FROM_HANDLE_SUCCEEDED")
+	@:native("NetworkGamertagFromHandleSucceeded")
 	static function networkGamertagFromHandleSucceeded():Bool;
 
 	/**
@@ -1380,7 +1380,7 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER")
+	@:native("NetworkGetAveragePacketLossForPlayer")
 	static function NetworkGetAveragePacketLossForPlayer(player:Dynamic):Float;
 
 	/**
@@ -1392,19 +1392,19 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2")
+	@:native("NetworkGetAverageLatencyForPlayer_2")
 	static function NetworkGetAverageLatencyForPlayer2(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GAMERTAG_FROM_HANDLE_START")
+	@:native("NetworkGamertagFromHandleStart")
 	static function networkGamertagFromHandleStart(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_CURRENTLY_SELECTED_GAMER_HANDLE_FROM_INVITE_MENU")
+	@:native("NetworkGetCurrentlySelectedGamerHandleFromInviteMenu")
 	static function networkGetCurrentlySelectedGamerHandleFromInviteMenu(p0:Dynamic):Bool;
 
 	/**
@@ -1415,13 +1415,13 @@ extern class Network {
 	 * 'A8M6Bz8MLEC5xngvDCzGwA' is the mission id, so the game hash this and use it as the parameter for this native.  
 	 * ```
 	 */
-	@:native("NETWORK_GET_CONTENT_MODIFIER_LIST_ID")
+	@:native("NetworkGetContentModifierListId")
 	static function networkGetContentModifierListId(contentHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_BACKGROUND_LOADING_RECIPIENTS")
+	@:native("NetworkGetBackgroundLoadingRecipients")
 	static function networkGetBackgroundLoadingRecipients(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -1429,37 +1429,37 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER")
+	@:native("NetworkGetAverageLatencyForPlayer")
 	static function NetworkGetAverageLatencyForPlayer(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_DISPLAYNAMES_FROM_HANDLES")
+	@:native("NetworkGetDisplaynamesFromHandles")
 	static function NetworkGetDisplaynamesFromHandles(p0:Dynamic, p1:Dynamic, p2:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_DESTROYER_OF_ENTITY")
+	@:native("NetworkGetDestroyerOfEntity")
 	static function NetworkGetDestroyerOfEntity(p0:Dynamic, p1:Dynamic, weaponHash:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_DESTROYER_OF_NETWORK_ID")
+	@:native("NetworkGetDestroyerOfNetworkId")
 	static function networkGetDestroyerOfNetworkId(netId:Int, weaponHash:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_ENTITY_IS_NETWORKED")
+	@:native("NetworkGetEntityIsNetworked")
 	static function networkGetEntityIsNetworked(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_ENTITY_IS_LOCAL")
+	@:native("NetworkGetEntityIsLocal")
 	static function networkGetEntityIsLocal(entity:Dynamic):Bool;
 
 	/**
@@ -1467,67 +1467,67 @@ extern class Network {
 	 * 
 	 * Through this native you can get back the entity that you previously converted to netid with [NetworkGetNetworkIdFromEntity](#\_0x9E35DAB6) or with the `ToNet` natives
 	 */
-	@:native("NETWORK_GET_ENTITY_FROM_NETWORK_ID")
+	@:native("NetworkGetEntityFromNetworkId")
 	static function networkGetEntityFromNetworkId(netId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_FOUND_GAMER")
+	@:native("NetworkGetFoundGamer")
 	static function networkGetFoundGamer(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_ENTITY_KILLER_OF_PLAYER")
+	@:native("NetworkGetEntityKillerOfPlayer")
 	static function networkGetEntityKillerOfPlayer(player:Dynamic, weaponHash:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_FRIEND_COUNT")
+	@:native("NetworkGetFriendCount")
 	static function networkGetFriendCount():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_ENTITY_NET_SCRIPT_ID")
+	@:native("NetworkGetEntityNetScriptId")
 	static function NetworkGetEntityNetScriptId(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_GAMER_STATUS_RESULT")
+	@:native("NetworkGetGamerStatusResult")
 	static function networkGetGamerStatusResult(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_FRIEND_NAME")
+	@:native("NetworkGetFriendName")
 	static function networkGetFriendName(friendIndex:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_GAMER_STATUS_FROM_QUEUE")
+	@:native("NetworkGetGamerStatusFromQueue")
 	static function networkGetGamerStatusFromQueue():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK")
+	@:native("NetworkGetGlobalMultiplayerClock")
 	static function networkGetGlobalMultiplayerClock(hours:Dynamic, minutes:Dynamic, seconds:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_FRIEND_NAME_FROM_INDEX")
+	@:native("NetworkGetFriendNameFromIndex")
 	static function NetworkGetFriendNameFromIndex(friendIndex:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_HOST_OF_THIS_SCRIPT")
+	@:native("NetworkGetHostOfThisScript")
 	static function networkGetHostOfThisScript():Dynamic;
 
 	/**
@@ -1536,7 +1536,7 @@ extern class Network {
 	 * * Currently unknown struct  
 	 * ```
 	 */
-	@:native("NETWORK_GET_LOCAL_HANDLE")
+	@:native("NetworkGetLocalHandle")
 	static function networkGetLocalHandle(networkHandle:Dynamic, bufferSize:Int):Dynamic;
 
 	/**
@@ -1548,13 +1548,13 @@ extern class Network {
 	 * p2 = 0  
 	 * ```
 	 */
-	@:native("NETWORK_GET_HOST_OF_SCRIPT")
+	@:native("NetworkGetHostOfScript")
 	static function networkGetHostOfScript(scriptName:String, p1:Int, p2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_GAMERTAG_FROM_HANDLE")
+	@:native("NetworkGetGamertagFromHandle")
 	static function networkGetGamertagFromHandle(networkHandle:Dynamic):String;
 
 	/**
@@ -1562,19 +1562,19 @@ extern class Network {
 	 * Used by NetBlender
 	 * ```
 	 */
-	@:native("_NETWORK_GET_LAST_VELOCITY_RECEIVED")
+	@:native("NetworkGetLastVelocityReceived")
 	static function NetworkGetLastVelocityReceived(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_NUM_BODY_TRACKERS")
+	@:native("NetworkGetNumBodyTrackers")
 	static function NetworkGetNumBodyTrackers():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT")
+	@:native("NetworkGetInstanceIdOfThisScript")
 	static function networkGetInstanceIdOfThisScript():Int;
 
 	/**
@@ -1587,25 +1587,25 @@ extern class Network {
 	 *             var num5 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::0x98F3B274(num3));
 	 * ```
 	 */
-	@:native("NETWORK_GET_MAX_NUM_PARTICIPANTS")
+	@:native("NetworkGetMaxNumParticipants")
 	static function networkGetMaxNumParticipants():Int;
 
 	/**
 	 * Returns a local synchronized scene handle of a networked synchronised scene.
 	 */
-	@:native("NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID")
+	@:native("NetworkGetLocalSceneFromNetworkId")
 	static function networkGetLocalSceneFromNetworkId(netSceneId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_NUM_SCRIPT_PARTICIPANTS")
+	@:native("NetworkGetNumScriptParticipants")
 	static function networkGetNumScriptParticipants(p0:Dynamic, p1:Dynamic, p2:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_NUM_FOUND_GAMERS")
+	@:native("NetworkGetNumFoundGamers")
 	static function networkGetNumFoundGamers():Int;
 
 	/**
@@ -1615,13 +1615,13 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER")
+	@:native("NetworkGetOldestResendCountForPlayer")
 	static function NetworkGetOldestResendCountForPlayer(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_MAX_FRIENDS")
+	@:native("NetworkGetMaxFriends")
 	static function networkGetMaxFriends():Int;
 
 	/**
@@ -1629,13 +1629,13 @@ extern class Network {
 	 * Returns the amount of players connected in the current session. Only works when connected to a session/server.  
 	 * ```
 	 */
-	@:native("NETWORK_GET_NUM_CONNECTED_PLAYERS")
+	@:native("NetworkGetNumConnectedPlayers")
 	static function networkGetNumConnectedPlayers():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLATFORM_PARTY_MEMBERS")
+	@:native("NetworkGetPlatformPartyMembers")
 	static function networkGetPlatformPartyMembers(data:Dynamic, dataSize:Int):Int;
 
 	/**
@@ -1647,37 +1647,37 @@ extern class Network {
 	 * 
 	 * Read more at [Network and local IDs](https://docs.fivem.net/docs/scripting-manual/networking/ids/)
 	 */
-	@:native("NETWORK_GET_NETWORK_ID_FROM_ENTITY")
+	@:native("NetworkGetNetworkIdFromEntity")
 	static function networkGetNetworkIdFromEntity(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLAYER_FROM_GAMER_HANDLE")
+	@:native("NetworkGetPlayerFromGamerHandle")
 	static function networkGetPlayerFromGamerHandle(networkHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_NUM_PARTICIPANTS")
+	@:native("NetworkGetNumParticipants")
 	static function networkGetNumParticipants():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_NUM_PRESENCE_INVITES")
+	@:native("NetworkGetNumPresenceInvites")
 	static function networkGetNumPresenceInvites():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_PLATFORM_PARTY_UNK")
+	@:native("NetworkGetPlatformPartyUnk")
 	static function NetworkGetPlatformPartyUnk():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PARTICIPANT_INDEX")
+	@:native("NetworkGetParticipantIndex")
 	static function networkGetParticipantIndex(index:Int):Int;
 
 	/**
@@ -1685,7 +1685,7 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_NUM_UNACKED_FOR_PLAYER")
+	@:native("NetworkGetNumUnackedForPlayer")
 	static function NetworkGetNumUnackedForPlayer(player:Dynamic):Int;
 
 	/**
@@ -1693,31 +1693,31 @@ extern class Network {
 	 * Returns the Player associated to a given Ped when in an online session.  
 	 * ```
 	 */
-	@:native("NETWORK_GET_PLAYER_INDEX_FROM_PED")
+	@:native("NetworkGetPlayerIndexFromPed")
 	static function networkGetPlayerIndexFromPed(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_CONTENT_ID")
+	@:native("NetworkGetPresenceInviteContentId")
 	static function networkGetPresenceInviteContentId(p0:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLAYER_OWNS_WAYPOINT")
+	@:native("NetworkGetPlayerOwnsWaypoint")
 	static function networkGetPlayerOwnsWaypoint(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_ID")
+	@:native("NetworkGetPresenceInviteId")
 	static function networkGetPresenceInviteId(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLAYER_INDEX")
+	@:native("NetworkGetPlayerIndex")
 	static function networkGetPlayerIndex(player:Dynamic):Int;
 
 	/**
@@ -1725,37 +1725,37 @@ extern class Network {
 	 * 
 	 * Does not work if you enter your own player id as p0 (will return `(0.0, 0.0, 0.0)` in that case).
 	 */
-	@:native("_NETWORK_GET_PLAYER_COORDS")
+	@:native("NetworkGetPlayerCoords")
 	static function NetworkGetPlayerCoords(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_HANDLE")
+	@:native("NetworkGetPresenceInviteHandle")
 	static function networkGetPresenceInviteHandle(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_PLAYLIST_LENGTH")
+	@:native("NetworkGetPresenceInvitePlaylistLength")
 	static function networkGetPresenceInvitePlaylistLength(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLAYER_LOUDNESS")
+	@:native("NetworkGetPlayerLoudness")
 	static function networkGetPlayerLoudness(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PLAYER_TUTORIAL_SESSION_INSTANCE")
+	@:native("NetworkGetPlayerTutorialSessionInstance")
 	static function networkGetPlayerTutorialSessionInstance(player:Dynamic):Int;
 
 	/**
 	 * The Native returns a hash of the session id as string from the specific invite index!
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_SESSION_ID")
+	@:native("NetworkGetPresenceInviteSessionId")
 	static function networkGetPresenceInviteSessionId(inviteIndex:Int):Int;
 
 	/**
@@ -1763,49 +1763,49 @@ extern class Network {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT")
+	@:native("NetworkGetPositionHashOfThisScript")
 	static function NetworkGetPositionHashOfThisScript():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_FROM_ADMIN")
+	@:native("NetworkGetPresenceInviteFromAdmin")
 	static function networkGetPresenceInviteFromAdmin(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_IS_TOURNAMENT")
+	@:native("NetworkGetPresenceInviteIsTournament")
 	static function networkGetPresenceInviteIsTournament(p0:Dynamic):Bool;
 
 	/**
 	 * Returns the Name of the inviter of the specific selected Invite.
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_INVITER")
+	@:native("NetworkGetPresenceInviteInviter")
 	static function networkGetPresenceInviteInviter(inviteIndex:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRESENCE_INVITE_PLAYLIST_CURRENT")
+	@:native("NetworkGetPresenceInvitePlaylistCurrent")
 	static function networkGetPresenceInvitePlaylistCurrent(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_CLEAR")
+	@:native("NetworkGetPrimaryClanDataClear")
 	static function networkGetPrimaryClanDataClear():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_PENDING")
+	@:native("NetworkGetPrimaryClanDataPending")
 	static function networkGetPrimaryClanDataPending():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_CANCEL")
+	@:native("NetworkGetPrimaryClanDataCancel")
 	static function networkGetPrimaryClanDataCancel():Dynamic;
 
 	/**
@@ -1813,25 +1813,25 @@ extern class Network {
 	 * Same as GET_RANDOM_INT_IN_RANGE
 	 * ```
 	 */
-	@:native("NETWORK_GET_RANDOM_INT_RANGED")
+	@:native("NetworkGetRandomIntRanged")
 	static function networkGetRandomIntRanged(rangeStart:Int, rangeEnd:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_SUCCESS")
+	@:native("NetworkGetPrimaryClanDataSuccess")
 	static function networkGetPrimaryClanDataSuccess():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_NEW")
+	@:native("NetworkGetPrimaryClanDataNew")
 	static function networkGetPrimaryClanDataNew(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_PRIMARY_CLAN_DATA_START")
+	@:native("NetworkGetPrimaryClanDataStart")
 	static function networkGetPrimaryClanDataStart(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
@@ -1839,67 +1839,67 @@ extern class Network {
 	 * Based on scripts such as in freemode.c how they call their vars vVar and fVar the 2nd and 3rd param it a Vector3 and Float, but the first is based on get_random_int_in_range..  
 	 * ```
 	 */
-	@:native("NETWORK_GET_RESPAWN_RESULT")
+	@:native("NetworkGetRespawnResult")
 	static function networkGetRespawnResult(randomInt:Int, coordinates:Dynamic, heading:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_RANDOM_INT")
+	@:native("NetworkGetRandomInt")
 	static function networkGetRandomInt():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_ROS_PRIVILEGE_25")
+	@:native("NetworkGetRosPrivilege_25")
 	static function NetworkGetRosPrivilege25():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_ROS_PRIVILEGE_24")
+	@:native("NetworkGetRosPrivilege_24")
 	static function NetworkGetRosPrivilege24():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_RESPAWN_RESULT_FLAGS")
+	@:native("NetworkGetRespawnResultFlags")
 	static function networkGetRespawnResultFlags(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_TALKER_PROXIMITY")
+	@:native("NetworkGetTalkerProximity")
 	static function networkGetTalkerProximity():Float;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_SCRIPT_STATUS")
+	@:native("NetworkGetScriptStatus")
 	static function networkGetScriptStatus():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_ROS_PRIVILEGE_9")
+	@:native("NetworkGetRosPrivilege_9")
 	static function NetworkGetRosPrivilege9():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_GET_TARGETING_MODE")
+	@:native("NetworkGetTargetingMode")
 	static function NetworkGetTargetingMode():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT")
+	@:native("NetworkGetThisScriptIsNetworkScript")
 	static function networkGetThisScriptIsNetworkScript():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_TIMEOUT_TIME")
+	@:native("NetworkGetTimeoutTime")
 	static function networkGetTimeoutTime():Int;
 
 	/**
@@ -1907,19 +1907,19 @@ extern class Network {
 	 * Actually returns the version (TUNABLE_VERSION)
 	 * ```
 	 */
-	@:native("NETWORK_GET_TUNABLE_CLOUD_CRC")
+	@:native("NetworkGetTunableCloudCrc")
 	static function networkGetTunableCloudCrc():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_TOTAL_NUM_PLAYERS")
+	@:native("NetworkGetTotalNumPlayers")
 	static function networkGetTotalNumPlayers():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_GET_TRANSITION_HOST")
+	@:native("NetworkGetTransitionHost")
 	static function networkGetTransitionHost(networkHandle:Dynamic):Bool;
 
 	/**
@@ -1929,19 +1929,19 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_GET_UNRELIABLE_RESEND_COUNT_FOR_PLAYER")
+	@:native("NetworkGetUnreliableResendCountForPlayer")
 	static function NetworkGetUnreliableResendCountForPlayer(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_CONTROL_OF_DOOR")
+	@:native("NetworkHasControlOfDoor")
 	static function networkHasControlOfDoor(doorHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HANDLE_FROM_FRIEND")
+	@:native("NetworkHandleFromFriend")
 	static function networkHandleFromFriend(friendIndex:Int, networkHandle:Dynamic, bufferSize:Int):Dynamic;
 
 	/**
@@ -1949,7 +1949,7 @@ extern class Network {
 	 * Returns count.
 	 * ```
 	 */
-	@:native("NETWORK_GET_TRANSITION_MEMBERS")
+	@:native("NetworkGetTransitionMembers")
 	static function networkGetTransitionMembers(data:Dynamic, dataCount:Int):Int;
 
 	/**
@@ -1958,13 +1958,13 @@ extern class Network {
 	 * * Currently unknown struct  
 	 * ```
 	 */
-	@:native("NETWORK_HANDLE_FROM_MEMBER_ID")
+	@:native("NetworkHandleFromMemberId")
 	static function networkHandleFromMemberId(memberId:String, networkHandle:Dynamic, bufferSize:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_CONTROL_OF_PICKUP")
+	@:native("NetworkHasControlOfPickup")
 	static function networkHasControlOfPickup(pickup:Dynamic):Bool;
 
 	/**
@@ -1984,7 +1984,7 @@ extern class Network {
 	 * }  
 	 * ```
 	 */
-	@:native("NETWORK_HANDLE_FROM_PLAYER")
+	@:native("NetworkHandleFromPlayer")
 	static function networkHandleFromPlayer(player:Dynamic, networkHandle:Dynamic, bufferSize:Int):Dynamic;
 
 	/**
@@ -1993,7 +1993,7 @@ extern class Network {
 	 * * Currently unknown struct  
 	 * ```
 	 */
-	@:native("NETWORK_HANDLE_FROM_USER_ID")
+	@:native("NetworkHandleFromUserId")
 	static function networkHandleFromUserId(userId:String, networkHandle:Dynamic, bufferSize:Int):Dynamic;
 
 	/**
@@ -2002,97 +2002,97 @@ extern class Network {
 	 * You will get following error message if that is true: "You are attempting to access GTA Online servers with an altered version of the game."
 	 * ```
 	 */
-	@:native("_NETWORK_HAS_GAME_BEEN_ALTERED")
+	@:native("NetworkHasGameBeenAltered")
 	static function NetworkHasGameBeenAltered():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_CONTROL_OF_ENTITY")
+	@:native("NetworkHasControlOfEntity")
 	static function networkHasControlOfEntity(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_INVITED_GAMER")
+	@:native("NetworkHasInvitedGamer")
 	static function networkHasInvitedGamer(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_HAS_AGE_RESTRICTED_PROFILE")
+	@:native("NetworkHasAgeRestrictedProfile")
 	static function NetworkHasAgeRestrictedProfile():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_CACHED_PLAYER_HEAD_BLEND_DATA")
+	@:native("NetworkHasCachedPlayerHeadBlendData")
 	static function networkHasCachedPlayerHeadBlendData(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_CONTROL_OF_NETWORK_ID")
+	@:native("NetworkHasControlOfNetworkId")
 	static function networkHasControlOfNetworkId(netId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_INVITED_GAMER_TO_TRANSITION")
+	@:native("NetworkHasInvitedGamerToTransition")
 	static function networkHasInvitedGamerToTransition(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_ENTITY_BEEN_REGISTERED_WITH_THIS_THREAD")
+	@:native("NetworkHasEntityBeenRegisteredWithThisThread")
 	static function networkHasEntityBeenRegisteredWithThisThread(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_RECEIVED_HOST_BROADCAST_DATA")
+	@:native("NetworkHasReceivedHostBroadcastData")
 	static function networkHasReceivedHostBroadcastData():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_FOLLOW_INVITE")
+	@:native("NetworkHasFollowInvite")
 	static function networkHasFollowInvite():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_SOCIAL_NETWORKING_SHARING_PRIV")
+	@:native("NetworkHasSocialNetworkingSharingPriv")
 	static function networkHasSocialNetworkingSharingPriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_HEADSET")
+	@:native("NetworkHasHeadset")
 	static function networkHasHeadset():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_INVITE_BEEN_ACKED")
+	@:native("NetworkHasInviteBeenAcked")
 	static function networkHasInviteBeenAcked(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_PLAYER_STARTED_TRANSITION")
+	@:native("NetworkHasPlayerStartedTransition")
 	static function networkHasPlayerStartedTransition(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_SOCIAL_CLUB_ACCOUNT")
+	@:native("NetworkHasSocialClubAccount")
 	static function networkHasSocialClubAccount():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_TRANSITION_INVITE_BEEN_ACKED")
+	@:native("NetworkHasTransitionInviteBeenAcked")
 	static function networkHasTransitionInviteBeenAcked(networkHandle:Dynamic):Bool;
 
 	/**
@@ -2100,19 +2100,19 @@ extern class Network {
 	 * Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.
 	 * ```
 	 */
-	@:native("NETWORK_HAS_VALID_ROS_CREDENTIALS")
+	@:native("NetworkHasValidRosCredentials")
 	static function networkHasValidRosCredentials():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_PENDING_INVITE")
+	@:native("NetworkHasPendingInvite")
 	static function networkHasPendingInvite():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HASH_FROM_GAMER_HANDLE")
+	@:native("NetworkHashFromGamerHandle")
 	static function networkHashFromGamerHandle(networkHandle:Dynamic):Int;
 
 	/**
@@ -2120,79 +2120,79 @@ extern class Network {
 	 * index is always 18 in scripts
 	 * ```
 	 */
-	@:native("NETWORK_HAS_ROS_PRIVILEGE")
+	@:native("NetworkHasRosPrivilege")
 	static function networkHasRosPrivilege(index:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HASH_FROM_PLAYER_HANDLE")
+	@:native("NetworkHashFromPlayerHandle")
 	static function networkHashFromPlayerHandle(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_HAS_VIEW_GAMER_USER_CONTENT_RESULT")
+	@:native("NetworkHasViewGamerUserContentResult")
 	static function NetworkHasViewGamerUserContentResult(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ROS_BANNED_PRIV")
+	@:native("NetworkHaveRosBannedPriv")
 	static function networkHaveRosBannedPriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ONLINE_PRIVILEGES")
+	@:native("NetworkHaveOnlinePrivileges")
 	static function networkHaveOnlinePrivileges():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_HAVE_ONLINE_PRIVILEGE_2")
+	@:native("NetworkHaveOnlinePrivilege_2")
 	static function NetworkHaveOnlinePrivilege2():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV")
+	@:native("NetworkHaveRosLeaderboardWritePriv")
 	static function networkHaveRosLeaderboardWritePriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_ACTIVITY_SESSION")
+	@:native("NetworkIsActivitySession")
 	static function networkIsActivitySession():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ROS_SOCIAL_CLUB_PRIV")
+	@:native("NetworkHaveRosSocialClubPriv")
 	static function networkHaveRosSocialClubPriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAS_ROS_PRIVILEGE_END_DATE")
+	@:native("NetworkHasRosPrivilegeEndDate")
 	static function networkHasRosPrivilegeEndDate(privilege:Int, banType:Dynamic, timeData:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ROS_MULTIPLAYER_PRIV")
+	@:native("NetworkHaveRosMultiplayerPriv")
 	static function networkHaveRosMultiplayerPriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_ACTIVITY_SPECTATOR")
+	@:native("NetworkIsActivitySpectator")
 	static function networkIsActivitySpectator():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_COMMUNICATION_PRIVILEGES")
+	@:native("NetworkHaveCommunicationPrivileges")
 	static function networkHaveCommunicationPrivileges(p0:Int, player:Dynamic):Bool;
 
 	/**
@@ -2202,67 +2202,67 @@ extern class Network {
 	 * 
 	 * You also need to use `NetworkJoinTransition(Player player)` and `NetworkLaunchTransition()`.
 	 */
-	@:native("NETWORK_HOST_TRANSITION")
+	@:native("NetworkHostTransition")
 	static function networkHostTransition(p0:Int, p1:Int, p2:Int, p3:Int, p4:Dynamic, p5:Bool, p6:Bool, p7:Int, p8:Dynamic, p9:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_ROS_CREATE_TICKET_PRIV")
+	@:native("NetworkHaveRosCreateTicketPriv")
 	static function networkHaveRosCreateTicketPriv():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_CABLE_CONNECTED")
+	@:native("NetworkIsCableConnected")
 	static function networkIsCableConnected():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_ADDING_FRIEND")
+	@:native("NetworkIsAddingFriend")
 	static function networkIsAddingFriend():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_HAVE_USER_CONTENT_PRIVILEGES")
+	@:native("NetworkHaveUserContentPrivileges")
 	static function networkHaveUserContentPrivileges(p0:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_CLOCK_TIME_OVERRIDDEN")
+	@:native("NetworkIsClockTimeOverridden")
 	static function networkIsClockTimeOverridden():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_INVITE_GAMERS")
+	@:native("NetworkInviteGamers")
 	static function networkInviteGamers(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING")
+	@:native("NetworkIsCloudBackgroundScriptRequestPending")
 	static function networkIsCloudBackgroundScriptRequestPending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_INVITE_GAMERS_TO_TRANSITION")
+	@:native("NetworkInviteGamersToTransition")
 	static function networkInviteGamersToTransition(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_DOOR_NETWORKED")
+	@:native("NetworkIsDoorNetworked")
 	static function networkIsDoorNetworked(doorHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_ACTIVITY_SPECTATOR_FROM_HANDLE")
+	@:native("NetworkIsActivitySpectatorFromHandle")
 	static function networkIsActivitySpectatorFromHandle(networkHandle:Dynamic):Bool;
 
 	/**
@@ -2272,19 +2272,19 @@ extern class Network {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("_NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER")
+	@:native("NetworkIsConnectionEndpointRelayServer")
 	static function NetworkIsConnectionEndpointRelayServer(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_IS_FRIEND_HANDLE_ONLINE")
+	@:native("NetworkIsFriendHandleOnline")
 	static function NetworkIsFriendHandleOnline(networkHandle:Dynamic):Bool;
 
 	/**
 	 * Note: This only works for vehicles, which appears to be a bug (since the setter *does* work for every entity type and the name is 99% correct).
 	 */
-	@:native("_NETWORK_IS_ENTITY_CONCEALED")
+	@:native("NetworkIsEntityConcealed")
 	static function NetworkIsEntityConcealed(entity:Dynamic):Bool;
 
 	/**
@@ -2294,37 +2294,37 @@ extern class Network {
 	 * 2) It will never, become true unless you are in that party with said person.  
 	 * ```
 	 */
-	@:native("NETWORK_IS_CHATTING_IN_PLATFORM_PARTY")
+	@:native("NetworkIsChattingInPlatformParty")
 	static function networkIsChattingInPlatformParty(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_ENTITY_FADING")
+	@:native("NetworkIsEntityFading")
 	static function networkIsEntityFading(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_FINDING_GAMERS")
+	@:native("NetworkIsFindingGamers")
 	static function networkIsFindingGamers():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_CLOUD_AVAILABLE")
+	@:native("NetworkIsCloudAvailable")
 	static function networkIsCloudAvailable():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_FRIEND_IN_MULTIPLAYER")
+	@:native("NetworkIsFriendInMultiplayer")
 	static function networkIsFriendInMultiplayer(friendName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_FRIEND")
+	@:native("NetworkIsFriend")
 	static function networkIsFriend(networkHandle:Dynamic):Bool;
 
 	/**
@@ -2332,43 +2332,43 @@ extern class Network {
 	 * In scripts R* calls 'NETWORK_GET_FRIEND_NAME' in this param.  
 	 * ```
 	 */
-	@:native("NETWORK_IS_FRIEND_IN_SAME_TITLE")
+	@:native("NetworkIsFriendInSameTitle")
 	static function networkIsFriendInSameTitle(friendName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_FRIEND_INDEX_ONLINE")
+	@:native("NetworkIsFriendIndexOnline")
 	static function networkIsFriendIndexOnline(friendIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GAME_IN_PROGRESS")
+	@:native("NetworkIsGameInProgress")
 	static function networkIsGameInProgress():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GAMER_IN_MY_SESSION")
+	@:native("NetworkIsGamerInMySession")
 	static function networkIsGamerInMySession(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GETTING_GAMER_STATUS")
+	@:native("NetworkIsGettingGamerStatus")
 	static function networkIsGettingGamerStatus():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GAMER_MUTED_BY_ME")
+	@:native("NetworkIsGamerMutedByMe")
 	static function networkIsGamerMutedByMe(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_FRIEND_ONLINE")
+	@:native("NetworkIsFriendOnline")
 	static function networkIsFriendOnline(name:String):Bool;
 
 	/**
@@ -2376,49 +2376,49 @@ extern class Network {
 	 * If you are host, returns true else returns false.
 	 * ```
 	 */
-	@:native("NETWORK_IS_HOST")
+	@:native("NetworkIsHost")
 	static function networkIsHost():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GAMER_BLOCKED_BY_ME")
+	@:native("NetworkIsGamerBlockedByMe")
 	static function networkIsGamerBlockedByMe(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_HANDLE_VALID")
+	@:native("NetworkIsHandleValid")
 	static function networkIsHandleValid(networkHandle:Dynamic, bufferSize:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_GAMER_TALKING")
+	@:native("NetworkIsGamerTalking")
 	static function networkIsGamerTalking(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_IN_SESSION")
+	@:native("NetworkIsInSession")
 	static function networkIsInSession():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_IN_MP_CUTSCENE")
+	@:native("NetworkIsInMpCutscene")
 	static function networkIsInMpCutscene():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_HOST_OF_THIS_SCRIPT")
+	@:native("NetworkIsHostOfThisScript")
 	static function networkIsHostOfThisScript():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_IN_TUTORIAL_SESSION")
+	@:native("NetworkIsInTutorialSession")
 	static function networkIsInTutorialSession():Bool;
 
 	/**
@@ -2431,7 +2431,7 @@ extern class Network {
 	 * h t t p://i.imgur.com/Z0Wx2B6.png  
 	 * ```
 	 */
-	@:native("NETWORK_IS_IN_PARTY")
+	@:native("NetworkIsInParty")
 	static function networkIsInParty():Bool;
 
 	/**
@@ -2439,19 +2439,19 @@ extern class Network {
 	 * Hardcoded to return false.
 	 * ```
 	 */
-	@:native("NETWORK_IS_IN_PLATFORM_PARTY_CHAT")
+	@:native("NetworkIsInPlatformPartyChat")
 	static function networkIsInPlatformPartyChat():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_LOCAL_PLAYER_INVINCIBLE")
+	@:native("NetworkIsLocalPlayerInvincible")
 	static function networkIsLocalPlayerInvincible():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_IN_SPECTATOR_MODE")
+	@:native("NetworkIsInSpectatorMode")
 	static function networkIsInSpectatorMode():Bool;
 
 	/**
@@ -2459,50 +2459,50 @@ extern class Network {
 	 * Hardcoded to return false.
 	 * ```
 	 */
-	@:native("NETWORK_IS_IN_PLATFORM_PARTY")
+	@:native("NetworkIsInPlatformParty")
 	static function networkIsInPlatformParty():Bool;
 
 	/**
 	 * Returns true if the specified network id is controlled by someone else.
 	 */
-	@:native("_NETWORK_IS_NETWORK_ID_A_CLONE")
+	@:native("NetworkIsNetworkIdAClone")
 	static function NetworkIsNetworkIdAClone(netId:Int):Bool;
 
 	/**
 	 * Checks if the networkHandle is the same as any other user that is signed in on the local machine.
 	 * For example, if your console has two or more users signed in (on different controllers), the profile that is not controlling the game would be "inactive".
 	 */
-	@:native("NETWORK_IS_INACTIVE_PROFILE")
+	@:native("NetworkIsInactiveProfile")
 	static function networkIsInactiveProfile(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_IN_TRANSITION")
+	@:native("NetworkIsInTransition")
 	static function networkIsInTransition():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PARTICIPANT_ACTIVE")
+	@:native("NetworkIsParticipantActive")
 	static function networkIsParticipantActive(p0:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_MULTIPLAYER_DISABLED")
+	@:native("NetworkIsMultiplayerDisabled")
 	static function networkIsMultiplayerDisabled():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_OFFLINE_INVITE_PENDING")
+	@:native("NetworkIsOfflineInvitePending")
 	static function networkIsOfflineInvitePending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_A_PARTICIPANT_ON_SCRIPT")
+	@:native("NetworkIsPlayerAParticipantOnScript")
 	static function networkIsPlayerAParticipantOnScript(player1:Dynamic, script:String, player2:Dynamic):Bool;
 
 	/**
@@ -2510,37 +2510,37 @@ extern class Network {
 	 * This function is hard-coded to always return 0.
 	 * ```
 	 */
-	@:native("NETWORK_IS_PENDING_FRIEND")
+	@:native("NetworkIsPendingFriend")
 	static function networkIsPendingFriend(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_CONNECTED")
+	@:native("NetworkIsPlayerConnected")
 	static function networkIsPlayerConnected(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_LOCAL_TALKING")
+	@:native("NetworkIsLocalTalking")
 	static function networkIsLocalTalking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_CONCEALED")
+	@:native("NetworkIsPlayerConcealed")
 	static function networkIsPlayerConcealed(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_FADING")
+	@:native("NetworkIsPlayerFading")
 	static function networkIsPlayerFading(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_BLOCKED_BY_ME")
+	@:native("NetworkIsPlayerBlockedByMe")
 	static function networkIsPlayerBlockedByMe(player:Dynamic):Bool;
 
 	/**
@@ -2553,19 +2553,19 @@ extern class Network {
 	 * h t t p://i.imgur.com/Z0Wx2B6.png  
 	 * ```
 	 */
-	@:native("NETWORK_IS_PARTY_MEMBER")
+	@:native("NetworkIsPartyMember")
 	static function networkIsPartyMember(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_IN_MP_CUTSCENE")
+	@:native("NetworkIsPlayerInMpCutscene")
 	static function networkIsPlayerInMpCutscene(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_MUTED_BY_ME")
+	@:native("NetworkIsPlayerMutedByMe")
 	static function networkIsPlayerMutedByMe(player:Dynamic):Bool;
 
 	/**
@@ -2573,19 +2573,19 @@ extern class Network {
 	 * NETWORK_ARE_*  
 	 * ```
 	 */
-	@:native("_NETWORK_IS_PLAYER_EQUAL_TO_INDEX")
+	@:native("NetworkIsPlayerEqualToIndex")
 	static function NetworkIsPlayerEqualToIndex(player:Dynamic, index:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_A_PARTICIPANT")
+	@:native("NetworkIsPlayerAParticipant")
 	static function networkIsPlayerAParticipant(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_PLAYER_ACTIVE")
+	@:native("NetworkIsPlayerActive")
 	static function networkIsPlayerActive(player:Dynamic):Bool;
 
 	/**
@@ -2593,7 +2593,7 @@ extern class Network {
 	 * returns true if someone is screaming or talking in a microphone  
 	 * ```
 	 */
-	@:native("NETWORK_IS_PLAYER_TALKING")
+	@:native("NetworkIsPlayerTalking")
 	static function networkIsPlayerTalking(player:Dynamic):Bool;
 
 	/**
@@ -2601,13 +2601,13 @@ extern class Network {
 	 * NativeDB Introduced: v2245
 	 * ```
 	 */
-	@:native("_NETWORK_IS_SCRIPT_ACTIVE_BY_HASH")
+	@:native("NetworkIsScriptActiveByHash")
 	static function NetworkIsScriptActiveByHash(scriptHash:Int, p1:Int, p2:Bool, p3:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_IS_PSN_AVAILABLE")
+	@:native("NetworkIsPsnAvailable")
 	static function NetworkIsPsnAvailable():Bool;
 
 	/**
@@ -2616,13 +2616,13 @@ extern class Network {
 	 * Please add an if and block your mod if this is "true".  
 	 * ```
 	 */
-	@:native("NETWORK_IS_SESSION_STARTED")
+	@:native("NetworkIsSessionStarted")
 	static function networkIsSessionStarted():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_SCRIPT_ACTIVE")
+	@:native("NetworkIsScriptActive")
 	static function networkIsScriptActive(scriptName:String, player:Dynamic, p2:Bool, p3:Dynamic):Bool;
 
 	/**
@@ -2630,13 +2630,13 @@ extern class Network {
 	 * Returns whether the player is signed into Social Club.  
 	 * ```
 	 */
-	@:native("NETWORK_IS_SIGNED_IN")
+	@:native("NetworkIsSignedIn")
 	static function networkIsSignedIn():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_SESSION_BUSY")
+	@:native("NetworkIsSessionBusy")
 	static function networkIsSessionBusy():Bool;
 
 	/**
@@ -2645,19 +2645,19 @@ extern class Network {
 	 * seemed not to work for some ppl  
 	 * ```
 	 */
-	@:native("NETWORK_IS_SIGNED_ONLINE")
+	@:native("NetworkIsSignedOnline")
 	static function networkIsSignedOnline():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_SESSION_ACTIVE")
+	@:native("NetworkIsSessionActive")
 	static function networkIsSessionActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_IS_THIS_SCRIPT_MARKED")
+	@:native("NetworkIsThisScriptMarked")
 	static function NetworkIsThisScriptMarked(p0:Dynamic, p1:Bool, p2:Dynamic):Bool;
 
 	/**
@@ -2665,109 +2665,109 @@ extern class Network {
 	 * Same as _IS_TEXT_CHAT_ACTIVE, except it does not check if the text chat HUD component is initialized, and therefore may crash.  
 	 * ```
 	 */
-	@:native("_NETWORK_IS_TEXT_CHAT_ACTIVE")
+	@:native("NetworkIsTextChatActive")
 	static function NetworkIsTextChatActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_MATCHMAKING")
+	@:native("NetworkIsTransitionMatchmaking")
 	static function networkIsTransitionMatchmaking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_BUSY")
+	@:native("NetworkIsTransitionBusy")
 	static function networkIsTransitionBusy():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_CLOSED_FRIENDS")
+	@:native("NetworkIsTransitionClosedFriends")
 	static function networkIsTransitionClosedFriends():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_HOST")
+	@:native("NetworkIsTransitionHost")
 	static function networkIsTransitionHost():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING")
+	@:native("NetworkIsTunableCloudRequestPending")
 	static function networkIsTunableCloudRequestPending():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_OPEN_TO_MATCHMAKING")
+	@:native("NetworkIsTransitionOpenToMatchmaking")
 	static function networkIsTransitionOpenToMatchmaking():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_CLOSED_CREW")
+	@:native("NetworkIsTransitionClosedCrew")
 	static function networkIsTransitionClosedCrew():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_JOIN_GROUP_ACTIVITY")
+	@:native("NetworkJoinGroupActivity")
 	static function networkJoinGroupActivity():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_STARTED")
+	@:native("NetworkIsTransitionStarted")
 	static function networkIsTransitionStarted():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_JOIN_PREVIOUSLY_FAILED_SESSION")
+	@:native("NetworkJoinPreviouslyFailedSession")
 	static function networkJoinPreviouslyFailedSession():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_HOST_FROM_HANDLE")
+	@:native("NetworkIsTransitionHostFromHandle")
 	static function networkIsTransitionHostFromHandle(networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_PRIVATE")
+	@:native("NetworkIsTransitionPrivate")
 	static function networkIsTransitionPrivate():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_SOLO")
+	@:native("NetworkIsTransitionSolo")
 	static function networkIsTransitionSolo():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_TO_GAME")
+	@:native("NetworkIsTransitionToGame")
 	static function networkIsTransitionToGame():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TRANSITION_VISIBILITY_LOCKED")
+	@:native("NetworkIsTransitionVisibilityLocked")
 	static function networkIsTransitionVisibilityLocked():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_MARK_TRANSITION_GAMER_AS_FULLY_JOINED")
+	@:native("NetworkMarkTransitionGamerAsFullyJoined")
 	static function networkMarkTransitionGamerAsFullyJoined(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_LEAVE_TRANSITION")
+	@:native("NetworkLeaveTransition")
 	static function networkLeaveTransition():Bool;
 
 	/**
@@ -2779,19 +2779,19 @@ extern class Network {
 	 * 		nothing doin.  
 	 * ```
 	 */
-	@:native("NETWORK_JOIN_TRANSITION")
+	@:native("NetworkJoinTransition")
 	static function networkJoinTransition(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_OPEN_TRANSITION_MATCHMAKING")
+	@:native("NetworkOpenTransitionMatchmaking")
 	static function networkOpenTransitionMatchmaking():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_IS_TUTORIAL_SESSION_CHANGE_PENDING")
+	@:native("NetworkIsTutorialSessionChangePending")
 	static function networkIsTutorialSessionChangePending():Bool;
 
 	/**
@@ -2799,19 +2799,19 @@ extern class Network {
 	 * Could possibly bypass being muted or automatically muted  
 	 * ```
 	 */
-	@:native("NETWORK_OVERRIDE_CHAT_RESTRICTIONS")
+	@:native("NetworkOverrideChatRestrictions")
 	static function networkOverrideChatRestrictions(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_MEMBER_ID_FROM_GAMER_HANDLE")
+	@:native("NetworkMemberIdFromGamerHandle")
 	static function networkMemberIdFromGamerHandle(networkHandle:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_JOIN_PREVIOUSLY_FAILED_TRANSITION")
+	@:native("NetworkJoinPreviouslyFailedTransition")
 	static function networkJoinPreviouslyFailedTransition():Bool;
 
 	/**
@@ -2820,7 +2820,7 @@ extern class Network {
 	 * It allows you to hear other online players when their chat is on none, crew and or friends  
 	 * ```
 	 */
-	@:native("NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS")
+	@:native("NetworkOverrideReceiveRestrictions")
 	static function networkOverrideReceiveRestrictions(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2828,19 +2828,19 @@ extern class Network {
 	 * 
 	 * **Note:** Passing wrong data (e.g. hours above 23) will cause the game to crash.
 	 */
-	@:native("NETWORK_OVERRIDE_CLOCK_TIME")
+	@:native("NetworkOverrideClockTime")
 	static function networkOverrideClockTime(hours:Int, minutes:Int, seconds:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_OVERRIDE_COORDS_AND_HEADING")
+	@:native("NetworkOverrideCoordsAndHeading")
 	static function networkOverrideCoordsAndHeading(entity:Dynamic, x:Float, y:Float, z:Float, heading:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_LAUNCH_TRANSITION")
+	@:native("NetworkLaunchTransition")
 	static function networkLaunchTransition():Bool;
 
 	/**
@@ -2848,7 +2848,7 @@ extern class Network {
 	 * p0 is always false in scripts.
 	 * ```
 	 */
-	@:native("NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS_ALL")
+	@:native("NetworkOverrideReceiveRestrictionsAll")
 	static function networkOverrideReceiveRestrictionsAll(toggle:Bool):Dynamic;
 
 	/**
@@ -2857,19 +2857,19 @@ extern class Network {
 	 * 'NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS'. Read its description for more info.
 	 * ```
 	 */
-	@:native("NETWORK_OVERRIDE_SEND_RESTRICTIONS")
+	@:native("NetworkOverrideSendRestrictions")
 	static function networkOverrideSendRestrictions(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL")
+	@:native("NetworkOverrideSendRestrictionsAll")
 	static function networkOverrideSendRestrictionsAll(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_OVERRIDE_TRANSITION_CHAT")
+	@:native("NetworkOverrideTransitionChat")
 	static function networkOverrideTransitionChat(p0:Bool):Dynamic;
 
 	/**
@@ -2877,19 +2877,19 @@ extern class Network {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_NETWORK_OVERRIDE_CLOCK_MILLISECONDS_PER_GAME_MINUTE")
+	@:native("NetworkOverrideClockMillisecondsPerGameMinute")
 	static function NetworkOverrideClockMillisecondsPerGameMinute(ms:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_OVERRIDE_TEAM_RESTRICTIONS")
+	@:native("NetworkOverrideTeamRestrictions")
 	static function networkOverrideTeamRestrictions(team:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PLAYER_GET_CHEATER_REASON")
+	@:native("NetworkPlayerGetCheaterReason")
 	static function networkPlayerGetCheaterReason():Int;
 
 	/**
@@ -2897,13 +2897,13 @@ extern class Network {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_PED_FORCE_GAME_STATE_UPDATE")
+	@:native("NetworkPedForceGameStateUpdate")
 	static function NetworkPedForceGameStateUpdate(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PLAYER_HAS_HEADSET")
+	@:native("NetworkPlayerHasHeadset")
 	static function networkPlayerHasHeadset(player:Dynamic):Bool;
 
 	/**
@@ -2911,7 +2911,7 @@ extern class Network {
 	 * Returns the name of a given player. Returns "**Invalid**" if CPlayerInfo of the given player cannot be retrieved or the player doesn't exist.
 	 * ```
 	 */
-	@:native("NETWORK_PLAYER_GET_NAME")
+	@:native("NetworkPlayerGetName")
 	static function networkPlayerGetName(player:Dynamic):String;
 
 	/**
@@ -2919,31 +2919,31 @@ extern class Network {
 	 * Takes a 24 char buffer. Returns the buffer or "**Invalid**" if CPlayerInfo of the given player cannot be retrieved or the player doesn't exist.
 	 * ```
 	 */
-	@:native("NETWORK_PLAYER_GET_USERID")
+	@:native("NetworkPlayerGetUserid")
 	static function networkPlayerGetUserid(player:Dynamic, userID:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PLAYER_IS_BADSPORT")
+	@:native("NetworkPlayerIsBadsport")
 	static function networkPlayerIsBadsport():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PLAYER_INDEX_IS_CHEATER")
+	@:native("NetworkPlayerIndexIsCheater")
 	static function networkPlayerIndexIsCheater(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_PLAYER_IS_CHEATER")
+	@:native("NetworkPlayerIsCheater")
 	static function networkPlayerIsCheater():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REGISTER_HOST_BROADCAST_VARIABLES")
+	@:native("NetworkRegisterHostBroadcastVariables")
 	static function networkRegisterHostBroadcastVariables(vars:Dynamic, numVars:Int):Dynamic;
 
 	/**
@@ -2955,104 +2955,104 @@ extern class Network {
 	 * if that is present it will unlock dev stuff.  
 	 * ```
 	 */
-	@:native("NETWORK_PLAYER_IS_ROCKSTAR_DEV")
+	@:native("NetworkPlayerIsRockstarDev")
 	static function networkPlayerIsRockstarDev(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_QUERY_RESPAWN_RESULTS")
+	@:native("NetworkQueryRespawnResults")
 	static function networkQueryRespawnResults(p0:Dynamic):Dynamic;
 
 	/**
 	 * Forces the "Are you sure you want to quit Grand Theft Auto V?" warning message (Same as when you Alt+F4) to show.
 	 * Doesn't work in singleplayer.
 	 */
-	@:native("NETWORK_QUIT_MP_TO_DESKTOP")
+	@:native("NetworkQuitMpToDesktop")
 	static function networkQuitMpToDesktop():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_REGISTER_TUNABLE_INT_HASH")
+	@:native("NetworkRegisterTunableIntHash")
 	static function NetworkRegisterTunableIntHash(contextHash:Int, nameHash:Int, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_QUEUE_GAMER_FOR_STATUS")
+	@:native("NetworkQueueGamerForStatus")
 	static function networkQueueGamerForStatus(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REGISTER_ENTITY_AS_NETWORKED")
+	@:native("NetworkRegisterEntityAsNetworked")
 	static function networkRegisterEntityAsNetworked(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES")
+	@:native("NetworkRegisterPlayerBroadcastVariables")
 	static function networkRegisterPlayerBroadcastVariables(vars:Dynamic, numVars:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REMOVE_ALL_TRANSITION_INVITE")
+	@:native("NetworkRemoveAllTransitionInvite")
 	static function networkRemoveAllTransitionInvite():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REMOVE_ENTITY_AREA")
+	@:native("NetworkRemoveEntityArea")
 	static function networkRemoveEntityArea(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_REGISTER_TUNABLE_BOOL_HASH")
+	@:native("NetworkRegisterTunableBoolHash")
 	static function NetworkRegisterTunableBoolHash(contextHash:Int, nameHash:Int, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REMOVE_PRESENCE_INVITE")
+	@:native("NetworkRemovePresenceInvite")
 	static function networkRemovePresenceInvite(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_REGISTER_TUNABLE_FLOAT_HASH")
+	@:native("NetworkRegisterTunableFloatHash")
 	static function NetworkRegisterTunableFloatHash(contextHash:Int, nameHash:Int, value:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REMOVE_TRANSITION_INVITE")
+	@:native("NetworkRemoveTransitionInvite")
 	static function networkRemoveTransitionInvite(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REQUEST_CONTROL_OF_NETWORK_ID")
+	@:native("NetworkRequestControlOfNetworkId")
 	static function networkRequestControlOfNetworkId(netId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_REPORT_MYSELF")
+	@:native("NetworkReportMyself")
 	static function NetworkReportMyself():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REQUEST_CONTROL_OF_DOOR")
+	@:native("NetworkRequestControlOfDoor")
 	static function networkRequestControlOfDoor(doorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS")
+	@:native("NetworkRequestCloudBackgroundScripts")
 	static function networkRequestCloudBackgroundScripts():Bool;
 
 	/**
@@ -3060,19 +3060,19 @@ extern class Network {
 	 * p4 and p5 are always 0 in scripts  
 	 * ```
 	 */
-	@:native("_NETWORK_RESPAWN_COORDS")
+	@:native("NetworkRespawnCoords")
 	static function NetworkRespawnCoords(player:Dynamic, x:Float, y:Float, z:Float, p4:Bool, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REQUEST_CLOUD_TUNABLES")
+	@:native("NetworkRequestCloudTunables")
 	static function networkRequestCloudTunables():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_RESET_BODY_TRACKER")
+	@:native("NetworkResetBodyTracker")
 	static function networkResetBodyTracker():Dynamic;
 
 	/**
@@ -3080,25 +3080,25 @@ extern class Network {
 	 * String "NETWORK_SEND_PRESENCE_TRANSITION_INVITE" is contained in the function in ida so this one is correct.  
 	 * ```
 	 */
-	@:native("_NETWORK_SEND_PRESENCE_TRANSITION_INVITE")
+	@:native("NetworkSendPresenceTransitionInvite")
 	static function NetworkSendPresenceTransitionInvite(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SEED_RANDOM_NUMBER_GENERATOR")
+	@:native("NetworkSeedRandomNumberGenerator")
 	static function networkSeedRandomNumberGenerator(seed:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_REQUEST_CONTROL_OF_ENTITY")
+	@:native("NetworkRequestControlOfEntity")
 	static function networkRequestControlOfEntity(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SEND_INVITE_VIA_PRESENCE")
+	@:native("NetworkSendInviteViaPresence")
 	static function networkSendInviteViaPresence(networkHandle:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -3190,19 +3190,19 @@ extern class Network {
 	 * *   **iSpawnLocation**: This integer parameter sets the player's spawn location metric for telemetry. See `ePlayerSpawnLocation` enum.
 	 * *   **iSpawnReason**: This integer parameter sets the player's spawn reason metric for telemetry. See `eSpawnReason` enum.
 	 */
-	@:native("NETWORK_RESURRECT_LOCAL_PLAYER")
+	@:native("NetworkResurrectLocalPlayer")
 	static function networkResurrectLocalPlayer(x:Float, y:Float, z:Float, heading:Float, nInvincibilityTime:Int, bLeaveDeadPed:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_BLOCK_JOIN_REQUESTS")
+	@:native("NetworkSessionBlockJoinRequests")
 	static function networkSessionBlockJoinRequests(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_ACTIVITY_QUICKMATCH")
+	@:native("NetworkSessionActivityQuickmatch")
 	static function networkSessionActivityQuickmatch(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
@@ -3210,19 +3210,19 @@ extern class Network {
 	 * Message is limited to 64 characters.
 	 * ```
 	 */
-	@:native("NETWORK_SEND_TEXT_MESSAGE")
+	@:native("NetworkSendTextMessage")
 	static function networkSendTextMessage(message:String, networkHandle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_CANCEL_INVITE")
+	@:native("NetworkSessionCancelInvite")
 	static function networkSessionCancelInvite():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_ADD_ACTIVE_MATCHMAKING_GROUP")
+	@:native("NetworkSessionAddActiveMatchmakingGroup")
 	static function networkSessionAddActiveMatchmakingGroup(groupId:Int):Dynamic;
 
 	/**
@@ -3231,7 +3231,7 @@ extern class Network {
 	 * does this send an invite to a player?  
 	 * ```
 	 */
-	@:native("NETWORK_SEND_TRANSITION_GAMER_INSTRUCTION")
+	@:native("NetworkSendTransitionGamerInstruction")
 	static function networkSendTransitionGamerInstruction(networkHandle:Dynamic, p1:String, p2:Int, p3:Int, p4:Bool):Bool;
 
 	/**
@@ -3242,31 +3242,31 @@ extern class Network {
 	 * Results in: "Connection to session lost due to an unknown network error. Please return to Grand Theft Auto V and try again later."  
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_END")
+	@:native("NetworkSessionEnd")
 	static function networkSessionEnd(p0:Bool, p1:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_CHANGE_SLOTS")
+	@:native("NetworkSessionChangeSlots")
 	static function networkSessionChangeSlots(p0:Int, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_CREW_MATCHMAKING")
+	@:native("NetworkSessionCrewMatchmaking")
 	static function networkSessionCrewMatchmaking(p0:Int, p1:Int, p2:Int, maxPlayers:Int, p4:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_FORCE_CANCEL_INVITE")
+	@:native("NetworkSessionForceCancelInvite")
 	static function networkSessionForceCancelInvite():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_FRIEND_MATCHMAKING")
+	@:native("NetworkSessionFriendMatchmaking")
 	static function networkSessionFriendMatchmaking(p0:Int, p1:Int, maxPlayers:Int, p3:Bool):Bool;
 
 	/**
@@ -3282,25 +3282,25 @@ extern class Network {
 	 * Global_1315318 = 0 or Global_1315323 = 9 or 12 or (Global_1312629 = 0 && Global_1312631 = true/1) those are passed.  
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_ENTER")
+	@:native("NetworkSessionEnter")
 	static function networkSessionEnter(p0:Dynamic, p1:Dynamic, p2:Dynamic, maxPlayers:Int, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_GET_PRIVATE_SLOTS")
+	@:native("NetworkSessionGetPrivateSlots")
 	static function networkSessionGetPrivateSlots():Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_GET_INVITER")
+	@:native("NetworkSessionGetInviter")
 	static function networkSessionGetInviter(networkHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_GET_KICK_VOTE")
+	@:native("NetworkSessionGetKickVote")
 	static function networkSessionGetKickVote(player:Dynamic):Bool;
 
 	/**
@@ -3311,7 +3311,7 @@ extern class Network {
 	 * Appears to be patched in gtav b757 (game gets terminated) alonside with most other network natives to prevent online modding ~ghost30812  
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_HOST_SINGLE_PLAYER")
+	@:native("NetworkSessionHostSinglePlayer")
 	static function networkSessionHostSinglePlayer(p0:Int):Dynamic;
 
 	/**
@@ -3319,31 +3319,31 @@ extern class Network {
 	 * Does nothing in online but in offline it will cause the screen to fade to black. Nothing happens past then, the screen will sit at black until you restart GTA. Other stuff must be needed to actually host a session.  
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_HOST")
+	@:native("NetworkSessionHost")
 	static function networkSessionHost(p0:Int, maxPlayers:Int, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_GET_MATCHMAKING_GROUP_FREE")
+	@:native("NetworkSessionGetMatchmakingGroupFree")
 	static function networkSessionGetMatchmakingGroupFree(p0:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_HOST_CLOSED")
+	@:native("NetworkSessionHostClosed")
 	static function networkSessionHostClosed(p0:Int, maxPlayers:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_CLOSED_CREW")
+	@:native("NetworkSessionIsClosedCrew")
 	static function networkSessionIsClosedCrew():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_CLOSED_FRIENDS")
+	@:native("NetworkSessionIsClosedFriends")
 	static function networkSessionIsClosedFriends():Bool;
 
 	/**
@@ -3351,49 +3351,49 @@ extern class Network {
 	 * Does nothing in online but in offline it will cause the screen to fade to black. Nothing happens past then, the screen will sit at black until you restart GTA. Other stuff must be needed to actually host a session.  
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_HOST_FRIENDS_ONLY")
+	@:native("NetworkSessionHostFriendsOnly")
 	static function networkSessionHostFriendsOnly(p0:Int, maxPlayers:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_JOIN_INVITE")
+	@:native("NetworkSessionJoinInvite")
 	static function networkSessionJoinInvite():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_SOLO")
+	@:native("NetworkSessionIsSolo")
 	static function networkSessionIsSolo():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_PRIVATE")
+	@:native("NetworkSessionIsPrivate")
 	static function networkSessionIsPrivate():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_VOICE_SESSION_BUSY")
+	@:native("NetworkSessionIsVoiceSessionBusy")
 	static function networkSessionIsVoiceSessionBusy():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_IN_VOICE_SESSION")
+	@:native("NetworkSessionIsInVoiceSession")
 	static function networkSessionIsInVoiceSession():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_IS_VISIBLE")
+	@:native("NetworkSessionIsVisible")
 	static function networkSessionIsVisible():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_SET_MATCHMAKING_MENTAL_STATE")
+	@:native("NetworkSessionSetMatchmakingMentalState")
 	static function networkSessionSetMatchmakingMentalState(p0:Dynamic):Dynamic;
 
 	/**
@@ -3401,25 +3401,25 @@ extern class Network {
 	 * Only works as host.
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_KICK_PLAYER")
+	@:native("NetworkSessionKickPlayer")
 	static function networkSessionKickPlayer(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_VOICE_HOST")
+	@:native("NetworkSessionVoiceHost")
 	static function networkSessionVoiceHost():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_SET_MATCHMAKING_GROUP")
+	@:native("NetworkSessionSetMatchmakingGroup")
 	static function networkSessionSetMatchmakingGroup(matchmakingGroup:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_LEAVE_SINGLE_PLAYER")
+	@:native("NetworkSessionLeaveSinglePlayer")
 	static function networkSessionLeaveSinglePlayer():Dynamic;
 
 	/**
@@ -3430,25 +3430,25 @@ extern class Network {
 	 * 8 = unknown
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX")
+	@:native("NetworkSessionSetMatchmakingGroupMax")
 	static function networkSessionSetMatchmakingGroupMax(playerType:Int, playerCount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST")
+	@:native("NetworkSessionVoiceRespondToRequest")
 	static function networkSessionVoiceRespondToRequest(p0:Bool, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_MARK_VISIBLE")
+	@:native("NetworkSessionMarkVisible")
 	static function networkSessionMarkVisible(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_SET_MATCHMAKING_PROPERTY_ID")
+	@:native("NetworkSessionSetMatchmakingPropertyId")
 	static function networkSessionSetMatchmakingPropertyId(p0:Bool):Dynamic;
 
 	/**
@@ -3470,55 +3470,55 @@ extern class Network {
 	 * Contains string "NETWORK_VOICE_CONNECT_TO_PLAYER" in ida
 	 * ```
 	 */
-	@:native("NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER")
+	@:native("NetworkSessionVoiceConnectToPlayer")
 	static function networkSessionVoiceConnectToPlayer(globalPtr:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_CHOICE_MIGRATE_OPTIONS")
+	@:native("NetworkSetChoiceMigrateOptions")
 	static function networkSetChoiceMigrateOptions(toggle:Bool, player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_VOICE_LEAVE")
+	@:native("NetworkSessionVoiceLeave")
 	static function networkSessionVoiceLeave():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_VALIDATE_JOIN")
+	@:native("NetworkSessionValidateJoin")
 	static function networkSessionValidateJoin(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_VOICE_SET_TIMEOUT")
+	@:native("NetworkSessionVoiceSetTimeout")
 	static function networkSessionVoiceSetTimeout(timeout:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SESSION_WAS_INVITED")
+	@:native("NetworkSessionWasInvited")
 	static function networkSessionWasInvited():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_ACTIVITY_PLAYER_MAX")
+	@:native("NetworkSetActivityPlayerMax")
 	static function networkSetActivityPlayerMax(playerCount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_ACTIVITY_SPECTATOR")
+	@:native("NetworkSetActivitySpectator")
 	static function networkSetActivitySpectator(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_ACTIVITY_SPECTATOR_MAX")
+	@:native("NetworkSetActivitySpectatorMax")
 	static function networkSetActivitySpectatorMax(maxSpectators:Int):Dynamic;
 
 	/**
@@ -3553,19 +3553,19 @@ extern class Network {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SET_CURRENT_SPAWN_SETTING")
+	@:native("NetworkSetCurrentSpawnSetting")
 	static function NetworkSetCurrentSpawnSetting(mpSettingSpawn:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_CURRENTLY_SELECTED_GAMER_HANDLE_FROM_INVITE_MENU")
+	@:native("NetworkSetCurrentlySelectedGamerHandleFromInviteMenu")
 	static function networkSetCurrentlySelectedGamerHandleFromInviteMenu(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SET_ENTITY_GHOSTED_WITH_OWNER")
+	@:native("NetworkSetEntityGhostedWithOwner")
 	static function NetworkSetEntityGhostedWithOwner(entity:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -3573,31 +3573,31 @@ extern class Network {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SET_CURRENT_MISSION_ID")
+	@:native("NetworkSetCurrentMissionId")
 	static function NetworkSetCurrentMissionId(missionId:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_FRIENDLY_FIRE_OPTION")
+	@:native("NetworkSetFriendlyFireOption")
 	static function networkSetFriendlyFireOption(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE")
+	@:native("NetworkSetCurrentDataManagerHandle")
 	static function NetworkSetCurrentDataManagerHandle(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_ENTITY_CAN_BLEND")
+	@:native("NetworkSetEntityCanBlend")
 	static function networkSetEntityCanBlend(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_IN_SPECTATOR_MODE")
+	@:native("NetworkSetInSpectatorMode")
 	static function networkSetInSpectatorMode(toggle:Bool, playerPed:Dynamic):Dynamic;
 
 	/**
@@ -3610,79 +3610,79 @@ extern class Network {
 	 * ^^ last-gen  
 	 * ```
 	 */
-	@:native("_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK")
+	@:native("NetworkSetEntityInvisibleToNetwork")
 	static function NetworkSetEntityInvisibleToNetwork(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_INVITE_ON_CALL_FOR_INVITE_MENU")
+	@:native("NetworkSetInviteOnCallForInviteMenu")
 	static function networkSetInviteOnCallForInviteMenu(networkHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_IN_FREE_CAM_MODE")
+	@:native("NetworkSetInFreeCamMode")
 	static function networkSetInFreeCamMode(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_GAMER_INVITED_TO_TRANSITION")
+	@:native("NetworkSetGamerInvitedToTransition")
 	static function networkSetGamerInvitedToTransition(networkHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_NO_SPECTATOR_CHAT")
+	@:native("NetworkSetNoSpectatorChat")
 	static function networkSetNoSpectatorChat(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_IN_MP_CUTSCENE")
+	@:native("NetworkSetInMpCutscene")
 	static function networkSetInMpCutscene(p0:Bool, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_MISSION_FINISHED")
+	@:native("NetworkSetMissionFinished")
 	static function networkSetMissionFinished():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_OVERRIDE_SPECTATOR_MODE")
+	@:native("NetworkSetOverrideSpectatorMode")
 	static function networkSetOverrideSpectatorMode(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_LOCAL_PLAYER_SYNC_LOOK_AT")
+	@:native("NetworkSetLocalPlayerSyncLookAt")
 	static function networkSetLocalPlayerSyncLookAt(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_IN_SPECTATOR_MODE_EXTENDED")
+	@:native("NetworkSetInSpectatorModeExtended")
 	static function networkSetInSpectatorModeExtended(toggle:Bool, playerPed:Dynamic, p2:Bool):Dynamic;
 
 	/**
 	 * This native does absolutely nothing, just a nullsub
 	 */
-	@:native("NETWORK_SET_RICH_PRESENCE_STRING")
+	@:native("NetworkSetRichPresenceString")
 	static function networkSetRichPresenceString(p0:Int, textLabel:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_PLAYER_IS_PASSIVE")
+	@:native("NetworkSetPlayerIsPassive")
 	static function networkSetPlayerIsPassive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_LOCAL_PLAYER_INVINCIBLE_TIME")
+	@:native("NetworkSetLocalPlayerInvincibleTime")
 	static function networkSetLocalPlayerInvincibleTime(time:Int):Dynamic;
 
 	/**
@@ -3690,7 +3690,7 @@ extern class Network {
 	 * value must be < 255
 	 * ```
 	 */
-	@:native("NETWORK_SET_PROPERTY_ID")
+	@:native("NetworkSetPropertyId")
 	static function networkSetPropertyId(id:Int):Dynamic;
 
 	/**
@@ -3699,13 +3699,13 @@ extern class Network {
 	 * Now that Discord supports Rich Presence, R* might finally implement this for PC. Or maybe in future games like RDR2, GTA VI...  
 	 * ```
 	 */
-	@:native("NETWORK_SET_RICH_PRESENCE")
+	@:native("NetworkSetRichPresence")
 	static function networkSetRichPresence(p0:Int, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT")
+	@:native("NetworkSetThisScriptIsNetworkScript")
 	static function networkSetThisScriptIsNetworkScript(maxNumMissionParticipants:Int, p1:Bool, instanceId:Int):Dynamic;
 
 	/**
@@ -3717,7 +3717,7 @@ extern class Network {
 	 * 
 	 * Once a remote clone is created, changing this value will not have any effect on said clone.
 	 */
-	@:native("_NETWORK_SET_OBJECT_FORCE_STATIC_BLEND")
+	@:native("NetworkSetObjectForceStaticBlend")
 	static function NetworkSetObjectForceStaticBlend(object:Dynamic, enabled:Bool):Dynamic;
 
 	/**
@@ -3729,25 +3729,25 @@ extern class Network {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_NETWORK_SET_VEHICLE_TEST_DRIVE")
+	@:native("NetworkSetVehicleTestDrive")
 	static function NetworkSetVehicleTestDrive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_SCRIPT_READY_FOR_EVENTS")
+	@:native("NetworkSetScriptReadyForEvents")
 	static function networkSetScriptReadyForEvents(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_TEAM_ONLY_CHAT")
+	@:native("NetworkSetTeamOnlyChat")
 	static function networkSetTeamOnlyChat(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_TRANSITION_ACTIVITY_ID")
+	@:native("NetworkSetTransitionActivityId")
 	static function networkSetTransitionActivityId(p0:Dynamic):Dynamic;
 
 	/**
@@ -3755,7 +3755,7 @@ extern class Network {
 	 * Returns true if the NAT type is Strict (3) and a certain number of connections have failed.
 	 * ```
 	 */
-	@:native("_NETWORK_SHOULD_SHOW_CONNECTIVITY_TROUBLESHOOTING")
+	@:native("NetworkShouldShowConnectivityTroubleshooting")
 	static function NetworkShouldShowConnectivityTroubleshooting():Bool;
 
 	/**
@@ -3767,37 +3767,37 @@ extern class Network {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE")
+	@:native("NetworkSetVehicleWheelsDestructible")
 	static function NetworkSetVehicleWheelsDestructible(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_TRANSITION_CREATOR_HANDLE")
+	@:native("NetworkSetTransitionCreatorHandle")
 	static function networkSetTransitionCreatorHandle(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_TALKER_PROXIMITY")
+	@:native("NetworkSetTalkerProximity")
 	static function networkSetTalkerProximity(value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_VOICE_CHANNEL")
+	@:native("NetworkSetVoiceChannel")
 	static function networkSetVoiceChannel(channel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_START_SYNCHRONISED_SCENE")
+	@:native("NetworkStartSynchronisedScene")
 	static function networkStartSynchronisedScene(netScene:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_TRANSITION_VISIBILITY_LOCK")
+	@:native("NetworkSetTransitionVisibilityLock")
 	static function networkSetTransitionVisibilityLock(p0:Bool, p1:Bool):Dynamic;
 
 	/**
@@ -3805,13 +3805,13 @@ extern class Network {
 	 * Always returns -1. Seems to be XB1 specific.
 	 * ```
 	 */
-	@:native("_NETWORK_START_USER_CONTENT_PERMISSIONS_CHECK")
+	@:native("NetworkStartUserContentPermissionsCheck")
 	static function NetworkStartUserContentPermissionsCheck(netHandle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_STOP_SYNCHRONISED_SCENE")
+	@:native("NetworkStopSynchronisedScene")
 	static function networkStopSynchronisedScene(netScene:Int):Dynamic;
 
 	/**
@@ -3819,13 +3819,13 @@ extern class Network {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_UGC_NAV")
+	@:native("NetworkUgcNav")
 	static function NetworkUgcNav(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_TRANSITION_TRACK")
+	@:native("NetworkTransitionTrack")
 	static function NetworkTransitionTrack(hash:Int, p1:Int, p2:Int, state:Int, p4:Int):Dynamic;
 
 	/**
@@ -3836,25 +3836,25 @@ extern class Network {
 	 * 
 	 * p5, p6, p7 is another coordinate (or zero), often related to `GET_BLIP_COORDS`, in the decompiled scripts.
 	 */
-	@:native("NETWORK_START_RESPAWN_SEARCH_FOR_PLAYER")
+	@:native("NetworkStartRespawnSearchForPlayer")
 	static function networkStartRespawnSearchForPlayer(player:Dynamic, x:Float, y:Float, z:Float, radius:Float, p5:Float, p6:Float, p7:Float, flags:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SET_VOICE_ACTIVE")
+	@:native("NetworkSetVoiceActive")
 	static function networkSetVoiceActive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_START_SOLO_TUTORIAL_SESSION")
+	@:native("NetworkStartSoloTutorialSession")
 	static function networkStartSoloTutorialSession():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_NETWORK_UPDATE_PLAYER_SCARS")
+	@:native("NetworkUpdatePlayerScars")
 	static function NetworkUpdatePlayerScars():Dynamic;
 
 	/**
@@ -3865,25 +3865,25 @@ extern class Network {
 	 * NETWORK_SHOW_PROFILE_UI(&playerHandle);  
 	 * ```
 	 */
-	@:native("NETWORK_SHOW_PROFILE_UI")
+	@:native("NetworkShowProfileUi")
 	static function networkShowProfileUi(networkHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_UNREGISTER_NETWORKED_ENTITY")
+	@:native("NetworkUnregisterNetworkedEntity")
 	static function networkUnregisterNetworkedEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_USE_LOGARITHMIC_BLENDING_THIS_FRAME")
+	@:native("NetworkUseLogarithmicBlendingThisFrame")
 	static function networkUseLogarithmicBlendingThisFrame(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("NETWORK_SUPPRESS_INVITE")
+	@:native("NetworkSuppressInvite")
 	static function networkSuppressInvite(toggle:Bool):Dynamic;
 
 	/**
@@ -3891,13 +3891,13 @@ extern class Network {
 	 * Old name: _NETWORK_SET_NETWORK_ID_DYNAMIC
 	 * ```
 	 */
-	@:native("NETWORK_USE_HIGH_PRECISION_BLENDING")
+	@:native("NetworkUseHighPrecisionBlending")
 	static function networkUseHighPrecisionBlending(netID:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * p8, p9, p10 is another coordinate, or zero, often related to `GET_BLIP_COORDS` in the decompiled scripts.
 	 */
-	@:native("NETWORK_START_RESPAWN_SEARCH_IN_ANGLED_AREA_FOR_PLAYER")
+	@:native("NetworkStartRespawnSearchInAngledAreaForPlayer")
 	static function networkStartRespawnSearchInAngledAreaForPlayer(player:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, p8:Float, p9:Float, p10:Float, flags:Int):Bool;
 
 	/**
@@ -3905,7 +3905,7 @@ extern class Network {
 	 * Returns defaultValue if the tunable doesn't exist.
 	 * ```
 	 */
-	@:native("NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH")
+	@:native("NetworkTryAccessTunableBoolHash")
 	static function networkTryAccessTunableBoolHash(tunableContext:Int, tunableName:Int, defaultValue:Bool):Bool;
 
 	/**
@@ -3914,7 +3914,7 @@ extern class Network {
 	 * This native is exactly the same as 'PARTICIPANT_ID' native.  
 	 * ```
 	 */
-	@:native("PARTICIPANT_ID_TO_INT")
+	@:native("ParticipantIdToInt")
 	static function participantIdToInt():Int;
 
 	/**
@@ -3922,7 +3922,7 @@ extern class Network {
 	 * Return the local Participant ID  
 	 * ```
 	 */
-	@:native("PARTICIPANT_ID")
+	@:native("ParticipantId")
 	static function participantId():Dynamic;
 
 	/**
@@ -3931,7 +3931,7 @@ extern class Network {
 	 * int createdObject = OBJ_TO_NET(CREATE_OBJECT_NO_OFFSET(oball, pCoords.x, pCoords.y, pCoords.z, 1, 0, 0));  
 	 * ```
 	 */
-	@:native("OBJ_TO_NET")
+	@:native("ObjToNet")
 	static function objToNet(object:Dynamic):Int;
 
 	/**
@@ -3939,13 +3939,13 @@ extern class Network {
 	 * gets the network id of a ped  
 	 * ```
 	 */
-	@:native("PED_TO_NET")
+	@:native("PedToNet")
 	static function pedToNet(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_ALL_COMMERCE_ITEM_IMAGES")
+	@:native("ReleaseAllCommerceItemImages")
 	static function releaseAllCommerceItemImages():Dynamic;
 
 	/**
@@ -3957,7 +3957,7 @@ extern class Network {
 	 * NativeDB Added Parameter 3: int p2
 	 * ```
 	 */
-	@:native("OPEN_COMMERCE_STORE")
+	@:native("OpenCommerceStore")
 	static function openCommerceStore(p0:String, p1:String):Dynamic;
 
 	/**
@@ -3967,25 +3967,25 @@ extern class Network {
 	 * NativeDB Added Parameter 3: int b
 	 * ```
 	 */
-	@:native("_REMOTE_CHEAT_DETECTED")
+	@:native("RemoteCheatDetected")
 	static function RemoteCheatDetected():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_COMMERCE_ITEM_IMAGE")
+	@:native("RequestCommerceItemImage")
 	static function requestCommerceItemImage(index:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESERVE_NETWORK_MISSION_OBJECTS")
+	@:native("ReserveNetworkMissionObjects")
 	static function reserveNetworkMissionObjects(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_RESERVE_NETWORK_LOCAL_VEHICLES")
+	@:native("ReserveNetworkLocalVehicles")
 	static function ReserveNetworkLocalVehicles(amount:Int):Dynamic;
 
 	/**
@@ -3997,13 +3997,13 @@ extern class Network {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_RESERVE_NETWORK_LOCAL_OBJECTS")
+	@:native("ReserveNetworkLocalObjects")
 	static function ReserveNetworkLocalObjects(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REFRESH_PLAYER_LIST_STATS")
+	@:native("RefreshPlayerListStats")
 	static function refreshPlayerListStats(p0:Int):Bool;
 
 	/**
@@ -4015,19 +4015,19 @@ extern class Network {
 	 * NativeDB Added Parameter 2: Ped ped
 	 * ```
 	 */
-	@:native("REMOVE_ALL_STICKY_BOMBS_FROM_ENTITY")
+	@:native("RemoveAllStickyBombsFromEntity")
 	static function removeAllStickyBombsFromEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * Sets the alpha value used by [`_SET_LOCAL_PLAYER_AS_GHOST`](#\_0x5FFE9B4144F9712F), [`SET_NETWORK_VEHICLE_AS_GHOST`](#\_0x6274C4712850841E), and [`_NETWORK_SET_ENTITY_GHOSTED_WITH_OWNER`](#\_0x4BA166079D658ED4).
 	 */
-	@:native("_RESET_GHOSTED_ENTITY_ALPHA")
+	@:native("ResetGhostedEntityAlpha")
 	static function ResetGhostedEntityAlpha():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESERVE_NETWORK_MISSION_PEDS")
+	@:native("ReserveNetworkMissionPeds")
 	static function reserveNetworkMissionPeds(amount:Int):Dynamic;
 
 	/**
@@ -4039,49 +4039,49 @@ extern class Network {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_RESERVE_NETWORK_LOCAL_PEDS")
+	@:native("ReserveNetworkLocalPeds")
 	static function ReserveNetworkLocalPeds(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESERVE_NETWORK_MISSION_VEHICLES")
+	@:native("ReserveNetworkMissionVehicles")
 	static function reserveNetworkMissionVehicles(amount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BALANCE_ADD_MACHINE")
+	@:native("SetBalanceAddMachine")
 	static function setBalanceAddMachine(contentId:String, contentTypeName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BALANCE_ADD_MACHINES")
+	@:native("SetBalanceAddMachines")
 	static function setBalanceAddMachines(data:Dynamic, dataCount:Int, contentTypeName:String):Bool;
 
 	/**
 	 * Sets the provided entity not visible for yourself for the current frame.
 	 */
-	@:native("SET_ENTITY_LOCALLY_INVISIBLE")
+	@:native("SetEntityLocallyInvisible")
 	static function setEntityLocallyInvisible(entity:Dynamic):Dynamic;
 
 	/**
 	 * Sets the provided entity visible for yourself for the current frame.
 	 */
-	@:native("SET_ENTITY_LOCALLY_VISIBLE")
+	@:native("SetEntityLocallyVisible")
 	static function setEntityLocallyVisible(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_VISIBLE_IN_CUTSCENE")
+	@:native("SetEntityVisibleInCutscene")
 	static function setEntityVisibleInCutscene(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LOCAL_PLAYER_INVISIBLE_LOCALLY")
+	@:native("SetLocalPlayerInvisibleLocally")
 	static function setLocalPlayerInvisibleLocally(p0:Bool):Dynamic;
 
 	/**
@@ -4089,7 +4089,7 @@ extern class Network {
 	 * 
 	 * 'Solidness' cannot be achieved using 255 - this will have the opposite effect of it defaulting to 128 it seems (or just having no effect at all).
 	 */
-	@:native("_SET_GHOSTED_ENTITY_ALPHA")
+	@:native("SetGhostedEntityAlpha")
 	static function SetGhostedEntityAlpha(alpha:Int):Dynamic;
 
 	/**
@@ -4097,31 +4097,31 @@ extern class Network {
 	 * Whether or not another player is allowed to take control of the entity  
 	 * ```
 	 */
-	@:native("SET_NETWORK_ID_CAN_MIGRATE")
+	@:native("SetNetworkIdCanMigrate")
 	static function setNetworkIdCanMigrate(netId:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LOCAL_PLAYER_VISIBLE_IN_CUTSCENE")
+	@:native("SetLocalPlayerVisibleInCutscene")
 	static function setLocalPlayerVisibleInCutscene(p0:Bool, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER")
+	@:native("SetNetworkIdAlwaysExistsForPlayer")
 	static function setNetworkIdAlwaysExistsForPlayer(netId:Int, player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NETWORK_ID_VISIBLE_IN_CUTSCENE")
+	@:native("SetNetworkIdVisibleInCutscene")
 	static function setNetworkIdVisibleInCutscene(netId:Int, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NETWORK_ID_EXISTS_ON_ALL_MACHINES")
+	@:native("SetNetworkIdExistsOnAllMachines")
 	static function setNetworkIdExistsOnAllMachines(netId:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -4133,37 +4133,37 @@ extern class Network {
 	 * NativeDB Added Parameter 2: BOOL p1
 	 * ```
 	 */
-	@:native("_SET_LOCAL_PLAYER_AS_GHOST")
+	@:native("SetLocalPlayerAsGhost")
 	static function SetLocalPlayerAsGhost(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NETWORK_CUTSCENE_ENTITIES")
+	@:native("SetNetworkCutsceneEntities")
 	static function setNetworkCutsceneEntities(toggle:Bool):Dynamic;
 
 	/**
 	 * Enables ghosting between specific players. Name is between `_SET_RELATIONSHIP_GROUP_DONT_AFFECT_WANTED_LEVEL` and `SET_ROADS_BACK_TO_ORIGINAL`.
 	 */
-	@:native("_SET_RELATIONSHIP_TO_PLAYER")
+	@:native("SetRelationshipToPlayer")
 	static function SetRelationshipToPlayer(player:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LOCAL_PLAYER_VISIBLE_LOCALLY")
+	@:native("SetLocalPlayerVisibleLocally")
 	static function setLocalPlayerVisibleLocally(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_INVISIBLE_LOCALLY")
+	@:native("SetPlayerInvisibleLocally")
 	static function setPlayerInvisibleLocally(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NETWORK_VEHICLE_AS_GHOST")
+	@:native("SetNetworkVehicleAsGhost")
 	static function setNetworkVehicleAsGhost(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4171,7 +4171,7 @@ extern class Network {
 	 * Starts a new singleplayer game (at the prologue).  
 	 * ```
 	 */
-	@:native("SHUTDOWN_AND_LAUNCH_SINGLE_PLAYER_GAME")
+	@:native("ShutdownAndLaunchSinglePlayerGame")
 	static function shutdownAndLaunchSinglePlayerGame():Dynamic;
 
 	/**
@@ -4180,7 +4180,7 @@ extern class Network {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SET_NETWORK_VEHICLE_RESPOT_TIMER")
+	@:native("SetNetworkVehicleRespotTimer")
 	static function setNetworkVehicleRespotTimer(netId:Int, time:Int):Dynamic;
 
 	/**
@@ -4188,7 +4188,7 @@ extern class Network {
 	 * Enables a periodic ShapeTest within the NetBlender and invokes rage::netBlenderLinInterp::GoStraightToTarget (or some functional wrapper).
 	 * ```
 	 */
-	@:native("_SET_NETWORK_ENABLE_VEHICLE_POSITION_CORRECTION")
+	@:native("SetNetworkEnableVehiclePositionCorrection")
 	static function SetNetworkEnableVehiclePositionCorrection(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4196,7 +4196,7 @@ extern class Network {
 	 * Access to the store for shark cards etc...  
 	 * ```
 	 */
-	@:native("SET_STORE_ENABLED")
+	@:native("SetStoreEnabled")
 	static function setStoreEnabled(toggle:Bool):Dynamic;
 
 	/**
@@ -4204,49 +4204,49 @@ extern class Network {
 	 * rage::netBlenderLinInterp::GetPositionMaxForUpdateLevel
 	 * ```
 	 */
-	@:native("_SET_NETWORK_VEHICLE_POSITION_UPDATE_MULTIPLIER")
+	@:native("SetNetworkVehiclePositionUpdateMultiplier")
 	static function SetNetworkVehiclePositionUpdateMultiplier(vehicle:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TEXTURE_DOWNLOAD_HAS_FAILED")
+	@:native("TextureDownloadHasFailed")
 	static function textureDownloadHasFailed(p0:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("TEXTURE_DOWNLOAD_GET_NAME")
+	@:native("TextureDownloadGetName")
 	static function textureDownloadGetName(p0:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("TEXTURE_DOWNLOAD_RELEASE")
+	@:native("TextureDownloadRelease")
 	static function textureDownloadRelease(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_VISIBLE_LOCALLY")
+	@:native("SetPlayerVisibleLocally")
 	static function setPlayerVisibleLocally(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TEXTURE_DOWNLOAD_REQUEST")
+	@:native("TextureDownloadRequest")
 	static function textureDownloadRequest(PlayerHandle:Dynamic, FilePath:String, Name:String, p3:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("TITLE_TEXTURE_DOWNLOAD_REQUEST")
+	@:native("TitleTextureDownloadRequest")
 	static function titleTextureDownloadRequest(FilePath:String, Name:String, p2:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_CLEAR_OFFLINE_QUERY")
+	@:native("UgcClearOfflineQuery")
 	static function ugcClearOfflineQuery():Dynamic;
 
 	/**
@@ -4258,13 +4258,13 @@ extern class Network {
 	 * 
 	 * Somewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.
 	 */
-	@:native("_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE")
+	@:native("ShutdownAndLoadMostRecentSave")
 	static function ShutdownAndLoadMostRecentSave():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_CLEAR_QUERY_RESULTS")
+	@:native("UgcClearQueryResults")
 	static function ugcClearQueryResults():Dynamic;
 
 	/**
@@ -4272,61 +4272,61 @@ extern class Network {
 	 * p1 = 6
 	 * ```
 	 */
-	@:native("_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER")
+	@:native("TriggerScriptCrcCheckOnPlayer")
 	static function TriggerScriptCrcCheckOnPlayer(player:Dynamic, p1:Int, scriptHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_CLEAR_CREATE_RESULT")
+	@:native("UgcClearCreateResult")
 	static function ugcClearCreateResult():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_CANCEL_QUERY")
+	@:native("UgcCancelQuery")
 	static function ugcCancelQuery():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_BOOKMARKED_CONTENT")
+	@:native("UgcGetBookmarkedContent")
 	static function ugcGetBookmarkedContent(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_DID_GET_SUCCEED")
+	@:native("UgcDidGetSucceed")
 	static function ugcDidGetSucceed():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CACHED_DESCRIPTION")
+	@:native("UgcGetCachedDescription")
 	static function ugcGetCachedDescription(p0:Dynamic, p1:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_CATEGORY")
+	@:native("UgcGetContentCategory")
 	static function ugcGetContentCategory(p0:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_CLEAR_MODIFY_RESULT")
+	@:native("UgcClearModifyResult")
 	static function ugcClearModifyResult():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_HAS_PLAYER_BOOKMARKED")
+	@:native("UgcGetContentHasPlayerBookmarked")
 	static function ugcGetContentHasPlayerBookmarked(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_HASH")
+	@:native("UgcGetContentHash")
 	static function ugcGetContentHash():Int;
 
 	/**
@@ -4334,157 +4334,157 @@ extern class Network {
 	 * Return the mission id of a job.
 	 * ```
 	 */
-	@:native("UGC_GET_CONTENT_ID")
+	@:native("UgcGetContentId")
 	static function ugcGetContentId(p0:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_HAS_PLAYER_RECORD")
+	@:native("UgcGetContentHasPlayerRecord")
 	static function ugcGetContentHasPlayerRecord(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_COPY_CONTENT")
+	@:native("UgcCopyContent")
 	static function ugcCopyContent(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_LANGUAGE")
+	@:native("UgcGetContentLanguage")
 	static function ugcGetContentLanguage(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_DESCRIPTION_HASH")
+	@:native("UgcGetContentDescriptionHash")
 	static function ugcGetContentDescriptionHash(p0:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_IS_VERIFIED")
+	@:native("UgcGetContentIsVerified")
 	static function ugcGetContentIsVerified(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_IS_PUBLISHED")
+	@:native("UgcGetContentIsPublished")
 	static function ugcGetContentIsPublished(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_NUM")
+	@:native("UgcGetContentNum")
 	static function ugcGetContentNum():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_FILE_VERSION")
+	@:native("UgcGetContentFileVersion")
 	static function ugcGetContentFileVersion(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_RATING")
+	@:native("UgcGetContentRating")
 	static function ugcGetContentRating(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_NAME")
+	@:native("UgcGetContentName")
 	static function ugcGetContentName(p0:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_RATING_POSITIVE_COUNT")
+	@:native("UgcGetContentRatingPositiveCount")
 	static function ugcGetContentRatingPositiveCount(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_PATH")
+	@:native("UgcGetContentPath")
 	static function ugcGetContentPath(p0:Int, p1:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_TOTAL")
+	@:native("UgcGetContentTotal")
 	static function ugcGetContentTotal():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_RATING_COUNT")
+	@:native("UgcGetContentRatingCount")
 	static function ugcGetContentRatingCount(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_RATING_NEGATIVE_COUNT")
+	@:native("UgcGetContentRatingNegativeCount")
 	static function ugcGetContentRatingNegativeCount(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_USER_ID")
+	@:native("UgcGetContentUserId")
 	static function ugcGetContentUserId(p0:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_USER_NAME")
+	@:native("UgcGetContentUserName")
 	static function ugcGetContentUserName(p0:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CONTENT_UPDATED_DATE")
+	@:native("UgcGetContentUpdatedDate")
 	static function ugcGetContentUpdatedDate(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CREATOR_NUM")
+	@:native("UgcGetCreatorNum")
 	static function ugcGetCreatorNum():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CREATE_RESULT")
+	@:native("UgcGetCreateResult")
 	static function ugcGetCreateResult():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_MODIFY_RESULT")
+	@:native("UgcGetModifyResult")
 	static function ugcGetModifyResult():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_GET_BY_CATEGORY")
+	@:native("UgcGetGetByCategory")
 	static function ugcGetGetByCategory(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CREATE_CONTENT_ID")
+	@:native("UgcGetCreateContentId")
 	static function ugcGetCreateContentId():String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_HAS_GET_FINISHED")
+	@:native("UgcHasGetFinished")
 	static function ugcHasGetFinished():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_CREW_CONTENT")
+	@:native("UgcGetCrewContent")
 	static function ugcGetCrewContent(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Bool;
 
 	/**
@@ -4492,115 +4492,115 @@ extern class Network {
 	 * Return the root content id of a job.
 	 * ```
 	 */
-	@:native("UGC_GET_ROOT_CONTENT_ID")
+	@:native("UgcGetRootContentId")
 	static function ugcGetRootContentId(p0:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_HAS_MODIFY_FINISHED")
+	@:native("UgcHasModifyFinished")
 	static function ugcHasModifyFinished():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_FRIEND_CONTENT")
+	@:native("UgcGetFriendContent")
 	static function ugcGetFriendContent(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_MY_CONTENT")
+	@:native("UgcGetMyContent")
 	static function ugcGetMyContent(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_GET_QUERY_RESULT")
+	@:native("UgcGetQueryResult")
 	static function ugcGetQueryResult():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_IS_GETTING")
+	@:native("UgcIsGetting")
 	static function ugcIsGetting():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_QUERY_BY_CONTENT_IDS")
+	@:native("UgcQueryByContentIds")
 	static function ugcQueryByContentIds(data:Dynamic, count:Int, latestVersion:Bool, contentTypeName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_PUBLISH")
+	@:native("UgcPublish")
 	static function ugcPublish(contentId:String, baseContentId:String, contentTypeName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_HAS_CREATE_FINISHED")
+	@:native("UgcHasCreateFinished")
 	static function ugcHasCreateFinished():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_POLICIES_MAKE_PRIVATE")
+	@:native("UgcPoliciesMakePrivate")
 	static function ugcPoliciesMakePrivate(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_REQUEST_CONTENT_DATA_FROM_PARAMS")
+	@:native("UgcRequestContentDataFromParams")
 	static function ugcRequestContentDataFromParams(contentTypeName:String, contentId:String, p2:Int, p3:Int, p4:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_IS_LANGUAGE_SUPPORTED")
+	@:native("UgcIsLanguageSupported")
 	static function ugcIsLanguageSupported(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_QUERY_MY_CONTENT")
+	@:native("UgcQueryMyContent")
 	static function ugcQueryMyContent(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_SET_DELETED")
+	@:native("UgcSetDeleted")
 	static function ugcSetDeleted(p0:Dynamic, p1:Bool, p2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_QUERY_BY_CONTENT_ID")
+	@:native("UgcQueryByContentId")
 	static function ugcQueryByContentId(contentId:String, latestVersion:Bool, contentTypeName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_REQUEST_CACHED_DESCRIPTION")
+	@:native("UgcRequestCachedDescription")
 	static function ugcRequestCachedDescription(p0:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_UGC_QUERY_RECENTLY_CREATED_CONTENT")
+	@:native("UgcQueryRecentlyCreatedContent")
 	static function UgcQueryRecentlyCreatedContent(offset:Int, count:Int, contentTypeName:String, p3:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_REQUEST_CONTENT_DATA_FROM_INDEX")
+	@:native("UgcRequestContentDataFromIndex")
 	static function ugcRequestContentDataFromIndex(p0:Int, p1:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_SET_BOOKMARKED")
+	@:native("UgcSetBookmarked")
 	static function ugcSetBookmarked(contentId:String, bookmarked:Bool, contentTypeName:String):Bool;
 
 	/**
@@ -4608,25 +4608,25 @@ extern class Network {
 	 * calls from vehicle to net.  
 	 * ```
 	 */
-	@:native("VEH_TO_NET")
+	@:native("VehToNet")
 	static function vehToNet(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_TEXTURE_DOWNLOAD_REQUEST")
+	@:native("UgcTextureDownloadRequest")
 	static function ugcTextureDownloadRequest(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UGC_SET_QUERY_DATA_FROM_OFFLINE")
+	@:native("UgcSetQueryDataFromOffline")
 	static function ugcSetQueryDataFromOffline(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR")
+	@:native("UsePlayerColourInsteadOfTeamColour")
 	static function usePlayerColourInsteadOfTeamColour(toggle:Bool):Dynamic;
 
 }

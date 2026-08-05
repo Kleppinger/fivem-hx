@@ -91,4 +91,18 @@ jobs:
             exit 1
           fi
           echo "no bit shim in generated output"
-          echo "only expected modules are required"
+
+      # Natives are exposed on _G under CitizenFX's generated Lua name
+      # (GetCurrentResourceName), never under the SCREAMING_SNAKE name from
+      # the natives database — that spelling does not exist in the runtime,
+      # and calling it fails with "attempt to call a nil value". Regenerating
+      # with an older generate.py would silently reintroduce it, so the
+      # externs are linted for the database spelling.
+      - name: Check native names use the runtime's Lua spelling
+        run: |
+          set -e
+          if grep -rhoE '@:native\("[A-Z][A-Z_0-9]{3,}"\)' src/fivem/*/natives/*.hx src/fivem/shared/Runtime.hx src/fivem/client/NativeOutputs.hx | sort -u | grep .; then
+            echo "::error::@:native uses the natives-database spelling; it must be the Lua name (see generate.py to_lua_name)"
+            exit 1
+          fi
+          echo "all @:native names use the runtime spelling"

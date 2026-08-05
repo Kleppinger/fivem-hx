@@ -5,7 +5,7 @@ extern class Pad {
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_INPUT_GROUP")
+	@:native("DisableInputGroup")
 	static function DisableInputGroup(padIndex:Int):Dynamic;
 
 	/**
@@ -17,13 +17,13 @@ extern class Pad {
 	 * };
 	 * ```
 	 */
-	@:native("ENABLE_ALL_CONTROL_ACTIONS")
+	@:native("EnableAllControlActions")
 	static function enableAllControlActions(padIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_ALL_CONTROL_ACTIONS")
+	@:native("DisableAllControlActions")
 	static function disableAllControlActions(padIndex:Int):Dynamic;
 
 	/**
@@ -74,7 +74,7 @@ extern class Pad {
 	 * Took those in IDA Pro.Not sure in which order they go  
 	 * ```
 	 */
-	@:native("ENABLE_CONTROL_ACTION")
+	@:native("EnableControlAction")
 	static function enableControlAction(padIndex:Int, control:Int, enable:Bool):Dynamic;
 
 	/**
@@ -90,13 +90,13 @@ extern class Pad {
 	 * 0, 1 and 2 used in the scripts. 0 is by far the most common of them.  
 	 * ```
 	 */
-	@:native("GET_CONTROL_INSTRUCTIONAL_BUTTON")
+	@:native("GetControlInstructionalButton")
 	static function getControlInstructionalButton(padIndex:Int, control:Int, p2:Bool):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CONTROL_VALUE")
+	@:native("GetControlValue")
 	static function getControlValue(padIndex:Int, control:Int):Int;
 
 	/**
@@ -105,19 +105,19 @@ extern class Pad {
 	 * Example: `CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true)` disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame.
 	 * Control group 1 and 0 gives the same results as 2. Same results for all players.
 	 */
-	@:native("DISABLE_CONTROL_ACTION")
+	@:native("DisableControlAction")
 	static function disableControlAction(padIndex:Int, control:Int, disable:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CONTROL_NORMAL")
+	@:native("GetControlNormal")
 	static function getControlNormal(padIndex:Int, control:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON")
+	@:native("GetControlGroupInstructionalButton")
 	static function getControlGroupInstructionalButton(padIndex:Int, controlGroup:Int, p2:Bool):String;
 
 	/**
@@ -125,7 +125,7 @@ extern class Pad {
 	 * Returns profile setting 225.
 	 * ```
 	 */
-	@:native("GET_IS_USING_ALTERNATE_DRIVEBY")
+	@:native("GetIsUsingAlternateDriveby")
 	static function getIsUsingAlternateDriveby():Bool;
 
 	/**
@@ -133,7 +133,7 @@ extern class Pad {
 	 * Seems to return values between -1 and 1 for controls like gas and steering.
 	 * ```
 	 */
-	@:native("GET_CONTROL_UNBOUND_NORMAL")
+	@:native("GetControlUnboundNormal")
 	static function getControlUnboundNormal(padIndex:Int, control:Int):Float;
 
 	/**
@@ -141,7 +141,7 @@ extern class Pad {
 	 * Returns profile setting 17.
 	 * ```
 	 */
-	@:native("GET_ALLOW_MOVEMENT_WHILE_ZOOMED")
+	@:native("GetAllowMovementWhileZoomed")
 	static function getAllowMovementWhileZoomed():Bool;
 
 	/**
@@ -149,7 +149,7 @@ extern class Pad {
 	 * Same behavior as GET_LOCAL_PLAYER_AIM_STATE but only used on the PC version.  
 	 * ```
 	 */
-	@:native("_GET_LOCAL_PLAYER_AIM_STATE_2")
+	@:native("GetLocalPlayerAimState_2")
 	static function GetLocalPlayerAimState2():Int;
 
 	/**
@@ -157,97 +157,97 @@ extern class Pad {
 	 * The number of milliseconds since last padIndex registered pressed
 	 * ```
 	 */
-	@:native("_GET_TIME_SINCE_LAST_INPUT")
+	@:native("GetTimeSinceLastInput")
 	static function GetTimeSinceLastInput(padIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DISABLED_CONTROL_NORMAL")
+	@:native("GetDisabledControlNormal")
 	static function getDisabledControlNormal(padIndex:Int, control:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_DISABLED_CONTROL_UNBOUND_NORMAL")
+	@:native("GetDisabledControlUnboundNormal")
 	static function getDisabledControlUnboundNormal(padIndex:Int, control:Int):Float;
 
 	/**
 	 * Returns whether a control is currently pressed.
 	 */
-	@:native("IS_CONTROL_PRESSED")
+	@:native("IsControlPressed")
 	static function isControlPressed(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * Returns whether a control was newly pressed since the last check.
 	 */
-	@:native("IS_CONTROL_JUST_PRESSED")
+	@:native("IsControlJustPressed")
 	static function isControlJustPressed(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * Returns the local player's targeting mode. See [`SET_PLAYER_TARGETING_MODE`](#\_0xB1906895227793F3).
 	 */
-	@:native("GET_LOCAL_PLAYER_AIM_STATE")
+	@:native("GetLocalPlayerAimState")
 	static function getLocalPlayerAimState():Int;
 
 	/**
 	 * Returns whether a control is currently *not* pressed.
 	 */
-	@:native("IS_CONTROL_RELEASED")
+	@:native("IsControlReleased")
 	static function isControlReleased(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DISABLED_CONTROL_PRESSED")
+	@:native("IsDisabledControlPressed")
 	static function isDisabledControlPressed(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * Returns whether a control was newly released since the last check.
 	 */
-	@:native("IS_CONTROL_JUST_RELEASED")
+	@:native("IsControlJustReleased")
 	static function isControlJustReleased(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_LOOK_INVERTED")
+	@:native("IsLookInverted")
 	static function isLookInverted():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_CONTROL_ENABLED")
+	@:native("IsControlEnabled")
 	static function isControlEnabled(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DISABLED_CONTROL_JUST_RELEASED")
+	@:native("IsDisabledControlJustReleased")
 	static function isDisabledControlJustReleased(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_USING_KEYBOARD")
+	@:native("IsUsingKeyboard")
 	static function IsUsingKeyboard(padIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DISABLED_CONTROL_JUST_PRESSED")
+	@:native("IsDisabledControlJustPressed")
 	static function isDisabledControlJustPressed(padIndex:Int, control:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_USING_KEYBOARD_2")
+	@:native("IsUsingKeyboard_2")
 	static function IsUsingKeyboard2(padIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_DISABLED_CONTROL_RELEASED")
+	@:native("IsDisabledControlReleased")
 	static function IsDisabledControlReleased(padIndex:Int, control:Int):Bool;
 
 	/**
@@ -255,31 +255,31 @@ extern class Pad {
 	 * S*
 	 * ```
 	 */
-	@:native("_RESET_INPUT_MAPPING_SCHEME")
+	@:native("ResetInputMappingScheme")
 	static function ResetInputMappingScheme():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_CONTROL_LIGHT_EFFECT_COLOR")
+	@:native("SetControlLightEffectColor")
 	static function SetControlLightEffectColor(padIndex:Int, red:Int, green:Int, blue:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_INPUT_EXCLUSIVE")
+	@:native("SetInputExclusive")
 	static function setInputExclusive(padIndex:Int, control:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_CURSOR_LOCATION")
+	@:native("SetCursorLocation")
 	static function SetCursorLocation(x:Float, y:Float):Bool;
 
 	/**
 	 * This is for simulating player input.
 	 */
-	@:native("_SET_CONTROL_NORMAL")
+	@:native("SetControlNormal")
 	static function SetControlNormal(padIndex:Int, control:Int, amount:Float):Bool;
 
 	/**
@@ -291,19 +291,19 @@ extern class Pad {
 	 * SET_PAD_SHAKE(0, 100, 200);  
 	 * ```
 	 */
-	@:native("SET_PAD_SHAKE")
+	@:native("SetPadShake")
 	static function setPadShake(padIndex:Int, duration:Int, frequency:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_PAD_SHAKE")
+	@:native("StopPadShake")
 	static function stopPadShake(padIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYERPAD_SHAKES_WHEN_CONTROLLER_DISABLED")
+	@:native("SetPlayerpadShakesWhenControllerDisabled")
 	static function setPlayerpadShakesWhenControllerDisabled(toggle:Bool):Dynamic;
 
 	/**
@@ -312,7 +312,7 @@ extern class Pad {
 	 * S*
 	 * ```
 	 */
-	@:native("_SWITCH_TO_INPUT_MAPPING_SCHEME")
+	@:native("SwitchToInputMappingScheme")
 	static function SwitchToInputMappingScheme(name:String):Bool;
 
 	/**
@@ -322,7 +322,7 @@ extern class Pad {
 	 * S*
 	 * ```
 	 */
-	@:native("_SWITCH_TO_INPUT_MAPPING_SCHEME_2")
+	@:native("SwitchToInputMappingScheme_2")
 	static function SwitchToInputMappingScheme2(name:String):Bool;
 
 }

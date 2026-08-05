@@ -15,7 +15,7 @@ extern class Hud {
 	 * 
 	 * (Native name is *likely* to actually be ADD_BLIP_FOR_AREA, but due to the usual reasons this can't be confirmed)
 	 */
-	@:native("_ADD_BLIP_FOR_AREA")
+	@:native("AddBlipForArea")
 	static function AddBlipForArea(x:Float, y:Float, z:Float, width:Float, height:Float):Dynamic;
 
 	/**
@@ -59,13 +59,13 @@ extern class Hud {
 	 * *   FE_MENU_VERSION_LANDING_MENU
 	 * *   FE_MENU_VERSION_LANDING_KEYMAPPING_MENU
 	 */
-	@:native("ACTIVATE_FRONTEND_MENU")
+	@:native("ActivateFrontendMenu")
 	static function activateFrontendMenu(menuhash:Int, togglePause:Bool, component:Int):Dynamic;
 
 	/**
 	 * Creates a blip for the specified coordinates. You can use `SET_BLIP_` natives to change the blip.
 	 */
-	@:native("ADD_BLIP_FOR_COORD")
+	@:native("AddBlipForCoord")
 	static function addBlipForCoord(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -74,13 +74,13 @@ extern class Hud {
 	 * Example image:
 	 * ![example](https://i.imgur.com/9hQl3DB.png)
 	 */
-	@:native("ADD_BLIP_FOR_RADIUS")
+	@:native("AddBlipForRadius")
 	static function addBlipForRadius(posX:Float, posY:Float, posZ:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_NEXT_MESSAGE_TO_PREVIOUS_BRIEFS")
+	@:native("AddNextMessageToPreviousBriefs")
 	static function addNextMessageToPreviousBriefs(addToBrief:Bool):Dynamic;
 
 	/**
@@ -88,25 +88,25 @@ extern class Hud {
 	 * 
 	 * ![Example output](https://i.imgur.com/jvuQ0II.png)
 	 */
-	@:native("ADD_TEXT_COMPONENT_FLOAT")
+	@:native("AddTextComponentFloat")
 	static function addTextComponentFloat(value:Float, decimalPlaces:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_POINT_TO_GPS_CUSTOM_ROUTE")
+	@:native("AddPointToGpsCustomRoute")
 	static function addPointToGpsCustomRoute(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_BLIP_NAME")
+	@:native("AddTextComponentSubstringBlipName")
 	static function addTextComponentSubstringBlipName(blip:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_BLIP_FOR_PICKUP")
+	@:native("AddBlipForPickup")
 	static function addBlipForPickup(pickup:Dynamic):Dynamic;
 
 	/**
@@ -114,19 +114,19 @@ extern class Hud {
 	 * p1 was always -1
 	 * ```
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_PHONE_NUMBER")
+	@:native("AddTextComponentSubstringPhoneNumber")
 	static function addTextComponentSubstringPhoneNumber(p0:String, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL")
+	@:native("AddTextComponentSubstringTextLabel")
 	static function addTextComponentSubstringTextLabel(labelName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TEXT_COMPONENT_INTEGER")
+	@:native("AddTextComponentInteger")
 	static function addTextComponentInteger(value:Int):Dynamic;
 
 	/**
@@ -138,7 +138,7 @@ extern class Hud {
 	 * Example of friend:
 	 * ![friend](https://i.imgur.com/Q16ho5d.png)
 	 */
-	@:native("ADD_BLIP_FOR_ENTITY")
+	@:native("AddBlipForEntity")
 	static function addBlipForEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -146,13 +146,13 @@ extern class Hud {
 	 * Adds a timer (e.g. "00:00:00:000"). The appearance of the timer depends on the flags, which needs more research.  
 	 * ```
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_TIME")
+	@:native("AddTextComponentSubstringTime")
 	static function addTextComponentSubstringTime(timestamp:Int, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TEXT_COMPONENT_FORMATTED_INTEGER")
+	@:native("AddTextComponentFormattedInteger")
 	static function addTextComponentFormattedInteger(value:Int, commaSeparated:Bool):Dynamic;
 
 	/**
@@ -160,13 +160,13 @@ extern class Hud {
 	 * clears a print text command with this text  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_CLEAR_PRINT")
+	@:native("BeginTextCommandClearPrint")
 	static function beginTextCommandClearPrint(text:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_POINT_TO_GPS_MULTI_ROUTE")
+	@:native("AddPointToGpsMultiRoute")
 	static function addPointToGpsMultiRoute(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -174,7 +174,7 @@ extern class Hud {
 	 * 
 	 * See the documentation on text formatting for more information.
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME")
+	@:native("AddTextComponentSubstringPlayerName")
 	static function addTextComponentSubstringPlayerName(text:String):Dynamic;
 
 	/**
@@ -182,19 +182,19 @@ extern class Hud {
 	 * It adds the localized text of the specified GXT entry name. Eg. if the argument is GET_HASH_KEY("ES_HELP"), adds "Continue". Just uses a text labels hash key  
 	 * ```
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY")
+	@:native("AddTextComponentSubstringTextLabelHashKey")
 	static function addTextComponentSubstringTextLabelHashKey(gxtEntryHash:Int):Dynamic;
 
 	/**
 	 * Certain characters like `<` will have to be escaped using html entities (e.g. `&lt;`), otherwise the text wont display properly.
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY")
+	@:native("AddTextComponentSubstringKeyboardDisplay")
 	static function addTextComponentSubstringKeyboardDisplay(string:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ALLOW_SONAR_BLIPS")
+	@:native("AllowSonarBlips")
 	static function allowSonarBlips(toggle:Bool):Dynamic;
 
 	/**
@@ -202,7 +202,7 @@ extern class Hud {
 	 * This native (along with 0x5F68520888E69014 and 0x6C188BE134E074AA) do not actually filter anything. They simply add the provided text (as of 944)  
 	 * ```
 	 */
-	@:native("ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE")
+	@:native("AddTextComponentSubstringWebsite")
 	static function addTextComponentSubstringWebsite(website:String):Dynamic;
 
 	/**
@@ -242,7 +242,7 @@ extern class Hud {
 	 * "MP_SPINLOADING"                      = Loading  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_BUSYSPINNER_ON")
+	@:native("BeginTextCommandBusyspinnerOn")
 	static function beginTextCommandBusyspinnerOn(string:String):Dynamic;
 
 	/**
@@ -254,13 +254,13 @@ extern class Hud {
 	 * Used to be known as _SET_TEXT_ENTRY  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_DISPLAY_TEXT")
+	@:native("BeginTextCommandDisplayText")
 	static function beginTextCommandDisplayText(text:String):Dynamic;
 
 	/**
 	 * Allows opening the pause menu this frame, when the player is dead.
 	 */
-	@:native("_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME")
+	@:native("AllowPauseMenuWhenDeadThisFrame")
 	static function AllowPauseMenuWhenDeadThisFrame():Dynamic;
 
 	/**
@@ -272,7 +272,7 @@ extern class Hud {
 	 * float width = _END_TEXT_COMMAND_GET_WIDTH(1);
 	 * ```
 	 */
-	@:native("_BEGIN_TEXT_COMMAND_GET_WIDTH")
+	@:native("BeginTextCommandGetWidth")
 	static function BeginTextCommandGetWidth(text:String):Dynamic;
 
 	/**
@@ -286,13 +286,13 @@ extern class Hud {
 	 * 	}  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_IS_MESSAGE_DISPLAYED")
+	@:native("BeginTextCommandIsMessageDisplayed")
 	static function beginTextCommandIsMessageDisplayed(text:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED")
+	@:native("BeginTextCommandIsThisHelpMessageBeingDisplayed")
 	static function beginTextCommandIsThisHelpMessageBeingDisplayed(labelName:String):Dynamic;
 
 	/**
@@ -300,7 +300,7 @@ extern class Hud {
 	 * Used to be known as _SET_TEXT_COMPONENT_FORMAT  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_DISPLAY_HELP")
+	@:native("BeginTextCommandDisplayHelp")
 	static function beginTextCommandDisplayHelp(inputType:String):Dynamic;
 
 	/**
@@ -314,7 +314,7 @@ extern class Hud {
 	 * 	}  
 	 * ```
 	 */
-	@:native("_BEGIN_TEXT_COMMAND_LINE_COUNT")
+	@:native("BeginTextCommandLineCount")
 	static function BeginTextCommandLineCount(entry:String):Dynamic;
 
 	/**
@@ -328,19 +328,19 @@ extern class Hud {
 	 * }  
 	 * ```
 	 */
-	@:native("BEGIN_TEXT_COMMAND_PRINT")
+	@:native("BeginTextCommandPrint")
 	static function beginTextCommandPrint(GxtEntry:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT")
+	@:native("BeginTextCommandOverrideButtonText")
 	static function beginTextCommandOverrideButtonText(gxtEntry:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("BUSYSPINNER_IS_ON")
+	@:native("BusyspinnerIsOn")
 	static function busyspinnerIsOn():Bool;
 
 	/**
@@ -352,13 +352,13 @@ extern class Hud {
 	 * return \_DRAW_NOTIFICATION(1, 1);
 	 * }
 	 */
-	@:native("BEGIN_TEXT_COMMAND_THEFEED_POST")
+	@:native("BeginTextCommandThefeedPost")
 	static function beginTextCommandThefeedPost(text:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_BEGIN_TEXT_COMMAND_OBJECTIVE")
+	@:native("BeginTextCommandObjective")
 	static function BeginTextCommandObjective(p0:String):Dynamic;
 
 	/**
@@ -366,13 +366,13 @@ extern class Hud {
 	 * 
 	 * This should be paired with [`END_TEXT_COMMAND_SET_BLIP_NAME`](#\_0xBC38B49BCB83BC9B), once adding all required text components.
 	 */
-	@:native("BEGIN_TEXT_COMMAND_SET_BLIP_NAME")
+	@:native("BeginTextCommandSetBlipName")
 	static function beginTextCommandSetBlipName(textLabel:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("BUSYSPINNER_IS_DISPLAYING")
+	@:native("BusyspinnerIsDisplaying")
 	static function busyspinnerIsDisplaying():Bool;
 
 	/**
@@ -380,25 +380,25 @@ extern class Hud {
 	 * Displays cash change notifications on HUD.  
 	 * ```
 	 */
-	@:native("CHANGE_FAKE_MP_CASH")
+	@:native("ChangeFakeMpCash")
 	static function changeFakeMpCash(cash:Int, bank:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ADDITIONAL_TEXT")
+	@:native("ClearAdditionalText")
 	static function clearAdditionalText(p0:Int, p1:Bool):Dynamic;
 
 	/**
 	 * Clears all active blip routes that have been set with [`SetBlipRoute`](#\_0x3E160C90).
 	 */
-	@:native("_CLEAR_ALL_BLIP_ROUTES")
+	@:native("ClearAllBlipRoutes")
 	static function ClearAllBlipRoutes():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_DYNAMIC_PAUSE_MENU_ERROR_MESSAGE")
+	@:native("ClearDynamicPauseMenuErrorMessage")
 	static function clearDynamicPauseMenuErrorMessage():Dynamic;
 
 	/**
@@ -406,37 +406,37 @@ extern class Hud {
 	 * Removes the loading prompt at the bottom right of the screen.
 	 * ```
 	 */
-	@:native("BUSYSPINNER_OFF")
+	@:native("BusyspinnerOff")
 	static function busyspinnerOff():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_BRIEF")
+	@:native("ClearBrief")
 	static function clearBrief():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ALL_HELP_MESSAGES")
+	@:native("ClearAllHelpMessages")
 	static function clearAllHelpMessages():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_GPS_CUSTOM_ROUTE")
+	@:native("ClearGpsCustomRoute")
 	static function clearGpsCustomRoute():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_FLOATING_HELP")
+	@:native("ClearFloatingHelp")
 	static function clearFloatingHelp(hudIndex:Int, p1:Bool):Dynamic;
 
 	/**
 	 * Does the same as [`SET_GPS_MULTI_ROUTE_RENDER(false)`](#\_0x3DDA37128DD1ACA8)
 	 */
-	@:native("CLEAR_GPS_MULTI_ROUTE")
+	@:native("ClearGpsMultiRoute")
 	static function clearGpsMultiRoute():Dynamic;
 
 	/**
@@ -445,19 +445,19 @@ extern class Hud {
 	 * Doesn't seem like the flags are actually read by the game at all.  
 	 * ```
 	 */
-	@:native("CLEAR_GPS_FLAGS")
+	@:native("ClearGpsFlags")
 	static function clearGpsFlags():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_GPS_PLAYER_WAYPOINT")
+	@:native("ClearGpsPlayerWaypoint")
 	static function clearGpsPlayerWaypoint():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_IN_PAUSE_MENU")
+	@:native("ClearPedInPauseMenu")
 	static function clearPedInPauseMenu():Dynamic;
 
 	/**
@@ -465,37 +465,37 @@ extern class Hud {
 	 * Does the same as SET_RACE_TRACK_RENDER(false);
 	 * ```
 	 */
-	@:native("CLEAR_GPS_RACE_TRACK")
+	@:native("ClearGpsRaceTrack")
 	static function clearGpsRaceTrack():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_HELP")
+	@:native("ClearHelp")
 	static function clearHelp(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PRINTS")
+	@:native("ClearPrints")
 	static function clearPrints():Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("CLEAR_REMINDER_MESSAGE")
+	@:native("ClearReminderMessage")
 	static function clearReminderMessage():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_RACE_GALLERY_BLIPS")
+	@:native("ClearRaceGalleryBlips")
 	static function ClearRaceGalleryBlips():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_SMALL_PRINTS")
+	@:native("ClearSmallPrints")
 	static function clearSmallPrints():Dynamic;
 
 	/**
@@ -503,38 +503,38 @@ extern class Hud {
 	 * p0: found arguments in the b617d scripts: pastebin.com/X5akCN7z  
 	 * ```
 	 */
-	@:native("CLEAR_THIS_PRINT")
+	@:native("ClearThisPrint")
 	static function clearThisPrint(p0:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLOSE_MULTIPLAYER_CHAT")
+	@:native("CloseMultiplayerChat")
 	static function CloseMultiplayerChat():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLOSE_SOCIAL_CLUB_MENU")
+	@:native("CloseSocialClubMenu")
 	static function closeSocialClubMenu():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DELETE_WAYPOINT")
+	@:native("DeleteWaypoint")
 	static function DeleteWaypoint():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISPLAY_AREA_NAME")
+	@:native("DisplayAreaName")
 	static function displayAreaName(toggle:Bool):Dynamic;
 
 	/**
 	 * Shows a help message for one frame.
 	 * Do note that this message doesn't get added to the Pause Menu info section.
 	 */
-	@:native("DISPLAY_HELP_TEXT_THIS_FRAME")
+	@:native("DisplayHelpTextThisFrame")
 	static function displayHelpTextThisFrame(pTextLabel:String, bCurvedWindow:Bool):Dynamic;
 
 	/**
@@ -544,13 +544,13 @@ extern class Hud {
 	 * 
 	 * To create a gamer tag for a ped that is not a player, see [CREATE_FAKE_MP_GAMER_TAG](#\_0xBFEFE3321A3F5015).
 	 */
-	@:native("CREATE_MP_GAMER_TAG_WITH_CREW_COLOR")
+	@:native("CreateMpGamerTagWithCrewColor")
 	static function createMpGamerTagWithCrewColor(player:Dynamic, username:String, crewIsPrivate:Bool, crewIsRockstar:Bool, crewName:String, crewRank:Int, crewR:Int, crewG:Int, crewB:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_FRONTEND_THIS_FRAME")
+	@:native("DisableFrontendThisFrame")
 	static function disableFrontendThisFrame():Dynamic;
 
 	/**
@@ -558,13 +558,13 @@ extern class Hud {
 	 * If Minimap / Radar should be displayed.
 	 * ```
 	 */
-	@:native("DISPLAY_RADAR")
+	@:native("DisplayRadar")
 	static function displayRadar(toggle:Bool):Dynamic;
 
 	/**
 	 * If true is passed, the player won't be able to open the multiplayer chat
 	 */
-	@:native("_DISABLE_MULTIPLAYER_CHAT")
+	@:native("DisableMultiplayerChat")
 	static function DisableMultiplayerChat(disable:Bool):Dynamic;
 
 	/**
@@ -573,7 +573,7 @@ extern class Hud {
 	 * 
 	 * To create gamer tags for actual players and for more gamer tag information, see [CREATE_MP_GAMER_TAG_WITH_CREW_COLOR](#\_0x6DD05E9D83EFA4C9).
 	 */
-	@:native("CREATE_FAKE_MP_GAMER_TAG")
+	@:native("CreateFakeMpGamerTag")
 	static function createFakeMpGamerTag(ped:Dynamic, username:String, crewIsPrivate:Bool, crewIsRockstar:Bool, crewName:String, crewRank:Int):Int;
 
 	/**
@@ -582,19 +582,19 @@ extern class Hud {
 	 * "DISPLAY_CASH(false);" disables cash amount rendering  
 	 * ```
 	 */
-	@:native("DISPLAY_CASH")
+	@:native("DisplayCash")
 	static function displayCash(display:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_BLIP_HAVE_GPS_ROUTE")
+	@:native("DoesBlipHaveGpsRoute")
 	static function doesBlipHaveGpsRoute(blip:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DISPLAY_AMMO_THIS_FRAME")
+	@:native("DisplayAmmoThisFrame")
 	static function displayAmmoThisFrame(display:Bool):Dynamic;
 
 	/**
@@ -602,19 +602,19 @@ extern class Hud {
 	 * When calling this, the current frame will have the players "arrow icon" be focused on the dead center of the radar.
 	 * ```
 	 */
-	@:native("DONT_TILT_MINIMAP_THIS_FRAME")
+	@:native("DontTiltMinimapThisFrame")
 	static function dontTiltMinimapThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_BLIP_EXIST")
+	@:native("DoesBlipExist")
 	static function doesBlipExist(blip:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DISPLAY_HUD_WHEN_PAUSED_THIS_FRAME")
+	@:native("DisplayHudWhenPausedThisFrame")
 	static function displayHudWhenPausedThisFrame():Dynamic;
 
 	/**
@@ -622,13 +622,13 @@ extern class Hud {
 	 * If Hud should be displayed  
 	 * ```
 	 */
-	@:native("DISPLAY_HUD")
+	@:native("DisplayHud")
 	static function displayHud(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_DISPLAY_HELP")
+	@:native("EndTextCommandDisplayHelp")
 	static function endTextCommandDisplayHelp(shape:Int, loop:Bool, beep:Bool, duration:Int):Dynamic;
 
 	/**
@@ -637,19 +637,19 @@ extern class Hud {
 	 * It's the default blip you can see on enemies during freeroam in singleplayer (the one that fades out quickly).  
 	 * ```
 	 */
-	@:native("DOES_PED_HAVE_AI_BLIP")
+	@:native("DoesPedHaveAiBlip")
 	static function doesPedHaveAiBlip(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_CLEAR_PRINT")
+	@:native("EndTextCommandClearPrint")
 	static function endTextCommandClearPrint():Dynamic;
 
 	/**
 	 * Enables drawing some hud components, such as help labels, this frame, when the player is dead.
 	 */
-	@:native("_DISPLAY_HUD_WHEN_DEAD_THIS_FRAME")
+	@:native("DisplayHudWhenDeadThisFrame")
 	static function DisplayHudWhenDeadThisFrame():Dynamic;
 
 	/**
@@ -658,7 +658,7 @@ extern class Hud {
 	 * Preview: https://i.imgur.com/DfqKWfJ.png
 	 * Make sure to call SET_BLIP_CATEGORY with index 7 for this to work on the desired blip.
 	 */
-	@:native("DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS")
+	@:native("DisplayPlayerNameTagsOnBlips")
 	static function displayPlayerNameTagsOnBlips(toggle:Bool):Dynamic;
 
 	/**
@@ -666,13 +666,13 @@ extern class Hud {
 	 * Displays the crosshair for this frame.  
 	 * ```
 	 */
-	@:native("DISPLAY_SNIPER_SCOPE_THIS_FRAME")
+	@:native("DisplaySniperScopeThisFrame")
 	static function displaySniperScopeThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_TEXT_BLOCK_EXIST")
+	@:native("DoesTextBlockExist")
 	static function doesTextBlockExist(gxt:String):Bool;
 
 	/**
@@ -684,7 +684,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 3: int p2
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_DISPLAY_TEXT")
+	@:native("EndTextCommandDisplayText")
 	static function endTextCommandDisplayText(x:Float, y:Float):Dynamic;
 
 	/**
@@ -692,13 +692,13 @@ extern class Hud {
 	 * Checks if the passed gxt name exists in the game files.  
 	 * ```
 	 */
-	@:native("DOES_TEXT_LABEL_EXIST")
+	@:native("DoesTextLabelExist")
 	static function doesTextLabelExist(gxt:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_IS_MESSAGE_DISPLAYED")
+	@:native("EndTextCommandIsMessageDisplayed")
 	static function endTextCommandIsMessageDisplayed():Bool;
 
 	/**
@@ -712,7 +712,7 @@ extern class Hud {
 	 * }
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED")
+	@:native("EndTextCommandIsThisHelpMessageBeingDisplayed")
 	static function endTextCommandIsThisHelpMessageBeingDisplayed(hudIndex:Int):Bool;
 
 	/**
@@ -723,7 +723,7 @@ extern class Hud {
 	 * param is not font from what i've tested
 	 * ```
 	 */
-	@:native("_END_TEXT_COMMAND_GET_WIDTH")
+	@:native("EndTextCommandGetWidth")
 	static function EndTextCommandGetWidth(p0:Bool):Float;
 
 	/**
@@ -738,14 +738,14 @@ extern class Hud {
 	 * };
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_BUSYSPINNER_ON")
+	@:native("EndTextCommandBusyspinnerOn")
 	static function endTextCommandBusyspinnerOn(busySpinnerType:Int):Dynamic;
 
 	/**
 	 * Finalizes a text command started with [`BEGIN_TEXT_COMMAND_SET_BLIP_NAME`](#\_0xF9113A30DE5C6670), setting the name
 	 * of the specified blip.
 	 */
-	@:native("END_TEXT_COMMAND_SET_BLIP_NAME")
+	@:native("EndTextCommandSetBlipName")
 	static function endTextCommandSetBlipName(blip:Dynamic):Dynamic;
 
 	/**
@@ -755,13 +755,13 @@ extern class Hud {
 	 * Must use 0x521FB041D93DD0E4 for setting up
 	 * ```
 	 */
-	@:native("_END_TEXT_COMMAND_LINE_COUNT")
+	@:native("EndTextCommandLineCount")
 	static function EndTextCommandLineCount(x:Float, y:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_END_TEXT_COMMAND_OBJECTIVE")
+	@:native("EndTextCommandObjective")
 	static function EndTextCommandObjective(p0:Bool):Dynamic;
 
 	/**
@@ -800,19 +800,19 @@ extern class Hud {
 	 * 	}  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_CREWTAG")
+	@:native("EndTextCommandThefeedPostCrewtag")
 	static function endTextCommandThefeedPostCrewtag(crewTypeIsPrivate:Bool, crewTagContainsRockstar:Bool, crewTag:Dynamic, rank:Int, hasFounderStatus:Bool, isImportant:Bool, clanHandle:Int, r:Int, g:Int, b:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT")
+	@:native("EndTextCommandOverrideButtonText")
 	static function endTextCommandOverrideButtonText(buttonIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP")
+	@:native("EndTextCommandThefeedPostCrewRankup")
 	static function endTextCommandThefeedPostCrewRankup(chTitle:String, clanTxd:String, clanTxn:String, isImportant:Bool, showSubtitle:Bool):Int;
 
 	/**
@@ -823,7 +823,7 @@ extern class Hud {
 	 * Used to be known as _DRAW_SUBTITLE_TIMED  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_PRINT")
+	@:native("EndTextCommandPrint")
 	static function endTextCommandPrint(duration:Int, drawImmediately:Bool):Dynamic;
 
 	/**
@@ -836,7 +836,7 @@ extern class Hud {
 	 * Example result:
 	 * ![](https://i.imgur.com/YrN4Bcm.png)
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU")
+	@:native("EndTextCommandThefeedPostMessagetextTu")
 	static function endTextCommandThefeedPostMessagetextTu(picTxd:String, picTxn:String, flash:Bool, iconType:Int, nameStr:String, subtitleStr:String, durationMultiplier:Float):Int;
 
 	/**
@@ -862,7 +862,7 @@ extern class Hud {
 	 * 	}  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME")
+	@:native("EndTextCommandThefeedPostCrewtagWithGameName")
 	static function endTextCommandThefeedPostCrewtagWithGameName(crewTypeIsPrivate:Bool, crewTagContainsRockstar:Bool, crewTag:Dynamic, rank:Int, isLeader:Bool, isImportant:Bool, clanHandle:Int, gamerStr:String, r:Int, g:Int, b:Int):Int;
 
 	/**
@@ -871,7 +871,7 @@ extern class Hud {
 	 * Only one type of usage in the scripts:
 	 * HUD::\_C6F580E4C94926AC("CHAR_ACTING_UP", "CHAR_ACTING_UP", 0, 0, "DI_FEED_CHAR", a\_0);
 	 */
-	@:native("_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY")
+	@:native("EndTextCommandThefeedPostMessagetextGxtEntry")
 	static function EndTextCommandThefeedPostMessagetextGxtEntry(txdName:String, textureName:String, flash:Bool, iconType:Int, sender:String, subject:String):Int;
 
 	/**
@@ -887,7 +887,7 @@ extern class Hud {
 	 * UI::_0xAA295B6F28BD587D("Hunting", "Hunting_Gold_128", 0, 109, "HUD_MED_UNLKED");  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_AWARD")
+	@:native("EndTextCommandThefeedPostAward")
 	static function endTextCommandThefeedPostAward(textureDict:String, textureName:String, rpBonus:Int, colorOverlay:Int, titleLabel:String):Int;
 
 	/**
@@ -905,13 +905,13 @@ extern class Hud {
 	 * l_D1[2/ *1* /]=HUD::_DD6CB2CCE7C2735C(1,"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~","");
 	 * ```
 	 */
-	@:native("_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT")
+	@:native("EndTextCommandThefeedPostReplayInput")
 	static function EndTextCommandThefeedPostReplayInput(type:Int, button:String, text:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_MPTICKER")
+	@:native("EndTextCommandThefeedPostMpticker")
 	static function endTextCommandThefeedPostMpticker(blink:Bool, bHasTokens:Bool):Int;
 
 	/**
@@ -934,7 +934,7 @@ extern class Hud {
 	 * "clanTag" shows a crew tag in the "sender" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. "MK" becomes "___MK", "ACE" becomes "___ACE", etc.)  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG")
+	@:native("EndTextCommandThefeedPostMessagetextWithCrewTag")
 	static function endTextCommandThefeedPostMessagetextWithCrewTag(picTxd:String, picTxn:String, flash:Bool, iconType:Int, nameStr:String, subtitleStr:String, duration:Float, crewPackedStr:String):Int;
 
 	/**
@@ -942,7 +942,7 @@ extern class Hud {
 	 * 
 	 * ![](https://i.imgur.com/TJvqkYq.png)
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_TICKER")
+	@:native("EndTextCommandThefeedPostTicker")
 	static function endTextCommandThefeedPostTicker(isImportant:Bool, bHasTokens:Bool):Int;
 
 	/**
@@ -973,7 +973,7 @@ extern class Hud {
 	 * "subject" is the header under the sender.  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT")
+	@:native("EndTextCommandThefeedPostMessagetext")
 	static function endTextCommandThefeedPostMessagetext(textureDict:String, textureName:String, flash:Bool, iconType:Int, sender:String, subject:String):Int;
 
 	/**
@@ -985,7 +985,7 @@ extern class Hud {
 	 * UI::_0xD202B92CBF1D816F(1, 20, "Who you trynna get crazy with, ese? Don't you know I'm LOCO?!");  
 	 * ```
 	 */
-	@:native("_END_TEXT_COMMAND_THEFEED_POST_REPLAY_ICON")
+	@:native("EndTextCommandThefeedPostReplayIcon")
 	static function EndTextCommandThefeedPostReplayIcon(eType:Int, iIcon:Int, sTitle:String):Int;
 
 	/**
@@ -1016,13 +1016,13 @@ extern class Hud {
 	 * }  
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON")
+	@:native("EndTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon")
 	static function endTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon(picTxd:String, picTxn:String, flash:Bool, iconType1:Int, nameStr:String, subtitleStr:String, duration:Float, crewPackedStr:String, iconType2:Int, textColor:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED")
+	@:native("EndTextCommandThefeedPostTickerForced")
 	static function endTextCommandThefeedPostTickerForced(blink:Bool, bHasTokens:Bool):Int;
 
 	/**
@@ -1032,49 +1032,49 @@ extern class Hud {
 	 * 
 	 * ![](https://i.imgur.com/SdEZ22m.png)
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_STATS")
+	@:native("EndTextCommandThefeedPostStats")
 	static function endTextCommandThefeedPostStats(statTitle:String, iconEnum:Int, stepVal:Bool, barValue:Int, isImportant:Bool, picTxd:String, picTxn:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU_WITH_COLOR")
+	@:native("EndTextCommandThefeedPostUnlockTuWithColor")
 	static function endTextCommandThefeedPostUnlockTuWithColor(chTitle:String, iconType:Int, chSubtitle:String, isImportant:Bool, titleColor:Int, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FLAG_PLAYER_CONTEXT_IN_TOURNAMENT")
+	@:native("FlagPlayerContextInTournament")
 	static function flagPlayerContextInTournament(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS")
+	@:native("EndTextCommandThefeedPostTickerWithTokens")
 	static function endTextCommandThefeedPostTickerWithTokens(isImportant:Bool, bHasTokens:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_UNLOCK")
+	@:native("EndTextCommandThefeedPostUnlock")
 	static function endTextCommandThefeedPostUnlock(chTitle:String, iconType:Int, chSubtitle:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FLASH_ABILITY_BAR")
+	@:native("FlashAbilityBar")
 	static function flashAbilityBar(millisecondsToFlash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_CLOSE_TEXT_INPUT_BOX")
+	@:native("ForceCloseTextInputBox")
 	static function forceCloseTextInputBox():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU")
+	@:native("EndTextCommandThefeedPostUnlockTu")
 	static function endTextCommandThefeedPostUnlockTu(chTitle:String, iconType:Int, chSubtitle:String, isImportant:Bool):Dynamic;
 
 	/**
@@ -1083,7 +1083,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 8: int hudColorIndex2
 	 * ```
 	 */
-	@:native("END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU")
+	@:native("EndTextCommandThefeedPostVersusTu")
 	static function endTextCommandThefeedPostVersusTu(ch1TXD:String, ch1TXN:String, val1:Int, ch2TXD:String, ch2TXN:String, val2:Int):Int;
 
 	/**
@@ -1091,7 +1091,7 @@ extern class Hud {
 	 * Returns the current AI BLIP for the specified ped  
 	 * ```
 	 */
-	@:native("_GET_AI_BLIP")
+	@:native("GetAiBlip")
 	static function GetAiBlip(ped:Dynamic):Dynamic;
 
 	/**
@@ -1100,25 +1100,25 @@ extern class Hud {
 	 * Usage: UI.FLASH_MINIMAP_DISPLAY  
 	 * ```
 	 */
-	@:native("FLASH_MINIMAP_DISPLAY")
+	@:native("FlashMinimapDisplay")
 	static function flashMinimapDisplay():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_CLOSE_REPORTUGC_MENU")
+	@:native("ForceCloseReportugcMenu")
 	static function forceCloseReportugcMenu():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_COORDS")
+	@:native("GetBlipCoords")
 	static function getBlipCoords(blip:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FLASH_MINIMAP_DISPLAY_WITH_COLOR")
+	@:native("FlashMinimapDisplayWithColor")
 	static function flashMinimapDisplayWithColor(hudColorIndex:Int):Dynamic;
 
 	/**
@@ -1126,49 +1126,49 @@ extern class Hud {
 	 * Doesn't actually return anything.
 	 * ```
 	 */
-	@:native("FORCE_SONAR_BLIPS_THIS_FRAME")
+	@:native("ForceSonarBlipsThisFrame")
 	static function forceSonarBlipsThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FLASH_WANTED_DISPLAY")
+	@:native("FlashWantedDisplay")
 	static function flashWantedDisplay(p0:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_ALPHA")
+	@:native("GetBlipAlpha")
 	static function getBlipAlpha(blip:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_AI_BLIP_2")
+	@:native("GetAiBlip_2")
 	static function GetAiBlip2(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_COLOUR")
+	@:native("GetBlipColour")
 	static function getBlipColour(blip:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_INFO_ID_DISPLAY")
+	@:native("GetBlipInfoIdDisplay")
 	static function getBlipInfoIdDisplay(blip:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_HUD_COLOUR")
+	@:native("GetBlipHudColour")
 	static function getBlipHudColour(blip:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_INFO_ID_COORD")
+	@:native("GetBlipInfoIdCoord")
 	static function getBlipInfoIdCoord(blip:Dynamic):Dynamic;
 
 	/**
@@ -1176,7 +1176,7 @@ extern class Hud {
 	 * Returns the Blip handle of given Entity.  
 	 * ```
 	 */
-	@:native("GET_BLIP_FROM_ENTITY")
+	@:native("GetBlipFromEntity")
 	static function getBlipFromEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -1191,7 +1191,7 @@ extern class Hud {
 	 * 7 - Radius
 	 * ```
 	 */
-	@:native("GET_BLIP_INFO_ID_TYPE")
+	@:native("GetBlipInfoIdType")
 	static function getBlipInfoIdType(blip:Dynamic):Int;
 
 	/**
@@ -1199,25 +1199,25 @@ extern class Hud {
 	 * This function is hard-coded to always return 0.  
 	 * ```
 	 */
-	@:native("GET_BLIP_INFO_ID_PICKUP_INDEX")
+	@:native("GetBlipInfoIdPickupIndex")
 	static function getBlipInfoIdPickupIndex(blip:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BLIP_INFO_ID_ENTITY_INDEX")
+	@:native("GetBlipInfoIdEntityIndex")
 	static function getBlipInfoIdEntityIndex(blip:Dynamic):Dynamic;
 
 	/**
 	 * Gets the sprite id of the specified blip. Blip sprite ids and images can be found [here](https://docs.fivem.net/docs/game-references/blips/).
 	 */
-	@:native("GET_BLIP_SPRITE")
+	@:native("GetBlipSprite")
 	static function getBlipSprite(blip:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_WEBPAGE_ID")
+	@:native("GetCurrentWebpageId")
 	static function getCurrentWebpageId():Int;
 
 	/**
@@ -1225,7 +1225,7 @@ extern class Hud {
 	 * if (HUD::GET_CURRENT_FRONTEND_MENU_VERSION() == joaat("fe_menu_version_empty_no_background"))
 	 * ```
 	 */
-	@:native("GET_CURRENT_FRONTEND_MENU_VERSION")
+	@:native("GetCurrentFrontendMenuVersion")
 	static function getCurrentFrontendMenuVersion():Int;
 
 	/**
@@ -1233,19 +1233,19 @@ extern class Hud {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_BLIP_ROTATION")
+	@:native("GetBlipRotation")
 	static function GetBlipRotation(blip:Dynamic):Int;
 
 	/**
 	 * Also see [`GET_NEXT_BLIP_INFO_ID`](#\_0x14F96AA50D6FBEA7) for an example.
 	 */
-	@:native("GET_FIRST_BLIP_INFO_ID")
+	@:native("GetFirstBlipInfoId")
 	static function getFirstBlipInfoId(blipSprite:Int):Dynamic;
 
 	/**
 	 * Gets a localized string literal from a label name. This is used to get the filename of the audio conversation associated with the provided label name.
 	 */
-	@:native("GET_FILENAME_FOR_AUDIO_CONVERSATION")
+	@:native("GetFilenameForAudioConversation")
 	static function getFilenameForAudioConversation(labelName:String):String;
 
 	/**
@@ -1253,7 +1253,7 @@ extern class Hud {
 	 * This function is hard-coded to always return 1.  
 	 * ```
 	 */
-	@:native("GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID")
+	@:native("GetDefaultScriptRendertargetRenderId")
 	static function getDefaultScriptRendertargetRenderId():Int;
 
 	/**
@@ -1261,7 +1261,7 @@ extern class Hud {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_GET_CLOSEST_BLIP_OF_TYPE")
+	@:native("GetClosestBlipOfType")
 	static function GetClosestBlipOfType(blipSprite:Int):Dynamic;
 
 	/**
@@ -1270,7 +1270,7 @@ extern class Hud {
 	 * this world to screen will keep the text on screen. it will keep it in the screen pos
 	 * ```
 	 */
-	@:native("GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION")
+	@:native("GetHudScreenPositionFromWorldPosition")
 	static function getHudScreenPositionFromWorldPosition(worldX:Float, worldY:Float, worldZ:Float, screenX:Dynamic, screenY:Dynamic):Bool;
 
 	/**
@@ -1278,19 +1278,19 @@ extern class Hud {
 	 * 
 	 * HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 	 */
-	@:native("GET_HUD_COLOUR")
+	@:native("GetHudColour")
 	static function getHudColour(hudColorIndex:Int, r:Dynamic, g:Dynamic, b:Dynamic, a:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_HUD_COMPONENT_POSITION")
+	@:native("GetHudComponentPosition")
 	static function getHudComponentPosition(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_WEBSITE_ID")
+	@:native("GetCurrentWebsiteId")
 	static function getCurrentWebsiteId():Int;
 
 	/**
@@ -1298,7 +1298,7 @@ extern class Hud {
 	 * Returns the length of the string passed (much like strlen).  
 	 * ```
 	 */
-	@:native("GET_LENGTH_OF_LITERAL_STRING")
+	@:native("GetLengthOfLiteralString")
 	static function getLengthOfLiteralString(string:String):Int;
 
 	/**
@@ -1313,13 +1313,13 @@ extern class Hud {
 	 * There are 20 flags in total.
 	 * ```
 	 */
-	@:native("GET_GLOBAL_ACTIONSCRIPT_FLAG")
+	@:native("GetGlobalActionscriptFlag")
 	static function getGlobalActionscriptFlag(flagIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LENGTH_OF_LITERAL_STRING_IN_BYTES")
+	@:native("GetLengthOfLiteralStringInBytes")
 	static function getLengthOfLiteralStringInBytes(string:String):Int;
 
 	/**
@@ -1327,13 +1327,13 @@ extern class Hud {
 	 * Returns the string length of the string from the gxt string .  
 	 * ```
 	 */
-	@:native("GET_LENGTH_OF_STRING_WITH_THIS_TEXT_LABEL")
+	@:native("GetLengthOfStringWithThisTextLabel")
 	static function getLengthOfStringWithThisTextLabel(gxt:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MENU_PED_FLOAT_STAT")
+	@:native("GetMenuPedFloatStat")
 	static function getMenuPedFloatStat(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
@@ -1341,73 +1341,73 @@ extern class Hud {
 	 * p0 was always 0xAE2602A3.
 	 * ```
 	 */
-	@:native("GET_MENU_PED_BOOL_STAT")
+	@:native("GetMenuPedBoolStat")
 	static function getMenuPedBoolStat(p0:Int, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MAIN_PLAYER_BLIP_ID")
+	@:native("GetMainPlayerBlipId")
 	static function getMainPlayerBlipId():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MINIMAP_FOW_DISCOVERY_RATIO")
+	@:native("GetMinimapFowDiscoveryRatio")
 	static function getMinimapFowDiscoveryRatio():Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_ACTIVE_BLIPS")
+	@:native("GetNumberOfActiveBlips")
 	static function getNumberOfActiveBlips():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MENU_PED_INT_STAT")
+	@:native("GetMenuPedIntStat")
 	static function getMenuPedIntStat(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MINIMAP_FOW_COORDINATE_IS_REVEALED")
+	@:native("GetMinimapFowCoordinateIsRevealed")
 	static function getMinimapFowCoordinateIsRevealed(x:Float, y:Float, z:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MENU_PED_MASKED_INT_STAT")
+	@:native("GetMenuPedMaskedIntStat")
 	static function getMenuPedMaskedIntStat(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NEW_SELECTED_MISSION_CREATOR_BLIP")
+	@:native("GetNewSelectedMissionCreatorBlip")
 	static function getNewSelectedMissionCreatorBlip():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NAMED_RENDERTARGET_RENDER_ID")
+	@:native("GetNamedRendertargetRenderId")
 	static function getNamedRendertargetRenderId(name:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PAUSE_MENU_SELECTION")
+	@:native("GetPauseMenuSelection")
 	static function GetPauseMenuSelection(lastItemMenuId:Dynamic, selectedItemUniqueId:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NEXT_BLIP_INFO_ID")
+	@:native("GetNextBlipInfoId")
 	static function getNextBlipInfoId(blipSprite:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_NORTH_RADAR_BLIP")
+	@:native("GetNorthRadarBlip")
 	static function GetNorthRadarBlip():Dynamic;
 
 	/**
@@ -1425,13 +1425,13 @@ extern class Hud {
 	 * }
 	 * ```
 	 */
-	@:native("GET_PAUSE_MENU_STATE")
+	@:native("GetPauseMenuState")
 	static function getPauseMenuState():Int;
 
 	/**
 	 * Name between `GET_ONSCREEN_KEYBOARD_RESULT` and `GET_PAUSE_MENU_STATE`. Likely, `GET_PAUSE_MENU_*`.
 	 */
-	@:native("_GET_PAUSE_MENU_CURSOR_POSITION")
+	@:native("GetPauseMenuCursorPosition")
 	static function GetPauseMenuCursorPosition():Dynamic;
 
 	/**
@@ -1442,7 +1442,7 @@ extern class Hud {
 	 * subStr = HUD::_GET_TEXT_SUBSTRING("MY_STRING", 3, 6);
 	 * ```
 	 */
-	@:native("_GET_TEXT_SUBSTRING")
+	@:native("GetTextSubstring")
 	static function GetTextSubstring(text:String, position:Int, length:Int):String;
 
 	/**
@@ -1472,7 +1472,7 @@ extern class Hud {
 	 *     In order to use this Native you MUST have controls 239, 240, 237, 238 enabled!
 	 *     This native, due to its erroneous redundancy of the returned boolean value, works differently in C#: shifting the parameters (where `received` becomes `selectionType` and so on making the fourth parameter unused and always 0).
 	 */
-	@:native("_GET_SCALEFORM_MOVIE_CURSOR_SELECTION")
+	@:native("GetScaleformMovieCursorSelection")
 	static function GetScaleformMovieCursorSelection(scaleformHandle:Int, received:Dynamic, selectionType:Dynamic, context:Dynamic, slotIndex:Dynamic):Bool;
 
 	/**
@@ -1481,13 +1481,13 @@ extern class Hud {
 	 * Old name: _GET_TEXT_SCALE_HEIGHT
 	 * ```
 	 */
-	@:native("GET_RENDERED_CHARACTER_HEIGHT")
+	@:native("GetRenderedCharacterHeight")
 	static function getRenderedCharacterHeight(size:Float, font:Int):Float;
 
 	/**
 	 * Converts the hash of a street name into a readable string. To retrieve a hash for a given (street) coordinate, see [`GET_STREET_NAME_AT_COORD`](#\_0x2EB41072B4C1E4C0).
 	 */
-	@:native("GET_STREET_NAME_FROM_HASH_KEY")
+	@:native("GetStreetNameFromHashKey")
 	static function getStreetNameFromHashKey(hash:Int):String;
 
 	/**
@@ -1511,7 +1511,7 @@ extern class Hud {
 	 * }
 	 * ```
 	 */
-	@:native("_GET_TEXT_SUBSTRING_SAFE")
+	@:native("GetTextSubstringSafe")
 	static function GetTextSubstringSafe(text:String, position:Int, length:Int, maxLength:Int):String;
 
 	/**
@@ -1533,7 +1533,7 @@ extern class Hud {
 	 * selectedItemUniqueId updates as normal
 	 * ```
 	 */
-	@:native("_GET_PAUSE_MENU_SELECTION_DATA")
+	@:native("GetPauseMenuSelectionData")
 	static function GetPauseMenuSelectionData(lastItemMenuId:Dynamic, selectedItemMenuId:Dynamic, selectedItemUniqueId:Dynamic):Dynamic;
 
 	/**
@@ -1541,7 +1541,7 @@ extern class Hud {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_GET_WARNING_MESSAGE_TITLE_HASH")
+	@:native("GetWarningMessageTitleHash")
 	static function GetWarningMessageTitleHash():Int;
 
 	/**
@@ -1554,25 +1554,25 @@ extern class Hud {
 	 * subStr = HUD::_GET_TEXT_SUBSTRING_SLICE("MY_STRING", 3, 10); // "STRING_"?
 	 * ```
 	 */
-	@:native("_GET_TEXT_SUBSTRING_SLICE")
+	@:native("GetTextSubstringSlice")
 	static function GetTextSubstringSlice(text:String, startPosition:Int, endPosition:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STANDARD_BLIP_ENUM_ID")
+	@:native("GetStandardBlipEnumId")
 	static function getStandardBlipEnumId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WAYPOINT_BLIP_ENUM_ID")
+	@:native("GetWaypointBlipEnumId")
 	static function getWaypointBlipEnumId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ADDITIONAL_TEXT_LOADED")
+	@:native("HasAdditionalTextLoaded")
 	static function hasAdditionalTextLoaded(slot:Int):Bool;
 
 	/**
@@ -1582,7 +1582,7 @@ extern class Hud {
 	 * 
 	 * This native is used to "give"/duplicate a player ped to a frontend menu as configured via the `ACTIVATE_FRONTEND_MENU` native, you first must utilize the [CLONE_PED](#\_0xEF29A16337FACADB) to clone said ped.
 	 */
-	@:native("GIVE_PED_TO_PAUSE_MENU")
+	@:native("GivePedToPauseMenu")
 	static function givePedToPauseMenu(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -1590,7 +1590,7 @@ extern class Hud {
 	 * HAS_*
 	 * ```
 	 */
-	@:native("_HAS_DIRECTOR_MODE_BEEN_TRIGGERED")
+	@:native("HasDirectorModeBeenTriggered")
 	static function HasDirectorModeBeenTriggered():Bool;
 
 	/**
@@ -1623,7 +1623,7 @@ extern class Hud {
 	 * 
 	 * These integers also work for the [`SHOW_HUD_COMPONENT_THIS_FRAME`](#\_0x0B4DF1FA60C0E664) native, but instead shows the HUD Component.
 	 */
-	@:native("HIDE_HUD_COMPONENT_THIS_FRAME")
+	@:native("HideHudComponentThisFrame")
 	static function hideHudComponentThisFrame(id:Int):Dynamic;
 
 	/**
@@ -1633,13 +1633,13 @@ extern class Hud {
 	 * Hides area and vehicle name HUD components for one frame.
 	 * ```
 	 */
-	@:native("_HIDE_AREA_AND_VEHICLE_NAME_THIS_FRAME")
+	@:native("HideAreaAndVehicleNameThisFrame")
 	static function HideAreaAndVehicleNameThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_MINIMAP_INTERIOR_MAP_THIS_FRAME")
+	@:native("HideMinimapInteriorMapThisFrame")
 	static function hideMinimapInteriorMapThisFrame():Dynamic;
 
 	/**
@@ -1647,25 +1647,25 @@ extern class Hud {
 	 * Checks if the specified gxt has loaded into the passed slot.  
 	 * ```
 	 */
-	@:native("HAS_THIS_ADDITIONAL_TEXT_LOADED")
+	@:native("HasThisAdditionalTextLoaded")
 	static function hasThisAdditionalTextLoaded(gxt:String, slot:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_HELP_TEXT_THIS_FRAME")
+	@:native("HideHelpTextThisFrame")
 	static function hideHelpTextThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_SCRIPTED_HUD_COMPONENT_THIS_FRAME")
+	@:native("HideScriptedHudComponentThisFrame")
 	static function hideScriptedHudComponentThisFrame(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_LOADING_ON_FADE_THIS_FRAME")
+	@:native("HideLoadingOnFadeThisFrame")
 	static function hideLoadingOnFadeThisFrame():Dynamic;
 
 	/**
@@ -1673,25 +1673,25 @@ extern class Hud {
 	 * I think this works, but seems to prohibit switching to other weapons (or accessing the weapon wheel)  
 	 * ```
 	 */
-	@:native("HIDE_HUD_AND_RADAR_THIS_FRAME")
+	@:native("HideHudAndRadarThisFrame")
 	static function hideHudAndRadarThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_MINIMAP_EXTERIOR_MAP_THIS_FRAME")
+	@:native("HideMinimapExteriorMapThisFrame")
 	static function hideMinimapExteriorMapThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HIDE_NUMBER_ON_BLIP")
+	@:native("HideNumberOnBlip")
 	static function hideNumberOnBlip(blip:Dynamic):Dynamic;
 
 	/**
 	 * Displays loading screen tips, requires `_0x56C8B608CFD49854` to be called beforehand.
 	 */
-	@:native("_HUD_DISPLAY_LOADING_SCREEN_TIPS")
+	@:native("HudDisplayLoadingScreenTips")
 	static function HudDisplayLoadingScreenTips():Dynamic;
 
 	/**
@@ -1699,7 +1699,7 @@ extern class Hud {
 	 * Set the active slotIndex in the wheel weapon to the slot associated with the provided Weapon hash
 	 * ```
 	 */
-	@:native("HUD_SET_WEAPON_WHEEL_TOP_SLOT")
+	@:native("HudSetWeaponWheelTopSlot")
 	static function hudSetWeaponWheelTopSlot(weaponHash:Int):Dynamic;
 
 	/**
@@ -1707,7 +1707,7 @@ extern class Hud {
 	 * Returns the weapon hash active in a specific weapon wheel slotList
 	 * ```
 	 */
-	@:native("_HUD_WEAPON_WHEEL_GET_SLOT_HASH")
+	@:native("HudWeaponWheelGetSlotHash")
 	static function HudWeaponWheelGetSlotHash(weaponTypeIndex:Int):Int;
 
 	/**
@@ -1715,19 +1715,19 @@ extern class Hud {
 	 * Forces the weapon wheel to show/hide.
 	 * ```
 	 */
-	@:native("HUD_FORCE_WEAPON_WHEEL")
+	@:native("HudForceWeaponWheel")
 	static function hudForceWeaponWheel(show:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BLIP_ON_MINIMAP")
+	@:native("IsBlipOnMinimap")
 	static function isBlipOnMinimap(blip:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BLIP_FLASHING")
+	@:native("IsBlipFlashing")
 	static function isBlipFlashing(blip:Dynamic):Bool;
 
 	/**
@@ -1735,7 +1735,7 @@ extern class Hud {
 	 * Sets a global that disables many weapon input tasks (shooting, aiming, etc.). Does not work with vehicle weapons, only used in selector.ysc
 	 * ```
 	 */
-	@:native("_HUD_WEAPON_WHEEL_IGNORE_CONTROL_INPUT")
+	@:native("HudWeaponWheelIgnoreControlInput")
 	static function HudWeaponWheelIgnoreControlInput(toggle:Bool):Dynamic;
 
 	/**
@@ -1743,19 +1743,19 @@ extern class Hud {
 	 * Returns the weapon hash to the selected/highlighted weapon in the wheel
 	 * ```
 	 */
-	@:native("_HUD_WEAPON_WHEEL_GET_SELECTED_HASH")
+	@:native("HudWeaponWheelGetSelectedHash")
 	static function HudWeaponWheelGetSelectedHash():Int;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FLOATING_HELP_TEXT_ON_SCREEN")
+	@:native("IsFloatingHelpTextOnScreen")
 	static function isFloatingHelpTextOnScreen(hudIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HELP_MESSAGE_FADING_OUT")
+	@:native("IsHelpMessageFadingOut")
 	static function isHelpMessageFadingOut():Bool;
 
 	/**
@@ -1763,13 +1763,13 @@ extern class Hud {
 	 * Calling this each frame, stops the player from receiving a weapon via the weapon wheel.
 	 * ```
 	 */
-	@:native("_HUD_WEAPON_WHEEL_IGNORE_SELECTION")
+	@:native("HudWeaponWheelIgnoreSelection")
 	static function HudWeaponWheelIgnoreSelection():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BLIP_SHORT_RANGE")
+	@:native("IsBlipShortRange")
 	static function isBlipShortRange(blip:Dynamic):Bool;
 
 	/**
@@ -1801,103 +1801,103 @@ extern class Hud {
 	 * MAX_SCRIPTED_HUD_COMPONENTS = 141;  
 	 * ```
 	 */
-	@:native("IS_HUD_COMPONENT_ACTIVE")
+	@:native("IsHudComponentActive")
 	static function isHudComponentActive(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_FRONTEND_READY_FOR_CONTROL")
+	@:native("IsFrontendReadyForControl")
 	static function isFrontendReadyForControl():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HELP_MESSAGE_BEING_DISPLAYED")
+	@:native("IsHelpMessageBeingDisplayed")
 	static function isHelpMessageBeingDisplayed():Bool;
 
 	/**
 	 * **Note:** The buttons need to support mouse (with the `TOGGLE_MOUSE_SUPPORT` scaleform movie method) for it to return `true`.
 	 */
-	@:native("IS_MOUSE_ROLLED_OVER_INSTRUCTIONAL_BUTTONS")
+	@:native("IsMouseRolledOverInstructionalButtons")
 	static function isMouseRolledOverInstructionalButtons():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HELP_MESSAGE_ON_SCREEN")
+	@:native("IsHelpMessageOnScreen")
 	static function isHelpMessageOnScreen():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HOVERING_OVER_MISSION_CREATOR_BLIP")
+	@:native("IsHoveringOverMissionCreatorBlip")
 	static function isHoveringOverMissionCreatorBlip():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MESSAGE_BEING_DISPLAYED")
+	@:native("IsMessageBeingDisplayed")
 	static function isMessageBeingDisplayed():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HUD_HIDDEN")
+	@:native("IsHudHidden")
 	static function isHudHidden():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MP_GAMER_TAG_MOVIE_ACTIVE")
+	@:native("IsMpGamerTagMovieActive")
 	static function isMpGamerTagMovieActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MINIMAP_RENDERING")
+	@:native("IsMinimapRendering")
 	static function isMinimapRendering():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MP_GAMER_TAG_FREE")
+	@:native("IsMpGamerTagFree")
 	static function isMpGamerTagFree(gamerTagId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HUD_PREFERENCE_SWITCHED_ON")
+	@:native("IsHudPreferenceSwitchedOn")
 	static function isHudPreferenceSwitchedOn():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NAMED_RENDERTARGET_LINKED")
+	@:native("IsNamedRendertargetLinked")
 	static function isNamedRendertargetLinked(modelHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MISSION_CREATOR_BLIP")
+	@:native("IsMissionCreatorBlip")
 	static function isMissionCreatorBlip(blip:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MP_GAMER_TAG_ACTIVE")
+	@:native("IsMpGamerTagActive")
 	static function isMpGamerTagActive(gamerTagId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NAVIGATING_MENU_CONTENT")
+	@:native("IsNavigatingMenuContent")
 	static function isNavigatingMenuContent():Dynamic;
 
 	/**
 	 * Returns the same as `IS_SOCIAL_CLUB_ACTIVE`.
 	 */
-	@:native("IS_ONLINE_POLICIES_MENU_ACTIVE")
+	@:native("IsOnlinePoliciesMenuActive")
 	static function isOnlinePoliciesMenuActive():Bool;
 
 	/**
@@ -1905,85 +1905,85 @@ extern class Hud {
 	 * Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.  
 	 * ```
 	 */
-	@:native("_IS_MULTIPLAYER_CHAT_ACTIVE")
+	@:native("IsMultiplayerChatActive")
 	static function IsMultiplayerChatActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PAUSE_MENU_ACTIVE")
+	@:native("IsPauseMenuActive")
 	static function isPauseMenuActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_RADAR_HIDDEN")
+	@:native("IsRadarHidden")
 	static function isRadarHidden():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_NAMED_RENDERTARGET_REGISTERED")
+	@:native("IsNamedRendertargetRegistered")
 	static function isNamedRendertargetRegistered(name:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_REPORTUGC_MENU_OPEN")
+	@:native("IsReportugcMenuOpen")
 	static function isReportugcMenuOpen():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCRIPTED_HUD_COMPONENT_ACTIVE")
+	@:native("IsScriptedHudComponentActive")
 	static function isScriptedHudComponentActive(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PAUSE_MENU_RESTARTING")
+	@:native("IsPauseMenuRestarting")
 	static function isPauseMenuRestarting():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PAUSEMAP_IN_INTERIOR_MODE")
+	@:native("IsPausemapInInteriorMode")
 	static function isPausemapInInteriorMode():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STREAMING_ADDITIONAL_TEXT")
+	@:native("IsStreamingAdditionalText")
 	static function isStreamingAdditionalText(p0:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SOCIAL_CLUB_ACTIVE")
+	@:native("IsSocialClubActive")
 	static function isSocialClubActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_RADAR_PREFERENCE_SWITCHED_ON")
+	@:native("IsRadarPreferenceSwitchedOn")
 	static function isRadarPreferenceSwitchedOn():Bool;
 
 	/**
 	 * Returns true if a Warning Message or ReportUGC menu is active.
 	 */
-	@:native("IS_WARNING_MESSAGE_ACTIVE")
+	@:native("IsWarningMessageActive")
 	static function isWarningMessageActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCRIPTED_HUD_COMPONENT_HIDDEN_THIS_FRAME")
+	@:native("IsScriptedHudComponentHiddenThisFrame")
 	static function isScriptedHudComponentHiddenThisFrame(id:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SUBTITLE_PREFERENCE_SWITCHED_ON")
+	@:native("IsSubtitlePreferenceSwitchedOn")
 	static function isSubtitlePreferenceSwitchedOn():Bool;
 
 	/**
@@ -1991,13 +1991,13 @@ extern class Hud {
 	 * IS_WARNING_MESSAGE_*
 	 * ```
 	 */
-	@:native("_IS_WARNING_MESSAGE_ACTIVE_2")
+	@:native("IsWarningMessageActive_2")
 	static function IsWarningMessageActive2():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LINK_NAMED_RENDERTARGET")
+	@:native("LinkNamedRendertarget")
 	static function linkNamedRendertarget(modelHash:Int):Dynamic;
 
 	/**
@@ -2005,7 +2005,7 @@ extern class Hud {
 	 * IS_*
 	 * ```
 	 */
-	@:native("_IS_VALID_MP_GAMER_TAG_MOVIE")
+	@:native("IsValidMpGamerTagMovie")
 	static function IsValidMpGamerTagMovie(gamerTagId:Int):Bool;
 
 	/**
@@ -2013,13 +2013,13 @@ extern class Hud {
 	 * Locks the minimap to the specified world position.  
 	 * ```
 	 */
-	@:native("LOCK_MINIMAP_POSITION")
+	@:native("LockMinimapPosition")
 	static function lockMinimapPosition(x:Float, y:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_WAYPOINT_ACTIVE")
+	@:native("IsWaypointActive")
 	static function isWaypointActive():Bool;
 
 	/**
@@ -2028,7 +2028,7 @@ extern class Hud {
 	 * angle: The angle in whole degrees. If less than 0 or greater than 360, unlocks the angle.  
 	 * ```
 	 */
-	@:native("LOCK_MINIMAP_ANGLE")
+	@:native("LockMinimapAngle")
 	static function lockMinimapAngle(angle:Int):Dynamic;
 
 	/**
@@ -2037,13 +2037,13 @@ extern class Hud {
 	 * _LOG_DEBUG_INFO(const char* category, const char* debugText);
 	 * ```
 	 */
-	@:native("_LOG_DEBUG_INFO")
+	@:native("LogDebugInfo")
 	static function LogDebugInfo(p0:String):Dynamic;
 
 	/**
 	 * Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.
 	 */
-	@:native("THEFEED_FORCE_RENDER_OFF")
+	@:native("ThefeedForceRenderOff")
 	static function thefeedForceRenderOff():Dynamic;
 
 	/**
@@ -2051,37 +2051,37 @@ extern class Hud {
 	 * Displays "normal" notifications again after calling `_0x56C8B608CFD49854` (those that were drawn before calling this native too), though those will have a weird offset and stay on screen forever (tested with notifications created from same script).
 	 * ```
 	 */
-	@:native("THEFEED_COMMENT_TELEPORT_POOL_OFF")
+	@:native("ThefeedCommentTeleportPoolOff")
 	static function thefeedCommentTeleportPoolOff():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_OVERRIDE_MULTIPLAYER_CHAT_COLOUR")
+	@:native("OverrideMultiplayerChatColour")
 	static function OverrideMultiplayerChatColour(p0:Int, hudColor:Int):Dynamic;
 
 	/**
 	 * Uses the `SOCIAL_CLUB2` scaleform.
 	 */
-	@:native("OPEN_SOCIAL_CLUB_MENU")
+	@:native("OpenSocialClubMenu")
 	static function openSocialClubMenu():Dynamic;
 
 	/**
 	 * Sets a loading icon in the pause menu.
 	 */
-	@:native("PAUSE_MENU_SET_BUSY_SPINNER")
+	@:native("PauseMenuSetBusySpinner")
 	static function pauseMenuSetBusySpinner(bVisible:Bool, iColumnID:Int, iSpinnerIndex:Int):Dynamic;
 
 	/**
 	 * Forces the Pause Menu to back out of unique pages such as Awards, Unlocks, Key Bindings etc
 	 */
-	@:native("PAUSE_MENUCEPTION_THE_KICK")
+	@:native("PauseMenuceptionTheKick")
 	static function pauseMenuceptionTheKick():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("OPEN_ONLINE_POLICIES_MENU")
+	@:native("OpenOnlinePoliciesMenu")
 	static function openOnlinePoliciesMenu():Dynamic;
 
 	/**
@@ -2120,7 +2120,7 @@ extern class Hud {
 	 * > // Old
 	 * > Scripts do not make this native's purpose clear. However, this native most likely has something to do with decals since in nearly every instance, "OBJECT_DECAL_TOGGLE" is called prior.
 	 */
-	@:native("PAUSE_MENU_ACTIVATE_CONTEXT")
+	@:native("PauseMenuActivateContext")
 	static function pauseMenuActivateContext(hash:Int):Dynamic;
 
 	/**
@@ -2128,43 +2128,43 @@ extern class Hud {
 	 * Shows a menu for reporting UGC content.
 	 * ```
 	 */
-	@:native("OPEN_REPORTUGC_MENU")
+	@:native("OpenReportugcMenu")
 	static function openReportugcMenu():Dynamic;
 
 	/**
 	 * Disables the loading spinner in Pause Menu when switching from one header tab to another.
 	 */
-	@:native("_PAUSE_MENU_DISABLE_BUSYSPINNER")
+	@:native("PauseMenuDisableBusyspinner")
 	static function PauseMenuDisableBusyspinner(toggle:Bool):Dynamic;
 
 	/**
 	 * Toggles pause menu map rendering.
 	 */
-	@:native("PAUSE_TOGGLE_FULLSCREEN_MAP")
+	@:native("PauseToggleFullscreenMap")
 	static function pauseToggleFullscreenMap(enabled:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_MENU_DEACTIVATE_CONTEXT")
+	@:native("PauseMenuDeactivateContext")
 	static function pauseMenuDeactivateContext(contextHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_OVERRIDE_MULTIPLAYER_CHAT_PREFIX")
+	@:native("OverrideMultiplayerChatPrefix")
 	static function OverrideMultiplayerChatPrefix(gxtEntryHash:Int):Dynamic;
 
 	/**
 	 * If mouse is hovering on a slot, it returns uniqueid of that slot, else it returns -1.
 	 */
-	@:native("_PAUSE_MENU_GET_UNIQUE_ID_OF_MOUSE_HOVERED_SLOT")
+	@:native("PauseMenuGetUniqueIdOfMouseHoveredSlot")
 	static function PauseMenuGetUniqueIdOfMouseHoveredSlot():Int;
 
 	/**
 	 * If mouse is hovering on a slot, it returns the slot's index, else it returns -1.
 	 */
-	@:native("_PAUSE_MENU_GET_INDEX_OF_MOUSE_HOVERED_SLOT")
+	@:native("PauseMenuGetIndexOfMouseHoveredSlot")
 	static function PauseMenuGetIndexOfMouseHoveredSlot():Int;
 
 	/**
@@ -2172,43 +2172,43 @@ extern class Hud {
 	 * Add a BLIP_GALLERY at the specific coordinate. Used in fm_maintain_transition_players to display race track points.
 	 * ```
 	 */
-	@:native("_RACE_GALLERY_ADD_BLIP")
+	@:native("RaceGalleryAddBlip")
 	static function RaceGalleryAddBlip(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * Updates instructional buttons in Pause Menu after menu contexts have been toggled. p0 purpose is currently unknown, only 0 is used in scripts.
 	 */
-	@:native("PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS")
+	@:native("PauseMenuRedrawInstructionalButtons")
 	static function pauseMenuRedrawInstructionalButtons(p0:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_MENU_IS_CONTEXT_MENU_ACTIVE")
+	@:native("PauseMenuIsContextMenuActive")
 	static function pauseMenuIsContextMenuActive():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REGISTER_NAMED_RENDERTARGET")
+	@:native("RegisterNamedRendertarget")
 	static function registerNamedRendertarget(name:String, p1:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PRELOAD_BUSYSPINNER")
+	@:native("PreloadBusyspinner")
 	static function preloadBusyspinner():Dynamic;
 
 	/**
 	 * Shows this warning message when trying to switch pause menu header tabs: https://i.imgur.com/8qmfztu.png
 	 */
-	@:native("PAUSE_MENU_SET_WARN_ON_TAB_CHANGE")
+	@:native("PauseMenuSetWarnOnTabChange")
 	static function pauseMenuSetWarnOnTabChange(setWarn:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_MENU_IS_CONTEXT_ACTIVE")
+	@:native("PauseMenuIsContextActive")
 	static function pauseMenuIsContextActive(contextHash:Int):Bool;
 
 	/**
@@ -2217,26 +2217,26 @@ extern class Hud {
 	 * If toggle is false, the map is shown in normal mode
 	 * ```
 	 */
-	@:native("_RACE_GALLERY_FULLSCREEN")
+	@:native("RaceGalleryFullscreen")
 	static function RaceGalleryFullscreen(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PULSE_BLIP")
+	@:native("PulseBlip")
 	static function pulseBlip(blip:Dynamic):Dynamic;
 
 	/**
 	 * Forces the map menu to reload.
 	 */
-	@:native("RELOAD_MAP_MENU")
+	@:native("ReloadMapMenu")
 	static function reloadMapMenu():Dynamic;
 
 	/**
 	 * Sets current pause menu page/component to the specified value.
 	 * Available page IDs: https://pastebin.com/qxuhwjPT
 	 */
-	@:native("PAUSE_MENUCEPTION_GO_DEEPER")
+	@:native("PauseMenuceptionGoDeeper")
 	static function pauseMenuceptionGoDeeper(pageId:Int):Dynamic;
 
 	/**
@@ -2244,13 +2244,13 @@ extern class Hud {
 	 * 
 	 * To disable the keys, use [`0xEC9264727EEC0F28`](#\_0xEC9264727EEC0F28).
 	 */
-	@:native("RELEASE_CONTROL_OF_FRONTEND")
+	@:native("ReleaseControlOfFrontend")
 	static function releaseControlOfFrontend():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_MULTIPLAYER_BANK_CASH")
+	@:native("RemoveMultiplayerBankCash")
 	static function removeMultiplayerBankCash():Dynamic;
 
 	/**
@@ -2258,19 +2258,19 @@ extern class Hud {
 	 * Sets the sprite of the next BLIP_GALLERY blip, values used in the native scripts: 143 (ObjectiveBlue), 144 (ObjectiveGreen), 145 (ObjectiveRed), 146 (ObjectiveYellow).
 	 * ```
 	 */
-	@:native("_RACE_GALLERY_NEXT_BLIP_SPRITE")
+	@:native("RaceGalleryNextBlipSprite")
 	static function RaceGalleryNextBlipSprite(spriteId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_MULTIPLAYER_WALLET_CASH")
+	@:native("RemoveMultiplayerWalletCash")
 	static function removeMultiplayerWalletCash():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_REMOVE_WARNING_MESSAGE_LIST_ITEMS")
+	@:native("RemoveWarningMessageListItems")
 	static function RemoveWarningMessageListItems():Dynamic;
 
 	/**
@@ -2278,7 +2278,7 @@ extern class Hud {
 	 * 
 	 * **Note:** This function only works on the script that created the blip, if you wish to remove blips created by other scripts, see [`SET_THIS_SCRIPT_CAN_REMOVE_BLIPS_CREATED_BY_ANY_SCRIPT`](#\_0x86A652570E5F25DD).
 	 */
-	@:native("REMOVE_BLIP")
+	@:native("RemoveBlip")
 	static function removeBlip(blip:Dynamic):Dynamic;
 
 	/**
@@ -2286,19 +2286,19 @@ extern class Hud {
 	 * 
 	 * HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 	 */
-	@:native("REPLACE_HUD_COLOUR")
+	@:native("ReplaceHudColour")
 	static function replaceHudColour(hudColorIndex:Int, hudColorIndex2:Int):Dynamic;
 
 	/**
 	 * Hud colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 	 */
-	@:native("REPLACE_HUD_COLOUR_WITH_RGBA")
+	@:native("ReplaceHudColourWithRgba")
 	static function replaceHudColourWithRgba(hudColorIndex:Int, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REFRESH_WAYPOINT")
+	@:native("RefreshWaypoint")
 	static function refreshWaypoint():Dynamic;
 
 	/**
@@ -2306,7 +2306,7 @@ extern class Hud {
 	 * Removes multiplayer cash hud each frame  
 	 * ```
 	 */
-	@:native("REMOVE_MULTIPLAYER_HUD_CASH")
+	@:native("RemoveMultiplayerHudCash")
 	static function removeMultiplayerHudCash():Dynamic;
 
 	/**
@@ -2314,43 +2314,43 @@ extern class Hud {
 	 * Request a gxt into the passed slot.  
 	 * ```
 	 */
-	@:native("REQUEST_ADDITIONAL_TEXT")
+	@:native("RequestAdditionalText")
 	static function requestAdditionalText(gxt:String, slot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_ADDITIONAL_TEXT_FOR_DLC")
+	@:native("RequestAdditionalTextForDlc")
 	static function requestAdditionalTextForDlc(gxt:String, slot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_NAMED_RENDERTARGET")
+	@:native("ReleaseNamedRendertarget")
 	static function releaseNamedRendertarget(name:String):Bool;
 
 	/**
 	 * Removes the gamer tag associated with the provided ID. This does not happen instantly. Use [IS_MP_GAMER_TAG_FREE](#\_0x595B5178E412E199) to determine when the ID is free for reuse.
 	 */
-	@:native("REMOVE_MP_GAMER_TAG")
+	@:native("RemoveMpGamerTag")
 	static function removeMpGamerTag(gamerTagId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_RETICULE_VALUES")
+	@:native("ResetReticuleValues")
 	static function resetReticuleValues():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_HUD_COMPONENT_VALUES")
+	@:native("ResetHudComponentValues")
 	static function resetHudComponentValues(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ABILITY_BAR_VALUE")
+	@:native("SetAbilityBarValue")
 	static function setAbilityBarValue(value:Float, maxValue:Float):Dynamic;
 
 	/**
@@ -2358,13 +2358,13 @@ extern class Hud {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_SET_ALLOW_ABILITY_BAR_IN_MULTIPLAYER")
+	@:native("SetAllowAbilityBarInMultiplayer")
 	static function SetAllowAbilityBarInMultiplayer(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_GLOBAL_ACTIONSCRIPT_FLAG")
+	@:native("ResetGlobalActionscriptFlag")
 	static function resetGlobalActionscriptFlag(flagIndex:Int):Dynamic;
 
 	/**
@@ -2372,7 +2372,7 @@ extern class Hud {
 	 * 
 	 * To get the current state of the minimap, use [`IS_BIGMAP_ACTIVE`](#\_0xFFF65C63).
 	 */
-	@:native("SET_BIGMAP_ACTIVE")
+	@:native("SetBigmapActive")
 	static function setBigmapActive(toggleBigMap:Bool, showFullMap:Bool):Dynamic;
 
 	/**
@@ -2380,7 +2380,7 @@ extern class Hud {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER")
+	@:native("SetAbilityBarVisibilityInMultiplayer")
 	static function SetAbilityBarVisibilityInMultiplayer(visible:Bool):Dynamic;
 
 	/**
@@ -2392,49 +2392,49 @@ extern class Hud {
 	 * HUD::SET_BLIP_ALPHA(blip , 64);
 	 * ```
 	 */
-	@:native("SET_BLIP_ALPHA")
+	@:native("SetBlipAlpha")
 	static function setBlipAlpha(blip:Dynamic, alpha:Int):Dynamic;
 
 	/**
 	 * Sets whether or not the specified blip should only be displayed when nearby, or on the minimap.
 	 */
-	@:native("SET_BLIP_AS_SHORT_RANGE")
+	@:native("SetBlipAsShortRange")
 	static function setBlipAsShortRange(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Changes the current frontend menu to the desired frontend menu version.
 	 */
-	@:native("RESTART_FRONTEND_MENU")
+	@:native("RestartFrontendMenu")
 	static function restartFrontendMenu(menuHash:Int, highlightedTab:Int):Dynamic;
 
 	/**
 	 * Allows the user to set a blip as friendly or enemy based on the toggle.
 	 */
-	@:native("SET_BLIP_AS_FRIENDLY")
+	@:native("SetBlipAsFriendly")
 	static function setBlipAsFriendly(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_BRIGHT")
+	@:native("SetBlipBright")
 	static function setBlipBright(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_COLOUR")
+	@:native("SetBlipColour")
 	static function setBlipColour(blip:Dynamic, color:Int):Dynamic;
 
 	/**
 	 * **NOTE:** This must be called before you open the text input box.
 	 */
-	@:native("SET_ALLOW_COMMA_ON_TEXT_INPUT")
+	@:native("SetAllowCommaOnTextInput")
 	static function setAllowCommaOnTextInput(allow:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_COORDS")
+	@:native("SetBlipCoords")
 	static function setBlipCoords(blip:Dynamic, posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
@@ -2442,7 +2442,7 @@ extern class Hud {
 	 * Must be toggled before being queued for animation
 	 * ```
 	 */
-	@:native("_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP")
+	@:native("SetBlipDisplayIndicatorOnBlip")
 	static function SetBlipDisplayIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2466,19 +2466,19 @@ extern class Hud {
 	 * 
 	 * Rockstar seem to only use 0, 2, 3, 4, 5 and 8 in the decompiled scripts.
 	 */
-	@:native("SET_BLIP_DISPLAY")
+	@:native("SetBlipDisplay")
 	static function setBlipDisplay(blip:Dynamic, displayId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_AS_MISSION_CREATOR_BLIP")
+	@:native("SetBlipAsMissionCreatorBlip")
 	static function setBlipAsMissionCreatorBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_HIGH_DETAIL")
+	@:native("SetBlipHighDetail")
 	static function setBlipHighDetail(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2508,37 +2508,37 @@ extern class Hud {
 	 * | 10 | Property | `BLIP_PROPCAT` |
 	 * | 11 | Owned Property | `BLIP_APARTCAT` |
 	 */
-	@:native("SET_BLIP_CATEGORY")
+	@:native("SetBlipCategory")
 	static function setBlipCategory(blip:Dynamic, index:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_FADE")
+	@:native("SetBlipFade")
 	static function setBlipFade(blip:Dynamic, opacity:Int, duration:Int):Dynamic;
 
 	/**
 	 * Sets the interval in milliseconds before flashing the blip.
 	 */
-	@:native("SET_BLIP_FLASH_INTERVAL")
+	@:native("SetBlipFlashInterval")
 	static function setBlipFlashInterval(blip:Dynamic, interval:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_NAME_TO_PLAYER_NAME")
+	@:native("SetBlipNameToPlayerName")
 	static function setBlipNameToPlayerName(blip:Dynamic, player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_FLASHES")
+	@:native("SetBlipFlashes")
 	static function setBlipFlashes(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Flashes blip for time in milliseconds before stopping.
 	 */
-	@:native("SET_BLIP_FLASH_TIMER")
+	@:native("SetBlipFlashTimer")
 	static function setBlipFlashTimer(blip:Dynamic, duration:Int):Dynamic;
 
 	/**
@@ -2546,19 +2546,19 @@ extern class Hud {
 	 * Enable / disable showing route for the Blip-object.  
 	 * ```
 	 */
-	@:native("SET_BLIP_ROUTE")
+	@:native("SetBlipRoute")
 	static function setBlipRoute(blip:Dynamic, enabled:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_FLASHES_ALTERNATE")
+	@:native("SetBlipFlashesAlternate")
 	static function setBlipFlashesAlternate(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_SCALE")
+	@:native("SetBlipScale")
 	static function setBlipScale(blip:Dynamic, scale:Float):Dynamic;
 
 	/**
@@ -2566,7 +2566,7 @@ extern class Hud {
 	 * See this topic for more details : gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-35?p=1069477935  
 	 * ```
 	 */
-	@:native("SET_BLIP_PRIORITY")
+	@:native("SetBlipPriority")
 	static function setBlipPriority(blip:Dynamic, priority:Int):Dynamic;
 
 	/**
@@ -2574,19 +2574,19 @@ extern class Hud {
 	 * Doesn't work if the label text of gxtEntry is >= 80.  
 	 * ```
 	 */
-	@:native("SET_BLIP_NAME_FROM_TEXT_FILE")
+	@:native("SetBlipNameFromTextFile")
 	static function setBlipNameFromTextFile(blip:Dynamic, gxtEntry:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_HIDDEN_ON_LEGEND")
+	@:native("SetBlipHiddenOnLegend")
 	static function setBlipHiddenOnLegend(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_ROUTE_COLOUR")
+	@:native("SetBlipRouteColour")
 	static function setBlipRouteColour(blip:Dynamic, colour:Int):Dynamic;
 
 	/**
@@ -2594,7 +2594,7 @@ extern class Hud {
 	 * 
 	 * There's a [list of sprites](https://docs.fivem.net/game-references/blips/) on the FiveM documentation site.
 	 */
-	@:native("SET_BLIP_SPRITE")
+	@:native("SetBlipSprite")
 	static function setBlipSprite(blip:Dynamic, spriteId:Int):Dynamic;
 
 	/**
@@ -2602,13 +2602,13 @@ extern class Hud {
 	 * After some testing, looks like you need to use CEIL() on the rotation (vehicle/ped heading) before using it there.
 	 * ```
 	 */
-	@:native("SET_BLIP_ROTATION")
+	@:native("SetBlipRotation")
 	static function setBlipRotation(blip:Dynamic, rotation:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BLIP_SECONDARY_COLOUR")
+	@:native("SetBlipSecondaryColour")
 	static function setBlipSecondaryColour(blip:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
@@ -2618,7 +2618,7 @@ extern class Hud {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_SET_BLIP_SCALE_TRANSFORMATION")
+	@:native("SetBlipScaleTransformation")
 	static function SetBlipScaleTransformation(blip:Dynamic, xScale:Float, yScale:Float):Dynamic;
 
 	/**
@@ -2626,7 +2626,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("SET_BLIP_SHOW_CONE")
+	@:native("SetBlipShowCone")
 	static function setBlipShowCone(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2634,7 +2634,7 @@ extern class Hud {
 	 * Does not require whole number/integer rotations.
 	 * ```
 	 */
-	@:native("_SET_BLIP_SQUARED_ROTATION")
+	@:native("SetBlipSquaredRotation")
 	static function SetBlipSquaredRotation(blip:Dynamic, heading:Float):Dynamic;
 
 	/**
@@ -2643,19 +2643,19 @@ extern class Hud {
 	 * SET_BLIP_AS_*
 	 * ```
 	 */
-	@:native("_SET_BLIP_SHRINK")
+	@:native("SetBlipShrink")
 	static function SetBlipShrink(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Overrides the position of the main player blip for the current frame.
 	 */
-	@:native("SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME")
+	@:native("SetFakePausemapPlayerPositionThisFrame")
 	static function setFakePausemapPlayerPositionThisFrame(x:Float, y:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_COLOUR_OF_NEXT_TEXT_COMPONENT")
+	@:native("SetColourOfNextTextComponent")
 	static function setColourOfNextTextComponent(hudColor:Int):Dynamic;
 
 	/**
@@ -2663,7 +2663,7 @@ extern class Hud {
 	 * SET_*
 	 * ```
 	 */
-	@:native("_SET_DIRECTOR_MODE_CLEAR_TRIGGERED_FLAG")
+	@:native("SetDirectorModeClearTriggeredFlag")
 	static function SetDirectorModeClearTriggeredFlag():Dynamic;
 
 	/**
@@ -2913,19 +2913,19 @@ extern class Hud {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("SET_CUSTOM_MP_HUD_COLOR")
+	@:native("SetCustomMpHudColor")
 	static function setCustomMpHudColor(hudColorId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLOATING_HELP_TEXT_WORLD_POSITION")
+	@:native("SetFloatingHelpTextWorldPosition")
 	static function setFloatingHelpTextWorldPosition(hudIndex:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLOATING_HELP_TEXT_SCREEN_POSITION")
+	@:native("SetFloatingHelpTextScreenPosition")
 	static function setFloatingHelpTextScreenPosition(hudIndex:Int, x:Float, y:Float):Dynamic;
 
 	/**
@@ -2947,19 +2947,19 @@ extern class Hud {
 	 * 
 	 * ![Preview of the provided example code](https://forum.cfx.re/uploads/default/original/4X/7/f/3/7f319bc93c3a00b8829bd4ac8dddc235fbf3a9ef.png)
 	 */
-	@:native("SET_FLOATING_HELP_TEXT_STYLE")
+	@:native("SetFloatingHelpTextStyle")
 	static function setFloatingHelpTextStyle(hudIndex:Int, style:Int, hudColor:Int, alpha:Int, arrowPosition:Int, boxOffset:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GPS_FLASHES")
+	@:native("SetGpsFlashes")
 	static function setGpsFlashes(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FLOATING_HELP_TEXT_TO_ENTITY")
+	@:native("SetFloatingHelpTextToEntity")
 	static function setFloatingHelpTextToEntity(hudIndex:Int, entity:Dynamic, offsetX:Float, offsetY:Float):Dynamic;
 
 	/**
@@ -2968,31 +2968,31 @@ extern class Hud {
 	 * Doesn't seem like the flags are actually read by the game at all.
 	 * ```
 	 */
-	@:native("SET_GPS_FLAGS")
+	@:native("SetGpsFlags")
 	static function setGpsFlags(p0:Int, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FRONTEND_ACTIVE")
+	@:native("SetFrontendActive")
 	static function setFrontendActive(active:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HEALTH_HUD_DISPLAY_VALUES")
+	@:native("SetHealthHudDisplayValues")
 	static function setHealthHudDisplayValues(health:Int, capacity:Int, wasAdded:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GPS_CUSTOM_ROUTE_RENDER")
+	@:native("SetGpsCustomRouteRender")
 	static function setGpsCustomRouteRender(toggle:Bool, radarThickness:Int, mapThickness:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GPS_MULTI_ROUTE_RENDER")
+	@:native("SetGpsMultiRouteRender")
 	static function setGpsMultiRouteRender(toggle:Bool):Dynamic;
 
 	/**
@@ -3000,13 +3000,13 @@ extern class Hud {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_INTERIOR_ZOOM_LEVEL_DECREASED")
+	@:native("SetInteriorZoomLevelDecreased")
 	static function SetInteriorZoomLevelDecreased(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_HELP_MESSAGE_TEXT_STYLE")
+	@:native("SetHelpMessageTextStyle")
 	static function SetHelpMessageTextStyle(style:Int, hudColor:Int, alpha:Int, p3:Int, p4:Int):Dynamic;
 
 	/**
@@ -3014,31 +3014,31 @@ extern class Hud {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_INTERIOR_ZOOM_LEVEL_INCREASED")
+	@:native("SetInteriorZoomLevelIncreased")
 	static function SetInteriorZoomLevelIncreased(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HUD_COMPONENT_POSITION")
+	@:native("SetHudComponentPosition")
 	static function setHudComponentPosition(id:Int, x:Float, y:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MINIMAP_BLOCK_WAYPOINT")
+	@:native("SetMinimapBlockWaypoint")
 	static function setMinimapBlockWaypoint(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_MAIN_PLAYER_BLIP_COLOUR")
+	@:native("SetMainPlayerBlipColour")
 	static function SetMainPlayerBlipColour(color:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MAX_ARMOUR_HUD_DISPLAY")
+	@:native("SetMaxArmourHudDisplay")
 	static function setMaxArmourHudDisplay(maximumValue:Int):Dynamic;
 
 	/**
@@ -3050,13 +3050,13 @@ extern class Hud {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("_SET_MINIMAP_ALTITUDE_INDICATOR_LEVEL")
+	@:native("SetMinimapAltitudeIndicatorLevel")
 	static function SetMinimapAltitudeIndicatorLevel(altitude:Float, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MAX_HEALTH_HUD_DISPLAY")
+	@:native("SetMaxHealthHudDisplay")
 	static function setMaxHealthHudDisplay(maximumValue:Int):Dynamic;
 
 	/**
@@ -3064,13 +3064,13 @@ extern class Hud {
 	 * If true, the entire map will be revealed.
 	 * ```
 	 */
-	@:native("SET_MINIMAP_HIDE_FOW")
+	@:native("SetMinimapHideFow")
 	static function setMinimapHideFow(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MINIMAP_FOW_REVEAL_COORDINATE")
+	@:native("SetMinimapFowRevealCoordinate")
 	static function setMinimapFowRevealCoordinate(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -3094,13 +3094,13 @@ extern class Hud {
 	 * *   **14** 2 Alien Camp (Hippy Camp) circles
 	 * *   **15** Fort Zancudo
 	 */
-	@:native("SET_MINIMAP_COMPONENT")
+	@:native("SetMinimapComponent")
 	static function setMinimapComponent(componentID:Int, toggle:Bool, hudColor:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MINIMAP_IN_SPECTATOR_MODE")
+	@:native("SetMinimapInSpectatorMode")
 	static function setMinimapInSpectatorMode(toggle:Bool, ped:Dynamic):Dynamic;
 
 	/**
@@ -3112,7 +3112,7 @@ extern class Hud {
 	 * 
 	 * Use [`SET_MINIMAP_GOLF_COURSE_OFF()`](#\_0x35EDD5B2E3FF01C0) to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).
 	 */
-	@:native("SET_MINIMAP_GOLF_COURSE")
+	@:native("SetMinimapGolfCourse")
 	static function setMinimapGolfCourse(hole:Int):Dynamic;
 
 	/**
@@ -3122,37 +3122,37 @@ extern class Hud {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("SET_MINIMAP_SONAR_SWEEP")
+	@:native("SetMinimapSonarSweep")
 	static function setMinimapSonarSweep(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_MISSION_NAME_2")
+	@:native("SetMissionName_2")
 	static function SetMissionName2(p0:Bool, name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MINIMAP_GOLF_COURSE_OFF")
+	@:native("SetMinimapGolfCourseOff")
 	static function setMinimapGolfCourseOff():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MISSION_NAME")
+	@:native("SetMissionName")
 	static function setMissionName(p0:Bool, name:String):Dynamic;
 
 	/**
 	 * Sets the mouse pointer to be active on current frame.
 	 */
-	@:native("SET_MOUSE_CURSOR_THIS_FRAME")
+	@:native("SetMouseCursorThisFrame")
 	static function setMouseCursorThisFrame():Dynamic;
 
 	/**
 	 * Toggles the visibility of the cursor. Do note that if the game loses focus and then regains it, the cursor will become visible again.
 	 */
-	@:native("SET_MOUSE_CURSOR_VISIBLE")
+	@:native("SetMouseCursorVisible")
 	static function setMouseCursorVisible(isVisible:Bool):Dynamic;
 
 	/**
@@ -3160,7 +3160,7 @@ extern class Hud {
 	 * Toggles the North Yankton map
 	 * ```
 	 */
-	@:native("SET_MINIMAP_IN_PROLOGUE")
+	@:native("SetMinimapInPrologue")
 	static function setMinimapInPrologue(toggle:Bool):Dynamic;
 
 	/**
@@ -3168,7 +3168,7 @@ extern class Hud {
 	 * Sets flag's sprite transparency. 0-255.  
 	 * ```
 	 */
-	@:native("SET_MP_GAMER_TAG_ALPHA")
+	@:native("SetMpGamerTagAlpha")
 	static function setMpGamerTagAlpha(gamerTagId:Int, component:Int, alpha:Int):Dynamic;
 
 	/**
@@ -3191,45 +3191,45 @@ extern class Hud {
 	 * };
 	 * ```
 	 */
-	@:native("SET_MOUSE_CURSOR_STYLE")
+	@:native("SetMouseCursorStyle")
 	static function setMouseCursorStyle(style:Int):Dynamic;
 
 	/**
 	 * Sets a gamer tag's component colour
 	 */
-	@:native("SET_MP_GAMER_TAG_COLOUR")
+	@:native("SetMpGamerTagColour")
 	static function setMpGamerTagColour(gamerTagId:Int, component:Int, hudColorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MP_GAMER_TAG_BIG_TEXT")
+	@:native("SetMpGamerTagBigText")
 	static function setMpGamerTagBigText(gamerTagId:Int, string:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MP_GAMER_TAG_NAME")
+	@:native("SetMpGamerTagName")
 	static function setMpGamerTagName(gamerTagId:Int, string:String):Dynamic;
 
 	/**
 	 * Manually sets the player health value for a gamer tag, using the maximum health to calculate what percentage of the bar should be filled.
 	 * Has no effect unless [\_SET_MP_GAMER_TAG_DISABLE_PLAYER_HEALTH_SYNC](#\_0xD29EC58C2F6B5014) has been called prior to disable synchronisation with the attached ped.
 	 */
-	@:native("_SET_MP_GAMER_TAG_OVERRIDE_PLAYER_HEALTH")
+	@:native("SetMpGamerTagOverridePlayerHealth")
 	static function SetMpGamerTagOverridePlayerHealth(gamerTagId:Int, health:Int, maximumHealth:Int):Dynamic;
 
 	/**
 	 * By default, the player health value shown by a gamer tag's health bar is synchronised with the health of the ped it is attached to.
 	 * This native disables that behaviour, allowing [`_SET_MP_GAMER_TAG_OVERRIDE_PLAYER_HEALTH`](#\_0x1563FE35E9928E67) to have an effect.
 	 */
-	@:native("_SET_MP_GAMER_TAG_DISABLE_PLAYER_HEALTH_SYNC")
+	@:native("SetMpGamerTagDisablePlayerHealthSync")
 	static function SetMpGamerTagDisablePlayerHealthSync(gamerTagId:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * Should be enabled as component (2). Has 0 alpha by default.
 	 */
-	@:native("SET_MP_GAMER_TAG_HEALTH_BAR_COLOUR")
+	@:native("SetMpGamerTagHealthBarColour")
 	static function setMpGamerTagHealthBarColour(gamerTagId:Int, hudColorIndex:Int):Dynamic;
 
 	/**
@@ -3237,7 +3237,7 @@ extern class Hud {
 	 * displays wanted star above head  
 	 * ```
 	 */
-	@:native("_SET_MP_GAMER_TAG_MP_BAG_LARGE_COUNT")
+	@:native("SetMpGamerTagMpBagLargeCount")
 	static function SetMpGamerTagMpBagLargeCount(gamerTagId:Int, count:Int):Dynamic;
 
 	/**
@@ -3281,7 +3281,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SET_MP_GAMER_TAG_VISIBILITY")
+	@:native("SetMpGamerTagVisibility")
 	static function setMpGamerTagVisibility(gamerTagId:Int, component:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -3291,13 +3291,13 @@ extern class Hud {
 	 * 
 	 * To change the bank balance use [`STAT_SET_INT`](#\_0xB3271D7AB655B441) with "BANK_BALANCE" to whatever value you need to.
 	 */
-	@:native("SET_MULTIPLAYER_BANK_CASH")
+	@:native("SetMultiplayerBankCash")
 	static function setMultiplayerBankCash():Dynamic;
 
 	/**
 	 * Sets the visibility of all components of the gamer tag to the specified value.
 	 */
-	@:native("_SET_MP_GAMER_TAG_VISIBILITY_ALL")
+	@:native("SetMpGamerTagVisibilityAll")
 	static function SetMpGamerTagVisibilityAll(gamerTagId:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -3307,20 +3307,20 @@ extern class Hud {
 	 * 
 	 * To change money value use [`STAT_SET_INT`](#\_0xB3271D7AB655B441) with "MP0\_WALLET_BALANCE" to whatever value you need to.
 	 */
-	@:native("SET_MULTIPLAYER_WALLET_CASH")
+	@:native("SetMultiplayerWalletCash")
 	static function setMultiplayerWalletCash():Dynamic;
 
 	/**
 	 * Sets the health bar of a gamer tag to show the health of the last (or current) vehicle of the ped the gamer tag is attached to.
 	 * The vehicle health value is stored separate from the player health and using it won't clear any player health overrides.
 	 */
-	@:native("_SET_MP_GAMER_TAG_USE_VEHICLE_HEALTH")
+	@:native("SetMpGamerTagUseVehicleHealth")
 	static function SetMpGamerTagUseVehicleHealth(gamerTagId:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("SET_MULTIPLAYER_HUD_CASH")
+	@:native("SetMultiplayerHudCash")
 	static function setMultiplayerHudCash(p0:Int, p1:Int):Dynamic;
 
 	/**
@@ -3328,7 +3328,7 @@ extern class Hud {
 	 * displays wanted star above head  
 	 * ```
 	 */
-	@:native("SET_MP_GAMER_TAG_WANTED_LEVEL")
+	@:native("SetMpGamerTagWantedLevel")
 	static function setMpGamerTagWantedLevel(gamerTagId:Int, wantedlvl:Int):Dynamic;
 
 	/**
@@ -3340,7 +3340,7 @@ extern class Hud {
 	 * On: ![lights on](https://vespura.com/hi/i/2019-04-01\_16-09\_540ee\_1015.png)
 	 * Off: ![lights off](https://vespura.com/hi/i/2019-04-01\_16-10\_8b5e7\_1016.png)
 	 */
-	@:native("SET_PAUSE_MENU_PED_LIGHTING")
+	@:native("SetPauseMenuPedLighting")
 	static function setPauseMenuPedLighting(state:Bool):Dynamic;
 
 	/**
@@ -3349,13 +3349,13 @@ extern class Hud {
 	 * If "flag" is false, the AI blip will only be displayed when the player is in combat with the specified ped, if it has an AI blip  
 	 * ```
 	 */
-	@:native("SET_PED_AI_BLIP_FORCED_ON")
+	@:native("SetPedAiBlipForcedOn")
 	static function setPedAiBlipForcedOn(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AI_BLIP_HAS_CONE")
+	@:native("SetPedAiBlipHasCone")
 	static function setPedAiBlipHasCone(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3367,19 +3367,19 @@ extern class Hud {
 	 * *   Toggle the pause menu off, use [`SET_FRONTEND_ACTIVE`](#\_0x745711A75AB09277)
 	 * *   Disable toggling the pause menu, use [`DISABLE_FRONTEND_THIS_FRAME`](#\_0x6D3465A73092F0E6)
 	 */
-	@:native("SET_PAUSE_MENU_ACTIVE")
+	@:native("SetPauseMenuActive")
 	static function setPauseMenuActive(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NEW_WAYPOINT")
+	@:native("SetNewWaypoint")
 	static function setNewWaypoint(x:Float, y:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AI_BLIP_NOTICE_RANGE")
+	@:native("SetPedAiBlipNoticeRange")
 	static function setPedAiBlipNoticeRange(ped:Dynamic, range:Float):Dynamic;
 
 	/**
@@ -3387,13 +3387,13 @@ extern class Hud {
 	 * 
 	 * [Example GIF](https://vespura.com/hi/i/2019-04-01\_15-51\_8ed38\_1014.gif)
 	 */
-	@:native("SET_PAUSE_MENU_PED_SLEEP_STATE")
+	@:native("SetPauseMenuPedSleepState")
 	static function setPauseMenuPedSleepState(state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_AI_BLIP_GANG_ID")
+	@:native("SetPedAiBlipGangId")
 	static function setPedAiBlipGangId(ped:Dynamic, gangId:Int):Dynamic;
 
 	/**
@@ -3403,7 +3403,7 @@ extern class Hud {
 	 * SET_PLAYER_*
 	 * ```
 	 */
-	@:native("_SET_PLAYER_IS_IN_DIRECTOR_MODE")
+	@:native("SetPlayerIsInDirectorMode")
 	static function SetPlayerIsInDirectorMode(toggle:Bool):Dynamic;
 
 	/**
@@ -3412,31 +3412,31 @@ extern class Hud {
 	 * See gtaforums.com/topic/884370-native-research-ai-blips for further information.
 	 * ```
 	 */
-	@:native("SET_PED_HAS_AI_BLIP")
+	@:native("SetPedHasAiBlip")
 	static function setPedHasAiBlip(ped:Dynamic, hasCone:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_HAS_AI_BLIP_WITH_COLOR")
+	@:native("SetPedHasAiBlipWithColor")
 	static function SetPedHasAiBlipWithColor(ped:Dynamic, hasCone:Bool, color:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_AI_BLIP_SPRITE")
+	@:native("SetPedAiBlipSprite")
 	static function SetPedAiBlipSprite(ped:Dynamic, spriteId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADAR_ZOOM_PRECISE")
+	@:native("SetRadarZoomPrecise")
 	static function setRadarZoomPrecise(zoom:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADAR_AS_EXTERIOR_THIS_FRAME")
+	@:native("SetRadarAsExteriorThisFrame")
 	static function setRadarAsExteriorThisFrame():Dynamic;
 
 	/**
@@ -3445,13 +3445,13 @@ extern class Hud {
 	 * Not for every interior zoom > 0 available.  
 	 * ```
 	 */
-	@:native("SET_RADAR_AS_INTERIOR_THIS_FRAME")
+	@:native("SetRadarAsInteriorThisFrame")
 	static function setRadarAsInteriorThisFrame(interior:Int, x:Float, y:Float, heading:Int, zoom:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RACE_TRACK_RENDER")
+	@:native("SetRaceTrackRender")
 	static function setRaceTrackRender(toggle:Bool):Dynamic;
 
 	/**
@@ -3459,7 +3459,7 @@ extern class Hud {
 	 * Sets the color of HUD_COLOUR_SCRIPT_VARIABLE
 	 * ```
 	 */
-	@:native("SET_SCRIPT_VARIABLE_HUD_COLOUR")
+	@:native("SetScriptVariableHudColour")
 	static function setScriptVariableHudColour(r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
@@ -3469,13 +3469,13 @@ extern class Hud {
 	 * **Example result:**\
 	 * ![example-image](https://i.imgur.com/hS6ki7p.png)
 	 */
-	@:native("SET_RADIUS_BLIP_EDGE")
+	@:native("SetRadiusBlipEdge")
 	static function setRadiusBlipEdge(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADAR_ZOOM_TO_BLIP")
+	@:native("SetRadarZoomToBlip")
 	static function setRadarZoomToBlip(blip:Dynamic, zoom:Float):Dynamic;
 
 	/**
@@ -3483,7 +3483,7 @@ extern class Hud {
 	 * zoomLevel ranges from 0 to 200  
 	 * ```
 	 */
-	@:native("SET_RADAR_ZOOM")
+	@:native("SetRadarZoom")
 	static function setRadarZoom(zoomLevel:Int):Dynamic;
 
 	/**
@@ -3494,7 +3494,7 @@ extern class Hud {
 	 * HUD::SET_SOCIAL_CLUB_TOUR("Playlists");
 	 * ```
 	 */
-	@:native("SET_SOCIAL_CLUB_TOUR")
+	@:native("SetSocialClubTour")
 	static function setSocialClubTour(name:String):Dynamic;
 
 	/**
@@ -3502,19 +3502,19 @@ extern class Hud {
 	 * Sets the color of HUD_COLOUR_SCRIPT_VARIABLE_2
 	 * ```
 	 */
-	@:native("_SET_SCRIPT_VARIABLE_2_HUD_COLOUR")
+	@:native("SetScriptVariable_2HudColour")
 	static function SetScriptVariable2HudColour(r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_DROP_SHADOW")
+	@:native("SetTextDropShadow")
 	static function setTextDropShadow():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADAR_ZOOM_TO_DISTANCE")
+	@:native("SetRadarZoomToDistance")
 	static function setRadarZoomToDistance(zoom:Float):Dynamic;
 
 	/**
@@ -3523,19 +3523,19 @@ extern class Hud {
 	 * A: for some reason its R B G A
 	 * ```
 	 */
-	@:native("SET_TEXT_COLOUR")
+	@:native("SetTextColour")
 	static function setTextColour(red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("SET_TEXT_EDGE")
+	@:native("SetTextEdge")
 	static function setTextEdge(p0:Int, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_CENTRE")
+	@:native("SetTextCentre")
 	static function setTextCentre(align:Bool):Dynamic;
 
 	/**
@@ -3547,38 +3547,38 @@ extern class Hud {
 	 * Right-Justify requires SET_TEXT_WRAP, otherwise it will draw to the far right of the screen  
 	 * ```
 	 */
-	@:native("SET_TEXT_JUSTIFICATION")
+	@:native("SetTextJustification")
 	static function setTextJustification(justifyType:Int):Dynamic;
 
 	/**
 	 * distance - shadow distance in pixels, both horizontal and vertical
 	 * r, g, b, a - color
 	 */
-	@:native("SET_TEXT_DROPSHADOW")
+	@:native("SetTextDropshadow")
 	static function setTextDropshadow(distance:Int, r:Int, g:Int, b:Int, a:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_OUTLINE")
+	@:native("SetTextOutline")
 	static function setTextOutline():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_LEADING")
+	@:native("SetTextLeading")
 	static function setTextLeading(p0:Int):Dynamic;
 
 	/**
 	 * Toggles if the text input box can be opened with [`DISPLAY_ONSCREEN_KEYBOARD`](#\_0x00DC833F2568DBF6).
 	 */
-	@:native("SET_TEXT_INPUT_BOX_ENABLED")
+	@:native("SetTextInputBoxEnabled")
 	static function setTextInputBoxEnabled(state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_RIGHT_JUSTIFY")
+	@:native("SetTextRightJustify")
 	static function setTextRightJustify(toggle:Bool):Dynamic;
 
 	/**
@@ -3588,7 +3588,7 @@ extern class Hud {
 	 * end - right boundry on screen position (0.0 - 1.0)  
 	 * ```
 	 */
-	@:native("SET_TEXT_WRAP")
+	@:native("SetTextWrap")
 	static function setTextWrap(start:Float, end:Float):Dynamic;
 
 	/**
@@ -3607,7 +3607,7 @@ extern class Hud {
 	 * }
 	 * ```
 	 */
-	@:native("SET_TEXT_FONT")
+	@:native("SetTextFont")
 	static function setTextFont(fontType:Int):Dynamic;
 
 	/**
@@ -3622,13 +3622,13 @@ extern class Hud {
 	 * 
 	 * -->
 	 */
-	@:native("_SET_USE_WAYPOINT_AS_DESTINATION")
+	@:native("SetUseWaypointAsDestination")
 	static function SetUseWaypointAsDestination(toggle:Bool):Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("SET_TEXT_PROPORTIONAL")
+	@:native("SetTextProportional")
 	static function setTextProportional(p0:Bool):Dynamic;
 
 	/**
@@ -3638,7 +3638,7 @@ extern class Hud {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("SET_USE_ISLAND_MAP")
+	@:native("SetUseIslandMap")
 	static function setUseIslandMap(toggle:Bool):Dynamic;
 
 	/**
@@ -3647,13 +3647,13 @@ extern class Hud {
 	 * p0 is unknown and doesn't seem to have an effect, yet in the game scripts it changes to 1.0F sometimes.
 	 * ```
 	 */
-	@:native("SET_TEXT_SCALE")
+	@:native("SetTextScale")
 	static function setTextScale(scale:Float, size:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TEXT_RENDER_ID")
+	@:native("SetTextRenderId")
 	static function setTextRenderId(renderId:Int):Dynamic;
 
 	/**
@@ -3670,7 +3670,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 10: Any p9
 	 * ```
 	 */
-	@:native("SET_WARNING_MESSAGE_WITH_HEADER")
+	@:native("SetWarningMessageWithHeader")
 	static function setWarningMessageWithHeader(titleMsg:String, entryLine1:String, flags:Int, promptMsg:String, p4:Bool, p5:Dynamic, background:Bool, p7:Dynamic, showBg:Bool):Dynamic;
 
 	/**
@@ -3682,7 +3682,7 @@ extern class Hud {
 	 * NativeDB Added Parameter 11: Any p10
 	 * ```
 	 */
-	@:native("SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS")
+	@:native("SetWarningMessageWithHeaderAndSubstringFlags")
 	static function setWarningMessageWithHeaderAndSubstringFlags(entryHeader:String, entryLine1:String, instructionalKey:Dynamic, entryLine2:String, p4:Bool, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Bool):Dynamic;
 
 	/**
@@ -3690,7 +3690,7 @@ extern class Hud {
 	 * Param names copied from the corresponding scaleform function "SET_LIST_ROW"
 	 * ```
 	 */
-	@:native("_SET_WARNING_MESSAGE_LIST_ROW")
+	@:native("SetWarningMessageListRow")
 	static function SetWarningMessageListRow(index:Int, name:String, cash:Int, rp:Int, lvl:Int, colour:Int):Bool;
 
 	/**
@@ -3703,7 +3703,7 @@ extern class Hud {
 	 * HUD::SET_WAYPOINT_OFF();
 	 * ```
 	 */
-	@:native("SET_WAYPOINT_OFF")
+	@:native("SetWaypointOff")
 	static function setWaypointOff():Dynamic;
 
 	/**
@@ -3773,7 +3773,7 @@ extern class Hud {
 	 * **Result of the example code:**
 	 * <https://i.imgur.com/imwoimm.png>
 	 */
-	@:native("SET_WARNING_MESSAGE")
+	@:native("SetWarningMessage")
 	static function setWarningMessage(entryLine1:String, instructionalKey:Int, entryLine2:String, p3:Bool, p4:Int, background:String, p6:String, showBg:Bool, errorCode:Int):Dynamic;
 
 	/**
@@ -3783,13 +3783,13 @@ extern class Hud {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("SHOW_CONTACT_INSTRUCTIONAL_BUTTON")
+	@:native("ShowContactInstructionalButton")
 	static function showContactInstructionalButton(toggle:Bool):Dynamic;
 
 	/**
 	 * Sets a warning message for one frame with header and upper buttons bit field that don't fit the standard 32 bit set.
 	 */
-	@:native("SET_WARNING_MESSAGE_WITH_HEADER_EXTENDED")
+	@:native("SetWarningMessageWithHeaderExtended")
 	static function setWarningMessageWithHeaderExtended(headerTextLabel:String, line1TextLabel:String, buttonsBitField:Int, buttonsBitFieldUpper:Int, line2TextLabel:String, addNumber:Bool, numberToAdd:Int, firstSubstring:String, secondSubstring:String, showBackground:Bool, errorCode:Int):Dynamic;
 
 	/**
@@ -3802,13 +3802,13 @@ extern class Hud {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_SHOW_HAS_COMPLETED_INDICATOR_ON_BLIP")
+	@:native("ShowHasCompletedIndicatorOnBlip")
 	static function ShowHasCompletedIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_WIDESCREEN_FORMAT")
+	@:native("SetWidescreenFormat")
 	static function setWidescreenFormat(p0:Dynamic):Dynamic;
 
 	/**
@@ -3861,7 +3861,7 @@ extern class Hud {
 	 * 
 	 * **Result of the example code:** <https://i.imgur.com/TvmNF4k.png>
 	 */
-	@:native("_SET_WARNING_MESSAGE_WITH_ALERT")
+	@:native("SetWarningMessageWithAlert")
 	static function SetWarningMessageWithAlert(labelTitle:String, labelMsg:String, p2:Int, p3:Int, labelMsg2:String, p5:Bool, p6:Int, p7:Int, p8:String, p9:String, background:Bool, errorCode:Int):Dynamic;
 
 	/**
@@ -3872,13 +3872,13 @@ extern class Hud {
 	 * Example code result:
 	 * ![](https://i.imgur.com/iZ9tNWl.png)
 	 */
-	@:native("SHOW_CREW_INDICATOR_ON_BLIP")
+	@:native("ShowCrewIndicatorOnBlip")
 	static function showCrewIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SHOW_NUMBER_ON_BLIP")
+	@:native("ShowNumberOnBlip")
 	static function showNumberOnBlip(blip:Dynamic, number:Int):Dynamic;
 
 	/**
@@ -3886,7 +3886,7 @@ extern class Hud {
 	 * Adds the GTA: Online player heading indicator to a blip.  
 	 * ```
 	 */
-	@:native("SHOW_HEADING_INDICATOR_ON_BLIP")
+	@:native("ShowHeadingIndicatorOnBlip")
 	static function showHeadingIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3919,7 +3919,7 @@ extern class Hud {
 	 * 
 	 * These integers also work for the [`HIDE_HUD_COMPONENT_THIS_FRAME`](#\_0x6806C51AD12B83B8) native, but instead hides the HUD component.
 	 */
-	@:native("SHOW_HUD_COMPONENT_THIS_FRAME")
+	@:native("ShowHudComponentThisFrame")
 	static function showHudComponentThisFrame(id:Int):Dynamic;
 
 	/**
@@ -3927,13 +3927,13 @@ extern class Hud {
 	 * 
 	 * To toggle the left side (crew member indicator) of the half circle around the blip, use: [`SHOW_CREW_INDICATOR_ON_BLIP`](#\_0xDCFB5D4DB8BF367E).
 	 */
-	@:native("SHOW_FRIEND_INDICATOR_ON_BLIP")
+	@:native("ShowFriendIndicatorOnBlip")
 	static function showFriendIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SHOW_START_MISSION_INSTRUCTIONAL_BUTTON")
+	@:native("ShowStartMissionInstructionalButton")
 	static function showStartMissionInstructionalButton(p0:Bool):Dynamic;
 
 	/**
@@ -3943,13 +3943,13 @@ extern class Hud {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME")
+	@:native("ShowScriptedHudComponentThisFrame")
 	static function ShowScriptedHudComponentThisFrame(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SUPPRESS_FRONTEND_RENDERING_THIS_FRAME")
+	@:native("SuppressFrontendRenderingThisFrame")
 	static function suppressFrontendRenderingThisFrame():Dynamic;
 
 	/**
@@ -3957,13 +3957,13 @@ extern class Hud {
 	 * 
 	 * Color can be changed with [`SET_BLIP_SECONDARY_COLOUR`](#\_0x14892474891E09EB). Enabling this circle will override the "crew" and "friend" half-circles (see [`SHOW_CREW_INDICATOR_ON_BLIP`](#\_0xDCFB5D4DB8BF367E) and [`SHOW_FRIEND_INDICATOR_ON_BLIP`](#\_0x23C3EB807312F01A)).
 	 */
-	@:native("SHOW_OUTLINE_INDICATOR_ON_BLIP")
+	@:native("ShowOutlineIndicatorOnBlip")
 	static function showOutlineIndicatorOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SHOW_HEIGHT_ON_BLIP")
+	@:native("ShowHeightOnBlip")
 	static function showHeightOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3971,7 +3971,7 @@ extern class Hud {
 	 * Adds a green checkmark on top of a blip.  
 	 * ```
 	 */
-	@:native("SHOW_TICK_ON_BLIP")
+	@:native("ShowTickOnBlip")
 	static function showTickOnBlip(blip:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3985,13 +3985,13 @@ extern class Hud {
 	 * 
 	 * ![](https://i.imgur.com/ZZHQatX.png)
 	 */
-	@:native("START_GPS_MULTI_ROUTE")
+	@:native("StartGpsMultiRoute")
 	static function startGpsMultiRoute(hudColor:Int, routeFromPlayer:Bool, displayOnFoot:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SHOW_SIGNIN_UI")
+	@:native("ShowSigninUi")
 	static function ShowSigninUi():Dynamic;
 
 	/**
@@ -4003,13 +4003,13 @@ extern class Hud {
 	 * 
 	 * ![](https://i.imgur.com/BDm5pzt.png)
 	 */
-	@:native("START_GPS_CUSTOM_ROUTE")
+	@:native("StartGpsCustomRoute")
 	static function startGpsCustomRoute(hudColor:Int, displayOnFoot:Bool, followPlayer:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_CLEAR_FROZEN_POST")
+	@:native("ThefeedClearFrozenPost")
 	static function thefeedClearFrozenPost():Dynamic;
 
 	/**
@@ -4017,7 +4017,7 @@ extern class Hud {
 	 * 
 	 * To enable the keys again, use [`0x14621BB1DF14E2B2`](#\_0x14621BB1DF14E2B2).
 	 */
-	@:native("TAKE_CONTROL_OF_FRONTEND")
+	@:native("TakeControlOfFrontend")
 	static function takeControlOfFrontend():Dynamic;
 
 	/**
@@ -4025,7 +4025,7 @@ extern class Hud {
 	 * Returns the handle for the notification currently displayed on the screen. Name may be a hash collision, but describes the function accurately.
 	 * ```
 	 */
-	@:native("THEFEED_GET_FIRST_VISIBLE_DELETE_REMAINING")
+	@:native("ThefeedGetFirstVisibleDeleteRemaining")
 	static function thefeedGetFirstVisibleDeleteRemaining():Int;
 
 	/**
@@ -4033,31 +4033,31 @@ extern class Hud {
 	 * Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.
 	 * ```
 	 */
-	@:native("THEFEED_COMMENT_TELEPORT_POOL_ON")
+	@:native("ThefeedCommentTeleportPoolOn")
 	static function thefeedCommentTeleportPoolOn():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_ONLY_SHOW_TOOLTIPS")
+	@:native("ThefeedOnlyShowTooltips")
 	static function thefeedOnlyShowTooltips(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_FLUSH_QUEUE")
+	@:native("ThefeedFlushQueue")
 	static function thefeedFlushQueue():Dynamic;
 
 	/**
 	 * Stops loading screen tips shown by invoking either `0x488043841BBE156F` or `0x15CFA549788D35EF`
 	 */
-	@:native("_THEFEED_DISABLE_LOADING_SCREEN_TIPS")
+	@:native("ThefeedDisableLoadingScreenTips")
 	static function ThefeedDisableLoadingScreenTips():Dynamic;
 
 	/**
 	 * Displays loading screen tips, requires `0x56C8B608CFD49854` to be called beforehand.
 	 */
-	@:native("_THEFEED_DISPLAY_LOADING_SCREEN_TIPS")
+	@:native("ThefeedDisplayLoadingScreenTips")
 	static function ThefeedDisplayLoadingScreenTips():Dynamic;
 
 	/**
@@ -4065,7 +4065,7 @@ extern class Hud {
 	 * Requires manual management of game stream handles (i.e., 0xBE4390CB40B3E627).
 	 * ```
 	 */
-	@:native("THEFEED_FREEZE_NEXT_POST")
+	@:native("ThefeedFreezeNextPost")
 	static function thefeedFreezeNextPost():Dynamic;
 
 	/**
@@ -4073,49 +4073,49 @@ extern class Hud {
 	 * Removes a notification instantly instead of waiting for it to disappear  
 	 * ```
 	 */
-	@:native("THEFEED_REMOVE_ITEM")
+	@:native("ThefeedRemoveItem")
 	static function thefeedRemoveItem(notificationId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_FORCE_RENDER_ON")
+	@:native("ThefeedForceRenderOn")
 	static function thefeedForceRenderOn():Dynamic;
 
 	/**
 	 * Once called each frame hides all above radar notifications.
 	 */
-	@:native("THEFEED_HIDE_THIS_FRAME")
+	@:native("ThefeedHideThisFrame")
 	static function thefeedHideThisFrame():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_RESET_ALL_PARAMETERS")
+	@:native("ThefeedResetAllParameters")
 	static function thefeedResetAllParameters():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_IS_PAUSED")
+	@:native("ThefeedIsPaused")
 	static function thefeedIsPaused():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_RESUME")
+	@:native("ThefeedResume")
 	static function thefeedResume():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_THEFEED_SET_ANIMPOSTFX_COLOR")
+	@:native("ThefeedSetAnimpostfxColor")
 	static function ThefeedSetAnimpostfxColor(red:Int, green:Int, blue:Int, alpha:Int):Dynamic;
 
 	/**
 	 * Related to notification color flashing, setting p0 to 0 invalidates a `_SET_NOTIFICATION_FLASH_COLOR` call for the target notification.
 	 */
-	@:native("_THEFEED_SET_ANIMPOSTFX_COUNT")
+	@:native("ThefeedSetAnimpostfxCount")
 	static function ThefeedSetAnimpostfxCount(count:Int):Dynamic;
 
 	/**
@@ -4123,13 +4123,13 @@ extern class Hud {
 	 * If true, remove all feed components instantly. Otherwise tween/animate close each component
 	 * ```
 	 */
-	@:native("_THEFEED_SET_FLUSH_ANIMPOSTFX")
+	@:native("ThefeedSetFlushAnimpostfx")
 	static function ThefeedSetFlushAnimpostfx(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_PAUSE")
+	@:native("ThefeedPause")
 	static function thefeedPause():Dynamic;
 
 	/**
@@ -4139,13 +4139,13 @@ extern class Hud {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("THEFEED_UPDATE_ITEM_TEXTURE")
+	@:native("ThefeedUpdateItemTexture")
 	static function thefeedUpdateItemTexture(txdString1:String, txnString1:String, txdString2:String, txnString2:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_SET_SCRIPTED_MENU_HEIGHT")
+	@:native("ThefeedSetScriptedMenuHeight")
 	static function thefeedSetScriptedMenuHeight(pos:Float):Dynamic;
 
 	/**
@@ -4153,7 +4153,7 @@ extern class Hud {
 	 * Requires GAME_STREAM_ENUMS.MSGTEXT. Default sounds: "DPAD_WEAPON_SCROLL" and "HUD_FRONTEND_DEFAULT_SOUNDSET"
 	 * ```
 	 */
-	@:native("_THEFEED_SET_ANIMPOSTFX_SOUND")
+	@:native("ThefeedSetAnimpostfxSound")
 	static function ThefeedSetAnimpostfxSound(toggle:Bool):Dynamic;
 
 	/**
@@ -4169,43 +4169,43 @@ extern class Hud {
 	 * Here is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15
 	 * ```
 	 */
-	@:native("_THEFEED_SET_NEXT_POST_BACKGROUND_COLOR")
+	@:native("ThefeedSetNextPostBackgroundColor")
 	static function ThefeedSetNextPostBackgroundColor(hudColorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_SPS_EXTEND_WIDESCREEN_ON")
+	@:native("ThefeedSpsExtendWidescreenOn")
 	static function thefeedSpsExtendWidescreenOn():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("THEFEED_SPS_EXTEND_WIDESCREEN_OFF")
+	@:native("ThefeedSpsExtendWidescreenOff")
 	static function thefeedSpsExtendWidescreenOff():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TOGGLE_STEALTH_RADAR")
+	@:native("ToggleStealthRadar")
 	static function toggleStealthRadar(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNLOCK_MINIMAP_ANGLE")
+	@:native("UnlockMinimapAngle")
 	static function unlockMinimapAngle():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNLOCK_MINIMAP_POSITION")
+	@:native("UnlockMinimapPosition")
 	static function unlockMinimapPosition():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TRIGGER_SONAR_BLIP")
+	@:native("TriggerSonarBlip")
 	static function triggerSonarBlip(posX:Float, posY:Float, posZ:Float, radius:Float, p4:Int):Dynamic;
 
 	/**
@@ -4214,7 +4214,7 @@ extern class Hud {
 	 * Always called before HUD::CHANGE_FAKE_MP_CASH in decompiled scripts
 	 * ```
 	 */
-	@:native("USE_FAKE_MP_CASH")
+	@:native("UseFakeMpCash")
 	static function useFakeMpCash(p0:Bool):Dynamic;
 
 }

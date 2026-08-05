@@ -5,19 +5,19 @@ extern class Vehicle {
 	/**
 	 * 
 	 */
-	@:native("ADD_ROAD_NODE_SPEED_ZONE")
+	@:native("AddRoadNodeSpeedZone")
 	static function addRoadNodeSpeedZone(x:Float, y:Float, z:Float, radius:Float, speed:Float, p5:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_VEHICLE_PHONE_EXPLOSIVE_DEVICE")
+	@:native("AddVehiclePhoneExplosiveDevice")
 	static function addVehiclePhoneExplosiveDevice(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_VEHICLE_COMBAT_ANGLED_AVOIDANCE_AREA")
+	@:native("AddVehicleCombatAngledAvoidanceArea")
 	static function addVehicleCombatAngledAvoidanceArea(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Dynamic;
 
 	/**
@@ -25,25 +25,25 @@ extern class Vehicle {
 	 * Appears to return false if any window is broken.  
 	 * ```
 	 */
-	@:native("ARE_ALL_VEHICLE_WINDOWS_INTACT")
+	@:native("AreAllVehicleWindowsIntact")
 	static function areAllVehicleWindowsIntact(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_VEHICLE_STUCK_CHECK_WITH_WARP")
+	@:native("AddVehicleStuckCheckWithWarp")
 	static function addVehicleStuckCheckWithWarp(p0:Dynamic, p1:Float, p2:Dynamic, p3:Bool, p4:Bool, p5:Bool, p6:Dynamic):Dynamic;
 
 	/**
 	 * This native it's a debug native. Won't do anything.
 	 */
-	@:native("ALLOW_AMBIENT_VEHICLES_TO_AVOID_ADVERSE_CONDITIONS")
+	@:native("AllowAmbientVehiclesToAvoidAdverseConditions")
 	static function allowAmbientVehiclesToAvoidAdverseConditions(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Returns true when the bomb bay doors of this plane are open. False if they're closed.
 	 */
-	@:native("_ARE_BOMB_BAY_DOORS_OPEN")
+	@:native("AreBombBayDoorsOpen")
 	static function AreBombBayDoorsOpen(aircraft:Dynamic):Bool;
 
 	/**
@@ -53,31 +53,31 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_ARE_HELI_STUB_WINGS_DEPLOYED")
+	@:native("AreHeliStubWingsDeployed")
 	static function AreHeliStubWingsDeployed(vehicle:Dynamic):Bool;
 
 	/**
 	 * Queries whether the control panels of a plane are intact. This native is used to determine the operational status of a plane's cockpit controls, which can affect the plane's flyability.
 	 */
-	@:native("ARE_PLANE_CONTROL_PANELS_INTACT")
+	@:native("ArePlaneControlPanelsIntact")
 	static function arePlaneControlPanelsIntact(vehicle:Dynamic, checkForZeroHealth:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_VEHICLE_UPSIDEDOWN_CHECK")
+	@:native("AddVehicleUpsidedownCheck")
 	static function addVehicleUpsidedownCheck(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ARE_PLANE_WINGS_INTACT")
+	@:native("ArePlaneWingsIntact")
 	static function ArePlaneWingsIntact(plane:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_ATTACH_CONTAINER_TO_HANDLER_FRAME")
+	@:native("AttachContainerToHandlerFrame")
 	static function AttachContainerToHandlerFrame(handler:Dynamic, container:Dynamic):Dynamic;
 
 	/**
@@ -85,31 +85,31 @@ extern class Vehicle {
 	 * Returns false if every seat is occupied.  
 	 * ```
 	 */
-	@:native("ARE_ANY_VEHICLE_SEATS_FREE")
+	@:native("AreAnyVehicleSeatsFree")
 	static function areAnyVehicleSeatsFree(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_VEHICLE_TO_CARGOBOB")
+	@:native("AttachVehicleToCargobob")
 	static function attachVehicleToCargobob(cargobob:Dynamic, vehicle:Dynamic, vehicleBoneIndex:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_VEHICLE_TO_TRAILER")
+	@:native("AttachVehicleToTrailer")
 	static function attachVehicleToTrailer(vehicle:Dynamic, trailer:Dynamic, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_PLANE_PROPELLERS_INTACT")
+	@:native("ArePlanePropellersIntact")
 	static function arePlanePropellersIntact(plane:Dynamic):Bool;
 
 	/**
 	 * This native makes the vehicle stop immediately, as it happens when we enter a multiplayer garage.
 	 */
-	@:native("BRING_VEHICLE_TO_HALT")
+	@:native("BringVehicleToHalt")
 	static function bringVehicleToHalt(vehicle:Dynamic, distance:Float, duration:Int, bControlVerticalVelocity:Bool):Dynamic;
 
 	/**
@@ -120,25 +120,25 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_ARE_OUTRIGGER_LEGS_DEPLOYED")
+	@:native("AreOutriggerLegsDeployed")
 	static function AreOutriggerLegsDeployed(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_ENTITY_TO_CARGOBOB")
+	@:native("AttachEntityToCargobob")
 	static function attachEntityToCargobob(vehicle:Dynamic, entity:Dynamic, p2:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ATTACH_VEHICLE_ON_TO_TRAILER")
+	@:native("AttachVehicleOnToTrailer")
 	static function attachVehicleOnToTrailer(vehicle:Dynamic, trailer:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, coordsX:Float, coordsY:Float, coordsZ:Float, rotationX:Float, rotationY:Float, rotationZ:Float, disableColls:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_SHUFFLE_SEAT")
+	@:native("CanShuffleSeat")
 	static function canShuffleSeat(vehicle:Dynamic, seatIndex:Int):Bool;
 
 	/**
@@ -146,13 +146,13 @@ extern class Vehicle {
 	 * HookOffset defines where the hook is attached. leave at 0 for default attachment.
 	 * ```
 	 */
-	@:native("ATTACH_VEHICLE_TO_TOW_TRUCK")
+	@:native("AttachVehicleToTowTruck")
 	static function attachVehicleToTowTruck(towTruck:Dynamic, vehicle:Dynamic, rear:Bool, hookOffsetX:Float, hookOffsetY:Float, hookOffsetZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_VEHICLE_CUSTOM_SECONDARY_COLOUR")
+	@:native("ClearVehicleCustomSecondaryColour")
 	static function clearVehicleCustomSecondaryColour(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -162,37 +162,37 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("CAN_ANCHOR_BOAT_HERE")
+	@:native("CanAnchorBoatHere")
 	static function canAnchorBoatHere(boat:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLOSE_BOMB_BAY_DOORS")
+	@:native("CloseBombBayDoors")
 	static function closeBombBayDoors(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Determines whether the specified Cargobob can pick up a given entity.
 	 */
-	@:native("CAN_CARGOBOB_PICK_UP_ENTITY")
+	@:native("CanCargobobPickUpEntity")
 	static function canCargobobPickUpEntity(cargobob:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_LAST_DRIVEN_VEHICLE")
+	@:native("ClearLastDrivenVehicle")
 	static function clearLastDrivenVehicle():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_VEHICLE_ROUTE_HISTORY")
+	@:native("ClearVehicleRouteHistory")
 	static function clearVehicleRouteHistory(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_VEHICLE_CUSTOM_PRIMARY_COLOUR")
+	@:native("ClearVehicleCustomPrimaryColour")
 	static function clearVehicleCustomPrimaryColour(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -202,7 +202,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v678
 	 * ```
 	 */
-	@:native("CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS")
+	@:native("CanAnchorBoatHereIgnorePlayers")
 	static function canAnchorBoatHereIgnorePlayers(boat:Dynamic):Bool;
 
 	/**
@@ -215,13 +215,13 @@ extern class Vehicle {
 	 * 3: Retracted  
 	 * ```
 	 */
-	@:native("CONTROL_LANDING_GEAR")
+	@:native("ControlLandingGear")
 	static function controlLandingGear(vehicle:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_CLEAR_VEHICLE_PHONE_EXPLOSIVE_DEVICE")
+	@:native("ClearVehiclePhoneExplosiveDevice")
 	static function ClearVehiclePhoneExplosiveDevice():Dynamic;
 
 	/**
@@ -235,7 +235,7 @@ extern class Vehicle {
 	 * };  
 	 * ```
 	 */
-	@:native("CREATE_PICK_UP_ROPE_FOR_CARGOBOB")
+	@:native("CreatePickUpRopeForCargobob")
 	static function createPickUpRopeForCargobob(cargobob:Dynamic, state:Int):Dynamic;
 
 	/**
@@ -275,7 +275,7 @@ extern class Vehicle {
 	 * *   18. Freight train only.
 	 * *   26. Double metro train (with both models flipped opposite to each other). This used to be `25` before the 2802 build, it also used to be `24` before the 2372 build.
 	 */
-	@:native("CREATE_MISSION_TRAIN")
+	@:native("CreateMissionTrain")
 	static function createMissionTrain(variation:Int, x:Float, y:Float, z:Float, direction:Bool):Dynamic;
 
 	/**
@@ -285,13 +285,13 @@ extern class Vehicle {
 	 * 
 	 * Resets or clears the nitrous system for a specified vehicle. You can check if a vehicle has nitrous with [`IS_NITROUS_ACTIVE`](#\_0x491E822B2C464FE4)
 	 */
-	@:native("CLEAR_NITROUS")
+	@:native("ClearNitrous")
 	static function clearNitrous(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Removes a scripted vehicle generator.
 	 */
-	@:native("DELETE_SCRIPT_VEHICLE_GENERATOR")
+	@:native("DeleteScriptVehicleGenerator")
 	static function deleteScriptVehicleGenerator(vehicleGenerator:Int):Dynamic;
 
 	/**
@@ -312,7 +312,7 @@ extern class Vehicle {
 	 * Vector3 coords = GET_ENTITY_COORDS(PLAYER_PED_ID(), 0);	CREATE_SCRIPT_VEHICLE_GENERATOR(coords.x, coords.y, coords.z, 1.0f, 5.0f, 3.0f, GET_HASH_KEY("adder"), -1. -1, -1, -1, -1, true, false, false, false, true, -1);  
 	 * ```
 	 */
-	@:native("CREATE_SCRIPT_VEHICLE_GENERATOR")
+	@:native("CreateScriptVehicleGenerator")
 	static function createScriptVehicleGenerator(x:Float, y:Float, z:Float, heading:Float, p4:Float, p5:Float, modelHash:Int, p7:Int, p8:Int, p9:Int, p10:Int, p11:Bool, p12:Bool, p13:Bool, p14:Bool, p15:Bool, p16:Int):Int;
 
 	/**
@@ -320,31 +320,31 @@ extern class Vehicle {
 	 * 
 	 * You can set the area of interest with [`SET_VEHICLE_GENERATOR_AREA_OF_INTEREST`](#\_0x9A75585FB2E54FAD)
 	 */
-	@:native("CLEAR_VEHICLE_GENERATOR_AREA_OF_INTEREST")
+	@:native("ClearVehicleGeneratorAreaOfInterest")
 	static function clearVehicleGeneratorAreaOfInterest():Dynamic;
 
 	/**
 	 * Copies sourceVehicle's damage (broken bumpers, broken lights, etc.) to targetVehicle.
 	 */
-	@:native("COPY_VEHICLE_DAMAGES")
+	@:native("CopyVehicleDamages")
 	static function copyVehicleDamages(sourceVehicle:Dynamic, targetVehicle:Dynamic):Dynamic;
 
 	/**
 	 * Detaches the specified entity currently being carried by a Cargobob.
 	 */
-	@:native("DETACH_ENTITY_FROM_CARGOBOB")
+	@:native("DetachEntityFromCargobob")
 	static function detachEntityFromCargobob(vehicle:Dynamic, entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DELETE_ALL_TRAINS")
+	@:native("DeleteAllTrains")
 	static function deleteAllTrains():Dynamic;
 
 	/**
 	 * Used to delete mission trains created with [`CREATE_MISSION_TRAIN`](#\_0x63C6CCA8E68AE8C8).
 	 */
-	@:native("DELETE_MISSION_TRAIN")
+	@:native("DeleteMissionTrain")
 	static function deleteMissionTrain(train:Dynamic):Dynamic;
 
 	/**
@@ -355,19 +355,19 @@ extern class Vehicle {
 	 * NativeDB Added Parameter 8: BOOL p7
 	 * ```
 	 */
-	@:native("CREATE_VEHICLE")
+	@:native("CreateVehicle")
 	static function createVehicle(modelHash:Int, x:Float, y:Float, z:Float, heading:Float, isNetwork:Bool, netMissionEntity:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_VEHICLE_FROM_ANY_CARGOBOB")
+	@:native("DetachVehicleFromAnyCargobob")
 	static function detachVehicleFromAnyCargobob(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_CONTAINER_FROM_HANDLER_FRAME")
+	@:native("DetachContainerFromHandlerFrame")
 	static function detachContainerFromHandlerFrame(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -380,13 +380,13 @@ extern class Vehicle {
 	 * Deletes the specified vehicle, then sets the handle pointed to by the pointer to NULL.  
 	 * ```
 	 */
-	@:native("DELETE_VEHICLE")
+	@:native("DeleteVehicle")
 	static function deleteVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_VEHICLE_FROM_CARGOBOB")
+	@:native("DetachVehicleFromCargobob")
 	static function detachVehicleFromCargobob(cargobob:Dynamic, vehicle:Dynamic):Dynamic;
 
 	/**
@@ -394,13 +394,13 @@ extern class Vehicle {
 	 * how does this work?  
 	 * ```
 	 */
-	@:native("DISABLE_VEHICLE_WEAPON")
+	@:native("DisableVehicleWeapon")
 	static function disableVehicleWeapon(disabled:Bool, weaponHash:Int, vehicle:Dynamic, owner:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_VEHICLE_FROM_ANY_TOW_TRUCK")
+	@:native("DetachVehicleFromAnyTowTruck")
 	static function detachVehicleFromAnyTowTruck(vehicle:Dynamic):Bool;
 
 	/**
@@ -408,7 +408,7 @@ extern class Vehicle {
 	 * First two parameters swapped. Scripts verify that towTruck is the first parameter, not the second.  
 	 * ```
 	 */
-	@:native("DETACH_VEHICLE_FROM_TOW_TRUCK")
+	@:native("DetachVehicleFromTowTruck")
 	static function detachVehicleFromTowTruck(towTruck:Dynamic, vehicle:Dynamic):Dynamic;
 
 	/**
@@ -416,25 +416,25 @@ extern class Vehicle {
 	 * Checks via CVehicleModelInfo  
 	 * ```
 	 */
-	@:native("DOES_EXTRA_EXIST")
+	@:native("DoesExtraExist")
 	static function doesExtraExist(vehicle:Dynamic, extraId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DETONATE_VEHICLE_PHONE_EXPLOSIVE_DEVICE")
+	@:native("DetonateVehiclePhoneExplosiveDevice")
 	static function detonateVehiclePhoneExplosiveDevice():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_INDIVIDUAL_PLANE_PROPELLER")
+	@:native("DisableIndividualPlanePropeller")
 	static function disableIndividualPlanePropeller(vehicle:Dynamic, propeller:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_VEHICLE_FROM_TRAILER")
+	@:native("DetachVehicleFromTrailer")
 	static function detachVehicleFromTrailer(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -442,25 +442,25 @@ extern class Vehicle {
 	 * Returns true if the vehicle has the FLAG_ALLOWS_RAPPEL flag set.
 	 * ```
 	 */
-	@:native("_DOES_VEHICLE_ALLOW_RAPPEL")
+	@:native("DoesVehicleAllowRappel")
 	static function DoesVehicleAllowRappel(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_PLANE_AILERON")
+	@:native("DisablePlaneAileron")
 	static function disablePlaneAileron(vehicle:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_VEHICLE_TURRET_MOVEMENT_THIS_FRAME")
+	@:native("DisableVehicleTurretMovementThisFrame")
 	static function DisableVehicleTurretMovementThisFrame(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_DISABLE_VEHICLE_NEON_LIGHTS")
+	@:native("DisableVehicleNeonLights")
 	static function DisableVehicleNeonLights(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -468,7 +468,7 @@ extern class Vehicle {
 	 * Returns true only when the hook is active, will return false if the magnet is active  
 	 * ```
 	 */
-	@:native("DOES_CARGOBOB_HAVE_PICK_UP_ROPE")
+	@:native("DoesCargobobHavePickUpRope")
 	static function doesCargobobHavePickUpRope(cargobob:Dynamic):Bool;
 
 	/**
@@ -479,7 +479,7 @@ extern class Vehicle {
 	 * 
 	 * Not sure if there is a native (and if so, which one) that resets the collisions.
 	 */
-	@:native("_DISABLE_VEHICLE_WORLD_COLLISION")
+	@:native("DisableVehicleWorldCollision")
 	static function DisableVehicleWorldCollision(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -487,7 +487,7 @@ extern class Vehicle {
 	 * Returns true only when the magnet is active, will return false if the hook is active  
 	 * ```
 	 */
-	@:native("DOES_CARGOBOB_HAVE_PICKUP_MAGNET")
+	@:native("DoesCargobobHavePickupMagnet")
 	static function doesCargobobHavePickupMagnet(cargobob:Dynamic):Bool;
 
 	/**
@@ -495,7 +495,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_DOES_VEHICLE_HAVE_LANDING_GEAR")
+	@:native("DoesVehicleHaveLandingGear")
 	static function DoesVehicleHaveLandingGear(vehicle:Dynamic):Bool;
 
 	/**
@@ -503,19 +503,19 @@ extern class Vehicle {
 	 * Maximum amount of vehicles with vehicle stuck check appears to be 16.  
 	 * ```
 	 */
-	@:native("DOES_VEHICLE_HAVE_STUCK_VEHICLE_CHECK")
+	@:native("DoesVehicleHaveStuckVehicleCheck")
 	static function doesVehicleHaveStuckVehicleCheck(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_VEHICLE_HAVE_WEAPONS")
+	@:native("DoesVehicleHaveWeapons")
 	static function doesVehicleHaveWeapons(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_SCRIPT_VEHICLE_GENERATOR_EXIST")
+	@:native("DoesScriptVehicleGeneratorExist")
 	static function doesScriptVehicleGeneratorExist(vehicleGenerator:Int):Bool;
 
 	/**
@@ -527,13 +527,13 @@ extern class Vehicle {
 	 * First BOOL does not give any visual explosion, the vehicle just falls apart completely but slowly and starts to burn.  
 	 * ```
 	 */
-	@:native("EXPLODE_VEHICLE")
+	@:native("ExplodeVehicle")
 	static function explodeVehicle(vehicle:Dynamic, isAudible:Bool, isInvisible:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_EJECT_JB700_ROOF")
+	@:native("EjectJb700Roof")
 	static function EjectJb700Roof(vehicle:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -543,7 +543,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("DOES_VEHICLE_HAVE_SEARCHLIGHT")
+	@:native("DoesVehicleHaveSearchlight")
 	static function doesVehicleHaveSearchlight(vehicle:Dynamic):Bool;
 
 	/**
@@ -555,13 +555,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_FIND_RANDOM_POINT_IN_SPACE")
+	@:native("FindRandomPointInSpace")
 	static function FindRandomPointInSpace(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_VEHICLE_EXIST_WITH_DECORATOR")
+	@:native("DoesVehicleExistWithDecorator")
 	static function doesVehicleExistWithDecorator(decorator:String):Bool;
 
 	/**
@@ -569,7 +569,7 @@ extern class Vehicle {
 	 * 
 	 * This function is coded to not work on vehicles of type: `CBike`, `Bmx`, `CBoat`, `CTrain`, and `CSubmarine`.
 	 */
-	@:native("FIX_VEHICLE_WINDOW")
+	@:native("FixVehicleWindow")
 	static function fixVehicleWindow(vehicle:Dynamic, windowIndex:Int):Dynamic;
 
 	/**
@@ -581,7 +581,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_DOES_VEHICLE_TYRE_EXIST")
+	@:native("DoesVehicleTyreExist")
 	static function DoesVehicleTyreExist(vehicle:Dynamic, tyreIndex:Int):Bool;
 
 	/**
@@ -591,7 +591,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("DOES_VEHICLE_HAVE_ROOF")
+	@:native("DoesVehicleHaveRoof")
 	static function doesVehicleHaveRoof(vehicle:Dynamic):Bool;
 
 	/**
@@ -599,19 +599,19 @@ extern class Vehicle {
 	 * Often called after START_PLAYBACK_RECORDED_VEHICLE and SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE; similar in use to FORCE_ENTITY_AI_AND_ANIMATION_UPDATE.
 	 * ```
 	 */
-	@:native("FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE")
+	@:native("ForcePlaybackRecordedVehicleUpdate")
 	static function forcePlaybackRecordedVehicleUpdate(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("EXPLODE_VEHICLE_IN_CUTSCENE")
+	@:native("ExplodeVehicleInCutscene")
 	static function explodeVehicleInCutscene(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_SUBMARINE_SURFACE_MODE")
+	@:native("ForceSubmarineSurfaceMode")
 	static function forceSubmarineSurfaceMode(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -620,13 +620,13 @@ extern class Vehicle {
 	 * The model of the entity must be prop_contr_03b_ld or the function will return 0.
 	 * ```
 	 */
-	@:native("_FIND_VEHICLE_CARRYING_THIS_ENTITY")
+	@:native("FindVehicleCarryingThisEntity")
 	static function FindVehicleCarryingThisEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_ALL_VEHICLES")
+	@:native("GetAllVehicles")
 	static function GetAllVehicles(vehArray:Dynamic):Int;
 
 	/**
@@ -636,7 +636,7 @@ extern class Vehicle {
 	 * 
 	 * Recharges the nitrous system of the specified vehicle to its maximum capacity. This action sets the nitrous charge duration to the maximum limit defined by previous settings applied through [`SET_OVERRIDE_NITROUS_LEVEL`](#\_0xC8E9B6B71B8E660D).
 	 */
-	@:native("FULLY_CHARGE_NITROUS")
+	@:native("FullyChargeNitrous")
 	static function fullyChargeNitrous(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -646,13 +646,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("FORCE_SUBMARINE_NEURTAL_BUOYANCY")
+	@:native("ForceSubmarineNeurtalBuoyancy")
 	static function forceSubmarineNeurtalBuoyancy(submarine:Dynamic, time:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_BOAT_BOOM_POSITION_RATIO")
+	@:native("GetBoatBoomPositionRatio")
 	static function getBoatBoomPositionRatio(vehicle:Dynamic):Float;
 
 	/**
@@ -660,7 +660,7 @@ extern class Vehicle {
 	 * Returns true if the vehicle has the FLAG_JUMPING_CAR flag set.
 	 * ```
 	 */
-	@:native("_GET_CAN_VEHICLE_JUMP")
+	@:native("GetCanVehicleJump")
 	static function GetCanVehicleJump(vehicle:Dynamic):Bool;
 
 	/**
@@ -668,13 +668,13 @@ extern class Vehicle {
 	 * Same call as VEHICLE::_0x0F3B4D4E43177236
 	 * ```
 	 */
-	@:native("_GET_BOAT_BOOM_POSITION_RATIO_2")
+	@:native("GetBoatBoomPositionRatio_2")
 	static function GetBoatBoomPositionRatio2(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_BOAT_BOOM_POSITION_RATIO_3")
+	@:native("GetBoatBoomPositionRatio_3")
 	static function GetBoatBoomPositionRatio3(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -692,7 +692,7 @@ extern class Vehicle {
 	 * }
 	 * ```
 	 */
-	@:native("GET_CONVERTIBLE_ROOF_STATE")
+	@:native("GetConvertibleRoofState")
 	static function getConvertibleRoofState(vehicle:Dynamic):Int;
 
 	/**
@@ -702,7 +702,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_BOAT_VEHICLE_MODEL_AGILITY")
+	@:native("GetBoatVehicleModelAgility")
 	static function getBoatVehicleModelAgility(modelHash:Int):Float;
 
 	/**
@@ -726,19 +726,19 @@ extern class Vehicle {
 	 * Use flag 127 to return police cars
 	 * ```
 	 */
-	@:native("GET_CLOSEST_VEHICLE")
+	@:native("GetClosestVehicle")
 	static function getClosestVehicle(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, flags:Int):Dynamic;
 
 	/**
 	 * Gets the position of the cargobob hook, in world coords.
 	 */
-	@:native("_GET_CARGOBOB_HOOK_POSITION")
+	@:native("GetCargobobHookPosition")
 	static function GetCargobobHookPosition(cargobob:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_PLAYBACK_FOR_VEHICLE")
+	@:native("GetCurrentPlaybackForVehicle")
 	static function getCurrentPlaybackForVehicle(vehicle:Dynamic):Int;
 
 	/**
@@ -746,7 +746,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_DRIFT_TYRES_ENABLED")
+	@:native("GetDriftTyresEnabled")
 	static function GetDriftTyresEnabled(vehicle:Dynamic):Bool;
 
 	/**
@@ -754,7 +754,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_DOES_VEHICLE_HAVE_TOMBSTONE")
+	@:native("GetDoesVehicleHaveTombstone")
 	static function GetDoesVehicleHaveTombstone(vehicle:Dynamic):Bool;
 
 	/**
@@ -763,31 +763,31 @@ extern class Vehicle {
 	 * At 0 the main rotor will stall.  
 	 * ```
 	 */
-	@:native("GET_HELI_MAIN_ROTOR_HEALTH")
+	@:native("GetHeliMainRotorHealth")
 	static function getHeliMainRotorHealth(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_ATTACHED_TO_TOW_TRUCK")
+	@:native("GetEntityAttachedToTowTruck")
 	static function getEntityAttachedToTowTruck(towTruck:Dynamic):Dynamic;
 
 	/**
 	 * Returns the display name/text label (`gameName` in `vehicles.meta`) for the specified vehicle model.
 	 */
-	@:native("GET_DISPLAY_NAME_FROM_VEHICLE_MODEL")
+	@:native("GetDisplayNameFromVehicleModel")
 	static function getDisplayNameFromVehicleModel(modelHash:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_HAS_ROCKET_BOOST")
+	@:native("GetHasRocketBoost")
 	static function GetHasRocketBoost(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_HAS_RETRACTABLE_WHEELS")
+	@:native("GetHasRetractableWheels")
 	static function GetHasRetractableWheels(vehicle:Dynamic):Bool;
 
 	/**
@@ -795,25 +795,25 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_HELI_TAIL_ROTOR_HEALTH")
+	@:native("GetHeliTailRotorHealth")
 	static function getHeliTailRotorHealth(heli:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_ENTITY_ATTACHED_TO_CARGOBOB")
+	@:native("GetEntityAttachedToCargobob")
 	static function GetEntityAttachedToCargobob(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Checks whether the specified boat vehicle is capsized, meaning it has overturned or is upside down in the water.
 	 */
-	@:native("GET_IS_BOAT_CAPSIZED")
+	@:native("GetIsBoatCapsized")
 	static function getIsBoatCapsized(vehicle:Dynamic):Bool;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("_GET_ENTRY_POSITION_OF_DOOR")
+	@:native("GetEntryPositionOfDoor")
 	static function GetEntryPositionOfDoor(vehicle:Dynamic, doorIndex:Int):Dynamic;
 
 	/**
@@ -821,7 +821,7 @@ extern class Vehicle {
 	 * From the driver's perspective, is the right headlight broken.  
 	 * ```
 	 */
-	@:native("GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED")
+	@:native("GetIsRightVehicleHeadlightDamaged")
 	static function getIsRightVehicleHeadlightDamaged(vehicle:Dynamic):Bool;
 
 	/**
@@ -829,7 +829,7 @@ extern class Vehicle {
 	 * Check if Vehicle Secondary is avaliable for customize  
 	 * ```
 	 */
-	@:native("GET_IS_VEHICLE_SECONDARY_COLOUR_CUSTOM")
+	@:native("GetIsVehicleSecondaryColourCustom")
 	static function getIsVehicleSecondaryColourCustom(vehicle:Dynamic):Bool;
 
 	/**
@@ -837,13 +837,13 @@ extern class Vehicle {
 	 * Returns true when in a vehicle, false whilst entering/exiting.  
 	 * ```
 	 */
-	@:native("GET_IS_VEHICLE_ENGINE_RUNNING")
+	@:native("GetIsVehicleEngineRunning")
 	static function getIsVehicleEngineRunning(vehicle:Dynamic):Bool;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("_GET_IS_DOOR_VALID")
+	@:native("GetIsDoorValid")
 	static function GetIsDoorValid(vehicle:Dynamic, doorIndex:Int):Bool;
 
 	/**
@@ -858,13 +858,13 @@ extern class Vehicle {
 	 * 
 	 * Landing gear state 2 is never used.
 	 */
-	@:native("GET_LANDING_GEAR_STATE")
+	@:native("GetLandingGearState")
 	static function getLandingGearState(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_IS_WHEELS_LOWERED_STATE_ACTIVE")
+	@:native("GetIsWheelsLoweredStateActive")
 	static function GetIsWheelsLoweredStateActive(vehicle:Dynamic):Bool;
 
 	/**
@@ -873,7 +873,7 @@ extern class Vehicle {
 	 * At -100 both helicopter rotors will stall.
 	 * ```
 	 */
-	@:native("GET_HELI_TAIL_BOOM_HEALTH")
+	@:native("GetHeliTailBoomHealth")
 	static function getHeliTailBoomHealth(vehicle:Dynamic):Float;
 
 	/**
@@ -881,13 +881,13 @@ extern class Vehicle {
 	 * From the driver's perspective, is the left headlight broken.  
 	 * ```
 	 */
-	@:native("GET_IS_LEFT_VEHICLE_HEADLIGHT_DAMAGED")
+	@:native("GetIsLeftVehicleHeadlightDamaged")
 	static function getIsLeftVehicleHeadlightDamaged(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LAST_PED_IN_VEHICLE_SEAT")
+	@:native("GetLastPedInVehicleSeat")
 	static function getLastPedInVehicleSeat(vehicle:Dynamic, seatIndex:Int):Dynamic;
 
 	/**
@@ -895,13 +895,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_HYDRAULIC_WHEEL_VALUE")
+	@:native("GetHydraulicWheelValue")
 	static function GetHydraulicWheelValue(vehicle:Dynamic, wheelId:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MOD_SLOT_NAME")
+	@:native("GetModSlotName")
 	static function getModSlotName(vehicle:Dynamic, modType:Int):String;
 
 	/**
@@ -911,7 +911,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_IS_VEHICLE_EMP_DISABLED")
+	@:native("GetIsVehicleEmpDisabled")
 	static function GetIsVehicleEmpDisabled(vehicle:Dynamic):Bool;
 
 	/**
@@ -936,13 +936,13 @@ extern class Vehicle {
 	 * dev-c.com/nativedb/func/info/1f2aa07f00b3217a  
 	 * ```
 	 */
-	@:native("GET_LIVERY_NAME")
+	@:native("GetLiveryName")
 	static function getLiveryName(vehicle:Dynamic, liveryIndex:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_IS_VEHICLE_PRIMARY_COLOUR_CUSTOM")
+	@:native("GetIsVehiclePrimaryColourCustom")
 	static function getIsVehiclePrimaryColourCustom(vehicle:Dynamic):Bool;
 
 	/**
@@ -956,13 +956,13 @@ extern class Vehicle {
 	 * 5: Chrome
 	 * ```
 	 */
-	@:native("GET_NUM_MOD_COLORS")
+	@:native("GetNumModColors")
 	static function getNumModColors(paintType:Int, p1:Bool):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LAST_DRIVEN_VEHICLE")
+	@:native("GetLastDrivenVehicle")
 	static function getLastDrivenVehicle():Dynamic;
 
 	/**
@@ -972,13 +972,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_GET_IS_VEHICLE_ELECTRIC")
+	@:native("GetIsVehicleElectric")
 	static function GetIsVehicleElectric(vehicleModel:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_MOD_KITS")
+	@:native("GetNumModKits")
 	static function getNumModKits(vehicle:Dynamic):Int;
 
 	/**
@@ -988,7 +988,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("GET_MAKE_NAME_FROM_VEHICLE_MODEL")
+	@:native("GetMakeNameFromVehicleModel")
 	static function getMakeNameFromVehicleModel(modelHash:Int):String;
 
 	/**
@@ -996,13 +996,13 @@ extern class Vehicle {
 	 * Returns how many possible mods a vehicle has for a given mod type  
 	 * ```
 	 */
-	@:native("GET_NUM_VEHICLE_MODS")
+	@:native("GetNumVehicleMods")
 	static function getNumVehicleMods(vehicle:Dynamic, modType:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_NUMBER_OF_VEHICLE_DOORS")
+	@:native("GetNumberOfVehicleDoors")
 	static function GetNumberOfVehicleDoors(vehicle:Dynamic):Int;
 
 	/**
@@ -1011,7 +1011,7 @@ extern class Vehicle {
 	 * Use _GET_LABEL_TEXT to get the part name in the game's language  
 	 * ```
 	 */
-	@:native("GET_MOD_TEXT_LABEL")
+	@:native("GetModTextLabel")
 	static function getModTextLabel(vehicle:Dynamic, modType:Int, modValue:Int):String;
 
 	/**
@@ -1019,7 +1019,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_IS_VEHICLE_SHUNT_BOOST_ACTIVE")
+	@:native("GetIsVehicleShuntBoostActive")
 	static function GetIsVehicleShuntBoostActive(vehicle:Dynamic):Bool;
 
 	/**
@@ -1027,7 +1027,7 @@ extern class Vehicle {
 	 * Distance traveled in the vehicles current recording.
 	 * ```
 	 */
-	@:native("GET_POSITION_IN_RECORDING")
+	@:native("GetPositionInRecording")
 	static function getPositionInRecording(vehicle:Dynamic):Float;
 
 	/**
@@ -1035,7 +1035,7 @@ extern class Vehicle {
 	 * Returns the number of *types* of licence plates, enumerated below in SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX.  
 	 * ```
 	 */
-	@:native("GET_NUMBER_OF_VEHICLE_NUMBER_PLATES")
+	@:native("GetNumberOfVehicleNumberPlates")
 	static function getNumberOfVehicleNumberPlates():Int;
 
 	/**
@@ -1043,7 +1043,7 @@ extern class Vehicle {
 	 * Actually number of color combinations  
 	 * ```
 	 */
-	@:native("GET_NUMBER_OF_VEHICLE_COLOURS")
+	@:native("GetNumberOfVehicleColours")
 	static function getNumberOfVehicleColours(vehicle:Dynamic):Int;
 
 	/**
@@ -1053,7 +1053,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_LAST_RAMMED_VEHICLE")
+	@:native("GetLastRammedVehicle")
 	static function GetLastRammedVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -1061,25 +1061,25 @@ extern class Vehicle {
 	 * 
 	 * See [`REQUEST_VEHICLE_RECORDING`](#\_0xAF514CABE74CBF15).
 	 */
-	@:native("GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME")
+	@:native("GetPositionOfVehicleRecordingAtTime")
 	static function getPositionOfVehicleRecordingAtTime(recording:Int, time:Float, script:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_VEHICLE_WINDOW_TINTS")
+	@:native("GetNumVehicleWindowTints")
 	static function getNumVehicleWindowTints():Int;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("GET_PED_USING_VEHICLE_DOOR")
+	@:native("GetPedUsingVehicleDoor")
 	static function getPedUsingVehicleDoor(vehicle:Dynamic, doorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_VEHICLE_BACK_BUMPER_IN_SPHERE")
+	@:native("GetRandomVehicleBackBumperInSphere")
 	static function getRandomVehicleBackBumperInSphere(p0:Float, p1:Float, p2:Float, p3:Float, p4:Int, p5:Int, p6:Int):Dynamic;
 
 	/**
@@ -1090,7 +1090,7 @@ extern class Vehicle {
 	 * successIndicator: 0 if success, -1 if failed
 	 * ```
 	 */
-	@:native("GET_RANDOM_VEHICLE_MODEL_IN_MEMORY")
+	@:native("GetRandomVehicleModelInMemory")
 	static function getRandomVehicleModelInMemory(p0:Bool, modelHash:Dynamic, successIndicator:Dynamic):Dynamic;
 
 	/**
@@ -1104,7 +1104,7 @@ extern class Vehicle {
 	 * flags: The bitwise flags that modifies the behaviour of this function.  
 	 * ```
 	 */
-	@:native("GET_RANDOM_VEHICLE_IN_SPHERE")
+	@:native("GetRandomVehicleInSphere")
 	static function getRandomVehicleInSphere(x:Float, y:Float, z:Float, radius:Float, modelHash:Int, flags:Int):Dynamic;
 
 	/**
@@ -1114,19 +1114,19 @@ extern class Vehicle {
 	 * 
 	 * **NativeDB Added Parameter 3**: BOOL p2 (uses a different GetOccupant function)
 	 */
-	@:native("GET_PED_IN_VEHICLE_SEAT")
+	@:native("GetPedInVehicleSeat")
 	static function getPedInVehicleSeat(vehicle:Dynamic, seatIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME")
+	@:native("GetPositionOfVehicleRecordingIdAtTime")
 	static function getPositionOfVehicleRecordingIdAtTime(id:Int, time:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_VEHICLE_FRONT_BUMPER_IN_SPHERE")
+	@:native("GetRandomVehicleFrontBumperInSphere")
 	static function getRandomVehicleFrontBumperInSphere(p0:Float, p1:Float, p2:Float, p3:Float, p4:Int, p5:Int, p6:Int):Dynamic;
 
 	/**
@@ -1136,19 +1136,19 @@ extern class Vehicle {
 	 * 
 	 * Retrieves the remaining duration of nitrous boost available for the specified vehicle.
 	 */
-	@:native("_GET_REMAINING_NITROUS_DURATION")
+	@:native("GetRemainingNitrousDuration")
 	static function GetRemainingNitrousDuration(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ROTATION_OF_VEHICLE_RECORDING_ID_AT_TIME")
+	@:native("GetRotationOfVehicleRecordingIdAtTime")
 	static function getRotationOfVehicleRecordingIdAtTime(id:Int, time:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ROTATION_OF_VEHICLE_RECORDING_AT_TIME")
+	@:native("GetRotationOfVehicleRecordingAtTime")
 	static function getRotationOfVehicleRecordingAtTime(recording:Int, time:Float, script:String):Dynamic;
 
 	/**
@@ -1158,7 +1158,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("GET_SUBMARINE_NUMBER_OF_AIR_LEAKS")
+	@:native("GetSubmarineNumberOfAirLeaks")
 	static function getSubmarineNumberOfAirLeaks(submarine:Dynamic):Int;
 
 	/**
@@ -1168,13 +1168,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("GET_SUBMARINE_IS_UNDER_DESIGN_DEPTH")
+	@:native("GetSubmarineIsUnderDesignDepth")
 	static function getSubmarineIsUnderDesignDepth(submarine:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID")
+	@:native("GetTotalDurationOfVehicleRecordingId")
 	static function getTotalDurationOfVehicleRecordingId(id:Int):Float;
 
 	/**
@@ -1182,7 +1182,7 @@ extern class Vehicle {
 	 * Can be used with GET_TOTAL_DURATION_OF_VEHICLE_RECORDING{_ID} to compute a percentage.
 	 * ```
 	 */
-	@:native("GET_TIME_POSITION_IN_RECORDING")
+	@:native("GetTimePositionInRecording")
 	static function getTimePositionInRecording(vehicle:Dynamic):Float;
 
 	/**
@@ -1190,13 +1190,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_GET_TYRE_WEAR_MULTIPLIER")
+	@:native("GetTyreWearMultiplier")
 	static function GetTyreWearMultiplier(vehicle:Dynamic, wheelIndex:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TOTAL_DURATION_OF_VEHICLE_RECORDING")
+	@:native("GetTotalDurationOfVehicleRecording")
 	static function getTotalDurationOfVehicleRecording(recording:Int, script:String):Float;
 
 	/**
@@ -1206,7 +1206,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_VEHICLE_ACCELERATION")
+	@:native("GetVehicleAcceleration")
 	static function getVehicleAcceleration(vehicle:Dynamic):Float;
 
 	/**
@@ -1214,19 +1214,19 @@ extern class Vehicle {
 	 * Corrected p1. it's basically the 'carriage/trailer number'. So if the train has 3 trailers you'd call the native once with a var or 3 times with 1, 2, 3.  
 	 * ```
 	 */
-	@:native("GET_TRAIN_CARRIAGE")
+	@:native("GetTrainCarriage")
 	static function getTrainCarriage(train:Dynamic, trailerNumber:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CAUSE_OF_DESTRUCTION")
+	@:native("GetVehicleCauseOfDestruction")
 	static function getVehicleCauseOfDestruction(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_CAN_ACTIVATE_PARACHUTE")
+	@:native("GetVehicleCanActivateParachute")
 	static function GetVehicleCanActivateParachute(vehicle:Dynamic):Bool;
 
 	/**
@@ -1234,7 +1234,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_GET_TYRE_HEALTH")
+	@:native("GetTyreHealth")
 	static function GetTyreHealth(vehicle:Dynamic, wheelIndex:Int):Float;
 
 	/**
@@ -1269,7 +1269,7 @@ extern class Vehicle {
 	 * char* className = UI::_GET_LABEL_TEXT(buffer);  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_CLASS")
+	@:native("GetVehicleClass")
 	static function getVehicleClass(vehicle:Dynamic):Int;
 
 	/**
@@ -1279,7 +1279,7 @@ extern class Vehicle {
 	 * Vehicle does not necessarily explode or become undrivable at 0.  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_BODY_HEALTH")
+	@:native("GetVehicleBodyHealth")
 	static function getVehicleBodyHealth(vehicle:Dynamic):Float;
 
 	/**
@@ -1290,7 +1290,7 @@ extern class Vehicle {
 	 * const char* className = HUD::_GET_LABEL_TEXT(buffer);
 	 * ```
 	 */
-	@:native("GET_VEHICLE_CLASS_FROM_NAME")
+	@:native("GetVehicleClassFromName")
 	static function getVehicleClassFromName(modelHash:Int):Int;
 
 	/**
@@ -1298,25 +1298,25 @@ extern class Vehicle {
 	 * Returns attached vehicle (Vehicle in parameter must be cargobob)  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_ATTACHED_TO_CARGOBOB")
+	@:native("GetVehicleAttachedToCargobob")
 	static function getVehicleAttachedToCargobob(cargobob:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED")
+	@:native("GetVehicleClassEstimatedMaxSpeed")
 	static function getVehicleClassEstimatedMaxSpeed(vehicleClass:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CLASS_MAX_BRAKING")
+	@:native("GetVehicleClassMaxBraking")
 	static function getVehicleClassMaxBraking(vehicleClass:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CLASS_MAX_TRACTION")
+	@:native("GetVehicleClassMaxTraction")
 	static function getVehicleClassMaxTraction(vehicleClass:Int):Float;
 
 	/**
@@ -1326,31 +1326,31 @@ extern class Vehicle {
 	 * 
 	 * Use [`_SET_AIRCRAFT_BOMB_COUNT`](#\_0xF4B2ED59DEB5D774) to set the amount of bombs on that vehicle.
 	 */
-	@:native("_GET_VEHICLE_BOMB_COUNT")
+	@:native("GetVehicleBombCount")
 	static function GetVehicleBombCount(aircraft:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CLASS_MAX_ACCELERATION")
+	@:native("GetVehicleClassMaxAcceleration")
 	static function getVehicleClassMaxAcceleration(vehicleClass:Int):Float;
 
 	/**
 	 * See [`SET_VEHICLE_CUSTOM_PRIMARY_COLOUR`](#\_0x7141766F91D15BEA) and [`SET_VEHICLE_CUSTOM_SECONDARY_COLOUR`](#\_0x36CED73BFED89754).
 	 */
-	@:native("GET_VEHICLE_COLOR")
+	@:native("GetVehicleColor")
 	static function getVehicleColor(vehicle:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CLASS_MAX_AGILITY")
+	@:native("GetVehicleClassMaxAgility")
 	static function getVehicleClassMaxAgility(vehicleClass:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_COLOURS")
+	@:native("GetVehicleColours")
 	static function getVehicleColours(vehicle:Dynamic, colorPrimary:Dynamic, colorSecondary:Dynamic):Dynamic;
 
 	/**
@@ -1358,19 +1358,19 @@ extern class Vehicle {
 	 * 
 	 * Use [`_SET_AIRCRAFT_COUNTERMEASURE_COUNT`](#\_0x9BDA23BF666F0855) to set the current amount.
 	 */
-	@:native("_GET_VEHICLE_COUNTERMEASURE_COUNT")
+	@:native("GetVehicleCountermeasureCount")
 	static function GetVehicleCountermeasureCount(aircraft:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CUSTOM_PRIMARY_COLOUR")
+	@:native("GetVehicleCustomPrimaryColour")
 	static function getVehicleCustomPrimaryColour(vehicle:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_CUSTOM_SECONDARY_COLOUR")
+	@:native("GetVehicleCustomSecondaryColour")
 	static function getVehicleCustomSecondaryColour(vehicle:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
@@ -1378,31 +1378,31 @@ extern class Vehicle {
 	 * 
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("GET_VEHICLE_DOOR_ANGLE_RATIO")
+	@:native("GetVehicleDoorAngleRatio")
 	static function getVehicleDoorAngleRatio(vehicle:Dynamic, doorIndex:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_COLOUR_COMBINATION")
+	@:native("GetVehicleColourCombination")
 	static function getVehicleColourCombination(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_DASHBOARD_COLOR")
+	@:native("GetVehicleDashboardColor")
 	static function GetVehicleDashboardColor(vehicle:Dynamic, color:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_DOORS_LOCKED_FOR_PLAYER")
+	@:native("GetVehicleDoorsLockedForPlayer")
 	static function getVehicleDoorsLockedForPlayer(vehicle:Dynamic, player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_DOOR_LOCK_STATUS")
+	@:native("GetVehicleDoorLockStatus")
 	static function getVehicleDoorLockStatus(vehicle:Dynamic):Int;
 
 	/**
@@ -1411,7 +1411,7 @@ extern class Vehicle {
 	 * GET_VEHICLE_*
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_CURRENT_SLIPSTREAM_DRAFT")
+	@:native("GetVehicleCurrentSlipstreamDraft")
 	static function GetVehicleCurrentSlipstreamDraft(vehicle:Dynamic):Float;
 
 	/**
@@ -1423,19 +1423,19 @@ extern class Vehicle {
 	 * v_5/ *{3}* / = VEHICLE::GET_VEHICLE_DEFORMATION_AT_POS(a_0._f1, 1.21, 6.15, 0.3);  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_DEFORMATION_AT_POS")
+	@:native("GetVehicleDeformationAtPos")
 	static function getVehicleDeformationAtPos(vehicle:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_EXTRA_COLOURS")
+	@:native("GetVehicleExtraColours")
 	static function getVehicleExtraColours(vehicle:Dynamic, pearlescentColor:Dynamic, wheelColor:Dynamic):Dynamic;
 
 	/**
 	 * A getter for [`SET_VEHICLE_DIRT_LEVEL`](#\_0x79D3B596FE44EE8B).
 	 */
-	@:native("GET_VEHICLE_DIRT_LEVEL")
+	@:native("GetVehicleDirtLevel")
 	static function getVehicleDirtLevel(vehicle:Dynamic):Float;
 
 	/**
@@ -1446,13 +1446,20 @@ extern class Vehicle {
 	 * **Note**: When using this native, the hash of the vehicle needs to be loaded into the client's memory. This can be done by requesting the model with [`REQUEST_MODEL`](#\_0x963D27A58DF860AC) or by simply having the vehicle spawned.
 	 * 
 	 * ```cpp
-	 * 
-	 * enum eVehicleDrivetrainType
-	 * {
-	 *     INVALID = 0,
-	 *     FWD = 1,
-	 *     RWD = 2,
-	 *     AWD = 3
+	 * 
+
+	 * enum eVehicleDrivetrainType
+
+	 * {
+
+	 *     INVALID = 0,
+
+	 *     FWD = 1,
+
+	 *     RWD = 2,
+
+	 *     AWD = 3
+
 	 * };
 	 * ```
 	 * 
@@ -1460,13 +1467,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_DRIVETRAIN_TYPE")
+	@:native("GetVehicleDrivetrainType")
 	static function GetVehicleDrivetrainType(vehicleModel:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_HAS_KERS")
+	@:native("GetVehicleHasKers")
 	static function getVehicleHasKers(vehicle:Dynamic):Bool;
 
 	/**
@@ -1479,7 +1486,7 @@ extern class Vehicle {
 	 * NativeDB Added Parameter 7: float maxUnkHealth
 	 * ```
 	 */
-	@:native("GET_VEHICLE_HEALTH_PERCENTAGE")
+	@:native("GetVehicleHealthPercentage")
 	static function getVehicleHealthPercentage(vehicle:Dynamic):Float;
 
 	/**
@@ -1493,7 +1500,7 @@ extern class Vehicle {
 	 * 1000: Engine is perfect  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_ENGINE_HEALTH")
+	@:native("GetVehicleEngineHealth")
 	static function getVehicleEngineHealth(vehicle:Dynamic):Float;
 
 	/**
@@ -1504,19 +1511,19 @@ extern class Vehicle {
 	 * 2: locked on
 	 * ```
 	 */
-	@:native("GET_VEHICLE_HOMING_LOCKON_STATE")
+	@:native("GetVehicleHomingLockonState")
 	static function getVehicleHomingLockonState(vehicle:Dynamic):Int;
 
 	/**
 	 * Returns whether the specified vehicle is designated as a mercenary vehicle
 	 */
-	@:native("GET_VEHICLE_IS_MERCENARY")
+	@:native("GetVehicleIsMercenary")
 	static function getVehicleIsMercenary(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_LAYOUT_HASH")
+	@:native("GetVehicleLayoutHash")
 	static function getVehicleLayoutHash(vehicle:Dynamic):Int;
 
 	/**
@@ -1524,7 +1531,7 @@ extern class Vehicle {
 	 * -1 = no livery  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_LIVERY")
+	@:native("GetVehicleLivery")
 	static function getVehicleLivery(vehicle:Dynamic):Int;
 
 	/**
@@ -1534,7 +1541,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("GET_VEHICLE_ESTIMATED_MAX_SPEED")
+	@:native("GetVehicleEstimatedMaxSpeed")
 	static function getVehicleEstimatedMaxSpeed(vehicle:Dynamic):Float;
 
 	/**
@@ -1543,19 +1550,19 @@ extern class Vehicle {
 	 * The result is a value from 0-1, where 0 is fresh paint.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_ENVEFF_SCALE")
+	@:native("GetVehicleEnveffScale")
 	static function getVehicleEnveffScale(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_LIGHTS_STATE")
+	@:native("GetVehicleLightsState")
 	static function getVehicleLightsState(vehicle:Dynamic, lightsOn:Dynamic, highbeamsOn:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_FLIGHT_NOZZLE_POSITION")
+	@:native("GetVehicleFlightNozzlePosition")
 	static function getVehicleFlightNozzlePosition(aircraft:Dynamic):Float;
 
 	/**
@@ -1563,25 +1570,25 @@ extern class Vehicle {
 	 * Returns -1 if the vehicle has no livery  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_LIVERY_COUNT")
+	@:native("GetVehicleLiveryCount")
 	static function getVehicleLiveryCount(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD")
+	@:native("GetVehicleMod")
 	static function getVehicleMod(vehicle:Dynamic, modType:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS")
+	@:native("GetVehicleMaxNumberOfPassengers")
 	static function getVehicleMaxNumberOfPassengers(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_HAS_PARACHUTE")
+	@:native("GetVehicleHasParachute")
 	static function GetVehicleHasParachute(vehicle:Dynamic):Bool;
 
 	/**
@@ -1590,31 +1597,31 @@ extern class Vehicle {
 	 * p1 is always 0  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MOD_COLOR_1_NAME")
+	@:native("GetVehicleModColor_1Name")
 	static function getVehicleModColor1Name(vehicle:Dynamic, p1:Bool):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD_COLOR_1")
+	@:native("GetVehicleModColor_1")
 	static function getVehicleModColor1(vehicle:Dynamic, paintType:Dynamic, color:Dynamic, pearlescentColor:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_INTERIOR_COLOR")
+	@:native("GetVehicleInteriorColor")
 	static function GetVehicleInteriorColor(vehicle:Dynamic, color:Dynamic):Dynamic;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("GET_VEHICLE_INDIVIDUAL_DOOR_LOCK_STATUS")
+	@:native("GetVehicleIndividualDoorLockStatus")
 	static function getVehicleIndividualDoorLockStatus(vehicle:Dynamic, doorIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_LOCK_ON_TARGET")
+	@:native("GetVehicleLockOnTarget")
 	static function getVehicleLockOnTarget(vehicle:Dynamic, entity:Dynamic):Bool;
 
 	/**
@@ -1622,43 +1629,43 @@ extern class Vehicle {
 	 * Can be used for IS_DLC_VEHICLE_MOD and _0xC098810437312FFF
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MOD_IDENTIFIER_HASH")
+	@:native("GetVehicleModIdentifierHash")
 	static function getVehicleModIdentifierHash(vehicle:Dynamic, modType:Int, modIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MAX_BRAKING")
+	@:native("GetVehicleMaxBraking")
 	static function getVehicleMaxBraking(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MAX_TRACTION")
+	@:native("GetVehicleMaxTraction")
 	static function getVehicleMaxTraction(vehicle:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD_MODIFIER_VALUE")
+	@:native("GetVehicleModModifierValue")
 	static function getVehicleModModifierValue(vehicle:Dynamic, modType:Int, modIndex:Int):Int;
 
 	/**
 	 * Returns the acceleration of the specified model.
 	 */
-	@:native("GET_VEHICLE_MODEL_ACCELERATION")
+	@:native("GetVehicleModelAcceleration")
 	static function getVehicleModelAcceleration(modelHash:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD_COLOR_2")
+	@:native("GetVehicleModColor_2")
 	static function getVehicleModColor2(vehicle:Dynamic, paintType:Dynamic, color:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS")
+	@:native("GetVehicleModelMaxBrakingMaxMods")
 	static function getVehicleModelMaxBrakingMaxMods(modelHash:Int):Float;
 
 	/**
@@ -1667,7 +1674,7 @@ extern class Vehicle {
 	 * 9.8 * thrust if air vehicle, else 0.38 + drive force?
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_MODEL_ESTIMATED_AGILITY")
+	@:native("GetVehicleModelEstimatedAgility")
 	static function GetVehicleModelEstimatedAgility(modelHash:Int):Float;
 
 	/**
@@ -1676,7 +1683,7 @@ extern class Vehicle {
 	 * Function pertains only to aviation vehicles.
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_MODEL_MAX_KNOTS")
+	@:native("GetVehicleModelMaxKnots")
 	static function GetVehicleModelMaxKnots(modelHash:Int):Float;
 
 	/**
@@ -1684,7 +1691,7 @@ extern class Vehicle {
 	 * Returns max braking of the specified vehicle model.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MODEL_MAX_BRAKING")
+	@:native("GetVehicleModelMaxBraking")
 	static function getVehicleModelMaxBraking(modelHash:Int):Float;
 
 	/**
@@ -1692,7 +1699,7 @@ extern class Vehicle {
 	 * returns a string which is the codename of the vehicle's currently selected secondary color  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MOD_COLOR_2_NAME")
+	@:native("GetVehicleModColor_2Name")
 	static function getVehicleModColor2Name(vehicle:Dynamic):String;
 
 	/**
@@ -1700,19 +1707,19 @@ extern class Vehicle {
 	 * Returns `nMonetaryValue` from handling.meta for specific model, which is the vehicle's monetary value.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MODEL_VALUE")
+	@:native("GetVehicleModelValue")
 	static function getVehicleModelValue(vehicleModel:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD_KIT_TYPE")
+	@:native("GetVehicleModKitType")
 	static function getVehicleModKitType(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_MOD_KIT")
+	@:native("GetVehicleModKit")
 	static function getVehicleModKit(vehicle:Dynamic):Int;
 
 	/**
@@ -1720,7 +1727,7 @@ extern class Vehicle {
 	 * Only used for wheels(ModType = 23/24) Returns true if the wheels are custom wheels
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MOD_VARIATION")
+	@:native("GetVehicleModVariation")
 	static function getVehicleModVariation(vehicle:Dynamic, modType:Int):Bool;
 
 	/**
@@ -1728,7 +1735,7 @@ extern class Vehicle {
 	 * Also includes some "turnOffBones" when vehicle mods are installed.
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_NUMBER_OF_BROKEN_OFF_BONES")
+	@:native("GetVehicleNumberOfBrokenOffBones")
 	static function GetVehicleNumberOfBrokenOffBones(vehicle:Dynamic):Int;
 
 	/**
@@ -1736,7 +1743,7 @@ extern class Vehicle {
 	 * Gets the number of passengers, NOT including the driver. Use IS_VEHICLE_SEAT_FREE(Vehicle, -1) to also check for the driver  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NUMBER_OF_PASSENGERS")
+	@:native("GetVehicleNumberOfPassengers")
 	static function getVehicleNumberOfPassengers(vehicle:Dynamic):Int;
 
 	/**
@@ -1744,7 +1751,7 @@ extern class Vehicle {
 	 * Returns max speed (without mods) of the specified vehicle model in m/s.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED")
+	@:native("GetVehicleModelEstimatedMaxSpeed")
 	static function getVehicleModelEstimatedMaxSpeed(modelHash:Int):Float;
 
 	/**
@@ -1752,7 +1759,7 @@ extern class Vehicle {
 	 * Returns max number of passengers (including the driver) for the specified vehicle model.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MODEL_NUMBER_OF_SEATS")
+	@:native("GetVehicleModelNumberOfSeats")
 	static function getVehicleModelNumberOfSeats(modelHash:Int):Int;
 
 	/**
@@ -1775,7 +1782,7 @@ extern class Vehicle {
 	 * }
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NUMBER_PLATE_TEXT_INDEX")
+	@:native("GetVehicleNumberPlateTextIndex")
 	static function getVehicleNumberPlateTextIndex(vehicle:Dynamic):Int;
 
 	/**
@@ -1793,13 +1800,13 @@ extern class Vehicle {
 	 * 
 	 * Motorcycles with no visible plates will sometimes return a 2 for unknown reasons.
 	 */
-	@:native("GET_VEHICLE_PLATE_TYPE")
+	@:native("GetVehiclePlateType")
 	static function getVehiclePlateType(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_NUMBER_OF_BROKEN_BONES")
+	@:native("GetVehicleNumberOfBrokenBones")
 	static function GetVehicleNumberOfBrokenBones(vehicle:Dynamic):Int;
 
 	/**
@@ -1807,7 +1814,7 @@ extern class Vehicle {
 	 * Returns max traction of the specified vehicle model.
 	 * ```
 	 */
-	@:native("GET_VEHICLE_MODEL_MAX_TRACTION")
+	@:native("GetVehicleModelMaxTraction")
 	static function getVehicleModelMaxTraction(modelHash:Int):Float;
 
 	/**
@@ -1816,19 +1823,19 @@ extern class Vehicle {
 	 * Begins leaking gas at around 650 health  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_PETROL_TANK_HEALTH")
+	@:native("GetVehiclePetrolTankHealth")
 	static function getVehiclePetrolTankHealth(vehicle:Dynamic):Float;
 
 	/**
 	 * Returns a number of available rooftop liveries, or -1 if vehicle has no rooftop liveries available.
 	 */
-	@:native("_GET_VEHICLE_ROOF_LIVERY_COUNT")
+	@:native("GetVehicleRoofLiveryCount")
 	static function GetVehicleRoofLiveryCount(vehicle:Dynamic):Int;
 
 	/**
 	 * See [`REQUEST_VEHICLE_RECORDING`](#\_0xAF514CABE74CBF15).
 	 */
-	@:native("GET_VEHICLE_RECORDING_ID")
+	@:native("GetVehicleRecordingId")
 	static function getVehicleRecordingId(recording:Int, script:String):Int;
 
 	/**
@@ -1838,7 +1845,7 @@ extern class Vehicle {
 	 * Could be suspension related, as in max suspension height and min suspension height, considering the natives location.
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_SUSPENSION_BOUNDS")
+	@:native("GetVehicleSuspensionBounds")
 	static function GetVehicleSuspensionBounds(vehicle:Dynamic, out1:Dynamic, out2:Dynamic):Dynamic;
 
 	/**
@@ -1846,7 +1853,7 @@ extern class Vehicle {
 	 * 
 	 * See [`_SET_VEHICLE_NEON_LIGHTS_COLOUR`](#\_0x8E0A582209A62695) for more information
 	 */
-	@:native("_GET_VEHICLE_NEON_LIGHTS_COLOUR")
+	@:native("GetVehicleNeonLightsColour")
 	static function GetVehicleNeonLightsColour(vehicle:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
@@ -1857,7 +1864,7 @@ extern class Vehicle {
 	 * 0.008 is Ultra Suspension.  
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_SUSPENSION_HEIGHT")
+	@:native("GetVehicleSuspensionHeight")
 	static function GetVehicleSuspensionHeight(vehicle:Dynamic):Float;
 
 	/**
@@ -1865,13 +1872,13 @@ extern class Vehicle {
 	 * Gets the trailer of a vehicle and puts it into the trailer parameter.  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_TRAILER_VEHICLE")
+	@:native("GetVehicleTrailerVehicle")
 	static function getVehicleTrailerVehicle(vehicle:Dynamic, trailer:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_TYRE_SMOKE_COLOR")
+	@:native("GetVehicleTyreSmokeColor")
 	static function getVehicleTyreSmokeColor(vehicle:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
@@ -1879,19 +1886,19 @@ extern class Vehicle {
 	 * Returns the license plate text from a vehicle.  8 chars maximum.  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NUMBER_PLATE_TEXT")
+	@:native("GetVehicleNumberPlateText")
 	static function getVehicleNumberPlateText(vehicle:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_VEHICLE_WEAPON_CAPACITY")
+	@:native("GetVehicleWeaponCapacity")
 	static function GetVehicleWeaponCapacity(vehicle:Dynamic, weaponIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_TYRES_CAN_BURST")
+	@:native("GetVehicleTyresCanBurst")
 	static function getVehicleTyresCanBurst(vehicle:Dynamic):Bool;
 
 	/**
@@ -1919,14 +1926,14 @@ extern class Vehicle {
 	 * };
 	 * ```
 	 */
-	@:native("GET_VEHICLE_WHEEL_TYPE")
+	@:native("GetVehicleWheelType")
 	static function getVehicleWheelType(vehicle:Dynamic):Int;
 
 	/**
 	 * Returns index of the current vehicle's rooftop livery.
 	 * A getter for [\_SET_VEHICLE_ROOF_LIVERY](#\_0xA6D3A8750DC73270).
 	 */
-	@:native("_GET_VEHICLE_ROOF_LIVERY")
+	@:native("GetVehicleRoofLivery")
 	static function GetVehicleRoofLivery(vehicle:Dynamic):Int;
 
 	/**
@@ -1934,37 +1941,37 @@ extern class Vehicle {
 	 * HAS_*
 	 * ```
 	 */
-	@:native("_HAS_FILLED_VEHICLE_POPULATION")
+	@:native("HasFilledVehiclePopulation")
 	static function HasFilledVehiclePopulation():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_WINDOW_TINT")
+	@:native("GetVehicleWindowTint")
 	static function getVehicleWindowTint(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_VEHICLE_ASSET_LOADED")
+	@:native("HasVehicleAssetLoaded")
 	static function hasVehicleAssetLoaded(vehicleAsset:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAVE_VEHICLE_MODS_STREAMED_IN")
+	@:native("HaveVehicleModsStreamedIn")
 	static function haveVehicleModsStreamedIn(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_VEHICLE_PHONE_EXPLOSIVE_DEVICE")
+	@:native("HasVehiclePhoneExplosiveDevice")
 	static function hasVehiclePhoneExplosiveDevice():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_PED_RAPPELLING_FROM_HELI")
+	@:native("IsAnyPedRappellingFromHeli")
 	static function isAnyPedRappellingFromHeli(vehicle:Dynamic):Bool;
 
 	/**
@@ -1991,13 +1998,13 @@ extern class Vehicle {
 	 * }
 	 * ```
 	 */
-	@:native("_GET_VEHICLE_XENON_LIGHTS_COLOR")
+	@:native("GetVehicleXenonLightsColor")
 	static function GetVehicleXenonLightsColor(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("IS_BIG_VEHICLE")
+	@:native("IsBigVehicle")
 	static function isBigVehicle(vehicle:Dynamic):Bool;
 
 	/**
@@ -2009,13 +2016,13 @@ extern class Vehicle {
 	 *         }  
 	 * ```
 	 */
-	@:native("IS_COP_VEHICLE_IN_AREA_3D")
+	@:native("IsCopVehicleInArea_3d")
 	static function isCopVehicleInArea3D(x1:Float, x2:Float, y1:Float, y2:Float, z1:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PRELOAD_MODS_FINISHED")
+	@:native("HasPreloadModsFinished")
 	static function hasPreloadModsFinished(p0:Dynamic):Bool;
 
 	/**
@@ -2023,7 +2030,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_HIDE_VEHICLE_TOMBSTONE")
+	@:native("HideVehicleTombstone")
 	static function HideVehicleTombstone(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2035,73 +2042,73 @@ extern class Vehicle {
 	 * NativeDB Introduced: v573
 	 * ```
 	 */
-	@:native("IS_BOAT_ANCHORED")
+	@:native("IsBoatAnchored")
 	static function isBoatAnchored(boat:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_VEHICLE_RECORDING_BEEN_LOADED")
+	@:native("HasVehicleRecordingBeenLoaded")
 	static function hasVehicleRecordingBeenLoaded(recording:Int, script:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_ENTITY_ATTACHED_TO_HANDLER_FRAME")
+	@:native("IsAnyEntityAttachedToHandlerFrame")
 	static function isAnyEntityAttachedToHandlerFrame(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HELI_LANDING_AREA_BLOCKED")
+	@:native("IsHeliLandingAreaBlocked")
 	static function isHeliLandingAreaBlocked(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("INSTANTLY_FILL_VEHICLE_POPULATION")
+	@:native("InstantlyFillVehiclePopulation")
 	static function instantlyFillVehiclePopulation():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HELI_PART_BROKEN")
+	@:native("IsHeliPartBroken")
 	static function isHeliPartBroken(vehicle:Dynamic, p1:Bool, p2:Bool, p3:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_VEHICLE_NEAR_POINT")
+	@:native("IsAnyVehicleNearPoint")
 	static function isAnyVehicleNearPoint(x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED_TO_HANDLER_FRAME")
+	@:native("IsEntityAttachedToHandlerFrame")
 	static function isEntityAttachedToHandlerFrame(vehicle:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_HANDLER_FRAME_ABOVE_CONTAINER")
+	@:native("IsHandlerFrameAboveContainer")
 	static function IsHandlerFrameAboveContainer(handler:Dynamic, container:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLANE_LANDING_GEAR_INTACT")
+	@:native("IsPlaneLandingGearIntact")
 	static function isPlaneLandingGearIntact(plane:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TAXI_LIGHT_ON")
+	@:native("IsTaxiLightOn")
 	static function isTaxiLightOn(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE")
+	@:native("IsPedExclusiveDriverOfVehicle")
 	static function IsPedExclusiveDriverOfVehicle(ped:Dynamic, vehicle:Dynamic, outIndex:Dynamic):Bool;
 
 	/**
@@ -2111,7 +2118,7 @@ extern class Vehicle {
 	 * 
 	 * Determines if the nitrous is currently activated in the specified vehicle.
 	 */
-	@:native("IS_NITROUS_ACTIVE")
+	@:native("IsNitrousActive")
 	static function isNitrousActive(vehicle:Dynamic):Bool;
 
 	/**
@@ -2119,31 +2126,31 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_IS_MISSION_TRAIN")
+	@:native("IsMissionTrain")
 	static function IsMissionTrain(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_BIKE")
+	@:native("IsThisModelABike")
 	static function isThisModelABike(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SEAT_WARP_ONLY")
+	@:native("IsSeatWarpOnly")
 	static function isSeatWarpOnly(vehicle:Dynamic, seatIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYBACK_GOING_ON_FOR_VEHICLE")
+	@:native("IsPlaybackGoingOnForVehicle")
 	static function isPlaybackGoingOnForVehicle(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYBACK_USING_AI_GOING_ON_FOR_VEHICLE")
+	@:native("IsPlaybackUsingAiGoingOnForVehicle")
 	static function isPlaybackUsingAiGoingOnForVehicle(vehicle:Dynamic):Bool;
 
 	/**
@@ -2151,19 +2158,19 @@ extern class Vehicle {
 	 * To check if the model is an amphibious car, see gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-33#entry1069317363 (for build 944 and above only!)  
 	 * ```
 	 */
-	@:native("IS_THIS_MODEL_A_CAR")
+	@:native("IsThisModelACar")
 	static function isThisModelACar(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_BOAT")
+	@:native("IsThisModelABoat")
 	static function isThisModelABoat(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_BICYCLE")
+	@:native("IsThisModelABicycle")
 	static function isThisModelABicycle(model:Int):Bool;
 
 	/**
@@ -2171,55 +2178,55 @@ extern class Vehicle {
 	 * Checks if model is a boat, then checks for FLAG_IS_JETSKI.
 	 * ```
 	 */
-	@:native("_IS_THIS_MODEL_A_JETSKI")
+	@:native("IsThisModelAJetski")
 	static function IsThisModelAJetski(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_QUADBIKE")
+	@:native("IsThisModelAQuadbike")
 	static function isThisModelAQuadbike(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_HELI")
+	@:native("IsThisModelAHeli")
 	static function isThisModelAHeli(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_PLANE")
+	@:native("IsThisModelAPlane")
 	static function isThisModelAPlane(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_THIS_MODEL_AN_AMPHIBIOUS_CAR")
+	@:native("IsThisModelAnAmphibiousCar")
 	static function IsThisModelAnAmphibiousCar(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE")
+	@:native("IsThisModelAnAmphibiousQuadbike")
 	static function IsThisModelAnAmphibiousQuadbike(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THIS_MODEL_A_TRAIN")
+	@:native("IsThisModelATrain")
 	static function isThisModelATrain(model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TOGGLE_MOD_ON")
+	@:native("IsToggleModOn")
 	static function isToggleModOn(vehicle:Dynamic, modType:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_ALARM_ACTIVATED")
+	@:native("IsVehicleAlarmActivated")
 	static function isVehicleAlarmActivated(vehicle:Dynamic):Bool;
 
 	/**
@@ -2229,7 +2236,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("IS_VEHICLE_A_CONVERTIBLE")
+	@:native("IsVehicleAConvertible")
 	static function isVehicleAConvertible(vehicle:Dynamic, checkRoofExtras:Bool):Bool;
 
 	/**
@@ -2237,19 +2244,19 @@ extern class Vehicle {
 	 * Scripts verify that towTruck is the first parameter, not the second.  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_ATTACHED_TO_TOW_TRUCK")
+	@:native("IsVehicleAttachedToTowTruck")
 	static function isVehicleAttachedToTowTruck(towTruck:Dynamic, vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TURRET_SEAT")
+	@:native("IsTurretSeat")
 	static function isTurretSeat(vehicle:Dynamic, seatIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_ATTACHED_TO_CARGOBOB")
+	@:native("IsVehicleAttachedToCargobob")
 	static function isVehicleAttachedToCargobob(cargobob:Dynamic, vehicleAttached:Dynamic):Bool;
 
 	/**
@@ -2262,13 +2269,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_IS_VEHICLE_BEING_HALTED")
+	@:native("IsVehicleBeingHalted")
 	static function IsVehicleBeingHalted(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_ATTACHED_TO_TRAILER")
+	@:native("IsVehicleAttachedToTrailer")
 	static function isVehicleAttachedToTrailer(vehicle:Dynamic):Bool;
 
 	/**
@@ -2277,19 +2284,19 @@ extern class Vehicle {
 	 * GET_*
 	 * ```
 	 */
-	@:native("_IS_VEHICLE_DAMAGED")
+	@:native("IsVehicleDamaged")
 	static function IsVehicleDamaged(vehicle:Dynamic):Bool;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("IS_VEHICLE_DOOR_DAMAGED")
+	@:native("IsVehicleDoorDamaged")
 	static function isVehicleDoorDamaged(veh:Dynamic, doorID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_BUMPER_BOUNCING")
+	@:native("IsVehicleBumperBouncing")
 	static function isVehicleBumperBouncing(vehicle:Dynamic, frontBumper:Bool):Bool;
 
 	/**
@@ -2298,13 +2305,13 @@ extern class Vehicle {
 	 * p1 = check if vehicle is on fire  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_DRIVEABLE")
+	@:native("IsVehicleDriveable")
 	static function isVehicleDriveable(vehicle:Dynamic, isOnFireCheck:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_HIGH_DETAIL")
+	@:native("IsVehicleHighDetail")
 	static function isVehicleHighDetail(vehicle:Dynamic):Bool;
 
 	/**
@@ -2315,13 +2322,13 @@ extern class Vehicle {
 	 * 
 	 * This usually returns true even if there are no visible flames yet (engine health > 0). However if you monitor engine health you'll see that it starts decreasing as soon as this returns true.
 	 */
-	@:native("_IS_VEHICLE_ENGINE_ON_FIRE")
+	@:native("IsVehicleEngineOnFire")
 	static function IsVehicleEngineOnFire(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_BUMPER_BROKEN_OFF")
+	@:native("IsVehicleBumperBrokenOff")
 	static function isVehicleBumperBrokenOff(vehicle:Dynamic, front:Bool):Bool;
 
 	/**
@@ -2329,13 +2336,13 @@ extern class Vehicle {
 	 * garageName example "Michael - Beverly Hills"
 	 * ```
 	 */
-	@:native("IS_VEHICLE_IN_GARAGE_AREA")
+	@:native("IsVehicleInGarageArea")
 	static function isVehicleInGarageArea(garageName:String, vehicle:Dynamic):Bool;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("IS_VEHICLE_DOOR_FULLY_OPEN")
+	@:native("IsVehicleDoorFullyOpen")
 	static function isVehicleDoorFullyOpen(vehicle:Dynamic, doorIndex:Int):Bool;
 
 	/**
@@ -2347,13 +2354,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_IS_VEHICLE_MOD_HSW_EXCLUSIVE")
+	@:native("IsVehicleModHswExclusive")
 	static function IsVehicleModHswExclusive(vehicle:Dynamic, modType:Int, modIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_EXTRA_TURNED_ON")
+	@:native("IsVehicleExtraTurnedOn")
 	static function isVehicleExtraTurnedOn(vehicle:Dynamic, extraId:Int):Bool;
 
 	/**
@@ -2365,7 +2372,7 @@ extern class Vehicle {
 	 *     End Function  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_IN_BURNOUT")
+	@:native("IsVehicleInBurnout")
 	static function isVehicleInBurnout(vehicle:Dynamic):Bool;
 
 	/**
@@ -2375,7 +2382,7 @@ extern class Vehicle {
 	 * 		    End Function  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_ON_ALL_WHEELS")
+	@:native("IsVehicleOnAllWheels")
 	static function isVehicleOnAllWheels(vehicle:Dynamic):Bool;
 
 	/**
@@ -2383,31 +2390,31 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("IS_VEHICLE_IN_SUBMARINE_MODE")
+	@:native("IsVehicleInSubmarineMode")
 	static function isVehicleInSubmarineMode(vehicle:Dynamic):Bool;
 
 	/**
 	 * Does not work for vehicle of type: CBike, CBmx, CBoat, CTrain, CSubmarine.
 	 */
-	@:native("_IS_VEHICLE_PARACHUTE_ACTIVE")
+	@:native("IsVehicleParachuteActive")
 	static function IsVehicleParachuteActive(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_VEHICLE_ROCKET_BOOST_ACTIVE")
+	@:native("IsVehicleRocketBoostActive")
 	static function IsVehicleRocketBoostActive(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_MODEL")
+	@:native("IsVehicleModel")
 	static function isVehicleModel(vehicle:Dynamic, model:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_SIREN_AUDIO_ON")
+	@:native("IsVehicleSirenAudioOn")
 	static function isVehicleSirenAudioOn(vehicle:Dynamic):Bool;
 
 	/**
@@ -2417,7 +2424,7 @@ extern class Vehicle {
 	 * onEnter = check if you can enter (true) or exit (false) a vehicle.
 	 * ```
 	 */
-	@:native("_IS_VEHICLE_SEAT_ACCESSIBLE")
+	@:native("IsVehicleSeatAccessible")
 	static function IsVehicleSeatAccessible(ped:Dynamic, vehicle:Dynamic, seatIndex:Int, side:Bool, onEnter:Bool):Bool;
 
 	/**
@@ -2429,7 +2436,7 @@ extern class Vehicle {
 	 * 3 = Back  
 	 * ```
 	 */
-	@:native("_IS_VEHICLE_NEON_LIGHT_ENABLED")
+	@:native("IsVehicleNeonLightEnabled")
 	static function IsVehicleNeonLightEnabled(vehicle:Dynamic, index:Int):Bool;
 
 	/**
@@ -2456,13 +2463,13 @@ extern class Vehicle {
 	 * isTaskRunning = on true the function returns already false while a task on the target seat is running (TASK_ENTER_VEHICLE/TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT) - on false only when a ped is finally sitting in the seat.
 	 * ```
 	 */
-	@:native("IS_VEHICLE_SEAT_FREE")
+	@:native("IsVehicleSeatFree")
 	static function isVehicleSeatFree(vehicle:Dynamic, seatIndex:Int):Bool;
 
 	/**
 	 * Returns whether the vehicle's lights and sirens are on.
 	 */
-	@:native("IS_VEHICLE_SIREN_ON")
+	@:native("IsVehicleSirenOn")
 	static function isVehicleSirenOn(vehicle:Dynamic):Bool;
 
 	/**
@@ -2470,7 +2477,7 @@ extern class Vehicle {
 	 * Returns false if the vehicle has the FLAG_NO_RESPRAY flag set.
 	 * ```
 	 */
-	@:native("IS_VEHICLE_SPRAYABLE")
+	@:native("IsVehicleSprayable")
 	static function isVehicleSprayable(vehicle:Dynamic):Bool;
 
 	/**
@@ -2478,25 +2485,25 @@ extern class Vehicle {
 	 * Possibly: Returns whether the searchlight (found on police vehicles) is toggled on.  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_SEARCHLIGHT_ON")
+	@:native("IsVehicleSearchlightOn")
 	static function isVehicleSearchlightOn(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_VEHICLE_SLIPSTREAM_LEADER")
+	@:native("IsVehicleSlipstreamLeader")
 	static function IsVehicleSlipstreamLeader(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_STOLEN")
+	@:native("IsVehicleStolen")
 	static function isVehicleStolen(vehicle:Dynamic):Bool;
 
 	/**
 	 * This native checks if the given vehicle is stopped at a red or amber traffic light junction, provided the driver's personality is set to not run amber lights.
 	 */
-	@:native("IS_VEHICLE_STOPPED_AT_TRAFFIC_LIGHTS")
+	@:native("IsVehicleStoppedAtTrafficLights")
 	static function isVehicleStoppedAtTrafficLights(vehicle:Dynamic):Bool;
 
 	/**
@@ -2505,25 +2512,25 @@ extern class Vehicle {
 	 * For some vehicles it returns true if the current speed is <= 0.00039999999.
 	 * ```
 	 */
-	@:native("IS_VEHICLE_STOPPED")
+	@:native("IsVehicleStopped")
 	static function isVehicleStopped(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_STUCK_ON_ROOF")
+	@:native("IsVehicleStuckOnRoof")
 	static function isVehicleStuckOnRoof(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_IS_VEHICLE_WEAPON_DISABLED")
+	@:native("IsVehicleWeaponDisabled")
 	static function IsVehicleWeaponDisabled(weaponHash:Int, vehicle:Dynamic, owner:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_VISIBLE")
+	@:native("IsVehicleVisible")
 	static function isVehicleVisible(vehicle:Dynamic):Bool;
 
 	/**
@@ -2542,7 +2549,7 @@ extern class Vehicle {
 	 * };
 	 * ```
 	 */
-	@:native("IS_VEHICLE_TYRE_BURST")
+	@:native("IsVehicleTyreBurst")
 	static function isVehicleTyreBurst(vehicle:Dynamic, wheelID:Int, isBurstToRim:Bool):Bool;
 
 	/**
@@ -2550,13 +2557,13 @@ extern class Vehicle {
 	 * p1 can be anywhere from 0 to 3 in the scripts. p2 is generally somewhere in the 1000 to 10000 range.  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_STUCK_TIMER_UP")
+	@:native("IsVehicleStuckTimerUp")
 	static function isVehicleStuckTimerUp(vehicle:Dynamic, p1:Int, p2:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("MODIFY_VEHICLE_TOP_SPEED")
+	@:native("ModifyVehicleTopSpeed")
 	static function modifyVehicleTopSpeed(vehicle:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -2573,7 +2580,7 @@ extern class Vehicle {
 	 * }
 	 * ```
 	 */
-	@:native("IS_VEHICLE_WINDOW_INTACT")
+	@:native("IsVehicleWindowIntact")
 	static function isVehicleWindowIntact(vehicle:Dynamic, windowIndex:Int):Bool;
 
 	/**
@@ -2585,31 +2592,31 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("LOWER_CONVERTIBLE_ROOF")
+	@:native("LowerConvertibleRoof")
 	static function lowerConvertibleRoof(vehicle:Dynamic, instantlyLower:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_LOWER_RETRACTABLE_WHEELS")
+	@:native("LowerRetractableWheels")
 	static function LowerRetractableWheels(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Will disable a plane or a helicopter's need to swerve around object in its heightmap when using TASK_PLANE_MISSION or other AI / Pilot behavior.  Will ensure plane flys directly to it's destination or die trying! This native does NOT need to be called every frame, but instead, just called once on the vehicle (NOT THE PED) you're trying to disable avoidance for!
 	 */
-	@:native("_ENABLE_AIRCRAFT_OBSTACLE_AVOIDANCE")
+	@:native("EnableAircraftObstacleAvoidance")
 	static function EnableAircraftObstacleAvoidance(vehicle:Dynamic, avoidObstacles:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("OPEN_BOMB_BAY_DOORS")
+	@:native("OpenBombBayDoors")
 	static function openBombBayDoors(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_PLAYBACK_RECORDED_VEHICLE")
+	@:native("PausePlaybackRecordedVehicle")
 	static function pausePlaybackRecordedVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -2621,25 +2628,25 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_NETWORK_USE_HIGH_PRECISION_VEHICLE_BLENDING")
+	@:native("NetworkUseHighPrecisionVehicleBlending")
 	static function NetworkUseHighPrecisionVehicleBlending(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Detaches the vehicle's windscreen.
 	 */
-	@:native("POP_OUT_VEHICLE_WINDSCREEN")
+	@:native("PopOutVehicleWindscreen")
 	static function popOutVehicleWindscreen(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PRELOAD_VEHICLE_MOD")
+	@:native("PreloadVehicleMod")
 	static function preloadVehicleMod(p0:Dynamic, modType:Int, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RELEASE_PRELOAD_MODS")
+	@:native("ReleasePreloadMods")
 	static function releasePreloadMods(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -2653,7 +2660,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("RAISE_CONVERTIBLE_ROOF")
+	@:native("RaiseConvertibleRoof")
 	static function raiseConvertibleRoof(vehicle:Dynamic, instantlyRaise:Bool):Dynamic;
 
 	/**
@@ -2662,79 +2669,79 @@ extern class Vehicle {
 	 * Note: after you retract it the natives for dropping the hook no longer work  
 	 * ```
 	 */
-	@:native("REMOVE_PICK_UP_ROPE_FOR_CARGOBOB")
+	@:native("RemovePickUpRopeForCargobob")
 	static function removePickUpRopeForCargobob(cargobob:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_COMBAT_AVOIDANCE_AREA")
+	@:native("RemoveVehicleCombatAvoidanceArea")
 	static function removeVehicleCombatAvoidanceArea(p0:Dynamic):Dynamic;
 
 	/**
 	 * See [REQUEST_VEHICLE_RECORDING](#\_0xAF514CABE74CBF15)
 	 */
-	@:native("REMOVE_VEHICLE_RECORDING")
+	@:native("RemoveVehicleRecording")
 	static function removeVehicleRecording(recording:Int, script:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_RAISE_RETRACTABLE_WHEELS")
+	@:native("RaiseRetractableWheels")
 	static function RaiseRetractableWheels(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_MOD")
+	@:native("RemoveVehicleMod")
 	static function removeVehicleMod(vehicle:Dynamic, modType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_ASSET")
+	@:native("RemoveVehicleAsset")
 	static function removeVehicleAsset(vehicleAsset:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_ROAD_NODE_SPEED_ZONE")
+	@:native("RemoveRoadNodeSpeedZone")
 	static function removeRoadNodeSpeedZone(speedzone:Int):Bool;
 
 	/**
 	 * Remove the weird shadow applied by [\_SET_VEHICLE_SHADOW_EFFECT](#\_0x2A70BAE8883E4C81)
 	 */
-	@:native("_REMOVE_VEHICLE_SHADOW_EFFECT")
+	@:native("RemoveVehicleShadowEffect")
 	static function RemoveVehicleShadowEffect(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_UPSIDEDOWN_CHECK")
+	@:native("RemoveVehicleUpsidedownCheck")
 	static function removeVehicleUpsidedownCheck(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * See eWindowId declared in [`IS_VEHICLE_WINDOW_INTACT`](#\_0x46E571A0E20D01F1).
 	 */
-	@:native("REMOVE_VEHICLE_WINDOW")
+	@:native("RemoveVehicleWindow")
 	static function removeVehicleWindow(vehicle:Dynamic, windowIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_HIGH_DETAIL_MODEL")
+	@:native("RemoveVehicleHighDetailModel")
 	static function removeVehicleHighDetailModel(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLE_STUCK_CHECK")
+	@:native("RemoveVehicleStuckCheck")
 	static function removeVehicleStuckCheck(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA")
+	@:native("RemoveVehiclesFromGeneratorsInArea")
 	static function removeVehiclesFromGeneratorsInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, unk:Dynamic):Dynamic;
 
 	/**
@@ -2746,13 +2753,13 @@ extern class Vehicle {
 	 * blazer  
 	 * ```
 	 */
-	@:native("REQUEST_VEHICLE_ASSET")
+	@:native("RequestVehicleAsset")
 	static function requestVehicleAsset(vehicleHash:Int, vehicleAsset:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_VEHICLE_HIGH_DETAIL_MODEL")
+	@:native("RequestVehicleHighDetailModel")
 	static function requestVehicleHighDetailModel(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -2762,7 +2769,7 @@ extern class Vehicle {
 	 * Note that only 24 recordings (hardcoded in multiple places) can ever active at a given time before clobbering begins.
 	 * ```
 	 */
-	@:native("REQUEST_VEHICLE_RECORDING")
+	@:native("RequestVehicleRecording")
 	static function requestVehicleRecording(recording:Int, script:String):Dynamic;
 
 	/**
@@ -2770,13 +2777,13 @@ extern class Vehicle {
 	 * REQUEST_VEHICLE_*  
 	 * ```
 	 */
-	@:native("_REQUEST_VEHICLE_DASHBOARD_SCALEFORM_MOVIE")
+	@:native("RequestVehicleDashboardScaleformMovie")
 	static function RequestVehicleDashboardScaleformMovie(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * See eWindowId declared in [`IS_VEHICLE_WINDOW_INTACT`](#\_0x46E571A0E20D01F1).
 	 */
-	@:native("ROLL_UP_WINDOW")
+	@:native("RollUpWindow")
 	static function rollUpWindow(vehicle:Dynamic, windowIndex:Int):Dynamic;
 
 	/**
@@ -2805,19 +2812,19 @@ extern class Vehicle {
 	 * }  
 	 * ```
 	 */
-	@:native("RESET_VEHICLE_STUCK_TIMER")
+	@:native("ResetVehicleStuckTimer")
 	static function resetVehicleStuckTimer(vehicle:Dynamic, nullAttributes:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_VEHICLE_WHEELS")
+	@:native("ResetVehicleWheels")
 	static function resetVehicleWheels(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ALL_VEHICLE_GENERATORS_ACTIVE")
+	@:native("SetAllVehicleGeneratorsActive")
 	static function setAllVehicleGeneratorsActive():Dynamic;
 
 	/**
@@ -2825,13 +2832,13 @@ extern class Vehicle {
 	 * Roll down all the windows of the vehicle passed through the first parameter.  
 	 * ```
 	 */
-	@:native("ROLL_DOWN_WINDOWS")
+	@:native("RollDownWindows")
 	static function rollDownWindows(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * See eWindowId declared in [`IS_VEHICLE_WINDOW_INTACT`](#\_0x46E571A0E20D01F1).
 	 */
-	@:native("ROLL_DOWN_WINDOW")
+	@:native("RollDownWindow")
 	static function rollDownWindow(vehicle:Dynamic, windowIndex:Int):Dynamic;
 
 	/**
@@ -2843,19 +2850,19 @@ extern class Vehicle {
 	 * http://i.imgur.com/TgIuAPJ.jpg
 	 * ```
 	 */
-	@:native("SET_BIKE_ON_STAND")
+	@:native("SetBikeOnStand")
 	static function setBikeOnStand(vehicle:Dynamic, x:Float, y:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME")
+	@:native("SetAmbientVehicleRangeMultiplierThisFrame")
 	static function setAmbientVehicleRangeMultiplierThisFrame(range:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA")
+	@:native("SetAllVehicleGeneratorsActiveInArea")
 	static function setAllVehicleGeneratorsActiveInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, p6:Bool, p7:Bool):Dynamic;
 
 	/**
@@ -2867,13 +2874,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER")
+	@:native("SetBoatRemainsAnchoredWhilePlayerIsDriver")
 	static function setBoatRemainsAnchoredWhilePlayerIsDriver(boat:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ALL_LOW_PRIORITY_VEHICLE_GENERATORS_ACTIVE")
+	@:native("SetAllLowPriorityVehicleGeneratorsActive")
 	static function setAllLowPriorityVehicleGeneratorsActive(active:Bool):Dynamic;
 
 	/**
@@ -2883,19 +2890,19 @@ extern class Vehicle {
 	 * 
 	 * To get the current boom position ratio, use [GET_BOAT_BOOM_POSITION_RATIO](#\_0x6636C535F6CC2725).
 	 */
-	@:native("_SET_BOAT_BOOM_POSITION_RATIO")
+	@:native("SetBoatBoomPositionRatio")
 	static function SetBoatBoomPositionRatio(vehicle:Dynamic, ratio:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BOAT_DISABLE_AVOIDANCE")
+	@:native("SetBoatDisableAvoidance")
 	static function setBoatDisableAvoidance(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_CAMBERED_WHEELS_DISABLED")
+	@:native("SetCamberedWheelsDisabled")
 	static function SetCamberedWheelsDisabled(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2907,7 +2914,7 @@ extern class Vehicle {
 	 * 
 	 * **Note**: You might want to check if you can use your anchor before with [CAN_ANCHOR_BOAT_HERE](#\_0x26C10ECBDA5D043B).
 	 */
-	@:native("SET_BOAT_ANCHOR")
+	@:native("SetBoatAnchor")
 	static function setBoatAnchor(boat:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -2917,7 +2924,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_BOAT_LOW_LOD_ANCHOR_DISTANCE")
+	@:native("SetBoatLowLodAnchorDistance")
 	static function setBoatLowLodAnchorDistance(boat:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -2929,7 +2936,7 @@ extern class Vehicle {
 	 * }  
 	 * ```
 	 */
-	@:native("_SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER")
+	@:native("SetCarHighSpeedBumpSeverityMultiplier")
 	static function SetCarHighSpeedBumpSeverityMultiplier(multiplier:Float):Dynamic;
 
 	/**
@@ -2937,13 +2944,13 @@ extern class Vehicle {
 	 * Hardcoded to not work in multiplayer.  
 	 * ```
 	 */
-	@:native("SET_CAN_RESPRAY_VEHICLE")
+	@:native("SetCanResprayVehicle")
 	static function setCanResprayVehicle(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_BOAT_IS_SINKING")
+	@:native("SetBoatIsSinking")
 	static function SetBoatIsSinking(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -2951,37 +2958,37 @@ extern class Vehicle {
 	 * Won't attract or magnetize to any helicopters or planes of course, but that's common sense.  
 	 * ```
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_ACTIVE")
+	@:native("SetCargobobPickupMagnetActive")
 	static function setCargobobPickupMagnetActive(cargobob:Dynamic, isActive:Bool):Dynamic;
 
 	/**
 	 * Stops cargobob from being able to detach the attached vehicle.
 	 */
-	@:native("SET_CARGOBOB_FORCE_DONT_DETACH_VEHICLE")
+	@:native("SetCargobobForceDontDetachVehicle")
 	static function setCargobobForceDontDetachVehicle(cargobob:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_BOAT_SINKS_WHEN_WRECKED")
+	@:native("SetBoatSinksWhenWrecked")
 	static function setBoatSinksWhenWrecked(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAR_BOOT_OPEN")
+	@:native("SetCarBootOpen")
 	static function setCarBootOpen(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_PULL_ROPE_LENGTH")
+	@:native("SetCargobobPickupMagnetPullRopeLength")
 	static function setCargobobPickupMagnetPullRopeLength(cargobob:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_FALLOFF")
+	@:native("SetCargobobPickupMagnetFalloff")
 	static function setCargobobPickupMagnetFalloff(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -2993,49 +3000,49 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_SET_CARGOBOB_HOOK_CAN_ATTACH")
+	@:native("SetCargobobHookCanAttach")
 	static function SetCargobobHookCanAttach(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_REDUCED_FALLOFF")
+	@:native("SetCargobobPickupMagnetReducedFalloff")
 	static function setCargobobPickupMagnetReducedFalloff(cargobob:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_ROPE_DAMPING_MULTIPLIER")
+	@:native("SetCargobobPickupRopeDampingMultiplier")
 	static function setCargobobPickupRopeDampingMultiplier(cargobob:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * Prevents a specified entity from being detached from a Cargobob, even in the event of collisions.
 	 */
-	@:native("SET_CARGOBOB_EXCLUDE_FROM_PICKUP_ENTITY")
+	@:native("SetCargobobExcludeFromPickupEntity")
 	static function setCargobobExcludeFromPickupEntity(cargobob:Dynamic, entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_EFFECT_RADIUS")
+	@:native("SetCargobobPickupMagnetEffectRadius")
 	static function setCargobobPickupMagnetEffectRadius(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_ROPE_TYPE")
+	@:native("SetCargobobPickupRopeType")
 	static function setCargobobPickupRopeType(vehicle:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_PULL_STRENGTH")
+	@:native("SetCargobobPickupMagnetPullStrength")
 	static function setCargobobPickupMagnetPullStrength(cargobob:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_REDUCED_STRENGTH")
+	@:native("SetCargobobPickupMagnetReducedStrength")
 	static function setCargobobPickupMagnetReducedStrength(cargobob:Dynamic, vehicle:Dynamic):Dynamic;
 
 	/**
@@ -3060,13 +3067,13 @@ extern class Vehicle {
 	 * *   faction2
 	 * *   mamba
 	 */
-	@:native("SET_CONVERTIBLE_ROOF")
+	@:native("SetConvertibleRoof")
 	static function setConvertibleRoof(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CARGOBOB_PICKUP_MAGNET_STRENGTH")
+	@:native("SetCargobobPickupMagnetStrength")
 	static function setCargobobPickupMagnetStrength(cargobob:Dynamic, strength:Float):Dynamic;
 
 	/**
@@ -3076,7 +3083,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v463
 	 * ```
 	 */
-	@:native("SET_DISABLE_BMX_EXTRA_TRICK_FORCES")
+	@:native("SetDisableBmxExtraTrickForces")
 	static function setDisableBmxExtraTrickForces(disableExtraTrickForces:Bool):Dynamic;
 
 	/**
@@ -3086,7 +3093,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SET_DEPLOY_HELI_STUB_WINGS")
+	@:native("SetDeployHeliStubWings")
 	static function SetDeployHeliStubWings(vehicle:Dynamic, deploy:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -3096,7 +3103,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_CONVERTIBLE_ROOF_LATCH_STATE")
+	@:native("SetConvertibleRoofLatchState")
 	static function setConvertibleRoofLatchState(vehicle:Dynamic, bLatched:Bool):Dynamic;
 
 	/**
@@ -3106,31 +3113,31 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1103
 	 * ```
 	 */
-	@:native("SET_DISABLE_HELI_EXPLODE_FROM_BODY_DAMAGE")
+	@:native("SetDisableHeliExplodeFromBodyDamage")
 	static function setDisableHeliExplodeFromBodyDamage(helicopter:Dynamic, disableExplode:Bool):Dynamic;
 
 	/**
 	 * Disables wings for `Deluxo` and `Oppressor MK II`. For the Deluxo, it retracts the wings immediately, preventing flight. For the Oppressor Mk II, the wings retract after landing and take-off is not possible, though it can still glide if launched into the air.
 	 */
-	@:native("SET_DISABLE_HOVER_MODE_FLIGHT")
+	@:native("SetDisableHoverModeFlight")
 	static function setDisableHoverModeFlight(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_PRETEND_OCCUPANTS")
+	@:native("SetDisablePretendOccupants")
 	static function setDisablePretendOccupants(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_DISABLE_SUPERDUMMY_MODE")
+	@:native("SetDisableSuperdummyMode")
 	static function SetDisableSuperdummyMode(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_VEHICLE_ENGINE_FIRES")
+	@:native("SetDisableVehicleEngineFires")
 	static function setDisableVehicleEngineFires(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3142,7 +3149,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("SET_DISABLE_EXPLODE_FROM_BODY_DAMAGE_ON_COLLISION")
+	@:native("SetDisableExplodeFromBodyDamageOnCollision")
 	static function setDisableExplodeFromBodyDamageOnCollision(vehicle:Dynamic, disableExplode:Bool):Dynamic;
 
 	/**
@@ -3152,7 +3159,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_SET_DISABLE_TURRET_MOVEMENT_THIS_FRAME")
+	@:native("SetDisableTurretMovementThisFrame")
 	static function SetDisableTurretMovementThisFrame(vehicle:Dynamic, turretIdx:Int):Dynamic;
 
 	/**
@@ -3160,19 +3167,19 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_DISABLE_VEHICLE_UNK")
+	@:native("SetDisableVehicleUnk")
 	static function SetDisableVehicleUnk(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_RANDOM_TRAINS_THIS_FRAME")
+	@:native("SetDisableRandomTrainsThisFrame")
 	static function setDisableRandomTrainsThisFrame(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_VEHICLE_PETROL_TANK_DAMAGE")
+	@:native("SetDisableVehiclePetrolTankDamage")
 	static function setDisableVehiclePetrolTankDamage(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3180,7 +3187,7 @@ extern class Vehicle {
 	 * Toggles to render distant vehicles. They may not be vehicles but images to look like vehicles.  
 	 * ```
 	 */
-	@:native("SET_DISTANT_CARS_ENABLED")
+	@:native("SetDistantCarsEnabled")
 	static function setDistantCarsEnabled(toggle:Bool):Dynamic;
 
 	/**
@@ -3188,7 +3195,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_DISABLE_VEHICLE_UNK_2")
+	@:native("SetDisableVehicleUnk_2")
 	static function SetDisableVehicleUnk2(toggle:Bool):Dynamic;
 
 	/**
@@ -3200,25 +3207,25 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SET_DISABLE_VEHICLE_FLIGHT_NOZZLE_POSITION")
+	@:native("SetDisableVehicleFlightNozzlePosition")
 	static function SetDisableVehicleFlightNozzlePosition(vehicle:Dynamic, direction:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FAR_DRAW_VEHICLES")
+	@:native("SetFarDrawVehicles")
 	static function setFarDrawVehicles(toggle:Bool):Dynamic;
 
 	/**
 	 * Enable/Disables global slipstream physics
 	 */
-	@:native("SET_ENABLE_VEHICLE_SLIPSTREAMING")
+	@:native("SetEnableVehicleSlipstreaming")
 	static function setEnableVehicleSlipstreaming(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_VEHICLE_PETROL_TANK_FIRES")
+	@:native("SetDisableVehiclePetrolTankFires")
 	static function setDisableVehiclePetrolTankFires(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3226,13 +3233,13 @@ extern class Vehicle {
 	 * 0.0 = Lowest 1.0 = Highest. This is best to be used if you wanna pick-up a car since un-realistically on GTA V forklifts can't pick up much of anything due to vehicle mass. If you put this under a car then set it above 0.0 to a 'lifted-value' it will raise the car with no issue lol
 	 * ```
 	 */
-	@:native("SET_FORKLIFT_FORK_HEIGHT")
+	@:native("SetForkliftForkHeight")
 	static function setForkliftForkHeight(vehicle:Dynamic, height:Float):Dynamic;
 
 	/**
 	 * R\* used it to "remove" vehicle windows when "nightshark" had some mod, which adding some kind of armored windows. When enabled, you can't break vehicles glass. All your bullets wiil shoot through glass. You also will not able to break the glass with any other way (hitting and etc)
 	 */
-	@:native("_SET_DISABLE_VEHICLE_WINDOW_COLLISIONS")
+	@:native("SetDisableVehicleWindowCollisions")
 	static function SetDisableVehicleWindowCollisions(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3242,7 +3249,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_HELI_TAIL_BOOM_CAN_BREAK_OFF")
+	@:native("SetHeliTailBoomCanBreakOff")
 	static function setHeliTailBoomCanBreakOff(heli:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3250,7 +3257,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_DRIFT_TYRES_ENABLED")
+	@:native("SetDriftTyresEnabled")
 	static function SetDriftTyresEnabled(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3260,7 +3267,7 @@ extern class Vehicle {
 	 * speed: The speed in percentage, 0.0f being 0% and 1.0f being 100%.  
 	 * ```
 	 */
-	@:native("SET_HELI_BLADES_SPEED")
+	@:native("SetHeliBladesSpeed")
 	static function setHeliBladesSpeed(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -3272,13 +3279,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_FORCE_LOW_LOD_ANCHOR_MODE")
+	@:native("SetForceLowLodAnchorMode")
 	static function setForceLowLodAnchorMode(boat:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * This native allows opening or closing the wings of the Deluxo/Oppressor. For the Deluxo, wing deployment depends on sufficient altitude.
 	 */
-	@:native("SET_HOVER_MODE_WING_RATIO")
+	@:native("SetHoverModeWingRatio")
 	static function setHoverModeWingRatio(vehicle:Dynamic, ratio:Float):Dynamic;
 
 	/**
@@ -3288,13 +3295,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("SET_HELI_COMBAT_OFFSET")
+	@:native("SetHeliCombatOffset")
 	static function setHeliCombatOffset(vehicle:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_FORCE_HD_VEHICLE")
+	@:native("SetForceHdVehicle")
 	static function setForceHdVehicle(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3305,7 +3312,7 @@ extern class Vehicle {
 	 * 2 - jump using wheel
 	 * ```
 	 */
-	@:native("_SET_HYDRAULIC_WHEEL_STATE_TRANSITION")
+	@:native("SetHydraulicWheelStateTransition")
 	static function SetHydraulicWheelStateTransition(vehicle:Dynamic, wheelId:Int, state:Int, value:Float, p4:Float):Dynamic;
 
 	/**
@@ -3314,13 +3321,13 @@ extern class Vehicle {
 	 * this native works on planes to?  
 	 * ```
 	 */
-	@:native("SET_HELI_BLADES_FULL_SPEED")
+	@:native("SetHeliBladesFullSpeed")
 	static function setHeliBladesFullSpeed(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GARBAGE_TRUCKS")
+	@:native("SetGarbageTrucks")
 	static function setGarbageTrucks(toggle:Bool):Dynamic;
 
 	/**
@@ -3328,7 +3335,7 @@ extern class Vehicle {
 	 * value between 0.0 and 1.0  
 	 * ```
 	 */
-	@:native("_SET_HELICOPTER_ROLL_PITCH_YAW_MULT")
+	@:native("SetHelicopterRollPitchYawMult")
 	static function SetHelicopterRollPitchYawMult(helicopter:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -3338,43 +3345,43 @@ extern class Vehicle {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("SET_HELI_RESIST_TO_EXPLOSION")
+	@:native("SetHeliResistToExplosion")
 	static function setHeliResistToExplosion(helicopter:Dynamic, bResistToExplosion:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_HELI_TAIL_ROTOR_HEALTH")
+	@:native("SetHeliTailRotorHealth")
 	static function SetHeliTailRotorHealth(vehicle:Dynamic, health:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_HELI_MAIN_ROTOR_HEALTH")
+	@:native("SetHeliMainRotorHealth")
 	static function SetHeliMainRotorHealth(vehicle:Dynamic, health:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_HYDRAULIC_WHEEL_STATE")
+	@:native("SetHydraulicWheelState")
 	static function SetHydraulicWheelState(vehicle:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HELI_TURBULENCE_SCALAR")
+	@:native("SetHeliTurbulenceScalar")
 	static function setHeliTurbulenceScalar(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_HYDRAULIC_RAISED")
+	@:native("SetHydraulicRaised")
 	static function SetHydraulicRaised(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LAST_DRIVEN_VEHICLE")
+	@:native("SetLastDrivenVehicle")
 	static function setLastDrivenVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -3382,7 +3389,7 @@ extern class Vehicle {
 	 * p1 is always 0  
 	 * ```
 	 */
-	@:native("SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED")
+	@:native("SetMissionTrainAsNoLongerNeeded")
 	static function setMissionTrainAsNoLongerNeeded(train:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -3390,25 +3397,25 @@ extern class Vehicle {
 	 * Works only on vehicles that support hydraulic.
 	 * ```
 	 */
-	@:native("_SET_HYDRAULIC_WHEEL_VALUE")
+	@:native("SetHydraulicWheelValue")
 	static function SetHydraulicWheelValue(vehicle:Dynamic, wheelId:Int, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MISSION_TRAIN_COORDS")
+	@:native("SetMissionTrainCoords")
 	static function setMissionTrainCoords(train:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_LIGHTS_CUTOFF_DISTANCE_TWEAK")
+	@:native("SetLightsCutoffDistanceTweak")
 	static function setLightsCutoffDistanceTweak(distance:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NUMBER_OF_PARKED_VEHICLES")
+	@:native("SetNumberOfParkedVehicles")
 	static function setNumberOfParkedVehicles(value:Int):Dynamic;
 
 	/**
@@ -3422,13 +3429,13 @@ extern class Vehicle {
 	 * 
 	 * Overrides the default settings of a vehicle's nitrous system, allowing custom control over its performance characteristics.
 	 */
-	@:native("SET_OVERRIDE_NITROUS_LEVEL")
+	@:native("SetOverrideNitrousLevel")
 	static function setOverrideNitrousLevel(vehicle:Dynamic, override_:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARKED_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME")
+	@:native("SetParkedVehicleDensityMultiplierThisFrame")
 	static function setParkedVehicleDensityMultiplierThisFrame(multiplier:Float):Dynamic;
 
 	/**
@@ -3439,7 +3446,7 @@ extern class Vehicle {
 	 * Activates or deactivates the nitrous system in the specified vehicle, based on the boolean value provided.
 	 * You can clear the nitrous with [`CLEAR_NITROUS`](#\_0xC889AE921400E1ED), if you want to have more control on the nitrous and those settings, use [`SET_OVERRIDE_NITROUS_LEVEL`](#\_0xC8E9B6B71B8E660D)
 	 */
-	@:native("SET_NITROUS_IS_ACTIVE")
+	@:native("SetNitrousIsActive")
 	static function setNitrousIsActive(vehicle:Dynamic, isActive:Bool):Dynamic;
 
 	/**
@@ -3447,31 +3454,31 @@ extern class Vehicle {
 	 * Works just like SET_VEHICLE_ENGINE_HEALTH, didn't saw any difference. But this native works only for planes.
 	 * ```
 	 */
-	@:native("_SET_PLANE_ENGINE_HEALTH")
+	@:native("SetPlaneEngineHealth")
 	static function SetPlaneEngineHealth(vehicle:Dynamic, health:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLANE_PROPELLERS_HEALTH")
+	@:native("SetPlanePropellersHealth")
 	static function SetPlanePropellersHealth(plane:Dynamic, health:Float):Dynamic;
 
 	/**
 	 * Enables or disables the opening of a vehicle's rear doors in the event of a sticky bomb explosion. This native is effective for armored vehicles, such as the Stockade (Brinks vehicle), allowing the rear doors to be opened through controlled explosions, which might otherwise remain locked due to the vehicle nature.
 	 */
-	@:native("SET_OPEN_REAR_DOORS_ON_EXPLOSION")
+	@:native("SetOpenRearDoorsOnExplosion")
 	static function setOpenRearDoorsOnExplosion(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Set state to true to extend the wings, false to retract them.
 	 */
-	@:native("_SET_OPPRESSOR_TRANSFORM_STATE")
+	@:native("SetOppressorTransformState")
 	static function SetOppressorTransformState(vehicle:Dynamic, extend:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYBACK_SPEED")
+	@:native("SetPlaybackSpeed")
 	static function setPlaybackSpeed(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -3500,7 +3507,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("SET_PLANE_SECTION_DAMAGE_SCALE")
+	@:native("SetPlaneSectionDamageScale")
 	static function setPlaneSectionDamageScale(vehicle:Dynamic, damageSection:Int, damageScale:Float):Dynamic;
 
 	/**
@@ -3508,7 +3515,7 @@ extern class Vehicle {
 	 * min: 1.9f, max: 100.0f
 	 * ```
 	 */
-	@:native("SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB")
+	@:native("SetPickupRopeLengthForCargobob")
 	static function setPickupRopeLengthForCargobob(cargobob:Dynamic, length1:Float, length2:Float, state:Bool):Dynamic;
 
 	/**
@@ -3518,25 +3525,25 @@ extern class Vehicle {
 	 * 
 	 * Works by just calling it once, does not need to be called every tick.
 	 */
-	@:native("SET_PLANE_TURBULENCE_MULTIPLIER")
+	@:native("SetPlaneTurbulenceMultiplier")
 	static function setPlaneTurbulenceMultiplier(vehicle:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * Identical to SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER with 0 as arguments for p1 and p3.
 	 */
-	@:native("SET_PLAYBACK_TO_USE_AI")
+	@:native("SetPlaybackToUseAi")
 	static function setPlaybackToUseAi(vehicle:Dynamic, drivingStyle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLANE_RESIST_TO_EXPLOSION")
+	@:native("SetPlaneResistToExplosion")
 	static function setPlaneResistToExplosion(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYERS_LAST_VEHICLE")
+	@:native("SetPlayersLastVehicle")
 	static function setPlayersLastVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -3544,7 +3551,7 @@ extern class Vehicle {
 	 * Time is number of milliseconds before reverting, zero for indefinitely.
 	 * ```
 	 */
-	@:native("SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER")
+	@:native("SetPlaybackToUseAiTryToRevertBackLater")
 	static function setPlaybackToUseAiTryToRevertBackLater(vehicle:Dynamic, time:Int, drivingStyle:Int, p3:Bool):Dynamic;
 
 	/**
@@ -3552,25 +3559,25 @@ extern class Vehicle {
 	 * 
 	 * Requires [`SWITCH_TRAIN_TRACK`](#\_0xFD813BB7DB977F20) and [`SET_TRAIN_TRACK_SPAWN_FREQUENCY`](#\_0x21973BBF8D17EDFA) to be set.
 	 */
-	@:native("SET_RANDOM_TRAINS")
+	@:native("SetRandomTrains")
 	static function setRandomTrains(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RANDOM_BOATS")
+	@:native("SetRandomBoats")
 	static function setRandomBoats(toggle:Bool):Dynamic;
 
 	/**
 	 * Sets flag on vehicle that changes behaviour in relation to when player gets wanted level
 	 */
-	@:native("SET_POLICE_FOCUS_WILL_TRACK_VEHICLE")
+	@:native("SetPoliceFocusWillTrackVehicle")
 	static function setPoliceFocusWillTrackVehicle(vehicle:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * Allows locking the hover/non-hover mode of a vehicle, such as the flying mode of the `Deluxo`. In the decompiled scripts, this native is used on `oppressor2` but couldn't get it to work on it.
 	 */
-	@:native("SET_SPECIAL_FLIGHT_MODE_ALLOWED")
+	@:native("SetSpecialFlightModeAllowed")
 	static function setSpecialFlightModeAllowed(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3580,13 +3587,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_REDUCE_DRIFT_VEHICLE_SUSPENSION")
+	@:native("SetReduceDriftVehicleSuspension")
 	static function SetReduceDriftVehicleSuspension(vehicle:Dynamic, enable:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RANDOM_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME")
+	@:native("SetRandomVehicleDensityMultiplierThisFrame")
 	static function setRandomVehicleDensityMultiplierThisFrame(multiplier:Float):Dynamic;
 
 	/**
@@ -3594,7 +3601,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_RANDOM_BOATS_IN_MP")
+	@:native("SetRandomBoatsInMp")
 	static function SetRandomBoatsInMp(toggle:Bool):Dynamic;
 
 	/**
@@ -3612,7 +3619,7 @@ extern class Vehicle {
 	 * 
 	 * Once this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.
 	 */
-	@:native("SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO")
+	@:native("SetSpecialFlightModeTargetRatio")
 	static function setSpecialFlightModeTargetRatio(vehicle:Dynamic, state:Float):Dynamic;
 
 	/**
@@ -3620,13 +3627,13 @@ extern class Vehicle {
 	 * makes the train all jumbled up and derailed as it moves on the tracks (though that wont stop it from its normal operations)  
 	 * ```
 	 */
-	@:native("SET_RENDER_TRAIN_AS_DERAILED")
+	@:native("SetRenderTrainAsDerailed")
 	static function setRenderTrainAsDerailed(train:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SUBMARINE_CRUSH_DEPTHS")
+	@:native("SetSubmarineCrushDepths")
 	static function setSubmarineCrushDepths(vehicle:Dynamic, toggle:Bool, depth1:Float, depth2:Float, depth3:Float):Dynamic;
 
 	/**
@@ -3640,7 +3647,7 @@ extern class Vehicle {
 	 *                             }  
 	 * ```
 	 */
-	@:native("SET_TAXI_LIGHTS")
+	@:native("SetTaxiLights")
 	static function setTaxiLights(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
@@ -3648,13 +3655,13 @@ extern class Vehicle {
 	 * Only called once in the decompiled scripts. Presumably activates the specified generator.  
 	 * ```
 	 */
-	@:native("SET_SCRIPT_VEHICLE_GENERATOR")
+	@:native("SetScriptVehicleGenerator")
 	static function setScriptVehicleGenerator(vehicleGenerator:Int, enabled:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN")
+	@:native("SetTaskVehicleGotoPlaneMinHeightAboveTerrain")
 	static function setTaskVehicleGotoPlaneMinHeightAboveTerrain(plane:Dynamic, height:Int):Dynamic;
 
 	/**
@@ -3666,19 +3673,19 @@ extern class Vehicle {
 	 * NativeDB Added Parameter 1: Vehicle vehicle
 	 * ```
 	 */
-	@:native("_SET_TRAILER_LEGS_LOWERED")
+	@:native("SetTrailerLegsLowered")
 	static function SetTrailerLegsLowered():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TRAILER_INVERSE_MASS_SCALE")
+	@:native("SetTrailerInverseMassScale")
 	static function setTrailerInverseMassScale(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * Used alongside [`SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO`](#\_0x438B3D7CA026FE91), this function initiates hover transformation for vehicles with a hover mode, like the `Deluxo`, based on a specified ratio (0.0 to 1.0). Incorrect values can glitch the vehicle. Without pairing, vehicles revert to car mode. Ineffective on the `oppressor2`
 	 */
-	@:native("SET_SPECIAL_FLIGHT_MODE_RATIO")
+	@:native("SetSpecialFlightModeRatio")
 	static function setSpecialFlightModeRatio(vehicle:Dynamic, ratio:Float):Dynamic;
 
 	/**
@@ -3686,19 +3693,19 @@ extern class Vehicle {
 	 * in the decompiled scripts, seems to be always called on the vehicle right after being attached to a trailer.
 	 * ```
 	 */
-	@:native("SET_TRAILER_LEGS_RAISED")
+	@:native("SetTrailerLegsRaised")
 	static function setTrailerLegsRaised(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Used to control train speed, can be used to start and stop its movement as well.
 	 */
-	@:native("SET_TRAIN_CRUISE_SPEED")
+	@:native("SetTrainCruiseSpeed")
 	static function setTrainCruiseSpeed(train:Dynamic, speed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TRAIN_SPEED")
+	@:native("SetTrainSpeed")
 	static function setTrainSpeed(train:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -3706,13 +3713,13 @@ extern class Vehicle {
 	 * Only called once inside main_persitant with the parameters, 0  
 	 * ```
 	 */
-	@:native("SET_TRAIN_TRACK_SPAWN_FREQUENCY")
+	@:native("SetTrainTrackSpawnFrequency")
 	static function setTrainTrackSpawnFrequency(trackIndex:Int, frequency:Int):Dynamic;
 
 	/**
 	 * Affects the playback speed of the submarine car conversion animations. Does not affect hardcoded animations such as the wheels being retracted. In decompiled scripts the only value used for transformRate is 2.5.
 	 */
-	@:native("SET_TRANSFORM_RATE_FOR_ANIMATION")
+	@:native("SetTransformRateForAnimation")
 	static function setTransformRateForAnimation(vehicle:Dynamic, transformRate:Float):Dynamic;
 
 	/**
@@ -3720,7 +3727,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_SET_TYRE_HEALTH")
+	@:native("SetTyreHealth")
 	static function SetTyreHealth(vehicle:Dynamic, wheelIndex:Int, health:Float):Dynamic;
 
 	/**
@@ -3730,7 +3737,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("SET_TRANSFORM_TO_SUBMARINE_USES_ALTERNATE_INPUT")
+	@:native("SetTransformToSubmarineUsesAlternateInput")
 	static function setTransformToSubmarineUsesAlternateInput(vehicle:Dynamic, useAlternateInput:Dynamic):Dynamic;
 
 	/**
@@ -3753,13 +3760,13 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_SET_TYRE_TRACTION_LOSS_MULTIPLIER")
+	@:native("SetTyreTractionLossMultiplier")
 	static function SetTyreTractionLossMultiplier(vehicle:Dynamic, wheelIndex:Int, multiplier:Float):Dynamic;
 
 	/**
 	 * Allows vehicles with the FLAG_JUMPING_CAR flag to jump higher (i.e. Ruiner 2000).
 	 */
-	@:native("_SET_USE_HIGHER_VEHICLE_JUMP_FORCE")
+	@:native("SetUseHigherVehicleJumpForce")
 	static function SetUseHigherVehicleJumpForce(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3782,19 +3789,19 @@ extern class Vehicle {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_SET_TYRE_SOFTNESS_MULTIPLIER")
+	@:native("SetTyreSoftnessMultiplier")
 	static function SetTyreSoftnessMultiplier(vehicle:Dynamic, wheelIndex:Int, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_ACTIVE_FOR_PED_NAVIGATION")
+	@:native("SetVehicleActiveForPedNavigation")
 	static function setVehicleActiveForPedNavigation(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * This native is used to simulate a high-speed impact for a vehicle when it collides with a breakable object (frag). It's particularly useful in scripted sequences where a vehicle is required to break through a barrier but might not actually be moving at a sufficient speed to do so realistically. Note that this setting is temporary and will reset after one frame, so it needs to be called every frame for a lasting effect.
 	 */
-	@:native("SET_VEHICLE_ACT_AS_IF_HIGH_SPEED_FOR_FRAG_SMASHING")
+	@:native("SetVehicleActAsIfHighSpeedForFragSmashing")
 	static function setVehicleActAsIfHighSpeedForFragSmashing(vehicle:Dynamic, actHighSpeed:Bool):Dynamic;
 
 	/**
@@ -3802,25 +3809,25 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_SET_TYRE_WEAR_MULTIPLIER")
+	@:native("SetTyreWearMultiplier")
 	static function SetTyreWearMultiplier(vehicle:Dynamic, wheelIndex:Int, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_ALARM")
+	@:native("SetVehicleAlarm")
 	static function setVehicleAlarm(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_BRAKE")
+	@:native("SetVehicleBrake")
 	static function setVehicleBrake(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_ACTIVE_DURING_PLAYBACK")
+	@:native("SetVehicleActiveDuringPlayback")
 	static function setVehicleActiveDuringPlayback(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3828,7 +3835,7 @@ extern class Vehicle {
 	 * Makes the vehicle accept no passengers.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_ALLOW_NO_PASSENGERS_LOCKON")
+	@:native("SetVehicleAllowNoPassengersLockon")
 	static function setVehicleAllowNoPassengersLockon(veh:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3836,7 +3843,7 @@ extern class Vehicle {
 	 * p2 often set to 1000.0 in the decompiled scripts.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_BODY_HEALTH")
+	@:native("SetVehicleBodyHealth")
 	static function setVehicleBodyHealth(vehicle:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -3844,19 +3851,19 @@ extern class Vehicle {
 	 * SET_VEHICLE_AL*
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_CAN_BE_LOCKED_ON")
+	@:native("SetVehicleCanBeLockedOn")
 	static function SetVehicleCanBeLockedOn(vehicle:Dynamic, canBeLockedOn:Bool, unk:Bool):Dynamic;
 
 	/**
 	 * Sets the arm position of a bulldozer. Position must be a value between 0.0 and 1.0. Ignored when `p2` is set to false, instead incrementing arm position by 0.1 (or 10%).
 	 */
-	@:native("SET_VEHICLE_BULLDOZER_ARM_POSITION")
+	@:native("SetVehicleBulldozerArmPosition")
 	static function setVehicleBulldozerArmPosition(vehicle:Dynamic, position:Float, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_BE_VISIBLY_DAMAGED")
+	@:native("SetVehicleCanBeVisiblyDamaged")
 	static function setVehicleCanBeVisiblyDamaged(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
@@ -3866,31 +3873,31 @@ extern class Vehicle {
 	 * 
 	 * Use [`_GET_AIRCRAFT_BOMB_COUNT`](#\_0xEA12BD130D7569A1) to get the amount of bombs on that vehicle.
 	 */
-	@:native("_SET_VEHICLE_BOMB_COUNT")
+	@:native("SetVehicleBombCount")
 	static function SetVehicleBombCount(aircraft:Dynamic, bombCount:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_BRAKE_LIGHTS")
+	@:native("SetVehicleBrakeLights")
 	static function setVehicleBrakeLights(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_AUTOMATICALLY_ATTACHES")
+	@:native("SetVehicleAutomaticallyAttaches")
 	static function setVehicleAutomaticallyAttaches(vehicle:Dynamic, p1:Bool, p2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_CAN_ENGINE_OPERATE_ON_FIRE")
+	@:native("SetVehicleCanEngineOperateOnFire")
 	static function SetVehicleCanEngineOperateOnFire(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_SAVE_IN_GARAGE")
+	@:native("SetVehicleCanSaveInGarage")
 	static function setVehicleCanSaveInGarage(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3898,7 +3905,7 @@ extern class Vehicle {
 	 * On accelerating, spins the driven wheels with the others braked, so you don't go anywhere.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_BURNOUT")
+	@:native("SetVehicleBurnout")
 	static function setVehicleBurnout(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3906,19 +3913,19 @@ extern class Vehicle {
 	 * 
 	 * For a list of valid paint indexes, view: pastebin.com/pwHci0xK
 	 */
-	@:native("SET_VEHICLE_COLOURS")
+	@:native("SetVehicleColours")
 	static function setVehicleColours(vehicle:Dynamic, colorPrimary:Int, colorSecondary:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_LEAK_OIL")
+	@:native("SetVehicleCanLeakOil")
 	static function setVehicleCanLeakOil(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_BE_USED_BY_FLEEING_PEDS")
+	@:native("SetVehicleCanBeUsedByFleeingPeds")
 	static function setVehicleCanBeUsedByFleeingPeds(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3926,7 +3933,7 @@ extern class Vehicle {
 	 * This has not yet been tested - it's just an assumption of what the types could be.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_CAN_BE_TARGETTED")
+	@:native("SetVehicleCanBeTargetted")
 	static function setVehicleCanBeTargetted(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
@@ -3934,7 +3941,7 @@ extern class Vehicle {
 	 * 
 	 * Range of possible values for colorCombination is currently unknown, I couldn't find where these values are stored either (Disquse's guess was vehicles.meta but I haven't seen it in there.)
 	 */
-	@:native("SET_VEHICLE_COLOUR_COMBINATION")
+	@:native("SetVehicleColourCombination")
 	static function setVehicleColourCombination(vehicle:Dynamic, colorCombination:Int):Dynamic;
 
 	/**
@@ -3942,19 +3949,19 @@ extern class Vehicle {
 	 * p1, p2, p3 are RGB values for color (255,0,0 for Red, ect)  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_CUSTOM_SECONDARY_COLOUR")
+	@:native("SetVehicleCustomSecondaryColour")
 	static function setVehicleCustomSecondaryColour(vehicle:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_DEFORM_WHEELS")
+	@:native("SetVehicleCanDeformWheels")
 	static function setVehicleCanDeformWheels(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_BREAK")
+	@:native("SetVehicleCanBreak")
 	static function setVehicleCanBreak(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3962,7 +3969,7 @@ extern class Vehicle {
 	 * p1, p2, p3 are RGB values for color (255,0,0 for Red, ect)  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_CUSTOM_PRIMARY_COLOUR")
+	@:native("SetVehicleCustomPrimaryColour")
 	static function setVehicleCustomPrimaryColour(vehicle:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
@@ -3972,13 +3979,13 @@ extern class Vehicle {
 	 * VEHICLE::SET_VEHICLE_CEILING_HEIGHT(l_BD9[2/ *2* /], 420.0);
 	 * ```
 	 */
-	@:native("SET_VEHICLE_CEILING_HEIGHT")
+	@:native("SetVehicleCeilingHeight")
 	static function setVehicleCeilingHeight(vehicle:Dynamic, height:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_CAN_LEAK_PETROL")
+	@:native("SetVehicleCanLeakPetrol")
 	static function setVehicleCanLeakPetrol(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -3987,7 +3994,7 @@ extern class Vehicle {
 	 * Doesn't work for planes/helis.
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_CONTROLS_INVERTED")
+	@:native("SetVehicleControlsInverted")
 	static function SetVehicleControlsInverted(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
@@ -4000,7 +4007,7 @@ extern class Vehicle {
 	 * 
 	 * `1.0` Seems to be the maximum.
 	 */
-	@:native("SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME")
+	@:native("SetVehicleDensityMultiplierThisFrame")
 	static function setVehicleDensityMultiplierThisFrame(multiplier:Float):Dynamic;
 
 	/**
@@ -4013,7 +4020,7 @@ extern class Vehicle {
 	 * This needs to be called every frame to take effect.
 	 * ```
 	 */
-	@:native("SET_VEHICLE_CHEAT_POWER_INCREASE")
+	@:native("SetVehicleCheatPowerIncrease")
 	static function setVehicleCheatPowerIncrease(vehicle:Dynamic, value:Float):Dynamic;
 
 	/**
@@ -4021,19 +4028,19 @@ extern class Vehicle {
 	 * Radius of effect damage applied in a sphere at impact location
 	 * When `focusOnModel` set to `true`, the damage sphere will travel towards the vehicle from the given point, thus guaranteeing an impact
 	 */
-	@:native("SET_VEHICLE_DAMAGE")
+	@:native("SetVehicleDamage")
 	static function setVehicleDamage(vehicle:Dynamic, xOffset:Float, yOffset:Float, zOffset:Float, damage:Float, radius:Float, focusOnModel:Bool):Dynamic;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("SET_VEHICLE_DOOR_BROKEN")
+	@:native("SetVehicleDoorBroken")
 	static function setVehicleDoorBroken(vehicle:Dynamic, doorIndex:Int, deleteDoor:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_DASHBOARD_COLOR")
+	@:native("SetVehicleDashboardColor")
 	static function SetVehicleDashboardColor(vehicle:Dynamic, color:Int):Dynamic;
 
 	/**
@@ -4041,19 +4048,19 @@ extern class Vehicle {
 	 * 
 	 * Use [`_GET_AIRCRAFT_COUNTERMEASURE_COUNT`](#\_0xF846AA63DF56B804) to get the current amount.
 	 */
-	@:native("_SET_VEHICLE_COUNTERMEASURE_COUNT")
+	@:native("SetVehicleCountermeasureCount")
 	static function SetVehicleCountermeasureCount(aircraft:Dynamic, count:Int):Dynamic;
 
 	/**
 	 * Sets the dirt level of the passed vehicle.
 	 */
-	@:native("SET_VEHICLE_DIRT_LEVEL")
+	@:native("SetVehicleDirtLevel")
 	static function setVehicleDirtLevel(vehicle:Dynamic, dirtLevel:Float):Dynamic;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("SET_VEHICLE_DOOR_CONTROL")
+	@:native("SetVehicleDoorControl")
 	static function setVehicleDoorControl(vehicle:Dynamic, doorIndex:Int, speed:Int, angle:Float):Dynamic;
 
 	/**
@@ -4061,13 +4068,13 @@ extern class Vehicle {
 	 * SET_VEHICLE_D*
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_DAMAGE_MODIFIER")
+	@:native("SetVehicleDamageModifier")
 	static function SetVehicleDamageModifier(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_DISABLE_TOWING")
+	@:native("SetVehicleDisableTowing")
 	static function setVehicleDisableTowing(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4075,13 +4082,13 @@ extern class Vehicle {
 	 * This fixes the deformation of a vehicle but the vehicle health doesn't improve  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_DEFORMATION_FIXED")
+	@:native("SetVehicleDeformationFixed")
 	static function setVehicleDeformationFixed(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("_SET_VEHICLE_DOOR_CAN_BREAK")
+	@:native("SetVehicleDoorCanBreak")
 	static function SetVehicleDoorCanBreak(vehicle:Dynamic, doorIndex:Int, isBreakable:Bool):Dynamic;
 
 	/**
@@ -4100,7 +4107,7 @@ extern class Vehicle {
 	 * }
 	 * ```
 	 */
-	@:native("SET_VEHICLE_DOOR_SHUT")
+	@:native("SetVehicleDoorShut")
 	static function setVehicleDoorShut(vehicle:Dynamic, doorIndex:Int, closeInstantly:Bool):Dynamic;
 
 	/**
@@ -4138,37 +4145,37 @@ extern class Vehicle {
 	 * 
 	 * ```
 	 */
-	@:native("SET_VEHICLE_DOORS_LOCKED")
+	@:native("SetVehicleDoorsLocked")
 	static function setVehicleDoorsLocked(vehicle:Dynamic, doorLockStatus:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_DOORS_LOCKED_FOR_ALL_PLAYERS")
+	@:native("SetVehicleDoorsLockedForAllPlayers")
 	static function setVehicleDoorsLockedForAllPlayers(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Sets the specified door index open on the passed vehicle. See [`IS_VEHICLE_DOOR_FULLY_OPEN`](#\_0x3E933CFF7B111C22).
 	 */
-	@:native("SET_VEHICLE_DOOR_OPEN")
+	@:native("SetVehicleDoorOpen")
 	static function setVehicleDoorOpen(vehicle:Dynamic, doorIndex:Int, loose:Bool, openInstantly:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_DOORS_LOCKED_FOR_TEAM")
+	@:native("SetVehicleDoorsLockedForTeam")
 	static function setVehicleDoorsLockedForTeam(vehicle:Dynamic, team:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_DOORS_LOCKED_FOR_NON_SCRIPT_PLAYERS")
+	@:native("SetVehicleDoorsLockedForNonScriptPlayers")
 	static function setVehicleDoorsLockedForNonScriptPlayers(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](#\_0x93D9BD300D7789E5)
 	 */
-	@:native("SET_VEHICLE_DOOR_LATCHED")
+	@:native("SetVehicleDoorLatched")
 	static function setVehicleDoorLatched(vehicle:Dynamic, doorIndex:Int, forceClose:Bool, lock:Bool, p4:Bool):Dynamic;
 
 	/**
@@ -4178,7 +4185,7 @@ extern class Vehicle {
 	 * i.imgur.com/WrNpYFs.jpg
 	 * ```
 	 */
-	@:native("SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP")
+	@:native("SetVehicleDropsMoneyWhenBlownUp")
 	static function setVehicleDropsMoneyWhenBlownUp(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4186,13 +4193,13 @@ extern class Vehicle {
 	 * Closes all doors of a vehicle:  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_DOORS_SHUT")
+	@:native("SetVehicleDoorsShut")
 	static function setVehicleDoorsShut(vehicle:Dynamic, closeInstantly:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_ENGINE_CAN_DEGRADE")
+	@:native("SetVehicleEngineCanDegrade")
 	static function setVehicleEngineCanDegrade(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4209,20 +4216,20 @@ extern class Vehicle {
 	 * 1000: Engine is perfect
 	 * ```
 	 */
-	@:native("SET_VEHICLE_ENGINE_HEALTH")
+	@:native("SetVehicleEngineHealth")
 	static function setVehicleEngineHealth(vehicle:Dynamic, health:Float):Dynamic;
 
 	/**
 	 * Starts or stops the engine on the specified vehicle.
 	 * From what I've tested when I do this to a helicopter the propellers turn off after the engine has started.
 	 */
-	@:native("SET_VEHICLE_ENGINE_ON")
+	@:native("SetVehicleEngineOn")
 	static function setVehicleEngineOn(vehicle:Dynamic, value:Bool, instantly:Bool, disableAutoStart:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_DOORS_LOCKED_FOR_PLAYER")
+	@:native("SetVehicleDoorsLockedForPlayer")
 	static function setVehicleDoorsLockedForPlayer(vehicle:Dynamic, player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4236,7 +4243,7 @@ extern class Vehicle {
 	 * NativeDB Removed Parameter 2: int index
 	 * ```
 	 */
-	@:native("SET_VEHICLE_EXCLUSIVE_DRIVER")
+	@:native("SetVehicleExclusiveDriver")
 	static function setVehicleExclusiveDriver(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4248,7 +4255,7 @@ extern class Vehicle {
 	 * 
 	 * The parameter fade is a value from 0-1, where 0 is fresh paint.
 	 */
-	@:native("SET_VEHICLE_ENVEFF_SCALE")
+	@:native("SetVehicleEnveffScale")
 	static function setVehicleEnveffScale(vehicle:Dynamic, fade:Float):Dynamic;
 
 	/**
@@ -4256,7 +4263,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_DOORS_LOCKED_FOR_UNK")
+	@:native("SetVehicleDoorsLockedForUnk")
 	static function SetVehicleDoorsLockedForUnk(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4272,13 +4279,13 @@ extern class Vehicle {
 	 * Confirmed p2 does not work as a bool. Changed to int. [0=on, 1=off]  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_EXTRA")
+	@:native("SetVehicleExtra")
 	static function setVehicleExtra(vehicle:Dynamic, extraId:Int, disable:Bool):Dynamic;
 
 	/**
 	 * The **actual** [`SET_VEHICLE_EXCLUSIVE_DRIVER`](#\_0x41062318F23ED854) native.
 	 */
-	@:native("_SET_VEHICLE_EXCLUSIVE_DRIVER_2")
+	@:native("SetVehicleExclusiveDriver_2")
 	static function SetVehicleExclusiveDriver2(vehicle:Dynamic, ped:Dynamic, index:Int):Dynamic;
 
 	/**
@@ -4286,13 +4293,13 @@ extern class Vehicle {
 	 * Max value is 32767
 	 * ```
 	 */
-	@:native("SET_VEHICLE_EXTENDED_REMOVAL_RANGE")
+	@:native("SetVehicleExtendedRemovalRange")
 	static function setVehicleExtendedRemovalRange(vehicle:Dynamic, range:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE")
+	@:native("SetVehicleFlightNozzlePositionImmediate")
 	static function setVehicleFlightNozzlePositionImmediate(vehicle:Dynamic, angle:Float):Dynamic;
 
 	/**
@@ -4300,26 +4307,26 @@ extern class Vehicle {
 	 * Sets a vehicle to be strongly resistant to explosions. p0 is the vehicle; set p1 to false to toggle the effect on/off.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE")
+	@:native("SetVehicleExplodesOnHighExplosionDamage")
 	static function setVehicleExplodesOnHighExplosionDamage(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Fix a given vehicle.
 	 * If the vehicle's engine's broken then you cannot fix it with this native.
 	 */
-	@:native("SET_VEHICLE_FIXED")
+	@:native("SetVehicleFixed")
 	static function setVehicleFixed(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_FORCE_AFTERBURNER")
+	@:native("SetVehicleForceAfterburner")
 	static function setVehicleForceAfterburner(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_FLIGHT_NOZZLE_POSITION")
+	@:native("SetVehicleFlightNozzlePosition")
 	static function setVehicleFlightNozzlePosition(vehicle:Dynamic, angleRatio:Float):Dynamic;
 
 	/**
@@ -4327,7 +4334,7 @@ extern class Vehicle {
 	 * It switch to highbeam when p1 is set to true.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_FULLBEAM")
+	@:native("SetVehicleFullbeam")
 	static function setVehicleFullbeam(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4335,7 +4342,7 @@ extern class Vehicle {
 	 * They use the same color indexs as SET_VEHICLE_COLOURS.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_EXTRA_COLOURS")
+	@:native("SetVehicleExtraColours")
 	static function setVehicleExtraColours(vehicle:Dynamic, pearlescentColor:Int, wheelColor:Int):Dynamic;
 
 	/**
@@ -4344,7 +4351,7 @@ extern class Vehicle {
 	 * Must be called every tick.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_FRICTION_OVERRIDE")
+	@:native("SetVehicleFrictionOverride")
 	static function setVehicleFrictionOverride(vehicle:Dynamic, friction:Float):Dynamic;
 
 	/**
@@ -4355,13 +4362,13 @@ extern class Vehicle {
 	 * http://www.calculateme.com/Speed/MetersperSecond/ToMilesperHour.htm  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_FORWARD_SPEED")
+	@:native("SetVehicleForwardSpeed")
 	static function setVehicleForwardSpeed(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_GRAVITY")
+	@:native("SetVehicleGravity")
 	static function setVehicleGravity(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4369,13 +4376,13 @@ extern class Vehicle {
 	 * Allows creation of CEventShockingPlaneFlyby, CEventShockingHelicopterOverhead, and other(?) Shocking events
 	 * ```
 	 */
-	@:native("SET_VEHICLE_GENERATES_ENGINE_SHOCKING_EVENTS")
+	@:native("SetVehicleGeneratesEngineShockingEvents")
 	static function setVehicleGeneratesEngineShockingEvents(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_HANDLING_HASH_FOR_AI")
+	@:native("SetVehicleHandlingHashForAi")
 	static function SetVehicleHandlingHashForAi(vehicle:Dynamic, hash:Int):Dynamic;
 
 	/**
@@ -4383,37 +4390,37 @@ extern class Vehicle {
 	 * 
 	 * You can clear the area of interest with [`CLEAR_VEHICLE_GENERATOR_AREA_OF_INTEREST`](#\_0x0A436B8643716D14)
 	 */
-	@:native("SET_VEHICLE_GENERATOR_AREA_OF_INTEREST")
+	@:native("SetVehicleGeneratorAreaOfInterest")
 	static function setVehicleGeneratorAreaOfInterest(x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_HANDBRAKE")
+	@:native("SetVehicleHandbrake")
 	static function setVehicleHandbrake(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_HAS_MUTED_SIRENS")
+	@:native("SetVehicleHasMutedSirens")
 	static function setVehicleHasMutedSirens(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_HAS_BEEN_DRIVEN_FLAG")
+	@:native("SetVehicleHasBeenDrivenFlag")
 	static function setVehicleHasBeenDrivenFlag(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER")
+	@:native("SetVehicleHasBeenOwnedByPlayer")
 	static function setVehicleHasBeenOwnedByPlayer(vehicle:Dynamic, owned:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_INACTIVE_DURING_PLAYBACK")
+	@:native("SetVehicleInactiveDuringPlayback")
 	static function setVehicleInactiveDuringPlayback(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4423,7 +4430,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS")
+	@:native("SetVehicleHasUnbreakableLights")
 	static function setVehicleHasUnbreakableLights(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4431,13 +4438,13 @@ extern class Vehicle {
 	 * if true, axles won't bend.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_HAS_STRONG_AXLES")
+	@:native("SetVehicleHasStrongAxles")
 	static function setVehicleHasStrongAxles(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED")
+	@:native("SetVehicleIndividualDoorsLocked")
 	static function setVehicleIndividualDoorsLocked(vehicle:Dynamic, doorIndex:Int, doorLockStatus:Int):Dynamic;
 
 	/**
@@ -4446,19 +4453,19 @@ extern class Vehicle {
 	 * Set turnSignal to 1 for left light, 0 for right light.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_INDICATOR_LIGHTS")
+	@:native("SetVehicleIndicatorLights")
 	static function setVehicleIndicatorLights(vehicle:Dynamic, turnSignal:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_INTERIOR_COLOR")
+	@:native("SetVehicleInteriorColor")
 	static function SetVehicleInteriorColor(vehicle:Dynamic, color:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_INTERIORLIGHT")
+	@:native("SetVehicleInteriorlight")
 	static function setVehicleInteriorlight(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4469,18 +4476,26 @@ extern class Vehicle {
 	 * ```
 	 * 
 	 * ```cpp
-	 * enum eVehicleHeadlightShadowFlags {
-	 *     // Default (Lights can be toggled between off, normal and high beams)
-	 *     NO_HEADLIGHT_SHADOWS = 0,
-	 *     // Lights Disabled (Lights are fully disabled, cannot be toggled)
-	 *     HEADLIGHTS_CAST_DYNAMIC_SHADOWS = 1,
-	 *     // Always On (Lights can be toggled between normal and high beams)
-	 *     HEADLIGHTS_CAST_STATIC_SHADOWS = 2,
-	 *     HEADLIGHTS_CAST_FULL_SHADOWS = 3 
+	 * enum eVehicleHeadlightShadowFlags {
+
+	 *     // Default (Lights can be toggled between off, normal and high beams)
+
+	 *     NO_HEADLIGHT_SHADOWS = 0,
+
+	 *     // Lights Disabled (Lights are fully disabled, cannot be toggled)
+
+	 *     HEADLIGHTS_CAST_DYNAMIC_SHADOWS = 1,
+
+	 *     // Always On (Lights can be toggled between normal and high beams)
+
+	 *     HEADLIGHTS_CAST_STATIC_SHADOWS = 2,
+
+	 *     HEADLIGHTS_CAST_FULL_SHADOWS = 3 
+
 	 * };
 	 * ```
 	 */
-	@:native("SET_VEHICLE_HEADLIGHT_SHADOWS")
+	@:native("SetVehicleHeadlightShadows")
 	static function setVehicleHeadlightShadows(vehicle:Dynamic, flag:Int):Dynamic;
 
 	/**
@@ -4488,7 +4503,7 @@ extern class Vehicle {
 	 * Setting this to false, makes the specified vehicle to where if you press Y your character doesn't even attempt the animation to enter the vehicle. Hence it's not considered aka ignored.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_IS_CONSIDERED_BY_PLAYER")
+	@:native("SetVehicleIsConsideredByPlayer")
 	static function setVehicleIsConsideredByPlayer(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4496,7 +4511,7 @@ extern class Vehicle {
 	 * 
 	 * This is particularly useful when utilizing the wanted system from GTA, and you want to prevent a vehicle from affecting the wanted level when it is stolen. In the decompiled scripts this native is only used to disable the influence of the vehicle on the wanted level.
 	 */
-	@:native("SET_VEHICLE_INFLUENCES_WANTED_LEVEL")
+	@:native("SetVehicleInfluencesWantedLevel")
 	static function setVehicleInfluencesWantedLevel(vehicle:Dynamic, influenceWantedLevel:Bool):Dynamic;
 
 	/**
@@ -4504,37 +4519,37 @@ extern class Vehicle {
 	 * Sets the wanted state of this vehicle.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_IS_WANTED")
+	@:native("SetVehicleIsWanted")
 	static function setVehicleIsWanted(vehicle:Dynamic, state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_IS_STOLEN")
+	@:native("SetVehicleIsStolen")
 	static function setVehicleIsStolen(vehicle:Dynamic, isStolen:Bool):Dynamic;
 
 	/**
 	 * This multiplier has no limit, by default the game has this set to `1.0`.
 	 */
-	@:native("SET_VEHICLE_LIGHT_MULTIPLIER")
+	@:native("SetVehicleLightMultiplier")
 	static function setVehicleLightMultiplier(vehicle:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_LOD_MULTIPLIER")
+	@:native("SetVehicleLodMultiplier")
 	static function setVehicleLodMultiplier(vehicle:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * Calling this native will keep a vehicle's engine running after exiting.
 	 */
-	@:native("SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED")
+	@:native("SetVehicleKeepEngineOnWhenAbandoned")
 	static function setVehicleKeepEngineOnWhenAbandoned(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_KERS_ALLOWED")
+	@:native("SetVehicleKersAllowed")
 	static function setVehicleKersAllowed(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4542,13 +4557,13 @@ extern class Vehicle {
 	 * p1 (toggle) was always 1 (true) except in one case in the b678 scripts.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_IS_RACING")
+	@:native("SetVehicleIsRacing")
 	static function setVehicleIsRacing(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_LIVERY")
+	@:native("SetVehicleLivery")
 	static function setVehicleLivery(vehicle:Dynamic, livery:Int):Dynamic;
 
 	/**
@@ -4559,24 +4574,38 @@ extern class Vehicle {
 	 * ```
 	 * 
 	 * ```cpp
-	 * enum eVehicleLightSetting {
-	 *     // Normal light behavior. Lights cycle through off, then low beams, then high beams.
-	 *     // Note: It's affected by day or night; high beams don't exist in daytime.
-	 *     NO_VEHICLE_LIGHT_OVERRIDE = 0,
-	 *     // Vehicle doesn't have lights, always off.
-	 *     FORCE_VEHICLE_LIGHTS_OFF  = 1, 
-	 *     // Vehicle has always-on lights.
-	 *     // During day: Cycles between low beams and high beams. 
-	 *     // At night: Cycles between low beams, low beams, and high beams.
-	 *     FORCE_VEHICLE_LIGHTS_ON   = 2,
-	 *     // Sets vehicle lights on. Behaves like normal lights (same as 0).
-	 *     SET_VEHICLE_LIGHTS_ON     = 3,
-	 *     // Sets vehicle lights off. Behaves like normal lights (same as 0).
-	 *     SET_VEHICLE_LIGHTS_OFF    = 4 
+	 * enum eVehicleLightSetting {
+
+	 *     // Normal light behavior. Lights cycle through off, then low beams, then high beams.
+
+	 *     // Note: It's affected by day or night; high beams don't exist in daytime.
+
+	 *     NO_VEHICLE_LIGHT_OVERRIDE = 0,
+
+	 *     // Vehicle doesn't have lights, always off.
+
+	 *     FORCE_VEHICLE_LIGHTS_OFF  = 1, 
+
+	 *     // Vehicle has always-on lights.
+
+	 *     // During day: Cycles between low beams and high beams. 
+
+	 *     // At night: Cycles between low beams, low beams, and high beams.
+
+	 *     FORCE_VEHICLE_LIGHTS_ON   = 2,
+
+	 *     // Sets vehicle lights on. Behaves like normal lights (same as 0).
+
+	 *     SET_VEHICLE_LIGHTS_ON     = 3,
+
+	 *     // Sets vehicle lights off. Behaves like normal lights (same as 0).
+
+	 *     SET_VEHICLE_LIGHTS_OFF    = 4 
+
 	 * };
 	 * ```
 	 */
-	@:native("SET_VEHICLE_LIGHTS")
+	@:native("SetVehicleLights")
 	static function setVehicleLights(vehicle:Dynamic, state:Int):Dynamic;
 
 	/**
@@ -4592,7 +4621,7 @@ extern class Vehicle {
 	 * p3 seems to always be 0.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_MOD_COLOR_1")
+	@:native("SetVehicleModColor_1")
 	static function setVehicleModColor1(vehicle:Dynamic, paintType:Int, color:Int, pearlescentColor:Int):Dynamic;
 
 	/**
@@ -4601,13 +4630,13 @@ extern class Vehicle {
 	 * VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(GAMEPLAY::GET_HASH_KEY("taco"), true);  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_MODEL_IS_SUPPRESSED")
+	@:native("SetVehicleModelIsSuppressed")
 	static function setVehicleModelIsSuppressed(model:Int, suppressed:Bool):Dynamic;
 
 	/**
 	 * To reset the max speed, set the `speed` value to `0.0` or lower.
 	 */
-	@:native("_SET_VEHICLE_MAX_SPEED")
+	@:native("SetVehicleMaxSpeed")
 	static function SetVehicleMaxSpeed(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -4668,7 +4697,7 @@ extern class Vehicle {
 	 * };
 	 * ```
 	 */
-	@:native("SET_VEHICLE_MOD")
+	@:native("SetVehicleMod")
 	static function setVehicleMod(vehicle:Dynamic, modType:Int, modIndex:Int, customTires:Bool):Dynamic;
 
 	/**
@@ -4684,13 +4713,13 @@ extern class Vehicle {
 	 * color: number of the color  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_MOD_COLOR_2")
+	@:native("SetVehicleModColor_2")
 	static function setVehicleModColor2(vehicle:Dynamic, paintType:Int, color:Int):Dynamic;
 
 	/**
 	 * This method is utilized solely for debugging purposes and is functional only in debug builds of the game. Please note that its functionality may not be available in the retail version.
 	 */
-	@:native("SET_VEHICLE_NAME_DEBUG")
+	@:native("SetVehicleNameDebug")
 	static function setVehicleNameDebug(vehicle:Dynamic, name:String):Dynamic;
 
 	/**
@@ -4714,13 +4743,13 @@ extern class Vehicle {
 	 * | Purple        | 35  | 1   | 255 |
 	 * | Blacklight    | 15  | 3   | 255 |
 	 */
-	@:native("_SET_VEHICLE_NEON_LIGHTS_COLOUR")
+	@:native("SetVehicleNeonLightsColour")
 	static function SetVehicleNeonLightsColour(vehicle:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_NEEDS_TO_BE_HOTWIRED")
+	@:native("SetVehicleNeedsToBeHotwired")
 	static function setVehicleNeedsToBeHotwired(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4728,7 +4757,7 @@ extern class Vehicle {
 	 * Tested on the player's current vehicle. Unless you kill the driver, the vehicle doesn't loose control, however, if enabled, explodeOnImpact is still active. The moment you crash, boom.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_OUT_OF_CONTROL")
+	@:native("SetVehicleOutOfControl")
 	static function setVehicleOutOfControl(vehicle:Dynamic, killDriver:Bool, explodeOnImpact:Bool):Dynamic;
 
 	/**
@@ -4736,13 +4765,13 @@ extern class Vehicle {
 	 * Set modKit to 0 if you plan to call SET_VEHICLE_MOD. That's what the game does. Most body modifications through SET_VEHICLE_MOD will not take effect until this is set to 0.
 	 * ```
 	 */
-	@:native("SET_VEHICLE_MOD_KIT")
+	@:native("SetVehicleModKit")
 	static function setVehicleModKit(vehicle:Dynamic, modKit:Int):Dynamic;
 
 	/**
 	 * Please refer to [`GET_VEHICLE_NUMBER_PLATE_TEXT_INDEX`](#\_0xF11BC2DD9A3E7195) for plate indicies.
 	 */
-	@:native("SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX")
+	@:native("SetVehicleNumberPlateTextIndex")
 	static function setVehicleNumberPlateTextIndex(vehicle:Dynamic, plateIndex:Int):Dynamic;
 
 	/**
@@ -4750,7 +4779,7 @@ extern class Vehicle {
 	 * colorIndex = 0 - 7
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATION")
+	@:native("SetVehicleParachuteTextureVariation")
 	static function SetVehicleParachuteTextureVariation(vehicle:Dynamic, textureVariation:Int):Dynamic;
 
 	/**
@@ -4758,7 +4787,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_NEON_LIGHTS_COLOR_2")
+	@:native("SetVehicleNeonLightsColor_2")
 	static function SetVehicleNeonLightsColor2(vehicle:Dynamic, color:Int):Dynamic;
 
 	/**
@@ -4771,7 +4800,7 @@ extern class Vehicle {
 	 * 3 = Back  
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_NEON_LIGHT_ENABLED")
+	@:native("SetVehicleNeonLightEnabled")
 	static function SetVehicleNeonLightEnabled(vehicle:Dynamic, index:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -4780,7 +4809,7 @@ extern class Vehicle {
 	 * Begins leaking gas at around 650 health  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_PETROL_TANK_HEALTH")
+	@:native("SetVehiclePetrolTankHealth")
 	static function setVehiclePetrolTankHealth(vehicle:Dynamic, health:Float):Dynamic;
 
 	/**
@@ -4792,25 +4821,25 @@ extern class Vehicle {
 	 * NativeDB Added Parameter 2: float p1
 	 * ```
 	 */
-	@:native("SET_VEHICLE_ON_GROUND_PROPERLY")
+	@:native("SetVehicleOnGroundProperly")
 	static function setVehicleOnGroundProperly(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_PARACHUTE_ACTIVE")
+	@:native("SetVehicleParachuteActive")
 	static function SetVehicleParachuteActive(vehicle:Dynamic, active:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_NUMBER_PLATE_TEXT")
+	@:native("SetVehicleNumberPlateText")
 	static function setVehicleNumberPlateText(vehicle:Dynamic, plateText:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_RAMP_LAUNCH_MODIFIER")
+	@:native("SetVehicleRampLaunchModifier")
 	static function SetVehicleRampLaunchModifier(vehicle:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -4818,7 +4847,7 @@ extern class Vehicle {
 	 * parachuteModel = 230075693  
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_PARACHUTE_MODEL")
+	@:native("SetVehicleParachuteModel")
 	static function SetVehicleParachuteModel(vehicle:Dynamic, modelHash:Int):Dynamic;
 
 	/**
@@ -4826,37 +4855,37 @@ extern class Vehicle {
 	 * Reduces grip significantly so it's hard to go anywhere.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_REDUCE_GRIP")
+	@:native("SetVehicleReduceGrip")
 	static function setVehicleReduceGrip(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_PROVIDES_COVER")
+	@:native("SetVehicleProvidesCover")
 	static function setVehicleProvidesCover(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_ROCKET_BOOST_PERCENTAGE")
+	@:native("SetVehicleRocketBoostPercentage")
 	static function SetVehicleRocketBoostPercentage(vehicle:Dynamic, percentage:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_RECEIVES_RAMP_DAMAGE")
+	@:native("SetVehicleReceivesRampDamage")
 	static function SetVehicleReceivesRampDamage(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_RAMP_UPWARDS_LAUNCH_MOTION")
+	@:native("SetVehicleRampUpwardsLaunchMotion")
 	static function SetVehicleRampUpwardsLaunchMotion(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_RAMP_SIDEWAYS_LAUNCH_MOTION")
+	@:native("SetVehicleRampSidewaysLaunchMotion")
 	static function SetVehicleRampSidewaysLaunchMotion(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4866,7 +4895,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_REDUCE_TRACTION")
+	@:native("SetVehicleReduceTraction")
 	static function SetVehicleReduceTraction(vehicle:Dynamic, val:Int):Dynamic;
 
 	/**
@@ -4874,13 +4903,13 @@ extern class Vehicle {
 	 * Only works during nighttime.
 	 * ```
 	 */
-	@:native("SET_VEHICLE_SEARCHLIGHT")
+	@:native("SetVehicleSearchlight")
 	static function setVehicleSearchlight(heli:Dynamic, toggle:Bool, canBeUsedByAI:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_ROCKET_BOOST_REFILL_TIME")
+	@:native("SetVehicleRocketBoostRefillTime")
 	static function SetVehicleRocketBoostRefillTime(vehicle:Dynamic, time:Float):Dynamic;
 
 	/**
@@ -4889,19 +4918,19 @@ extern class Vehicle {
 	 * WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(pilot,GAMEPLAY::GET_HASH_KEY("VEHICLE_WEAPON_PLANE_ROCKET"));VEHICLE::SET_VEHICLE_SHOOT_AT_TARGET(pilot, target, targPos.x, targPos.y, targPos.z);  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_SHOOT_AT_TARGET")
+	@:native("SetVehicleShootAtTarget")
 	static function setVehicleShootAtTarget(driver:Dynamic, entity:Dynamic, xTarget:Float, yTarget:Float, zTarget:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_ROCKET_BOOST_ACTIVE")
+	@:native("SetVehicleRocketBoostActive")
 	static function SetVehicleRocketBoostActive(vehicle:Dynamic, active:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_RUDDER_BROKEN")
+	@:native("SetVehicleRudderBroken")
 	static function setVehicleRudderBroken(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4909,7 +4938,7 @@ extern class Vehicle {
 	 * If set to TRUE, it seems to suppress door noises and doesn't allow the horn to be continuous.  
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_SILENT")
+	@:native("SetVehicleSilent")
 	static function SetVehicleSilent(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4919,7 +4948,7 @@ extern class Vehicle {
 	 * 
 	 * Might work on other custom vehicles but im not sure what those might be, only confirmed it working with the tornado custom.
 	 */
-	@:native("_SET_VEHICLE_ROOF_LIVERY")
+	@:native("SetVehicleRoofLivery")
 	static function SetVehicleRoofLivery(vehicle:Dynamic, livery:Int):Dynamic;
 
 	/**
@@ -4929,7 +4958,7 @@ extern class Vehicle {
 	 * DISABLE_*
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_SHADOW_EFFECT")
+	@:native("SetVehicleShadowEffect")
 	static function SetVehicleShadowEffect(vehicle:Dynamic, p1:Int, p2:Int):Dynamic;
 
 	/**
@@ -4947,7 +4976,7 @@ extern class Vehicle {
 	 * }  
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_ST")
+	@:native("SetVehicleSt")
 	static function SetVehicleSt(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4955,7 +4984,7 @@ extern class Vehicle {
 	 * Activate siren on vehicle (Only works if the vehicle has a siren).  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_SIREN")
+	@:native("SetVehicleSiren")
 	static function setVehicleSiren(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4968,25 +4997,25 @@ extern class Vehicle {
 	 * 1.0 = full left  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_STEER_BIAS")
+	@:native("SetVehicleSteerBias")
 	static function setVehicleSteerBias(vehicle:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_TANK_TURRET_POSITION")
+	@:native("SetVehicleTankTurretPosition")
 	static function setVehicleTankTurretPosition(vehicle:Dynamic, position:Float, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_STEERING_BIAS_SCALAR")
+	@:native("SetVehicleSteeringBiasScalar")
 	static function setVehicleSteeringBiasScalar(vehicle:Dynamic, scalar:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_TIMED_EXPLOSION")
+	@:native("SetVehicleTimedExplosion")
 	static function setVehicleTimedExplosion(vehicle:Dynamic, ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -4994,13 +5023,13 @@ extern class Vehicle {
 	 * If set to true, vehicle will not take crash damage, but is still susceptible to damage from bullets and explosives  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_STRONG")
+	@:native("SetVehicleStrong")
 	static function setVehicleStrong(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_TURRET_SPEED_THIS_FRAME")
+	@:native("SetVehicleTurretSpeedThisFrame")
 	static function setVehicleTurretSpeedThisFrame(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -5008,13 +5037,13 @@ extern class Vehicle {
 	 * Sets how much the crane on the tow truck is raised, where 0.0 is fully lowered and 1.0 is fully raised.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_TOW_TRUCK_ARM_POSITION")
+	@:native("SetVehicleTowTruckArmPosition")
 	static function setVehicleTowTruckArmPosition(vehicle:Dynamic, position:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_UNDRIVEABLE")
+	@:native("SetVehicleUndriveable")
 	static function setVehicleUndriveable(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -5026,7 +5055,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_TURRET_UNK")
+	@:native("SetVehicleTurretUnk")
 	static function SetVehicleTurretUnk(vehicle:Dynamic, index:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -5040,7 +5069,7 @@ extern class Vehicle {
 	 * setting r,g,b to 0 will give the car independance day tyre smoke  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_TYRE_SMOKE_COLOR")
+	@:native("SetVehicleTyreSmokeColor")
 	static function setVehicleTyreSmokeColor(vehicle:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
@@ -5058,7 +5087,7 @@ extern class Vehicle {
 	 * '47 = 6 wheels trailer mid wheel right  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_TYRE_BURST")
+	@:native("SetVehicleTyreBurst")
 	static function setVehicleTyreBurst(vehicle:Dynamic, index:Int, onRim:Bool, p3:Float):Dynamic;
 
 	/**
@@ -5068,7 +5097,7 @@ extern class Vehicle {
 	 * 
 	 * Enables or disables the use of the vehicle's horn button for activating the nitrous system.
 	 */
-	@:native("_SET_VEHICLE_USE_HORN_BUTTON_FOR_NITROUS")
+	@:native("SetVehicleUseHornButtonForNitrous")
 	static function SetVehicleUseHornButtonForNitrous(vehicle:Dynamic, bToggle:Bool):Dynamic;
 
 	/**
@@ -5076,25 +5105,25 @@ extern class Vehicle {
 	 * Allows you to toggle bulletproof tires.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_TYRES_CAN_BURST")
+	@:native("SetVehicleTyresCanBurst")
 	static function setVehicleTyresCanBurst(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_USE_CUTSCENE_WHEEL_COMPRESSION")
+	@:native("SetVehicleUseCutsceneWheelCompression")
 	static function setVehicleUseCutsceneWheelCompression(p0:Dynamic, p1:Bool, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_WEAPONS_DISABLED")
+	@:native("SetVehicleWeaponsDisabled")
 	static function SetVehicleWeaponsDisabled(vehicle:Dynamic, weaponSlot:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_USE_ALTERNATE_HANDLING")
+	@:native("SetVehicleUseAlternateHandling")
 	static function setVehicleUseAlternateHandling(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -5110,19 +5139,19 @@ extern class Vehicle {
 	 * '47 = 6 wheels trailer mid wheel right  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_TYRE_FIXED")
+	@:native("SetVehicleTyreFixed")
 	static function setVehicleTyreFixed(vehicle:Dynamic, tyreIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS")
+	@:native("SetVehicleUsePlayerLightSettings")
 	static function setVehicleUsePlayerLightSettings(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_WHEELS_CAN_BREAK")
+	@:native("SetVehicleWheelsCanBreak")
 	static function setVehicleWheelsCanBreak(vehicle:Dynamic, enabled:Bool):Dynamic;
 
 	/**
@@ -5130,19 +5159,19 @@ extern class Vehicle {
 	 * vehicle must be a plane
 	 * ```
 	 */
-	@:native("SET_VEHICLE_USES_LARGE_REAR_RAMP")
+	@:native("SetVehicleUsesLargeRearRamp")
 	static function setVehicleUsesLargeRearRamp(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP")
+	@:native("SetVehicleWheelsCanBreakOffWhenBlowUp")
 	static function setVehicleWheelsCanBreakOffWhenBlowUp(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_UNK_DAMAGE_MULTIPLIER")
+	@:native("SetVehicleUnkDamageMultiplier")
 	static function SetVehicleUnkDamageMultiplier(vehicle:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -5154,7 +5183,7 @@ extern class Vehicle {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_WHEELS_DEAL_DAMAGE")
+	@:native("SetVehicleWheelsDealDamage")
 	static function SetVehicleWheelsDealDamage(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -5171,7 +5200,7 @@ extern class Vehicle {
 	 * };  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_WINDOW_TINT")
+	@:native("SetVehicleWindowTint")
 	static function setVehicleWindowTint(vehicle:Dynamic, tint:Int):Dynamic;
 
 	/**
@@ -5179,25 +5208,25 @@ extern class Vehicle {
 	 * SET_TIME_POSITION_IN_RECORDING can be emulated by: desired_time - GET_TIME_POSITION_IN_RECORDING(vehicle)
 	 * ```
 	 */
-	@:native("SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE")
+	@:native("SkipTimeInPlaybackRecordedVehicle")
 	static function skipTimeInPlaybackRecordedVehicle(vehicle:Dynamic, time:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_VEHICLE_WEAPON_CAPACITY")
+	@:native("SetVehicleWeaponCapacity")
 	static function SetVehicleWeaponCapacity(vehicle:Dynamic, weaponIndex:Int, capacity:Int):Dynamic;
 
 	/**
 	 * Refer to [GET_VEHICLE_WHEEL_TYPE](#\_0xB3ED1BFB4BE636DC) for wheel types.
 	 */
-	@:native("SET_VEHICLE_WHEEL_TYPE")
+	@:native("SetVehicleWheelType")
 	static function setVehicleWheelType(vehicle:Dynamic, wheelType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STABILISE_ENTITY_ATTACHED_TO_HELI")
+	@:native("StabiliseEntityAttachedToHeli")
 	static function stabiliseEntityAttachedToHeli(vehicle:Dynamic, entity:Dynamic, p2:Float):Dynamic;
 
 	/**
@@ -5205,13 +5234,13 @@ extern class Vehicle {
 	 * 
 	 * See [`REQUEST_VEHICLE_RECORDING`](#\_0xAF514CABE74CBF15).
 	 */
-	@:native("START_PLAYBACK_RECORDED_VEHICLE")
+	@:native("StartPlaybackRecordedVehicle")
 	static function startPlaybackRecordedVehicle(vehicle:Dynamic, recording:Int, script:String, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SKIP_TO_END_AND_STOP_PLAYBACK_RECORDED_VEHICLE")
+	@:native("SkipToEndAndStopPlaybackRecordedVehicle")
 	static function skipToEndAndStopPlaybackRecordedVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -5219,7 +5248,7 @@ extern class Vehicle {
 	 * 
 	 * You can find the list of colors and ids here: [\_GET_VEHICLE_HEADLIGHTS_COLOUR](#\_0x3DFF319A831E0CDB)
 	 */
-	@:native("_SET_VEHICLE_XENON_LIGHTS_COLOR")
+	@:native("SetVehicleXenonLightsColor")
 	static function SetVehicleXenonLightsColor(vehicle:Dynamic, color:Int):Dynamic;
 
 	/**
@@ -5229,7 +5258,7 @@ extern class Vehicle {
 	 * 0x1F2E4E06DEA8992B is a related native that deals with the AI physics for such recordings.
 	 * ```
 	 */
-	@:native("START_PLAYBACK_RECORDED_VEHICLE_USING_AI")
+	@:native("StartPlaybackRecordedVehicleUsingAi")
 	static function startPlaybackRecordedVehicleUsingAi(vehicle:Dynamic, recording:Int, script:String, speed:Float, drivingStyle:Int):Dynamic;
 
 	/**
@@ -5238,31 +5267,31 @@ extern class Vehicle {
 	 * time, often zero and capped at 500, is related to SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER
 	 * ```
 	 */
-	@:native("START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS")
+	@:native("StartPlaybackRecordedVehicleWithFlags")
 	static function startPlaybackRecordedVehicleWithFlags(vehicle:Dynamic, recording:Int, script:String, flags:Int, time:Int, drivingStyle:Int):Dynamic;
 
 	/**
 	 * Smashes a vehicles window. See eWindowId declared in [`IS_VEHICLE_WINDOW_INTACT`](#\_0x46E571A0E20D01F1).
 	 */
-	@:native("SMASH_VEHICLE_WINDOW")
+	@:native("SmashVehicleWindow")
 	static function smashVehicleWindow(vehicle:Dynamic, windowIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_ALL_GARAGE_ACTIVITY")
+	@:native("StopAllGarageActivity")
 	static function stopAllGarageActivity():Dynamic;
 
 	/**
 	 * Sounds the horn for the specified vehicle. Note that if a player is in the vehicle, it will only sound briefly.
 	 */
-	@:native("START_VEHICLE_HORN")
+	@:native("StartVehicleHorn")
 	static function startVehicleHorn(vehicle:Dynamic, duration:Int, mode:Int, forever:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_VEHICLE_ALARM")
+	@:native("StartVehicleAlarm")
 	static function startVehicleAlarm(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -5270,7 +5299,7 @@ extern class Vehicle {
 	 * 
 	 * `eVehicleModType` enum, used for `modType` index can be found under [`SET_VEHICLE_MOD`](#\_0x6AF0636DDEDCB6DD).
 	 */
-	@:native("TOGGLE_VEHICLE_MOD")
+	@:native("ToggleVehicleMod")
 	static function toggleVehicleMod(vehicle:Dynamic, modType:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -5280,7 +5309,7 @@ extern class Vehicle {
 	 * Function.Call(Hash.TRACK_VEHICLE_VISIBILITY, v.Handle);  
 	 * ```
 	 */
-	@:native("TRACK_VEHICLE_VISIBILITY")
+	@:native("TrackVehicleVisibility")
 	static function trackVehicleVisibility(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -5288,19 +5317,19 @@ extern class Vehicle {
 	 * Stops CTaskBringVehicleToHalt
 	 * ```
 	 */
-	@:native("_STOP_BRING_VEHICLE_TO_HALT")
+	@:native("StopBringVehicleToHalt")
 	static function StopBringVehicleToHalt(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNPAUSE_PLAYBACK_RECORDED_VEHICLE")
+	@:native("UnpausePlaybackRecordedVehicle")
 	static function unpausePlaybackRecordedVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Transforms the `stormberg` to its "water vehicle" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.
 	 */
-	@:native("TRANSFORM_TO_SUBMARINE")
+	@:native("TransformToSubmarine")
 	static function transformToSubmarine(vehicle:Dynamic, instantly:Bool):Dynamic;
 
 	/**
@@ -5323,19 +5352,19 @@ extern class Vehicle {
 	 * 
 	 * Tracks IDs `0` and `3` are the main tracks you find trains on during normal gameplay, all the others are used during missions and are not complete tracks.
 	 */
-	@:native("SWITCH_TRAIN_TRACK")
+	@:native("SwitchTrainTrack")
 	static function switchTrainTrack(trackId:Int, state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_PLAYBACK_RECORDED_VEHICLE")
+	@:native("StopPlaybackRecordedVehicle")
 	static function stopPlaybackRecordedVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Transforms the `stormberg` to its "road vehicle" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.
 	 */
-	@:native("TRANSFORM_TO_CAR")
+	@:native("TransformToCar")
 	static function transformToCar(vehicle:Dynamic, instantly:Bool):Dynamic;
 
 }

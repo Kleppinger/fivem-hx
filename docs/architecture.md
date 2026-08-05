@@ -91,7 +91,7 @@ Every native namespace class is declared as:
 ```haxe
 @:native("_G")
 extern class Cfx {
-    @:native("GET_CURRENT_RESOURCE_NAME")
+    @:native("GetCurrentResourceName")
     static function getCurrentResourceName():String;
 }
 ```
@@ -105,7 +105,7 @@ Two things stack here:
   maps to Lua's global table `_G`. So `Natives.cfx` (a `Class<Cfx>` value)
   compiles to a direct reference to `_G`, and
   `Natives.cfx.getCurrentResourceName()` compiles to
-  `_G.GET_CURRENT_RESOURCE_NAME()` — i.e. exactly the same as calling the
+  `_G.GetCurrentResourceName()` — i.e. exactly the same as calling the
   native directly, with zero wrapper overhead. You can check this yourself
   in any compiled `dist/*.lua` output.
 

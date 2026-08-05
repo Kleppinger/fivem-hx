@@ -5,97 +5,97 @@ extern class Datafile {
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_BOOL")
+	@:native("DataarrayAddBool")
 	static function dataarrayAddBool(arrayData:Dynamic, value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_FLOAT")
+	@:native("DataarrayAddFloat")
 	static function dataarrayAddFloat(arrayData:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_DICT")
+	@:native("DataarrayAddDict")
 	static function dataarrayAddDict(arrayData:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_INT")
+	@:native("DataarrayAddInt")
 	static function dataarrayAddInt(arrayData:Dynamic, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_DICT")
+	@:native("DataarrayGetDict")
 	static function dataarrayGetDict(arrayData:Dynamic, arrayIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_STRING")
+	@:native("DataarrayAddString")
 	static function dataarrayAddString(arrayData:Dynamic, value:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_ADD_VECTOR")
+	@:native("DataarrayAddVector")
 	static function dataarrayAddVector(arrayData:Dynamic, valueX:Float, valueY:Float, valueZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_BOOL")
+	@:native("DataarrayGetBool")
 	static function dataarrayGetBool(arrayData:Dynamic, arrayIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_COUNT")
+	@:native("DataarrayGetCount")
 	static function dataarrayGetCount(arrayData:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_FLOAT")
+	@:native("DataarrayGetFloat")
 	static function dataarrayGetFloat(arrayData:Dynamic, arrayIndex:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_INT")
+	@:native("DataarrayGetInt")
 	static function dataarrayGetInt(arrayData:Dynamic, arrayIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_VECTOR")
+	@:native("DataarrayGetVector")
 	static function dataarrayGetVector(arrayData:Dynamic, arrayIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_ARRAY")
+	@:native("DatadictGetArray")
 	static function datadictGetArray(objectData:Dynamic, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_CREATE_ARRAY")
+	@:native("DatadictCreateArray")
 	static function datadictCreateArray(objectData:Dynamic, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_FLOAT")
+	@:native("DatadictGetFloat")
 	static function datadictGetFloat(objectData:Dynamic, key:String):Float;
 
 	/**
 	 * 
 	 */
-	@:native("DATAARRAY_GET_STRING")
+	@:native("DataarrayGetString")
 	static function dataarrayGetString(arrayData:Dynamic, arrayIndex:Int):String;
 
 	/**
@@ -110,13 +110,13 @@ extern class Datafile {
 	 * 7 = Array  
 	 * ```
 	 */
-	@:native("DATAARRAY_GET_TYPE")
+	@:native("DataarrayGetType")
 	static function dataarrayGetType(arrayData:Dynamic, arrayIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_INT")
+	@:native("DatadictGetInt")
 	static function datadictGetInt(objectData:Dynamic, key:String):Int;
 
 	/**
@@ -131,79 +131,79 @@ extern class Datafile {
 	 * 7 = Array  
 	 * ```
 	 */
-	@:native("DATADICT_GET_TYPE")
+	@:native("DatadictGetType")
 	static function datadictGetType(objectData:Dynamic, key:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_CREATE_DICT")
+	@:native("DatadictCreateDict")
 	static function datadictCreateDict(objectData:Dynamic, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_BOOL")
+	@:native("DatadictGetBool")
 	static function datadictGetBool(objectData:Dynamic, key:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_VECTOR")
+	@:native("DatadictGetVector")
 	static function datadictGetVector(objectData:Dynamic, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_SET_INT")
+	@:native("DatadictSetInt")
 	static function datadictSetInt(objectData:Dynamic, key:String, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_DICT")
+	@:native("DatadictGetDict")
 	static function datadictGetDict(objectData:Dynamic, key:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_GET_STRING")
+	@:native("DatadictGetString")
 	static function datadictGetString(objectData:Dynamic, key:String):String;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_SET_STRING")
+	@:native("DatadictSetString")
 	static function datadictSetString(objectData:Dynamic, key:String, value:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_SET_VECTOR")
+	@:native("DatadictSetVector")
 	static function datadictSetVector(objectData:Dynamic, key:String, valueX:Float, valueY:Float, valueZ:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_SET_BOOL")
+	@:native("DatadictSetBool")
 	static function datadictSetBool(objectData:Dynamic, key:String, value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATADICT_SET_FLOAT")
+	@:native("DatadictSetFloat")
 	static function datadictSetFloat(objectData:Dynamic, key:String, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_FLUSH_MISSION_HEADER")
+	@:native("DatafileFlushMissionHeader")
 	static function datafileFlushMissionHeader():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_HAS_LOADED_FILE_DATA")
+	@:native("DatafileHasLoadedFileData")
 	static function datafileHasLoadedFileData(p0:Dynamic):Bool;
 
 	/**
@@ -211,7 +211,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 1: int p0
 	 * ```
 	 */
-	@:native("DATAFILE_CREATE")
+	@:native("DatafileCreate")
 	static function datafileCreate():Dynamic;
 
 	/**
@@ -219,25 +219,25 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_SELECT_ACTIVE_FILE")
+	@:native("DatafileSelectActiveFile")
 	static function datafileSelectActiveFile(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_CLEAR_WATCH_LIST")
+	@:native("DatafileClearWatchList")
 	static function datafileClearWatchList():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_IS_VALID_REQUEST_ID")
+	@:native("DatafileIsValidRequestId")
 	static function datafileIsValidRequestId(index:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_DELETE_REQUESTED_FILE")
+	@:native("DatafileDeleteRequestedFile")
 	static function datafileDeleteRequestedFile(p0:Dynamic):Bool;
 
 	/**
@@ -245,7 +245,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_SELECT_UGC_DATA")
+	@:native("DatafileSelectUgcData")
 	static function datafileSelectUgcData(p0:Int):Bool;
 
 	/**
@@ -253,7 +253,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 1: int p0
 	 * ```
 	 */
-	@:native("DATAFILE_DELETE")
+	@:native("DatafileDelete")
 	static function datafileDelete():Dynamic;
 
 	/**
@@ -261,7 +261,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_SELECT_CREATOR_STATS")
+	@:native("DatafileSelectCreatorStats")
 	static function datafileSelectCreatorStats(p0:Int):Bool;
 
 	/**
@@ -269,7 +269,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_START_SAVE_TO_CLOUD")
+	@:native("DatafileStartSaveToCloud")
 	static function datafileStartSaveToCloud(filename:String):Bool;
 
 	/**
@@ -277,13 +277,13 @@ extern class Datafile {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("DATAFILE_SELECT_UGC_STATS")
+	@:native("DatafileSelectUgcStats")
 	static function datafileSelectUgcStats(p0:Int, p1:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_HAS_VALID_FILE_DATA")
+	@:native("DatafileHasValidFileData")
 	static function datafileHasValidFileData(p0:Dynamic):Bool;
 
 	/**
@@ -291,7 +291,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 1: int p0
 	 * ```
 	 */
-	@:native("DATAFILE_GET_FILE_DICT")
+	@:native("DatafileGetFileDict")
 	static function datafileGetFileDict():String;
 
 	/**
@@ -306,7 +306,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_LOAD_OFFLINE_UGC")
+	@:native("DatafileLoadOfflineUgc")
 	static function datafileLoadOfflineUgc(filename:String):Bool;
 
 	/**
@@ -331,7 +331,7 @@ extern class Datafile {
 	 * }  
 	 * ```
 	 */
-	@:native("DATAFILE_IS_SAVE_PENDING")
+	@:native("DatafileIsSavePending")
 	static function datafileIsSavePending():Bool;
 
 	/**
@@ -339,7 +339,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("DATAFILE_SELECT_UGC_PLAYER_DATA")
+	@:native("DatafileSelectUgcPlayerData")
 	static function datafileSelectUgcPlayerData(p0:Int):Bool;
 
 	/**
@@ -347,7 +347,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 1: int p0
 	 * ```
 	 */
-	@:native("DATAFILE_STORE_MISSION_HEADER")
+	@:native("DatafileStoreMissionHeader")
 	static function datafileStoreMissionHeader():Dynamic;
 
 	/**
@@ -355,13 +355,13 @@ extern class Datafile {
 	 * Adds the given request ID to the watch list.
 	 * ```
 	 */
-	@:native("DATAFILE_WATCH_REQUEST_ID")
+	@:native("DatafileWatchRequestId")
 	static function datafileWatchRequestId(id:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DATAFILE_UPDATE_SAVE_TO_CLOUD")
+	@:native("DatafileUpdateSaveToCloud")
 	static function datafileUpdateSaveToCloud(p0:Dynamic):Bool;
 
 	/**
@@ -369,7 +369,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("UGC_CREATE_MISSION")
+	@:native("UgcCreateMission")
 	static function ugcCreateMission(contentName:String, description:String, tagsCsv:String, contentTypeName:String, publish:Bool):Bool;
 
 	/**
@@ -377,7 +377,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("UGC_CREATE_CONTENT")
+	@:native("UgcCreateContent")
 	static function ugcCreateContent(data:String, dataCount:Int, contentName:String, description:String, tagsCsv:String, contentTypeName:String, publish:Bool):Bool;
 
 	/**
@@ -385,7 +385,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("UGC_SET_PLAYER_DATA")
+	@:native("UgcSetPlayerData")
 	static function ugcSetPlayerData(contentId:String, rating:Float, contentTypeName:String):Bool;
 
 	/**
@@ -393,7 +393,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("UGC_UPDATE_CONTENT")
+	@:native("UgcUpdateContent")
 	static function ugcUpdateContent(contentId:String, data:Dynamic, dataCount:Int, contentName:String, description:String, tagsCsv:String, contentTypeName:String):Bool;
 
 	/**
@@ -401,7 +401,7 @@ extern class Datafile {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("UGC_UPDATE_MISSION")
+	@:native("UgcUpdateMission")
 	static function ugcUpdateMission(contentId:String, contentName:String, description:String, tagsCsv:String, contentTypeName:String):Bool;
 
 }

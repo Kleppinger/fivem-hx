@@ -5,13 +5,13 @@ extern class Fire {
 	/**
 	 * 
 	 */
-	@:native("ADD_OWNED_EXPLOSION")
+	@:native("AddOwnedExplosion")
 	static function addOwnedExplosion(ped:Dynamic, x:Float, y:Float, z:Float, explosionType:Int, damageScale:Float, isAudible:Bool, isInvisible:Bool, cameraShake:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_EXPLOSION_WITH_USER_VFX")
+	@:native("AddExplosionWithUserVfx")
 	static function addExplosionWithUserVfx(x:Float, y:Float, z:Float, explosionType:Int, explosionFx:Int, damageScale:Float, isAudible:Bool, isInvisible:Bool, cameraShake:Float):Dynamic;
 
 	/**
@@ -19,7 +19,7 @@ extern class Fire {
 	 * Returns TRUE if it found something. FALSE if not.  
 	 * ```
 	 */
-	@:native("GET_CLOSEST_FIRE_POS")
+	@:native("GetClosestFirePos")
 	static function getClosestFirePos(outPosition:Dynamic, x:Float, y:Float, z:Float):Bool;
 
 	/**
@@ -27,13 +27,13 @@ extern class Fire {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_GET_ENTITY_INSIDE_EXPLOSION_SPHERE")
+	@:native("GetEntityInsideExplosionSphere")
 	static function GetEntityInsideExplosionSphere(explosionType:Int, x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUMBER_OF_FIRES_IN_RANGE")
+	@:native("GetNumberOfFiresInRange")
 	static function getNumberOfFiresInRange(x:Float, y:Float, z:Float, radius:Float):Int;
 
 	/**
@@ -138,19 +138,19 @@ extern class Fire {
 	 * };
 	 * ```
 	 */
-	@:native("ADD_EXPLOSION")
+	@:native("AddExplosion")
 	static function addExplosion(x:Float, y:Float, z:Float, explosionType:Int, damageScale:Float, isAudible:Bool, isInvisible:Bool, cameraShake:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_EXPLOSION_ACTIVE_IN_AREA")
+	@:native("IsExplosionActiveInArea")
 	static function isExplosionActiveInArea(explosionType:Int, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ON_FIRE")
+	@:native("IsEntityOnFire")
 	static function isEntityOnFire(entity:Dynamic):Bool;
 
 	/**
@@ -158,31 +158,31 @@ extern class Fire {
 	 * Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius.
 	 * ```
 	 */
-	@:native("_GET_ENTITY_INSIDE_EXPLOSION_AREA")
+	@:native("GetEntityInsideExplosionArea")
 	static function GetEntityInsideExplosionArea(explosionType:Int, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_EXPLOSION_IN_AREA")
+	@:native("IsExplosionInArea")
 	static function isExplosionInArea(explosionType:Int, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * See [`IS_POINT_IN_ANGLED_AREA`](#\_0x2A70BAE8883E4C81) for the definition of an angled area.
 	 */
-	@:native("IS_EXPLOSION_IN_ANGLED_AREA")
+	@:native("IsExplosionInAngledArea")
 	static function isExplosionInAngledArea(explosionType:Int, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_SCRIPT_FIRE")
+	@:native("RemoveScriptFire")
 	static function removeScriptFire(fireHandle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_EXPLOSION_IN_SPHERE")
+	@:native("IsExplosionInSphere")
 	static function isExplosionInSphere(explosionType:Int, x:Float, y:Float, z:Float, radius:Float):Bool;
 
 	/**
@@ -192,19 +192,19 @@ extern class Fire {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_SET_FIRE_SPREAD_RATE")
+	@:native("SetFireSpreadRate")
 	static function SetFireSpreadRate(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_ENTITY_FIRE")
+	@:native("StopEntityFire")
 	static function stopEntityFire(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_FIRE_IN_RANGE")
+	@:native("StopFireInRange")
 	static function stopFireInRange(x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
@@ -215,13 +215,13 @@ extern class Fire {
 	 * isGasFire: Whether or not the fire is powered by gasoline.  
 	 * ```
 	 */
-	@:native("START_SCRIPT_FIRE")
+	@:native("StartScriptFire")
 	static function startScriptFire(X:Float, Y:Float, Z:Float, maxChildren:Int, isGasFire:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_ENTITY_FIRE")
+	@:native("StartEntityFire")
 	static function startEntityFire(entity:Dynamic):Dynamic;
 
 }

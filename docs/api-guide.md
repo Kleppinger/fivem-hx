@@ -31,10 +31,28 @@ Server.cfx.getPlayerName(playerSrc);
 Shared.cfx.getCurrentResourceName();
 ```
 
-Method names are the native's original `SCREAMING_SNAKE_CASE` name
-converted to `camelCase` (`GET_ENTITY_COORDS` → `getEntityCoords`); the
-`@:native(...)` metadata on each method keeps the real native name as the
-compiled call target, so renaming is purely cosmetic on the Haxe side.
+Method names are the native's `SCREAMING_SNAKE_CASE` name from the natives
+database converted to `camelCase` (`GET_ENTITY_COORDS` → `getEntityCoords`).
+
+The `@:native(...)` metadata holds the name the native is *actually exposed
+under in FiveM's Lua runtime*, which is a third spelling again:
+`GetEntityCoords`. The database name does not exist at runtime — CitizenFX
+generates its Lua bindings by transforming it, and only the transformed name
+is registered on `_G`. Calling `_G.GET_ENTITY_COORDS(...)` fails with
+`attempt to call a nil value`.
+
+The transform lives in `to_lua_name()` in `generate.py`, ported from
+CitizenFX's own `ext/natives/codegen_out_lua.lua`. Two cases a naive
+PascalCase conversion gets wrong:
+
+| database name | Lua name |
+|---|---|
+| `GET_GROUND_Z_FOR_3D_COORD` | `GetGroundZFor_3dCoord` |
+| `GET_PLAYER_WEAPON_DEFENSE_MODIFIER_2` | `GetPlayerWeaponDefenseModifier_2` |
+| `_ADD_BLIP_FOR_AREA` | `AddBlipForArea` |
+
+An underscore before a *digit* survives, because CitizenFX's pattern matches
+letters only; a leading underscore is consumed, because a letter follows it.
 
 ## Commands and events (`CoreEvents`)
 

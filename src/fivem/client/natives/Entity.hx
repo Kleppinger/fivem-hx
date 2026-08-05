@@ -19,19 +19,19 @@ extern class Entity {
 	 * 
 	 * Research/documentation on the gtaforums can be found [here](https://gtaforums.com/topic/885669-precisely-define-object-physics/) and [here](https://gtaforums.com/topic/887362-apply-forces-and-momentums-to-entityobject/).
 	 */
-	@:native("APPLY_FORCE_TO_ENTITY")
+	@:native("ApplyForceToEntity")
 	static function applyForceToEntity(entity:Dynamic, forceType:Int, x:Float, y:Float, z:Float, offX:Float, offY:Float, offZ:Float, boneIndex:Int, isDirectionRel:Bool, ignoreUpVec:Bool, isForceRel:Bool, p12:Bool, p13:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("APPLY_FORCE_TO_ENTITY_CENTER_OF_MASS")
+	@:native("ApplyForceToEntityCenterOfMass")
 	static function applyForceToEntityCenterOfMass(entity:Dynamic, forceType:Int, x:Float, y:Float, z:Float, p5:Bool, isDirectionRel:Bool, isForceRel:Bool, p8:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ATTACH_ENTITY_BONE_TO_ENTITY_BONE")
+	@:native("AttachEntityBoneToEntityBone")
 	static function AttachEntityBoneToEntityBone(entity1:Dynamic, entity2:Dynamic, entityBone:Int, entityBone2:Int, p4:Bool, p5:Bool):Dynamic;
 
 	/**
@@ -44,31 +44,31 @@ extern class Entity {
 	 * p18 - is always 2 in scripts.
 	 * ```
 	 */
-	@:native("ATTACH_ENTITY_TO_ENTITY_PHYSICALLY")
+	@:native("AttachEntityToEntityPhysically")
 	static function attachEntityToEntityPhysically(entity1:Dynamic, entity2:Dynamic, boneIndex1:Int, boneIndex2:Int, xPos1:Float, yPos1:Float, zPos1:Float, xPos2:Float, yPos2:Float, zPos2:Float, xRot:Float, yRot:Float, zRot:Float, breakForce:Float, fixedRot:Bool, p15:Bool, collision:Bool, teleport:Bool, p18:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_ATTACH_ENTITY_BONE_TO_ENTITY_BONE_PHYSICALLY")
+	@:native("AttachEntityBoneToEntityBonePhysically")
 	static function AttachEntityBoneToEntityBonePhysically(entity1:Dynamic, entity2:Dynamic, entityBone:Int, entityBone2:Int, p4:Bool, p5:Bool):Dynamic;
 
 	/**
 	 * This native **could affect** the arguments of the `CEventNetworkEntityDamage` game event, by clearing the damaging entity before the event is fired.
 	 */
-	@:native("CLEAR_ENTITY_LAST_DAMAGE_ENTITY")
+	@:native("ClearEntityLastDamageEntity")
 	static function clearEntityLastDamageEntity(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_FORCED_OBJECT")
+	@:native("CreateForcedObject")
 	static function createForcedObject(x:Float, y:Float, z:Float, p3:Dynamic, modelHash:Int, p5:Bool):Dynamic;
 
 	/**
 	 * Attach an entity to the specified entity.
 	 */
-	@:native("ATTACH_ENTITY_TO_ENTITY")
+	@:native("AttachEntityToEntity")
 	static function attachEntityToEntity(entity1:Dynamic, entity2:Dynamic, boneIndex:Int, xPos:Float, yPos:Float, zPos:Float, xRot:Float, yRot:Float, zRot:Float, p9:Bool, useSoftPinning:Bool, collision:Bool, isPed:Bool, rotationOrder:Int, syncRot:Bool):Dynamic;
 
 	/**
@@ -77,20 +77,20 @@ extern class Entity {
 	 * Network players do not see changes done with this.  
 	 * ```
 	 */
-	@:native("CREATE_MODEL_SWAP")
+	@:native("CreateModelSwap")
 	static function createModelSwap(x:Float, y:Float, z:Float, radius:Float, originalModel:Int, newModel:Int, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_MODEL_HIDE_EXCLUDING_SCRIPT_OBJECTS")
+	@:native("CreateModelHideExcludingScriptObjects")
 	static function createModelHideExcludingScriptObjects(x:Float, y:Float, z:Float, radius:Float, model:Int, p5:Bool):Dynamic;
 
 	/**
 	 * Delete the specified entity, and invalidate the passed handle (i.e., the in/out argument).
 	 * You might want to check if the entity exists before with [DOES_ENTITY_EXIST](#\_0x7239B21A38F536BA).
 	 */
-	@:native("DELETE_ENTITY")
+	@:native("DeleteEntity")
 	static function deleteEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -100,37 +100,37 @@ extern class Entity {
 	 * Network players do not see changes done with this.  
 	 * ```
 	 */
-	@:native("CREATE_MODEL_HIDE")
+	@:native("CreateModelHide")
 	static function createModelHide(x:Float, y:Float, z:Float, radius:Float, model:Int, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DETACH_ENTITY")
+	@:native("DetachEntity")
 	static function detachEntity(entity:Dynamic, dynamic_:Bool, collision:Bool):Dynamic;
 
 	/**
 	 * Checks whether an entity exists in the game world.
 	 */
-	@:native("DOES_ENTITY_EXIST")
+	@:native("DoesEntityExist")
 	static function doesEntityExist(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_ENTITY_BELONG_TO_THIS_SCRIPT")
+	@:native("DoesEntityBelongToThisScript")
 	static function doesEntityBelongToThisScript(entity:Dynamic, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_ENTITY_HAVE_PHYSICS")
+	@:native("DoesEntityHavePhysics")
 	static function doesEntityHavePhysics(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_ENTITY_HAVE_DRAWABLE")
+	@:native("DoesEntityHaveDrawable")
 	static function doesEntityHaveDrawable(entity:Dynamic):Bool;
 
 	/**
@@ -138,13 +138,13 @@ extern class Entity {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_DOES_ENTITY_HAVE_ANIM_DIRECTOR")
+	@:native("DoesEntityHaveAnimDirector")
 	static function DoesEntityHaveAnimDirector(entity:Dynamic):Bool;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("GET_ANIM_DURATION")
+	@:native("GetAnimDuration")
 	static function getAnimDuration(animDict:String, animName:String):Float;
 
 	/**
@@ -152,19 +152,19 @@ extern class Entity {
 	 * ENABLE_*
 	 * ```
 	 */
-	@:native("_ENABLE_ENTITY_UNK")
+	@:native("EnableEntityUnk")
 	static function EnableEntityUnk(entity:Dynamic):Dynamic;
 
 	/**
 	 * Freezes or unfreezes an entity preventing its coordinates to change by the player if set to `true`. You can still change the entity position using [`SET_ENTITY_COORDS`](#\_0x06843DA7060A026B).
 	 */
-	@:native("FREEZE_ENTITY_POSITION")
+	@:native("FreezeEntityPosition")
 	static function freezeEntityPosition(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_ALPHA")
+	@:native("GetEntityAlpha")
 	static function getEntityAlpha(entity:Dynamic):Int;
 
 	/**
@@ -172,13 +172,13 @@ extern class Entity {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_DOES_ENTITY_HAVE_SKELETON_DATA")
+	@:native("DoesEntityHaveSkeletonData")
 	static function DoesEntityHaveSkeletonData(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_ENTITY_BONE_COUNT")
+	@:native("GetEntityBoneCount")
 	static function GetEntityBoneCount(entity:Dynamic):Int;
 
 	/**
@@ -186,7 +186,7 @@ extern class Entity {
 	 * Based on carmod_shop script decompile this takes a vehicle parameter. It is called when repair is done on initial enter.  
 	 * ```
 	 */
-	@:native("FORCE_ENTITY_AI_AND_ANIMATION_UPDATE")
+	@:native("ForceEntityAiAndAnimationUpdate")
 	static function forceEntityAiAndAnimationUpdate(entity:Dynamic):Dynamic;
 
 	/**
@@ -199,7 +199,7 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("GET_ENTITY_ANIM_TOTAL_TIME")
+	@:native("GetEntityAnimTotalTime")
 	static function getEntityAnimTotalTime(entity:Dynamic, animDict:String, animName:String):Float;
 
 	/**
@@ -217,7 +217,7 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("FIND_ANIM_EVENT_PHASE")
+	@:native("FindAnimEventPhase")
 	static function findAnimEventPhase(animDictionary:String, animName:String, p2:String, p3:Dynamic, p4:Dynamic):Bool;
 
 	/**
@@ -226,13 +226,13 @@ extern class Entity {
 	 * This native is used in casinoroulette.c but I don't know yet what is the difference with _GET_ENTITY_BONE_ROTATION
 	 * ```
 	 */
-	@:native("_GET_ENTITY_BONE_POSITION_2")
+	@:native("GetEntityBonePosition_2")
 	static function GetEntityBonePosition2(entity:Dynamic, boneIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_COLLISION_NORMAL_OF_LAST_HIT_FOR_ENTITY")
+	@:native("GetCollisionNormalOfLastHitForEntity")
 	static function getCollisionNormalOfLastHitForEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -246,7 +246,7 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("GET_ENTITY_ANIM_CURRENT_TIME")
+	@:native("GetEntityAnimCurrentTime")
 	static function getEntityAnimCurrentTime(entity:Dynamic, animDict:String, animName:String):Float;
 
 	/**
@@ -298,19 +298,19 @@ extern class Entity {
 	 * I doubt that the function is case-sensitive, since I found a "Chassis" and a "chassis". - Just tested: Definitely not case-sensitive.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_BONE_INDEX_BY_NAME")
+	@:native("GetEntityBoneIndexByName")
 	static function getEntityBoneIndexByName(entity:Dynamic, boneName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_COLLISION_DISABLED")
+	@:native("GetEntityCollisionDisabled")
 	static function getEntityCollisionDisabled(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_ATTACHED_TO")
+	@:native("GetEntityAttachedTo")
 	static function getEntityAttachedTo(entity:Dynamic):Dynamic;
 
 	/**
@@ -320,7 +320,7 @@ extern class Entity {
 	 * NativeDB Introduced: v1734
 	 * ```
 	 */
-	@:native("_GET_ENTITY_BONE_ROTATION_LOCAL")
+	@:native("GetEntityBoneRotationLocal")
 	static function GetEntityBoneRotationLocal(entity:Dynamic, boneIndex:Int):Dynamic;
 
 	/**
@@ -328,7 +328,7 @@ extern class Entity {
 	 * Gets the world rotation of the specified bone of the specified entity.
 	 * ```
 	 */
-	@:native("_GET_ENTITY_BONE_ROTATION")
+	@:native("GetEntityBoneRotation")
 	static function GetEntityBoneRotation(entity:Dynamic, boneIndex:Int):Dynamic;
 
 	/**
@@ -336,13 +336,13 @@ extern class Entity {
 	 * Gets the entity's forward vector.
 	 * ```
 	 */
-	@:native("GET_ENTITY_FORWARD_VECTOR")
+	@:native("GetEntityForwardVector")
 	static function getEntityForwardVector(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_CAN_BE_DAMAGED")
+	@:native("GetEntityCanBeDamaged")
 	static function getEntityCanBeDamaged(entity:Dynamic):Bool;
 
 	/**
@@ -350,13 +350,13 @@ extern class Entity {
 	 * Gets the X-component of the entity's forward vector.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_FORWARD_X")
+	@:native("GetEntityForwardX")
 	static function getEntityForwardX(entity:Dynamic):Float;
 
 	/**
 	 * Gets the current coordinates (world position) for a specified entity.
 	 */
-	@:native("GET_ENTITY_COORDS")
+	@:native("GetEntityCoords")
 	static function getEntityCoords(entity:Dynamic, alive:Bool):Dynamic;
 
 	/**
@@ -364,7 +364,7 @@ extern class Entity {
 	 * Returns the heading of the entity in degrees. Also know as the "Yaw" of an entity.
 	 * ```
 	 */
-	@:native("GET_ENTITY_HEADING")
+	@:native("GetEntityHeading")
 	static function getEntityHeading(entity:Dynamic):Float;
 
 	/**
@@ -372,13 +372,13 @@ extern class Entity {
 	 * Gets the Y-component of the entity's forward vector.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_FORWARD_Y")
+	@:native("GetEntityForwardY")
 	static function getEntityForwardY(entity:Dynamic):Float;
 
 	/**
 	 * Gets the heading of the entity physics in degrees, which tends to be more accurate than just [`GET_ENTITY_HEADING`](#\_0xE83D4F9BA2A38914). This can be clearly seen while, for example, ragdolling a ped/player.
 	 */
-	@:native("GET_ENTITY_HEADING_FROM_EULERS")
+	@:native("GetEntityHeadingFromEulers")
 	static function getEntityHeadingFromEulers(entity:Dynamic):Float;
 
 	/**
@@ -394,7 +394,7 @@ extern class Entity {
 	 * float health = *(float *)(entityAddress + 0x280);
 	 * ```
 	 */
-	@:native("GET_ENTITY_HEALTH")
+	@:native("GetEntityHealth")
 	static function getEntityHealth(entity:Dynamic):Int;
 
 	/**
@@ -402,13 +402,13 @@ extern class Entity {
 	 * Returns the LOD distance of an entity.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_LOD_DIST")
+	@:native("GetEntityLodDist")
 	static function getEntityLodDist(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_HEIGHT")
+	@:native("GetEntityHeight")
 	static function getEntityHeight(entity:Dynamic, X:Float, Y:Float, Z:Float, atTop:Bool, inWorldCoords:Bool):Float;
 
 	/**
@@ -419,13 +419,13 @@ extern class Entity {
 	 * Everything seems to be in meters, probably this too.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_HEIGHT_ABOVE_GROUND")
+	@:native("GetEntityHeightAboveGround")
 	static function getEntityHeightAboveGround(entity:Dynamic):Float;
 
 	/**
 	 * A population type, from the following enum: https://alloc8or.re/gta5/doc/enums/ePopulationType.txt
 	 */
-	@:native("GET_ENTITY_POPULATION_TYPE")
+	@:native("GetEntityPopulationType")
 	static function getEntityPopulationType(entity:Dynamic):Int;
 
 	/**
@@ -435,13 +435,13 @@ extern class Entity {
 	 * - Player = 200  
 	 * ```
 	 */
-	@:native("GET_ENTITY_MAX_HEALTH")
+	@:native("GetEntityMaxHealth")
 	static function getEntityMaxHealth(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_MATRIX")
+	@:native("GetEntityMatrix")
 	static function getEntityMatrix(entity:Dynamic, forwardVector:Dynamic, rightVector:Dynamic, upVector:Dynamic, position:Dynamic):Dynamic;
 
 	/**
@@ -453,19 +453,19 @@ extern class Entity {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_GET_ENTITY_PICKUP")
+	@:native("GetEntityPickup")
 	static function GetEntityPickup(entity:Dynamic, modelHash:Int):Dynamic;
 
 	/**
 	 * Returns the model hash from an entity.
 	 */
-	@:native("GET_ENTITY_MODEL")
+	@:native("GetEntityModel")
 	static function getEntityModel(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_PITCH")
+	@:native("GetEntityPitch")
 	static function getEntityPitch(entity:Dynamic):Float;
 
 	/**
@@ -473,7 +473,7 @@ extern class Entity {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_GET_ENTITY_PROOFS")
+	@:native("GetEntityProofs")
 	static function GetEntityProofs(entity:Dynamic, bulletProof:Dynamic, fireProof:Dynamic, explosionProof:Dynamic, collisionProof:Dynamic, meleeProof:Dynamic, steamProof:Dynamic, p7:Dynamic, drownProof:Dynamic):Bool;
 
 	/**
@@ -482,7 +482,7 @@ extern class Entity {
 	 * (Sideways Roll) such as a vehicle tipped on its side  
 	 * ```
 	 */
-	@:native("GET_ENTITY_ROLL")
+	@:native("GetEntityRoll")
 	static function getEntityRoll(entity:Dynamic):Float;
 
 	/**
@@ -505,13 +505,13 @@ extern class Entity {
 	 * }
 	 * ```
 	 */
-	@:native("GET_ENTITY_ROTATION")
+	@:native("GetEntityRotation")
 	static function getEntityRotation(entity:Dynamic, rotationOrder:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_ROTATION_VELOCITY")
+	@:native("GetEntityRotationVelocity")
 	static function getEntityRotationVelocity(entity:Dynamic):Dynamic;
 
 	/**
@@ -519,7 +519,7 @@ extern class Entity {
 	 * w is the correct parameter name!  
 	 * ```
 	 */
-	@:native("GET_ENTITY_QUATERNION")
+	@:native("GetEntityQuaternion")
 	static function getEntityQuaternion(entity:Dynamic, x:Dynamic, y:Dynamic, z:Dynamic, w:Dynamic):Dynamic;
 
 	/**
@@ -527,13 +527,13 @@ extern class Entity {
 	 * All ambient entities in-world seem to have the same value for the second argument (Any *script), depending on when the scripthook was activated/re-activated. I've seen numbers from ~5 to almost 70 when the value was translated with to_string. The function return value seems to always be 0.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_SCRIPT")
+	@:native("GetEntityScript")
 	static function getEntityScript(entity:Dynamic, script:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_UPRIGHT_VALUE")
+	@:native("GetEntityUprightValue")
 	static function getEntityUprightValue(entity:Dynamic):Float;
 
 	/**
@@ -541,25 +541,25 @@ extern class Entity {
 	 * Relative can be used for getting speed relative to the frame of the vehicle, to determine for example, if you are going in reverse (-y speed) or not (+y speed).  
 	 * ```
 	 */
-	@:native("GET_ENTITY_SPEED_VECTOR")
+	@:native("GetEntitySpeedVector")
 	static function getEntitySpeedVector(entity:Dynamic, relative:Bool):Dynamic;
 
 	/**
 	 * Get the speed of a entity.
 	 */
-	@:native("GET_ENTITY_SPEED")
+	@:native("GetEntitySpeed")
 	static function getEntitySpeed(entity:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_LAST_MATERIAL_HIT_BY_ENTITY")
+	@:native("GetLastMaterialHitByEntity")
 	static function getLastMaterialHitByEntity(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NEAREST_PLAYER_TO_ENTITY_ON_TEAM")
+	@:native("GetNearestPlayerToEntityOnTeam")
 	static function getNearestPlayerToEntityOnTeam(entity:Dynamic, team:Int):Dynamic;
 
 	/**
@@ -571,13 +571,13 @@ extern class Entity {
 	 * 3 = object
 	 * ```
 	 */
-	@:native("GET_ENTITY_TYPE")
+	@:native("GetEntityType")
 	static function getEntityType(entity:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ENTITY_VELOCITY")
+	@:native("GetEntityVelocity")
 	static function getEntityVelocity(entity:Dynamic):Dynamic;
 
 	/**
@@ -591,7 +591,7 @@ extern class Entity {
 	 * All three returned coords will then be in range of [-20,20] depending on rotation of the entity.  
 	 * ```
 	 */
-	@:native("GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS")
+	@:native("GetOffsetFromEntityGivenWorldCoords")
 	static function getOffsetFromEntityGivenWorldCoords(entity:Dynamic, posX:Float, posY:Float, posZ:Float):Dynamic;
 
 	/**
@@ -599,7 +599,7 @@ extern class Entity {
 	 * Get how much of the entity is submerged.  1.0f is whole entity.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_SUBMERGED_LEVEL")
+	@:native("GetEntitySubmergedLevel")
 	static function getEntitySubmergedLevel(entity:Dynamic):Float;
 
 	/**
@@ -610,7 +610,7 @@ extern class Entity {
 	 * z = up/down  
 	 * ```
 	 */
-	@:native("GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS")
+	@:native("GetOffsetFromEntityInWorldCoords")
 	static function getOffsetFromEntityInWorldCoords(entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float):Dynamic;
 
 	/**
@@ -618,7 +618,7 @@ extern class Entity {
 	 * Returns the coordinates of an entity-bone.  
 	 * ```
 	 */
-	@:native("GET_WORLD_POSITION_OF_ENTITY_BONE")
+	@:native("GetWorldPositionOfEntityBone")
 	static function getWorldPositionOfEntityBone(entity:Dynamic, boneIndex:Int):Dynamic;
 
 	/**
@@ -626,13 +626,13 @@ extern class Entity {
 	 * Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 	 * ```
 	 */
-	@:native("GET_PED_INDEX_FROM_ENTITY_INDEX")
+	@:native("GetPedIndexFromEntityIndex")
 	static function getPedIndexFromEntityIndex(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NEAREST_PLAYER_TO_ENTITY")
+	@:native("GetNearestPlayerToEntity")
 	static function getNearestPlayerToEntity(entity:Dynamic):Dynamic;
 
 	/**
@@ -640,13 +640,13 @@ extern class Entity {
 	 * Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 	 * ```
 	 */
-	@:native("GET_VEHICLE_INDEX_FROM_ENTITY_INDEX")
+	@:native("GetVehicleIndexFromEntityIndex")
 	static function getVehicleIndexFromEntityIndex(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ENTITY_BEEN_DAMAGED_BY_ANY_OBJECT")
+	@:native("HasEntityBeenDamagedByAnyObject")
 	static function hasEntityBeenDamagedByAnyObject(entity:Dynamic):Bool;
 
 	/**
@@ -654,13 +654,13 @@ extern class Entity {
 	 * Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 	 * ```
 	 */
-	@:native("GET_OBJECT_INDEX_FROM_ENTITY_INDEX")
+	@:native("GetObjectIndexFromEntityIndex")
 	static function getObjectIndexFromEntityIndex(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_COLLISION_LOADED_AROUND_ENTITY")
+	@:native("HasCollisionLoadedAroundEntity")
 	static function hasCollisionLoadedAroundEntity(entity:Dynamic):Bool;
 
 	/**
@@ -670,7 +670,7 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("HAS_ENTITY_ANIM_FINISHED")
+	@:native("HasEntityAnimFinished")
 	static function hasEntityAnimFinished(entity:Dynamic, animDict:String, animName:String, p3:Int):Bool;
 
 	/**
@@ -678,31 +678,31 @@ extern class Entity {
 	 * if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("CreateObject")))
 	 * ```
 	 */
-	@:native("HAS_ANIM_EVENT_FIRED")
+	@:native("HasAnimEventFired")
 	static function hasAnimEventFired(entity:Dynamic, actionHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE")
+	@:native("HasEntityBeenDamagedByAnyVehicle")
 	static function hasEntityBeenDamagedByAnyVehicle(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ENTITY_BEEN_DAMAGED_BY_ANY_PED")
+	@:native("HasEntityBeenDamagedByAnyPed")
 	static function hasEntityBeenDamagedByAnyPed(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY")
+	@:native("HasEntityBeenDamagedByEntity")
 	static function hasEntityBeenDamagedByEntity(entity:Dynamic, damager:Dynamic, bCheckDamagerVehicle:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AN_ENTITY")
+	@:native("IsAnEntity")
 	static function isAnEntity(handle:Int):Bool;
 
 	/**
@@ -710,7 +710,7 @@ extern class Entity {
 	 * 
 	 * The direction of the check matters with for example bushes, so checking from inside to outside a bush with traceType 256 returns true, but the other way around returns false.
 	 */
-	@:native("HAS_ENTITY_CLEAR_LOS_TO_ENTITY")
+	@:native("HasEntityClearLosToEntity")
 	static function hasEntityClearLosToEntity(entity1:Dynamic, entity2:Dynamic, flags:Int):Bool;
 
 	/**
@@ -718,13 +718,13 @@ extern class Entity {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_HAS_ENTITY_CLEAR_LOS_TO_ENTITY_2")
+	@:native("HasEntityClearLosToEntity_2")
 	static function HasEntityClearLosToEntity2(entity1:Dynamic, entity2:Dynamic, traceType:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_AN_OBJECT")
+	@:native("IsEntityAnObject")
 	static function isEntityAnObject(entity:Dynamic):Bool;
 
 	/**
@@ -733,7 +733,7 @@ extern class Entity {
 	 * Last three parameters are almost alwasy p5 = 0, p6 = 1, p7 = 0  
 	 * ```
 	 */
-	@:native("IS_ENTITY_AT_ENTITY")
+	@:native("IsEntityAtEntity")
 	static function isEntityAtEntity(entity1:Dynamic, entity2:Dynamic, xSize:Float, ySize:Float, zSize:Float, p5:Bool, p6:Bool, p7:Int):Bool;
 
 	/**
@@ -743,7 +743,7 @@ extern class Entity {
 	 * Note: for vehicles, the wheels can touch the ground and it will still return false, but if the body of the vehicle touches the ground, it will return true.  
 	 * ```
 	 */
-	@:native("HAS_ENTITY_COLLIDED_WITH_ANYTHING")
+	@:native("HasEntityCollidedWithAnything")
 	static function hasEntityCollidedWithAnything(entity:Dynamic):Bool;
 
 	/**
@@ -752,19 +752,19 @@ extern class Entity {
 	 * This is one of the most CPU demanding BOOL natives in the game; avoid calling this in things like nested for-loops  
 	 * ```
 	 */
-	@:native("HAS_ENTITY_CLEAR_LOS_TO_ENTITY_IN_FRONT")
+	@:native("HasEntityClearLosToEntityInFront")
 	static function hasEntityClearLosToEntityInFront(entity1:Dynamic, entity2:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_A_VEHICLE")
+	@:native("IsEntityAVehicle")
 	static function isEntityAVehicle(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_A_MISSION_ENTITY")
+	@:native("IsEntityAMissionEntity")
 	static function isEntityAMissionEntity(entity:Dynamic):Bool;
 
 	/**
@@ -773,25 +773,25 @@ extern class Entity {
 	 * Last three are unknown ints, almost always p7 = 0, p8 = 1, p9 = 0  
 	 * ```
 	 */
-	@:native("IS_ENTITY_AT_COORD")
+	@:native("IsEntityAtCoord")
 	static function isEntityAtCoord(entity:Dynamic, xPos:Float, yPos:Float, zPos:Float, xSize:Float, ySize:Float, zSize:Float, p7:Bool, p8:Bool, p9:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_A_PED")
+	@:native("IsEntityAPed")
 	static function isEntityAPed(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED")
+	@:native("IsEntityAttached")
 	static function isEntityAttached(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED_TO_ANY_OBJECT")
+	@:native("IsEntityAttachedToAnyObject")
 	static function isEntityAttachedToAnyObject(entity:Dynamic):Bool;
 
 	/**
@@ -799,49 +799,49 @@ extern class Entity {
 	 * NativeDB Added Parameter 2: BOOL p1
 	 * ```
 	 */
-	@:native("IS_ENTITY_DEAD")
+	@:native("IsEntityDead")
 	static function isEntityDead(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED_TO_ANY_PED")
+	@:native("IsEntityAttachedToAnyPed")
 	static function isEntityAttachedToAnyPed(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_IN_AIR")
+	@:native("IsEntityInAir")
 	static function isEntityInAir(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED_TO_ENTITY")
+	@:native("IsEntityAttachedToEntity")
 	static function isEntityAttachedToEntity(from:Dynamic, to:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_ATTACHED_TO_ANY_VEHICLE")
+	@:native("IsEntityAttachedToAnyVehicle")
 	static function isEntityAttachedToAnyVehicle(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_IN_WATER")
+	@:native("IsEntityInWater")
 	static function isEntityInWater(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_TOUCHING_MODEL")
+	@:native("IsEntityTouchingModel")
 	static function isEntityTouchingModel(entity:Dynamic, modelHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_IN_AREA")
+	@:native("IsEntityInArea")
 	static function isEntityInArea(entity:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, p7:Bool, p8:Bool, p9:Dynamic):Bool;
 
 	/**
@@ -849,13 +849,13 @@ extern class Entity {
 	 * 
 	 * See [`IS_POINT_IN_ANGLED_AREA`](#\_0x2A70BAE8883E4C81) for the definition of an angled area.
 	 */
-	@:native("IS_ENTITY_IN_ANGLED_AREA")
+	@:native("IsEntityInAngledArea")
 	static function isEntityInAngledArea(entity:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, debug:Bool, includez:Bool, p10:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_VISIBLE")
+	@:native("IsEntityVisible")
 	static function isEntityVisible(entity:Dynamic):Bool;
 
 	/**
@@ -863,25 +863,25 @@ extern class Entity {
 	 * 
 	 * This native will not check if the entity is not visible due to being occluded (for example, behind a wall). To check if a entity is on screen and is not occluded, use [IS_ENTITY_OCCLUDED](#\_0xE31C2C72B8692B64).
 	 */
-	@:native("IS_ENTITY_ON_SCREEN")
+	@:native("IsEntityOnScreen")
 	static function isEntityOnScreen(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_OCCLUDED")
+	@:native("IsEntityOccluded")
 	static function isEntityOccluded(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_IN_ZONE")
+	@:native("IsEntityInZone")
 	static function isEntityInZone(entity:Dynamic, zone:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_TOUCHING_ENTITY")
+	@:native("IsEntityTouchingEntity")
 	static function isEntityTouchingEntity(entity:Dynamic, targetEntity:Dynamic):Bool;
 
 	/**
@@ -890,13 +890,13 @@ extern class Entity {
 	 * ^ Attach a phCollider to the ped.  
 	 * ```
 	 */
-	@:native("IS_ENTITY_STATIC")
+	@:native("IsEntityStatic")
 	static function isEntityStatic(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_UPSIDEDOWN")
+	@:native("IsEntityUpsidedown")
 	static function isEntityUpsidedown(entity:Dynamic):Bool;
 
 	/**
@@ -911,25 +911,25 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("IS_ENTITY_PLAYING_ANIM")
+	@:native("IsEntityPlayingAnim")
 	static function isEntityPlayingAnim(entity:Dynamic, animDict:String, animName:String, taskFlag:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_UPRIGHT")
+	@:native("IsEntityUpright")
 	static function isEntityUpright(entity:Dynamic, angle:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_VISIBLE_TO_SCRIPT")
+	@:native("IsEntityVisibleToScript")
 	static function isEntityVisibleToScript(entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ENTITY_WAITING_FOR_WORLD_COLLISION")
+	@:native("IsEntityWaitingForWorldCollision")
 	static function isEntityWaitingForWorldCollision(entity:Dynamic):Bool;
 
 	/**
@@ -937,19 +937,19 @@ extern class Entity {
 	 * Called to update entity attachments.
 	 * ```
 	 */
-	@:native("PROCESS_ENTITY_ATTACHMENTS")
+	@:native("ProcessEntityAttachments")
 	static function processEntityAttachments(entity:Dynamic):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM")
+	@:native("PlaySynchronizedMapEntityAnim")
 	static function playSynchronizedMapEntityAnim(p0:Float, p1:Float, p2:Float, p3:Float, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Float, p9:Float, p10:Dynamic, p11:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_FORCED_OBJECT")
+	@:native("RemoveForcedObject")
 	static function removeForcedObject(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
@@ -959,13 +959,13 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_SYNCHRONIZED_ENTITY_ANIM")
+	@:native("PlaySynchronizedEntityAnim")
 	static function playSynchronizedEntityAnim(entity:Dynamic, syncedScene:Int, animation:String, propName:String, p4:Float, p5:Float, p6:Dynamic, p7:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_ENTITY_ALPHA")
+	@:native("ResetEntityAlpha")
 	static function resetEntityAlpha(entity:Dynamic):Dynamic;
 
 	/**
@@ -976,7 +976,7 @@ extern class Entity {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_ENTITY_ANIM")
+	@:native("PlayEntityAnim")
 	static function playEntityAnim(entity:Dynamic, animName:String, animDict:String, p3:Float, loop:Bool, stayInAnim:Bool, p6:Bool, delta:Float, bitset:Dynamic):Bool;
 
 	/**
@@ -984,37 +984,37 @@ extern class Entity {
 	 * 
 	 * Network players do not see changes done with this.
 	 */
-	@:native("REMOVE_MODEL_HIDE")
+	@:native("RemoveModelHide")
 	static function removeModelHide(x:Float, y:Float, z:Float, radius:Float, model:Int, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_MODEL_SWAP")
+	@:native("RemoveModelSwap")
 	static function removeModelSwap(x:Float, y:Float, z:Float, radius:Float, originalModel:Int, newModel:Int, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAN_CLIMB_ON_ENTITY")
+	@:native("SetCanClimbOnEntity")
 	static function setCanClimbOnEntity(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CAN_AUTO_VAULT_ON_ENTITY")
+	@:native("SetCanAutoVaultOnEntity")
 	static function setCanAutoVaultOnEntity(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * This native sets the entity's alpha level.
 	 */
-	@:native("SET_ENTITY_ALPHA")
+	@:native("SetEntityAlpha")
 	static function setEntityAlpha(entity:Dynamic, alphaLevel:Int, skin:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ALWAYS_PRERENDER")
+	@:native("SetEntityAlwaysPrerender")
 	static function setEntityAlwaysPrerender(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1022,19 +1022,19 @@ extern class Entity {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_ENTITY_ANGULAR_VELOCITY")
+	@:native("SetEntityAngularVelocity")
 	static function SetEntityAngularVelocity(entity:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ANIM_SPEED")
+	@:native("SetEntityAnimSpeed")
 	static function setEntityAnimSpeed(entity:Dynamic, animDictionary:String, animName:String, speedMultiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_CAN_BE_DAMAGED")
+	@:native("SetEntityCanBeDamaged")
 	static function setEntityCanBeDamaged(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1042,13 +1042,13 @@ extern class Entity {
 	 * 
 	 * Note that this is not needed right after creating an entity as a script-created entity will automatically be assigned.
 	 */
-	@:native("SET_ENTITY_AS_MISSION_ENTITY")
+	@:native("SetEntityAsMissionEntity")
 	static function setEntityAsMissionEntity(entity:Dynamic, scriptHostObject:Bool, bGrabFromOtherScript:Bool):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("SET_ENTITY_ANIM_CURRENT_TIME")
+	@:native("SetEntityAnimCurrentTime")
 	static function setEntityAnimCurrentTime(entity:Dynamic, animDictionary:String, animName:String, time:Float):Dynamic;
 
 	/**
@@ -1056,7 +1056,7 @@ extern class Entity {
 	 * True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.
 	 * ```
 	 */
-	@:native("_SET_ENTITY_CLEANUP_BY_ENGINE")
+	@:native("SetEntityCleanupByEngine")
 	static function SetEntityCleanupByEngine(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1065,25 +1065,25 @@ extern class Entity {
 	 * Entities marked as no longer needed, will be deleted as the engine sees fit.  
 	 * ```
 	 */
-	@:native("SET_ENTITY_AS_NO_LONGER_NEEDED")
+	@:native("SetEntityAsNoLongerNeeded")
 	static function setEntityAsNoLongerNeeded(entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_COLLISION")
+	@:native("SetEntityCollision")
 	static function setEntityCollision(entity:Dynamic, toggle:Bool, keepPhysics:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP")
+	@:native("SetEntityCanBeDamagedByRelationshipGroup")
 	static function setEntityCanBeDamagedByRelationshipGroup(entity:Dynamic, bCanBeDamaged:Bool, relGroup:Int):Dynamic;
 
 	/**
 	 * Sets the coordinates (world position) for a specified entity, offset by the radius of the entity on the Z axis.
 	 */
-	@:native("SET_ENTITY_COORDS")
+	@:native("SetEntityCoords")
 	static function setEntityCoords(entity:Dynamic, xPos:Float, yPos:Float, zPos:Float, alive:Bool, deadFlag:Bool, ragdollFlag:Bool, clearArea:Bool):Dynamic;
 
 	/**
@@ -1091,13 +1091,13 @@ extern class Entity {
 	 * Sets whether the entity can be targeted without being in line-of-sight.  
 	 * ```
 	 */
-	@:native("SET_ENTITY_CAN_BE_TARGETED_WITHOUT_LOS")
+	@:native("SetEntityCanBeTargetedWithoutLos")
 	static function setEntityCanBeTargetedWithoutLos(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_COMPLETELY_DISABLE_COLLISION")
+	@:native("SetEntityCompletelyDisableCollision")
 	static function setEntityCompletelyDisableCollision(entity:Dynamic, toggle:Bool, keepPhysics:Bool):Dynamic;
 
 	/**
@@ -1105,13 +1105,13 @@ extern class Entity {
 	 * SET_ENTITY_*
 	 * ```
 	 */
-	@:native("_SET_ENTITY_DECALS_DISABLED")
+	@:native("SetEntityDecalsDisabled")
 	static function SetEntityDecalsDisabled(entity:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_DYNAMIC")
+	@:native("SetEntityDynamic")
 	static function setEntityDynamic(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1123,19 +1123,19 @@ extern class Entity {
 	 * *   The `keepTasks` and `keepIK` parameters are specifically useful for maintaining the current state of a ped, ensuring actions or animations are not abruptly stopped due to the teleportation.
 	 * *   Setting `doWarp` to `false` is useful when simulating continuous movement or when the entity should interact with its immediate surroundings upon arrival.
 	 */
-	@:native("SET_ENTITY_COORDS_NO_OFFSET")
+	@:native("SetEntityCoordsNoOffset")
 	static function setEntityCoordsNoOffset(entity:Dynamic, x:Float, y:Float, z:Float, keepTasks:Bool, keepIK:Bool, doWarp:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET")
+	@:native("SetEntityCoordsWithoutPlantsReset")
 	static function setEntityCoordsWithoutPlantsReset(entity:Dynamic, xPos:Float, yPos:Float, zPos:Float, alive:Bool, deadFlag:Bool, ragdollFlag:Bool, clearArea:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_HAS_GRAVITY")
+	@:native("SetEntityHasGravity")
 	static function setEntityHasGravity(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1156,13 +1156,13 @@ extern class Entity {
 	 * 	}  
 	 * ```
 	 */
-	@:native("SET_ENTITY_INVINCIBLE")
+	@:native("SetEntityInvincible")
 	static function setEntityInvincible(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_LIGHTS")
+	@:native("SetEntityLights")
 	static function setEntityLights(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1176,13 +1176,13 @@ extern class Entity {
 	 * 
 	 * *   **inflictor**: The handle for the entity that caused the damage.
 	 */
-	@:native("SET_ENTITY_HEALTH")
+	@:native("SetEntityHealth")
 	static function setEntityHealth(entity:Dynamic, health:Int):Dynamic;
 
 	/**
 	 * Set the heading of an entity in degrees also known as "Yaw".
 	 */
-	@:native("SET_ENTITY_HEADING")
+	@:native("SetEntityHeading")
 	static function setEntityHeading(entity:Dynamic, heading:Float):Dynamic;
 
 	/**
@@ -1194,7 +1194,7 @@ extern class Entity {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("SET_ENTITY_LOAD_COLLISION_FLAG")
+	@:native("SetEntityLoadCollisionFlag")
 	static function setEntityLoadCollisionFlag(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1202,13 +1202,13 @@ extern class Entity {
 	 * LOD distance can be 0 to 0xFFFF (higher values will result in 0xFFFF) as it is actually stored as a 16-bit value (aka uint16_t).  
 	 * ```
 	 */
-	@:native("SET_ENTITY_LOD_DIST")
+	@:native("SetEntityLodDist")
 	static function setEntityLodDist(entity:Dynamic, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_IS_TARGET_PRIORITY")
+	@:native("SetEntityIsTargetPriority")
 	static function setEntityIsTargetPriority(entity:Dynamic, p1:Bool, p2:Float):Dynamic;
 
 	/**
@@ -1216,13 +1216,13 @@ extern class Entity {
 	 * For instance: ENTITY::SET_ENTITY_MAX_HEALTH(PLAYER::PLAYER_PED_ID(), 200); // director_mode.c4: 67849  
 	 * ```
 	 */
-	@:native("SET_ENTITY_MAX_HEALTH")
+	@:native("SetEntityMaxHealth")
 	static function setEntityMaxHealth(entity:Dynamic, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_MAX_SPEED")
+	@:native("SetEntityMaxSpeed")
 	static function setEntityMaxSpeed(entity:Dynamic, speed:Float):Dynamic;
 
 	/**
@@ -1232,25 +1232,25 @@ extern class Entity {
 	 * The third parameter, `thisFrame`, decides whether the collision is to be disabled until it is turned back on, or if it's just this frame.
 	 * ```
 	 */
-	@:native("SET_ENTITY_NO_COLLISION_ENTITY")
+	@:native("SetEntityNoCollisionEntity")
 	static function setEntityNoCollisionEntity(entity1:Dynamic, entity2:Dynamic, thisFrameOnly:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ONLY_DAMAGED_BY_PLAYER")
+	@:native("SetEntityOnlyDamagedByPlayer")
 	static function setEntityOnlyDamagedByPlayer(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP")
+	@:native("SetEntityOnlyDamagedByRelationshipGroup")
 	static function setEntityOnlyDamagedByRelationshipGroup(entity:Dynamic, p1:Bool, relationshipHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_MOTION_BLUR")
+	@:native("SetEntityMotionBlur")
 	static function setEntityMotionBlur(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1258,19 +1258,19 @@ extern class Entity {
 	 * w is the correct parameter name!  
 	 * ```
 	 */
-	@:native("SET_ENTITY_QUATERNION")
+	@:native("SetEntityQuaternion")
 	static function setEntityQuaternion(entity:Dynamic, x:Float, y:Float, z:Float, w:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_RECORDS_COLLISIONS")
+	@:native("SetEntityRecordsCollisions")
 	static function setEntityRecordsCollisions(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_REQUIRES_MORE_EXPENSIVE_RIVER_CHECK")
+	@:native("SetEntityRequiresMoreExpensiveRiverCheck")
 	static function setEntityRequiresMoreExpensiveRiverCheck(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1278,7 +1278,7 @@ extern class Entity {
 	 * Note that the third parameter(denoted as z) is "up and down" with positive numbers encouraging upwards movement.
 	 * ```
 	 */
-	@:native("SET_ENTITY_VELOCITY")
+	@:native("SetEntityVelocity")
 	static function setEntityVelocity(entity:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -1288,7 +1288,7 @@ extern class Entity {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("SET_ENTITY_ROTATION")
+	@:native("SetEntityRotation")
 	static function setEntityRotation(entity:Dynamic, pitch:Float, roll:Float, yaw:Float, rotationOrder:Int, bDeadCheck:Bool):Dynamic;
 
 	/**
@@ -1298,7 +1298,7 @@ extern class Entity {
 	 * p7 is to to '1' in am_mp_property_ext/int: entity::set_entity_proofs(uParam0->f_19, true, true, true, true, true, true, 1, true);  
 	 * ```
 	 */
-	@:native("SET_ENTITY_PROOFS")
+	@:native("SetEntityProofs")
 	static function setEntityProofs(entity:Dynamic, bulletProof:Bool, fireProof:Bool, explosionProof:Bool, collisionProof:Bool, meleeProof:Bool, steamProof:Bool, p7:Bool, drownProof:Bool):Dynamic;
 
 	/**
@@ -1316,13 +1316,13 @@ extern class Entity {
 	 * }
 	 * ```
 	 */
-	@:native("SET_ENTITY_TRAFFICLIGHT_OVERRIDE")
+	@:native("SetEntityTrafficlightOverride")
 	static function setEntityTrafficlightOverride(entity:Dynamic, state:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_RENDER_SCORCHED")
+	@:native("SetEntityRenderScorched")
 	static function setEntityRenderScorched(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1330,7 +1330,7 @@ extern class Entity {
 	 * This is an alias of SET_ENTITY_AS_NO_LONGER_NEEDED.  
 	 * ```
 	 */
-	@:native("SET_OBJECT_AS_NO_LONGER_NEEDED")
+	@:native("SetObjectAsNoLongerNeeded")
 	static function setObjectAsNoLongerNeeded(object:Dynamic):Dynamic;
 
 	/**
@@ -1338,7 +1338,7 @@ extern class Entity {
 	 * RAGEPluginHook list: docs.ragepluginhook.net/html/62951c37-a440-478c-b389-c471230ddfc5.htm
 	 * ```
 	 */
-	@:native("STOP_ENTITY_ANIM")
+	@:native("StopEntityAnim")
 	static function stopEntityAnim(entity:Dynamic, animation:String, animGroup:String, p3:Float):Dynamic;
 
 	/**
@@ -1350,7 +1350,7 @@ extern class Entity {
 	 * set_entity_invincible(uParam0, 1);
 	 * ```
 	 */
-	@:native("SET_WAIT_FOR_COLLISIONS_BEFORE_PROBE")
+	@:native("SetWaitForCollisionsBeforeProbe")
 	static function setWaitForCollisionsBeforeProbe(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1360,19 +1360,19 @@ extern class Entity {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("SET_PICK_UP_BY_CARGOBOB_DISABLED")
+	@:native("SetPickUpByCargobobDisabled")
 	static function setPickUpByCargobobDisabled(entity:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Toggle the visibility of a given entity.
 	 */
-	@:native("SET_ENTITY_VISIBLE")
+	@:native("SetEntityVisible")
 	static function setEntityVisible(entity:Dynamic, toggle:Bool, unk:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WOULD_ENTITY_BE_OCCLUDED")
+	@:native("WouldEntityBeOccluded")
 	static function wouldEntityBeOccluded(entityModelHash:Int, x:Float, y:Float, z:Float, p4:Bool):Bool;
 
 	/**
@@ -1380,7 +1380,7 @@ extern class Entity {
 	 * p1 sync task id?  
 	 * ```
 	 */
-	@:native("STOP_SYNCHRONIZED_ENTITY_ANIM")
+	@:native("StopSynchronizedEntityAnim")
 	static function stopSynchronizedEntityAnim(entity:Dynamic, p1:Float, p2:Bool):Bool;
 
 	/**
@@ -1388,7 +1388,7 @@ extern class Entity {
 	 * This is an alias of SET_ENTITY_AS_NO_LONGER_NEEDED.  
 	 * ```
 	 */
-	@:native("SET_PED_AS_NO_LONGER_NEEDED")
+	@:native("SetPedAsNoLongerNeeded")
 	static function setPedAsNoLongerNeeded(ped:Dynamic):Dynamic;
 
 	/**
@@ -1396,13 +1396,13 @@ extern class Entity {
 	 * This is an alias of SET_ENTITY_AS_NO_LONGER_NEEDED.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_AS_NO_LONGER_NEEDED")
+	@:native("SetVehicleAsNoLongerNeeded")
 	static function setVehicleAsNoLongerNeeded(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SYNCHRONIZED_MAP_ENTITY_ANIM")
+	@:native("StopSynchronizedMapEntityAnim")
 	static function stopSynchronizedMapEntityAnim(p0:Float, p1:Float, p2:Float, p3:Float, p4:Dynamic, p5:Float):Bool;
 
 }

@@ -22,31 +22,31 @@ extern class Pathfind {
 	 * }
 	 * ```
 	 */
-	@:native("ADD_NAVMESH_BLOCKING_OBJECT")
+	@:native("AddNavmeshBlockingObject")
 	static function addNavmeshBlockingObject(x:Float, y:Float, z:Float, width:Float, length:Float, height:Float, heading:Float, bPermanent:Bool, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_NAVMESH_REQUIRED_REGION")
+	@:native("AddNavmeshRequiredRegion")
 	static function addNavmeshRequiredRegion(x:Float, y:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_ALL_NAVMESH_REGIONS_LOADED")
+	@:native("AreAllNavmeshRegionsLoaded")
 	static function areAllNavmeshRegionsLoaded():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_NODES_LOADED_FOR_AREA")
+	@:native("AreNodesLoadedForArea")
 	static function areNodesLoadedForArea(x1:Float, y1:Float, x2:Float, y2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_NAVMESH_BLOCKING_OBJECT_EXIST")
+	@:native("DoesNavmeshBlockingObjectExist")
 	static function doesNavmeshBlockingObjectExist(p0:Dynamic):Bool;
 
 	/**
@@ -55,20 +55,20 @@ extern class Pathfind {
 	 * 
 	 * This function returns the value 100000.0 over long distances, seems to be a failure mode result, potentially occurring when not all path nodes are loaded into pathfind.
 	 */
-	@:native("CALCULATE_TRAVEL_DISTANCE_BETWEEN_POINTS")
+	@:native("CalculateTravelDistanceBetweenPoints")
 	static function calculateTravelDistanceBetweenPoints(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Float;
 
 	/**
 	 * Finds an edge (node connection to another node) that satisfies the specified criteria.
 	 */
-	@:native("GET_CLOSEST_ROAD")
+	@:native("GetClosestRoad")
 	static function getClosestRoad(x:Float, y:Float, z:Float, minimumEdgeLength:Float, minimumLaneCount:Int, srcNode:Dynamic, targetNode:Dynamic, laneCountForward:Dynamic, laneCountBackward:Dynamic, width:Dynamic, onlyMajorRoads:Bool):Dynamic;
 
 	/**
 	 * Use this if you want to completely disable a large area of navmesh.
 	 * For smaller areas, use [`ADD_NAVMESH_BLOCKING_OBJECT`](#\_0xFCD5C8E06E502F5A) instead.
 	 */
-	@:native("DISABLE_NAVMESH_IN_AREA")
+	@:native("DisableNavmeshInArea")
 	static function disableNavmeshInArea(posMinX:Float, posMinY:Float, posMinZ:Float, posMaxX:Float, posMaxY:Float, posMaxZ:Float, bDisable:Dynamic):Dynamic;
 
 	/**
@@ -88,19 +88,19 @@ extern class Pathfind {
 	 * return value set to 0 always
 	 * ```
 	 */
-	@:native("GENERATE_DIRECTIONS_TO_COORD")
+	@:native("GenerateDirectionsToCoord")
 	static function generateDirectionsToCoord(x:Float, y:Float, z:Float, p3:Bool, direction:Dynamic, vehicle:Dynamic, distToNxJunction:Dynamic):Int;
 
 	/**
 	 * Clears a disabled GPS route area from a certain index previously set using [`SET_GPS_DISABLED_ZONE_AT_INDEX`](#\_0xD0BC1C6FB18EE154).
 	 */
-	@:native("CLEAR_GPS_DISABLED_ZONE_AT_INDEX")
+	@:native("ClearGpsDisabledZoneAtIndex")
 	static function clearGpsDisabledZoneAtIndex(index:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GPS_BLIP_ROUTE_FOUND")
+	@:native("GetGpsBlipRouteFound")
 	static function getGpsBlipRouteFound():Bool;
 
 	/**
@@ -108,7 +108,7 @@ extern class Pathfind {
 	 * Get the closest vehicle node to a given position, unknown1 = 3.0, unknown2 = 0  
 	 * ```
 	 */
-	@:native("GET_CLOSEST_MAJOR_VEHICLE_NODE")
+	@:native("GetClosestMajorVehicleNode")
 	static function getClosestMajorVehicleNode(x:Float, y:Float, z:Float, outPosition:Dynamic, unknown1:Float, unknown2:Int):Bool;
 
 	/**
@@ -129,13 +129,13 @@ extern class Pathfind {
 	 * gtaforums.com/topic/843561-pathfind-node-types
 	 * ```
 	 */
-	@:native("GET_CLOSEST_VEHICLE_NODE")
+	@:native("GetClosestVehicleNode")
 	static function getClosestVehicleNode(x:Float, y:Float, z:Float, outPosition:Dynamic, nodeType:Int, p5:Float, p6:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_GPS_BLIP_ROUTE_LENGTH")
+	@:native("GetGpsBlipRouteLength")
 	static function getGpsBlipRouteLength():Int;
 
 	/**
@@ -161,7 +161,7 @@ extern class Pathfind {
 	 * C# Example (ins1de) : pastebin.com/fxtMWAHD  
 	 * ```
 	 */
-	@:native("GET_CLOSEST_VEHICLE_NODE_WITH_HEADING")
+	@:native("GetClosestVehicleNodeWithHeading")
 	static function getClosestVehicleNodeWithHeading(x:Float, y:Float, z:Float, outPosition:Dynamic, outHeading:Dynamic, nodeType:Int, p6:Float, p7:Int):Bool;
 
 	/**
@@ -169,7 +169,7 @@ extern class Pathfind {
 	 * Returns CGameWorldHeightMap's minimum Z among all grid nodes that intersect with the specified rectangle.
 	 * ```
 	 */
-	@:native("_GET_HEIGHTMAP_BOTTOM_Z_FOR_AREA")
+	@:native("GetHeightmapBottomZForArea")
 	static function GetHeightmapBottomZForArea(x1:Float, y1:Float, x2:Float, y2:Float):Float;
 
 	/**
@@ -177,7 +177,7 @@ extern class Pathfind {
 	 * Returns CGameWorldHeightMap's minimum Z value at specified point (grid node).
 	 * ```
 	 */
-	@:native("_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION")
+	@:native("GetHeightmapBottomZForPosition")
 	static function GetHeightmapBottomZForPosition(x:Float, y:Float):Float;
 
 	/**
@@ -187,7 +187,7 @@ extern class Pathfind {
 	 * NativeDB Removed Parameter 1: int index
 	 * ```
 	 */
-	@:native("GET_NEXT_GPS_DISABLED_ZONE_INDEX")
+	@:native("GetNextGpsDisabledZoneIndex")
 	static function getNextGpsDisabledZoneIndex(index:Int):Int;
 
 	/**
@@ -195,7 +195,7 @@ extern class Pathfind {
 	 * Returns CGameWorldHeightMap's maximum Z value at specified point (grid node).
 	 * ```
 	 */
-	@:native("_GET_HEIGHTMAP_TOP_Z_FOR_POSITION")
+	@:native("GetHeightmapTopZForPosition")
 	static function GetHeightmapTopZForPosition(x:Float, y:Float):Float;
 
 	/**
@@ -203,7 +203,7 @@ extern class Pathfind {
 	 * Returns the id.  
 	 * ```
 	 */
-	@:native("GET_NTH_CLOSEST_VEHICLE_NODE_ID")
+	@:native("GetNthClosestVehicleNodeId")
 	static function getNthClosestVehicleNodeId(x:Float, y:Float, z:Float, nth:Int, nodetype:Int, p5:Float, p6:Float):Int;
 
 	/**
@@ -211,7 +211,7 @@ extern class Pathfind {
 	 * Returns CGameWorldHeightMap's maximum Z among all grid nodes that intersect with the specified rectangle.
 	 * ```
 	 */
-	@:native("_GET_HEIGHTMAP_TOP_Z_FOR_AREA")
+	@:native("GetHeightmapTopZForArea")
 	static function GetHeightmapTopZForArea(x1:Float, y1:Float, x2:Float, y2:Float):Float;
 
 	/**
@@ -221,13 +221,13 @@ extern class Pathfind {
 	 * p11 always equal 0  
 	 * ```
 	 */
-	@:native("GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION")
+	@:native("GetNthClosestVehicleNodeFavourDirection")
 	static function getNthClosestVehicleNodeFavourDirection(x:Float, y:Float, z:Float, desiredX:Float, desiredY:Float, desiredZ:Float, nthClosest:Int, outPosition:Dynamic, outHeading:Dynamic, nodetype:Int, p10:Float, p11:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NTH_CLOSEST_VEHICLE_NODE")
+	@:native("GetNthClosestVehicleNode")
 	static function getNthClosestVehicleNode(x:Float, y:Float, z:Float, nthClosest:Int, outPosition:Dynamic, unknown1:Dynamic, unknown2:Dynamic, unknown3:Dynamic):Bool;
 
 	/**
@@ -244,25 +244,25 @@ extern class Pathfind {
 	 * }
 	 * ```
 	 */
-	@:native("GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING")
+	@:native("GetNthClosestVehicleNodeWithHeading")
 	static function getNthClosestVehicleNodeWithHeading(x:Float, y:Float, z:Float, nthClosest:Int, outPosition:Dynamic, heading:Dynamic, totalLanes:Dynamic, searchFlags:Int, zMeasureMult:Float, zTolerance:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NTH_CLOSEST_VEHICLE_NODE_ID_WITH_HEADING")
+	@:native("GetNthClosestVehicleNodeIdWithHeading")
 	static function getNthClosestVehicleNodeIdWithHeading(x:Float, y:Float, z:Float, nthClosest:Int, outPosition:Dynamic, outHeading:Dynamic, p6:Dynamic, p7:Float, p8:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_NAVMESHES_EXISTING_IN_AREA")
+	@:native("GetNumNavmeshesExistingInArea")
 	static function getNumNavmeshesExistingInArea(posMinX:Float, posMinY:Float, posMinZ:Float, posMaxX:Float, posMaxY:Float, posMaxZ:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ROAD_BOUNDARY_USING_HEADING")
+	@:native("GetRoadBoundaryUsingHeading")
 	static function getRoadBoundaryUsingHeading(x:Float, y:Float, z:Float, heading:Float, outPosition:Dynamic):Bool;
 
 	/**
@@ -277,7 +277,7 @@ extern class Pathfind {
 	 * }
 	 * ```
 	 */
-	@:native("GET_POS_ALONG_GPS_TYPE_ROUTE")
+	@:native("GetPosAlongGpsTypeRoute")
 	static function getPosAlongGpsTypeRoute(result:Dynamic, bStartAtPlayerPos:Bool, fDistanceAlongRoute:Float, slotType:Int):Bool;
 
 	/**
@@ -286,13 +286,13 @@ extern class Pathfind {
 	 * Normal roads where plenty of Peds spawn will return false
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NODE_IS_SWITCHED_OFF")
+	@:native("GetVehicleNodeIsSwitchedOff")
 	static function getVehicleNodeIsSwitchedOff(nodeID:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_POINT_ON_ROAD_SIDE")
+	@:native("GetPointOnRoadSide")
 	static function GetPointOnRoadSide(x:Float, y:Float, z:Float, p3:Int, outPosition:Dynamic):Bool;
 
 	/**
@@ -302,7 +302,7 @@ extern class Pathfind {
 	 * Nodes in Fort Zancudo and LSIA are false
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NODE_IS_GPS_ALLOWED")
+	@:native("GetVehicleNodeIsGpsAllowed")
 	static function getVehicleNodeIsGpsAllowed(nodeID:Int):Bool;
 
 	/**
@@ -314,13 +314,13 @@ extern class Pathfind {
 	 * Note: the names are returned as hashes, the strings can be returned using the function HUD::GET_STREET_NAME_FROM_HASH_KEY.
 	 * ```
 	 */
-	@:native("GET_STREET_NAME_AT_COORD")
+	@:native("GetStreetNameAtCoord")
 	static function getStreetNameAtCoord(x:Float, y:Float, z:Float, streetName:Dynamic, crossingRoad:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RANDOM_VEHICLE_NODE")
+	@:native("GetRandomVehicleNode")
 	static function getRandomVehicleNode(x:Float, y:Float, z:Float, radius:Float, p4:Bool, p5:Bool, p6:Bool, outPosition:Dynamic, nodeId:Dynamic):Bool;
 
 	/**
@@ -328,7 +328,7 @@ extern class Pathfind {
 	 * IS_*
 	 * ```
 	 */
-	@:native("_IS_NAVMESH_REQUIRED_REGION_OWNED_BY_ANY_THREAD")
+	@:native("IsNavmeshRequiredRegionOwnedByAnyThread")
 	static function IsNavmeshRequiredRegionOwnedByAnyThread():Bool;
 
 	/**
@@ -338,7 +338,7 @@ extern class Pathfind {
 	 * Eg. IS_VEHICLE_NODE_ID_VALID(1) will return true, but will crash when calling GET_VEHICLE_NODE_POSITION().
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NODE_POSITION")
+	@:native("GetVehicleNodePosition")
 	static function getVehicleNodePosition(nodeId:Int, outPosition:Dynamic):Dynamic;
 
 	/**
@@ -361,7 +361,7 @@ extern class Pathfind {
 	 * }
 	 * ```
 	 */
-	@:native("GET_VEHICLE_NODE_PROPERTIES")
+	@:native("GetVehicleNodeProperties")
 	static function getVehicleNodeProperties(x:Float, y:Float, z:Float, density:Dynamic, flags:Dynamic):Bool;
 
 	/**
@@ -369,7 +369,7 @@ extern class Pathfind {
 	 * This native has been removed in v1180.  
 	 * ```
 	 */
-	@:native("LOAD_ALL_PATH_NODES")
+	@:native("LoadAllPathNodes")
 	static function loadAllPathNodes(keepInMemory:Bool):Bool;
 
 	/**
@@ -386,7 +386,7 @@ extern class Pathfind {
 	 * 16 works for me, 0 crashed the script.
 	 * ```
 	 */
-	@:native("GET_SAFE_COORD_FOR_PED")
+	@:native("GetSafeCoordForPed")
 	static function getSafeCoordForPed(x:Float, y:Float, z:Float, onGround:Bool, outPosition:Dynamic, flags:Int):Bool;
 
 	/**
@@ -394,7 +394,7 @@ extern class Pathfind {
 	 * Returns true if the id is non zero.  
 	 * ```
 	 */
-	@:native("IS_VEHICLE_NODE_ID_VALID")
+	@:native("IsVehicleNodeIdValid")
 	static function isVehicleNodeIdValid(vehicleNodeId:Int):Bool;
 
 	/**
@@ -404,7 +404,7 @@ extern class Pathfind {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_SET_AI_GLOBAL_PATH_NODES_TYPE")
+	@:native("SetAiGlobalPathNodesType")
 	static function SetAiGlobalPathNodesType(type:Int):Dynamic;
 
 	/**
@@ -413,13 +413,13 @@ extern class Pathfind {
 	 * If you can re-word this so it makes more sense, please do. I'm horrible with words sometimes...  
 	 * ```
 	 */
-	@:native("IS_NAVMESH_LOADED_IN_AREA")
+	@:native("IsNavmeshLoadedInArea")
 	static function isNavmeshLoadedInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GPS_DISABLED_ZONE")
+	@:native("SetGpsDisabledZone")
 	static function setGpsDisabledZone(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Dynamic;
 
 	/**
@@ -427,7 +427,7 @@ extern class Pathfind {
 	 * Used internally for long range tasks
 	 * ```
 	 */
-	@:native("_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT")
+	@:native("RequestPathsPreferAccurateBoundingstruct")
 	static function RequestPathsPreferAccurateBoundingstruct(x1:Float, y1:Float, x2:Float, y2:Float):Bool;
 
 	/**
@@ -436,13 +436,13 @@ extern class Pathfind {
 	 * The vehicle parameter is not implemented (ignored).  
 	 * ```
 	 */
-	@:native("IS_POINT_ON_ROAD")
+	@:native("IsPointOnRoad")
 	static function isPointOnRoad(x:Float, y:Float, z:Float, vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_NAVMESH_BLOCKING_OBJECT")
+	@:native("RemoveNavmeshBlockingObject")
 	static function removeNavmeshBlockingObject(p0:Dynamic):Dynamic;
 
 	/**
@@ -450,7 +450,7 @@ extern class Pathfind {
 	 * NativeDB Added Parameter 7: Any p6
 	 * ```
 	 */
-	@:native("SET_PED_PATHS_BACK_TO_ORIGINAL")
+	@:native("SetPedPathsBackToOriginal")
 	static function setPedPathsBackToOriginal(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic):Dynamic;
 
 	/**
@@ -458,7 +458,7 @@ extern class Pathfind {
 	 * Toggles a global boolean, name is probably a hash collision but describes its functionality.
 	 * ```
 	 */
-	@:native("_SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT")
+	@:native("SetAllPathsCacheBoundingstruct")
 	static function SetAllPathsCacheBoundingstruct(toggle:Bool):Dynamic;
 
 	/**
@@ -472,19 +472,19 @@ extern class Pathfind {
 	 * 
 	 * Enabled Zone (normal): <https://i.imgur.com/BPi24aw.png>
 	 */
-	@:native("SET_GPS_DISABLED_ZONE_AT_INDEX")
+	@:native("SetGpsDisabledZoneAtIndex")
 	static function setGpsDisabledZoneAtIndex(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, index:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_NAVMESH_REQUIRED_REGIONS")
+	@:native("RemoveNavmeshRequiredRegions")
 	static function removeNavmeshRequiredRegions():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_IGNORE_NO_GPS_FLAG")
+	@:native("SetIgnoreNoGpsFlag")
 	static function setIgnoreNoGpsFlag(toggle:Bool):Dynamic;
 
 	/**
@@ -492,13 +492,13 @@ extern class Pathfind {
 	 * See: SET_BLIP_ROUTE
 	 * ```
 	 */
-	@:native("_SET_IGNORE_SECONDARY_ROUTE_NODES")
+	@:native("SetIgnoreSecondaryRouteNodes")
 	static function SetIgnoreSecondaryRouteNodes(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_PED_RANGE_MULTIPLIER_THIS_FRAME")
+	@:native("SetAmbientPedRangeMultiplierThisFrame")
 	static function setAmbientPedRangeMultiplierThisFrame(multiplier:Float):Dynamic;
 
 	/**
@@ -506,7 +506,7 @@ extern class Pathfind {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("SET_PED_PATHS_IN_AREA")
+	@:native("SetPedPathsInArea")
 	static function setPedPathsInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, unknown:Bool):Dynamic;
 
 	/**
@@ -518,7 +518,7 @@ extern class Pathfind {
 	 * NativeDB Added Parameter 7: Any p6
 	 * ```
 	 */
-	@:native("SET_ROADS_BACK_TO_ORIGINAL")
+	@:native("SetRoadsBackToOriginal")
 	static function setRoadsBackToOriginal(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float):Dynamic;
 
 	/**
@@ -526,7 +526,7 @@ extern class Pathfind {
 	 * 
 	 * See [`IS_POINT_IN_ANGLED_AREA`](#\_0x2A70BAE8883E4C81) for the definition of an angled area.
 	 */
-	@:native("SET_ROADS_IN_ANGLED_AREA")
+	@:native("SetRoadsInAngledArea")
 	static function setRoadsInAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float, unknown1:Bool, unknown2:Bool, unknown3:Bool):Dynamic;
 
 	/**
@@ -538,7 +538,7 @@ extern class Pathfind {
 	 * 
 	 * `GET_VEHICLE_NODE_IS_SWITCHED_OFF` returns false.
 	 */
-	@:native("SET_ROADS_IN_AREA")
+	@:native("SetRoadsInArea")
 	static function setRoadsInArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, nodeEnabled:Bool, unknown2:Bool):Dynamic;
 
 	/**
@@ -550,13 +550,13 @@ extern class Pathfind {
 	 * bool p7 - always 1  
 	 * ```
 	 */
-	@:native("SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA")
+	@:native("SetRoadsBackToOriginalInAngledArea")
 	static function setRoadsBackToOriginalInAngledArea(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, width:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_NAVMESH_BLOCKING_OBJECT")
+	@:native("UpdateNavmeshBlockingObject")
 	static function updateNavmeshBlockingObject(object:Dynamic, posX:Float, posY:Float, posZ:Float, scaleX:Float, scaleY:Float, scaleZ:Float, heading:Float, flags:Int):Dynamic;
 
 }

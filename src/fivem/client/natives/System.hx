@@ -7,13 +7,13 @@ extern class System {
 	 * NativeDB Introduced: v1604
 	 * ```
 	 */
-	@:native("_LOG10")
+	@:native("Log10")
 	static function Log10(value:Float):Float;
 
 	/**
 	 * Returns the cosine of the given number.
 	 */
-	@:native("COS")
+	@:native("Cos")
 	static function cos(value:Float):Float;
 
 	/**
@@ -21,25 +21,25 @@ extern class System {
 	 * I'm guessing this rounds a float value up to the next whole number, and FLOOR rounds it down  
 	 * ```
 	 */
-	@:native("CEIL")
+	@:native("Ceil")
 	static function ceil(value:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("FLOOR")
+	@:native("Floor")
 	static function floor(value:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("ROUND")
+	@:native("Round")
 	static function round(value:Float):Int;
 
 	/**
 	 * 
 	 */
-	@:native("POW")
+	@:native("Pow")
 	static function pow(base:Float, exponent:Float):Float;
 
 	/**
@@ -49,26 +49,26 @@ extern class System {
 	 * 2 = low
 	 * ```
 	 */
-	@:native("_SET_THREAD_PRIORITY")
+	@:native("SetThreadPriority")
 	static function SetThreadPriority(priority:Int):Dynamic;
 
 	/**
 	 * Sets the value for the timer A in milliseconds
 	 */
-	@:native("SETTIMERA")
+	@:native("Settimera")
 	static function settimera(value:Int):Dynamic;
 
 	/**
 	 * Left bit shifts a value.
 	 * It is advised you use the `<<` operator instead of this native. It does the same and is faster.
 	 */
-	@:native("SHIFT_LEFT")
+	@:native("ShiftLeft")
 	static function shiftLeft(value:Int, bitShift:Int):Int;
 
 	/**
 	 * Sets the value for the timer B in milliseconds
 	 */
-	@:native("SETTIMERB")
+	@:native("Settimerb")
 	static function settimerb(value:Int):Dynamic;
 
 	/**
@@ -77,20 +77,20 @@ extern class System {
 	 * Pass pointer to struct of args in p1, size of struct goes into p2  
 	 * ```
 	 */
-	@:native("START_NEW_SCRIPT_WITH_ARGS")
+	@:native("StartNewScriptWithArgs")
 	static function startNewScriptWithArgs(scriptName:String, args:Dynamic, argCount:Int, stackSize:Int):Int;
 
 	/**
 	 * Right bit shifts a value.
 	 * It is advised you use the `>>` operator instead of this native. It does the same and is faster.
 	 */
-	@:native("SHIFT_RIGHT")
+	@:native("ShiftRight")
 	static function shiftRight(value:Int, bitShift:Int):Int;
 
 	/**
 	 * Returns the sine of the given number.
 	 */
-	@:native("SIN")
+	@:native("Sin")
 	static function sin(value:Float):Float;
 
 	/**
@@ -98,19 +98,19 @@ extern class System {
 	 * Counts up. Every 1000 is 1 real-time second. Use SETTIMERA(int value) to set the timer (e.g.: SETTIMERA(0)).  
 	 * ```
 	 */
-	@:native("TIMERA")
+	@:native("Timera")
 	static function timera():Int;
 
 	/**
 	 * 
 	 */
-	@:native("SQRT")
+	@:native("Sqrt")
 	static function sqrt(value:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("TO_FLOAT")
+	@:native("ToFloat")
 	static function toFloat(value:Int):Float;
 
 	/**
@@ -118,7 +118,7 @@ extern class System {
 	 * Gets the current frame time.  
 	 * ```
 	 */
-	@:native("TIMESTEP")
+	@:native("Timestep")
 	static function timestep():Float;
 
 	/**
@@ -155,13 +155,13 @@ extern class System {
 	 * All native script names: pastebin.com/K9adDsu4 and pastebin.com/yLNWicUi
 	 * ```
 	 */
-	@:native("START_NEW_SCRIPT")
+	@:native("StartNewScript")
 	static function startNewScript(scriptName:String, stackSize:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("START_NEW_SCRIPT_WITH_NAME_HASH")
+	@:native("StartNewScriptWithNameHash")
 	static function startNewScriptWithNameHash(scriptHash:Int, stackSize:Int):Int;
 
 	/**
@@ -171,7 +171,7 @@ extern class System {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("VDIST")
+	@:native("Vdist")
 	static function vdist(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Float;
 
 	/**
@@ -179,19 +179,19 @@ extern class System {
 	 * Calculates the magnitude of a vector.  
 	 * ```
 	 */
-	@:native("VMAG")
+	@:native("Vmag")
 	static function vmag(x:Float, y:Float, z:Float):Float;
 
 	/**
 	 * 
 	 */
-	@:native("START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS")
+	@:native("StartNewScriptWithNameHashAndArgs")
 	static function startNewScriptWithNameHashAndArgs(scriptHash:Int, args:Dynamic, argCount:Int, stackSize:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("TIMERB")
+	@:native("Timerb")
 	static function timerb():Int;
 
 	/**
@@ -199,7 +199,7 @@ extern class System {
 	 * Pauses execution of the current script, please note this behavior is only seen when called from one of the game script files(ysc). In order to wait an asi script use "static void WAIT(DWORD time);" found in main.h
 	 * ```
 	 */
-	@:native("WAIT")
+	@:native("Wait")
 	static function wait(ms:Int):Dynamic;
 
 	/**
@@ -209,7 +209,7 @@ extern class System {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("VDIST2")
+	@:native("Vdist2")
 	static function vdist2(x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float):Float;
 
 	/**
@@ -217,7 +217,7 @@ extern class System {
 	 * Calculates the magnitude of a vector but does not perform Sqrt operations. (Its way faster)  
 	 * ```
 	 */
-	@:native("VMAG2")
+	@:native("Vmag2")
 	static function vmag2(x:Float, y:Float, z:Float):Float;
 
 }

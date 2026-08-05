@@ -12,7 +12,7 @@ extern class Audio {
 	 * }
 	 * ```
 	 */
-	@:native("ADD_LINE_TO_CONVERSATION")
+	@:native("AddLineToConversation")
 	static function addLineToConversation(speakerConversationIndex:Int, context:String, subtitle:String, listenerNumber:Int, volumeType:Int, isRandom:Bool, interruptible:Bool, ducksRadio:Bool, ducksScore:Bool, audibility:Int, headset:Bool, dontInterruptForSpecialAbility:Bool, isPadSpeakerRoute:Bool):Dynamic;
 
 	/**
@@ -21,7 +21,7 @@ extern class Audio {
 	 * pastebin.com/ceu67jz8
 	 * ```
 	 */
-	@:native("ADD_ENTITY_TO_AUDIO_MIX_GROUP")
+	@:native("AddEntityToAudioMixGroup")
 	static function addEntityToAudioMixGroup(entity:Dynamic, groupName:String, fadeIn:Float):Dynamic;
 
 	/**
@@ -41,7 +41,7 @@ extern class Audio {
 	 * | SLOWMO_EXTREME\_04           | 0xF562EA50         |
 	 * | NIGEL\_02\_SLOWMO_SETTING     | 0x384689B0         |
 	 */
-	@:native("ACTIVATE_AUDIO_SLOWMO_MODE")
+	@:native("ActivateAudioSlowmoMode")
 	static function activateAudioSlowmoMode(mode:String):Dynamic;
 
 	/**
@@ -51,7 +51,7 @@ extern class Audio {
 	 * 
 	 * The `SuppressOutgoingNetworkSpeech` flag can be set to `false` if you want speech triggered locally through `PLAY_PED_AMBIENT_SPEECH_*` related native calls to still be audible on remote machines, even though it was blocked on the local one.
 	 */
-	@:native("BLOCK_ALL_SPEECH_FROM_PED")
+	@:native("BlockAllSpeechFromPed")
 	static function blockAllSpeechFromPed(ped:Dynamic, shouldBlock:Bool, suppressOutgoingNetworkSpeech:Bool):Dynamic;
 
 	/**
@@ -59,25 +59,25 @@ extern class Audio {
 	 * 
 	 * This only works on vehicles with sirens.
 	 */
-	@:native("BLIP_SIREN")
+	@:native("BlipSiren")
 	static function blipSiren(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("AUDIO_IS_SCRIPTED_MUSIC_PLAYING")
+	@:native("AudioIsScriptedMusicPlaying")
 	static function audioIsScriptedMusicPlaying():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_PED_TO_CONVERSATION")
+	@:native("AddPedToConversation")
 	static function addPedToConversation(speakerConversationIndex:Int, ped:Dynamic, voiceName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CANCEL_ALL_POLICE_REPORTS")
+	@:native("CancelAllPoliceReports")
 	static function cancelAllPoliceReports():Dynamic;
 
 	/**
@@ -96,25 +96,25 @@ extern class Audio {
 	 * 
 	 * Note that the block will be automatically removed when the calling script finishes
 	 */
-	@:native("BLOCK_SPEECH_CONTEXT_GROUP")
+	@:native("BlockSpeechContextGroup")
 	static function blockSpeechContextGroup(groupName:String, contextBlockTarget:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_VEHICLE_RECEIVE_CB_RADIO")
+	@:native("CanVehicleReceiveCbRadio")
 	static function canVehicleReceiveCbRadio(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("BLOCK_DEATH_JINGLE")
+	@:native("BlockDeathJingle")
 	static function blockDeathJingle(blocked:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_ALL_BROKEN_GLASS")
+	@:native("ClearAllBrokenGlass")
 	static function clearAllBrokenGlass():Dynamic;
 
 	/**
@@ -122,7 +122,7 @@ extern class Audio {
 	 * 
 	 * Default behaviour is that any state change only gets applied once the player leaves the zone.
 	 */
-	@:native("CLEAR_AMBIENT_ZONE_LIST_STATE")
+	@:native("ClearAmbientZoneListState")
 	static function clearAmbientZoneListState(zoneListName:String, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -130,7 +130,7 @@ extern class Audio {
 	 * All music event names found in the b617d scripts: pastebin.com/GnYt0R3P
 	 * ```
 	 */
-	@:native("CANCEL_MUSIC_EVENT")
+	@:native("CancelMusicEvent")
 	static function cancelMusicEvent(eventName:String):Bool;
 
 	/**
@@ -138,43 +138,43 @@ extern class Audio {
 	 * 
 	 * Default behaviour is that any state change only gets applied once the player leaves the zone.
 	 */
-	@:native("CLEAR_AMBIENT_ZONE_STATE")
+	@:native("ClearAmbientZoneState")
 	static function clearAmbientZoneState(zoneName:String, forceUpdate:Bool):Dynamic;
 
 	/**
 	 * Clears the previously queued custom track lost for the given radio station.
 	 */
-	@:native("CLEAR_CUSTOM_RADIO_TRACK_LIST")
+	@:native("ClearCustomRadioTrackList")
 	static function clearCustomRadioTrackList(radioStation:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DISABLE_PED_PAIN_AUDIO")
+	@:native("DisablePedPainAudio")
 	static function disablePedPainAudio(ped:Dynamic, shouldDisable:Bool):Dynamic;
 
 	/**
 	 * Deactivates the named slowmo mode.
 	 */
-	@:native("DEACTIVATE_AUDIO_SLOWMO_MODE")
+	@:native("DeactivateAudioSlowmoMode")
 	static function deactivateAudioSlowmoMode(mode:String):Dynamic;
 
 	/**
 	 * Toggles fake distant siren sounds
 	 */
-	@:native("DISTANT_COP_CAR_SIRENS")
+	@:native("DistantCopCarSirens")
 	static function distantCopCarSirens(shouldPlay:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_PLAYER_VEH_HAVE_RADIO")
+	@:native("DoesPlayerVehHaveRadio")
 	static function doesPlayerVehHaveRadio():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_NEW_SCRIPTED_CONVERSATION")
+	@:native("CreateNewScriptedConversation")
 	static function createNewScriptedConversation():Dynamic;
 
 	/**
@@ -182,13 +182,13 @@ extern class Audio {
 	 * 
 	 * The final argument can be set to true to allow searching in backup PVGs
 	 */
-	@:native("DOES_CONTEXT_EXIST_FOR_THIS_PED")
+	@:native("DoesContextExistForThisPed")
 	static function doesContextExistForThisPed(ped:Dynamic, speechName:String, allowBackupPVGs:Bool):Bool;
 
 	/**
 	 * Enable or disable the plane stall warning sounds
 	 */
-	@:native("ENABLE_STALL_WARNING_SOUNDS")
+	@:native("EnableStallWarningSounds")
 	static function enableStallWarningSounds(vehicle:Dynamic, enable:Bool):Dynamic;
 
 	/**
@@ -196,56 +196,56 @@ extern class Audio {
 	 * 
 	 * This native is meant to be called per-frame for as long as detection is wanted.
 	 */
-	@:native("ENABLE_STUNT_JUMP_AUDIO")
+	@:native("EnableStuntJumpAudio")
 	static function enableStuntJumpAudio():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ENABLE_VEHICLE_FANBELT_DAMAGE")
+	@:native("EnableVehicleFanbeltDamage")
 	static function enableVehicleFanbeltDamage(vehicle:Dynamic, enableFanbeltDamage:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FIND_RADIO_STATION_INDEX")
+	@:native("FindRadioStationIndex")
 	static function findRadioStationIndex(stationNameHash:Int):Int;
 
 	/**
 	 * Forces the ambient peds into their panic walla state
 	 */
-	@:native("FORCE_PED_PANIC_WALLA")
+	@:native("ForcePedPanicWalla")
 	static function forcePedPanicWalla():Dynamic;
 
 	/**
 	 * Enable or disable exhaust pops on the given vehicle.
 	 */
-	@:native("ENABLE_VEHICLE_EXHAUST_POPS")
+	@:native("EnableVehicleExhaustPops")
 	static function enableVehicleExhaustPops(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Forces the chosen station to paly the given music track list. All other music track lists will be locked.
 	 */
-	@:native("FORCE_MUSIC_TRACK_LIST")
+	@:native("ForceMusicTrackList")
 	static function forceMusicTrackList(radioStation:String, trackListName:String, timeOffsetMilliseconds:Int):Dynamic;
 
 	/**
 	 * This native sets the audio to the specific vehicle hash's audioNameHash.
 	 */
-	@:native("FORCE_USE_AUDIO_GAME_OBJECT")
+	@:native("ForceUseAudioGameObject")
 	static function forceUseAudioGameObject(vehicle:Dynamic, gameObjectName:String):Dynamic;
 
 	/**
 	 * Allows script to freeze the microphone for a single frame, mantaining its current transform/settings.
 	 * This native should be called every frame you want to keep the microphone frozen, when you stop calling it it will automatically unfreeze
 	 */
-	@:native("FREEZE_MICROPHONE")
+	@:native("FreezeMicrophone")
 	static function freezeMicrophone():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_TRACK_SOUND_NAME")
+	@:native("GetCurrentTrackSoundName")
 	static function getCurrentTrackSoundName(radioStationName:String):Int;
 
 	/**
@@ -255,37 +255,37 @@ extern class Audio {
 	 * NativeDB Introduced: v3258
 	 * ```
 	 */
-	@:native("_FORCE_VEHICLE_ENGINE_SYNTH")
+	@:native("ForceVehicleEngineSynth")
 	static function ForceVehicleEngineSynth(vehicle:Dynamic, force:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("FREEZE_RADIO_STATION")
+	@:native("FreezeRadioStation")
 	static function freezeRadioStation(radioStation:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_AUDIBLE_MUSIC_TRACK_TEXT_ID")
+	@:native("GetAudibleMusicTrackTextId")
 	static function getAudibleMusicTrackTextId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CURRENT_SCRIPTED_CONVERSATION_LINE")
+	@:native("GetCurrentScriptedConversationLine")
 	static function getCurrentScriptedConversationLine():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_IS_PRELOADED_CONVERSATION_READY")
+	@:native("GetIsPreloadedConversationReady")
 	static function getIsPreloadedConversationReady():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_AMBIENT_VOICE_NAME_HASH")
+	@:native("GetAmbientVoiceNameHash")
 	static function getAmbientVoiceNameHash(ped:Dynamic):Int;
 
 	/**
@@ -295,55 +295,55 @@ extern class Audio {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME")
+	@:native("GetCurrentRadioTrackPlaybackTime")
 	static function GetCurrentRadioTrackPlaybackTime(radioStationName:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MUSIC_PLAYTIME")
+	@:native("GetMusicPlaytime")
 	static function getMusicPlaytime():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NETWORK_ID_FROM_SOUND_ID")
+	@:native("GetNetworkIdFromSoundId")
 	static function getNetworkIdFromSoundId(soundId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_MUSIC_VOL_SLIDER")
+	@:native("GetMusicVolSlider")
 	static function getMusicVolSlider():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NEXT_AUDIBLE_BEAT")
+	@:native("GetNextAudibleBeat")
 	static function getNextAudibleBeat(timeInSeconds:Dynamic, bpm:Dynamic, beatNum:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NUM_UNLOCKED_RADIO_STATIONS")
+	@:native("GetNumUnlockedRadioStations")
 	static function getNumUnlockedRadioStations():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_RADIO_STATION_INDEX")
+	@:native("GetPlayerRadioStationIndex")
 	static function getPlayerRadioStationIndex():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_RADIO_STATION_GENRE")
+	@:native("GetPlayerRadioStationGenre")
 	static function getPlayerRadioStationGenre():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_RADIO_STATION_NAME")
+	@:native("GetPlayerRadioStationName")
 	static function getPlayerRadioStationName():String;
 
 	/**
@@ -357,43 +357,43 @@ extern class Audio {
 	 * 
 	 * SoundId's are not automatically cleaned up, you must use [RELEASE_SOUND_ID](#\_0x353FC880830B88FA) after you've finished using them to allow the engine to recycle the sound id.
 	 */
-	@:native("GET_SOUND_ID")
+	@:native("GetSoundId")
 	static function getSoundId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_RADIO_STATION_NAME")
+	@:native("GetRadioStationName")
 	static function getRadioStationName(stationIndex:Int):String;
 
 	/**
 	 * Counterpart: [`GET_NETWORK_ID_FROM_SOUND_ID`](#\_0x2DE3F0A134FFBC0D).
 	 */
-	@:native("GET_SOUND_ID_FROM_NETWORK_ID")
+	@:native("GetSoundIdFromNetworkId")
 	static function getSoundIdFromNetworkId(netId:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VARIATION_CHOSEN_FOR_SCRIPTED_LINE")
+	@:native("GetVariationChosenForScriptedLine")
 	static function getVariationChosenForScriptedLine(textLabel:String):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_DEFAULT_HORN")
+	@:native("GetVehicleDefaultHorn")
 	static function getVehicleDefaultHorn(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_STREAM_PLAY_TIME")
+	@:native("GetStreamPlayTime")
 	static function getStreamPlayTime():Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_LOADED_MP_DATA_SET")
+	@:native("HasLoadedMpDataSet")
 	static function hasLoadedMpDataSet():Bool;
 
 	/**
@@ -401,19 +401,19 @@ extern class Audio {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("GET_VEHICLE_HORN_SOUND_INDEX")
+	@:native("GetVehicleHornSoundIndex")
 	static function getVehicleHornSoundIndex(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_DEFAULT_HORN_IGNORE_MODS")
+	@:native("GetVehicleDefaultHornIgnoreMods")
 	static function getVehicleDefaultHornIgnoreMods(vehicle:Dynamic):Int;
 
 	/**
 	 * This native is marked as a deprecated native internally, use [HINT_SCRIPT_AUDIO_BANK](#\_0xFB380A29641EC31A) instead
 	 */
-	@:native("HINT_AMBIENT_AUDIO_BANK")
+	@:native("HintAmbientAudioBank")
 	static function hintAmbientAudioBank(bankName:String, bOverNetwork:Bool):Bool;
 
 	/**
@@ -424,73 +424,73 @@ extern class Audio {
 	 * 
 	 * *   **playerBits**: likely used to specifiy players to sync to as a bit mask (1 << (0-128))
 	 */
-	@:native("HINT_SCRIPT_AUDIO_BANK")
+	@:native("HintScriptAudioBank")
 	static function hintScriptAudioBank(bankName:String, bOverNetwork:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_SOUND_FINISHED")
+	@:native("HasSoundFinished")
 	static function hasSoundFinished(soundId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_LOADED_SP_DATA_SET")
+	@:native("HasLoadedSpDataSet")
 	static function hasLoadedSpDataSet():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("INIT_SYNCH_SCENE_AUDIO_WITH_POSITION")
+	@:native("InitSynchSceneAudioWithPosition")
 	static function initSynchSceneAudioWithPosition(audioName:String, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY")
+	@:native("InitSynchSceneAudioWithEntity")
 	static function initSynchSceneAudioWithEntity(audioName:String, entity:Dynamic):Dynamic;
 
 	/**
 	 * Handles conversation interrupts, using the code-side system for improved timing and to minimize unfriendly logic interactions.
 	 */
-	@:native("INTERRUPT_CONVERSATION")
+	@:native("InterruptConversation")
 	static function interruptConversation(interrupterPed:Dynamic, context:String, voiceName:String):Dynamic;
 
 	/**
 	 * This is marked as a deprecated function internally, please use [HINT_SCRIPT_AUDIO_BANK](#\_0xFB380A29641EC31A) instead.
 	 */
-	@:native("HINT_MISSION_AUDIO_BANK")
+	@:native("HintMissionAudioBank")
 	static function hintMissionAudioBank(bankName:String, bOverNetwork:Bool, playerBits:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ALARM_PLAYING")
+	@:native("IsAlarmPlaying")
 	static function isAlarmPlaying(alarmName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AMBIENT_SPEECH_DISABLED")
+	@:native("IsAmbientSpeechDisabled")
 	static function isAmbientSpeechDisabled(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AMBIENT_SPEECH_PLAYING")
+	@:native("IsAmbientSpeechPlaying")
 	static function isAmbientSpeechPlaying(ped:Dynamic):Bool;
 
 	/**
 	 * Handles conversation interrupts and pauses, using the code-side system for improved timing and to minimize unfriendly logic interactions.
 	 */
-	@:native("INTERRUPT_CONVERSATION_AND_PAUSE")
+	@:native("InterruptConversationAndPause")
 	static function interruptConversationAndPause(interrupterPed:Dynamic, context:String, voiceName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANIMAL_VOCALIZATION_PLAYING")
+	@:native("IsAnimalVocalizationPlaying")
 	static function isAnimalVocalizationPlaying(pedHandle:Dynamic):Bool;
 
 	/**
@@ -500,37 +500,37 @@ extern class Audio {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("IS_ANY_POSITIONAL_SPEECH_PLAYING")
+	@:native("IsAnyPositionalSpeechPlaying")
 	static function isAnyPositionalSpeechPlaying():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AUDIO_SCENE_ACTIVE")
+	@:native("IsAudioSceneActive")
 	static function isAudioSceneActive(scene:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_AMBIENT_ZONE_ENABLED")
+	@:native("IsAmbientZoneEnabled")
 	static function isAmbientZoneEnabled(ambientZone:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ANY_SPEECH_PLAYING")
+	@:native("IsAnySpeechPlaying")
 	static function isAnySpeechPlaying(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MISSION_NEWS_STORY_UNLOCKED")
+	@:native("IsMissionNewsStoryUnlocked")
 	static function isMissionNewsStoryUnlocked(newsStory:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MISSION_COMPLETE_PLAYING")
+	@:native("IsMissionCompletePlaying")
 	static function isMissionCompletePlaying():Bool;
 
 	/**
@@ -538,109 +538,109 @@ extern class Audio {
 	 * Hardcoded to return 1  
 	 * ```
 	 */
-	@:native("IS_GAME_IN_CONTROL_OF_MUSIC")
+	@:native("IsGameInControlOfMusic")
 	static function isGameInControlOfMusic():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_HORN_ACTIVE")
+	@:native("IsHornActive")
 	static function isHornActive(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOBILE_PHONE_CALL_ONGOING")
+	@:native("IsMobilePhoneCallOngoing")
 	static function isMobilePhoneCallOngoing():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOBILE_INTERFERENCE_ACTIVE")
+	@:native("IsMobileInterferenceActive")
 	static function isMobileInterferenceActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_IN_CURRENT_CONVERSATION")
+	@:native("IsPedInCurrentConversation")
 	static function isPedInCurrentConversation(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MISSION_COMPLETE_READY_FOR_UI")
+	@:native("IsMissionCompleteReadyForUi")
 	static function isMissionCompleteReadyForUi():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RINGTONE_PLAYING")
+	@:native("IsPedRingtonePlaying")
 	static function isPedRingtonePlaying(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOBILE_PHONE_RADIO_ACTIVE")
+	@:native("IsMobilePhoneRadioActive")
 	static function isMobilePhoneRadioActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MUSIC_ONESHOT_PLAYING")
+	@:native("IsMusicOneshotPlaying")
 	static function isMusicOneshotPlaying():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_RADIO_FADED_OUT")
+	@:native("IsRadioFadedOut")
 	static function isRadioFadedOut():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_RADIO_RETUNING")
+	@:native("IsRadioRetuning")
 	static function isRadioRetuning():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_RADIO_STATION_FAVOURITED")
+	@:native("IsRadioStationFavourited")
 	static function isRadioStationFavourited(radioStation:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_VEH_RADIO_ENABLE")
+	@:native("IsPlayerVehRadioEnable")
 	static function isPlayerVehRadioEnable():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCRIPTED_CONVERSATION_ONGOING")
+	@:native("IsScriptedConversationOngoing")
 	static function isScriptedConversationOngoing():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCRIPTED_CONVERSATION_LOADED")
+	@:native("IsScriptedConversationLoaded")
 	static function isScriptedConversationLoaded():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCRIPTED_SPEECH_PLAYING")
+	@:native("IsScriptedSpeechPlaying")
 	static function isScriptedSpeechPlaying(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_AUDIBLY_DAMAGED")
+	@:native("IsVehicleAudiblyDamaged")
 	static function isVehicleAudiblyDamaged(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_STREAM_PLAYING")
+	@:native("IsStreamPlaying")
 	static function isStreamPlaying():Bool;
 
 	/**
@@ -648,31 +648,31 @@ extern class Audio {
 	 * 
 	 * Names for the streams can be found [here](https://gist.github.com/4mmonium/2bd2c9c54d6ca5cbdb7b156a82a3a85a), the list will be updated as more are found.
 	 */
-	@:native("LOAD_STREAM")
+	@:native("LoadStream")
 	static function loadStream(streamName:String, soundSet:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_VEHICLE_RADIO_ON")
+	@:native("IsVehicleRadioOn")
 	static function isVehicleRadioOn(vehicle:Dynamic):Bool;
 
 	/**
 	 * Links a static emitter to the given entity
 	 */
-	@:native("LINK_STATIC_EMITTER_TO_ENTITY")
+	@:native("LinkStaticEmitterToEntity")
 	static function linkStaticEmitterToEntity(emitterName:String, entity:Dynamic):Dynamic;
 
 	/**
 	 * Load in named stream. Optionally can specify a sound set which contains the sound specified by name.
 	 */
-	@:native("LOAD_STREAM_WITH_START_OFFSET")
+	@:native("LoadStreamWithStartOffset")
 	static function loadStreamWithStartOffset(streamName:String, startOffset:Int, soundSet:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("LOCK_RADIO_STATION_TRACK_LIST")
+	@:native("LockRadioStationTrackList")
 	static function lockRadioStationTrackList(radioStation:String, trackListName:String):Dynamic;
 
 	/**
@@ -682,7 +682,7 @@ extern class Audio {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("LOCK_RADIO_STATION")
+	@:native("LockRadioStation")
 	static function lockRadioStation(radioStationName:String, toggle:Bool):Dynamic;
 
 	/**
@@ -690,13 +690,13 @@ extern class Audio {
 	 * 
 	 * Allows the script to ovverride the current microphone settings
 	 */
-	@:native("OVERRIDE_MICROPHONE_SETTINGS")
+	@:native("OverrideMicrophoneSettings")
 	static function overrideMicrophoneSettings(hash:Int, toggle:Bool):Dynamic;
 
 	/**
 	 * Sets the footstep tuning modes
 	 */
-	@:native("OVERRIDE_PLAYER_GROUND_MATERIAL")
+	@:native("OverridePlayerGroundMaterial")
 	static function overridePlayerGroundMaterial(overriddenMaterialHash:Int, scriptOverrides:Bool):Dynamic;
 
 	/**
@@ -704,7 +704,7 @@ extern class Audio {
 	 * 
 	 * To clear the override use [RESET_TREVOR_RAGE](#\_0xE78503B10C4314E0)
 	 */
-	@:native("OVERRIDE_TREVOR_RAGE")
+	@:native("OverrideTrevorRage")
 	static function overrideTrevorRage(voiceEffect:String):Dynamic;
 
 	/**
@@ -713,7 +713,7 @@ extern class Audio {
 	 * 
 	 * It needs to also be called with OVERRIDE_UNDERWATER_STREAM("", false) in order to stop overriding.
 	 */
-	@:native("OVERRIDE_UNDERWATER_STREAM")
+	@:native("OverrideUnderwaterStream")
 	static function overrideUnderwaterStream(streamName:String, override_:Bool):Dynamic;
 
 	/**
@@ -734,19 +734,19 @@ extern class Audio {
 	 * | `-1815146967` | `2479820329` | `0x93CF0E29` |
 	 * |  `-339919356` | `3955047940` | `0xEBBD3E04` |
 	 */
-	@:native("OVERRIDE_VEH_HORN")
+	@:native("OverrideVehHorn")
 	static function overrideVehHorn(vehicle:Dynamic, override_:Bool, hornHash:Int):Dynamic;
 
 	/**
 	 * To resume the conversation use [RESTART_SCRIPTED_CONVERSATION](#\_0x9AEB285D1818C9AC)
 	 */
-	@:native("PAUSE_SCRIPTED_CONVERSATION")
+	@:native("PauseScriptedConversation")
 	static function pauseScriptedConversation(finishCurrentLine:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_DEFERRED_SOUND_FRONTEND")
+	@:native("PlayDeferredSoundFrontend")
 	static function playDeferredSoundFrontend(soundName:String, soundsetName:String):Dynamic;
 
 	/**
@@ -762,13 +762,13 @@ extern class Audio {
 	 * }
 	 * ```
 	 */
-	@:native("PLAY_ANIMAL_VOCALIZATION")
+	@:native("PlayAnimalVocalization")
 	static function playAnimalVocalization(pedHandle:Dynamic, animalType:Int, speechName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE")
+	@:native("PlayAmbientSpeechFromPositionNative")
 	static function playAmbientSpeechFromPositionNative(speechName:String, voiceName:String, x:Float, y:Float, z:Float, speechParam:String):Dynamic;
 
 	/**
@@ -781,13 +781,13 @@ extern class Audio {
 	 * AUDIO::PLAY_MISSION_COMPLETE_AUDIO("TREVOR_SMALL_01");
 	 * ```
 	 */
-	@:native("PLAY_MISSION_COMPLETE_AUDIO")
+	@:native("PlayMissionCompleteAudio")
 	static function playMissionCompleteAudio(audioName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_END_CREDITS_MUSIC")
+	@:native("PlayEndCreditsMusic")
 	static function playEndCreditsMusic(bActive:Bool):Dynamic;
 
 	/**
@@ -798,7 +798,7 @@ extern class Audio {
 	 * The first param is the ped you want to play it on, the second is the speech name, the third is the voice name, the fourth is the speech param, and the last param is usually always 0.
 	 * ```
 	 */
-	@:native("PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE")
+	@:native("PlayPedAmbientSpeechWithVoiceNative")
 	static function playPedAmbientSpeechWithVoiceNative(ped:Dynamic, speechName:String, voiceName:String, speechParam:String, p4:Bool):Dynamic;
 
 	/**
@@ -808,7 +808,7 @@ extern class Audio {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE")
+	@:native("PlayPedAmbientSpeechAndCloneNative")
 	static function playPedAmbientSpeechAndCloneNative(ped:Dynamic, speechName:String, speechParam:String):Dynamic;
 
 	/**
@@ -860,7 +860,7 @@ extern class Audio {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("PLAY_PED_AMBIENT_SPEECH_NATIVE")
+	@:native("PlayPedAmbientSpeechNative")
 	static function playPedAmbientSpeechNative(ped:Dynamic, speechName:String, speechParam:String):Dynamic;
 
 	/**
@@ -869,7 +869,7 @@ extern class Audio {
 	 * All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr
 	 * ```
 	 */
-	@:native("PLAY_POLICE_REPORT")
+	@:native("PlayPoliceReport")
 	static function playPoliceReport(name:String, p1:Float):Int;
 
 	/**
@@ -920,7 +920,7 @@ extern class Audio {
 	 * }
 	 * ```
 	 */
-	@:native("PLAY_PAIN")
+	@:native("PlayPain")
 	static function playPain(ped:Dynamic, damageReason:Int, rawDamage:Float):Dynamic;
 
 	/**
@@ -930,7 +930,7 @@ extern class Audio {
 	 * gtaforums.com/topic/795622-audio-for-mods  
 	 * ```
 	 */
-	@:native("PLAY_SOUND_FROM_ENTITY")
+	@:native("PlaySoundFromEntity")
 	static function playSoundFromEntity(soundId:Int, audioName:String, entity:Dynamic, audioRef:String, isNetwork:Bool, p5:Dynamic):Dynamic;
 
 	/**
@@ -940,7 +940,7 @@ extern class Audio {
 	 * AUDIO::PLAY_PED_RINGTONE("Dial_and_Remote_Ring", PLAYER::PLAYER_PED_ID(), 1);  
 	 * ```
 	 */
-	@:native("PLAY_PED_RINGTONE")
+	@:native("PlayPedRingtone")
 	static function playPedRingtone(ringtoneName:String, ped:Dynamic, p2:Bool):Dynamic;
 
 	/**
@@ -948,7 +948,7 @@ extern class Audio {
 	 * All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/A8Ny8AHZ  
 	 * ```
 	 */
-	@:native("PLAY_SOUND")
+	@:native("PlaySound")
 	static function playSound(soundId:Int, audioName:String, audioRef:String, p3:Bool, p4:Dynamic, p5:Bool):Dynamic;
 
 	/**
@@ -957,7 +957,7 @@ extern class Audio {
 	 * gtaforums.com/topic/795622-audio-for-mods  
 	 * ```
 	 */
-	@:native("PLAY_SOUND_FROM_COORD")
+	@:native("PlaySoundFromCoord")
 	static function playSoundFromCoord(soundId:Int, audioName:String, x:Float, y:Float, z:Float, audioRef:String, isNetwork:Bool, range:Int, p8:Bool):Dynamic;
 
 	/**
@@ -966,61 +966,61 @@ extern class Audio {
 	 * All occurrences as of Cayo Perico Heist DLC (b2189), sorted alphabetically and identical lines removed: https://git.io/JtLxM
 	 * ```
 	 */
-	@:native("PLAY_SOUND_FRONTEND")
+	@:native("PlaySoundFrontend")
 	static function playSoundFrontend(soundId:Int, audioName:String, audioRef:String, p3:Bool):Dynamic;
 
 	/**
 	 * Plays a preloaded stream back from the specified Vector3.
 	 */
-	@:native("PLAY_STREAM_FROM_POSITION")
+	@:native("PlayStreamFromPosition")
 	static function playStreamFromPosition(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * Plays a preloaded stream back from the specified object.
 	 */
-	@:native("PLAY_STREAM_FROM_OBJECT")
+	@:native("PlayStreamFromObject")
 	static function playStreamFromObject(object:Dynamic):Dynamic;
 
 	/**
 	 * Plays a preloaded stream back from the specified ped vehicle
 	 */
-	@:native("PLAY_STREAM_FROM_VEHICLE")
+	@:native("PlayStreamFromVehicle")
 	static function playStreamFromVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Plays a preloaded stream back from the specified ped.
 	 */
-	@:native("PLAY_STREAM_FROM_PED")
+	@:native("PlayStreamFromPed")
 	static function playStreamFromPed(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_SYNCHRONIZED_AUDIO_EVENT")
+	@:native("PlaySynchronizedAudioEvent")
 	static function playSynchronizedAudioEvent(sceneId:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_VEHICLE_DOOR_OPEN_SOUND")
+	@:native("PlayVehicleDoorOpenSound")
 	static function playVehicleDoorOpenSound(vehicle:Dynamic, doorIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_VEHICLE_DOOR_CLOSE_SOUND")
+	@:native("PlayVehicleDoorCloseSound")
 	static function playVehicleDoorCloseSound(vehicle:Dynamic, doorIndex:Int):Dynamic;
 
 	/**
 	 * Prepares any banks required to play the given alarm
 	 */
-	@:native("PREPARE_ALARM")
+	@:native("PrepareAlarm")
 	static function prepareAlarm(alarmName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_STREAM_FRONTEND")
+	@:native("PlayStreamFrontend")
 	static function playStreamFrontend():Dynamic;
 
 	/**
@@ -1030,7 +1030,7 @@ extern class Audio {
 	 * 
 	 * If they want to check that the conversation is done preloading, they can use [GET_IS_PRELOADED_CONVERSATION_READY](#\_0xE73364DB90778FFA)
 	 */
-	@:native("PRELOAD_SCRIPT_CONVERSATION")
+	@:native("PreloadScriptConversation")
 	static function preloadScriptConversation(displaySubtitles:Bool, addToBriefScreen:Bool, cloneConversation:Bool, interruptible:Bool):Dynamic;
 
 	/**
@@ -1040,73 +1040,73 @@ extern class Audio {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("PRELOAD_VEHICLE_AUDIO_BANK")
+	@:native("PreloadVehicleAudioBank")
 	static function preloadVehicleAudioBank(model:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PRELOAD_SCRIPT_PHONE_CONVERSATION")
+	@:native("PreloadScriptPhoneConversation")
 	static function preloadScriptPhoneConversation(displaySubtitles:Bool, addToBriefScreen:Bool):Dynamic;
 
 	/**
 	 * Creates a broken glass area
 	 */
-	@:native("RECORD_BROKEN_GLASS")
+	@:native("RecordBrokenGlass")
 	static function recordBrokenGlass(x:Float, y:Float, z:Float, radius:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("PREPARE_SYNCHRONIZED_AUDIO_EVENT_FOR_SCENE")
+	@:native("PrepareSynchronizedAudioEventForScene")
 	static function prepareSynchronizedAudioEventForScene(sceneId:Int, audioEvent:String):Bool;
 
 	/**
 	 * This native has been marked as deprecated internally, please use [RELEASE_SCRIPT_AUDIO_BANK](#\_0x7A2D8AD0A9EB9C3F) instead.
 	 */
-	@:native("RELEASE_AMBIENT_AUDIO_BANK")
+	@:native("ReleaseAmbientAudioBank")
 	static function releaseAmbientAudioBank():Dynamic;
 
 	/**
 	 * Prepares the specified music event. Preparing it in advance will preload any required data so that it's ready to play immediately.
 	 */
-	@:native("PREPARE_MUSIC_EVENT")
+	@:native("PrepareMusicEvent")
 	static function prepareMusicEvent(eventName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PREPARE_SYNCHRONIZED_AUDIO_EVENT")
+	@:native("PrepareSynchronizedAudioEvent")
 	static function prepareSynchronizedAudioEvent(audioEvent:String, startOffsetMs:Int):Bool;
 
 	/**
 	 * Refreshes the closest shoreline using the nearest road position.
 	 */
-	@:native("REFRESH_CLOSEST_OCEAN_SHORELINE")
+	@:native("RefreshClosestOceanShoreline")
 	static function refreshClosestOceanShoreline():Dynamic;
 
 	/**
 	 * Unloads the specified audioBank
 	 */
-	@:native("RELEASE_NAMED_SCRIPT_AUDIO_BANK")
+	@:native("ReleaseNamedScriptAudioBank")
 	static function releaseNamedScriptAudioBank(audioBank:String):Dynamic;
 
 	/**
 	 * This native has been marked as deprecated internally, please use [RELEASE_SCRIPT_AUDIO_BANK](#\_0x7A2D8AD0A9EB9C3F) instead.
 	 */
-	@:native("RELEASE_MISSION_AUDIO_BANK")
+	@:native("ReleaseMissionAudioBank")
 	static function releaseMissionAudioBank():Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("REGISTER_SCRIPT_WITH_AUDIO")
+	@:native("RegisterScriptWithAudio")
 	static function registerScriptWithAudio(inChargeOfAudio:Bool):Dynamic;
 
 	/**
 	 * This should be called once a sound has finished being manipulated by the script so that its SoundId can be released and re-used.
 	 */
-	@:native("RELEASE_SOUND_ID")
+	@:native("ReleaseSoundId")
 	static function releaseSoundId(soundId:Int):Dynamic;
 
 	/**
@@ -1121,7 +1121,7 @@ extern class Audio {
 	 * 
 	 * For events like cars driving through windows, allows script to unocclude that window
 	 */
-	@:native("REMOVE_PORTAL_SETTINGS_OVERRIDE")
+	@:native("RemovePortalSettingsOverride")
 	static function removePortalSettingsOverride(portalSettingsName:String):Dynamic;
 
 	/**
@@ -1129,13 +1129,13 @@ extern class Audio {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("RELEASE_WEAPON_AUDIO")
+	@:native("ReleaseWeaponAudio")
 	static function releaseWeaponAudio():Dynamic;
 
 	/**
 	 * Unloads all audio banks requested by this script.
 	 */
-	@:native("RELEASE_SCRIPT_AUDIO_BANK")
+	@:native("ReleaseScriptAudioBank")
 	static function releaseScriptAudioBank():Dynamic;
 
 	/**
@@ -1145,13 +1145,13 @@ extern class Audio {
 	 * 
 	 * *   **playerBits**:
 	 */
-	@:native("REQUEST_AMBIENT_AUDIO_BANK")
+	@:native("RequestAmbientAudioBank")
 	static function requestAmbientAudioBank(bankName:String, bOverNetwork:Bool):Bool;
 
 	/**
 	 * Removes an entity from its current mix group.
 	 */
-	@:native("REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP")
+	@:native("RemoveEntityFromAudioMixGroup")
 	static function removeEntityFromAudioMixGroup(entity:Dynamic, fadeOut:Float):Dynamic;
 
 	/**
@@ -1161,13 +1161,13 @@ extern class Audio {
 	 * 
 	 * *   **playerBits**:
 	 */
-	@:native("REQUEST_MISSION_AUDIO_BANK")
+	@:native("RequestMissionAudioBank")
 	static function requestMissionAudioBank(bankName:String, bOverNetwork:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PED_AUDIO_FLAGS")
+	@:native("ResetPedAudioFlags")
 	static function resetPedAudioFlags(ped:Dynamic):Dynamic;
 
 	/**
@@ -1175,73 +1175,73 @@ extern class Audio {
 	 * 
 	 * *   **playerBits**:
 	 */
-	@:native("REQUEST_SCRIPT_AUDIO_BANK")
+	@:native("RequestScriptAudioBank")
 	static function requestScriptAudioBank(bankName:String, bOverNetwork:Bool):Bool;
 
 	/**
 	 * Resets the override for [SET_VEHICLE_STARTUP_REV_SOUND](#\_0xF1F8157B8C3F171C)
 	 */
-	@:native("RESET_VEHICLE_STARTUP_REV_SOUND")
+	@:native("ResetVehicleStartupRevSound")
 	static function resetVehicleStartupRevSound(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * Loads the tennis vocalization banks into a couple animal slots.
 	 */
-	@:native("REQUEST_TENNIS_BANKS")
+	@:native("RequestTennisBanks")
 	static function requestTennisBanks(opponentPed:Dynamic):Dynamic;
 
 	/**
 	 * Clears the override set by [OVERRIDE_TREVOR_RAGE](#\_0x13AD665062541A7E)
 	 */
-	@:native("RESET_TREVOR_RAGE")
+	@:native("ResetTrevorRage")
 	static function resetTrevorRage():Dynamic;
 
 	/**
 	 * Overrides wind elevation sounds
 	 */
-	@:native("SCRIPT_OVERRIDES_WIND_ELEVATION")
+	@:native("ScriptOverridesWindElevation")
 	static function scriptOverridesWindElevation(override_:Bool, windElevationHashName:Int):Dynamic;
 
 	/**
 	 * Restarts a conversation that was previously paused with [PAUSE_SCRIPTED_CONVERSATION](#\_0x8530AD776CD72B12)
 	 */
-	@:native("RESTART_SCRIPTED_CONVERSATION")
+	@:native("RestartScriptedConversation")
 	static function restartScriptedConversation():Dynamic;
 
 	/**
 	 * Makes pedestrians sound their horn longer, faster and more agressive when they use their horn.
 	 */
-	@:native("SET_AGGRESSIVE_HORNS")
+	@:native("SetAggressiveHorns")
 	static function setAggressiveHorns(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_ZONE_STATE_PERSISTENT")
+	@:native("SetAmbientZoneStatePersistent")
 	static function setAmbientZoneStatePersistent(zoneName:String, enabled:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
 	 * Sets the specified ped to use a specific voice different to the one associated with their model.
 	 */
-	@:native("SET_AMBIENT_VOICE_NAME")
+	@:native("SetAmbientVoiceName")
 	static function setAmbientVoiceName(ped:Dynamic, voiceName:String):Dynamic;
 
 	/**
 	 * Sets the specified ped to use a specific voice different to the one associated with their model.
 	 */
-	@:native("SET_AMBIENT_VOICE_NAME_HASH")
+	@:native("SetAmbientVoiceNameHash")
 	static function setAmbientVoiceNameHash(ped:Dynamic, hash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT")
+	@:native("SetAmbientZoneListStatePersistent")
 	static function setAmbientZoneListStatePersistent(ambientZone:String, enabled:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_ZONE_LIST_STATE")
+	@:native("SetAmbientZoneListState")
 	static function setAmbientZoneListState(zoneListName:String, enabled:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -1262,13 +1262,13 @@ extern class Audio {
 	 * };
 	 * ```
 	 */
-	@:native("SET_AUDIO_SPECIAL_EFFECT_MODE")
+	@:native("SetAudioSpecialEffectMode")
 	static function setAudioSpecialEffectMode(mode:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AMBIENT_ZONE_STATE")
+	@:native("SetAmbientZoneState")
 	static function setAmbientZoneState(zoneName:String, enabled:Bool, forceUpdate:Bool):Dynamic;
 
 	/**
@@ -1292,7 +1292,7 @@ extern class Audio {
 	 * }
 	 * ```
 	 */
-	@:native("SET_AUDIO_VEHICLE_PRIORITY")
+	@:native("SetAudioVehiclePriority")
 	static function setAudioVehiclePriority(vehicle:Dynamic, priority:Int):Dynamic;
 
 	/**
@@ -1305,7 +1305,7 @@ extern class Audio {
 	 * }
 	 * ```
 	 */
-	@:native("SET_ANIMAL_MOOD")
+	@:native("SetAnimalMood")
 	static function setAnimalMood(animal:Dynamic, mood:Int):Dynamic;
 
 	/**
@@ -1422,25 +1422,25 @@ extern class Audio {
 	 * ID: 63 | Hash: 0xBFFDD2B7
 	 * ```
 	 */
-	@:native("SET_AUDIO_FLAG")
+	@:native("SetAudioFlag")
 	static function setAudioFlag(flagName:String, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AUDIO_SCENE_VARIABLE")
+	@:native("SetAudioSceneVariable")
 	static function setAudioSceneVariable(scene:String, variableName:String, value:Float):Dynamic;
 
 	/**
 	 * Set a delay in milliseconds for the audio to be cleaned up when the script finishes.
 	 */
-	@:native("SET_AUDIO_SCRIPT_CLEANUP_TIME")
+	@:native("SetAudioScriptCleanupTime")
 	static function setAudioScriptCleanupTime(timeMs:Int):Dynamic;
 
 	/**
 	 * Retunes a named static emitter to the specified station
 	 */
-	@:native("SET_EMITTER_RADIO_STATION")
+	@:native("SetEmitterRadioStation")
 	static function setEmitterRadioStation(emitterName:String, radioStation:String):Dynamic;
 
 	/**
@@ -1453,51 +1453,51 @@ extern class Audio {
 	 * 
 	 * Add a suffix to the cutscene audio name. Call before loading the cutscene.
 	 */
-	@:native("SET_CUTSCENE_AUDIO_OVERRIDE")
+	@:native("SetCutsceneAudioOverride")
 	static function setCutsceneAudioOverride(name:String):Dynamic;
 
 	/**
 	 * Allows the radio to be played in the frontend.
 	 */
-	@:native("SET_FRONTEND_RADIO_ACTIVE")
+	@:native("SetFrontendRadioActive")
 	static function setFrontendRadioActive(active:Bool):Dynamic;
 
 	/**
 	 * Sets whether or not scripted conversation flow should be controlled by anim triggers
 	 */
-	@:native("SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM")
+	@:native("SetConversationAudioControlledByAnim")
 	static function setConversationAudioControlledByAnim(enable:Bool):Dynamic;
 
 	/**
 	 * Used to determine whether conversation should use robot speech or not
 	 */
-	@:native("SET_CONVERSATION_AUDIO_PLACEHOLDER")
+	@:native("SetConversationAudioPlaceholder")
 	static function setConversationAudioPlaceholder(isPlaceHolder:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_INITIAL_PLAYER_STATION")
+	@:native("SetInitialPlayerStation")
 	static function setInitialPlayerStation(radioStation:String):Dynamic;
 
 	/**
 	 * Queues up a custom track list on the specified radio station. The content in the track list will be played as soon as possible.
 	 * The station does not have to be frozen.
 	 */
-	@:native("SET_CUSTOM_RADIO_TRACK_LIST")
+	@:native("SetCustomRadioTrackList")
 	static function setCustomRadioTrackList(radioStation:String, trackListName:String, forceNow:Bool):Dynamic;
 
 	/**
 	 * Sets the global radio signal level, lower value will cause radio static.
 	 * Used only a handful of times in scripts.
 	 */
-	@:native("SET_GLOBAL_RADIO_SIGNAL_LEVEL")
+	@:native("SetGlobalRadioSignalLevel")
 	static function setGlobalRadioSignalLevel(signalLevel:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ENTITY_FOR_NULL_CONV_PED")
+	@:native("SetEntityForNullConvPed")
 	static function setEntityForNullConvPed(speakerConversationIndex:Int, entity:Dynamic):Dynamic;
 
 	/**
@@ -1509,25 +1509,25 @@ extern class Audio {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_PED_AUDIO_FOOTSTEP_LOUD")
+	@:native("SetPedAudioFootstepLoud")
 	static function SetPedAudioFootstepLoud(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_GPS_ACTIVE")
+	@:native("SetGpsActive")
 	static function setGpsActive(active:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MOBILE_PHONE_RADIO_STATE")
+	@:native("SetMobilePhoneRadioState")
 	static function setMobilePhoneRadioState(state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HORN_ENABLED")
+	@:native("SetHornEnabled")
 	static function setHornEnabled(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1535,7 +1535,7 @@ extern class Audio {
 	 * If this is the correct name, what microphone? I know your TV isn't going to reach out and adjust your headset so..  
 	 * ```
 	 */
-	@:native("SET_MICROPHONE_POSITION")
+	@:native("SetMicrophonePosition")
 	static function setMicrophonePosition(p0:Bool, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, x3:Float, y3:Float, z3:Float):Dynamic;
 
 	/**
@@ -1543,31 +1543,31 @@ extern class Audio {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("SET_PED_CLOTH_EVENTS_ENABLED")
+	@:native("SetPedClothEventsEnabled")
 	static function setPedClothEventsEnabled(ped:Dynamic, enabled:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MOBILE_RADIO_ENABLED_DURING_GAMEPLAY")
+	@:native("SetMobileRadioEnabledDuringGameplay")
 	static function setMobileRadioEnabledDuringGameplay(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_RACE_AND_VOICE_GROUP")
+	@:native("SetPedRaceAndVoiceGroup")
 	static function setPedRaceAndVoiceGroup(ped:Dynamic, pedRace:Int, pvgHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PED_AUDIO_GENDER")
+	@:native("SetPedAudioGender")
 	static function SetPedAudioGender(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * Sets the ped so they sound drunk
 	 */
-	@:native("SET_PED_IS_DRUNK")
+	@:native("SetPedIsDrunk")
 	static function setPedIsDrunk(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1579,7 +1579,7 @@ extern class Audio {
 	 * AUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("FEMALE_LOST_WHITE_PVG"));
 	 * ```
 	 */
-	@:native("_SET_PED_VOICE_GROUP")
+	@:native("SetPedVoiceGroup")
 	static function SetPedVoiceGroup(ped:Dynamic, voiceGroupHash:Int):Dynamic;
 
 	/**
@@ -1587,13 +1587,13 @@ extern class Audio {
 	 * 
 	 * If you want to use this for interiors, use [SET_PED_INTERIOR_WALLA_DENSITY](#\_0x8BF907833BE275DE)
 	 */
-	@:native("SET_PED_WALLA_DENSITY")
+	@:native("SetPedWallaDensity")
 	static function setPedWallaDensity(density:Float, applyValue:Float):Dynamic;
 
 	/**
 	 * Calls the same internal function [`_SET_PED_VOICE_GROUP`](#\_0x7CDC8C3B89F661B3) calls, but passes `voiceGroupHash` (defined as a parameter in the referenced native) as `0`.
 	 */
-	@:native("SET_PED_VOICE_FULL")
+	@:native("SetPedVoiceFull")
 	static function setPedVoiceFull(ped:Dynamic):Dynamic;
 
 	/**
@@ -1605,55 +1605,55 @@ extern class Audio {
 	 * NativeDB Introduced: v2699
 	 * ```
 	 */
-	@:native("_SET_PED_VOICE_GROUP_RACE")
+	@:native("SetPedVoiceGroupRace")
 	static function SetPedVoiceGroupRace(ped:Dynamic, voiceGroupHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PORTAL_SETTINGS_OVERRIDE")
+	@:native("SetPortalSettingsOverride")
 	static function setPortalSettingsOverride(oldPortalSettingsName:String, newPortalSettingsName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_POSITION_FOR_NULL_CONV_PED")
+	@:native("SetPositionForNullConvPed")
 	static function setPositionForNullConvPed(speakerConversationIndex:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_POSITIONED_PLAYER_VEHICLE_RADIO_EMITTER_ENABLED")
+	@:native("SetPositionedPlayerVehicleRadioEmitterEnabled")
 	static function setPositionedPlayerVehicleRadioEmitterEnabled(enabled:Bool):Dynamic;
 
 	/**
 	 * Sets a player ped to use his ANGRY speech contexts
 	 */
-	@:native("SET_PLAYER_ANGRY")
+	@:native("SetPlayerAngry")
 	static function setPlayerAngry(ped:Dynamic, isAngry:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADIO_AUTO_UNFREEZE")
+	@:native("SetRadioAutoUnfreeze")
 	static function setRadioAutoUnfreeze(toggle:Bool):Dynamic;
 
 	/**
 	 * Enable player vehicle specific alarm disarm/arm sound triggering
 	 */
-	@:native("SET_PLAYER_VEHICLE_ALARM_AUDIO_ACTIVE")
+	@:native("SetPlayerVehicleAlarmAudioActive")
 	static function setPlayerVehicleAlarmAudioActive(vehicle:Dynamic, active:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_RADIO_FRONTEND_FADE_TIME")
+	@:native("SetRadioFrontendFadeTime")
 	static function setRadioFrontendFadeTime(fadeTime:Float):Dynamic;
 
 	/**
 	 * Find the radio station list [here](https://gist.github.com/4mmonium/b47d6512a2d992cbf4eea15d9038b581)
 	 */
-	@:native("SET_RADIO_TO_STATION_NAME")
+	@:native("SetRadioToStationName")
 	static function setRadioToStationName(stationName:String):Dynamic;
 
 	/**
@@ -1664,7 +1664,7 @@ extern class Audio {
 	 * AUDIO::SET_RADIO_STATION_MUSIC_ONLY(AUDIO::GET_RADIO_STATION_NAME(10), 1);
 	 * ```
 	 */
-	@:native("SET_RADIO_STATION_MUSIC_ONLY")
+	@:native("SetRadioStationMusicOnly")
 	static function setRadioStationMusicOnly(radioStation:String, toggle:Bool):Dynamic;
 
 	/**
@@ -1672,7 +1672,7 @@ extern class Audio {
 	 * Sets radio station by index.  
 	 * ```
 	 */
-	@:native("SET_RADIO_TO_STATION_INDEX")
+	@:native("SetRadioToStationIndex")
 	static function setRadioToStationIndex(radioStation:Int):Dynamic;
 
 	/**
@@ -1682,7 +1682,7 @@ extern class Audio {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_RADIO_STATION_IS_VISIBLE")
+	@:native("SetRadioStationIsVisible")
 	static function SetRadioStationIsVisible(radioStation:String, toggle:Bool):Dynamic;
 
 	/**
@@ -1690,13 +1690,13 @@ extern class Audio {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_SIREN_KEEP_ON")
+	@:native("SetSirenKeepOn")
 	static function SetSirenKeepOn(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCRIPT_UPDATE_DOOR_AUDIO")
+	@:native("SetScriptUpdateDoorAudio")
 	static function setScriptUpdateDoorAudio(doorHash:Int, toggle:Bool):Dynamic;
 
 	/**
@@ -1705,7 +1705,7 @@ extern class Audio {
 	 * AUDIO::SET_RADIO_TRACK("RADIO_03_HIPHOP_NEW", "ARM1_RADIO_STARTS");  
 	 * ```
 	 */
-	@:native("SET_RADIO_TRACK")
+	@:native("SetRadioTrack")
 	static function setRadioTrack(radioStation:String, radioTrack:String):Dynamic;
 
 	/**
@@ -1713,7 +1713,7 @@ extern class Audio {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_RADIO_TRACK_MIX")
+	@:native("SetRadioTrackMix")
 	static function SetRadioTrackMix(radioStationName:String, mixName:String, p2:Int):Dynamic;
 
 	/**
@@ -1723,7 +1723,7 @@ extern class Audio {
 	 * This turns off surrounding sounds not connected directly to peds.
 	 * ```
 	 */
-	@:native("SET_STATIC_EMITTER_ENABLED")
+	@:native("SetStaticEmitterEnabled")
 	static function setStaticEmitterEnabled(emitterName:String, toggle:Bool):Dynamic;
 
 	/**
@@ -1735,25 +1735,25 @@ extern class Audio {
 	 * "ZoomLevel"  
 	 * ```
 	 */
-	@:native("SET_VARIABLE_ON_STREAM")
+	@:native("SetVariableOnStream")
 	static function setVariableOnStream(p0:String, p1:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SIREN_WITH_NO_DRIVER")
+	@:native("SetSirenWithNoDriver")
 	static function setSirenWithNoDriver(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_USER_RADIO_CONTROL_ENABLED")
+	@:native("SetUserRadioControlEnabled")
 	static function setUserRadioControlEnabled(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VARIABLE_ON_SOUND")
+	@:native("SetVariableOnSound")
 	static function setVariableOnSound(soundId:Int, variableName:String, value:Float):Dynamic;
 
 	/**
@@ -1761,7 +1761,7 @@ extern class Audio {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_VEH_HAS_RADIO_OVERRIDE")
+	@:native("SetVehHasRadioOverride")
 	static function SetVehHasRadioOverride(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -1769,13 +1769,13 @@ extern class Audio {
 	 * SET_VARIABLE_ON_*
 	 * ```
 	 */
-	@:native("_SET_VARIABLE_ON_CUTSCENE_AUDIO")
+	@:native("SetVariableOnCutsceneAudio")
 	static function SetVariableOnCutsceneAudio(variableName:String, value:Float):Dynamic;
 
 	/**
 	 * Find the radio station list [here](https://gist.github.com/4mmonium/b47d6512a2d992cbf4eea15d9038b581)
 	 */
-	@:native("SET_VEH_RADIO_STATION")
+	@:native("SetVehRadioStation")
 	static function setVehRadioStation(vehicle:Dynamic, radioStation:String):Dynamic;
 
 	/**
@@ -1784,19 +1784,19 @@ extern class Audio {
 	 * AUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM("inTunnel", 0.0);
 	 * ```
 	 */
-	@:native("SET_VARIABLE_ON_UNDER_WATER_STREAM")
+	@:native("SetVariableOnUnderWaterStream")
 	static function setVariableOnUnderWaterStream(variableName:String, value:Float):Dynamic;
 
 	/**
 	 * Vehicle will make a 'rattling' noise when decelerating
 	 */
-	@:native("SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR")
+	@:native("SetVehicleAudioBodyDamageFactor")
 	static function setVehicleAudioBodyDamageFactor(vehicle:Dynamic, intensity:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_AUDIO_ENGINE_DAMAGE_FACTOR")
+	@:native("SetVehicleAudioEngineDamageFactor")
 	static function setVehicleAudioEngineDamageFactor(vehicle:Dynamic, damageFactor:Float):Dynamic;
 
 	/**
@@ -1806,7 +1806,7 @@ extern class Audio {
 	 * Will give a boost-soundeffect.  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_BOOST_ACTIVE")
+	@:native("SetVehicleBoostActive")
 	static function setVehicleBoostActive(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1814,7 +1814,7 @@ extern class Audio {
 	 * NativeDB Introduced: v1365
 	 * ```
 	 */
-	@:native("_SET_VEHICLE_HORN_VARIATION")
+	@:native("SetVehicleHornVariation")
 	static function SetVehicleHornVariation(vehicle:Dynamic, value:Int):Dynamic;
 
 	/**
@@ -1822,7 +1822,7 @@ extern class Audio {
 	 * can't seem to enable radio on cop cars etc  
 	 * ```
 	 */
-	@:native("SET_VEHICLE_RADIO_ENABLED")
+	@:native("SetVehicleRadioEnabled")
 	static function setVehicleRadioEnabled(vehicle:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1830,37 +1830,37 @@ extern class Audio {
 	 * 
 	 * You can reset this with [RESET_VEHICLE_STARTUP_REV_SOUND](#\_0xD2DCCD8E16E20997)
 	 */
-	@:native("SET_VEHICLE_STARTUP_REV_SOUND")
+	@:native("SetVehicleStartupRevSound")
 	static function setVehicleStartupRevSound(vehicle:Dynamic, soundName:String, setName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_VEHICLE_RADIO_LOUD")
+	@:native("SetVehicleRadioLoud")
 	static function setVehicleRadioLoud(vehicle:Dynamic, loud:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SKIP_TO_NEXT_SCRIPTED_CONVERSATION_LINE")
+	@:native("SkipToNextScriptedConversationLine")
 	static function skipToNextScriptedConversationLine():Dynamic;
 
 	/**
 	 * You should call [PREPARE_ALARM](#\_0x9D74AE343DB65533) and wait for its value to be true before using this
 	 */
-	@:native("START_ALARM")
+	@:native("StartAlarm")
 	static function startAlarm(alarmName:String, skipStartup:Bool):Dynamic;
 
 	/**
 	 * For use with [PRELOAD_SCRIPT_CONVERSATION](#\_0x3B3CAD6166916D87) and [GET_IS_PRELOADED_CONVERSATION_READY](#\_0xE73364DB90778FFA)
 	 */
-	@:native("START_PRELOADED_CONVERSATION")
+	@:native("StartPreloadedConversation")
 	static function startPreloadedConversation():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SKIP_RADIO_FORWARD")
+	@:native("SkipRadioForward")
 	static function skipRadioForward():Dynamic;
 
 	/**
@@ -1868,7 +1868,7 @@ extern class Audio {
 	 * SET_*
 	 * ```
 	 */
-	@:native("_SOUND_VEHICLE_HORN_THIS_FRAME")
+	@:native("SoundVehicleHornThisFrame")
 	static function SoundVehicleHornThisFrame(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -1877,67 +1877,67 @@ extern class Audio {
 	 * List of all usable scene names found in b617d. Sorted alphabetically and identical names removed: pastebin.com/MtM9N9CC  
 	 * ```
 	 */
-	@:native("START_AUDIO_SCENE")
+	@:native("StartAudioScene")
 	static function startAudioScene(scene:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_ALARM")
+	@:native("StopAlarm")
 	static function stopAlarm(alarmName:String, instantStop:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_ALL_ALARMS")
+	@:native("StopAllAlarms")
 	static function stopAllAlarms(instantStop:Bool):Dynamic;
 
 	/**
 	 * Stops currently playing ambient speech.
 	 */
-	@:native("STOP_CURRENT_PLAYING_AMBIENT_SPEECH")
+	@:native("StopCurrentPlayingAmbientSpeech")
 	static function stopCurrentPlayingAmbientSpeech(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_SCRIPT_PHONE_CONVERSATION")
+	@:native("StartScriptPhoneConversation")
 	static function startScriptPhoneConversation(displaySubtitles:Bool, addToBriefScreen:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_SCRIPT_CONVERSATION")
+	@:native("StartScriptConversation")
 	static function startScriptConversation(displaySubtitles:Bool, addToBriefScreen:Bool, cloneConversation:Bool, interruptible:Bool):Dynamic;
 
 	/**
 	 * Stops all mixed scenes which were previously started by this script
 	 */
-	@:native("STOP_AUDIO_SCENES")
+	@:native("StopAudioScenes")
 	static function stopAudioScenes():Dynamic;
 
 	/**
 	 * Stops currently playing speech (Pain, ambient, scripted, breathing).
 	 */
-	@:native("STOP_CURRENT_PLAYING_SPEECH")
+	@:native("StopCurrentPlayingSpeech")
 	static function stopCurrentPlayingSpeech(ped:Dynamic):Dynamic;
 
 	/**
 	 * Stops the named mixing scene (which was previously started by this script)
 	 */
-	@:native("STOP_AUDIO_SCENE")
+	@:native("StopAudioScene")
 	static function stopAudioScene(sceneName:String):Dynamic;
 
 	/**
 	 * Stops audio for the current cutscene.
 	 */
-	@:native("STOP_CUTSCENE_AUDIO")
+	@:native("StopCutsceneAudio")
 	static function stopCutsceneAudio():Dynamic;
 
 	/**
 	 * Stops a ped's ringtone from playing
 	 */
-	@:native("STOP_PED_RINGTONE")
+	@:native("StopPedRingtone")
 	static function stopPedRingtone(ped:Dynamic):Dynamic;
 
 	/**
@@ -1947,7 +1947,7 @@ extern class Audio {
 	 * 
 	 * Nb. This does not sync over the network, it will only affect peds locally. Use [STOP_PED_SPEAKING_SYNCED](#\_0xAB6781A5F3101470) if you need to affect peds on other machines too.
 	 */
-	@:native("STOP_PED_SPEAKING")
+	@:native("StopPedSpeaking")
 	static function stopPedSpeaking(ped:Dynamic, shouldDisable:Bool):Dynamic;
 
 	/**
@@ -1956,13 +1956,13 @@ extern class Audio {
 	 * All music event names found in the b617d scripts: pastebin.com/GnYt0R3P  
 	 * ```
 	 */
-	@:native("TRIGGER_MUSIC_EVENT")
+	@:native("TriggerMusicEvent")
 	static function triggerMusicEvent(eventName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SCRIPTED_CONVERSATION")
+	@:native("StopScriptedConversation")
 	static function stopScriptedConversation(finishCurrentLine:Bool):Int;
 
 	/**
@@ -1972,44 +1972,44 @@ extern class Audio {
 	 * 
 	 * The ped will also be prevented from speaking on remote machines. Use [STOP_PED_SPEAKING](#\_0x9D64D7405520E3D3) if you just want to affect the local machine.
 	 */
-	@:native("STOP_PED_SPEAKING_SYNCED")
+	@:native("StopPedSpeakingSynced")
 	static function stopPedSpeakingSynced(ped:Dynamic, shouldDisable:Bool):Dynamic;
 
 	/**
 	 * Stops all smoke grenade sounds
 	 */
-	@:native("STOP_SMOKE_GRENADE_EXPLOSION_SOUNDS")
+	@:native("StopSmokeGrenadeExplosionSounds")
 	static function stopSmokeGrenadeExplosionSounds():Dynamic;
 
 	/**
 	 * Stops the sound from currently playing, there isn't a way to resume a sound
 	 * after stopping it.
 	 */
-	@:native("STOP_SOUND")
+	@:native("StopSound")
 	static function stopSound(soundId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNLOCK_MISSION_NEWS_STORY")
+	@:native("UnlockMissionNewsStory")
 	static function unlockMissionNewsStory(newsStory:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_STREAM")
+	@:native("StopStream")
 	static function stopStream():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNFREEZE_RADIO_STATION")
+	@:native("UnfreezeRadioStation")
 	static function unfreezeRadioStation(radioStation:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("STOP_SYNCHRONIZED_AUDIO_EVENT")
+	@:native("StopSynchronizedAudioEvent")
 	static function stopSynchronizedAudioEvent(p0:Dynamic):Bool;
 
 	/**
@@ -2019,7 +2019,7 @@ extern class Audio {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_TRIGGER_SIREN")
+	@:native("TriggerSiren")
 	static function TriggerSiren(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -2027,7 +2027,7 @@ extern class Audio {
 	 * AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST("RADIO_16_SILVERLAKE", "MIRRORPARK_LOCKED");
 	 * ```
 	 */
-	@:native("UNLOCK_RADIO_STATION_TRACK_LIST")
+	@:native("UnlockRadioStationTrackList")
 	static function unlockRadioStationTrackList(radioStation:String, trackListName:String):Dynamic;
 
 	/**
@@ -2037,19 +2037,19 @@ extern class Audio {
 	 * 
 	 * Removes all instances of a given context block.
 	 */
-	@:native("UNBLOCK_SPEECH_CONTEXT_GROUP")
+	@:native("UnblockSpeechContextGroup")
 	static function unblockSpeechContextGroup(groupName:String):Dynamic;
 
 	/**
 	 * Unloads tennis vocalization banks loaded with [`REQUEST_TENNIS_BANKS`](#\_0x4ADA3F19BE4A6047).
 	 */
-	@:native("UNREQUEST_TENNIS_BANKS")
+	@:native("UnrequestTennisBanks")
 	static function unrequestTennisBanks():Dynamic;
 
 	/**
 	 * Updates a playing sounds absolute position.
 	 */
-	@:native("UPDATE_SOUND_COORD")
+	@:native("UpdateSoundCoord")
 	static function updateSoundCoord(soundId:Int, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -2059,7 +2059,7 @@ extern class Audio {
 	 * On last-gen this just runs blr and this func is called by several other functions other then the native's table.  
 	 * ```
 	 */
-	@:native("UNREGISTER_SCRIPT_WITH_AUDIO")
+	@:native("UnregisterScriptWithAudio")
 	static function unregisterScriptWithAudio():Dynamic;
 
 	/**
@@ -2069,19 +2069,19 @@ extern class Audio {
 	 * NativeDB Introduced: v1493	
 	 * ```
 	 */
-	@:native("UPDATE_UNLOCKABLE_DJ_RADIO_TRACKS")
+	@:native("UpdateUnlockableDjRadioTracks")
 	static function updateUnlockableDjRadioTracks(allowTrackReprioritization:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("USE_SIREN_AS_HORN")
+	@:native("UseSirenAsHorn")
 	static function useSirenAsHorn(vehicle:Dynamic, sirenAsHorn:Bool):Dynamic;
 
 	/**
 	 * Allows script to trigger a sweetener footstep sound
 	 */
-	@:native("USE_FOOTSTEP_SCRIPT_SWEETENERS")
+	@:native("UseFootstepScriptSweeteners")
 	static function useFootstepScriptSweeteners(ped:Dynamic, useSweetner:Bool, soundSetHash:Int):Dynamic;
 
 }

@@ -5,68 +5,68 @@ extern class Player {
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_FLUSH_ROUTE")
+	@:native("AssistedMovementFlushRoute")
 	static function assistedMovementFlushRoute():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_PLAYER_FLASHING_STARS_ABOUT_TO_DROP")
+	@:native("ArePlayerFlashingStarsAboutToDrop")
 	static function arePlayerFlashingStarsAboutToDrop(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ARE_PLAYER_STARS_GREYED_OUT")
+	@:native("ArePlayerStarsGreyedOut")
 	static function arePlayerStarsGreyedOut(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CHANGE_PLAYER_PED")
+	@:native("ChangePlayerPed")
 	static function changePlayerPed(player:Dynamic, ped:Dynamic, b2:Bool, resetDamage:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_CLOSE_ROUTE")
+	@:native("AssistedMovementCloseRoute")
 	static function assistedMovementCloseRoute():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PLAYER_PARACHUTE_PACK_MODEL_OVERRIDE")
+	@:native("ClearPlayerParachutePackModelOverride")
 	static function clearPlayerParachutePackModelOverride(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_PED_HEAR_PLAYER")
+	@:native("CanPedHearPlayer")
 	static function canPedHearPlayer(player:Dynamic, ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_NON_ANIMAL_PED")
+	@:native("ClearPlayerHasDamagedAtLeastOneNonAnimalPed")
 	static function clearPlayerHasDamagedAtLeastOneNonAnimalPed(player:Dynamic):Dynamic;
 
 	/**
 	 * Inhibits the player from using any method of combat including melee and firearms.\
 	 * NOTE: Only disables the firing for one frame
 	 */
-	@:native("DISABLE_PLAYER_FIRING")
+	@:native("DisablePlayerFiring")
 	static function disablePlayerFiring(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CAN_PLAYER_START_MISSION")
+	@:native("CanPlayerStartMission")
 	static function canPlayerStartMission(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PLAYER_PARACHUTE_VARIATION_OVERRIDE")
+	@:native("ClearPlayerParachuteVariationOverride")
 	static function clearPlayerParachuteVariationOverride(player:Dynamic):Dynamic;
 
 	/**
@@ -74,19 +74,19 @@ extern class Player {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("ENABLE_SPECIAL_ABILITY")
+	@:native("EnableSpecialAbility")
 	static function enableSpecialAbility(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PLAYER_PARACHUTE_MODEL_OVERRIDE")
+	@:native("ClearPlayerParachuteModelOverride")
 	static function clearPlayerParachuteModelOverride(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED")
+	@:native("ClearPlayerHasDamagedAtLeastOnePed")
 	static function clearPlayerHasDamagedAtLeastOnePed(player:Dynamic):Dynamic;
 
 	/**
@@ -94,13 +94,13 @@ extern class Player {
 	 * used with 1,2,8,64,128 in the scripts  
 	 * ```
 	 */
-	@:native("FORCE_CLEANUP")
+	@:native("ForceCleanup")
 	static function forceCleanup(cleanupFlags:Int):Dynamic;
 
 	/**
 	 * Disables vehicle rewards for the current frame.
 	 */
-	@:native("DISABLE_PLAYER_VEHICLE_REWARDS")
+	@:native("DisablePlayerVehicleRewards")
 	static function disablePlayerVehicleRewards(player:Dynamic):Dynamic;
 
 	/**
@@ -108,7 +108,7 @@ extern class Player {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE")
+	@:native("ClearPlayerReserveParachuteModelOverride")
 	static function ClearPlayerReserveParachuteModelOverride(player:Dynamic):Dynamic;
 
 	/**
@@ -117,7 +117,7 @@ extern class Player {
 	 * PLAYER::GET_PLAYER_WANTED_LEVEL(player); executes in less than half the time. Which means that it's worth first checking if the wanted level needs to be cleared before clearing. However, this is mostly about good code practice and can important in other situations. The difference in time in this example is negligible.  
 	 * ```
 	 */
-	@:native("CLEAR_PLAYER_WANTED_LEVEL")
+	@:native("ClearPlayerWantedLevel")
 	static function clearPlayerWantedLevel(player:Dynamic):Dynamic;
 
 	/**
@@ -126,7 +126,7 @@ extern class Player {
 	 * Always returns 0 in retail version of the game.
 	 * ```
 	 */
-	@:native("_GET_ACHIEVEMENT_PROGRESS")
+	@:native("GetAchievementProgress")
 	static function GetAchievementProgress(achievement:Int):Int;
 
 	/**
@@ -136,7 +136,7 @@ extern class Player {
 	 * This can be used to prevent dying if you are "out of the world"
 	 * ```
 	 */
-	@:native("EXTEND_WORLD_BOUNDARY_FOR_PLAYER")
+	@:native("ExtendWorldBoundaryForPlayer")
 	static function extendWorldBoundaryForPlayer(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -145,19 +145,19 @@ extern class Player {
 	 * Both, true and false, work  
 	 * ```
 	 */
-	@:native("DISPLAY_SYSTEM_SIGNIN_UI")
+	@:native("DisplaySystemSigninUi")
 	static function displaySystemSigninUi(unk:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CAUSE_OF_MOST_RECENT_FORCE_CLEANUP")
+	@:native("GetCauseOfMostRecentForceCleanup")
 	static function getCauseOfMostRecentForceCleanup():Int;
 
 	/**
 	 * 
 	 */
-	@:native("FORCE_CLEANUP_FOR_THREAD_WITH_THIS_ID")
+	@:native("ForceCleanupForThreadWithThisId")
 	static function forceCleanupForThreadWithThisId(id:Int, cleanupFlags:Int):Dynamic;
 
 	/**
@@ -165,7 +165,7 @@ extern class Player {
 	 * PLAYER::FORCE_CLEANUP_FOR_ALL_THREADS_WITH_THIS_NAME("pb_prostitute", 1); // Found in decompilation  
 	 * ```
 	 */
-	@:native("FORCE_CLEANUP_FOR_ALL_THREADS_WITH_THIS_NAME")
+	@:native("ForceCleanupForAllThreadsWithThisName")
 	static function forceCleanupForAllThreadsWithThisName(name:String, cleanupFlags:Int):Dynamic;
 
 	/**
@@ -174,7 +174,7 @@ extern class Player {
 	 * Ranges from 0 to 5.  
 	 * ```
 	 */
-	@:native("GET_MAX_WANTED_LEVEL")
+	@:native("GetMaxWantedLevel")
 	static function getMaxWantedLevel():Int;
 
 	/**
@@ -182,7 +182,7 @@ extern class Player {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_GET_NUMBER_OF_PLAYERS_IN_TEAM")
+	@:native("GetNumberOfPlayersInTeam")
 	static function GetNumberOfPlayersInTeam(team:Int):Int;
 
 	/**
@@ -191,13 +191,13 @@ extern class Player {
 	 * Returns false if no entity found.  
 	 * ```
 	 */
-	@:native("GET_ENTITY_PLAYER_IS_FREE_AIMING_AT")
+	@:native("GetEntityPlayerIsFreeAimingAt")
 	static function getEntityPlayerIsFreeAimingAt(player:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_IS_PLAYER_DRIVING_ON_HIGHWAY")
+	@:native("GetIsPlayerDrivingOnHighway")
 	static function getIsPlayerDrivingOnHighway(playerId:Dynamic):Bool;
 
 	/**
@@ -206,7 +206,7 @@ extern class Player {
 	 * If not multiplayer, always returns 1.
 	 * ```
 	 */
-	@:native("GET_NUMBER_OF_PLAYERS")
+	@:native("GetNumberOfPlayers")
 	static function getNumberOfPlayers():Int;
 
 	/**
@@ -214,19 +214,19 @@ extern class Player {
 	 * Returns the group ID the player is member of.  
 	 * ```
 	 */
-	@:native("GET_PLAYER_GROUP")
+	@:native("GetPlayerGroup")
 	static function getPlayerGroup(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_CURRENT_STEALTH_NOISE")
+	@:native("GetPlayerCurrentStealthNoise")
 	static function getPlayerCurrentStealthNoise(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_PLAYER_HEALTH_RECHARGE_LIMIT")
+	@:native("GetPlayerHealthRechargeLimit")
 	static function GetPlayerHealthRechargeLimit(player:Dynamic):Float;
 
 	/**
@@ -234,37 +234,37 @@ extern class Player {
 	 * Returns the same as PLAYER_ID and NETWORK_PLAYER_ID_TO_INT  
 	 * ```
 	 */
-	@:native("GET_PLAYER_INDEX")
+	@:native("GetPlayerIndex")
 	static function getPlayerIndex():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_FAKE_WANTED_LEVEL")
+	@:native("GetPlayerFakeWantedLevel")
 	static function getPlayerFakeWantedLevel(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_HAS_RESERVE_PARACHUTE")
+	@:native("GetPlayerHasReserveParachute")
 	static function getPlayerHasReserveParachute(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_MAX_ARMOUR")
+	@:native("GetPlayerMaxArmour")
 	static function getPlayerMaxArmour(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_PARACHUTE_PACK_TINT_INDEX")
+	@:native("GetPlayerParachutePackTintIndex")
 	static function getPlayerParachutePackTintIndex(player:Dynamic, tintIndex:Dynamic):Dynamic;
 
 	/**
 	 * Returns the players name from a specified player index
 	 */
-	@:native("GET_PLAYER_NAME")
+	@:native("GetPlayerName")
 	static function getPlayerName(player:Dynamic):String;
 
 	/**
@@ -285,13 +285,13 @@ extern class Player {
 	 * This has bothered me for too long, whoever may come across this, where did anyone ever come up with this made up hash? 0x733A643B5B0C53C1 I've looked all over old hash list, and this nativedb I can not find that PC hash anywhere. What native name is it now or was it?  
 	 * ```
 	 */
-	@:native("GET_PLAYER_INVINCIBLE")
+	@:native("GetPlayerInvincible")
 	static function getPlayerInvincible(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR")
+	@:native("GetPlayerParachuteSmokeTrailColor")
 	static function getPlayerParachuteSmokeTrailColor(player:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
@@ -299,7 +299,7 @@ extern class Player {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_PLAYER_PARACHUTE_MODEL_OVERRIDE")
+	@:native("GetPlayerParachuteModelOverride")
 	static function GetPlayerParachuteModelOverride(player:Dynamic):Int;
 
 	/**
@@ -307,13 +307,13 @@ extern class Player {
 	 * Does the same like PLAYER::GET_PLAYER_PED
 	 * ```
 	 */
-	@:native("GET_PLAYER_PED_SCRIPT_INDEX")
+	@:native("GetPlayerPedScriptIndex")
 	static function getPlayerPedScriptIndex(player:Dynamic):Dynamic;
 
 	/**
 	 * Gets the ped for a specified player index.
 	 */
-	@:native("GET_PLAYER_PED")
+	@:native("GetPlayerPed")
 	static function getPlayerPed(playerId:Dynamic):Dynamic;
 
 	/**
@@ -336,7 +336,7 @@ extern class Player {
 	 * Sunrise = 13,  
 	 * ```
 	 */
-	@:native("GET_PLAYER_PARACHUTE_TINT_INDEX")
+	@:native("GetPlayerParachuteTintIndex")
 	static function getPlayerParachuteTintIndex(player:Dynamic, tintIndex:Dynamic):Dynamic;
 
 	/**
@@ -344,7 +344,7 @@ extern class Player {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE")
+	@:native("GetPlayerReserveParachuteModelOverride")
 	static function GetPlayerReserveParachuteModelOverride(player:Dynamic):Int;
 
 	/**
@@ -353,7 +353,7 @@ extern class Player {
 	 * Does nothing in singleplayer.  
 	 * ```
 	 */
-	@:native("GET_PLAYER_TEAM")
+	@:native("GetPlayerTeam")
 	static function getPlayerTeam(player:Dynamic):Int;
 
 	/**
@@ -362,19 +362,19 @@ extern class Player {
 	 * Returns false if no entity found.  
 	 * ```
 	 */
-	@:native("GET_PLAYER_TARGET_ENTITY")
+	@:native("GetPlayerTargetEntity")
 	static function getPlayerTargetEntity(player:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_RGB_COLOUR")
+	@:native("GetPlayerRgbColour")
 	static function getPlayerRgbColour(player:Dynamic, r:Dynamic, g:Dynamic, b:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_WANTED_CENTRE_POSITION")
+	@:native("GetPlayerWantedCentrePosition")
 	static function getPlayerWantedCentrePosition(player:Dynamic):Dynamic;
 
 	/**
@@ -397,25 +397,25 @@ extern class Player {
 	 * Sunrise = 13,  
 	 * ```
 	 */
-	@:native("GET_PLAYER_RESERVE_PARACHUTE_TINT_INDEX")
+	@:native("GetPlayerReserveParachuteTintIndex")
 	static function getPlayerReserveParachuteTintIndex(player:Dynamic, index:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SPRINT_TIME_REMAINING")
+	@:native("GetPlayerSprintTimeRemaining")
 	static function getPlayerSprintTimeRemaining(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_UNDERWATER_TIME_REMAINING")
+	@:native("GetPlayerUnderwaterTimeRemaining")
 	static function getPlayerUnderwaterTimeRemaining(player:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_SPRINT_STAMINA_REMAINING")
+	@:native("GetPlayerSprintStaminaRemaining")
 	static function getPlayerSprintStaminaRemaining(player:Dynamic):Float;
 
 	/**
@@ -427,7 +427,7 @@ extern class Player {
 	 * if player has not been arrested, the int returned will be -1.  
 	 * ```
 	 */
-	@:native("GET_TIME_SINCE_LAST_ARREST")
+	@:native("GetTimeSinceLastArrest")
 	static function getTimeSinceLastArrest():Int;
 
 	/**
@@ -439,25 +439,25 @@ extern class Player {
 	 * 
 	 * You can use [GET_VEHICLE_PED_IS_IN](#\_0x9A9112A0FE9A4713), which will actually get the last vehicle, even if it was destroyed.
 	 */
-	@:native("GET_PLAYERS_LAST_VEHICLE")
+	@:native("GetPlayersLastVehicle")
 	static function getPlayersLastVehicle():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PLAYER_WANTED_LEVEL")
+	@:native("GetPlayerWantedLevel")
 	static function getPlayerWantedLevel(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIME_SINCE_PLAYER_DROVE_AGAINST_TRAFFIC")
+	@:native("GetTimeSincePlayerDroveAgainstTraffic")
 	static function getTimeSincePlayerDroveAgainstTraffic(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIME_SINCE_PLAYER_HIT_VEHICLE")
+	@:native("GetTimeSincePlayerHitVehicle")
 	static function getTimeSincePlayerHitVehicle(player:Dynamic):Int;
 
 	/**
@@ -469,19 +469,19 @@ extern class Player {
 	 * if player has not died, the int returned will be -1.  
 	 * ```
 	 */
-	@:native("GET_TIME_SINCE_LAST_DEATH")
+	@:native("GetTimeSinceLastDeath")
 	static function getTimeSinceLastDeath():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIME_SINCE_PLAYER_HIT_PED")
+	@:native("GetTimeSincePlayerHitPed")
 	static function getTimeSincePlayerHitPed(player:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TIME_SINCE_PLAYER_DROVE_ON_PAVEMENT")
+	@:native("GetTimeSincePlayerDroveOnPavement")
 	static function getTimeSincePlayerDroveOnPavement(player:Dynamic):Int;
 
 	/**
@@ -489,7 +489,7 @@ extern class Player {
 	 * Remnant from GTA IV. Does nothing in GTA V.
 	 * ```
 	 */
-	@:native("GET_WANTED_LEVEL_RADIUS")
+	@:native("GetWantedLevelRadius")
 	static function getWantedLevelRadius(player:Dynamic):Float;
 
 	/**
@@ -497,13 +497,13 @@ extern class Player {
 	 * Drft  
 	 * ```
 	 */
-	@:native("GET_WANTED_LEVEL_THRESHOLD")
+	@:native("GetWantedLevelThreshold")
 	static function getWantedLevelThreshold(wantedLevel:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_ACHIEVEMENT_BEEN_PASSED")
+	@:native("HasAchievementBeenPassed")
 	static function hasAchievementBeenPassed(achievement:Int):Bool;
 
 	/**
@@ -511,25 +511,25 @@ extern class Player {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_GET_WANTED_LEVEL_PAROLE_DURATION")
+	@:native("GetWantedLevelParoleDuration")
 	static function GetWantedLevelParoleDuration():Int;
 
 	/**
 	 * 
 	 */
-	@:native("_HAS_PLAYER_BEEN_SHOT_BY_COP")
+	@:native("HasPlayerBeenShotByCop")
 	static function HasPlayerBeenShotByCop(player:Dynamic, ms:Int, p2:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_FORCE_CLEANUP_OCCURRED")
+	@:native("HasForceCleanupOccurred")
 	static function hasForceCleanupOccurred(cleanupFlags:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PLAYER_LEFT_THE_WORLD")
+	@:native("HasPlayerLeftTheWorld")
 	static function hasPlayerLeftTheWorld(player:Dynamic):Bool;
 
 	/**
@@ -538,13 +538,13 @@ extern class Player {
 	 * more achievements came with update 1.29 (freemode events update), I'd say that they now go to 60, but I'll need to check.
 	 * ```
 	 */
-	@:native("GIVE_ACHIEVEMENT_TO_PLAYER")
+	@:native("GiveAchievementToPlayer")
 	static function giveAchievementToPlayer(achievement:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PLAYER_DAMAGED_AT_LEAST_ONE_NON_ANIMAL_PED")
+	@:native("HasPlayerDamagedAtLeastOneNonAnimalPed")
 	static function hasPlayerDamagedAtLeastOneNonAnimalPed(player:Dynamic):Bool;
 
 	/**
@@ -553,13 +553,13 @@ extern class Player {
 	 * Note: I am not 100% sure if the native actually checks if the cam control is disabled but it seems promising.  
 	 * ```
 	 */
-	@:native("_IS_PLAYER_CAM_CONTROL_DISABLED")
+	@:native("IsPlayerCamControlDisabled")
 	static function IsPlayerCamControlDisabled():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GIVE_PLAYER_RAGDOLL_CONTROL")
+	@:native("GivePlayerRagdollControl")
 	static function givePlayerRagdollControl(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -567,7 +567,7 @@ extern class Player {
 	 * Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 	 * ```
 	 */
-	@:native("INT_TO_PLAYERINDEX")
+	@:native("IntToPlayerindex")
 	static function intToPlayerindex(value:Int):Dynamic;
 
 	/**
@@ -577,13 +577,13 @@ extern class Player {
 	 * if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(i)))  
 	 * ```
 	 */
-	@:native("INT_TO_PARTICIPANTINDEX")
+	@:native("IntToParticipantindex")
 	static function intToParticipantindex(value:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PLAYER_BEEN_SPOTTED_IN_STOLEN_VEHICLE")
+	@:native("HasPlayerBeenSpottedInStolenVehicle")
 	static function hasPlayerBeenSpottedInStolenVehicle(player:Dynamic):Bool;
 
 	/**
@@ -591,7 +591,7 @@ extern class Player {
 	 * Returns true if an unk value is greater than 0.0f  
 	 * ```
 	 */
-	@:native("IS_PLAYER_BATTLE_AWARE")
+	@:native("IsPlayerBattleAware")
 	static function isPlayerBattleAware(player:Dynamic):Bool;
 
 	/**
@@ -601,7 +601,7 @@ extern class Player {
 	 * If atArresting is set to 0, this function will return 1 only when the busted screen is shown.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_BEING_ARRESTED")
+	@:native("IsPlayerBeingArrested")
 	static function isPlayerBeingArrested(player:Dynamic, atArresting:Bool):Bool;
 
 	/**
@@ -611,7 +611,7 @@ extern class Player {
 	 * You can't disable controls with this, use SET_PLAYER_CONTROL(...) for this.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_CONTROL_ON")
+	@:native("IsPlayerControlOn")
 	static function isPlayerControlOn(player:Dynamic):Bool;
 
 	/**
@@ -619,7 +619,7 @@ extern class Player {
 	 * Returns TRUE if the player ('s ped) is climbing at the moment.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_CLIMBING")
+	@:native("IsPlayerClimbing")
 	static function isPlayerClimbing(player:Dynamic):Bool;
 
 	/**
@@ -627,31 +627,31 @@ extern class Player {
 	 * Gets a value indicating whether the specified player is currently aiming freely.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_FREE_AIMING")
+	@:native("IsPlayerFreeAiming")
 	static function isPlayerFreeAiming(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_PLAYER_DAMAGED_AT_LEAST_ONE_PED")
+	@:native("HasPlayerDamagedAtLeastOnePed")
 	static function hasPlayerDamagedAtLeastOnePed(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_BLUETOOTH_ENABLE")
+	@:native("IsPlayerBluetoothEnable")
 	static function isPlayerBluetoothEnable(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_DEAD")
+	@:native("IsPlayerDead")
 	static function isPlayerDead(player:Dynamic):Bool;
 
 	/**
 	 * It returns true if the player is online, suggesting they are also logged in locally. Note that this is an alias for `NETWORK_IS_SIGNED_ONLINE`.
 	 */
-	@:native("IS_PLAYER_ONLINE")
+	@:native("IsPlayerOnline")
 	static function isPlayerOnline():Bool;
 
 	/**
@@ -659,13 +659,13 @@ extern class Player {
 	 * Gets a value indicating whether the specified player is currently aiming freely at the specified entity.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_FREE_AIMING_AT_ENTITY")
+	@:native("IsPlayerFreeAimingAtEntity")
 	static function isPlayerFreeAimingAtEntity(player:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_READY_FOR_CUTSCENE")
+	@:native("IsPlayerReadyForCutscene")
 	static function isPlayerReadyForCutscene(player:Dynamic):Bool;
 
 	/**
@@ -683,13 +683,13 @@ extern class Player {
 	 * 
 	 * Used solely in "Al Di Napoli" with type 2 for a voiceline.
 	 */
-	@:native("_IS_PLAYER_DRIVING_DANGEROUSLY")
+	@:native("IsPlayerDrivingDangerously")
 	static function IsPlayerDrivingDangerously(player:Dynamic, type:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_PRESSING_HORN")
+	@:native("IsPlayerPressingHorn")
 	static function isPlayerPressingHorn(player:Dynamic):Bool;
 
 	/**
@@ -697,19 +697,19 @@ extern class Player {
 	 * this function is hard-coded to always return 0.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_LOGGING_IN_NP")
+	@:native("IsPlayerLoggingInNp")
 	static function isPlayerLoggingInNp():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_TARGETTING_ANYTHING")
+	@:native("IsPlayerTargettingAnything")
 	static function isPlayerTargettingAnything(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_FREE_FOR_AMBIENT_TASK")
+	@:native("IsPlayerFreeForAmbientTask")
 	static function isPlayerFreeForAmbientTask(player:Dynamic):Bool;
 
 	/**
@@ -717,13 +717,13 @@ extern class Player {
 	 * Returns true if the player is riding a train.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_RIDING_TRAIN")
+	@:native("IsPlayerRidingTrain")
 	static function isPlayerRidingTrain(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_SCRIPT_CONTROL_ON")
+	@:native("IsPlayerScriptControlOn")
 	static function isPlayerScriptControlOn(player:Dynamic):Bool;
 
 	/**
@@ -731,7 +731,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("IS_SPECIAL_ABILITY_ENABLED")
+	@:native("IsSpecialAbilityEnabled")
 	static function isSpecialAbilityEnabled(player:Dynamic):Bool;
 
 	/**
@@ -739,25 +739,25 @@ extern class Player {
 	 * Checks whether the specified player has a Ped, the Ped is not dead, is not injured and is not arrested.  
 	 * ```
 	 */
-	@:native("IS_PLAYER_PLAYING")
+	@:native("IsPlayerPlaying")
 	static function isPlayerPlaying(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_TARGETTING_ENTITY")
+	@:native("IsPlayerTargettingEntity")
 	static function isPlayerTargettingEntity(player:Dynamic, entity:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_TELEPORT_ACTIVE")
+	@:native("IsPlayerTeleportActive")
 	static function isPlayerTeleportActive():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SYSTEM_UI_BEING_DISPLAYED")
+	@:native("IsSystemUiBeingDisplayed")
 	static function isSystemUiBeingDisplayed():Bool;
 
 	/**
@@ -765,19 +765,19 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("IS_SPECIAL_ABILITY_ACTIVE")
+	@:native("IsSpecialAbilityActive")
 	static function isSpecialAbilityActive(player:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SPECIAL_ABILITY_UNLOCKED")
+	@:native("IsSpecialAbilityUnlocked")
 	static function isSpecialAbilityUnlocked(playerModel:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYER_WANTED_LEVEL_GREATER")
+	@:native("IsPlayerWantedLevelGreater")
 	static function isPlayerWantedLevelGreater(player:Dynamic, wantedLevel:Int):Bool;
 
 	/**
@@ -785,7 +785,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("IS_SPECIAL_ABILITY_METER_FULL")
+	@:native("IsSpecialAbilityMeterFull")
 	static function isSpecialAbilityMeterFull(player:Dynamic):Bool;
 
 	/**
@@ -793,13 +793,13 @@ extern class Player {
 	 * Does exactly the same thing as PLAYER_ID()  
 	 * ```
 	 */
-	@:native("NETWORK_PLAYER_ID_TO_INT")
+	@:native("NetworkPlayerIdToInt")
 	static function networkPlayerIdToInt():Int;
 
 	/**
 	 * Returns the entity handle for the local player ped. Note that this entity handle will change after using commands such as SET_PLAYER_MODEL.
 	 */
-	@:native("PLAYER_PED_ID")
+	@:native("PlayerPedId")
 	static function playerPedId():Dynamic;
 
 	/**
@@ -807,7 +807,7 @@ extern class Player {
 	 * 1.0.335.2, 1.0.350.1/2, 1.0.372.2, 1.0.393.2, 1.0.393.4, 1.0.463.1;  
 	 * ```
 	 */
-	@:native("PLAYER_DETACH_VIRTUAL_BOUND")
+	@:native("PlayerDetachVirtualBound")
 	static function playerDetachVirtualBound():Dynamic;
 
 	/**
@@ -816,19 +816,19 @@ extern class Player {
 	 * PLAYER::PLAYER_ATTACH_VIRTUAL_BOUND(-804.5928f, 173.1801f, 71.68436f, 0f, 0f, 0.590625f, 1f, 0.7f);1.0.335.2, 1.0.350.1/2, 1.0.372.2, 1.0.393.2, 1.0.393.4, 1.0.463.1;  
 	 * ```
 	 */
-	@:native("PLAYER_ATTACH_VIRTUAL_BOUND")
+	@:native("PlayerAttachVirtualBound")
 	static function playerAttachVirtualBound(p0:Float, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_PLAYER_HELMET")
+	@:native("RemovePlayerHelmet")
 	static function removePlayerHelmet(player:Dynamic, p2:Bool):Dynamic;
 
 	/**
 	 * Returns the player index for the local player.
 	 */
-	@:native("PLAYER_ID")
+	@:native("PlayerId")
 	static function playerId():Dynamic;
 
 	/**
@@ -888,13 +888,13 @@ extern class Player {
 	 * 46: ???  
 	 * ```
 	 */
-	@:native("REPORT_CRIME")
+	@:native("ReportCrime")
 	static function reportCrime(player:Dynamic, crimeType:Int, wantedLvlThresh:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REPORT_POLICE_SPOTTED_PLAYER")
+	@:native("ReportPoliceSpottedPlayer")
 	static function reportPoliceSpottedPlayer(player:Dynamic):Dynamic;
 
 	/**
@@ -902,50 +902,50 @@ extern class Player {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("RESET_WORLD_BOUNDARY_FOR_PLAYER")
+	@:native("ResetWorldBoundaryForPlayer")
 	static function resetWorldBoundaryForPlayer():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PLAYER_ARREST_STATE")
+	@:native("ResetPlayerArrestState")
 	static function resetPlayerArrestState(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PLAYER_STAMINA")
+	@:native("ResetPlayerStamina")
 	static function resetPlayerStamina(player:Dynamic):Dynamic;
 
 	/**
 	 * For Steam.
 	 * Does nothing and always returns false in the retail version of the game.
 	 */
-	@:native("_SET_ACHIEVEMENT_PROGRESS")
+	@:native("SetAchievementProgress")
 	static function SetAchievementProgress(achievement:Int, progress:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_PLAYER_INPUT_GAIT")
+	@:native("ResetPlayerInputGait")
 	static function resetPlayerInputGait(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_WANTED_LEVEL_DIFFICULTY")
+	@:native("ResetWantedLevelDifficulty")
 	static function resetWantedLevelDifficulty(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME")
+	@:native("SetAllRandomPedsFleeThisFrame")
 	static function setAllRandomPedsFleeThisFrame(player:Dynamic):Dynamic;
 
 	/**
 	 * Adds a percentage to a players stamina
 	 */
-	@:native("RESTORE_PLAYER_STAMINA")
+	@:native("RestorePlayerStamina")
 	static function restorePlayerStamina(player:Dynamic, percentage:Float):Dynamic;
 
 	/**
@@ -955,67 +955,67 @@ extern class Player {
 	 * On PC the multiplier can be between 0.0f and 50.0f (inclusive).  
 	 * ```
 	 */
-	@:native("SET_AIR_DRAG_MULTIPLIER_FOR_PLAYERS_VEHICLE")
+	@:native("SetAirDragMultiplierForPlayersVehicle")
 	static function setAirDragMultiplierForPlayersVehicle(player:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISABLE_AMBIENT_MELEE_MOVE")
+	@:native("SetDisableAmbientMeleeMove")
 	static function setDisableAmbientMeleeMove(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AUTO_GIVE_PARACHUTE_WHEN_ENTER_PLANE")
+	@:native("SetAutoGiveParachuteWhenEnterPlane")
 	static function setAutoGiveParachuteWhenEnterPlane(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_AUTO_GIVE_SCUBA_GEAR_WHEN_EXIT_VEHICLE")
+	@:native("SetAutoGiveScubaGearWhenExitVehicle")
 	static function setAutoGiveScubaGearWhenExitVehicle(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Sets whether all random peds will run away from the player if they are agitated (threatened) (bool=true), or if they will stand their ground (bool=false).
 	 */
-	@:native("SET_ALL_RANDOM_PEDS_FLEE")
+	@:native("SetAllRandomPedsFlee")
 	static function setAllRandomPedsFlee(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_EVERYONE_IGNORE_PLAYER")
+	@:native("SetEveryoneIgnorePlayer")
 	static function setEveryoneIgnorePlayer(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_IGNORE_LOW_PRIORITY_SHOCKING_EVENTS")
+	@:native("SetIgnoreLowPriorityShockingEvents")
 	static function setIgnoreLowPriorityShockingEvents(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DISPATCH_COPS_FOR_PLAYER")
+	@:native("SetDispatchCopsForPlayer")
 	static function setDispatchCopsForPlayer(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_BLUETOOTH_STATE")
+	@:native("SetPlayerBluetoothState")
 	static function setPlayerBluetoothState(player:Dynamic, state:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_MAX_WANTED_LEVEL")
+	@:native("SetMaxWantedLevel")
 	static function setMaxWantedLevel(maxWantedLevel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_CAN_LEAVE_PARACHUTE_SMOKE_TRAIL")
+	@:native("SetPlayerCanLeaveParachuteSmokeTrail")
 	static function setPlayerCanLeaveParachuteSmokeTrail(player:Dynamic, enabled:Bool):Dynamic;
 
 	/**
@@ -1023,7 +1023,7 @@ extern class Player {
 	 * 
 	 * This is a toggle, it does not have to be ran every frame.
 	 */
-	@:native("SET_PLAYER_CAN_DO_DRIVE_BY")
+	@:native("SetPlayerCanDoDriveBy")
 	static function setPlayerCanDoDriveBy(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1031,7 +1031,7 @@ extern class Player {
 	 * Sets whether this player can be hassled by gangs.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_CAN_BE_HASSLED_BY_GANGS")
+	@:native("SetPlayerCanBeHassledByGangs")
 	static function setPlayerCanBeHassledByGangs(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1039,7 +1039,7 @@ extern class Player {
 	 * Every occurrence was either 0 or 2.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_CLOTH_PACKAGE_INDEX")
+	@:native("SetPlayerClothPackageIndex")
 	static function setPlayerClothPackageIndex(index:Int):Dynamic;
 
 	/**
@@ -1047,7 +1047,7 @@ extern class Player {
 	 * 6 matches across 4 scripts. 5 occurrences were 240. The other was 255.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_CLOTH_LOCK_COUNTER")
+	@:native("SetPlayerClothLockCounter")
 	static function setPlayerClothLockCounter(value:Int):Dynamic;
 
 	/**
@@ -1055,7 +1055,7 @@ extern class Player {
 	 * Sets whether this player can take cover.
 	 * ```
 	 */
-	@:native("SET_PLAYER_CAN_USE_COVER")
+	@:native("SetPlayerCanUseCover")
 	static function setPlayerCanUseCover(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1076,61 +1076,61 @@ extern class Player {
 	 * See: https://alloc8or.re/gta5/doc/enums/eSetPlayerControlFlag.txt
 	 * ```
 	 */
-	@:native("SET_PLAYER_CONTROL")
+	@:native("SetPlayerControl")
 	static function setPlayerControl(player:Dynamic, bHasControl:Bool, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_FORCED_ZOOM")
+	@:native("SetPlayerForcedZoom")
 	static function setPlayerForcedZoom(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_CLOTH_PIN_FRAMES")
+	@:native("SetPlayerClothPinFrames")
 	static function setPlayerClothPinFrames(player:Dynamic, p1:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLAYER_FALL_DISTANCE")
+	@:native("SetPlayerFallDistance")
 	static function SetPlayerFallDistance(player:Dynamic, distance:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_HAS_RESERVE_PARACHUTE")
+	@:native("SetPlayerHasReserveParachute")
 	static function setPlayerHasReserveParachute(player:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLAYER_HEALTH_RECHARGE_LIMIT")
+	@:native("SetPlayerHealthRechargeLimit")
 	static function SetPlayerHealthRechargeLimit(player:Dynamic, limit:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_FORCE_SKIP_AIM_INTRO")
+	@:native("SetPlayerForceSkipAimIntro")
 	static function setPlayerForceSkipAimIntro(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_FORCED_AIM")
+	@:native("SetPlayerForcedAim")
 	static function setPlayerForcedAim(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * Make the player impervious to all forms of damage.
 	 */
-	@:native("SET_PLAYER_INVINCIBLE")
+	@:native("SetPlayerInvincible")
 	static function setPlayerInvincible(player:Dynamic, bInvincible:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_LEAVE_PED_BEHIND")
+	@:native("SetPlayerLeavePedBehind")
 	static function setPlayerLeavePedBehind(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1138,19 +1138,19 @@ extern class Player {
 	 * NativeDB Introduced: v1180
 	 * ```
 	 */
-	@:native("_SET_PLAYER_HOMING_ROCKET_DISABLED")
+	@:native("SetPlayerHomingRocketDisabled")
 	static function SetPlayerHomingRocketDisabled(player:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED")
+	@:native("SetPlayerInvincibleKeepRagdollEnabled")
 	static function SetPlayerInvincibleKeepRagdollEnabled(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * This multiplier is reset to `1.0` every time the player ped is changed, often times via [`SET_PLAYER_MODEL`](#\_0x00A1CADD00108836) or [`CHANGE_PLAYER_PED`](#\_0x048189FAC643DEEE).
 	 */
-	@:native("SET_PLAYER_HEALTH_RECHARGE_MULTIPLIER")
+	@:native("SetPlayerHealthRechargeMultiplier")
 	static function setPlayerHealthRechargeMultiplier(player:Dynamic, regenRate:Float):Dynamic;
 
 	/**
@@ -1158,7 +1158,7 @@ extern class Player {
 	 * Used to toggle the square up aim.
 	 * ```
 	 */
-	@:native("SET_PLAYER_LOCKON")
+	@:native("SetPlayerLockon")
 	static function setPlayerLockon(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1166,19 +1166,19 @@ extern class Player {
 	 * Affects the range of auto aim target.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_LOCKON_RANGE_OVERRIDE")
+	@:native("SetPlayerLockonRangeOverride")
 	static function setPlayerLockonRangeOverride(player:Dynamic, range:Float):Dynamic;
 
 	/**
 	 * Establishes a reset flag to prevent the player from entering any vehicle. Not that this native must be called every frame.
 	 */
-	@:native("SET_PLAYER_MAY_NOT_ENTER_ANY_VEHICLE")
+	@:native("SetPlayerMayNotEnterAnyVehicle")
 	static function setPlayerMayNotEnterAnyVehicle(player:Dynamic):Dynamic;
 
 	/**
 	 * Limit the player to only enter this vehicle. Note set vehicle to false if you want them to access any vehicle.
 	 */
-	@:native("SET_PLAYER_MAY_ONLY_ENTER_THIS_VEHICLE")
+	@:native("SetPlayerMayOnlyEnterThisVehicle")
 	static function setPlayerMayOnlyEnterThisVehicle(player:Dynamic, vehicle:Dynamic):Dynamic;
 
 	/**
@@ -1186,7 +1186,7 @@ extern class Player {
 	 * NativeDB Added Parameter 3: BOOL p2
 	 * ```
 	 */
-	@:native("SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER")
+	@:native("SetPlayerMeleeWeaponDamageModifier")
 	static function setPlayerMeleeWeaponDamageModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
@@ -1194,13 +1194,13 @@ extern class Player {
 	 * Default is 100. Use player id and not ped id. For instance: PLAYER::SET_PLAYER_MAX_ARMOUR(PLAYER::PLAYER_ID(), 100); // main_persistent.ct4  
 	 * ```
 	 */
-	@:native("SET_PLAYER_MAX_ARMOUR")
+	@:native("SetPlayerMaxArmour")
 	static function setPlayerMaxArmour(player:Dynamic, value:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_NOISE_MULTIPLIER")
+	@:native("SetPlayerNoiseMultiplier")
 	static function setPlayerNoiseMultiplier(player:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -1208,13 +1208,13 @@ extern class Player {
 	 * 
 	 * As per usual, make sure to request the model first and wait until it has loaded.
 	 */
-	@:native("SET_PLAYER_MODEL")
+	@:native("SetPlayerModel")
 	static function setPlayerModel(player:Dynamic, model:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_PARACHUTE_PACK_MODEL_OVERRIDE")
+	@:native("SetPlayerParachutePackModelOverride")
 	static function setPlayerParachutePackModelOverride(player:Dynamic, model:Int):Dynamic;
 
 	/**
@@ -1222,7 +1222,7 @@ extern class Player {
 	 * modifier's min value is 0.1
 	 * ```
 	 */
-	@:native("SET_PLAYER_MELEE_WEAPON_DEFENSE_MODIFIER")
+	@:native("SetPlayerMeleeWeaponDefenseModifier")
 	static function setPlayerMeleeWeaponDefenseModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
@@ -1230,7 +1230,7 @@ extern class Player {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("_SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE")
+	@:native("SetPlayerReserveParachuteModelOverride")
 	static function SetPlayerReserveParachuteModelOverride(player:Dynamic, model:Int):Dynamic;
 
 	/**
@@ -1243,7 +1243,7 @@ extern class Player {
 	 * 4 - unkown
 	 * ```
 	 */
-	@:native("SET_PLAYER_PARACHUTE_PACK_TINT_INDEX")
+	@:native("SetPlayerParachutePackTintIndex")
 	static function setPlayerParachutePackTintIndex(player:Dynamic, tintIndex:Int):Dynamic;
 
 	/**
@@ -1252,7 +1252,7 @@ extern class Player {
 	 * PLAYER::SET_PLAYER_PARACHUTE_MODEL_OVERRIDE(PLAYER::PLAYER_ID(), 0x73268708);  
 	 * ```
 	 */
-	@:native("SET_PLAYER_PARACHUTE_MODEL_OVERRIDE")
+	@:native("SetPlayerParachuteModelOverride")
 	static function setPlayerParachuteModelOverride(player:Dynamic, model:Int):Dynamic;
 
 	/**
@@ -1261,13 +1261,13 @@ extern class Player {
 	 * p4 was always false.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_PARACHUTE_VARIATION_OVERRIDE")
+	@:native("SetPlayerParachuteVariationOverride")
 	static function setPlayerParachuteVariationOverride(player:Dynamic, p1:Int, p2:Dynamic, p3:Dynamic, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_SIMULATE_AIMING")
+	@:native("SetPlayerSimulateAiming")
 	static function setPlayerSimulateAiming(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1290,13 +1290,13 @@ extern class Player {
 	 * Sunrise = 13,  
 	 * ```
 	 */
-	@:native("SET_PLAYER_PARACHUTE_TINT_INDEX")
+	@:native("SetPlayerParachuteTintIndex")
 	static function setPlayerParachuteTintIndex(player:Dynamic, tintIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR")
+	@:native("SetPlayerParachuteSmokeTrailColor")
 	static function setPlayerParachuteSmokeTrailColor(player:Dynamic, r:Int, g:Int, b:Int):Dynamic;
 
 	/**
@@ -1307,7 +1307,7 @@ extern class Player {
 	 * wouldnt the flag be the seatIndex?  
 	 * ```
 	 */
-	@:native("SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS")
+	@:native("SetPlayerResetFlagPreferRearSeats")
 	static function setPlayerResetFlagPreferRearSeats(player:Dynamic, flags:Int):Dynamic;
 
 	/**
@@ -1330,7 +1330,7 @@ extern class Player {
 	 * Sunrise = 13,  
 	 * ```
 	 */
-	@:native("SET_PLAYER_RESERVE_PARACHUTE_TINT_INDEX")
+	@:native("SetPlayerReserveParachuteTintIndex")
 	static function setPlayerReserveParachuteTintIndex(player:Dynamic, index:Int):Dynamic;
 
 	/**
@@ -1338,13 +1338,13 @@ extern class Player {
 	 * Values around 1.0f to 2.0f used in game scripts.  
 	 * ```
 	 */
-	@:native("SET_PLAYER_SNEAKING_NOISE_MULTIPLIER")
+	@:native("SetPlayerSneakingNoiseMultiplier")
 	static function setPlayerSneakingNoiseMultiplier(player:Dynamic, multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_SPRINT")
+	@:native("SetPlayerSprint")
 	static function setPlayerSprint(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1354,7 +1354,7 @@ extern class Player {
 	 * 
 	 * Using this native after [SET_PED_MAX_TIME_UNDERWATER](#\_0x6BA428C528D9E522) **WILL NOT** get what you want. For example, if you set the max time underwater to `100.0` seconds using [SET_PED_MAX_TIME_UNDERWATER](#\_0x6BA428C528D9E522) and then call this native and set the `percentage` to 50.0, you will not get `50.0`, instead `2.0`.
 	 */
-	@:native("_SET_PLAYER_UNDERWATER_TIME_REMAINING")
+	@:native("SetPlayerUnderwaterTimeRemaining")
 	static function SetPlayerUnderwaterTimeRemaining(player:Dynamic, percentage:Float):Dynamic;
 
 	/**
@@ -1366,25 +1366,25 @@ extern class Player {
 	 * 3 = Free Aim
 	 * ```
 	 */
-	@:native("SET_PLAYER_TARGETING_MODE")
+	@:native("SetPlayerTargetingMode")
 	static function setPlayerTargetingMode(targetMode:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_TARGET_LEVEL")
+	@:native("SetPlayerTargetLevel")
 	static function setPlayerTargetLevel(targetLevel:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_STEALTH_PERCEPTION_MODIFIER")
+	@:native("SetPlayerStealthPerceptionModifier")
 	static function setPlayerStealthPerceptionModifier(player:Dynamic, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_WANTED_LEVEL")
+	@:native("SetPlayerWantedLevel")
 	static function setPlayerWantedLevel(player:Dynamic, wantedLevel:Int, delayedResponse:Bool):Dynamic;
 
 	/**
@@ -1397,13 +1397,13 @@ extern class Player {
 	 * P2: Not set by any call  
 	 * ```
 	 */
-	@:native("SET_PLAYER_WANTED_CENTRE_POSITION")
+	@:native("SetPlayerWantedCentrePosition")
 	static function setPlayerWantedCentrePosition(player:Dynamic, position:Dynamic, p2:Bool, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_WEAPON_DEFENSE_MODIFIER")
+	@:native("SetPlayerWeaponDefenseModifier")
 	static function setPlayerWeaponDefenseModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
@@ -1411,13 +1411,13 @@ extern class Player {
 	 * modifier's min value is 0.1
 	 * ```
 	 */
-	@:native("SET_PLAYER_VEHICLE_DAMAGE_MODIFIER")
+	@:native("SetPlayerVehicleDamageModifier")
 	static function setPlayerVehicleDamageModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
 	 * Set the player's current team.
 	 */
-	@:native("SET_PLAYER_TEAM")
+	@:native("SetPlayerTeam")
 	static function setPlayerTeam(player:Dynamic, team:Int):Dynamic;
 
 	/**
@@ -1427,13 +1427,13 @@ extern class Player {
 	 * Second parameter is unknown (always false).  
 	 * ```
 	 */
-	@:native("SET_PLAYER_WANTED_LEVEL_NOW")
+	@:native("SetPlayerWantedLevelNow")
 	static function setPlayerWantedLevelNow(player:Dynamic, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PLAYER_WANTED_LEVEL_NO_DROP")
+	@:native("SetPlayerWantedLevelNoDrop")
 	static function setPlayerWantedLevelNoDrop(player:Dynamic, wantedLevel:Int, delayedResponse:Bool):Dynamic;
 
 	/**
@@ -1441,7 +1441,7 @@ extern class Player {
 	 * The player will be ignored by the police if toggle is set to true  
 	 * ```
 	 */
-	@:native("SET_POLICE_IGNORE_PLAYER")
+	@:native("SetPoliceIgnorePlayer")
 	static function setPoliceIgnorePlayer(player:Dynamic, toggle:Bool):Dynamic;
 
 	/**
@@ -1449,25 +1449,25 @@ extern class Player {
 	 * modifier's min value is 0.1
 	 * ```
 	 */
-	@:native("SET_PLAYER_VEHICLE_DEFENSE_MODIFIER")
+	@:native("SetPlayerVehicleDefenseModifier")
 	static function setPlayerVehicleDefenseModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
 	 * The native ensures the 'modifier' parameter is 0.1 or greater.
 	 */
-	@:native("SET_PLAYER_WEAPON_DAMAGE_MODIFIER")
+	@:native("SetPlayerWeaponDamageModifier")
 	static function setPlayerWeaponDamageModifier(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SPECIAL_ABILITY_MULTIPLIER")
+	@:native("SetSpecialAbilityMultiplier")
 	static function setSpecialAbilityMultiplier(multiplier:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_SET_PLAYER_WEAPON_DEFENSE_MODIFIER_2")
+	@:native("SetPlayerWeaponDefenseModifier_2")
 	static function SetPlayerWeaponDefenseModifier2(player:Dynamic, modifier:Float):Dynamic;
 
 	/**
@@ -1478,7 +1478,7 @@ extern class Player {
 	 * It is not possible to "decrease" speed. Anything below 1 will be ignored.  
 	 * ```
 	 */
-	@:native("SET_RUN_SPRINT_MULTIPLIER_FOR_PLAYER")
+	@:native("SetRunSprintMultiplierForPlayer")
 	static function setRunSprintMultiplierForPlayer(player:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -1489,7 +1489,7 @@ extern class Player {
 	 *  The police will be shown on the (mini)map
 	 * ```
 	 */
-	@:native("SET_POLICE_RADAR_BLIPS")
+	@:native("SetPoliceRadarBlips")
 	static function setPoliceRadarBlips(toggle:Bool):Dynamic;
 
 	/**
@@ -1497,7 +1497,7 @@ extern class Player {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("_SET_SPECIAL_ABILITY")
+	@:native("SetSpecialAbility")
 	static function SetSpecialAbility(player:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -1508,7 +1508,7 @@ extern class Player {
 	 * Note: At least the IDA method if you change the max float multiplier from 1.5 it will change it for both this and RUN_SPRINT below. I say 1.5 as the function blrs if what you input is greater than or equal to 1.5 hence why it's 1.49 max default.  
 	 * ```
 	 */
-	@:native("SET_SWIM_MULTIPLIER_FOR_PLAYER")
+	@:native("SetSwimMultiplierForPlayer")
 	static function setSwimMultiplierForPlayer(player:Dynamic, multiplier:Float):Dynamic;
 
 	/**
@@ -1516,7 +1516,7 @@ extern class Player {
 	 * Max value is 1.0  
 	 * ```
 	 */
-	@:native("SET_WANTED_LEVEL_DIFFICULTY")
+	@:native("SetWantedLevelDifficulty")
 	static function setWantedLevelDifficulty(player:Dynamic, difficulty:Float):Dynamic;
 
 	/**
@@ -1524,7 +1524,7 @@ extern class Player {
 	 * NativeDB Introduced: v2060
 	 * ```
 	 */
-	@:native("_SET_WANTED_LEVEL_HIDDEN_EVASION_TIME")
+	@:native("SetWantedLevelHiddenEvasionTime")
 	static function SetWantedLevelHiddenEvasionTime(player:Dynamic, wantedLevel:Int, lossTime:Int):Dynamic;
 
 	/**
@@ -1532,7 +1532,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("_SPECIAL_ABILITY_ACTIVATE")
+	@:native("SpecialAbilityActivate")
 	static function SpecialAbilityActivate(player:Dynamic):Dynamic;
 
 	/**
@@ -1544,13 +1544,13 @@ extern class Player {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_LARGE")
+	@:native("SpecialAbilityChargeLarge")
 	static function specialAbilityChargeLarge(player:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_WANTED_LEVEL_MULTIPLIER")
+	@:native("SetWantedLevelMultiplier")
 	static function setWantedLevelMultiplier(multiplier:Float):Dynamic;
 
 	/**
@@ -1558,7 +1558,7 @@ extern class Player {
 	 * 
 	 * Call this native every frame so you can control the direction of your ped.
 	 */
-	@:native("SIMULATE_PLAYER_INPUT_GAIT")
+	@:native("SimulatePlayerInputGait")
 	static function simulatePlayerInputGait(player:Dynamic, amount:Float, gaitType:Int, rotationSpeed:Float, p4:Bool, p5:Bool):Dynamic;
 
 	/**
@@ -1570,7 +1570,7 @@ extern class Player {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_SMALL")
+	@:native("SpecialAbilityChargeSmall")
 	static function specialAbilityChargeSmall(player:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1582,7 +1582,7 @@ extern class Player {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_CONTINUOUS")
+	@:native("SpecialAbilityChargeContinuous")
 	static function specialAbilityChargeContinuous(player:Dynamic, p2:Dynamic):Dynamic;
 
 	/**
@@ -1594,7 +1594,7 @@ extern class Player {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_ABSOLUTE")
+	@:native("SpecialAbilityChargeAbsolute")
 	static function specialAbilityChargeAbsolute(player:Dynamic, p1:Int, p2:Bool):Dynamic;
 
 	/**
@@ -1602,7 +1602,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("_SPECIAL_ABILITY_DEPLETE")
+	@:native("SpecialAbilityDeplete")
 	static function SpecialAbilityDeplete(p0:Dynamic):Dynamic;
 
 	/**
@@ -1614,7 +1614,7 @@ extern class Player {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_MEDIUM")
+	@:native("SpecialAbilityChargeMedium")
 	static function specialAbilityChargeMedium(player:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
@@ -1622,7 +1622,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED")
+	@:native("SpecialAbilityChargeOnMissionFailed")
 	static function specialAbilityChargeOnMissionFailed(player:Dynamic):Dynamic;
 
 	/**
@@ -1635,7 +1635,7 @@ extern class Player {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_CHARGE_NORMALIZED")
+	@:native("SpecialAbilityChargeNormalized")
 	static function specialAbilityChargeNormalized(player:Dynamic, normalizedValue:Float, p2:Bool):Dynamic;
 
 	/**
@@ -1647,7 +1647,7 @@ extern class Player {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_DEPLETE_METER")
+	@:native("SpecialAbilityDepleteMeter")
 	static function specialAbilityDepleteMeter(player:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -1655,7 +1655,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_DEACTIVATE")
+	@:native("SpecialAbilityDeactivate")
 	static function specialAbilityDeactivate(player:Dynamic):Dynamic;
 
 	/**
@@ -1663,7 +1663,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_DEACTIVATE_FAST")
+	@:native("SpecialAbilityDeactivateFast")
 	static function specialAbilityDeactivateFast(player:Dynamic):Dynamic;
 
 	/**
@@ -1671,7 +1671,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_RESET")
+	@:native("SpecialAbilityReset")
 	static function specialAbilityReset(player:Dynamic):Dynamic;
 
 	/**
@@ -1679,7 +1679,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_UNLOCK")
+	@:native("SpecialAbilityUnlock")
 	static function specialAbilityUnlock(playerModel:Int):Dynamic;
 
 	/**
@@ -1691,7 +1691,7 @@ extern class Player {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_FILL_METER")
+	@:native("SpecialAbilityFillMeter")
 	static function specialAbilityFillMeter(player:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -1699,7 +1699,7 @@ extern class Player {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("SPECIAL_ABILITY_LOCK")
+	@:native("SpecialAbilityLock")
 	static function specialAbilityLock(playerModel:Int):Dynamic;
 
 	/**
@@ -1711,13 +1711,13 @@ extern class Player {
 	 * 
 	 * Also if you're in a vehicle and teleportWithVehicle is true it will not find the Z value for you.
 	 */
-	@:native("START_PLAYER_TELEPORT")
+	@:native("StartPlayerTeleport")
 	static function startPlayerTeleport(player:Dynamic, x:Float, y:Float, z:Float, heading:Float, teleportWithVehicle:Bool, findCollisionLand:Bool, p7:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("START_FIRING_AMNESTY")
+	@:native("StartFiringAmnesty")
 	static function startFiringAmnesty(duration:Int):Dynamic;
 
 	/**
@@ -1725,7 +1725,7 @@ extern class Player {
 	 * 
 	 * **Note:** This native needs to be executed inside a thread if a crime is meant to be suppressed for a given amount of time.
 	 */
-	@:native("SUPPRESS_CRIME_THIS_FRAME")
+	@:native("SuppressCrimeThisFrame")
 	static function suppressCrimeThisFrame(player:Dynamic, crimeType:Int):Dynamic;
 
 	/**
@@ -1733,13 +1733,13 @@ extern class Player {
 	 * Disables the player's teleportation  
 	 * ```
 	 */
-	@:native("STOP_PLAYER_TELEPORT")
+	@:native("StopPlayerTeleport")
 	static function stopPlayerTeleport():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_UPDATE_PLAYER_TELEPORT")
+	@:native("UpdatePlayerTeleport")
 	static function UpdatePlayerTeleport(player:Dynamic):Bool;
 
 }

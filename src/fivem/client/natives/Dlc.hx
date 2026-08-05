@@ -5,7 +5,7 @@ extern class Dlc {
 	/**
 	 * 
 	 */
-	@:native("GET_IS_LOADING_SCREEN_ACTIVE")
+	@:native("GetIsLoadingScreenActive")
 	static function getIsLoadingScreenActive():Bool;
 
 	/**
@@ -14,13 +14,13 @@ extern class Dlc {
 	 * Always returns true.
 	 * ```
 	 */
-	@:native("HAS_CLOUD_REQUESTS_FINISHED")
+	@:native("HasCloudRequestsFinished")
 	static function hasCloudRequestsFinished(variable:Dynamic, unused:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_EXTRA_CONTENT_PACK_HAS_BEEN_INSTALLED")
+	@:native("GetExtraContentPackHasBeenInstalled")
 	static function GetExtraContentPackHasBeenInstalled():Bool;
 
 	/**
@@ -33,7 +33,7 @@ extern class Dlc {
 	 * 0x96F02EE6
 	 * ```
 	 */
-	@:native("IS_DLC_PRESENT")
+	@:native("IsDlcPresent")
 	static function isDlcPresent(dlcHash:Int):Bool;
 
 	/**
@@ -44,7 +44,7 @@ extern class Dlc {
 	 * Works in singleplayer.
 	 * ```
 	 */
-	@:native("ON_ENTER_SP")
+	@:native("OnEnterSp")
 	static function onEnterSp():Dynamic;
 
 	/**
@@ -54,7 +54,7 @@ extern class Dlc {
 	 * In order to use GTA:O heist IPL's you have to call this native with the following params: SET_INSTANCE_PRIORITY_MODE(1);
 	 * ```
 	 */
-	@:native("ON_ENTER_MP")
+	@:native("OnEnterMp")
 	static function onEnterMp():Dynamic;
 
 }

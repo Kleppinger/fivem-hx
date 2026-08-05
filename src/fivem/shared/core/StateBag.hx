@@ -153,7 +153,7 @@ private class StateBagBridge {
 		untyped __lua__("
 function __hx_statebag_set(bagName, key, value, replicated)
 	local packed = _G.msgpack.pack(value)
-	_G.SET_STATE_BAG_VALUE(bagName, key, packed, #packed, replicated)
+	_G.SetStateBagValue(bagName, key, packed, #packed, replicated)
 end
 ");
 	}

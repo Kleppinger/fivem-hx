@@ -5,55 +5,55 @@ extern class Itemset {
 	/**
 	 * 
 	 */
-	@:native("ADD_TO_ITEMSET")
+	@:native("AddToItemset")
 	static function addToItemset(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAN_ITEMSET")
+	@:native("CleanItemset")
 	static function cleanItemset(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DESTROY_ITEMSET")
+	@:native("DestroyItemset")
 	static function destroyItemset(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ITEMSET_SIZE")
+	@:native("GetItemsetSize")
 	static function getItemsetSize(x:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_IN_ITEMSET")
+	@:native("IsInItemset")
 	static function isInItemset(p0:Dynamic, p1:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_INDEXED_ITEM_IN_ITEMSET")
+	@:native("GetIndexedItemInItemset")
 	static function getIndexedItemInItemset(p0:Dynamic, p1:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("IS_ITEMSET_VALID")
+	@:native("IsItemsetValid")
 	static function isItemsetValid(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_ITEMSET")
+	@:native("CreateItemset")
 	static function createItemset(distri:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_FROM_ITEMSET")
+	@:native("RemoveFromItemset")
 	static function removeFromItemset(p0:Dynamic, p1:Dynamic):Dynamic;
 
 }

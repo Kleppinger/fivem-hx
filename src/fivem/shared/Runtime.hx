@@ -25,7 +25,7 @@ extern class Runtime {
 		The only clock that is meaningful in both environments — use it for
 		timeouts, cooldowns and rate limits rather than wall-clock time.
 	**/
-	@:native("GET_GAME_TIMER")
+	@:native("GetGameTimer")
 	static function getGameTimer():Int;
 
 	/**
@@ -34,7 +34,7 @@ extern class Runtime {
 		This is how models, weapons, vehicles and most other game assets are
 		identified: `getHashKey("adder")` is what `CREATE_VEHICLE` wants.
 	**/
-	@:native("GET_HASH_KEY")
+	@:native("GetHashKey")
 	static function getHashKey(value:String):Int;
 
 	/** Writes a line to the server console or the client's F8 console. **/

@@ -9,7 +9,7 @@ extern class Script {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("BG_END_CONTEXT_HASH")
+	@:native("BgEndContextHash")
 	static function bgEndContextHash(contextHash:Int):Dynamic;
 
 	/**
@@ -19,13 +19,13 @@ extern class Script {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("BG_START_CONTEXT_HASH")
+	@:native("BgStartContextHash")
 	static function bgStartContextHash(contextHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_SCRIPT_EXIST")
+	@:native("DoesScriptExist")
 	static function doesScriptExist(scriptName:String):Bool;
 
 	/**
@@ -34,7 +34,7 @@ extern class Script {
 	 * Note: eventDataSize is NOT the size in bytes, it is the size determined by the SIZE_OF operator (RAGE Script operator, not C/C++ sizeof). That is, the size in bytes divided by 8 (script variables are always 8-byte aligned!).
 	 * ```
 	 */
-	@:native("GET_EVENT_DATA")
+	@:native("GetEventData")
 	static function getEventData(eventGroup:Int, eventIndex:Int, eventData:Dynamic, eventDataSize:Int):Bool;
 
 	/**
@@ -44,7 +44,7 @@ extern class Script {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("BG_END_CONTEXT")
+	@:native("BgEndContext")
 	static function bgEndContext(contextName:String):Dynamic;
 
 	/**
@@ -52,13 +52,13 @@ extern class Script {
 	 * eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)
 	 * ```
 	 */
-	@:native("GET_EVENT_AT_INDEX")
+	@:native("GetEventAtIndex")
 	static function getEventAtIndex(eventGroup:Int, eventIndex:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_HASH_OF_THIS_SCRIPT_NAME")
+	@:native("GetHashOfThisScriptName")
 	static function getHashOfThisScriptName():Int;
 
 	/**
@@ -66,13 +66,13 @@ extern class Script {
 	 * eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)
 	 * ```
 	 */
-	@:native("GET_EVENT_EXISTS")
+	@:native("GetEventExists")
 	static function getEventExists(eventGroup:Int, eventIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_ID_OF_THIS_THREAD")
+	@:native("GetIdOfThisThread")
 	static function getIdOfThisThread():Int;
 
 	/**
@@ -82,43 +82,43 @@ extern class Script {
 	 * NativeDB Introduced: v323
 	 * ```
 	 */
-	@:native("BG_START_CONTEXT")
+	@:native("BgStartContext")
 	static function bgStartContext(contextName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_THIS_SCRIPT_NAME")
+	@:native("GetThisScriptName")
 	static function getThisScriptName():String;
 
 	/**
 	 * 
 	 */
-	@:native("_GET_NAME_OF_THREAD")
+	@:native("GetNameOfThread")
 	static function GetNameOfThread(threadId:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_NO_LOADING_SCREEN")
+	@:native("GetNoLoadingScreen")
 	static function getNoLoadingScreen():Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_SCRIPT_WITH_NAME_HASH_EXIST")
+	@:native("DoesScriptWithNameHashExist")
 	static function doesScriptWithNameHashExist(scriptHash:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_THREAD_ACTIVE")
+	@:native("IsThreadActive")
 	static function isThreadActive(threadId:Int):Bool;
 
 	/**
 	 * Updates the display of the MP/SP loading buttons, and locks the state so that other options are not displayed or changed. This can only be done once.
 	 */
-	@:native("_LOCK_LOADING_SCREEN_BUTTONS")
+	@:native("LockLoadingScreenButtons")
 	static function LockLoadingScreenButtons():Dynamic;
 
 	/**
@@ -126,7 +126,7 @@ extern class Script {
 	 * eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)
 	 * ```
 	 */
-	@:native("GET_NUMBER_OF_EVENTS")
+	@:native("GetNumberOfEvents")
 	static function getNumberOfEvents(eventGroup:Int):Int;
 
 	/**
@@ -138,37 +138,37 @@ extern class Script {
 	 * return v3;
 	 * ```
 	 */
-	@:native("_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH")
+	@:native("GetNumberOfReferencesOfScriptWithNameHash")
 	static function GetNumberOfReferencesOfScriptWithNameHash(scriptHash:Int):Int;
 
 	/**
 	 * 
 	 */
-	@:native("HAS_SCRIPT_WITH_NAME_HASH_LOADED")
+	@:native("HasScriptWithNameHashLoaded")
 	static function hasScriptWithNameHashLoaded(scriptHash:Int):Bool;
 
 	/**
 	 * Returns if a script has been loaded into the game. Used to see if a script was loaded after requesting.
 	 */
-	@:native("HAS_SCRIPT_LOADED")
+	@:native("HasScriptLoaded")
 	static function hasScriptLoaded(scriptName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_SCRIPT")
+	@:native("RequestScript")
 	static function requestScript(scriptName:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_NO_LOADING_SCREEN")
+	@:native("SetNoLoadingScreen")
 	static function setNoLoadingScreen(toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCRIPT_AS_NO_LONGER_NEEDED")
+	@:native("SetScriptAsNoLongerNeeded")
 	static function setScriptAsNoLongerNeeded(scriptName:String):Dynamic;
 
 	/**
@@ -176,14 +176,14 @@ extern class Script {
 	 * formerly _REQUEST_STREAMED_SCRIPT  
 	 * ```
 	 */
-	@:native("REQUEST_SCRIPT_WITH_NAME_HASH")
+	@:native("RequestScriptWithNameHash")
 	static function requestScriptWithNameHash(scriptHash:Int):Dynamic;
 
 	/**
 	 * Starts a new iteration of the current threads.
 	 * Call this first, then SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID (0x30B4FA1C82DD4B9F)
 	 */
-	@:native("SCRIPT_THREAD_ITERATOR_RESET")
+	@:native("ScriptThreadIteratorReset")
 	static function scriptThreadIteratorReset():Dynamic;
 
 	/**
@@ -191,25 +191,25 @@ extern class Script {
 	 * If the function returns 0, the end of the iteration has been reached.
 	 * ```
 	 */
-	@:native("SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID")
+	@:native("ScriptThreadIteratorGetNextThreadId")
 	static function scriptThreadIteratorGetNextThreadId():Int;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED")
+	@:native("SetScriptWithNameHashAsNoLongerNeeded")
 	static function setScriptWithNameHashAsNoLongerNeeded(scriptHash:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TERMINATE_THREAD")
+	@:native("TerminateThread")
 	static function terminateThread(threadId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SHUTDOWN_LOADING_SCREEN")
+	@:native("ShutdownLoadingScreen")
 	static function shutdownLoadingScreen():Dynamic;
 
 	/**
@@ -217,13 +217,13 @@ extern class Script {
 	 * See TRIGGER_SCRIPT_EVENT
 	 * ```
 	 */
-	@:native("_TRIGGER_SCRIPT_EVENT_2")
+	@:native("TriggerScriptEvent_2")
 	static function TriggerScriptEvent2(eventGroup:Int, eventData:Dynamic, eventDataSize:Int, playerBits:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TERMINATE_THIS_THREAD")
+	@:native("TerminateThisThread")
 	static function terminateThisThread():Dynamic;
 
 	/**
@@ -233,7 +233,7 @@ extern class Script {
 	 * playerBits (also known as playersToBroadcastTo) is a bitset that indicates which players this event should be sent to. In order to send the event to specific players only, use (1 << playerIndex). Set all bits if it should be broadcast to all players.
 	 * ```
 	 */
-	@:native("TRIGGER_SCRIPT_EVENT")
+	@:native("TriggerScriptEvent")
 	static function triggerScriptEvent(eventGroup:Int, eventData:Dynamic, eventDataSize:Int, playerBits:Int):Dynamic;
 
 }

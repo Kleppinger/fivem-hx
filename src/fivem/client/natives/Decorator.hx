@@ -5,7 +5,7 @@ extern class Decorator {
 	/**
 	 * 
 	 */
-	@:native("DECOR_GET_BOOL")
+	@:native("DecorGetBool")
 	static function decorGetBool(entity:Dynamic, propertyName:String):Bool;
 
 	/**
@@ -13,7 +13,7 @@ extern class Decorator {
 	 * Returns whether or not the specified property is set for the entity.  
 	 * ```
 	 */
-	@:native("DECOR_EXIST_ON")
+	@:native("DecorExistOn")
 	static function decorExistOn(entity:Dynamic, propertyName:String):Bool;
 
 	/**
@@ -28,13 +28,13 @@ extern class Decorator {
 	 * };
 	 * ```
 	 */
-	@:native("DECOR_REGISTER")
+	@:native("DecorRegister")
 	static function decorRegister(propertyName:String, type:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_GET_INT")
+	@:native("DecorGetInt")
 	static function decorGetInt(entity:Dynamic, propertyName:String):Int;
 
 	/**
@@ -42,25 +42,25 @@ extern class Decorator {
 	 * This function sets metadata of type bool to specified entity.  
 	 * ```
 	 */
-	@:native("DECOR_SET_BOOL")
+	@:native("DecorSetBool")
 	static function decorSetBool(entity:Dynamic, propertyName:String, value:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_GET_FLOAT")
+	@:native("DecorGetFloat")
 	static function decorGetFloat(entity:Dynamic, propertyName:String):Float;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_REMOVE")
+	@:native("DecorRemove")
 	static function decorRemove(entity:Dynamic, propertyName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_IS_REGISTERED_AS_TYPE")
+	@:native("DecorIsRegisteredAsType")
 	static function decorIsRegisteredAsType(propertyName:String, type:Int):Bool;
 
 	/**
@@ -68,19 +68,19 @@ extern class Decorator {
 	 * Called after all decorator type initializations.  
 	 * ```
 	 */
-	@:native("DECOR_REGISTER_LOCK")
+	@:native("DecorRegisterLock")
 	static function decorRegisterLock():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_SET_TIME")
+	@:native("DecorSetTime")
 	static function decorSetTime(entity:Dynamic, propertyName:String, timestamp:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DECOR_SET_FLOAT")
+	@:native("DecorSetFloat")
 	static function decorSetFloat(entity:Dynamic, propertyName:String, value:Float):Bool;
 
 	/**
@@ -88,7 +88,7 @@ extern class Decorator {
 	 * Sets property to int.  
 	 * ```
 	 */
-	@:native("DECOR_SET_INT")
+	@:native("DecorSetInt")
 	static function decorSetInt(entity:Dynamic, propertyName:String, value:Int):Bool;
 
 }

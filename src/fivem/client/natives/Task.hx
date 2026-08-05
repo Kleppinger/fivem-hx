@@ -5,13 +5,13 @@ extern class Task {
 	/**
 	 * 
 	 */
-	@:native("ADD_COVER_BLOCKING_AREA")
+	@:native("AddCoverBlockingArea")
 	static function addCoverBlockingArea(playerX:Float, playerY:Float, playerZ:Float, radiusX:Float, radiusY:Float, radiusZ:Float, p6:Bool, p7:Bool, p8:Bool, p9:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_COVER_POINT")
+	@:native("AddCoverPoint")
 	static function addCoverPoint(p0:Float, p1:Float, p2:Float, p3:Float, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Bool):Dynamic;
 
 	/**
@@ -19,31 +19,31 @@ extern class Task {
 	 * image representing the cyclic example below:\
 	 * ![image](https://user-images.githubusercontent.com/55803068/188470866-c32c6a9f-a25d-4772-9b18-5be46e2c14a1.png)
 	 */
-	@:native("ADD_PATROL_ROUTE_LINK")
+	@:native("AddPatrolRouteLink")
 	static function addPatrolRouteLink(id1:Int, id2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_OVERRIDE_LOAD_DISTANCE_THIS_FRAME")
+	@:native("AssistedMovementOverrideLoadDistanceThisFrame")
 	static function assistedMovementOverrideLoadDistanceThisFrame(dist:Float):Dynamic;
 
 	/**
 	 * x2,y2 and z2 are the coordinates to which the ped should look at
 	 */
-	@:native("ADD_PATROL_ROUTE_NODE")
+	@:native("AddPatrolRouteNode")
 	static function addPatrolRouteNode(id:Int, guardScenario:String, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, waitTime:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_IS_ROUTE_LOADED")
+	@:native("AssistedMovementIsRouteLoaded")
 	static function assistedMovementIsRouteLoaded(route:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_REMOVE_ROUTE")
+	@:native("AssistedMovementRemoveRoute")
 	static function assistedMovementRemoveRoute(route:String):Dynamic;
 
 	/**
@@ -51,37 +51,37 @@ extern class Task {
 	 * x, y, z: offset in world coords from some entity.  
 	 * ```
 	 */
-	@:native("ADD_VEHICLE_SUBTASK_ATTACK_COORD")
+	@:native("AddVehicleSubtaskAttackCoord")
 	static function addVehicleSubtaskAttackCoord(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ASSISTED_MOVEMENT_SET_ROUTE_PROPERTIES")
+	@:native("AssistedMovementSetRouteProperties")
 	static function assistedMovementSetRouteProperties(route:String, props:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK")
+	@:native("ClearDrivebyTaskUnderneathDrivingTask")
 	static function clearDrivebyTaskUnderneathDrivingTask(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_VEHICLE_SUBTASK_ATTACK_PED")
+	@:native("AddVehicleSubtaskAttackPed")
 	static function addVehicleSubtaskAttackPed(ped:Dynamic, ped2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLEAR_PED_SECONDARY_TASK")
+	@:native("ClearPedSecondaryTask")
 	static function clearPedSecondaryTask(ped:Dynamic):Dynamic;
 
 	/**
 	 * Immediately stops the pedestrian from whatever it's doing. The difference between this and [CLEAR_PED_TASKS](#\_0xE1EF3C1216AFF2CD) is that this one teleports the ped but does not change the position of the ped.
 	 */
-	@:native("CLEAR_PED_TASKS_IMMEDIATELY")
+	@:native("ClearPedTasksImmediately")
 	static function clearPedTasksImmediately(ped:Dynamic):Dynamic;
 
 	/**
@@ -89,7 +89,7 @@ extern class Task {
 	 * Routes: "1_FIBStairs", "2_FIBStairs", "3_FIBStairs", "4_FIBStairs", "5_FIBStairs", "5_TowardsFire", "6a_FIBStairs", "7_FIBStairs", "8_FIBStairs", "Aprtmnt_1", "AssAfterLift", "ATM_1", "coroner2", "coroner_stairs", "f5_jimmy1", "fame1", "family5b", "family5c", "Family5d", "family5d", "FIB_Glass1", "FIB_Glass2", "FIB_Glass3", "finaBroute1A", "finalb1st", "finalB1sta", "finalbround", "finalbroute2", "Hairdresser1", "jan_foyet_ft_door", "Jo_3", "Lemar1", "Lemar2", "mansion_1", "Mansion_1", "pols_1", "pols_2", "pols_3", "pols_4", "pols_5", "pols_6", "pols_7", "pols_8", "Pro_S1", "Pro_S1a", "Pro_S2", "Towards_case", "trev_steps", "tunrs1", "tunrs2", "tunrs3", "Wave01457s"  
 	 * ```
 	 */
-	@:native("ASSISTED_MOVEMENT_REQUEST_ROUTE")
+	@:native("AssistedMovementRequestRoute")
 	static function assistedMovementRequestRoute(route:String):Dynamic;
 
 	/**
@@ -99,13 +99,13 @@ extern class Task {
 	 * 
 	 * If you fail to call [`CLOSE_SEQUENCE_TASK`](#\_0x39E72BC99E6360CB) and `CLEAR_SEQUENCE_TASK` the sequence system can get stuck in a broken state until you restart your client.
 	 */
-	@:native("CLEAR_SEQUENCE_TASK")
+	@:native("ClearSequenceTask")
 	static function clearSequenceTask(taskSequenceId:Dynamic):Dynamic;
 
 	/**
 	 * Clear a ped's tasks. Stop animations and other tasks created by scripts.
 	 */
-	@:native("CLEAR_PED_TASKS")
+	@:native("ClearPedTasks")
 	static function clearPedTasks(ped:Dynamic):Dynamic;
 
 	/**
@@ -115,13 +115,13 @@ extern class Task {
 	 * 
 	 * If you fail to call `CLOSE_SEQUENCE_TASK` and [`CLEAR_SEQUENCE_TASK`](#\_0x3841422E9C488D8C) this can get stuck in a broken state until you restart your client.
 	 */
-	@:native("CLOSE_SEQUENCE_TASK")
+	@:native("CloseSequenceTask")
 	static function closeSequenceTask(taskSequenceId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("CLOSE_PATROL_ROUTE")
+	@:native("ClosePatrolRoute")
 	static function closePatrolRoute():Dynamic;
 
 	/**
@@ -130,7 +130,7 @@ extern class Task {
 	 * Returns false if task is not possible.  
 	 * ```
 	 */
-	@:native("CONTROL_MOUNTED_WEAPON")
+	@:native("ControlMountedWeapon")
 	static function controlMountedWeapon(ped:Dynamic):Bool;
 
 	/**
@@ -142,13 +142,13 @@ extern class Task {
 	 * TASK::DELETE_PATROL_ROUTE("miss_dock");
 	 * ```
 	 */
-	@:native("DELETE_PATROL_ROUTE")
+	@:native("DeletePatrolRoute")
 	static function deletePatrolRoute(patrolRoute:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_SCENARIO_EXIST_IN_AREA")
+	@:native("DoesScenarioExistInArea")
 	static function doesScenarioExistInArea(x:Float, y:Float, z:Float, radius:Float, b:Bool):Bool;
 
 	/**
@@ -158,7 +158,7 @@ extern class Task {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_CLEAR_VEHICLE_TASKS")
+	@:native("ClearVehicleTasks")
 	static function ClearVehicleTasks(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -197,13 +197,13 @@ extern class Task {
 	 * else if (TASK::IS_SCENARIO_GROUP_ENABLED("BLIMP")) {
 	 * ```
 	 */
-	@:native("DOES_SCENARIO_GROUP_EXIST")
+	@:native("DoesScenarioGroupExist")
 	static function doesScenarioGroupExist(scenarioGroup:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("CREATE_PATROL_ROUTE")
+	@:native("CreatePatrolRoute")
 	static function createPatrolRoute():Dynamic;
 
 	/**
@@ -211,19 +211,19 @@ extern class Task {
 	 * Task index enum: https://alloc8or.re/gta5/doc/enums/eTaskTypeIndex.txt
 	 * ```
 	 */
-	@:native("GET_IS_TASK_ACTIVE")
+	@:native("GetIsTaskActive")
 	static function getIsTaskActive(ped:Dynamic, taskIndex:Int):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("DOES_SCENARIO_OF_TYPE_EXIST_IN_AREA")
+	@:native("DoesScenarioOfTypeExistInArea")
 	static function doesScenarioOfTypeExistInArea(p0:Float, p1:Float, p2:Float, p3:String, p4:Float, p5:Bool):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_WAYPOINT_DISTANCE")
+	@:native("GetPedWaypointDistance")
 	static function getPedWaypointDistance(p0:Dynamic):Float;
 
 	/**
@@ -231,19 +231,19 @@ extern class Task {
 	 * Checks if there is a cover point at position  
 	 * ```
 	 */
-	@:native("DOES_SCRIPTED_COVER_POINT_EXIST_AT_COORDS")
+	@:native("DoesScriptedCoverPointExistAtCoords")
 	static function doesScriptedCoverPointExistAtCoords(x:Float, y:Float, z:Float):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CLIP_SET_FOR_SCRIPTED_GUN_TASK")
+	@:native("GetClipSetForScriptedGunTask")
 	static function getClipSetForScriptedGunTask(p0:Int):String;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PHONE_GESTURE_ANIM_CURRENT_TIME")
+	@:native("GetPhoneGestureAnimCurrentTime")
 	static function getPhoneGestureAnimCurrentTime(ped:Dynamic):Float;
 
 	/**
@@ -251,19 +251,19 @@ extern class Task {
 	 * https://alloc8or.re/gta5/doc/enums/eVehicleMissionType.txt
 	 * ```
 	 */
-	@:native("GET_ACTIVE_VEHICLE_MISSION_TYPE")
+	@:native("GetActiveVehicleMissionType")
 	static function getActiveVehicleMissionType(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PHONE_GESTURE_ANIM_TOTAL_TIME")
+	@:native("GetPhoneGestureAnimTotalTime")
 	static function getPhoneGestureAnimTotalTime(ped:Dynamic):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_IS_WAYPOINT_RECORDING_LOADED")
+	@:native("GetIsWaypointRecordingLoaded")
 	static function getIsWaypointRecordingLoaded(name:String):Bool;
 
 	/**
@@ -276,25 +276,25 @@ extern class Task {
 	 * 3 - Finished Generating
 	 * ```
 	 */
-	@:native("GET_NAVMESH_ROUTE_DISTANCE_REMAINING")
+	@:native("GetNavmeshRouteDistanceRemaining")
 	static function getNavmeshRouteDistanceRemaining(ped:Dynamic, distanceRemaining:Dynamic, isPathReady:Dynamic):Int;
 
 	/**
 	 * See [`GET_NAVMESH_ROUTE_DISTANCE_REMAINING`](#\_0xC6F5C0BCDC74D62D) for more details.
 	 */
-	@:native("GET_NAVMESH_ROUTE_RESULT")
+	@:native("GetNavmeshRouteResult")
 	static function getNavmeshRouteResult(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_WAYPOINT_PROGRESS")
+	@:native("GetPedWaypointProgress")
 	static function getPedWaypointProgress(ped:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_PED_DESIRED_MOVE_BLEND_RATIO")
+	@:native("GetPedDesiredMoveBlendRatio")
 	static function getPedDesiredMoveBlendRatio(ped:Dynamic):Float;
 
 	/**
@@ -304,7 +304,7 @@ extern class Task {
 	 * -1 no task sequence in progress.
 	 * ```
 	 */
-	@:native("GET_SEQUENCE_PROGRESS")
+	@:native("GetSequenceProgress")
 	static function getSequenceProgress(ped:Dynamic):Int;
 
 	/**
@@ -325,7 +325,7 @@ extern class Task {
 	 * 7 = TASK_FINISHED_OR_NOT_FOUND
 	 * ```
 	 */
-	@:native("GET_SCRIPT_TASK_STATUS")
+	@:native("GetScriptTaskStatus")
 	static function getScriptTaskStatus(ped:Dynamic, taskHash:Int):Int;
 
 	/**
@@ -333,67 +333,67 @@ extern class Task {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT")
+	@:native("GetTaskMoveNetworkSignalFloat")
 	static function GetTaskMoveNetworkSignalFloat(ped:Dynamic, signalName:String):Float;
 
 	/**
 	 * 
 	 */
-	@:native("GET_SCRIPTED_COVER_POINT_COORDS")
+	@:native("GetScriptedCoverPointCoords")
 	static function getScriptedCoverPointCoords(coverpoint:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TASK_MOVE_NETWORK_EVENT")
+	@:native("GetTaskMoveNetworkEvent")
 	static function getTaskMoveNetworkEvent(ped:Dynamic, eventName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_WAYPOINT_PROGRESS")
+	@:native("GetVehicleWaypointProgress")
 	static function getVehicleWaypointProgress(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_VEHICLE_WAYPOINT_TARGET_POINT")
+	@:native("GetVehicleWaypointTargetPoint")
 	static function getVehicleWaypointTargetPoint(vehicle:Dynamic):Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TASK_MOVE_NETWORK_SIGNAL_BOOL")
+	@:native("GetTaskMoveNetworkSignalBool")
 	static function getTaskMoveNetworkSignalBool(ped:Dynamic, signalName:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOVE_BLEND_RATIO_STILL")
+	@:native("IsMoveBlendRatioStill")
 	static function isMoveBlendRatioStill(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_TASK_MOVE_NETWORK_STATE")
+	@:native("GetTaskMoveNetworkState")
 	static function getTaskMoveNetworkState(ped:Dynamic):String;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOUNTED_WEAPON_TASK_UNDERNEATH_DRIVING_TASK")
+	@:native("IsMountedWeaponTaskUnderneathDrivingTask")
 	static function isMountedWeaponTaskUnderneathDrivingTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOVE_BLEND_RATIO_RUNNING")
+	@:native("IsMoveBlendRatioRunning")
 	static function isMoveBlendRatioRunning(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("GET_WAYPOINT_DISTANCE_ALONG_ROUTE")
+	@:native("GetWaypointDistanceAlongRoute")
 	static function getWaypointDistanceAlongRoute(p0:String, p1:Int):Float;
 
 	/**
@@ -401,55 +401,55 @@ extern class Task {
 	 * This function is hard-coded to always return 0.  
 	 * ```
 	 */
-	@:native("IS_PED_BEING_ARRESTED")
+	@:native("IsPedBeingArrested")
 	static function isPedBeingArrested(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOVE_BLEND_RATIO_WALKING")
+	@:native("IsMoveBlendRatioWalking")
 	static function isMoveBlendRatioWalking(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_GETTING_UP")
+	@:native("IsPedGettingUp")
 	static function isPedGettingUp(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_MOVE_BLEND_RATIO_SPRINTING")
+	@:native("IsMoveBlendRatioSprinting")
 	static function isMoveBlendRatioSprinting(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_CUFFED")
+	@:native("IsPedCuffed")
 	static function isPedCuffed(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK")
+	@:native("IsDrivebyTaskUnderneathDrivingTask")
 	static function isDrivebyTaskUnderneathDrivingTask(ped:Dynamic):Bool;
 
 	/**
 	 * This is a stricter version of [`IS_PED_USING_ANY_SCENARIO`](#\_0x57AB4A3080F85143). It only returns true if the ped is playing the ambient animations associated with the scenario.
 	 */
-	@:native("IS_PED_ACTIVE_IN_SCENARIO")
+	@:native("IsPedActiveInScenario")
 	static function isPedActiveInScenario(ped:Dynamic):Bool;
 
 	/**
 	 * This native checks if a ped is on the ground, in pain from a (gunshot) wound.
 	 */
-	@:native("IS_PED_IN_WRITHE")
+	@:native("IsPedInWrithe")
 	static function isPedInWrithe(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_PLAYING_BASE_CLIP_IN_SCENARIO")
+	@:native("IsPedPlayingBaseClipInScenario")
 	static function isPedPlayingBaseClipInScenario(ped:Dynamic):Bool;
 
 	/**
@@ -457,43 +457,43 @@ extern class Task {
 	 * What's strafing?  
 	 * ```
 	 */
-	@:native("IS_PED_STRAFING")
+	@:native("IsPedStrafing")
 	static function isPedStrafing(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RUNNING")
+	@:native("IsPedRunning")
 	static function isPedRunning(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_RUNNING_ARREST_TASK")
+	@:native("IsPedRunningArrestTask")
 	static function isPedRunningArrestTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_SPRINTING")
+	@:native("IsPedSprinting")
 	static function isPedSprinting(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_STILL")
+	@:native("IsPedStill")
 	static function isPedStill(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PED_WALKING")
+	@:native("IsPedWalking")
 	static function isPedWalking(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_SCENARIO_OCCUPIED")
+	@:native("IsScenarioOccupied")
 	static function isScenarioOccupied(p0:Float, p1:Float, p2:Float, p3:Float, p4:Bool):Bool;
 
 	/**
@@ -509,7 +509,7 @@ extern class Task {
 	 * scenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.
 	 * ```
 	 */
-	@:native("IS_SCENARIO_TYPE_ENABLED")
+	@:native("IsScenarioTypeEnabled")
 	static function isScenarioTypeEnabled(scenarioType:String):Bool;
 
 	/**
@@ -543,61 +543,61 @@ extern class Task {
 	 * else if (TASK::IS_SCENARIO_GROUP_ENABLED("BLIMP")) {
 	 * ```
 	 */
-	@:native("IS_SCENARIO_GROUP_ENABLED")
+	@:native("IsScenarioGroupEnabled")
 	static function isScenarioGroupEnabled(scenarioGroup:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION")
+	@:native("IsTaskMoveNetworkReadyForTransition")
 	static function isTaskMoveNetworkReadyForTransition(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_PLAYING_PHONE_GESTURE_ANIM")
+	@:native("IsPlayingPhoneGestureAnim")
 	static function isPlayingPhoneGestureAnim(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_TASK_MOVE_NETWORK_ACTIVE")
+	@:native("IsTaskMoveNetworkActive")
 	static function isTaskMoveNetworkActive(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_VEHICLE")
+	@:native("IsWaypointPlaybackGoingOnForVehicle")
 	static function isWaypointPlaybackGoingOnForVehicle(vehicle:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_PED")
+	@:native("IsWaypointPlaybackGoingOnForPed")
 	static function isWaypointPlaybackGoingOnForPed(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PED_HAS_USE_SCENARIO_TASK")
+	@:native("PedHasUseScenarioTask")
 	static function pedHasUseScenarioTask(ped:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("PLAY_ENTITY_SCRIPTED_ANIM")
+	@:native("PlayEntityScriptedAnim")
 	static function playEntityScriptedAnim(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Float, p5:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_ALL_COVER_BLOCKING_AREAS")
+	@:native("RemoveAllCoverBlockingAreas")
 	static function removeAllCoverBlockingAreas():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_WAYPOINT_RECORDING")
+	@:native("RemoveWaypointRecording")
 	static function removeWaypointRecording(name:String):Dynamic;
 
 	/**
@@ -607,19 +607,19 @@ extern class Task {
 	 * 
 	 * If you fail to call [`CLOSE_SEQUENCE_TASK`](#\_0x39E72BC99E6360CB) and [`CLEAR_SEQUENCE_TASK`](#\_0x3841422E9C488D8C) the sequence system can get stuck in a broken state until you restart your client.
 	 */
-	@:native("OPEN_SEQUENCE_TASK")
+	@:native("OpenSequenceTask")
 	static function openSequenceTask(taskSequenceId:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_EXCLUSIVE_SCENARIO_GROUP")
+	@:native("ResetExclusiveScenarioGroup")
 	static function resetExclusiveScenarioGroup():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REMOVE_COVER_POINT")
+	@:native("RemoveCoverPoint")
 	static function removeCoverPoint(coverpoint:Dynamic):Dynamic;
 
 	/**
@@ -649,31 +649,31 @@ extern class Task {
 	 *  "miss_Tower_10"
 	 * ```
 	 */
-	@:native("OPEN_PATROL_ROUTE")
+	@:native("OpenPatrolRoute")
 	static function openPatrolRoute(patrolRoute:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION")
+	@:native("RequestTaskMoveNetworkStateTransition")
 	static function requestTaskMoveNetworkStateTransition(ped:Dynamic, name:String):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ANIM_WEIGHT")
+	@:native("SetAnimWeight")
 	static function setAnimWeight(p0:Dynamic, p1:Float, p2:Dynamic, p3:Dynamic, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_SCENARIO_TYPES_ENABLED")
+	@:native("ResetScenarioTypesEnabled")
 	static function resetScenarioTypesEnabled():Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("PLAY_ANIM_ON_RUNNING_SCENARIO")
+	@:native("PlayAnimOnRunningScenario")
 	static function playAnimOnRunningScenario(ped:Dynamic, animDict:String, animName:String):Dynamic;
 
 	/**
@@ -682,31 +682,31 @@ extern class Task {
 	 * Max number of loaded recordings is 32.
 	 * ```
 	 */
-	@:native("REQUEST_WAYPOINT_RECORDING")
+	@:native("RequestWaypointRecording")
 	static function requestWaypointRecording(name:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("RESET_SCENARIO_GROUPS_ENABLED")
+	@:native("ResetScenarioGroupsEnabled")
 	static function resetScenarioGroupsEnabled():Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DRIVE_TASK_CRUISE_SPEED")
+	@:native("SetDriveTaskCruiseSpeed")
 	static function setDriveTaskCruiseSpeed(driver:Dynamic, cruiseSpeed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ANIM_RATE")
+	@:native("SetAnimRate")
 	static function setAnimRate(p0:Dynamic, p1:Float, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_ANIM_LOOPED")
+	@:native("SetAnimLooped")
 	static function setAnimLooped(p0:Dynamic, p1:Bool, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
@@ -760,7 +760,7 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("SET_DRIVE_TASK_DRIVING_STYLE")
+	@:native("SetDriveTaskDrivingStyle")
 	static function setDriveTaskDrivingStyle(ped:Dynamic, drivingStyle:Int):Dynamic;
 
 	/**
@@ -768,7 +768,7 @@ extern class Task {
 	 * NativeDB Introduced: v2372
 	 * ```
 	 */
-	@:native("SET_ANIM_PHASE")
+	@:native("SetAnimPhase")
 	static function setAnimPhase(entity:Dynamic, p1:Float, p2:Dynamic, p3:Bool):Dynamic;
 
 	/**
@@ -776,7 +776,7 @@ extern class Task {
 	 * For p1 & p2 (Ped, Vehicle). I could be wrong, as the only time this native is called in scripts is once and both are 0, but I assume this native will work like SET_MOUNTED_WEAPON_TARGET in which has the same exact amount of parameters and the 1st and last 3 parameters are right and the same for both natives.  
 	 * ```
 	 */
-	@:native("SET_DRIVEBY_TASK_TARGET")
+	@:native("SetDrivebyTaskTarget")
 	static function setDrivebyTaskTarget(shootingPed:Dynamic, targetPed:Dynamic, targetVehicle:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -789,13 +789,13 @@ extern class Task {
 	 * NativeDB Added Parameter 8: Any p7
 	 * ```
 	 */
-	@:native("SET_MOUNTED_WEAPON_TARGET")
+	@:native("SetMountedWeaponTarget")
 	static function setMountedWeaponTarget(shootingPed:Dynamic, targetPed:Dynamic, targetVehicle:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_DRIVE_TASK_MAX_CRUISE_SPEED")
+	@:native("SetDriveTaskMaxCruiseSpeed")
 	static function setDriveTaskMaxCruiseSpeed(p0:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -803,7 +803,7 @@ extern class Task {
 	 * Birds will try to reach the given height.  
 	 * ```
 	 */
-	@:native("SET_GLOBAL_MIN_BIRD_FLIGHT_HEIGHT")
+	@:native("SetGlobalMinBirdFlightHeight")
 	static function setGlobalMinBirdFlightHeight(height:Float):Dynamic;
 
 	/**
@@ -816,13 +816,13 @@ extern class Task {
 	 * "Triathlon_3"  
 	 * ```
 	 */
-	@:native("SET_EXCLUSIVE_SCENARIO_GROUP")
+	@:native("SetExclusiveScenarioGroup")
 	static function setExclusiveScenarioGroup(scenarioGroup:String):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_HIGH_FALL_TASK")
+	@:native("SetHighFallTask")
 	static function setHighFallTask(ped:Dynamic, duration:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -830,37 +830,37 @@ extern class Task {
 	 * 
 	 * **Note:** This native must be called every frame.
 	 */
-	@:native("SET_PED_CAN_PLAY_AMBIENT_IDLES")
+	@:native("SetPedCanPlayAmbientIdles")
 	static function setPedCanPlayAmbientIdles(ped:Dynamic, bBlockIdleClips:Bool, bRemoveIdleClipIfPlaying:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARACHUTE_TASK_THRUST")
+	@:native("SetParachuteTaskThrust")
 	static function setParachuteTaskThrust(ped:Dynamic, thrust:Float):Dynamic;
 
 	/**
 	 * **This native does absolutely nothing, just a nullsub**
 	 */
-	@:native("SET_NEXT_DESIRED_MOVE_STATE")
+	@:native("SetNextDesiredMoveState")
 	static function setNextDesiredMoveState(p0:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PARACHUTE_TASK_TARGET")
+	@:native("SetParachuteTaskTarget")
 	static function setParachuteTaskTarget(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_AVOID_FIRE")
+	@:native("SetPedPathAvoidFire")
 	static function setPedPathAvoidFire(ped:Dynamic, avoidFire:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_MAY_ENTER_WATER")
+	@:native("SetPedPathMayEnterWater")
 	static function setPedPathMayEnterWater(ped:Dynamic, mayEnterWater:Bool):Dynamic;
 
 	/**
@@ -868,7 +868,7 @@ extern class Task {
 	 * Default modifier is 1.0, minimum is 0.0 and maximum is 10.0.
 	 * ```
 	 */
-	@:native("SET_PED_PATH_CLIMB_COST_MODIFIER")
+	@:native("SetPedPathClimbCostModifier")
 	static function setPedPathClimbCostModifier(ped:Dynamic, modifier:Float):Dynamic;
 
 	/**
@@ -876,19 +876,19 @@ extern class Task {
 	 * Occurrences in the b617d scripts: pastebin.com/Tvg2PRHU  
 	 * ```
 	 */
-	@:native("SET_SCENARIO_GROUP_ENABLED")
+	@:native("SetScenarioGroupEnabled")
 	static function setScenarioGroupEnabled(scenarioGroup:String, p1:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_CAN_DROP_FROM_HEIGHT")
+	@:native("SetPedPathCanDropFromHeight")
 	static function setPedPathCanDropFromHeight(ped:Dynamic, Toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_DESIRED_MOVE_BLEND_RATIO")
+	@:native("SetPedDesiredMoveBlendRatio")
 	static function setPedDesiredMoveBlendRatio(ped:Dynamic, p1:Float):Dynamic;
 
 	/**
@@ -900,31 +900,31 @@ extern class Task {
 	 * * Flag 32: Stay back from suspect, no tactical contact. Convoy-like.
 	 * ```
 	 */
-	@:native("SET_TASK_VEHICLE_CHASE_BEHAVIOR_FLAG")
+	@:native("SetTaskVehicleChaseBehaviorFlag")
 	static function setTaskVehicleChaseBehaviorFlag(ped:Dynamic, flag:Int, set:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_WAYPOINT_ROUTE_OFFSET")
+	@:native("SetPedWaypointRouteOffset")
 	static function setPedWaypointRouteOffset(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_CAN_USE_CLIMBOVERS")
+	@:native("SetPedPathCanUseClimbovers")
 	static function setPedPathCanUseClimbovers(ped:Dynamic, Toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_PREFER_TO_AVOID_WATER")
+	@:native("SetPedPathPreferToAvoidWater")
 	static function setPedPathPreferToAvoidWater(ped:Dynamic, avoidWater:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_SEQUENCE_TO_REPEAT")
+	@:native("SetSequenceToRepeat")
 	static function setSequenceToRepeat(taskSequenceId:Int, repeat:Bool):Dynamic;
 
 	/**
@@ -932,13 +932,13 @@ extern class Task {
 	 * Looks like p1 may be a flag, still need to do some research, though.
 	 * ```
 	 */
-	@:native("STOP_ANIM_PLAYBACK")
+	@:native("StopAnimPlayback")
 	static function stopAnimPlayback(ped:Dynamic, p1:Int, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_PED_PATH_CAN_USE_LADDERS")
+	@:native("SetPedPathCanUseLadders")
 	static function setPedPathCanUseLadders(ped:Dynamic, Toggle:Bool):Dynamic;
 
 	/**
@@ -949,7 +949,7 @@ extern class Task {
 	 * timeout: The time, in milliseconds, to allow the task to complete. If the task times out, it is cancelled, and the ped will stay at the heading it managed to reach in the time.  
 	 * ```
 	 */
-	@:native("TASK_ACHIEVE_HEADING")
+	@:native("TaskAchieveHeading")
 	static function taskAchieveHeading(ped:Dynamic, heading:Float, timeout:Int):Dynamic;
 
 	/**
@@ -987,25 +987,25 @@ extern class Task {
 	 * scenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.
 	 * ```
 	 */
-	@:native("SET_SCENARIO_TYPE_ENABLED")
+	@:native("SetScenarioTypeEnabled")
 	static function setScenarioTypeEnabled(scenarioType:String, toggle:Bool):Dynamic;
 
 	/**
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("STOP_ANIM_TASK")
+	@:native("StopAnimTask")
 	static function stopAnimTask(ped:Dynamic, animDictionary:String, animationName:String, animExitSpeed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TASK_MOVE_NETWORK_SIGNAL_BOOL")
+	@:native("SetTaskMoveNetworkSignalBool")
 	static function setTaskMoveNetworkSignalBool(ped:Dynamic, signalName:String, value:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_AIM_GUN_SCRIPTED_WITH_TARGET")
+	@:native("TaskAimGunScriptedWithTarget")
 	static function taskAimGunScriptedWithTarget(ped:Dynamic, targetPed:Dynamic, x:Float, y:Float, z:Float, iGunTaskType:Int, bDisableBlockingClip:Bool, bForceAim:Bool):Dynamic;
 
 	/**
@@ -1017,7 +1017,7 @@ extern class Task {
 	 * Example: TASK::_D5BB4025AE449A4E(PLAYER::PLAYER_PED_ID(), "Phase", 0.5);
 	 * ```
 	 */
-	@:native("SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT")
+	@:native("SetTaskMoveNetworkSignalFloat")
 	static function setTaskMoveNetworkSignalFloat(ped:Dynamic, signalName:String, value:Float):Dynamic;
 
 	/**
@@ -1025,7 +1025,7 @@ extern class Task {
 	 * duration: the amount of time in milliseconds to do the task.  -1 will keep the task going until either another task is applied, or CLEAR_ALL_TASKS() is called with the ped  
 	 * ```
 	 */
-	@:native("TASK_AIM_GUN_AT_ENTITY")
+	@:native("TaskAimGunAtEntity")
 	static function taskAimGunAtEntity(ped:Dynamic, entity:Dynamic, duration:Int, bInstantBlendToAim:Bool):Dynamic;
 
 	/**
@@ -1033,13 +1033,13 @@ extern class Task {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2")
+	@:native("SetTaskMoveNetworkSignalFloat_2")
 	static function SetTaskMoveNetworkSignalFloat2(ped:Dynamic, signalName:String, value:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_AIM_GUN_AT_COORD")
+	@:native("TaskAimGunAtCoord")
 	static function taskAimGunAtCoord(ped:Dynamic, x:Float, y:Float, z:Float, time:Int, bInstantBlendToAim:Bool, bPlayAimIntro:Bool):Dynamic;
 
 	/**
@@ -1071,19 +1071,19 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_BOAT_MISSION")
+	@:native("TaskBoatMission")
 	static function taskBoatMission(ped:Dynamic, boat:Dynamic, vehicleTarget:Dynamic, pedTarget:Dynamic, x:Float, y:Float, z:Float, missionType:Int, speed:Float, drivingStyle:Int, radius:Float, missionFlags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_AIM_GUN_SCRIPTED")
+	@:native("TaskAimGunScripted")
 	static function taskAimGunScripted(ped:Dynamic, scriptTask:Int, bDisableBlockingClip:Bool, bInstantBlendToAim:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_TASK_VEHICLE_CHASE_IDEAL_PURSUIT_DISTANCE")
+	@:native("SetTaskVehicleChaseIdealPursuitDistance")
 	static function setTaskVehicleChaseIdealPursuitDistance(ped:Dynamic, distance:Float):Dynamic;
 
 	/**
@@ -1098,7 +1098,7 @@ extern class Task {
 	 * Looks like only the player can be arrested this way. Peds react and try to arrest you if you task them, but the player charater doesn't do anything if tasked to arrest another ped.
 	 * ```
 	 */
-	@:native("TASK_ARREST_PED")
+	@:native("TaskArrestPed")
 	static function taskArrestPed(ped:Dynamic, target:Dynamic):Dynamic;
 
 	/**
@@ -1107,19 +1107,19 @@ extern class Task {
 	 * p3 to p7 tend to be 0.0  
 	 * ```
 	 */
-	@:native("TASK_CHAT_TO_PED")
+	@:native("TaskChatToPed")
 	static function taskChatToPed(ped:Dynamic, target:Dynamic, p2:Dynamic, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("_TASK_AGITATED_ACTION")
+	@:native("TaskAgitatedAction")
 	static function TaskAgitatedAction(ped:Dynamic, ped2:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_CLEAR_DEFENSIVE_AREA")
+	@:native("TaskClearDefensiveArea")
 	static function taskClearDefensiveArea(p0:Dynamic):Dynamic;
 
 	/**
@@ -1139,13 +1139,13 @@ extern class Task {
 	 * TASK::TASK_CLEAR_LOOK_AT(l_3ED);
 	 * ```
 	 */
-	@:native("TASK_CLEAR_LOOK_AT")
+	@:native("TaskClearLookAt")
 	static function taskClearLookAt(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_COMBAT_HATED_TARGETS_AROUND_PED_TIMED")
+	@:native("TaskCombatHatedTargetsAroundPedTimed")
 	static function taskCombatHatedTargetsAroundPedTimed(p0:Dynamic, p1:Float, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -1154,7 +1154,7 @@ extern class Task {
 	 * p2 seems to be always 0  
 	 * ```
 	 */
-	@:native("TASK_COMBAT_HATED_TARGETS_AROUND_PED")
+	@:native("TaskCombatHatedTargetsAroundPed")
 	static function taskCombatHatedTargetsAroundPed(ped:Dynamic, radius:Float, p2:Int):Dynamic;
 
 	/**
@@ -1162,19 +1162,19 @@ extern class Task {
 	 * Despite its name, it only attacks ONE hated target. The one closest to the specified position.  
 	 * ```
 	 */
-	@:native("TASK_COMBAT_HATED_TARGETS_IN_AREA")
+	@:native("TaskCombatHatedTargetsInArea")
 	static function taskCombatHatedTargetsInArea(ped:Dynamic, x:Float, y:Float, z:Float, radius:Float, p5:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_COMBAT_PED_TIMED")
+	@:native("TaskCombatPedTimed")
 	static function taskCombatPedTimed(p0:Dynamic, ped:Dynamic, p2:Int, p3:Dynamic):Dynamic;
 
 	/**
 	 * The ped will act like NPC's involved in a gunfight. The ped will squat down with their heads held in place and look around.
 	 */
-	@:native("TASK_COWER")
+	@:native("TaskCower")
 	static function taskCower(ped:Dynamic, duration:Int):Dynamic;
 
 	/**
@@ -1187,7 +1187,7 @@ extern class Task {
 	 * I marked p7 as pedAccuracy as it seems it's mostly 100 (Completely Accurate), 75, 90, etc. Although this could be the ammo count within the gun, but I highly doubt it. I will change this comment once I find out if it's ammo count or not.
 	 * ```
 	 */
-	@:native("TASK_DRIVE_BY")
+	@:native("TaskDriveBy")
 	static function taskDriveBy(driverPed:Dynamic, targetPed:Dynamic, targetVehicle:Dynamic, targetX:Float, targetY:Float, targetZ:Float, distanceToShoot:Float, pedAccuracy:Int, p8:Bool, firingPattern:Int):Dynamic;
 
 	/**
@@ -1195,13 +1195,13 @@ extern class Task {
 	 * Climbs or vaults the nearest thing.  
 	 * ```
 	 */
-	@:native("TASK_CLIMB")
+	@:native("TaskClimb")
 	static function taskClimb(ped:Dynamic, unused:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_EVERYONE_LEAVE_VEHICLE")
+	@:native("TaskEveryoneLeaveVehicle")
 	static function taskEveryoneLeaveVehicle(vehicle:Dynamic):Dynamic;
 
 	/**
@@ -1211,13 +1211,13 @@ extern class Task {
 	 * p6 is always 0  
 	 * ```
 	 */
-	@:native("TASK_ENTER_VEHICLE")
+	@:native("TaskEnterVehicle")
 	static function taskEnterVehicle(ped:Dynamic, vehicle:Dynamic, timeout:Int, seatIndex:Int, speed:Float, flag:Int, p6:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_CLIMB_LADDER")
+	@:native("TaskClimbLadder")
 	static function taskClimbLadder(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -1234,7 +1234,7 @@ extern class Task {
 	 * 
 	 * This native is often times used with [`TASK_FLUSH_ROUTE`](#\_0x841142A1376E9006) and [`TASK_EXTEND_ROUTE`](#\_0x1E7889778264843A)
 	 */
-	@:native("TASK_FOLLOW_POINT_ROUTE")
+	@:native("TaskFollowPointRoute")
 	static function taskFollowPointRoute(ped:Dynamic, speed:Float, routeMode:Int):Dynamic;
 
 	/**
@@ -1242,7 +1242,7 @@ extern class Task {
 	 * 
 	 * Call [TASK_FLUSH_ROUTE](#\_0x841142A1376E9006) before the first call to this. Call [TASK_FOLLOW_POINT_ROUTE](#\_0x595583281858626E) to make the Ped go the route.
 	 */
-	@:native("TASK_EXTEND_ROUTE")
+	@:native("TaskExtendRoute")
 	static function taskExtendRoute(x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -1252,13 +1252,13 @@ extern class Task {
 	 * p3 should be 16  
 	 * ```
 	 */
-	@:native("TASK_COMBAT_PED")
+	@:native("TaskCombatPed")
 	static function taskCombatPed(ped:Dynamic, targetPed:Dynamic, p2:Int, p3:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_EXIT_COVER")
+	@:native("TaskExitCover")
 	static function taskExitCover(p0:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Float):Dynamic;
 
 	/**
@@ -1268,19 +1268,19 @@ extern class Task {
 	 * p8 always 1  
 	 * ```
 	 */
-	@:native("TASK_FOLLOW_TO_OFFSET_OF_ENTITY")
+	@:native("TaskFollowToOffsetOfEntity")
 	static function taskFollowToOffsetOfEntity(ped:Dynamic, entity:Dynamic, offsetX:Float, offsetY:Float, offsetZ:Float, movementSpeed:Float, timeout:Int, stoppingRange:Float, persistFollowing:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_FOLLOW_WAYPOINT_RECORDING")
+	@:native("TaskFollowWaypointRecording")
 	static function taskFollowWaypointRecording(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic):Dynamic;
 
 	/**
 	 * Clears the current point route. Call this before [TASK_EXTEND_ROUTE](#\_0x1E7889778264843A) and [TASK_FOLLOW_POINT_ROUTE](#\_0x595583281858626E).
 	 */
-	@:native("TASK_FLUSH_ROUTE")
+	@:native("TaskFlushRoute")
 	static function taskFlushRoute():Dynamic;
 
 	/**
@@ -1336,31 +1336,31 @@ extern class Task {
 	 * };
 	 * ```
 	 */
-	@:native("TASK_FOLLOW_NAV_MESH_TO_COORD")
+	@:native("TaskFollowNavMeshToCoord")
 	static function taskFollowNavMeshToCoord(ped:Dynamic, x:Float, y:Float, z:Float, moveBlendRatio:Float, time:Int, radius:Float, flags:Int, finalHeading:Float):Dynamic;
 
 	/**
 	 * See [`FORCE_PED_MOTION_STATE`](#\_0xF28965D04F570DCA)
 	 */
-	@:native("TASK_FORCE_MOTION_STATE")
+	@:native("TaskForceMotionState")
 	static function taskForceMotionState(ped:Dynamic, state:Int, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GET_OFF_BOAT")
+	@:native("TaskGetOffBoat")
 	static function taskGetOffBoat(ped:Dynamic, boat:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_FOLLOW_NAV_MESH_TO_COORD_ADVANCED")
+	@:native("TaskFollowNavMeshToCoordAdvanced")
 	static function taskFollowNavMeshToCoordAdvanced(ped:Dynamic, x:Float, y:Float, z:Float, speed:Float, timeout:Int, unkFloat:Float, unkInt:Int, unkX:Float, unkY:Float, unkZ:Float, unk_40000f:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GO_STRAIGHT_TO_COORD_RELATIVE_TO_ENTITY")
+	@:native("TaskGoStraightToCoordRelativeToEntity")
 	static function taskGoStraightToCoordRelativeToEntity(entity1:Dynamic, entity2:Dynamic, p2:Float, p3:Float, p4:Float, p5:Float, p6:Dynamic):Dynamic;
 
 	/**
@@ -1431,13 +1431,13 @@ extern class Task {
 	 * };
 	 * ```
 	 */
-	@:native("TASK_GO_TO_COORD_ANY_MEANS")
+	@:native("TaskGoToCoordAnyMeans")
 	static function taskGoToCoordAnyMeans(ped:Dynamic, x:Float, y:Float, z:Float, fMoveBlendRatio:Float, vehicle:Dynamic, bUseLongRangeVehiclePathing:Bool, drivingFlags:Int, fMaxRangeToShootTargets:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GO_STRAIGHT_TO_COORD")
+	@:native("TaskGoStraightToCoord")
 	static function taskGoStraightToCoord(ped:Dynamic, x:Float, y:Float, z:Float, speed:Float, timeout:Int, targetHeading:Float, distanceToSlide:Float):Dynamic;
 
 	/**
@@ -1445,7 +1445,7 @@ extern class Task {
 	 * NativeDB Added Parameter 14: Any p13
 	 * ```
 	 */
-	@:native("TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED")
+	@:native("TaskGoToCoordAnyMeansExtraParamsWithCruiseSpeed")
 	static function taskGoToCoordAnyMeansExtraParamsWithCruiseSpeed(ped:Dynamic, x:Float, y:Float, z:Float, speed:Float, p5:Dynamic, p6:Bool, walkingStyle:Int, p8:Float, p9:Dynamic, p10:Dynamic, p11:Dynamic, p12:Dynamic):Dynamic;
 
 	/**
@@ -1453,7 +1453,7 @@ extern class Task {
 	 * NativeDB Added Parameter 13: Any p12
 	 * ```
 	 */
-	@:native("TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS")
+	@:native("TaskGoToCoordAnyMeansExtraParams")
 	static function taskGoToCoordAnyMeansExtraParams(ped:Dynamic, x:Float, y:Float, z:Float, speed:Float, p5:Dynamic, p6:Bool, walkingStyle:Int, p8:Float, p9:Dynamic, p10:Dynamic, p11:Dynamic):Dynamic;
 
 	/**
@@ -1483,7 +1483,7 @@ extern class Task {
 	 * 2nd example: The ped will walk towards goToLocation2. This time, while walking towards goToLocation2 and aiming at focusLocation, the ped will point his weapon on sight to any enemy in his path without shooting. The ped will stop once he is closer than distanceToStopAt to goToLocation2.
 	 * ```
 	 */
-	@:native("TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD")
+	@:native("TaskGoToCoordAndAimAtHatedEntitiesNearCoord")
 	static function taskGoToCoordAndAimAtHatedEntitiesNearCoord(pedHandle:Dynamic, goToLocationX:Float, goToLocationY:Float, goToLocationZ:Float, focusLocationX:Float, focusLocationY:Float, focusLocationZ:Float, speed:Float, shootAtEnemies:Bool, distanceToStopAt:Float, noRoadsDistance:Float, unkTrue:Bool, unkFlag:Int, aimingFlag:Int, firingPattern:Int):Dynamic;
 
 	/**
@@ -1505,13 +1505,13 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY")
+	@:native("TaskGoToCoordWhileAimingAtEntity")
 	static function taskGoToCoordWhileAimingAtEntity(ped:Dynamic, x:Float, y:Float, z:Float, entityToAimAt:Dynamic, moveSpeed:Float, shoot:Bool, targetRadius:Float, slowDistance:Float, useNavMesh:Bool, navFlags:Int, instantBlendAtAim:Bool, firingPattern:Int, time:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GO_TO_ENTITY_WHILE_AIMING_AT_COORD")
+	@:native("TaskGoToEntityWhileAimingAtCoord")
 	static function taskGoToEntityWhileAimingAtCoord(p0:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Float, p5:Float, p6:Bool, p7:Float, p8:Float, p9:Bool, p10:Bool, p11:Dynamic):Dynamic;
 
 	/**
@@ -1522,7 +1522,7 @@ extern class Task {
 	 * Ped will run towards the vehicle for 5 seconds and stop when time is over or when he gets 4 meters(?) around the vehicle (with duration = -1, the task duration will be ignored).
 	 * ```
 	 */
-	@:native("TASK_GO_TO_ENTITY")
+	@:native("TaskGoToEntity")
 	static function taskGoToEntity(entity:Dynamic, target:Dynamic, duration:Int, distance:Float, speed:Float, p5:Float, p6:Int):Dynamic;
 
 	/**
@@ -1532,31 +1532,31 @@ extern class Task {
 	 * If false, peds will just walk till they reach the entity and will cease shooting.  
 	 * ```
 	 */
-	@:native("TASK_GO_TO_ENTITY_WHILE_AIMING_AT_ENTITY")
+	@:native("TaskGoToEntityWhileAimingAtEntity")
 	static function taskGoToEntityWhileAimingAtEntity(ped:Dynamic, entityToWalkTo:Dynamic, entityToAimAt:Dynamic, speed:Float, shootatEntity:Bool, p5:Float, p6:Float, p7:Bool, p8:Bool, firingPattern:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GOTO_ENTITY_OFFSET")
+	@:native("TaskGotoEntityOffset")
 	static function taskGotoEntityOffset(ped:Dynamic, p1:Dynamic, p2:Dynamic, x:Float, y:Float, z:Float, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GOTO_ENTITY_OFFSET_XY")
+	@:native("TaskGotoEntityOffsetXy")
 	static function taskGotoEntityOffsetXy(ped:Dynamic, entity:Dynamic, duration:Int, xOffset:Float, yOffset:Float, zOffset:Float, moveBlendRatio:Float, useNavmesh:Bool):Dynamic;
 
 	/**
 	 * Will make the ped move to a coordinate while aiming (and optionally shooting) at given coordinates.
 	 */
-	@:native("TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD")
+	@:native("TaskGoToCoordWhileAimingAtCoord")
 	static function taskGoToCoordWhileAimingAtCoord(ped:Dynamic, x:Float, y:Float, z:Float, aimAtX:Float, aimAtY:Float, aimAtZ:Float, moveSpeed:Float, shoot:Bool, p9:Float, p10:Float, p11:Bool, flags:Dynamic, p13:Bool, firingPattern:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_GUARD_ASSIGNED_DEFENSIVE_AREA")
+	@:native("TaskGuardAssignedDefensiveArea")
 	static function taskGuardAssignedDefensiveArea(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Dynamic):Dynamic;
 
 	/**
@@ -1570,7 +1570,7 @@ extern class Task {
 	 * p10 - Maybe the size of sphere from second XYZ?  
 	 * ```
 	 */
-	@:native("TASK_GUARD_SPHERE_DEFENSIVE_AREA")
+	@:native("TaskGuardSphereDefensiveArea")
 	static function taskGuardSphereDefensiveArea(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Dynamic, p7:Float, p8:Float, p9:Float, p10:Float):Dynamic;
 
 	/**
@@ -1579,7 +1579,7 @@ extern class Task {
 	 * TASK::TASK_GUARD_CURRENT_POSITION(l_DD, 35.0, 35.0, 1);
 	 * ```
 	 */
-	@:native("TASK_GUARD_CURRENT_POSITION")
+	@:native("TaskGuardCurrentPosition")
 	static function taskGuardCurrentPosition(p0:Dynamic, p1:Float, p2:Float, p3:Bool):Dynamic;
 
 	/**
@@ -1592,7 +1592,7 @@ extern class Task {
 	 * StartAimingDist = distance where the ped should start to aim.
 	 * ```
 	 */
-	@:native("TASK_GOTO_ENTITY_AIMING")
+	@:native("TaskGotoEntityAiming")
 	static function taskGotoEntityAiming(ped:Dynamic, target:Dynamic, distanceToStopAt:Float, StartAimingDist:Float):Dynamic;
 
 	/**
@@ -1600,7 +1600,7 @@ extern class Task {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_TASK_HELI_ESCORT_HELI")
+	@:native("TaskHeliEscortHeli")
 	static function TaskHeliEscortHeli(pilot:Dynamic, heli1:Dynamic, heli2:Dynamic, p3:Float, p4:Float, p5:Float):Dynamic;
 
 	/**
@@ -1610,7 +1610,7 @@ extern class Task {
 	 * Also facingPed can be 0 or -1 so ped will just raise hands up.  
 	 * ```
 	 */
-	@:native("TASK_HANDS_UP")
+	@:native("TaskHandsUp")
 	static function taskHandsUp(ped:Dynamic, duration:Int, facingPed:Dynamic, p3:Int, p4:Bool):Dynamic;
 
 	/**
@@ -1620,7 +1620,7 @@ extern class Task {
 	 * param5: using 3 is fine  
 	 * ```
 	 */
-	@:native("TASK_LOOK_AT_ENTITY")
+	@:native("TaskLookAtEntity")
 	static function taskLookAtEntity(ped:Dynamic, lookAt:Dynamic, duration:Int, unknown1:Int, unknown2:Int):Dynamic;
 
 	/**
@@ -1636,7 +1636,7 @@ extern class Task {
 	 * NativeDB Added Parameter 4: Any p3
 	 * ```
 	 */
-	@:native("TASK_JUMP")
+	@:native("TaskJump")
 	static function taskJump(ped:Dynamic, unused:Bool):Dynamic;
 
 	/**
@@ -1668,7 +1668,7 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_HELI_MISSION")
+	@:native("TaskHeliMission")
 	static function taskHeliMission(ped:Dynamic, heli:Dynamic, vehicleTarget:Dynamic, pedTarget:Dynamic, x:Float, y:Float, z:Float, missionType:Int, speed:Float, radius:Float, heading:Float, height:Float, minHeight:Float, slowDist:Float, missionFlags:Int):Dynamic;
 
 	/**
@@ -1682,7 +1682,7 @@ extern class Task {
 	 * NativeDB Introduced: v1493
 	 * ```
 	 */
-	@:native("_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS")
+	@:native("TaskMoveNetworkByNameWithInitParams")
 	static function TaskMoveNetworkByNameWithInitParams(ped:Dynamic, p1:String, data:Dynamic, p3:Float, p4:Bool, animDict:String, flags:Int):Dynamic;
 
 	/**
@@ -1693,7 +1693,7 @@ extern class Task {
 	 * NOTE: If the pilot finds enemies, it will engage them, then remain there idle, not continuing to chase the Entity given.  
 	 * ```
 	 */
-	@:native("TASK_HELI_CHASE")
+	@:native("TaskHeliChase")
 	static function taskHeliChase(pilot:Dynamic, entityToFollow:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -1701,13 +1701,13 @@ extern class Task {
 	 * makes ped parachute to coords x y z. Works well with PATHFIND::GET_SAFE_COORD_FOR_PED  
 	 * ```
 	 */
-	@:native("TASK_PARACHUTE_TO_TARGET")
+	@:native("TaskParachuteToTarget")
 	static function taskParachuteToTarget(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_LOOK_AT_COORD")
+	@:native("TaskLookAtCoord")
 	static function taskLookAtCoord(entity:Dynamic, x:Float, y:Float, z:Float, duration:Int, p5:Dynamic, p6:Dynamic):Dynamic;
 
 	/**
@@ -1723,7 +1723,7 @@ extern class Task {
 	 * Others to be tried out: 320, 512, 131072.  
 	 * ```
 	 */
-	@:native("TASK_LEAVE_VEHICLE")
+	@:native("TaskLeaveVehicle")
 	static function taskLeaveVehicle(ped:Dynamic, vehicle:Dynamic, flags:Int):Dynamic;
 
 	/**
@@ -1732,13 +1732,13 @@ extern class Task {
 	 * TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME(PLAYER::PLAYER_PED_ID(), "minigame_tattoo_michael_parts", 324.13f, 181.29f, 102.6f, 0.0f, 0.0f, 22.32f, 2, 0, false, 0, 0);
 	 * ```
 	 */
-	@:native("TASK_MOVE_NETWORK_ADVANCED_BY_NAME")
+	@:native("TaskMoveNetworkAdvancedByName")
 	static function taskMoveNetworkAdvancedByName(ped:Dynamic, p1:String, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Dynamic, p9:Float, p10:Bool, animDict:String, flags:Int):Dynamic;
 
 	/**
 	 * For an example on how to use this please refer to [OPEN_SEQUENCE_TASK](#\_0xE8854A4326B9E12B)
 	 */
-	@:native("TASK_PERFORM_SEQUENCE")
+	@:native("TaskPerformSequence")
 	static function taskPerformSequence(ped:Dynamic, taskSequenceId:Int):Dynamic;
 
 	/**
@@ -1746,13 +1746,13 @@ extern class Task {
 	 * 
 	 * Example: telling the ped to open the door for the driver seat does not necessarily mean it will open the driver door, it may choose to open the passenger door instead if that one is closer.
 	 */
-	@:native("TASK_OPEN_VEHICLE_DOOR")
+	@:native("TaskOpenVehicleDoor")
 	static function taskOpenVehicleDoor(ped:Dynamic, vehicle:Dynamic, timeOut:Int, seat:Int, speed:Float):Dynamic;
 
 	/**
 	 * Flags are the same flags used in [`TASK_LEAVE_VEHICLE`](#\_0xD3DBCE61A490BE02)
 	 */
-	@:native("TASK_LEAVE_ANY_VEHICLE")
+	@:native("TaskLeaveAnyVehicle")
 	static function taskLeaveAnyVehicle(ped:Dynamic, p1:Int, flags:Int):Dynamic;
 
 	/**
@@ -1761,19 +1761,19 @@ extern class Task {
 	 * TASK::TASK_MOVE_NETWORK_BY_NAME(PLAYER::PLAYER_PED_ID(), "arm_wrestling_sweep_paired_a_rev3", 0.0f, true, "mini@arm_wrestling", 0);
 	 * ```
 	 */
-	@:native("TASK_MOVE_NETWORK_BY_NAME")
+	@:native("TaskMoveNetworkByName")
 	static function taskMoveNetworkByName(ped:Dynamic, task:String, multiplier:Float, p3:Bool, animDict:String, flags:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PERFORM_SEQUENCE_FROM_PROGRESS")
+	@:native("TaskPerformSequenceFromProgress")
 	static function taskPerformSequenceFromProgress(ped:Dynamic, taskIndex:Int, progress1:Int, progress2:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PED_SLIDE_TO_COORD")
+	@:native("TaskPedSlideToCoord")
 	static function taskPedSlideToCoord(ped:Dynamic, x:Float, y:Float, z:Float, heading:Float, duration:Float):Dynamic;
 
 	/**
@@ -1787,7 +1787,7 @@ extern class Task {
 	 * NativeDB Added Parameter 3: BOOL p2
 	 * ```
 	 */
-	@:native("TASK_PARACHUTE")
+	@:native("TaskParachute")
 	static function taskParachute(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -1810,38 +1810,38 @@ extern class Task {
 	 *     TASK::CREATE_PATROL_ROUTE();
 	 * ```
 	 */
-	@:native("TASK_PATROL")
+	@:native("TaskPatrol")
 	static function taskPatrol(ped:Dynamic, p1:String, p2:Dynamic, p3:Bool, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PLANE_LAND")
+	@:native("TaskPlaneLand")
 	static function taskPlaneLand(pilot:Dynamic, plane:Dynamic, runwayStartX:Float, runwayStartY:Float, runwayStartZ:Float, runwayEndX:Float, runwayEndY:Float, runwayEndZ:Float):Dynamic;
 
 	/**
 	 * For an example on how to use this please refer to \[OPEN_SEQUENCE_TASK]\(#\_0xE8854A4326B9E12B
 	 */
-	@:native("TASK_PERFORM_SEQUENCE_LOCALLY")
+	@:native("TaskPerformSequenceLocally")
 	static function taskPerformSequenceLocally(ped:Dynamic, taskSequenceId:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PED_SLIDE_TO_COORD_HDG_RATE")
+	@:native("TaskPedSlideToCoordHdgRate")
 	static function taskPedSlideToCoordHdgRate(ped:Dynamic, x:Float, y:Float, z:Float, heading:Float, p5:Float, p6:Float):Dynamic;
 
 	/**
 	 * This tasks the ped to do nothing for the specified amount of miliseconds.
 	 * This is useful if you want to add a delay between tasks when using a sequence task.
 	 */
-	@:native("TASK_PAUSE")
+	@:native("TaskPause")
 	static function taskPause(ped:Dynamic, ms:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PLANE_CHASE")
+	@:native("TaskPlaneChase")
 	static function taskPlaneChase(pilot:Dynamic, entityToFollow:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -1849,7 +1849,7 @@ extern class Task {
 	 * NativeDB Introduced: v1290
 	 * ```
 	 */
-	@:native("_TASK_PLANE_GOTO_PRECISE_VTOL")
+	@:native("TaskPlaneGotoPreciseVtol")
 	static function TaskPlaneGotoPreciseVtol(ped:Dynamic, vehicle:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Dynamic, p7:Dynamic, p8:Dynamic, p9:Dynamic):Dynamic;
 
 	/**
@@ -1901,19 +1901,19 @@ extern class Task {
 	 * NativeDB Added Parameter 14: Any p13
 	 * ```
 	 */
-	@:native("TASK_PLANE_MISSION")
+	@:native("TaskPlaneMission")
 	static function taskPlaneMission(pilot:Dynamic, aircraft:Dynamic, targetVehicle:Dynamic, targetPed:Dynamic, destinationX:Float, destinationY:Float, destinationZ:Float, missionFlag:Int, angularDrag:Float, unk:Float, targetHeading:Float, maxZ:Float, minZ:Float):Dynamic;
 
 	/**
 	 * The given ped will try to drive the plane to the given coordinates and will then drive around the given coords (the plane will form 8s on the ground)
 	 */
-	@:native("TASK_PLANE_TAXI")
+	@:native("TaskPlaneTaxi")
 	static function taskPlaneTaxi(pilot:Dynamic, aircraft:Dynamic, xPos:Float, yPos:Float, zPos:Float, fCruiseSpeed:Float, fTargetReachedDist:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PLANT_BOMB")
+	@:native("TaskPlantBomb")
 	static function taskPlantBomb(ped:Dynamic, x:Float, y:Float, z:Float, heading:Float):Dynamic;
 
 	/**
@@ -1921,7 +1921,7 @@ extern class Task {
 	 * 
 	 * [Animations list](https://alexguirre.github.io/animations-list/)
 	 */
-	@:native("TASK_PLAY_ANIM_ADVANCED")
+	@:native("TaskPlayAnimAdvanced")
 	static function taskPlayAnimAdvanced(ped:Dynamic, animDictionary:String, animationName:String, posX:Float, posY:Float, posZ:Float, rotX:Float, rotY:Float, rotZ:Float, blendInSpeed:Float, blendOutSpeed:Float, duration:Int, flag:Dynamic, animTime:Float, p14:Dynamic, p15:Dynamic):Dynamic;
 
 	/**
@@ -1944,7 +1944,7 @@ extern class Task {
 	 * =========================================================
 	 * ```
 	 */
-	@:native("TASK_PLAY_PHONE_GESTURE_ANIMATION")
+	@:native("TaskPlayPhoneGestureAnimation")
 	static function taskPlayPhoneGestureAnimation(ped:Dynamic, animDict:String, animation:String, boneMaskType:String, p4:Float, p5:Float, p6:Bool, p7:Bool):Dynamic;
 
 	/**
@@ -1953,7 +1953,7 @@ extern class Task {
 	 * TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(PlayerPed, armenianPed, 0.0, -1.0, 0.0, 0);
 	 * ```
 	 */
-	@:native("TASK_PUT_PED_DIRECTLY_INTO_MELEE")
+	@:native("TaskPutPedDirectlyIntoMelee")
 	static function taskPutPedDirectlyIntoMelee(ped:Dynamic, meleeTarget:Dynamic, p2:Float, p3:Float, p4:Float, p5:Bool):Dynamic;
 
 	/**
@@ -1963,19 +1963,19 @@ extern class Task {
 	 * TASK::TASK_RAPPEL_FROM_HELI(a_0, 0x41200000);
 	 * ```
 	 */
-	@:native("TASK_RAPPEL_FROM_HELI")
+	@:native("TaskRappelFromHeli")
 	static function taskRappelFromHeli(ped:Dynamic, unused:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_PUT_PED_DIRECTLY_INTO_COVER")
+	@:native("TaskPutPedDirectlyIntoCover")
 	static function taskPutPedDirectlyIntoCover(ped:Dynamic, x:Float, y:Float, z:Float, timeout:Dynamic, p5:Bool, p6:Float, p7:Bool, p8:Bool, p9:Dynamic, p10:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SEEK_COVER_FROM_PED")
+	@:native("TaskSeekCoverFromPed")
 	static function taskSeekCoverFromPed(ped:Dynamic, target:Dynamic, duration:Int, p3:Bool):Dynamic;
 
 	/**
@@ -1984,7 +1984,7 @@ extern class Task {
 	 * 
 	 * NativeDB Introduced: v1868
 	 */
-	@:native("_TASK_RAPPEL_DOWN_WALL")
+	@:native("TaskRappelDownWall")
 	static function TaskRappelDownWall(ped:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, minZ:Float, ropeId:Int, clipset:String, p10:Dynamic):Dynamic;
 
 	/**
@@ -2027,7 +2027,7 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_PLAY_ANIM")
+	@:native("TaskPlayAnim")
 	static function taskPlayAnim(ped:Dynamic, animDictionary:String, animationName:String, blendInSpeed:Float, blendOutSpeed:Float, duration:Int, flag:Int, playbackRate:Float, lockX:Bool, lockY:Bool, lockZ:Bool):Dynamic;
 
 	/**
@@ -2068,7 +2068,7 @@ extern class Task {
 	 * 	remove_anim_dict("anim@heists@biolab@");  
 	 * ```
 	 */
-	@:native("TASK_SCRIPTED_ANIMATION")
+	@:native("TaskScriptedAnimation")
 	static function taskScriptedAnimation(ped:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Float, p5:Float):Dynamic;
 
 	/**
@@ -2081,13 +2081,13 @@ extern class Task {
 	 *             }
 	 * ```
 	 */
-	@:native("TASK_RELOAD_WEAPON")
+	@:native("TaskReloadWeapon")
 	static function taskReloadWeapon(ped:Dynamic, unused:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_REACT_AND_FLEE_PED")
+	@:native("TaskReactAndFleePed")
 	static function taskReactAndFleePed(ped:Dynamic, fleeTarget:Dynamic):Dynamic;
 
 	/**
@@ -2099,7 +2099,7 @@ extern class Task {
 	 * TASK::TASK_SEEK_COVER_TO_COORDS(ped, -2231.011474609375, 263.6326599121094, 173.60195922851562, -1, 0);
 	 * ```
 	 */
-	@:native("TASK_SEEK_COVER_TO_COORDS")
+	@:native("TaskSeekCoverToCoords")
 	static function taskSeekCoverToCoords(ped:Dynamic, x1:Float, y1:Float, z1:Float, x2:Float, y2:Float, z2:Float, p7:Dynamic, p8:Bool):Dynamic;
 
 	/**
@@ -2109,31 +2109,31 @@ extern class Task {
 	 * Since it is a task, every time the native is called the ped will stop for a moment.  
 	 * ```
 	 */
-	@:native("TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS")
+	@:native("TaskSetBlockingOfNonTemporaryEvents")
 	static function taskSetBlockingOfNonTemporaryEvents(ped:Dynamic, toggle:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SEEK_COVER_TO_COVER_POINT")
+	@:native("TaskSeekCoverToCoverPoint")
 	static function taskSeekCoverToCoverPoint(p0:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Float, p5:Dynamic, p6:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SEEK_COVER_FROM_POS")
+	@:native("TaskSeekCoverFromPos")
 	static function taskSeekCoverFromPos(ped:Dynamic, x:Float, y:Float, z:Float, duration:Int, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SHOCKING_EVENT_REACT")
+	@:native("TaskShockingEventReact")
 	static function taskShockingEventReact(ped:Dynamic, eventHandle:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SET_SPHERE_DEFENSIVE_AREA")
+	@:native("TaskSetSphereDefensiveArea")
 	static function taskSetSphereDefensiveArea(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float):Dynamic;
 
 	/**
@@ -2148,7 +2148,7 @@ extern class Task {
 	 * Firing Pattern Hash Information: https://pastebin.com/Px036isB
 	 * ```
 	 */
-	@:native("TASK_SHOOT_AT_ENTITY")
+	@:native("TaskShootAtEntity")
 	static function taskShootAtEntity(entity:Dynamic, target:Dynamic, duration:Int, firingPattern:Int):Dynamic;
 
 	/**
@@ -2156,7 +2156,7 @@ extern class Task {
 	 * p1 is always GET_HASH_KEY("empty") in scripts, for the rare times this is used  
 	 * ```
 	 */
-	@:native("TASK_SET_DECISION_MAKER")
+	@:native("TaskSetDecisionMaker")
 	static function taskSetDecisionMaker(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -2164,13 +2164,13 @@ extern class Task {
 	 * Makes the specified ped flee the specified distance from the specified position.  
 	 * ```
 	 */
-	@:native("TASK_SMART_FLEE_COORD")
+	@:native("TaskSmartFleeCoord")
 	static function taskSmartFleeCoord(ped:Dynamic, x:Float, y:Float, z:Float, distance:Float, time:Int, p6:Bool, p7:Bool):Dynamic;
 
 	/**
 	 * Puts the ped into the given scenario immediately at their current location. [List of scenario names](https://pastebin.com/6mrYTdQv) or in `update/update.rpf/common/data/ai/scenarios.meta`.
 	 */
-	@:native("TASK_START_SCENARIO_IN_PLACE")
+	@:native("TaskStartScenarioInPlace")
 	static function taskStartScenarioInPlace(ped:Dynamic, scenarioName:String, timeToLeave:Int, playIntroClip:Bool):Dynamic;
 
 	/**
@@ -2183,13 +2183,13 @@ extern class Task {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT")
+	@:native("TaskShuffleToNextVehicleSeat")
 	static function taskShuffleToNextVehicleSeat(ped:Dynamic, vehicle:Dynamic):Dynamic;
 
 	/**
 	 * The ped will move or warp to the position and heading given, then start the scenario passed. See [`TASK_START_SCENARIO_IN_PLACE`](#\_0x142A02425FF02BD9) for a list of scenarios.
 	 */
-	@:native("TASK_START_SCENARIO_AT_POSITION")
+	@:native("TaskStartScenarioAtPosition")
 	static function taskStartScenarioAtPosition(ped:Dynamic, scenarioName:String, x:Float, y:Float, z:Float, heading:Float, timeToLeave:Int, playIntro:Bool, warp:Bool):Dynamic;
 
 	/**
@@ -2199,7 +2199,7 @@ extern class Task {
 	 * fleeTime = ped will flee for this amount of time, set to "-1" to flee forever  
 	 * ```
 	 */
-	@:native("TASK_SMART_FLEE_PED")
+	@:native("TaskSmartFleePed")
 	static function taskSmartFleePed(ped:Dynamic, fleeTarget:Dynamic, distance:Float, fleeTime:Dynamic, p4:Bool, p5:Bool):Dynamic;
 
 	/**
@@ -2221,7 +2221,7 @@ extern class Task {
 	 * Also it may be important to note, that each time this task is called, it's followed by AI::CLEAR_PED_TASKS on the target  
 	 * ```
 	 */
-	@:native("TASK_STEALTH_KILL")
+	@:native("TaskStealthKill")
 	static function taskStealthKill(killer:Dynamic, target:Dynamic, actionType:Int, p3:Float, p4:Dynamic):Dynamic;
 
 	/**
@@ -2229,7 +2229,7 @@ extern class Task {
 	 * Firing Pattern Hash Information: https://pastebin.com/Px036isB
 	 * ```
 	 */
-	@:native("TASK_SHOOT_AT_COORD")
+	@:native("TaskShootAtCoord")
 	static function taskShootAtCoord(ped:Dynamic, x:Float, y:Float, z:Float, duration:Int, firingPattern:Int):Dynamic;
 
 	/**
@@ -2242,7 +2242,7 @@ extern class Task {
 	 * NativeDB Introduced: v2189
 	 * ```
 	 */
-	@:native("_TASK_SUBMARINE_GOTO_AND_STOP")
+	@:native("TaskSubmarineGotoAndStop")
 	static function TaskSubmarineGotoAndStop(p0:Dynamic, submarine:Dynamic, x:Float, y:Float, z:Float, p5:Dynamic):Dynamic;
 
 	/**
@@ -2250,7 +2250,7 @@ extern class Task {
 	 * scenarioName example: "WORLD_HUMAN_GUARD_STAND"  
 	 * ```
 	 */
-	@:native("TASK_STAND_GUARD")
+	@:native("TaskStandGuard")
 	static function taskStandGuard(ped:Dynamic, x:Float, y:Float, z:Float, heading:Float, scenarioName:String):Dynamic;
 
 	/**
@@ -2258,13 +2258,13 @@ extern class Task {
 	 * NativeDB Added Parameter 2: BOOL p1
 	 * ```
 	 */
-	@:native("TASK_SKY_DIVE")
+	@:native("TaskSkyDive")
 	static function taskSkyDive(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SWEEP_AIM_POSITION")
+	@:native("TaskSweepAimPosition")
 	static function taskSweepAimPosition(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic, p4:Dynamic, p5:Dynamic, p6:Float, p7:Float, p8:Float, p9:Float, p10:Float):Dynamic;
 
 	/**
@@ -2272,7 +2272,7 @@ extern class Task {
 	 * Makes the ped run to take cover  
 	 * ```
 	 */
-	@:native("TASK_STAY_IN_COVER")
+	@:native("TaskStayInCover")
 	static function taskStayInCover(ped:Dynamic):Dynamic;
 
 	/**
@@ -2280,7 +2280,7 @@ extern class Task {
 	 * Makes the specified ped stand still for (time) milliseconds.  
 	 * ```
 	 */
-	@:native("TASK_STAND_STILL")
+	@:native("TaskStandStill")
 	static function taskStandStill(ped:Dynamic, time:Int):Dynamic;
 
 	/**
@@ -2299,13 +2299,13 @@ extern class Task {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("TASK_THROW_PROJECTILE")
+	@:native("TaskThrowProjectile")
 	static function taskThrowProjectile(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_SWAP_WEAPON")
+	@:native("TaskSwapWeapon")
 	static function taskSwapWeapon(ped:Dynamic, p1:Bool):Dynamic;
 
 	/**
@@ -2313,13 +2313,13 @@ extern class Task {
 	 * NativeDB Added Parameter 2: Any p1
 	 * ```
 	 */
-	@:native("TASK_STOP_PHONE_GESTURE_ANIMATION")
+	@:native("TaskStopPhoneGestureAnimation")
 	static function taskStopPhoneGestureAnimation(ped:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_USE_MOBILE_PHONE_TIMED")
+	@:native("TaskUseMobilePhoneTimed")
 	static function taskUseMobilePhoneTimed(ped:Dynamic, duration:Int):Dynamic;
 
 	/**
@@ -2328,7 +2328,7 @@ extern class Task {
 	 * both parameters seems to be always 0  
 	 * ```
 	 */
-	@:native("TASK_TOGGLE_DUCK")
+	@:native("TaskToggleDuck")
 	static function taskToggleDuck(p0:Bool, p1:Bool):Dynamic;
 
 	/**
@@ -2337,7 +2337,7 @@ extern class Task {
 	 * An alternative to TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP. Makes the ped walk to the scenario instead.
 	 * ```
 	 */
-	@:native("TASK_USE_NEAREST_SCENARIO_TO_COORD")
+	@:native("TaskUseNearestScenarioToCoord")
 	static function taskUseNearestScenarioToCoord(ped:Dynamic, x:Float, y:Float, z:Float, distance:Float, duration:Int):Dynamic;
 
 	/**
@@ -2345,19 +2345,19 @@ extern class Task {
 	 * duration: the amount of time in milliseconds to do the task. -1 will keep the task going until either another task is applied, or CLEAR_ALL_TASKS() is called with the ped  
 	 * ```
 	 */
-	@:native("TASK_TURN_PED_TO_FACE_ENTITY")
+	@:native("TaskTurnPedToFaceEntity")
 	static function taskTurnPedToFaceEntity(ped:Dynamic, entity:Dynamic, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP")
+	@:native("TaskUseNearestScenarioToCoordWarp")
 	static function taskUseNearestScenarioToCoordWarp(ped:Dynamic, x:Float, y:Float, z:Float, radius:Float, p5:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD")
+	@:native("TaskUseNearestScenarioChainToCoord")
 	static function taskUseNearestScenarioChainToCoord(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Dynamic):Dynamic;
 
 	/**
@@ -2372,7 +2372,7 @@ extern class Task {
 	 * NativeDB Added Parameter 3: Any p2
 	 * ```
 	 */
-	@:native("TASK_USE_MOBILE_PHONE")
+	@:native("TaskUseMobilePhone")
 	static function taskUseMobilePhone(ped:Dynamic, p1:Int):Dynamic;
 
 	/**
@@ -2383,13 +2383,13 @@ extern class Task {
 	 * p5: no idea what it does but is usually -1  
 	 * ```
 	 */
-	@:native("TASK_SWEEP_AIM_ENTITY")
+	@:native("TaskSweepAimEntity")
 	static function taskSweepAimEntity(ped:Dynamic, anim:String, p2:String, p3:String, p4:String, p5:Int, vehicle:Dynamic, p7:Float, p8:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP")
+	@:native("TaskUseNearestScenarioChainToCoordWarp")
 	static function taskUseNearestScenarioChainToCoordWarp(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Float, p5:Dynamic):Dynamic;
 
 	/**
@@ -2399,13 +2399,13 @@ extern class Task {
 	 * Makes ped (needs to be in vehicle) chase targetEnt.  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_CHASE")
+	@:native("TaskVehicleChase")
 	static function taskVehicleChase(driver:Dynamic, targetEnt:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_VEHICLE_AIM_AT_COORD")
+	@:native("TaskVehicleAimAtCoord")
 	static function taskVehicleAimAtCoord(ped:Dynamic, x:Float, y:Float, z:Float):Dynamic;
 
 	/**
@@ -2423,7 +2423,7 @@ extern class Task {
 	 * Driving Styles guide: gtaforums.com/topic/822314-guide-driving-styles/  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_ESCORT")
+	@:native("TaskVehicleEscort")
 	static function taskVehicleEscort(ped:Dynamic, vehicle:Dynamic, targetVehicle:Dynamic, mode:Int, speed:Float, drivingStyle:Int, minDistance:Float, p7:Int, noRoadsDistance:Float):Dynamic;
 
 	/**
@@ -2431,7 +2431,7 @@ extern class Task {
 	 *  TASK::TASK_SYNCHRONIZED_SCENE(ped, scene, "creatures@rottweiler@in_vehicle@std_car", "get_in", 1000.0, -8.0, 4, 0, 0x447a0000, 0);
 	 * ```
 	 */
-	@:native("TASK_SYNCHRONIZED_SCENE")
+	@:native("TaskSynchronizedScene")
 	static function taskSynchronizedScene(ped:Dynamic, scene:Int, animDictionary:String, animationName:String, speed:Float, speedMultiplier:Float, duration:Int, flag:Int, playbackRate:Float, p9:Dynamic):Dynamic;
 
 	/**
@@ -2444,7 +2444,7 @@ extern class Task {
 	 * Function.Call(Hash.TASK_VEHICLE_DRIVE_TO_COORD, Ped, Vehicle, Cor X, Cor Y, Cor Z, 30f, 1f, Vehicle.GetHashCode(), 16777216, 1f, true);  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_DRIVE_TO_COORD")
+	@:native("TaskVehicleDriveToCoord")
 	static function taskVehicleDriveToCoord(ped:Dynamic, vehicle:Dynamic, x:Float, y:Float, z:Float, speed:Float, p6:Dynamic, vehicleModel:Int, drivingMode:Int, stopRange:Float, p10:Float):Dynamic;
 
 	/**
@@ -2452,7 +2452,7 @@ extern class Task {
 	 * duration in milliseconds  
 	 * ```
 	 */
-	@:native("TASK_TURN_PED_TO_FACE_COORD")
+	@:native("TaskTurnPedToFaceCoord")
 	static function taskTurnPedToFaceCoord(ped:Dynamic, x:Float, y:Float, z:Float, duration:Int):Dynamic;
 
 	/**
@@ -2469,7 +2469,7 @@ extern class Task {
 	 * EDIT:  This is being discussed in more detail at http://gtaforums.com/topic/818504-any-idea-on-how-to-make-peds-clever-and-insanely-fast-c/  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_GOTO_NAVMESH")
+	@:native("TaskVehicleGotoNavmesh")
 	static function taskVehicleGotoNavmesh(ped:Dynamic, vehicle:Dynamic, x:Float, y:Float, z:Float, speed:Float, behaviorFlag:Int, stoppingRange:Float):Dynamic;
 
 	/**
@@ -2504,13 +2504,13 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_DRIVE_TO_COORD_LONGRANGE")
+	@:native("TaskVehicleDriveToCoordLongrange")
 	static function taskVehicleDriveToCoordLongrange(ped:Dynamic, vehicle:Dynamic, x:Float, y:Float, z:Float, speed:Float, drivingStyle:Int, stopRange:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_VEHICLE_AIM_AT_PED")
+	@:native("TaskVehicleAimAtPed")
 	static function taskVehicleAimAtPed(ped:Dynamic, target:Dynamic):Dynamic;
 
 	/**
@@ -2543,7 +2543,7 @@ extern class Task {
 	 * }
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_MISSION")
+	@:native("TaskVehicleMission")
 	static function taskVehicleMission(ped:Dynamic, vehicle:Dynamic, vehicleTarget:Dynamic, missionType:Int, speed:Float, drivingStyle:Int, radius:Float, straightLineDist:Float, DriveAgainstTraffic:Bool):Dynamic;
 
 	/**
@@ -2557,7 +2557,7 @@ extern class Task {
 	 * NOTE: If the pilot finds enemies, it will engage them until it kills them, but will return to protect the ped/vehicle given shortly thereafter.  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_HELI_PROTECT")
+	@:native("TaskVehicleHeliProtect")
 	static function taskVehicleHeliProtect(pilot:Dynamic, vehicle:Dynamic, entityToFollow:Dynamic, targetSpeed:Float, p4:Int, radius:Float, altitude:Int, p7:Int):Dynamic;
 
 	/**
@@ -2566,13 +2566,13 @@ extern class Task {
 	 * drivingStyle: http://gtaforums.com/topic/822314-guide-driving-styles/
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_FOLLOW")
+	@:native("TaskVehicleFollow")
 	static function taskVehicleFollow(driver:Dynamic, vehicle:Dynamic, targetEntity:Dynamic, speed:Float, drivingStyle:Int, minDistance:Int):Dynamic;
 
 	/**
 	 * Drive randomly with no destination set.
 	 */
-	@:native("TASK_VEHICLE_DRIVE_WANDER")
+	@:native("TaskVehicleDriveWander")
 	static function taskVehicleDriveWander(ped:Dynamic, vehicle:Dynamic, speed:Float, drivingStyle:Int):Dynamic;
 
 	/**
@@ -2580,7 +2580,7 @@ extern class Task {
 	 * 
 	 * If you don't want to use a parameter; pass `0` for int parameters, and `-1.0f` for the remaining float parameters.
 	 */
-	@:native("TASK_VEHICLE_MISSION_COORS_TARGET")
+	@:native("TaskVehicleMissionCoorsTarget")
 	static function taskVehicleMissionCoorsTarget(ped:Dynamic, vehicle:Dynamic, x:Float, y:Float, z:Float, missionType:Int, speed:Float, drivingStyle:Int, radius:Float, straightLineDist:Float, DriveAgainstTraffic:Bool):Dynamic;
 
 	/**
@@ -2588,13 +2588,13 @@ extern class Task {
 	 * 
 	 * If you don't want to use a parameter; pass `0` for int parameters, and `-1.0f` for the remaining float parameters.
 	 */
-	@:native("TASK_VEHICLE_MISSION_PED_TARGET")
+	@:native("TaskVehicleMissionPedTarget")
 	static function taskVehicleMissionPedTarget(ped:Dynamic, vehicle:Dynamic, pedTarget:Dynamic, missionType:Int, speed:Float, drivingStyle:Int, radius:Float, straightLineDist:Float, DriveAgainstTraffic:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_VEHICLE_SHOOT_AT_COORD")
+	@:native("TaskVehicleShootAtCoord")
 	static function taskVehicleShootAtCoord(ped:Dynamic, x:Float, y:Float, z:Float, p4:Float):Dynamic;
 
 	/**
@@ -2606,7 +2606,7 @@ extern class Task {
 	 * FYI : Speedo is the name of van in which chop was put in the mission.
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_PLAY_ANIM")
+	@:native("TaskVehiclePlayAnim")
 	static function taskVehiclePlayAnim(vehicle:Dynamic, animationSet:String, animationName:String):Dynamic;
 
 	/**
@@ -2653,13 +2653,13 @@ extern class Task {
 	 * };
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_TEMP_ACTION")
+	@:native("TaskVehicleTempAction")
 	static function taskVehicleTempAction(driver:Dynamic, vehicle:Dynamic, action:Int, time:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("TASK_VEHICLE_SHOOT_AT_PED")
+	@:native("TaskVehicleShootAtPed")
 	static function taskVehicleShootAtPed(ped:Dynamic, target:Dynamic, p2:Float):Dynamic;
 
 	/**
@@ -2672,7 +2672,7 @@ extern class Task {
 	 * Radius seems to define how close the vehicle has to be -after parking- to the position for this task considered completed. If the value is too small, the vehicle will try to park again until it's exactly where it should be. 20.0 Works well but lower values don't, like the radius is measured in centimeters or something.  
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_PARK")
+	@:native("TaskVehiclePark")
 	static function taskVehiclePark(ped:Dynamic, vehicle:Dynamic, x:Float, y:Float, z:Float, heading:Float, mode:Int, radius:Float, keepEngineOn:Bool):Dynamic;
 
 	/**
@@ -2689,7 +2689,7 @@ extern class Task {
 	 * -khorio
 	 * ```
 	 */
-	@:native("TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING")
+	@:native("TaskVehicleFollowWaypointRecording")
 	static function taskVehicleFollowWaypointRecording(ped:Dynamic, vehicle:Dynamic, WPRecording:String, p3:Int, p4:Int, p5:Int, p6:Int, p7:Float, p8:Bool, p9:Float):Dynamic;
 
 	/**
@@ -2698,7 +2698,7 @@ extern class Task {
 	 * set p1 to 10.0f and p2 to 10 if you want the ped to walk anywhere without a duration.  
 	 * ```
 	 */
-	@:native("TASK_WANDER_STANDARD")
+	@:native("TaskWanderStandard")
 	static function taskWanderStandard(ped:Dynamic, p1:Float, p2:Int):Dynamic;
 
 	/**
@@ -2706,7 +2706,7 @@ extern class Task {
 	 * NativeDB Introduced: v1868
 	 * ```
 	 */
-	@:native("_TASK_WANDER_SPECIFIC")
+	@:native("TaskWanderSpecific")
 	static function TaskWanderSpecific(p0:Dynamic, p1:Dynamic, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
@@ -2716,7 +2716,7 @@ extern class Task {
 	 * 
 	 * Use `GetIsTaskActive(ped, 222)` to check if the ped is still wandering the area.
 	 */
-	@:native("TASK_WANDER_IN_AREA")
+	@:native("TaskWanderInArea")
 	static function taskWanderInArea(ped:Dynamic, x:Float, y:Float, z:Float, radius:Float, minimalLength:Int, timeBetweenWalks:Float):Dynamic;
 
 	/**
@@ -2728,13 +2728,13 @@ extern class Task {
 	 * 
 	 * **Note**: It's better to use [`TASK_ENTER_VEHICLE`](#\_0xC20E50AA46D09CA8) with the flag "warp" flag instead of this native.
 	 */
-	@:native("TASK_WARP_PED_INTO_VEHICLE")
+	@:native("TaskWarpPedIntoVehicle")
 	static function taskWarpPedIntoVehicle(ped:Dynamic, vehicle:Dynamic, seatIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UNCUFF_PED")
+	@:native("UncuffPed")
 	static function uncuffPed(ped:Dynamic):Dynamic;
 
 	/**
@@ -2743,7 +2743,7 @@ extern class Task {
 	 * NativeDB Added Parameter 6: Any p5
 	 * ```
 	 */
-	@:native("TASK_WRITHE")
+	@:native("TaskWrithe")
 	static function taskWrithe(ped:Dynamic, target:Dynamic, time:Int, p3:Int):Dynamic;
 
 	/**
@@ -2753,97 +2753,97 @@ extern class Task {
 	 * NativeDB Introduced: 2545
 	 * ```
 	 */
-	@:native("TASK_WARP_PED_DIRECTLY_INTO_COVER")
+	@:native("TaskWarpPedDirectlyIntoCover")
 	static function taskWarpPedDirectlyIntoCover(ped:Dynamic, time:Int, canPeekAndAim:Bool, forceInitialFacingDirection:Bool, forceFaceLeft:Bool, coverIndex:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE")
+	@:native("UseWaypointRecordingAsAssistedMovementRoute")
 	static function useWaypointRecordingAsAssistedMovementRoute(name:String, p1:Bool, p2:Float, p3:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_TASK_HANDS_UP_DURATION")
+	@:native("UpdateTaskHandsUpDuration")
 	static function updateTaskHandsUpDuration(ped:Dynamic, duration:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_TASK_AIM_GUN_SCRIPTED_TARGET")
+	@:native("UpdateTaskAimGunScriptedTarget")
 	static function updateTaskAimGunScriptedTarget(p0:Dynamic, p1:Dynamic, p2:Float, p3:Float, p4:Float, p5:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_TASK_SWEEP_AIM_POSITION")
+	@:native("UpdateTaskSweepAimPosition")
 	static function updateTaskSweepAimPosition(p0:Dynamic, p1:Float, p2:Float, p3:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("VEHICLE_WAYPOINT_PLAYBACK_PAUSE")
+	@:native("VehicleWaypointPlaybackPause")
 	static function vehicleWaypointPlaybackPause(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("VEHICLE_WAYPOINT_PLAYBACK_OVERRIDE_SPEED")
+	@:native("VehicleWaypointPlaybackOverrideSpeed")
 	static function vehicleWaypointPlaybackOverrideSpeed(vehicle:Dynamic, speed:Float):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("VEHICLE_WAYPOINT_PLAYBACK_USE_DEFAULT_SPEED")
+	@:native("VehicleWaypointPlaybackUseDefaultSpeed")
 	static function vehicleWaypointPlaybackUseDefaultSpeed(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("UPDATE_TASK_SWEEP_AIM_ENTITY")
+	@:native("UpdateTaskSweepAimEntity")
 	static function updateTaskSweepAimEntity(ped:Dynamic, entity:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("VEHICLE_WAYPOINT_PLAYBACK_RESUME")
+	@:native("VehicleWaypointPlaybackResume")
 	static function vehicleWaypointPlaybackResume(vehicle:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_PAUSE")
+	@:native("WaypointPlaybackPause")
 	static function waypointPlaybackPause(p0:Dynamic, p1:Bool, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_OVERRIDE_SPEED")
+	@:native("WaypointPlaybackOverrideSpeed")
 	static function waypointPlaybackOverrideSpeed(p0:Dynamic, p1:Float, p2:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_RESUME")
+	@:native("WaypointPlaybackResume")
 	static function waypointPlaybackResume(p0:Dynamic, p1:Bool, p2:Dynamic, p3:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_START_SHOOTING_AT_COORD")
+	@:native("WaypointPlaybackStartShootingAtCoord")
 	static function waypointPlaybackStartShootingAtCoord(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Bool, p5:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_GET_IS_PAUSED")
+	@:native("WaypointPlaybackGetIsPaused")
 	static function waypointPlaybackGetIsPaused(p0:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_STOP_AIMING_OR_SHOOTING")
+	@:native("WaypointPlaybackStopAimingOrShooting")
 	static function waypointPlaybackStopAimingOrShooting(p0:Dynamic):Dynamic;
 
 	/**
@@ -2851,19 +2851,19 @@ extern class Task {
 	 * For a full list of the points, see here: goo.gl/wIH0vn
 	 * ```
 	 */
-	@:native("WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT")
+	@:native("WaypointRecordingGetClosestWaypoint")
 	static function waypointRecordingGetClosestWaypoint(name:String, x:Float, y:Float, z:Float, point:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_START_AIMING_AT_COORD")
+	@:native("WaypointPlaybackStartAimingAtCoord")
 	static function waypointPlaybackStartAimingAtCoord(p0:Dynamic, p1:Float, p2:Float, p3:Float, p4:Bool):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_START_AIMING_AT_PED")
+	@:native("WaypointPlaybackStartAimingAtPed")
 	static function waypointPlaybackStartAimingAtPed(p0:Dynamic, p1:Dynamic, p2:Bool):Dynamic;
 
 	/**
@@ -2871,25 +2871,25 @@ extern class Task {
 	 * For a full list of the points, see here: goo.gl/wIH0vn
 	 * ```
 	 */
-	@:native("WAYPOINT_RECORDING_GET_NUM_POINTS")
+	@:native("WaypointRecordingGetNumPoints")
 	static function waypointRecordingGetNumPoints(name:String, points:Dynamic):Bool;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_RECORDING_GET_SPEED_AT_POINT")
+	@:native("WaypointRecordingGetSpeedAtPoint")
 	static function waypointRecordingGetSpeedAtPoint(name:String, point:Int):Float;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_USE_DEFAULT_SPEED")
+	@:native("WaypointPlaybackUseDefaultSpeed")
 	static function waypointPlaybackUseDefaultSpeed(p0:Dynamic):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED")
+	@:native("WaypointPlaybackStartShootingAtPed")
 	static function waypointPlaybackStartShootingAtPed(p0:Dynamic, p1:Dynamic, p2:Bool, p3:Dynamic):Dynamic;
 
 	/**
@@ -2897,7 +2897,7 @@ extern class Task {
 	 * For a full list of the points, see here: goo.gl/wIH0vn
 	 * ```
 	 */
-	@:native("WAYPOINT_RECORDING_GET_COORD")
+	@:native("WaypointRecordingGetCoord")
 	static function waypointRecordingGetCoord(name:String, point:Int, coord:Dynamic):Bool;
 
 }

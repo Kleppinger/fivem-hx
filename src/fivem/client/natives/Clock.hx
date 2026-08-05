@@ -5,13 +5,13 @@ extern class Clock {
 	/**
 	 * 
 	 */
-	@:native("ADVANCE_CLOCK_TIME_TO")
+	@:native("AdvanceClockTimeTo")
 	static function advanceClockTimeTo(hour:Int, minute:Int, second:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("ADD_TO_CLOCK_TIME")
+	@:native("AddToClockTime")
 	static function addToClockTime(hours:Int, minutes:Int, seconds:Int):Dynamic;
 
 	/**
@@ -26,7 +26,7 @@ extern class Clock {
 	 * 6: Saturday  
 	 * ```
 	 */
-	@:native("GET_CLOCK_DAY_OF_WEEK")
+	@:native("GetClockDayOfWeek")
 	static function getClockDayOfWeek():Int;
 
 	/**
@@ -34,13 +34,13 @@ extern class Clock {
 	 * Gets the current ingame hour, expressed without zeros. (09:34 will be represented as 9)  
 	 * ```
 	 */
-	@:native("GET_CLOCK_HOURS")
+	@:native("GetClockHours")
 	static function getClockHours():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CLOCK_DAY_OF_MONTH")
+	@:native("GetClockDayOfMonth")
 	static function getClockDayOfMonth():Int;
 
 	/**
@@ -48,19 +48,19 @@ extern class Clock {
 	 * Gets the current ingame clock minute.  
 	 * ```
 	 */
-	@:native("GET_CLOCK_MINUTES")
+	@:native("GetClockMinutes")
 	static function getClockMinutes():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CLOCK_MONTH")
+	@:native("GetClockMonth")
 	static function getClockMonth():Int;
 
 	/**
 	 * 
 	 */
-	@:native("GET_CLOCK_YEAR")
+	@:native("GetClockYear")
 	static function getClockYear():Int;
 
 	/**
@@ -76,7 +76,7 @@ extern class Clock {
 	 * 	TIME::GET_POSIX_TIME(&year, &month, &day, &hour, &minute, &second);  
 	 * ```
 	 */
-	@:native("GET_POSIX_TIME")
+	@:native("GetPosixTime")
 	static function getPosixTime(year:Dynamic, month:Dynamic, day:Dynamic, hour:Dynamic, minute:Dynamic, second:Dynamic):Dynamic;
 
 	/**
@@ -84,7 +84,7 @@ extern class Clock {
 	 * Gets the current ingame clock second. Note that ingame clock seconds change really fast since a day in GTA is only 48 minutes in real life.  
 	 * ```
 	 */
-	@:native("GET_CLOCK_SECONDS")
+	@:native("GetClockSeconds")
 	static function getClockSeconds():Int;
 
 	/**
@@ -101,20 +101,20 @@ extern class Clock {
 	 * TIME::GET_LOCAL_TIME(&year, &month, &day, &hour, &minute, &second);  
 	 * ```
 	 */
-	@:native("GET_LOCAL_TIME")
+	@:native("GetLocalTime")
 	static function getLocalTime(year:Dynamic, month:Dynamic, day:Dynamic, hour:Dynamic, minute:Dynamic, second:Dynamic):Dynamic;
 
 	/**
 	 * Returns how many real ms are equal to one game minute.
 	 * A getter for [`SetMillisecondsPerGameMinute`](#\_0x36CA2554).
 	 */
-	@:native("GET_MILLISECONDS_PER_GAME_MINUTE")
+	@:native("GetMillisecondsPerGameMinute")
 	static function getMillisecondsPerGameMinute():Int;
 
 	/**
 	 * 
 	 */
-	@:native("PAUSE_CLOCK")
+	@:native("PauseClock")
 	static function pauseClock(toggle:Bool):Dynamic;
 
 	/**
@@ -122,7 +122,7 @@ extern class Clock {
 	 * Gets current UTC time
 	 * ```
 	 */
-	@:native("GET_UTC_TIME")
+	@:native("GetUtcTime")
 	static function getUtcTime(year:Dynamic, month:Dynamic, day:Dynamic, hour:Dynamic, minute:Dynamic, second:Dynamic):Dynamic;
 
 	/**
@@ -130,13 +130,13 @@ extern class Clock {
 	 * SET_CLOCK_TIME(12, 34, 56);  
 	 * ```
 	 */
-	@:native("SET_CLOCK_TIME")
+	@:native("SetClockTime")
 	static function setClockTime(hour:Int, minute:Int, second:Int):Dynamic;
 
 	/**
 	 * 
 	 */
-	@:native("SET_CLOCK_DATE")
+	@:native("SetClockDate")
 	static function setClockDate(day:Int, month:Int, year:Int):Dynamic;
 
 }
