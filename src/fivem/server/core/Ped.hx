@@ -92,12 +92,16 @@ class Ped extends Entity {
 	/**
 		Spawns a ped.
 
-		The server doesn't stream models, so this returns immediately — but a
-		client can only see the ped once *it* has the model, which happens
-		automatically as it comes into range.
+		Blocks the calling coroutine until the ped is networked: a
+		server-created entity is orphaned, with no network ID, until a client
+		comes into scope for it. Returns `null` if that does not happen within
+		the timeout.
 	**/
 	public static function create(model:Hash, position:Vector3, heading:Float = 0.0, pedType:Int = 4):Ped {
 		var handle:Int = Cfx.createPed(pedType, model, position.x, position.y, position.z, heading, true, true);
-		return handle == 0 ? null : new Ped(handle);
+		if (handle == 0) return null;
+
+		var ped = new Ped(handle);
+		return ped.waitUntilNetworked() ? ped : null;
 	}
 }

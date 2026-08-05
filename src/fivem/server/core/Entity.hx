@@ -2,6 +2,7 @@ package fivem.server.core;
 
 import fivem.server.natives.Cfx;
 import fivem.shared.core.StateBag;
+import fivem.shared.core.Thread;
 import fivem.shared.util.Vector3;
 
 /**
@@ -80,11 +81,48 @@ class Entity {
 	inline function get_model():Int
 		return Cfx.getEntityModel(handle);
 
-	/** The network ID — the entity reference to send to clients. **/
+	/**
+		The network ID — the entity reference to send to clients — or 0 if the
+		entity has none yet.
+
+		Guarded, because the underlying native raises rather than returning a
+		sentinel:
+
+		```
+		script error in native ...: Tried to access invalid entity: 131333
+		```
+
+		An entity the server just created is *orphaned* until a client comes
+		into scope for it: it has a handle, but no network ID and no owner. A
+		stale handle behaves the same way. Both cases read as 0 here instead of
+		taking down the handler that asked.
+
+		The existence check alone is not sufficient — the native has been
+		reported to raise even when `DoesEntityExist` says otherwise — so the
+		call itself is also caught.
+	**/
 	public var netId(get, never):Int;
 
-	inline function get_netId():Int
-		return Cfx.networkGetNetworkIdFromEntity(handle);
+	function get_netId():Int {
+		if (!exists) return 0;
+		return try Cfx.networkGetNetworkIdFromEntity(handle) catch (_:Dynamic) 0;
+	}
+
+	/**
+		Blocks until the entity is registered on the server and has a network
+		ID, returning whether it got one before `timeoutMs` elapsed.
+
+		Server-created entities do not exist immediately — they stay orphaned
+		until a client is in scope. Anything that needs the network ID (sending
+		it to a client, writing a state bag) has to wait for this first, which
+		is what the `create` helpers do for you.
+
+		Returns false if no client ever comes into scope, or if the model was
+		not valid for the entity type.
+	**/
+	public function waitUntilNetworked(timeoutMs:Int = 5000):Bool {
+		return Thread.waitUntil(() -> netId != 0, timeoutMs);
+	}
 
 	/**
 		The server ID of the client that currently owns this entity, or -1 when

@@ -21,7 +21,10 @@ class Prop extends Entity {
 
 	public static function create(model:Hash, position:Vector3):Prop {
 		var handle:Int = Cfx.createObject(model, position.x, position.y, position.z, true, true, false);
-		return handle == 0 ? null : new Prop(handle);
+		if (handle == 0) return null;
+
+		var prop = new Prop(handle);
+		return prop.waitUntilNetworked() ? prop : null;
 	}
 
 	/**
@@ -31,6 +34,9 @@ class Prop extends Entity {
 	**/
 	public static function createNoOffset(model:Hash, position:Vector3):Prop {
 		var handle:Int = Cfx.createObjectNoOffset(model, position.x, position.y, position.z, true, true, false);
-		return handle == 0 ? null : new Prop(handle);
+		if (handle == 0) return null;
+
+		var prop = new Prop(handle);
+		return prop.waitUntilNetworked() ? prop : null;
 	}
 }

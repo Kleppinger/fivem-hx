@@ -156,6 +156,26 @@ On the client the mirror-image rule applies: a write to a networked entity
 you don't own is reverted by its real owner within a frame or two. Call
 `requestControl()` first, and keep the work that follows short.
 
+### Server-created entities start orphaned
+
+An entity the server creates has a handle immediately, but it does not
+*exist* — and has no network ID and no owner — until a client comes into
+scope for it. Reading `netId` before then raised `Tried to access invalid
+entity` and took down the calling handler.
+
+`netId` is now guarded and reads as 0 in that window, and the server's
+`create` helpers block until the entity is networked, returning `null` if it
+never gets there:
+
+```haxe
+var vehicle = Vehicle.create("adder", spawnPoint, heading);
+if (vehicle == null) return;          // nobody in scope, or a bad model
+vehicle.state.set("owner", license);  // safe: netId is real by now
+```
+
+Call `waitUntilNetworked()` yourself if you create an entity through the
+natives directly.
+
 ## Threads and timers
 
 FiveM has no preemption. A resource runs on a single Lua state and a

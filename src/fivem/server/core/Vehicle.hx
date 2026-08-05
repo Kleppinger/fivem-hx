@@ -136,12 +136,18 @@ class Vehicle extends Entity {
 	/**
 		Spawns a vehicle.
 
-		Returns immediately with a usable handle — the server doesn't stream
-		models. Clients render it as they come into range.
+		Blocks the calling coroutine until the vehicle is networked, because a
+		server-created entity is orphaned until a client comes into scope and
+		has no network ID before then. Returns `null` if that never happens
+		within the timeout — which in practice means nobody was near the spawn
+		point, or the model was not a vehicle.
 	**/
 	public static function create(model:Hash, position:Vector3, heading:Float = 0.0):Vehicle {
 		var handle:Int = Cfx.createVehicle(model, position.x, position.y, position.z, heading, true, true);
-		return handle == 0 ? null : new Vehicle(handle);
+		if (handle == 0) return null;
+
+		var vehicle = new Vehicle(handle);
+		return vehicle.waitUntilNetworked() ? vehicle : null;
 	}
 
 	/**
@@ -155,6 +161,9 @@ class Vehicle extends Entity {
 	**/
 	public static function createWithSetter(model:Hash, vehicleType:String, position:Vector3, heading:Float = 0.0):Vehicle {
 		var handle:Int = Cfx.createVehicleServerSetter(model, vehicleType, position.x, position.y, position.z, heading);
-		return handle == 0 ? null : new Vehicle(handle);
+		if (handle == 0) return null;
+
+		var vehicle = new Vehicle(handle);
+		return vehicle.waitUntilNetworked() ? vehicle : null;
 	}
 }
